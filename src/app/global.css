@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+button { cursor: pointer; }
+input, select, button, textarea { font: inherit; }
+.card { background:#0f1720; border:1px solid #1f2a37; border-radius:16px; padding:16px; }
+.hstack { display:flex; gap:12px; align-items:center; }
+.vstack { display:flex; gap:12px; flex-direction:column; }
+.badge { padding:4px 8px; border-radius:999px; border:1px solid #253042; font-size:12px; }
+.muted { color:#93a2b8; }
+hr { border-color:#1f2a37; }
