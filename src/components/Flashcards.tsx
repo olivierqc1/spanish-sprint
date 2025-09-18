@@ -65,4 +65,5 @@ return (
 </div>
 <hr />
 <div className="vstack">
+);
 }
