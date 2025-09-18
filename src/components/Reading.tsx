@@ -1,22 +1,4 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
-import { readings } from "@/data/texts";
-
-
-function sampleWithoutRecent<T>(pool: T[], seen: string[], key: (x: T)=> string): T | null {
-const filtered = pool.filter(x => !seen.includes(key(x)));
-if (!pool.length) return null;
-if (filtered.length === 0) return pool[Math.floor(Math.random()*pool.length)];
-return filtered[Math.floor(Math.random()*filtered.length)];
-}
-
-
-export default function Reading() {
-const [level, setLevel] = useState<"A1"|"A2"|"B1">("A1");
-const list = useMemo(()=> readings.filter(r=> r.level===level), [level]);
-
-
-const storageKey = (lvl: string)=> `reading_seen_${lvl}`;
 const [curId, setCurId] = useState<string | null>(null);
 
 
@@ -59,4 +41,18 @@ return (
 </div>
 <div className="muted">{cur.author} • {cur.type} • {cur.title}</div>
 <pre style={{ whiteSpace:'pre-wrap', background:'#0b121a', padding:12, borderRadius:12 }}>{cur.excerpt}</pre>
+{cur.glosses && (
+<div className="hstack" style={{ flexWrap:'wrap' }}>
+{Object.entries(cur.glosses).map(([w, g])=> (
+<span key={w} className="badge">{w}: {g}</span>
+))}
+</div>
+)}
+{cur.prompts && (
+<ul>
+{cur.prompts.map((p,i)=> <li key={i} className="muted">{p}</li>)}
+</ul>
+)}
+</div>
+);
 }
