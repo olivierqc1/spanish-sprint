@@ -2,7 +2,9 @@
 
 import React, { useMemo, useState } from "react";
 
-type Card = {
+// ⬇️ Était: `type Card = { ... }`
+// ⬆️ Devient:
+export type Card = {
   id: string;
   front: string; // mot / phrase (ES)
   back: string;  // traduction / explication (FR)
