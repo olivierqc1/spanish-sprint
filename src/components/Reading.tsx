@@ -1,127 +1,71 @@
 "use client";
+import { useState, useMemo } from "react";
+import type { Level } from "./LevelPicker";
 
-import React, { useMemo, useState } from "react";
-
-type ReadingItem = {
+export type ReadingItem = {
   id: string;
-  level: "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
-  title?: string;
+  level: Exclude<Level, "ALL">;
+  country: "Espagne" | "Mexique";
+  title: string;
+  excerpt: string;
+  context: string;
+  vocab: string[];
+  questions: string[];
   author?: string;
-  type?: string; // ex: conte, poésie, article
-  text: string;
-  glosses?: Record<string, string>; // { "palabra": "traduction" }
-  prompts?: string[]; // questions de compréhension / discussion
+  type?: string;
 };
 
-type ReadingProps = {
+export default function Reading({
+  items, level, country
+}: {
   items: ReadingItem[];
-  initialLevel?: ReadingItem["level"];
-};
-
-export default function Reading({ items, initialLevel = "A1" }: ReadingProps) {
-  const [level, setLevel] = useState<ReadingItem["level"]>(initialLevel);
-  const pool = useMemo(
-    () => items.filter((r) => r.level === level),
-    [items, level]
-  );
-
+  level: Level;
+  country: "ALL" | "spain" | "mexico";
+}) {
   const [idx, setIdx] = useState(0);
-
-  const next = () => {
-    if (pool.length === 0) return;
-    setIdx((i) => (i + 1) % pool.length);
-  };
-
-  // élément courant sécurisé
-  const cur = pool.length > 0 ? pool[idx] : undefined;
-  if (!items || items.length === 0) {
-    return <div className="text-sm text-gray-500">Aucune lecture disponible.</div>;
-  }
+  const filtered = useMemo(() => {
+    let pool = items;
+    if (level !== "ALL") pool = pool.filter(i => i.level === level);
+    if (country !== "ALL") pool = pool.filter(i => (country === "spain" ? i.country==="Espagne" : i.country==="Mexique"));
+    return pool;
+  }, [items, level, country]);
+  const cur = filtered[idx] ?? null;
 
   return (
-    <div className="card vstack gap-3 p-4 rounded-2xl shadow">
-      <div className="hstack items-center justify-between">
+    <div className="card vstack">
+      <div className="hstack" style={{justifyContent:"space-between"}}>
         <strong>Lectures graduées</strong>
-        <div className="hstack gap-2 items-center">
-          <label className="text-sm text-gray-500">Niveau&nbsp;</label>
-          <select
-            value={level}
-            onChange={(e) => {
-              const lv = e.target.value as ReadingItem["level"];
-              setLevel(lv);
-              setIdx(0);
-            }}
-            className="border rounded px-2 py-1"
-          >
-            <option>A1</option>
-            <option>A2</option>
-            <option>B1</option>
-            <option>B2</option>
-            <option>C1</option>
-            <option>C2</option>
-          </select>
-          <button className="badge" onClick={next}>Nouveau</button>
-        </div>
+        <button onClick={() => setIdx(Math.floor(Math.random()*Math.max(1,filtered.length)))}>Nouveau</button>
       </div>
-
-      {cur ? (
-        <div className="vstack gap-3">
-          <div className="text-sm text-gray-600">
-            <div className="font-semibold">{cur.title ?? "Texte"}</div>
-            <div className="muted">
-              {cur.author && <span>{cur.author}</span>}
-              {cur.type && <span> · {cur.type}</span>}
-              <span> · {cur.level}</span>
-            </div>
+      {!cur ? <div>Aucun texte pour ce filtre.</div> : (
+        <div className="vstack">
+          <div className="hstack" style={{justifyContent:"space-between"}}>
+            <span className="badge">{cur.country}</span>
+            <span className="muted">{cur.level}</span>
           </div>
-
-          <pre
-            style={{
-              whiteSpace: "pre-wrap",
-              background: "#fafafa",
-              border: "1px solid #eee",
-              borderRadius: 12,
-              padding: 12,
-            }}
-          >
-            {cur.text}
-          </pre>
-
-          {cur.glosses && Object.keys(cur.glosses).length > 0 && (
-            <div className="hstack gap-2 flex-wrap">
-              {Object.entries(cur.glosses).map(([w, gl]) => (
-                <span
-                  key={w}
-                  className="badge"
-                  title={gl}
-                  style={{
-                    display: "inline-block",
-                    border: "1px solid #e5e7eb",
-                    borderRadius: 999,
-                    padding: "4px 10px",
-                    fontSize: 12,
-                  }}
-                >
-                  {w}
-                </span>
-              ))}
-            </div>
-          )}
-
-          {cur.prompts && cur.prompts.length > 0 && (
+          <h3 style={{margin:0}}>{cur.title}</h3>
+          {cur.author && <div className="muted">{cur.author}</div>}
+          <pre style={{whiteSpace:"pre-wrap",background:"#0b1220",padding:12,borderRadius:10}}>{cur.excerpt}</pre>
+          <div className="muted">{cur.context}</div>
+          {cur.vocab?.length>0 && (
             <div>
-              <div className="text-sm font-semibold mb-1">Prompts</div>
-              <ul className="list-disc ml-6">
-                {cur.prompts.map((p, i) => (
-                  <li key={i} className="text-sm">{p}</li>
-                ))}
-              </ul>
+              <strong>Vocabulaire</strong>
+              <div className="hstack" style={{flexWrap:"wrap"}}>
+                {cur.vocab.map((v,i)=><span key={i} className="badge">{v}</span>)}
+              </div>
             </div>
           )}
-        </div>
-      ) : (
-        <div className="text-sm text-gray-500">
-          Aucun texte pour le niveau {level}.
+          {cur.questions?.length>0 && (
+            <div className="vstack">
+              <strong>Questions</strong>
+              <ul>{cur.questions.map((q,i)=><li key={i}>{q}</li>)}</ul>
+            </div>
+          )}
+          <div className="hstack" style={{justifyContent:"space-between"}}>
+            <button onClick={()=>setIdx(i=>Math.max(0,i-1))}>◀ Précédent</button>
+            <span className="muted">{filtered.length? `${idx+1} / ${filtered.length}`:"0 / 0"}</span>
+            <button onClick={()=>setIdx(i=>Math.min(filtered.length-1,i+1))}>Suivant ▶</button>
+          </div>
         </div>
       )}
     </div>
