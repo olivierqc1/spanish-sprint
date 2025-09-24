@@ -1,16 +1,10 @@
-import "./global.css";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
+export const metadata = {
   title: "Spanish Sprint",
-  description: "Appli d'apprentissage de l'espagnol",
+  description: "Choisis ton niveau puis pratique : écoute, lecture, flashcards",
 };
+import "./globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
       <body>{children}</body>
