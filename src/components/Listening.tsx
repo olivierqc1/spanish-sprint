@@ -1,148 +1,62 @@
 "use client";
-import React, { useMemo, useRef, useState } from "react";
-import type { AudioItem } from "@/data/audio";
-import { useProgress } from "@/state/progress";
+import { useState, useMemo } from "react";
+import type { Level } from "./LevelPicker";
 
-type Props = { items: AudioItem[]; initialLevel?: AudioItem["level"] };
+export type AudioItem = {
+  id: string;
+  level: Exclude<Level, "ALL">;
+  country: "Espagne" | "Mexique";
+  title: string;
+  src: string; // URL ou data:audio
+  questions: { q: string }[];
+  tip?: string;
+};
 
-function normalize(s: string) {
-  return s.toLowerCase().normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .replace(/[¿?¡!.,;:"]/g, "")
-    .trim();
-}
-
-function diffHtml(gold: string, user: string){
-  const g = normalize(gold).split(/\s+/).filter(Boolean);
-  const u = normalize(user).split(/\s+/).filter(Boolean);
-  const gset = new Set(g);
-  return u.map(tok => gset.has(tok) ? tok : `<mark>${tok}</mark>`).join(" ");
-}
-
-export default function Listening({ items, initialLevel = "A1" }: Props) {
-  const { addPoints, record } = useProgress();
-  const [level, setLevel] = useState<AudioItem["level"]>(initialLevel);
-  const pool = useMemo(() => items.filter(i => i.level === level), [items, level]);
-
+export default function Listening({
+  items, level, country
+}: {
+  items: AudioItem[];
+  level: Level;
+  country: "ALL" | "spain" | "mexico";
+}) {
   const [idx, setIdx] = useState(0);
-  const cur = pool[idx];
-
-  const audioRef = useRef<HTMLAudioElement | null>(null);
   const [answers, setAnswers] = useState<string[]>([]);
-  const [dictation, setDictation] = useState("");
-  const [result, setResult] = useState<{ qOk: number; qTotal: number; dictPct: number; html: string } | null>(null);
-
-  const next = () => {
-    if (!pool.length) return;
-    setIdx((i) => (i + 1) % pool.length);
-    setAnswers([]); setDictation(""); setResult(null);
-    audioRef.current?.pause(); if (audioRef.current) audioRef.current.currentTime = 0;
-  };
-
-  const check = () => {
-    if (!cur) return;
-    let ok = 0;
-    cur.questions.forEach((qa, i) => {
-      const user = normalize(answers[i] || "");
-      const hit = qa.accept.some(acc => normalize(acc)===user || user.includes(normalize(acc)));
-      if (hit) ok++;
-    });
-    const g = normalize(cur.script).split(/\s+/).filter(Boolean);
-    const u = normalize(dictation).split(/\s+/).filter(Boolean);
-    const gset = new Set(g);
-    const correct = u.filter(t => gset.has(t)).length;
-    const dictPct = g.length ? Math.round((correct/g.length)*100) : 0;
-    const html = diffHtml(cur.script, dictation);
-    setResult({ qOk: ok, qTotal: cur.questions.length, dictPct, html });
-
-    const pct = Math.round(((ok/cur.questions.length)*0.6 + (dictPct/100)*0.4)*100);
-    addPoints("listening", Math.max(1, Math.round(pct/10)));
-    record("listening", { correct: ok, total: cur.questions.length, pct, when: Date.now() });
-  };
-
-  if (!items || !items.length) return <div className="text-sm muted">Aucun audio disponible.</div>;
+  const filtered = useMemo(()=>{
+    let pool = items;
+    if (level!=="ALL") pool = pool.filter(i=>i.level===level);
+    if (country!=="ALL") pool = pool.filter(i=>country==="spain"? i.country==="Espagne": i.country==="Mexique");
+    return pool;
+  },[items, level, country]);
+  const cur = filtered[idx] ?? null;
 
   return (
-    <div className="card vstack gap-3 p-4 rounded-2xl shadow">
-      <div className="hstack items-center justify-between">
+    <div className="card vstack">
+      <div className="hstack" style={{justifyContent:"space-between"}}>
         <strong>Écoute & compréhension</strong>
-        <div className="hstack gap-2 items-center">
-          <label className="text-sm muted">Niveau</label>
-          <select
-            className="border rounded px-2 py-1"
-            value={level}
-            onChange={(e) => {
-              setLevel(e.target.value as AudioItem["level"]);
-              setIdx(0); setAnswers([]); setDictation(""); setResult(null);
-              audioRef.current?.pause(); if (audioRef.current) audioRef.current.currentTime = 0;
-            }}
-          >
-            <option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option>
-          </select>
-          <button className="badge" onClick={next}>Nouvel audio</button>
-        </div>
+        <button onClick={()=>setIdx(Math.floor(Math.random()*Math.max(filtered.length,1)))}>Nouvel audio</button>
       </div>
-
-      {!cur ? (
-        <div className="text-sm muted">Aucun audio pour {level}.</div>
-      ) : (
-        <div className="vstack gap-3">
-          <div className="text-sm muted">{cur.level} · {cur.title}</div>
-          <audio ref={audioRef} controls src={cur.src} />
-
-          <div className="vstack gap-2">
-            <div className="text-sm font-semibold">Questions de compréhension</div>
-            {cur.questions.map((qa, i) => (
-              <div key={i} className="vstack gap-1">
-                <label className="text-sm">{qa.q}</label>
-                <input
-                  className="border rounded px-2 py-1"
-                  placeholder="Ta réponse en espagnol"
-                  value={answers[i] || ""}
-                  onChange={(e) => {
-                    const copy = [...answers]; copy[i] = e.target.value; setAnswers(copy);
-                  }}
-                />
-              </div>
-            ))}
+      {!cur ? <div>Aucun audio pour ce filtre.</div> : (
+        <div className="vstack">
+          <div className="hstack" style={{justifyContent:"space-between"}}>
+            <h3 style={{margin:0}}>{cur.title}</h3>
+            <span className="badge">{cur.country} · {cur.level}</span>
           </div>
+          <audio controls style={{width:"100%"}}>
+            <source src={cur.src} type="audio/mpeg" />
+          </audio>
 
-          <div className="vstack gap-1">
-            <div className="text-sm font-semibold">Dictée / Transcription</div>
-            <textarea
-              className="border rounded px-2 py-2"
-              placeholder="Transcris ce que tu entends…"
-              rows={4}
-              value={dictation}
-              onChange={(e) => setDictation(e.target.value)}
-            />
-            <div className="text-xs muted">Astuce : écoute plusieurs fois et utilise pause/retour.</div>
+          <strong>Questions de compréhension</strong>
+          {cur.questions.map((qq,i)=>(
+            <input key={i} placeholder="Ta réponse en espagnol"
+              value={answers[i] ?? ""} onChange={e=>{
+                const a=[...answers]; a[i]=e.target.value; setAnswers(a);
+              }} />
+          ))}
+          <div className="vstack">
+            <strong>Dictée / Transcription</strong>
+            <textarea rows={5} placeholder="Transcris ce que tu entends..." />
+            <div className="muted">{cur.tip ?? "Astuce : écoute en plusieurs passes, utilise pause/retour."}</div>
           </div>
-
-          <div className="hstack gap-2 justify-between">
-            <button className="badge" onClick={check}>Corriger</button>
-            {result && (
-              <div className="text-sm">
-                ✅ {result.qOk}/{result.qTotal} bonnes · 📝 Dictée ~{result.dictPct}%
-              </div>
-            )}
-          </div>
-
-          {result && (
-            <details open>
-              <summary className="cursor-pointer text-sm">Surlignage des différences</summary>
-              <div
-                className="border rounded p-3"
-                dangerouslySetInnerHTML={{ __html: result.html }}
-              />
-              <div className="muted text-xs mt-1">Les mots en <mark>surbrillance</mark> ne correspondent pas au script.</div>
-            </details>
-          )}
-
-          <details>
-            <summary className="cursor-pointer text-sm">Voir le script</summary>
-            <pre style={{whiteSpace:"pre-wrap"}}>{cur.script}</pre>
-          </details>
         </div>
       )}
     </div>
