@@ -1,128 +1,68 @@
 "use client";
+import { useMemo, useState } from "react";
+import type { Level } from "./LevelPicker";
 
-import React, { useMemo, useState } from "react";
-
-// ⬇️ Était: `type Card = { ... }`
-// ⬆️ Devient:
 export type Card = {
   id: string;
-  front: string; // mot / phrase (ES)
-  back: string;  // traduction / explication (FR)
-  level?: "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
-  tag?: string;  // thème: verbes, voyage, etc.
-};
-
-type FlashcardsProps = {
-  cards: Card[];
-  initialLevel?: Card["level"] | "ALL";
+  front: string;
+  back: string;
+  level?: Exclude<Level, "ALL">;    // optionnel = évite les erreurs TS
+  tag?: string;
+  country?: "Espagne" | "Mexique";
 };
 
 export default function Flashcards({
-  cards,
-  initialLevel = "ALL",
-}: FlashcardsProps) {
-  const [level, setLevel] = useState<FlashcardsProps["initialLevel"]>(initialLevel);
-  const [i, setI] = useState(0);
-  const [showBack, setShowBack] = useState(false);
+  cards, level, country
+}: {
+  cards: Card[];
+  level: Level;
+  country: "ALL" | "spain" | "mexico";
+}) {
   const [q, setQ] = useState("");
+  const [idx, setIdx] = useState(0);
 
-  const pool = useMemo(() => {
-    let list = cards ?? [];
-    if (level && level !== "ALL") {
-      list = list.filter((c) => c.level === level);
-    }
-    if (q.trim()) {
-      const s = q.toLowerCase();
-      list = list.filter(
-        (c) =>
-          c.front.toLowerCase().includes(s) ||
-          c.back.toLowerCase().includes(s) ||
-          (c.tag ?? "").toLowerCase().includes(s)
-      );
-    }
-    return list;
-  }, [cards, level, q]);
+  const filtered = useMemo(() => {
+    let pool = cards;
+    if (level !== "ALL") pool = pool.filter(c => c.level === level);
+    if (country !== "ALL") pool = pool.filter(c => (country==="spain"? c.country==="Espagne" : c.country==="Mexique"));
+    return pool.filter(c => (c.front + " " + c.back + " " + (c.tag ?? "")).toLowerCase().includes(q.toLowerCase()));
+  }, [cards, q, level, country]);
 
-  const next = () => {
-    if (pool.length === 0) return;
-    setI((x) => (x + 1) % pool.length);
-    setShowBack(false);
-  };
-
-  const prev = () => {
-    if (pool.length === 0) return;
-    setI((x) => (x - 1 + pool.length) % pool.length);
-    setShowBack(false);
-  };
-
-  const cur = pool.length > 0 ? pool[i] : undefined;
-
-  if (!cards || cards.length === 0) {
-    return <div className="text-sm text-gray-500">Aucune carte pour l’instant.</div>;
-  }
+  const cur = filtered[idx] ?? null;
 
   return (
-    <div className="card vstack gap-3 p-4 rounded-2xl shadow">
-      <div className="hstack items-center justify-between">
+    <div className="card vstack">
+      <div className="hstack" style={{justifyContent:"space-between"}}>
         <strong>Flashcards</strong>
-        <div className="hstack gap-2 items-center">
-          <input
-            value={q}
-            onChange={(e) => {
-              setQ(e.target.value);
-              setI(0);
-            }}
-            placeholder="Recherche…"
-            className="border rounded px-2 py-1"
-          />
-          <select
-            value={level ?? "ALL"}
-            onChange={(e) => {
-              const lv = e.target.value as Card["level"] | "ALL";
-              setLevel(lv);
-              setI(0);
-            }}
-            className="border rounded px-2 py-1"
-          >
-            <option value="ALL">Tous</option>
-            <option>A1</option>
-            <option>A2</option>
-            <option>B1</option>
-            <option>B2</option>
-            <option>C1</option>
-            <option>C2</option>
-          </select>
-        </div>
+        <input placeholder="Recherche..." value={q} onChange={e=>{setQ(e.target.value); setIdx(0);}} />
       </div>
-
-      {cur ? (
-        <div className="vstack gap-3">
-          <div
-            className="rounded-2xl border"
-            style={{ padding: 20, textAlign: "center", minHeight: 120 }}
-            onClick={() => setShowBack((v) => !v)}
-            role="button"
-          >
-            <div className="text-sm text-gray-500 mb-2">
-              {cur.tag ?? "—"} {cur.level ? `· ${cur.level}` : ""}
-            </div>
-            <div className="text-xl font-semibold">
-              {showBack ? cur.back : cur.front}
-            </div>
-            <div className="text-xs text-gray-400 mt-2">(cliquer pour retourner)</div>
-          </div>
-
-          <div className="hstack gap-2 justify-between">
-            <button className="badge" onClick={prev}>◀︎ Précédent</button>
-            <span className="text-sm text-gray-500">
-              {pool.length > 0 ? `${i + 1} / ${pool.length}` : "0 / 0"}
-            </span>
-            <button className="badge" onClick={next}>Suivant ▶︎</button>
-          </div>
-        </div>
-      ) : (
-        <div className="text-sm text-gray-500">Aucune carte pour ce filtre.</div>
+      {!cur ? <div className="muted">Aucune carte pour ce filtre.</div> : (
+        <Flip front={cur.front} back={cur.back} tag={cur.tag} idx={idx} total={filtered.length}
+          onPrev={()=>setIdx(i=>Math.max(0,i-1))} onNext={()=>setIdx(i=>Math.min(filtered.length-1,i+1))} />
       )}
+    </div>
+  );
+}
+
+function Flip({
+  front, back, tag, idx, total, onPrev, onNext
+}: {
+  front:string; back:string; tag?:string; idx:number; total:number;
+  onPrev:()=>void; onNext:()=>void;
+}) {
+  const [showBack, setShowBack] = useState(false);
+  return (
+    <div className="vstack" onClick={()=>setShowBack(s=>!s)} style={{cursor:"pointer"}}>
+      <div className="hstack" style={{justifyContent:"space-between"}}>
+        <span className="badge">{tag ?? "vocabulaire"}</span>
+        <span className="muted">{idx+1} / {total}</span>
+      </div>
+      <h2 style={{textAlign:"center",margin:"12px 0"}}>{showBack? back : front}</h2>
+      <div className="hstack" style={{justifyContent:"space-between"}}>
+        <button onClick={(e)=>{e.stopPropagation(); setShowBack(false); onPrev();}}>◀ Précédent</button>
+        <button onClick={(e)=>{e.stopPropagation(); setShowBack(false); onNext();}}>Suivant ▶</button>
+      </div>
+      <div className="muted" style={{textAlign:"center"}}>(cliquer pour retourner)</div>
     </div>
   );
 }
