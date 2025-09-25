@@ -42,3 +42,13 @@ export const spainA1: ReadingItem[] = [
     questions: ["Que fait la personne ?", "Quel verbe signifie se lever ?"]
   },
   {
+    id: "es_a1_5",
+    level: "A1",
+    country: "Espagne",
+    title: "À la plage",
+    excerpt: "Me gusta nadar en el mar y tomar el sol.",
+    context: "L’Espagne a des plages en Méditerranée et sur l’Atlantique.",
+    vocab: ["nadar = nager", "mar = mer", "tomar el sol = bronzer"],
+    questions: ["Qu’aime faire la personne ?", "Que veut dire « tomar el sol » ?"]
+  }
+];
