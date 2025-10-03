@@ -222,4 +222,39 @@ export const cards: Card[] = [
   { id:"b1-verb-3", front:"alcanzar", back:"atteindre", level:"B1", tag:"verbes" },
   { id:"b1-verb-4", front:"desarrollar", back:"développer", level:"B1", tag:"verbes" },
   { id:"b1-verb-5", front:"enfrentar", back:"affronter", level:"B1", tag:"verbes" },
-  { id:"b1-verb-6", front:"superar",
+  { id:"b1-verb-6", front:"superar", back:"surmonter", level:"B1", tag:"verbes" },
+  { id:"b1-verb-7", front:"proponer", back:"proposer", level:"B1", tag:"verbes" },
+  { id:"b1-verb-8", front:"suponer", back:"supposer", level:"B1", tag:"verbes" },
+  { id:"b1-verb-9", front:"opinar", back:"donner son avis", level:"B1", tag:"verbes" },
+  { id:"b1-verb-10", front:"destacar", back:"souligner/se distinguer", level:"B1", tag:"verbes" },
+
+  // VOCABULAIRE ABSTRAIT
+  { id:"b1-abs-1", front:"desafío", back:"défi", level:"B1", tag:"abstrait" },
+  { id:"b1-abs-2", front:"ventaja", back:"avantage", level:"B1", tag:"abstrait" },
+  { id:"b1-abs-3", front:"desventaja", back:"inconvénient", level:"B1", tag:"abstrait" },
+  { id:"b1-abs-4", front:"consecuencia", back:"conséquence", level:"B1", tag:"abstrait" },
+  { id:"b1-abs-5", front:"impacto", back:"impact", level:"B1", tag:"abstrait" },
+  { id:"b1-abs-6", front:"oportunidad", back:"opportunité", level:"B1", tag:"abstrait" },
+  { id:"b1-abs-7", front:"objetivo", back:"objectif", level:"B1", tag:"abstrait" },
+  { id:"b1-abs-8", front:"meta", back:"but", level:"B1", tag:"abstrait" },
+  { id:"b1-abs-9", front:"esfuerzo", back:"effort", level:"B1", tag:"abstrait" },
+  { id:"b1-abs-10", front:"desarrollo", back:"développement", level:"B1", tag:"abstrait" },
+  { id:"b1-abs-11", front:"crecimiento", back:"croissance", level:"B1", tag:"abstrait" },
+  { id:"b1-abs-12", front:"cambio", back:"changement", level:"B1", tag:"abstrait" },
+
+  // ==================== B1 ESPAGNE (10 cartes) ====================
+  
+  { id:"es-b1-1", front:"hidalgo", back:"gentilhomme", level:"B1", tag:"littérature", country:"Espagne" },
+  { id:"es-b1-2", front:"llanura", back:"plaine", level:"B1", tag:"géographie", country:"Espagne" },
+  { id:"es-b1-3", front:"Alhambra", back:"palais mauresque", level:"B1", tag:"monuments", country:"Espagne" },
+  { id:"es-b1-4", front:"movida", back:"mouvement culturel", level:"B1", tag:"culture", country:"Espagne" },
+  { id:"es-b1-5", front:"autonomía", back:"autonomie", level:"B1", tag:"politique", country:"Espagne" },
+  { id:"es-b1-6", front:"tertulia", back:"discussion littéraire", level:"B1", tag:"culture", country:"Espagne" },
+  { id:"es-b1-7", front:"peña", back:"club de supporters", level:"B1", tag:"culture", country:"Espagne" },
+  { id:"es-b1-8", front:"meseta", back:"plateau", level:"B1", tag:"géographie", country:"Espagne" },
+  { id:"es-b1-9", front:"convivencia", back:"coexistence", level:"B1", tag:"histoire", country:"Espagne" },
+  { id:"es-b1-10", front:"transición", back:"transition démocratique", level:"B1", tag:"histoire", country:"Espagne" },
+
+  // ==================== B1 MEXIQUE (10 cartes) ====================
+  
+  { id:"mx-b1-1", front:"mestizaje", back:"métissage", level:"B1", tag:"idée", country:"Mexiqu
