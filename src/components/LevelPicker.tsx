@@ -12,6 +12,7 @@ type Sections = {
   dictee: boolean;
   conjugation: boolean;
   vocabQuiz: boolean;
+  smartReview: boolean;    // ← NOUVEAU
   planning: boolean;
 };
 
@@ -85,6 +86,39 @@ export default function LevelPicker({
         >
           {Object.values(sections).every(v => v) ? "Tout désactiver" : "Tout activer"}
         </button>
+      </div>
+
+      <hr style={{ margin: "8px 0" }} />
+
+      {/* RÉVISION INTELLIGENTE (NOUVEAU - EN PRIORITÉ) */}
+      <div>
+        <div className="muted" style={{ fontSize: "12px", marginBottom: "8px" }}>
+          <strong>🧠 Révision Intelligente</strong> · Mémorisation optimisée (Recommandé !)
+        </div>
+        <div className="hstack" style={{ flexWrap: "wrap", gap: "12px" }}>
+          <label htmlFor={`${id}-smartReview`} className="hstack" style={{ cursor: "pointer" }}>
+            <input
+              id={`${id}-smartReview`}
+              type="checkbox"
+              checked={sections.smartReview}
+              onChange={e => onSections({ ...sections, smartReview: e.target.checked })}
+            />
+            <span>
+              🧠 <strong>Révision Intelligente</strong>
+              <span className="badge" style={{ marginLeft: "8px", background: "#10b981", border: "none" }}>
+                Nouveau
+              </span>
+            </span>
+          </label>
+        </div>
+        <div className="card" style={{ background: "#1e3a5f", marginTop: "8px", fontSize: "12px" }}>
+          <strong>✨ Pourquoi l'utiliser ?</strong>
+          <ul style={{ marginTop: "4px", paddingLeft: "20px" }}>
+            <li>Révise automatiquement juste avant d'oublier</li>
+            <li>Rétention +150% par rapport aux révisions classiques</li>
+            <li>Économise 50% de ton temps d'étude</li>
+          </ul>
+        </div>
       </div>
 
       <hr style={{ margin: "8px 0" }} />
@@ -200,8 +234,8 @@ export default function LevelPicker({
       {/* AIDE RAPIDE */}
       <div className="card" style={{ background: "#0b1220", marginTop: "8px" }}>
         <div className="muted" style={{ fontSize: "12px" }}>
-          <strong>💡 Conseil :</strong> Pour progresser rapidement, active au moins 3-4 modules et pratique 30 minutes par jour. 
-          Combine écoute + lecture + conjugaison pour des résultats optimaux !
+          <strong>💡 Conseil :</strong> Active au minimum la <strong>Révision Intelligente 🧠</strong> + 2-3 autres modules. 
+          Pratique 20-30 minutes par jour pour des résultats rapides !
         </div>
       </div>
     </div>
