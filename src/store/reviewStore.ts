@@ -1,0 +1,172 @@
+// src/store/reviewStore.ts
+import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
+import type { CardReview, ReviewQuality } from '@/lib/spacedRepetition';
+import {
+  initializeCard,
+  calculateNextReview,
+  getCardsToReview,
+  getReviewStats,
+  getSuggestedDailySession,
+} from '@/lib/spacedRepetition';
+
+type ReviewStore = {
+  // État
+  reviews: Record<string, CardReview>; // cardId -> CardReview
+  currentSessionCards: string[]; // IDs des cartes de la session actuelle
+  currentCardIndex: number;
+  sessionStarted: Date | null;
+  
+  // Actions
+  reviewCard: (cardId: string, quality: ReviewQuality) => void;
+  startSession: (cardIds?: string[], maxCards?: number) => void;
+  endSession: () => void;
+  nextCard: () => void;
+  previousCard: () => void;
+  getCardReview: (cardId: string) => CardReview;
+  getDueCards: (limit?: number) => CardReview[];
+  getStats: () => ReturnType<typeof getReviewStats>;
+  resetCard: (cardId: string) => void;
+  resetAllCards: () => void;
+  importData: (jsonData: string) => void;
+  exportData: () => string;
+};
+
+export const useReviewStore = create<ReviewStore>()(
+  persist(
+    (set, get) => ({
+      // État initial
+      reviews: {},
+      currentSessionCards: [],
+      currentCardIndex: 0,
+      sessionStarted: null,
+
+      // Réviser une carte
+      reviewCard: (cardId, quality) => {
+        const state = get();
+        const existingReview = state.reviews[cardId] || initializeCard(cardId);
+        const updatedReview = calculateNextReview(existingReview, quality);
+
+        set({
+          reviews: {
+            ...state.reviews,
+            [cardId]: updatedReview,
+          },
+        });
+      },
+
+      // Démarrer une session de révision
+      startSession: (cardIds, maxCards = 20) => {
+        const state = get();
+        let sessionCards: string[];
+
+        if (cardIds && cardIds.length > 0) {
+          // Utiliser les cartes spécifiées
+          sessionCards = cardIds.slice(0, maxCards);
+        } else {
+          // Obtenir les cartes suggérées
+          const allReviews = Object.values(state.reviews);
+          const suggested = getSuggestedDailySession(allReviews, 10, maxCards);
+          sessionCards = suggested.map(r => r.cardId);
+        }
+
+        set({
+          currentSessionCards: sessionCards,
+          currentCardIndex: 0,
+          sessionStarted: new Date(),
+        });
+      },
+
+      // Terminer la session
+      endSession: () => {
+        set({
+          currentSessionCards: [],
+          currentCardIndex: 0,
+          sessionStarted: null,
+        });
+      },
+
+      // Carte suivante
+      nextCard: () => {
+        const state = get();
+        if (state.currentCardIndex < state.currentSessionCards.length - 1) {
+          set({ currentCardIndex: state.currentCardIndex + 1 });
+        }
+      },
+
+      // Carte précédente
+      previousCard: () => {
+        const state = get();
+        if (state.currentCardIndex > 0) {
+          set({ currentCardIndex: state.currentCardIndex - 1 });
+        }
+      },
+
+      // Obtenir la révision d'une carte
+      getCardReview: (cardId) => {
+        const state = get();
+        return state.reviews[cardId] || initializeCard(cardId);
+      },
+
+      // Obtenir les cartes à réviser
+      getDueCards: (limit) => {
+        const state = get();
+        const allReviews = Object.values(state.reviews);
+        return getCardsToReview(allReviews, limit);
+      },
+
+      // Obtenir les statistiques
+      getStats: () => {
+        const state = get();
+        const allReviews = Object.values(state.reviews);
+        return getReviewStats(allReviews);
+      },
+
+      // Réinitialiser une carte
+      resetCard: (cardId) => {
+        set(state => {
+          const newReviews = { ...state.reviews };
+          delete newReviews[cardId];
+          return { reviews: newReviews };
+        });
+      },
+
+      // Réinitialiser toutes les cartes
+      resetAllCards: () => {
+        set({ reviews: {} });
+      },
+
+      // Importer des données
+      importData: (jsonData) => {
+        try {
+          const data = JSON.parse(jsonData);
+          const reviews: Record<string, CardReview> = {};
+          
+          data.forEach((review: any) => {
+            reviews[review.cardId] = {
+              ...review,
+              nextReview: new Date(review.nextReview),
+              lastReviewed: new Date(review.lastReviewed),
+            };
+          });
+
+          set({ reviews });
+        } catch (error) {
+          console.error("Erreur d'importation:", error);
+        }
+      },
+
+      // Exporter les données
+      exportData: () => {
+        const state = get();
+        return JSON.stringify(Object.values(state.reviews));
+      },
+    }),
+    {
+      name: 'spanish-sprint-reviews', // Clé dans le localStorage
+      partialize: (state) => ({
+        reviews: state.reviews,
+      }),
+    }
+  )
+);
