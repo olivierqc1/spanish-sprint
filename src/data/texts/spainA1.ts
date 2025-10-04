@@ -465,6 +465,4 @@ export const mexicoA2Enriched: ReadingItem[] = [
     vocab: ["estudio = j'étudie", "más grande = la plus grande", "compañeros = camarades", "país = pays"],
     questions: ["¿Qué estudia?", "¿Dónde?", "¿Cómo son las clases?"]
   },
-  {
-    id: "mx_a2_6",
-    lev
+  
