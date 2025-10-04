@@ -182,7 +182,7 @@ export default function Conjugation({
       </div>
     </div>
   );
-}d: "c1", level: "A1", verb: "hablar", translation: "parler", tense: "présent", pronoun: "yo", answer: "hablo" },
+}
   { id: "c2", level: "A1", verb: "hablar", translation: "parler", tense: "présent", pronoun: "tú", answer: "hablas" },
   { id: "c3", level: "A1", verb: "hablar", translation: "parler", tense: "présent", pronoun: "él/ella", answer: "habla" },
   { id: "c4", level: "A1", verb: "hablar", translation: "parler", tense: "présent", pronoun: "nosotros", answer: "hablamos" },
