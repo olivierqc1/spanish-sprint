@@ -558,4 +558,8 @@ export const audios: AudioItem[] = [
     country: "Espagne",
     title: "Tecnología en la vida diaria",
     src: "/audio/es_b1_tecnologia.mp3",
-    script: "La tecnología ha cambiado completamente nuestra forma de vivir. Ahora podemos trabajar desde casa, comprar online y comunicarnos instantáneame
+    script: "La tecnología ha cambiado completamente nuestra forma de vivir. Ahora podemos trabajar desde casa, comprar online y comunicarnos instantáneamente.",
+questions: [
+  { q: "¿Qué menciona?", accept: ["tecnología", "tecnologia"] },
+  { q: "¿Qué podemos hacer?", accept: ["trabajar desde casa", "comprar online"] },
+],
