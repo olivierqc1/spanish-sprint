@@ -2,7 +2,7 @@ export const metadata = {
   title: "Spanish Sprint",
   description: "Apprendre l'espagnol par niveau avec écoute, lecture, flashcards",
 };
-import "./globals.css";
+import "./global.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
