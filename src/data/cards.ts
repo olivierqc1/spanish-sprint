@@ -257,4 +257,5 @@ export const cards: Card[] = [
 
   // ==================== B1 MEXIQUE (10 cartes) ====================
   
-  { id:"mx-b1-1", front:"mestizaje", back:"métissage", level:"B1", tag:"idée", country:"Mexiqu
+  { id:"mx-b1-1", front:"mestizaje", back:"métissage", level:"B1", tag:"idée", country:"Mexique" },
+];
