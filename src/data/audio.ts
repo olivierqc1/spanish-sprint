@@ -564,3 +564,4 @@ questions: [
   { q: "¿Qué podemos hacer?", accept: ["trabajar desde casa", "comprar online"] },
 ],
 };
+];
