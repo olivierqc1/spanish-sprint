@@ -563,3 +563,4 @@ questions: [
   { q: "¿Qué menciona?", accept: ["tecnología", "tecnologia"] },
   { q: "¿Qué podemos hacer?", accept: ["trabajar desde casa", "comprar online"] },
 ],
+};
