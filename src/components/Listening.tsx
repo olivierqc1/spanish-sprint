@@ -4,7 +4,7 @@ import type { Level } from "./LevelPicker";
 
 export type AudioItem = {
   id: string;
-  level: Exclude<Level, "ALL">;
+  level: "A1" | "A2" | "B1" | "B2" | "C1" | "C2"; // ← Accepter tous les niveaux
   country: "Espagne" | "Mexique";
   title: string;
   src: string; // URL ou data:audio
@@ -23,8 +23,14 @@ export default function Listening({
   const [answers, setAnswers] = useState<string[]>([]);
   const filtered = useMemo(()=>{
     let pool = items;
-    if (level!=="ALL") pool = pool.filter(i=>i.level===level);
-    if (country!=="ALL") pool = pool.filter(i=>country==="spain"? i.country==="Espagne": i.country==="Mexique");
+    // Filtrer par niveau si ce n'est pas "ALL"
+    if (level!=="ALL") {
+      pool = pool.filter(i=>i.level===level);
+    }
+    // Filtrer par pays
+    if (country!=="ALL") {
+      pool = pool.filter(i=>country==="spain"? i.country==="Espagne": i.country==="Mexique");
+    }
     return pool;
   },[items, level, country]);
   const cur = filtered[idx] ?? null;
