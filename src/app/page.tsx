@@ -78,16 +78,28 @@ export default function HomePage() {
             <select 
               value={country} 
               onChange={e => setCountry(e.target.value as Country)}
-              style={{ minWidth: "140px" }}
+              style={{ minWidth: "200px" }}
             >
               <option value="ALL">🌍 Tous</option>
-              <option value="spain">🇪🇸 Espagne</option>
-              <option value="mexico">🇲🇽 Mexique</option>
+              <optgroup label="Europe">
+                <option value="spain">🇪🇸 Espagne</option>
+              </optgroup>
+              <optgroup label="Amérique du Nord">
+                <option value="mexico">🇲🇽 Mexique</option>
+                <option value="cuba">🇨🇺 Cuba</option>
+              </optgroup>
+              <optgroup label="Amérique du Sud">
+                <option value="argentina">🇦🇷 Argentine</option>
+                <option value="colombia">🇨🇴 Colombie</option>
+                <option value="peru">🇵🇪 Pérou</option>
+                <option value="chile">🇨🇱 Chili</option>
+                <option value="venezuela">🇻🇪 Venezuela</option>
+              </optgroup>
             </select>
           </div>
 
           <div className="muted" style={{ marginLeft: "auto", fontSize: "12px" }}>
-            💡 Sélectionne un onglet ci-dessous pour commencer
+            💡 Sélectionne un onglet ci-dessous
           </div>
         </div>
       </div>
@@ -196,8 +208,8 @@ export default function HomePage() {
                   <div className="muted" style={{ fontSize: "12px" }}>Quiz vocab</div>
                 </div>
                 <div>
-                  <div style={{ fontSize: "28px", fontWeight: "bold", color: "#60a5fa" }}>100+</div>
-                  <div className="muted" style={{ fontSize: "12px" }}>Grammaire</div>
+                  <div style={{ fontSize: "28px", fontWeight: "bold", color: "#60a5fa" }}>8</div>
+                  <div className="muted" style={{ fontSize: "12px" }}>Pays</div>
                 </div>
               </div>
             </div>
@@ -277,8 +289,8 @@ export default function HomePage() {
 
       {/* FOOTER */}
       <div style={{ textAlign: "center", marginTop: "48px", padding: "16px", opacity: 0.5, fontSize: "12px" }}>
-        Spanish Sprint v3.1 · Navigation par onglets + Flashcards améliorées 🚀
+        Spanish Sprint v3.2 · Navigation par onglets + 8 pays hispanophones 🚀
       </div>
     </main>
   );
-}
+                          }
