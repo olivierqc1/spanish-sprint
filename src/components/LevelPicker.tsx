@@ -12,8 +12,11 @@ type Sections = {
   dictee: boolean;
   conjugation: boolean;
   vocabQuiz: boolean;
-  smartReview: boolean;    // ← NOUVEAU
+  smartReview: boolean;
   planning: boolean;
+  grammar: boolean;      // ← NOUVEAU
+  dashboard: boolean;    // ← NOUVEAU
+  badges: boolean;       // ← NOUVEAU
 };
 
 export default function LevelPicker({
@@ -90,7 +93,55 @@ export default function LevelPicker({
 
       <hr style={{ margin: "8px 0" }} />
 
-      {/* RÉVISION INTELLIGENTE (NOUVEAU - EN PRIORITÉ) */}
+      {/* STATISTIQUES & PROGRESSION */}
+      <div>
+        <div className="muted" style={{ fontSize: "12px", marginBottom: "8px" }}>
+          <strong>📊 Statistiques & Progression</strong> · Suis tes progrès
+        </div>
+        <div className="hstack" style={{ flexWrap: "wrap", gap: "12px" }}>
+          <label htmlFor={`${id}-dashboard`} className="hstack" style={{ cursor: "pointer" }}>
+            <input
+              id={`${id}-dashboard`}
+              type="checkbox"
+              checked={sections.dashboard}
+              onChange={e => onSections({ ...sections, dashboard: e.target.checked })}
+            />
+            <span>
+              📊 <strong>Dashboard</strong>
+              <span className="badge" style={{ marginLeft: "8px", background: "#10b981", border: "none" }}>
+                Nouveau
+              </span>
+            </span>
+          </label>
+
+          <label htmlFor={`${id}-badges`} className="hstack" style={{ cursor: "pointer" }}>
+            <input
+              id={`${id}-badges`}
+              type="checkbox"
+              checked={sections.badges}
+              onChange={e => onSections({ ...sections, badges: e.target.checked })}
+            />
+            <span>
+              🏆 <strong>Badges</strong>
+              <span className="badge" style={{ marginLeft: "8px", background: "#10b981", border: "none" }}>
+                Nouveau
+              </span>
+            </span>
+          </label>
+        </div>
+        <div className="card" style={{ background: "#1e3a5f", marginTop: "8px", fontSize: "12px" }}>
+          <strong>✨ Pourquoi les activer ?</strong>
+          <ul style={{ marginTop: "4px", paddingLeft: "20px" }}>
+            <li>Visualise tes progrès avec des graphiques détaillés</li>
+            <li>Débloquer des badges pour rester motivé</li>
+            <li>Analyse ton temps d'étude et tes points forts</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr style={{ margin: "8px 0" }} />
+
+      {/* RÉVISION INTELLIGENTE */}
       <div>
         <div className="muted" style={{ fontSize: "12px", marginBottom: "8px" }}>
           <strong>🧠 Révision Intelligente</strong> · Mémorisation optimisée (Recommandé !)
@@ -105,8 +156,8 @@ export default function LevelPicker({
             />
             <span>
               🧠 <strong>Révision Intelligente</strong>
-              <span className="badge" style={{ marginLeft: "8px", background: "#10b981", border: "none" }}>
-                Nouveau
+              <span className="badge" style={{ marginLeft: "8px", background: "#f59e0b", border: "none" }}>
+                Recommandé
               </span>
             </span>
           </label>
@@ -169,6 +220,21 @@ export default function LevelPicker({
           <strong>Grammaire & Vocabulaire</strong> · Renforcement
         </div>
         <div className="hstack" style={{ flexWrap: "wrap", gap: "12px" }}>
+          <label htmlFor={`${id}-grammar`} className="hstack" style={{ cursor: "pointer" }}>
+            <input
+              id={`${id}-grammar`}
+              type="checkbox"
+              checked={sections.grammar}
+              onChange={e => onSections({ ...sections, grammar: e.target.checked })}
+            />
+            <span>
+              📚 <strong>Grammaire</strong>
+              <span className="badge" style={{ marginLeft: "8px", background: "#10b981", border: "none" }}>
+                Nouveau
+              </span>
+            </span>
+          </label>
+
           <label htmlFor={`${id}-conjugation`} className="hstack" style={{ cursor: "pointer" }}>
             <input
               id={`${id}-conjugation`}
@@ -234,7 +300,7 @@ export default function LevelPicker({
       {/* AIDE RAPIDE */}
       <div className="card" style={{ background: "#0b1220", marginTop: "8px" }}>
         <div className="muted" style={{ fontSize: "12px" }}>
-          <strong>💡 Conseil :</strong> Active au minimum la <strong>Révision Intelligente 🧠</strong> + 2-3 autres modules. 
+          <strong>💡 Configuration recommandée :</strong> Dashboard + Révision Intelligente + Grammaire + 2-3 autres modules. 
           Pratique 20-30 minutes par jour pour des résultats rapides !
         </div>
       </div>
