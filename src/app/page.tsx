@@ -12,11 +12,15 @@ import VocabQuiz from "@/components/VocabQuiz";
 import SmartReview from "@/components/SmartReview";
 import DailyPlan from "@/components/Dailyplan";
 import HourCounter from "@/components/HourCounter";
+import GrammarExplorer from "@/components/GrammarExplorer";
+import Dashboard from "@/components/Dashboard";
+import Badges from "@/components/Badges";
 
 import { allTexts } from "@/data/texts";
 import { audios } from "@/data/audio";
 import { cards } from "@/data/cards";
 import { exercises } from "@/data/exercices";
+import { grammarPoints } from "@/data/grammar";
 
 export default function HomePage() {
   const [level, setLevel] = useState<Level>("A1");
@@ -29,8 +33,11 @@ export default function HomePage() {
     dictee: true,
     conjugation: true,
     vocabQuiz: true,
-    smartReview: true,    // ← NOUVEAU MODULE
+    smartReview: true,
     planning: false,
+    grammar: true,        // ← NOUVEAU
+    dashboard: true,      // ← NOUVEAU
+    badges: false,        // ← NOUVEAU
   });
 
   return (
@@ -49,6 +56,14 @@ export default function HomePage() {
         sections={sections}
         onSections={setSections}
       />
+
+      {/* SECTION DASHBOARD & BADGES */}
+      {(sections.dashboard || sections.badges) && (
+        <div className="section">
+          {sections.dashboard && <Dashboard />}
+          {sections.badges && <Badges />}
+        </div>
+      )}
 
       {/* SECTION RÉVISION INTELLIGENTE (PRIORITAIRE) */}
       {sections.smartReview && (
@@ -75,6 +90,9 @@ export default function HomePage() {
 
       {/* SECTION GRAMMAIRE & CONJUGAISON */}
       <div className="section">
+        {sections.grammar && (
+          <GrammarExplorer points={grammarPoints} initialLevel={level as any} />
+        )}
         {sections.conjugation && (
           <Conjugation level={level} country={country} />
         )}
@@ -110,12 +128,34 @@ export default function HomePage() {
       <div className="card" style={{ marginTop: "32px", background: "#0b1220" }}>
         <h3 style={{ margin: "0 0 12px 0" }}>📚 Comment utiliser Spanish Sprint</h3>
         <div className="muted vstack" style={{ gap: "8px" }}>
-          <p><strong>1. Choisis ton niveau</strong> (A1, A2, B1) et ton <strong>pays</strong> (Espagne/Mexique) pour filtrer le contenu.</p>
-          <p><strong>2. Active les modules</strong> qui t'intéressent : écoute, lecture, conjugaison, vocabulaire, révision intelligente, etc.</p>
-          <p><strong>3. Commence par la Révision Intelligente</strong> 🧠 : Le système optimise automatiquement ta mémorisation !</p>
-          <p><strong>4. Pratique quotidiennement</strong> : 20-60 minutes par jour donnent les meilleurs résultats.</p>
-          <p><strong>5. Varie les exercices</strong> pour travailler toutes les compétences : compréhension orale, lecture, grammaire, vocabulaire.</p>
-          <p><strong>💡 Astuce</strong> : La révision intelligente te fait réviser juste avant d'oublier = mémorisation optimale !</p>
+          <p><strong>1. Consulte ton tableau de bord</strong> 📊 pour voir tes statistiques et badges</p>
+          <p><strong>2. Commence par la Révision Intelligente</strong> 🧠 : Le système optimise automatiquement ta mémorisation !</p>
+          <p><strong>3. Pratique quotidiennement</strong> : 20-60 minutes par jour donnent les meilleurs résultats.</p>
+          <p><strong>4. Varie les exercices</strong> pour travailler toutes les compétences : compréhension orale, lecture, grammaire, vocabulaire.</p>
+          <p><strong>💡 Astuce</strong> : Utilise les raccourcis clavier (Entrée, Espace, Flèches) pour naviguer plus rapidement !</p>
+        </div>
+      </div>
+
+      {/* RACCOURCIS CLAVIER */}
+      <div className="card" style={{ background: "#1e3a5f", marginTop: "16px" }}>
+        <h3 style={{ margin: "0 0 12px 0" }}>⌨️ Raccourcis clavier</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px", fontSize: "14px" }}>
+          <div className="hstack" style={{ gap: "8px" }}>
+            <kbd style={{ padding: "2px 6px", background: "#0f1720", borderRadius: "4px", fontSize: "12px" }}>Entrée</kbd>
+            <span className="muted">Valider / Suivant</span>
+          </div>
+          <div className="hstack" style={{ gap: "8px" }}>
+            <kbd style={{ padding: "2px 6px", background: "#0f1720", borderRadius: "4px", fontSize: "12px" }}>Espace</kbd>
+            <span className="muted">Retourner carte</span>
+          </div>
+          <div className="hstack" style={{ gap: "8px" }}>
+            <kbd style={{ padding: "2px 6px", background: "#0f1720", borderRadius: "4px", fontSize: "12px" }}>← →</kbd>
+            <span className="muted">Navigation</span>
+          </div>
+          <div className="hstack" style={{ gap: "8px" }}>
+            <kbd style={{ padding: "2px 6px", background: "#0f1720", borderRadius: "4px", fontSize: "12px" }}>1-5</kbd>
+            <span className="muted">Révision (qualité)</span>
+          </div>
         </div>
       </div>
 
@@ -162,12 +202,16 @@ export default function HomePage() {
             <div className="muted">Flashcards</div>
           </div>
           <div>
-            <div style={{ fontSize: "32px", fontWeight: "bold", color: "#60a5fa" }}>60+</div>
+            <div style={{ fontSize: "32px", fontWeight: "bold", color: "#60a5fa" }}>67</div>
             <div className="muted">Conjugaisons</div>
           </div>
           <div>
             <div style={{ fontSize: "32px", fontWeight: "bold", color: "#60a5fa" }}>40+</div>
             <div className="muted">Quiz vocab</div>
+          </div>
+          <div>
+            <div style={{ fontSize: "32px", fontWeight: "bold", color: "#60a5fa" }}>100+</div>
+            <div className="muted">Points grammaire</div>
           </div>
         </div>
       </div>
@@ -179,6 +223,7 @@ export default function HomePage() {
           <div className="card" style={{ background: "#1f2a37" }}>
             <strong style={{ color: "#60a5fa" }}>☀️ Matin (15-20 min)</strong>
             <ul style={{ fontSize: "14px", marginTop: "8px", paddingLeft: "20px" }}>
+              <li>📊 Consulter dashboard</li>
               <li>🧠 Révision intelligente (priorité)</li>
               <li>🎧 2-3 exercices d'écoute</li>
               <li>📖 1-2 textes de lecture</li>
@@ -188,6 +233,7 @@ export default function HomePage() {
             <strong style={{ color: "#f59e0b" }}>🌆 Midi/Après-midi (15-20 min)</strong>
             <ul style={{ fontSize: "14px", marginTop: "8px", paddingLeft: "20px" }}>
               <li>⚡ Conjugaison (5-10 verbes)</li>
+              <li>📚 Points de grammaire</li>
               <li>🎯 Quiz vocabulaire</li>
               <li>✍️ Orthographe/Dictée</li>
             </ul>
@@ -197,6 +243,7 @@ export default function HomePage() {
             <ul style={{ fontSize: "14px", marginTop: "8px", paddingLeft: "20px" }}>
               <li>🧠 Révision rapide (5 min)</li>
               <li>🎴 Flashcards (5 min)</li>
+              <li>🏆 Vérifier nouveaux badges</li>
               <li>📊 Consulter tes stats</li>
             </ul>
           </div>
@@ -208,8 +255,8 @@ export default function HomePage() {
 
       {/* VERSION */}
       <div style={{ textAlign: "center", marginTop: "32px", padding: "16px", opacity: 0.5, fontSize: "12px" }}>
-        Spanish Sprint v2.0 · Avec révision intelligente (SRS) 🧠
+        Spanish Sprint v3.0 · Révision intelligente (SRS) + Dashboard + Badges + Grammaire + Raccourcis clavier 🚀
       </div>
     </main>
   );
-}
+      }
