@@ -2,7 +2,7 @@
 import { useId } from "react";
 
 export type Level = "A1" | "A2" | "B1" | "ALL";
-export type Country = "spain" | "mexico" | "ALL";
+export type Country = "spain" | "mexico" | "argentina" | "colombia" | "peru" | "chile" | "cuba" | "venezuela" | "ALL";
 
 type Sections = {
   listening: boolean;
@@ -14,9 +14,9 @@ type Sections = {
   vocabQuiz: boolean;
   smartReview: boolean;
   planning: boolean;
-  grammar: boolean;      // ← NOUVEAU
-  dashboard: boolean;    // ← NOUVEAU
-  badges: boolean;       // ← NOUVEAU
+  grammar: boolean;
+  dashboard: boolean;
+  badges: boolean;
 };
 
 export default function LevelPicker({
@@ -50,7 +50,7 @@ export default function LevelPicker({
   return (
     <div className="card vstack">
       <div className="hstack" style={{ justifyContent: "space-between", flexWrap: "wrap" }}>
-        <strong>👋 Bienvenue ! Configure ta pratique</strong>
+        <strong>👋 Configuration</strong>
         <span className="muted">{activeCount} module{activeCount > 1 ? 's' : ''} activé{activeCount > 1 ? 's' : ''}</span>
       </div>
 
@@ -61,7 +61,7 @@ export default function LevelPicker({
           <select 
             value={level} 
             onChange={e => onLevel(e.target.value as Level)}
-            style={{ minWidth: "100px" }}
+            style={{ minWidth: "140px" }}
           >
             <option value="A1">A1 - Débutant</option>
             <option value="A2">A2 - Élémentaire</option>
@@ -75,11 +75,23 @@ export default function LevelPicker({
           <select 
             value={country} 
             onChange={e => onCountry(e.target.value as Country)}
-            style={{ minWidth: "120px" }}
+            style={{ minWidth: "200px" }}
           >
-            <option value="ALL">🌍 Tous</option>
-            <option value="spain">🇪🇸 Espagne</option>
-            <option value="mexico">🇲🇽 Mexique</option>
+            <option value="ALL">🌍 Tous les pays</option>
+            <optgroup label="Europe">
+              <option value="spain">🇪🇸 Espagne</option>
+            </optgroup>
+            <optgroup label="Amérique du Nord">
+              <option value="mexico">🇲🇽 Mexique</option>
+              <option value="cuba">🇨🇺 Cuba</option>
+            </optgroup>
+            <optgroup label="Amérique du Sud">
+              <option value="argentina">🇦🇷 Argentine</option>
+              <option value="colombia">🇨🇴 Colombie</option>
+              <option value="peru">🇵🇪 Pérou</option>
+              <option value="chile">🇨🇱 Chili</option>
+              <option value="venezuela">🇻🇪 Venezuela</option>
+            </optgroup>
           </select>
         </div>
 
@@ -93,10 +105,21 @@ export default function LevelPicker({
 
       <hr style={{ margin: "8px 0" }} />
 
+      {/* INFO CULTURELLE */}
+      <div className="card" style={{ background: "#1e3a5f", fontSize: "12px" }}>
+        <strong>🌎 Découvre la diversité hispanophone !</strong>
+        <p style={{ marginTop: "8px", marginBottom: 0 }}>
+          Explore les cultures, traditions et particularités de 8 pays hispanophones. 
+          Chaque pays a son propre vocabulaire, expressions et richesses culturelles.
+        </p>
+      </div>
+
+      <hr style={{ margin: "8px 0" }} />
+
       {/* STATISTIQUES & PROGRESSION */}
       <div>
         <div className="muted" style={{ fontSize: "12px", marginBottom: "8px" }}>
-          <strong>📊 Statistiques & Progression</strong> · Suis tes progrès
+          <strong>📊 Statistiques & Progression</strong>
         </div>
         <div className="hstack" style={{ flexWrap: "wrap", gap: "12px" }}>
           <label htmlFor={`${id}-dashboard`} className="hstack" style={{ cursor: "pointer" }}>
@@ -106,12 +129,7 @@ export default function LevelPicker({
               checked={sections.dashboard}
               onChange={e => onSections({ ...sections, dashboard: e.target.checked })}
             />
-            <span>
-              📊 <strong>Dashboard</strong>
-              <span className="badge" style={{ marginLeft: "8px", background: "#10b981", border: "none" }}>
-                Nouveau
-              </span>
-            </span>
+            <span>📊 Dashboard</span>
           </label>
 
           <label htmlFor={`${id}-badges`} className="hstack" style={{ cursor: "pointer" }}>
@@ -121,21 +139,8 @@ export default function LevelPicker({
               checked={sections.badges}
               onChange={e => onSections({ ...sections, badges: e.target.checked })}
             />
-            <span>
-              🏆 <strong>Badges</strong>
-              <span className="badge" style={{ marginLeft: "8px", background: "#10b981", border: "none" }}>
-                Nouveau
-              </span>
-            </span>
+            <span>🏆 Badges</span>
           </label>
-        </div>
-        <div className="card" style={{ background: "#1e3a5f", marginTop: "8px", fontSize: "12px" }}>
-          <strong>✨ Pourquoi les activer ?</strong>
-          <ul style={{ marginTop: "4px", paddingLeft: "20px" }}>
-            <li>Visualise tes progrès avec des graphiques détaillés</li>
-            <li>Débloquer des badges pour rester motivé</li>
-            <li>Analyse ton temps d'étude et tes points forts</li>
-          </ul>
         </div>
       </div>
 
@@ -144,7 +149,7 @@ export default function LevelPicker({
       {/* RÉVISION INTELLIGENTE */}
       <div>
         <div className="muted" style={{ fontSize: "12px", marginBottom: "8px" }}>
-          <strong>🧠 Révision Intelligente</strong> · Mémorisation optimisée (Recommandé !)
+          <strong>🧠 Révision Intelligente</strong>
         </div>
         <div className="hstack" style={{ flexWrap: "wrap", gap: "12px" }}>
           <label htmlFor={`${id}-smartReview`} className="hstack" style={{ cursor: "pointer" }}>
@@ -154,21 +159,8 @@ export default function LevelPicker({
               checked={sections.smartReview}
               onChange={e => onSections({ ...sections, smartReview: e.target.checked })}
             />
-            <span>
-              🧠 <strong>Révision Intelligente</strong>
-              <span className="badge" style={{ marginLeft: "8px", background: "#f59e0b", border: "none" }}>
-                Recommandé
-              </span>
-            </span>
+            <span>🧠 Révision SRS</span>
           </label>
-        </div>
-        <div className="card" style={{ background: "#1e3a5f", marginTop: "8px", fontSize: "12px" }}>
-          <strong>✨ Pourquoi l'utiliser ?</strong>
-          <ul style={{ marginTop: "4px", paddingLeft: "20px" }}>
-            <li>Révise automatiquement juste avant d'oublier</li>
-            <li>Rétention +150% par rapport aux révisions classiques</li>
-            <li>Économise 50% de ton temps d'étude</li>
-          </ul>
         </div>
       </div>
 
@@ -177,7 +169,7 @@ export default function LevelPicker({
       {/* MODULES PRINCIPAUX */}
       <div>
         <div className="muted" style={{ fontSize: "12px", marginBottom: "8px" }}>
-          <strong>Modules principaux</strong> · Compréhension & Expression
+          <strong>Modules principaux</strong>
         </div>
         <div className="hstack" style={{ flexWrap: "wrap", gap: "12px" }}>
           <label htmlFor={`${id}-listening`} className="hstack" style={{ cursor: "pointer" }}>
@@ -217,7 +209,7 @@ export default function LevelPicker({
       {/* MODULES GRAMMAIRE */}
       <div>
         <div className="muted" style={{ fontSize: "12px", marginBottom: "8px" }}>
-          <strong>Grammaire & Vocabulaire</strong> · Renforcement
+          <strong>Grammaire & Vocabulaire</strong>
         </div>
         <div className="hstack" style={{ flexWrap: "wrap", gap: "12px" }}>
           <label htmlFor={`${id}-grammar`} className="hstack" style={{ cursor: "pointer" }}>
@@ -227,12 +219,7 @@ export default function LevelPicker({
               checked={sections.grammar}
               onChange={e => onSections({ ...sections, grammar: e.target.checked })}
             />
-            <span>
-              📚 <strong>Grammaire</strong>
-              <span className="badge" style={{ marginLeft: "8px", background: "#10b981", border: "none" }}>
-                Nouveau
-              </span>
-            </span>
+            <span>📚 Grammaire</span>
           </label>
 
           <label htmlFor={`${id}-conjugation`} className="hstack" style={{ cursor: "pointer" }}>
@@ -282,7 +269,7 @@ export default function LevelPicker({
       {/* MODULES PLANNING */}
       <div>
         <div className="muted" style={{ fontSize: "12px", marginBottom: "8px" }}>
-          <strong>Planning & Suivi</strong> · Organisation
+          <strong>Planning & Suivi</strong>
         </div>
         <div className="hstack" style={{ flexWrap: "wrap", gap: "12px" }}>
           <label htmlFor={`${id}-planning`} className="hstack" style={{ cursor: "pointer" }}>
@@ -292,16 +279,8 @@ export default function LevelPicker({
               checked={sections.planning}
               onChange={e => onSections({ ...sections, planning: e.target.checked })}
             />
-            <span>📅 Plan quotidien & Compteur</span>
+            <span>📅 Planning</span>
           </label>
-        </div>
-      </div>
-
-      {/* AIDE RAPIDE */}
-      <div className="card" style={{ background: "#0b1220", marginTop: "8px" }}>
-        <div className="muted" style={{ fontSize: "12px" }}>
-          <strong>💡 Configuration recommandée :</strong> Dashboard + Révision Intelligente + Grammaire + 2-3 autres modules. 
-          Pratique 20-30 minutes par jour pour des résultats rapides !
         </div>
       </div>
     </div>
