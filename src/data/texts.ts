@@ -1,9 +1,19 @@
-import { spainA1 } from "./texts/spainA1";
-import { spainA2 } from "./texts/spainA2";
+// src/data/texts/index.ts
+import type { ReadingItem } from "@/components/Reading";
+import { spainA1 } from "./spainA1";
+import { spainA2 } from "./spainA2";
+import { spainB1 } from "./spainB1";
+import { mexicoA1 } from "./mexicoA1";
+import { mexicoA2 } from "./mexicoA2";
+import { mexicoB1 } from "./mexicoB1";
+import { allCulturalTexts } from "./culturalTexts";
 
-export const textsByCountryLevel = {
-  spain: { A1: spainA1, A2: spainA2 }
-};
-
-// Ré-exporter allTexts depuis l'index
-export { allTexts } from "./texts/index";
+export const allTexts: ReadingItem[] = [
+  ...spainA1, 
+  ...spainA2, 
+  ...spainB1,
+  ...mexicoA1, 
+  ...mexicoA2, 
+  ...mexicoB1,
+  ...allCulturalTexts,
+];
