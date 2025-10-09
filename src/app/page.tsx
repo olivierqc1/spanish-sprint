@@ -22,241 +22,263 @@ import { cards } from "@/data/cards";
 import { exercises } from "@/data/exercices";
 import { grammarPoints } from "@/data/grammar";
 
+type Tab = "home" | "dashboard" | "smartReview" | "listening" | "reading" | "flashcards" | 
+           "conjugation" | "grammar" | "vocabQuiz" | "orthographe" | "dictee" | "badges" | "planning";
+
+const tabs: { id: Tab; label: string; icon: string; color: string }[] = [
+  { id: "home", label: "Accueil", icon: "🏠", color: "#60a5fa" },
+  { id: "dashboard", label: "Tableau de bord", icon: "📊", color: "#10b981" },
+  { id: "smartReview", label: "Révision Intelligente", icon: "🧠", color: "#f59e0b" },
+  { id: "listening", label: "Écoute", icon: "🎧", color: "#60a5fa" },
+  { id: "reading", label: "Lecture", icon: "📖", color: "#60a5fa" },
+  { id: "flashcards", label: "Flashcards", icon: "🎴", color: "#a78bfa" },
+  { id: "conjugation", label: "Conjugaison", icon: "⚡", color: "#f59e0b" },
+  { id: "grammar", label: "Grammaire", icon: "📚", color: "#f59e0b" },
+  { id: "vocabQuiz", label: "Quiz Vocab", icon: "🎯", color: "#10b981" },
+  { id: "orthographe", label: "Orthographe", icon: "✍️", color: "#34d399" },
+  { id: "dictee", label: "Dictée", icon: "🎤", color: "#34d399" },
+  { id: "badges", label: "Badges", icon: "🏆", color: "#fbbf24" },
+  { id: "planning", label: "Planning", icon: "📅", color: "#93a2b8" },
+];
+
 export default function HomePage() {
   const [level, setLevel] = useState<Level>("A1");
   const [country, setCountry] = useState<Country>("ALL");
-  const [sections, setSections] = useState({
-    listening: true,
-    reading: true,
-    flashcards: true,
-    orthographe: true,
-    dictee: true,
-    conjugation: true,
-    vocabQuiz: true,
-    smartReview: true,
-    planning: false,
-    grammar: true,        // ← NOUVEAU
-    dashboard: true,      // ← NOUVEAU
-    badges: false,        // ← NOUVEAU
-  });
+  const [activeTab, setActiveTab] = useState<Tab>("home");
 
   return (
     <main>
-      <h1 style={{ marginTop: 0 }}>🇪🇸 Spanish Sprint</h1>
-      <p className="muted">
-        <strong>Apprends l'espagnol</strong> avec des exercices variés : écoute, lecture, vocabulaire, conjugaison, dictée, 
-        <strong> révision intelligente</strong> et plus encore !
-      </p>
-
-      <LevelPicker
-        level={level}
-        onLevel={setLevel}
-        country={country}
-        onCountry={setCountry}
-        sections={sections}
-        onSections={setSections}
-      />
-
-      {/* SECTION DASHBOARD & BADGES */}
-      {(sections.dashboard || sections.badges) && (
-        <div className="section">
-          {sections.dashboard && <Dashboard />}
-          {sections.badges && <Badges />}
-        </div>
-      )}
-
-      {/* SECTION RÉVISION INTELLIGENTE (PRIORITAIRE) */}
-      {sections.smartReview && (
-        <SmartReview cards={cards} level={level} country={country} />
-      )}
-
-      {/* SECTION PLANNING & SUIVI */}
-      {sections.planning && (
-        <div className="section">
-          <DailyPlan />
-          <HourCounter />
-        </div>
-      )}
-
-      {/* SECTION PRINCIPALE - ÉCOUTE & LECTURE */}
-      <div className="section">
-        {sections.listening && (
-          <Listening items={audios} level={level} country={country} />
-        )}
-        {sections.reading && (
-          <Reading items={allTexts} level={level} country={country} />
-        )}
+      {/* EN-TÊTE */}
+      <div style={{ marginBottom: "24px" }}>
+        <h1 style={{ marginTop: 0 }}>🇪🇸 Spanish Sprint</h1>
+        <p className="muted">
+          <strong>Apprends l'espagnol</strong> avec des exercices variés : écoute, lecture, vocabulaire, conjugaison, révision intelligente et plus !
+        </p>
       </div>
 
-      {/* SECTION GRAMMAIRE & CONJUGAISON */}
-      <div className="section">
-        {sections.grammar && (
-          <GrammarExplorer points={grammarPoints} initialLevel={level as any} />
-        )}
-        {sections.conjugation && (
-          <Conjugation level={level} country={country} />
-        )}
-        {sections.vocabQuiz && (
-          <VocabQuiz level={level} />
-        )}
-      </div>
-
-      {/* SECTION ORTHOGRAPHE & DICTÉE */}
-      <div className="section">
-        {sections.orthographe && (
-          <Orthographe
-            bank={exercises.orthographe}
-            level={level}
-            country={country}
-          />
-        )}
-        {sections.dictee && (
-          <Dictee
-            items={exercises.dictee}
-            level={level}
-            country={country}
-          />
-        )}
-      </div>
-
-      {/* SECTION FLASHCARDS (pleine largeur) */}
-      {sections.flashcards && (
-        <Flashcards cards={cards} level={level} country={country} />
-      )}
-
-      {/* FOOTER INFO */}
-      <div className="card" style={{ marginTop: "32px", background: "#0b1220" }}>
-        <h3 style={{ margin: "0 0 12px 0" }}>📚 Comment utiliser Spanish Sprint</h3>
-        <div className="muted vstack" style={{ gap: "8px" }}>
-          <p><strong>1. Consulte ton tableau de bord</strong> 📊 pour voir tes statistiques et badges</p>
-          <p><strong>2. Commence par la Révision Intelligente</strong> 🧠 : Le système optimise automatiquement ta mémorisation !</p>
-          <p><strong>3. Pratique quotidiennement</strong> : 20-60 minutes par jour donnent les meilleurs résultats.</p>
-          <p><strong>4. Varie les exercices</strong> pour travailler toutes les compétences : compréhension orale, lecture, grammaire, vocabulaire.</p>
-          <p><strong>💡 Astuce</strong> : Utilise les raccourcis clavier (Entrée, Espace, Flèches) pour naviguer plus rapidement !</p>
-        </div>
-      </div>
-
-      {/* RACCOURCIS CLAVIER */}
-      <div className="card" style={{ background: "#1e3a5f", marginTop: "16px" }}>
-        <h3 style={{ margin: "0 0 12px 0" }}>⌨️ Raccourcis clavier</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px", fontSize: "14px" }}>
-          <div className="hstack" style={{ gap: "8px" }}>
-            <kbd style={{ padding: "2px 6px", background: "#0f1720", borderRadius: "4px", fontSize: "12px" }}>Entrée</kbd>
-            <span className="muted">Valider / Suivant</span>
+      {/* CONFIGURATION NIVEAU & PAYS */}
+      <div className="card" style={{ marginBottom: "16px" }}>
+        <div className="hstack" style={{ flexWrap: "wrap", gap: "16px", alignItems: "center" }}>
+          <div className="hstack">
+            <label className="muted" style={{ minWidth: "60px" }}>Niveau</label>
+            <select 
+              value={level} 
+              onChange={e => setLevel(e.target.value as Level)}
+              style={{ minWidth: "140px" }}
+            >
+              <option value="A1">A1 - Débutant</option>
+              <option value="A2">A2 - Élémentaire</option>
+              <option value="B1">B1 - Intermédiaire</option>
+              <option value="ALL">Tous niveaux</option>
+            </select>
           </div>
-          <div className="hstack" style={{ gap: "8px" }}>
-            <kbd style={{ padding: "2px 6px", background: "#0f1720", borderRadius: "4px", fontSize: "12px" }}>Espace</kbd>
-            <span className="muted">Retourner carte</span>
+
+          <div className="hstack">
+            <label className="muted" style={{ minWidth: "60px" }}>Pays</label>
+            <select 
+              value={country} 
+              onChange={e => setCountry(e.target.value as Country)}
+              style={{ minWidth: "140px" }}
+            >
+              <option value="ALL">🌍 Tous</option>
+              <option value="spain">🇪🇸 Espagne</option>
+              <option value="mexico">🇲🇽 Mexique</option>
+            </select>
           </div>
-          <div className="hstack" style={{ gap: "8px" }}>
-            <kbd style={{ padding: "2px 6px", background: "#0f1720", borderRadius: "4px", fontSize: "12px" }}>← →</kbd>
-            <span className="muted">Navigation</span>
-          </div>
-          <div className="hstack" style={{ gap: "8px" }}>
-            <kbd style={{ padding: "2px 6px", background: "#0f1720", borderRadius: "4px", fontSize: "12px" }}>1-5</kbd>
-            <span className="muted">Révision (qualité)</span>
+
+          <div className="muted" style={{ marginLeft: "auto", fontSize: "12px" }}>
+            💡 Sélectionne un onglet ci-dessous pour commencer
           </div>
         </div>
       </div>
 
-      {/* EXPLICATION RÉVISION INTELLIGENTE */}
-      <div className="card" style={{ background: "#1e3a5f", marginTop: "16px" }}>
-        <h3 style={{ margin: "0 0 12px 0" }}>🧠 Qu'est-ce que la Révision Intelligente ?</h3>
-        <div className="muted vstack" style={{ gap: "8px" }}>
-          <p>
-            Un système de <strong>répétition espacée</strong> qui analyse tes performances et programme automatiquement 
-            tes révisions au moment optimal.
-          </p>
-          <div className="hstack" style={{ gap: "8px", flexWrap: "wrap", marginTop: "8px" }}>
-            <div className="badge" style={{ padding: "8px 12px" }}>
-              📈 Rétention +150%
+      {/* NAVIGATION PAR ONGLETS */}
+      <div className="card" style={{ padding: "12px", marginBottom: "24px" }}>
+        <div style={{ 
+          display: "grid", 
+          gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", 
+          gap: "8px" 
+        }}>
+          {tabs.map(tab => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              style={{
+                background: activeTab === tab.id ? "#1e3a5f" : "#0f1720",
+                border: activeTab === tab.id ? `2px solid ${tab.color}` : "1px solid #334155",
+                padding: "12px 8px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: "4px",
+                cursor: "pointer",
+                transition: "all 0.2s",
+                fontSize: "14px"
+              }}
+            >
+              <span style={{ fontSize: "24px" }}>{tab.icon}</span>
+              <span style={{ fontSize: "12px", fontWeight: activeTab === tab.id ? "bold" : "normal" }}>
+                {tab.label}
+              </span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* CONTENU SELON L'ONGLET ACTIF */}
+      <div style={{ minHeight: "400px" }}>
+        
+        {activeTab === "home" && (
+          <div className="vstack" style={{ gap: "16px" }}>
+            
+            {/* ACCUEIL - QUICK START */}
+            <div className="card" style={{ background: "#1e3a5f" }}>
+              <h2 style={{ margin: "0 0 16px 0" }}>👋 Bienvenue sur Spanish Sprint !</h2>
+              <p className="muted">
+                Ton application complète pour apprendre l'espagnol de manière progressive et efficace.
+              </p>
+              <div style={{ marginTop: "16px" }}>
+                <strong>🚀 Par où commencer ?</strong>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px", marginTop: "12px" }}>
+                  <button 
+                    onClick={() => setActiveTab("dashboard")}
+                    className="card"
+                    style={{ cursor: "pointer", background: "#064e3b", border: "1px solid #10b981" }}
+                  >
+                    <div style={{ fontSize: "32px" }}>📊</div>
+                    <strong>Voir mes stats</strong>
+                    <div className="muted" style={{ fontSize: "12px" }}>Progression et badges</div>
+                  </button>
+                  <button 
+                    onClick={() => setActiveTab("smartReview")}
+                    className="card"
+                    style={{ cursor: "pointer", background: "#713f12", border: "1px solid #f59e0b" }}
+                  >
+                    <div style={{ fontSize: "32px" }}>🧠</div>
+                    <strong>Révision Intelligente</strong>
+                    <div className="muted" style={{ fontSize: "12px" }}>Mémorisation optimale</div>
+                  </button>
+                  <button 
+                    onClick={() => setActiveTab("conjugation")}
+                    className="card"
+                    style={{ cursor: "pointer", background: "#1e3a5f", border: "1px solid #60a5fa" }}
+                  >
+                    <div style={{ fontSize: "32px" }}>⚡</div>
+                    <strong>Conjugaison</strong>
+                    <div className="muted" style={{ fontSize: "12px" }}>Apprendre progressivement</div>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div className="badge" style={{ padding: "8px 12px" }}>
-              ⏱️ Temps économisé 50%
+
+            {/* STATISTIQUES RAPIDES */}
+            <div className="card" style={{ background: "#0b1220" }}>
+              <h3 style={{ margin: "0 0 12px 0" }}>📊 Contenu disponible</h3>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", gap: "16px", textAlign: "center" }}>
+                <div>
+                  <div style={{ fontSize: "28px", fontWeight: "bold", color: "#60a5fa" }}>55+</div>
+                  <div className="muted" style={{ fontSize: "12px" }}>Audios</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: "28px", fontWeight: "bold", color: "#60a5fa" }}>50+</div>
+                  <div className="muted" style={{ fontSize: "12px" }}>Textes</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: "28px", fontWeight: "bold", color: "#60a5fa" }}>200+</div>
+                  <div className="muted" style={{ fontSize: "12px" }}>Flashcards</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: "28px", fontWeight: "bold", color: "#60a5fa" }}>67</div>
+                  <div className="muted" style={{ fontSize: "12px" }}>Conjugaisons</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: "28px", fontWeight: "bold", color: "#60a5fa" }}>40+</div>
+                  <div className="muted" style={{ fontSize: "12px" }}>Quiz vocab</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: "28px", fontWeight: "bold", color: "#60a5fa" }}>100+</div>
+                  <div className="muted" style={{ fontSize: "12px" }}>Grammaire</div>
+                </div>
+              </div>
             </div>
-            <div className="badge" style={{ padding: "8px 12px" }}>
-              🎯 Mémorisation ciblée
+
+            {/* ROUTINE RECOMMANDÉE */}
+            <div className="card">
+              <h3 style={{ margin: "0 0 12px 0" }}>🎓 Routine d'apprentissage recommandée</h3>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "16px" }}>
+                <div className="card" style={{ background: "#1f2a37" }}>
+                  <strong style={{ color: "#60a5fa" }}>☀️ Matin (15-20 min)</strong>
+                  <ul style={{ fontSize: "14px", marginTop: "8px", paddingLeft: "20px" }}>
+                    <li>📊 Consulter dashboard</li>
+                    <li>🧠 Révision intelligente</li>
+                    <li>🎧 2-3 exercices d'écoute</li>
+                  </ul>
+                </div>
+                <div className="card" style={{ background: "#1f2a37" }}>
+                  <strong style={{ color: "#f59e0b" }}>🌆 Après-midi (15-20 min)</strong>
+                  <ul style={{ fontSize: "14px", marginTop: "8px", paddingLeft: "20px" }}>
+                    <li>⚡ Conjugaison</li>
+                    <li>📚 Grammaire</li>
+                    <li>🎯 Quiz vocabulaire</li>
+                  </ul>
+                </div>
+                <div className="card" style={{ background: "#1f2a37" }}>
+                  <strong style={{ color: "#10b981" }}>🌙 Soir (10 min)</strong>
+                  <ul style={{ fontSize: "14px", marginTop: "8px", paddingLeft: "20px" }}>
+                    <li>🧠 Révision rapide</li>
+                    <li>🎴 Flashcards</li>
+                    <li>🏆 Vérifier badges</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+
+            {/* RACCOURCIS CLAVIER */}
+            <div className="card" style={{ background: "#1e3a5f" }}>
+              <h3 style={{ margin: "0 0 12px 0" }}>⌨️ Raccourcis clavier</h3>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "12px", fontSize: "14px" }}>
+                <div className="hstack" style={{ gap: "8px" }}>
+                  <kbd style={{ padding: "4px 8px", background: "#0f1720", borderRadius: "4px", fontSize: "12px" }}>Entrée</kbd>
+                  <span className="muted">Valider / Suivant</span>
+                </div>
+                <div className="hstack" style={{ gap: "8px" }}>
+                  <kbd style={{ padding: "4px 8px", background: "#0f1720", borderRadius: "4px", fontSize: "12px" }}>Espace</kbd>
+                  <span className="muted">Retourner carte</span>
+                </div>
+                <div className="hstack" style={{ gap: "8px" }}>
+                  <kbd style={{ padding: "4px 8px", background: "#0f1720", borderRadius: "4px", fontSize: "12px" }}>← →</kbd>
+                  <span className="muted">Navigation</span>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <p style={{ marginTop: "12px" }}>
-            <strong>Comment ça marche ?</strong> Les cartes difficiles reviennent souvent, les cartes faciles s'espacent. 
-            Tu révises juste avant d'oublier = mémorisation maximale !
-          </p>
-        </div>
+        )}
+
+        {activeTab === "dashboard" && <Dashboard />}
+        {activeTab === "smartReview" && <SmartReview cards={cards} level={level} country={country} />}
+        {activeTab === "listening" && <Listening items={audios} level={level} country={country} />}
+        {activeTab === "reading" && <Reading items={allTexts} level={level} country={country} />}
+        {activeTab === "flashcards" && <Flashcards cards={cards} level={level} country={country} />}
+        {activeTab === "conjugation" && <Conjugation level={level} country={country} />}
+        {activeTab === "grammar" && <GrammarExplorer points={grammarPoints} initialLevel={level as any} />}
+        {activeTab === "vocabQuiz" && <VocabQuiz level={level} />}
+        {activeTab === "orthographe" && <Orthographe bank={exercises.orthographe} level={level} country={country} />}
+        {activeTab === "dictee" && <Dictee items={exercises.dictee} level={level} country={country} />}
+        {activeTab === "badges" && <Badges />}
+        {activeTab === "planning" && (
+          <div className="section">
+            <DailyPlan />
+            <HourCounter />
+          </div>
+        )}
+
       </div>
 
-      {/* STATISTIQUES */}
-      <div className="card" style={{ textAlign: "center", background: "#1e3a5f", marginTop: "16px" }}>
-        <h3 style={{ margin: "0 0 12px 0" }}>📊 Contenu disponible</h3>
-        <div className="hstack" style={{ justifyContent: "space-around", flexWrap: "wrap" }}>
-          <div>
-            <div style={{ fontSize: "32px", fontWeight: "bold", color: "#60a5fa" }}>55+</div>
-            <div className="muted">Audios</div>
-          </div>
-          <div>
-            <div style={{ fontSize: "32px", fontWeight: "bold", color: "#60a5fa" }}>50+</div>
-            <div className="muted">Textes</div>
-          </div>
-          <div>
-            <div style={{ fontSize: "32px", fontWeight: "bold", color: "#60a5fa" }}>200+</div>
-            <div className="muted">Flashcards</div>
-          </div>
-          <div>
-            <div style={{ fontSize: "32px", fontWeight: "bold", color: "#60a5fa" }}>67</div>
-            <div className="muted">Conjugaisons</div>
-          </div>
-          <div>
-            <div style={{ fontSize: "32px", fontWeight: "bold", color: "#60a5fa" }}>40+</div>
-            <div className="muted">Quiz vocab</div>
-          </div>
-          <div>
-            <div style={{ fontSize: "32px", fontWeight: "bold", color: "#60a5fa" }}>100+</div>
-            <div className="muted">Points grammaire</div>
-          </div>
-        </div>
-      </div>
-
-      {/* CONSEILS D'UTILISATION */}
-      <div className="card" style={{ background: "#0b1220", marginTop: "16px" }}>
-        <h3 style={{ margin: "0 0 12px 0" }}>🎓 Routine d'apprentissage recommandée</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "16px" }}>
-          <div className="card" style={{ background: "#1f2a37" }}>
-            <strong style={{ color: "#60a5fa" }}>☀️ Matin (15-20 min)</strong>
-            <ul style={{ fontSize: "14px", marginTop: "8px", paddingLeft: "20px" }}>
-              <li>📊 Consulter dashboard</li>
-              <li>🧠 Révision intelligente (priorité)</li>
-              <li>🎧 2-3 exercices d'écoute</li>
-              <li>📖 1-2 textes de lecture</li>
-            </ul>
-          </div>
-          <div className="card" style={{ background: "#1f2a37" }}>
-            <strong style={{ color: "#f59e0b" }}>🌆 Midi/Après-midi (15-20 min)</strong>
-            <ul style={{ fontSize: "14px", marginTop: "8px", paddingLeft: "20px" }}>
-              <li>⚡ Conjugaison (5-10 verbes)</li>
-              <li>📚 Points de grammaire</li>
-              <li>🎯 Quiz vocabulaire</li>
-              <li>✍️ Orthographe/Dictée</li>
-            </ul>
-          </div>
-          <div className="card" style={{ background: "#1f2a37" }}>
-            <strong style={{ color: "#10b981" }}>🌙 Soir (10 min)</strong>
-            <ul style={{ fontSize: "14px", marginTop: "8px", paddingLeft: "20px" }}>
-              <li>🧠 Révision rapide (5 min)</li>
-              <li>🎴 Flashcards (5 min)</li>
-              <li>🏆 Vérifier nouveaux badges</li>
-              <li>📊 Consulter tes stats</li>
-            </ul>
-          </div>
-        </div>
-        <div className="muted" style={{ marginTop: "16px", textAlign: "center", fontSize: "14px" }}>
-          <strong>💡 Règle d'or :</strong> Régularité &gt; Intensité | 20 min/jour &gt; 3h le dimanche
-        </div>
-      </div>
-
-      {/* VERSION */}
-      <div style={{ textAlign: "center", marginTop: "32px", padding: "16px", opacity: 0.5, fontSize: "12px" }}>
-        Spanish Sprint v3.0 · Révision intelligente (SRS) + Dashboard + Badges + Grammaire + Raccourcis clavier 🚀
+      {/* FOOTER */}
+      <div style={{ textAlign: "center", marginTop: "48px", padding: "16px", opacity: 0.5, fontSize: "12px" }}>
+        Spanish Sprint v3.1 · Navigation par onglets + Flashcards améliorées 🚀
       </div>
     </main>
   );
-      }
+}
