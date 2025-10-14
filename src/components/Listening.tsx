@@ -1,70 +1,130 @@
 "use client";
-import { useState, useMemo } from "react";
-import type { Level } from "./LevelPicker";
 
-export type AudioItem = {
-  id: string;
-  level: "A1" | "A2" | "B1" | "B2" | "C1" | "C2"; // ← Accepter tous les niveaux
-  country: "Espagne" | "Mexique";
+import { useState } from "react";
+
+type Level = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
+type Country = "ALL" | "spain" | "mexico" | "argentina";
+
+interface AudioItem {
+  id: number;
   title: string;
-  src: string; // URL ou data:audio
-  questions: { q: string }[];
-  tip?: string;
-};
+  audioUrl: string;
+  transcript: string;
+  level: Level;
+  country: Country;
+}
 
-export default function Listening({
-  items, level, country
-}: {
+interface ListeningProps {
   items: AudioItem[];
   level: Level;
-  country: "ALL" | "spain" | "mexico";
-}) {
-  const [idx, setIdx] = useState(0);
-  const [answers, setAnswers] = useState<string[]>([]);
-  const filtered = useMemo(()=>{
-    let pool = items;
-    // Filtrer par niveau si ce n'est pas "ALL"
-    if (level!=="ALL") {
-      pool = pool.filter(i=>i.level===level);
-    }
-    // Filtrer par pays
-    if (country!=="ALL") {
-      pool = pool.filter(i=>country==="spain"? i.country==="Espagne": i.country==="Mexique");
-    }
-    return pool;
-  },[items, level, country]);
-  const cur = filtered[idx] ?? null;
+  country: Country;
+}
+
+export default function Listening({ items, level, country }: ListeningProps) {
+  const [showTranscript, setShowTranscript] = useState<number | null>(null);
+
+  const filteredItems = items.filter((item) => {
+    const levelMatch = item.level === level;
+    const countryMatch = country === "ALL" || item.country === country;
+    return levelMatch && countryMatch;
+  });
 
   return (
-    <div className="card vstack">
-      <div className="hstack" style={{justifyContent:"space-between"}}>
-        <strong>Écoute & compréhension</strong>
-        <button onClick={()=>setIdx(Math.floor(Math.random()*Math.max(filtered.length,1)))}>Nouvel audio</button>
-      </div>
-      {!cur ? <div>Aucun audio pour ce filtre.</div> : (
-        <div className="vstack">
-          <div className="hstack" style={{justifyContent:"space-between"}}>
-            <h3 style={{margin:0}}>{cur.title}</h3>
-            <span className="badge">{cur.country} · {cur.level}</span>
-          </div>
-          <audio controls style={{width:"100%"}}>
-            <source src={cur.src} type="audio/mpeg" />
-          </audio>
-
-          <strong>Questions de compréhension</strong>
-          {cur.questions.map((qq,i)=>(
-            <input key={i} placeholder="Ta réponse en espagnol"
-              value={answers[i] ?? ""} onChange={e=>{
-                const a=[...answers]; a[i]=e.target.value; setAnswers(a);
-              }} />
+    <div>
+      <h2 style={{ marginBottom: "20px" }}>Exercices d'écoute</h2>
+      {filteredItems.length === 0 ? (
+        <p style={{ textAlign: "center", color: "#666" }}>
+          Aucun exercice disponible pour ce niveau et ce pays.
+        </p>
+      ) : (
+        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+          {filteredItems.map((item) => (
+            <div
+              key={item.id}
+              style={{
+                border: "1px solid #ddd",
+                borderRadius: "8px",
+                padding: "20px",
+                backgroundColor: "#f9f9f9",
+              }}
+            >
+              <h3 style={{ marginBottom: "10px" }}>{item.title}</h3>
+              <div style={{ marginBottom: "10px" }}>
+                <span
+                  style={{
+                    display: "inline-block",
+                    padding: "4px 8px",
+                    backgroundColor: "#007bff",
+                    color: "white",
+                    borderRadius: "4px",
+                    fontSize: "12px",
+                    marginRight: "8px",
+                  }}
+                >
+                  {item.level}
+                </span>
+                <span
+                  style={{
+                    display: "inline-block",
+                    padding: "4px 8px",
+                    backgroundColor: "#28a745",
+                    color: "white",
+                    borderRadius: "4px",
+                    fontSize: "12px",
+                  }}
+                >
+                  {item.country === "spain"
+                    ? "🇪🇸 Espagne"
+                    : item.country === "mexico"
+                    ? "🇲🇽 Mexique"
+                    : item.country === "argentina"
+                    ? "🇦🇷 Argentine"
+                    : "🌍 Tous"}
+                </span>
+              </div>
+              <audio
+                controls
+                style={{ width: "100%", marginBottom: "10px" }}
+                src={item.audioUrl}
+              >
+                Votre navigateur ne supporte pas l'élément audio.
+              </audio>
+              <button
+                onClick={() =>
+                  setShowTranscript(
+                    showTranscript === item.id ? null : item.id
+                  )
+                }
+                style={{
+                  padding: "8px 16px",
+                  backgroundColor: "#6c757d",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "5px",
+                  cursor: "pointer",
+                }}
+              >
+                {showTranscript === item.id
+                  ? "Masquer la transcription"
+                  : "Voir la transcription"}
+              </button>
+              {showTranscript === item.id && (
+                <div
+                  style={{
+                    marginTop: "15px",
+                    padding: "15px",
+                    backgroundColor: "#fff",
+                    borderRadius: "5px",
+                    border: "1px solid #ddd",
+                  }}
+                >
+                  <p style={{ margin: 0 }}>{item.transcript}</p>
+                </div>
+              )}
+            </div>
           ))}
-          <div className="vstack">
-            <strong>Dictée / Transcription</strong>
-            <textarea rows={5} placeholder="Transcris ce que tu entends..." />
-            <div className="muted">{cur.tip ?? "Astuce : écoute en plusieurs passes, utilise pause/retour."}</div>
-          </div>
         </div>
       )}
     </div>
   );
-}
+          }
