@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Dashboard from "@/components/Dashboard";
 import Listening from "@/components/Listening";
 import Reading from "@/components/Reading";
 import ConversationPractice from "@/components/ConversationPractice";
@@ -12,7 +13,7 @@ type Level = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
 type Country = "ALL" | "spain" | "mexico" | "argentina";
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("listening");
+  const [activeTab, setActiveTab] = useState("dashboard");
   const [level, setLevel] = useState<Level>("A1");
   const [country, setCountry] = useState<Country>("ALL");
 
@@ -171,6 +172,20 @@ export default function Home() {
         }}
       >
         <button
+          onClick={() => setActiveTab("dashboard")}
+          style={{
+            padding: "10px 20px",
+            backgroundColor: activeTab === "dashboard" ? "#007bff" : "#f0f0f0",
+            color: activeTab === "dashboard" ? "white" : "black",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+            fontSize: "16px",
+          }}
+        >
+          📊 Tableau de bord
+        </button>
+        <button
           onClick={() => setActiveTab("listening")}
           style={{
             padding: "10px 20px",
@@ -258,6 +273,7 @@ export default function Home() {
       </div>
 
       <div style={{ minHeight: "400px" }}>
+        {activeTab === "dashboard" && <Dashboard />}
         {activeTab === "listening" && <Listening items={audios} level={level} country={country} />}
         {activeTab === "reading" && <Reading items={allTexts} level={level} country={country} />}
         {activeTab === "conversations" && <ConversationPractice level={level} country={country} />}
