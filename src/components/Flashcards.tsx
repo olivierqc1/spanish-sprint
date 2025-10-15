@@ -5,7 +5,7 @@ import { useState } from "react";
 type Level = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
 type Country = "ALL" | "spain" | "mexico" | "argentina";
 
-interface Card {
+export interface Card {
   id: number;
   front: string;
   back: string;
