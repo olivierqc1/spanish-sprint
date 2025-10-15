@@ -5,6 +5,8 @@ import Listening from "@/components/Listening";
 import Reading from "@/components/Reading";
 import ConversationPractice from "@/components/ConversationPractice";
 import Flashcards from "@/components/Flashcards";
+import SmartReview from "@/components/SmartReview";
+import Badges from "@/components/Badges";
 
 type Level = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
 type Country = "ALL" | "spain" | "mexico" | "argentina";
@@ -225,6 +227,34 @@ export default function Home() {
         >
           🗂️ Flashcards
         </button>
+        <button
+          onClick={() => setActiveTab("smartreview")}
+          style={{
+            padding: "10px 20px",
+            backgroundColor: activeTab === "smartreview" ? "#007bff" : "#f0f0f0",
+            color: activeTab === "smartreview" ? "white" : "black",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+            fontSize: "16px",
+          }}
+        >
+          🧠 Révision
+        </button>
+        <button
+          onClick={() => setActiveTab("badges")}
+          style={{
+            padding: "10px 20px",
+            backgroundColor: activeTab === "badges" ? "#007bff" : "#f0f0f0",
+            color: activeTab === "badges" ? "white" : "black",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+            fontSize: "16px",
+          }}
+        >
+          🏅 Badges
+        </button>
       </div>
 
       <div style={{ minHeight: "400px" }}>
@@ -232,6 +262,8 @@ export default function Home() {
         {activeTab === "reading" && <Reading items={allTexts} level={level} country={country} />}
         {activeTab === "conversations" && <ConversationPractice level={level} country={country} />}
         {activeTab === "flashcards" && <Flashcards cards={cards} level={level} country={country} />}
+        {activeTab === "smartreview" && <SmartReview cards={cards} level={level} country={country} />}
+        {activeTab === "badges" && <Badges />}
       </div>
     </div>
   );
