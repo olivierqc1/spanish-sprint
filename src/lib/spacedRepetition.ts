@@ -1,202 +1,83 @@
-// src/lib/spacedRepetition.ts
+import type { CardReviewState } from "@/store/reviewStore";
+
 /**
- * Système de répétition espacée (Spaced Repetition System - SRS)
- * Basé sur l'algorithme SM-2 simplifié
+ * Qualité de la réponse (basé sur l'algorithme SM-2)
+ * 0 = Oublié complètement
+ * 1 = Réponse incorrecte mais familière
+ * 2 = Réponse correcte avec difficulté
+ * 3 = Réponse correcte avec hésitation
+ * 4 = Réponse correcte facilement
+ * 5 = Réponse correcte instantanément
  */
-
-export type CardReview = {
-  cardId: string;
-  easiness: number;        // Facteur de facilité (1.3 à 2.5)
-  interval: number;        // Intervalle en jours
-  repetitions: number;     // Nombre de répétitions réussies
-  nextReview: Date;        // Date de prochaine révision
-  lastReviewed: Date;      // Dernière révision
-  totalReviews: number;    // Total de révisions
-  successRate: number;     // Taux de réussite (0-100)
-};
-
 export type ReviewQuality = 0 | 1 | 2 | 3 | 4 | 5;
-// 0: Totalement oublié
-// 1: Réponse incorrecte mais reconnaissable
-// 2: Réponse incorrecte mais facile à rappeler
-// 3: Réponse correcte mais difficile
-// 4: Réponse correcte avec hésitation
-// 5: Réponse correcte et facile
 
 /**
- * Initialise une nouvelle carte pour la révision espacée
- */
-export function initializeCard(cardId: string): CardReview {
-  return {
-    cardId,
-    easiness: 2.5,
-    interval: 0,
-    repetitions: 0,
-    nextReview: new Date(),
-    lastReviewed: new Date(),
-    totalReviews: 0,
-    successRate: 0,
-  };
-}
-
-/**
- * Calcule la prochaine révision basée sur la qualité de la réponse
- * Algorithme SM-2 modifié
+ * Calcule le prochain état de révision en utilisant l'algorithme SM-2
+ * @param currentState État actuel de la carte
+ * @param quality Qualité de la réponse (0-5)
+ * @returns Nouvel état de révision
  */
 export function calculateNextReview(
-  card: CardReview,
+  currentState: CardReviewState,
   quality: ReviewQuality
-): CardReview {
+): CardReviewState {
   const now = new Date();
-  const isCorrect = quality >= 3;
+  let { repetitions, easeFactor, interval } = currentState;
 
-  // Mettre à jour le facteur de facilité
-  let newEasiness = card.easiness + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
-  newEasiness = Math.max(1.3, Math.min(2.5, newEasiness)); // Limiter entre 1.3 et 2.5
+  // Calculer le nouveau facteur de facilité
+  easeFactor = Math.max(
+    1.3,
+    easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02))
+  );
 
-  let newInterval: number;
-  let newRepetitions: number;
-
-  if (!isCorrect) {
-    // Si incorrect, recommencer à 0
-    newInterval = 0;
-    newRepetitions = 0;
+  // Si la qualité est inférieure à 3, recommencer à zéro
+  if (quality < 3) {
+    repetitions = 0;
+    interval = 0;
   } else {
-    // Si correct, augmenter l'intervalle
-    if (card.repetitions === 0) {
-      newInterval = 1; // 1 jour
-    } else if (card.repetitions === 1) {
-      newInterval = 6; // 6 jours
+    repetitions += 1;
+
+    // Calculer le nouvel intervalle
+    if (repetitions === 1) {
+      interval = 1;
+    } else if (repetitions === 2) {
+      interval = 6;
     } else {
-      newInterval = Math.round(card.interval * newEasiness);
+      interval = Math.round(interval * easeFactor);
     }
-    newRepetitions = card.repetitions + 1;
   }
 
-  // Calculer la date de prochaine révision
+  // Calculer la date de la prochaine révision
   const nextReview = new Date(now);
-  nextReview.setDate(nextReview.getDate() + newInterval);
-
-  // Calculer le taux de réussite
-  const totalSuccess = (card.successRate * card.totalReviews + (isCorrect ? 100 : 0));
-  const newSuccessRate = totalSuccess / (card.totalReviews + 1);
+  nextReview.setDate(nextReview.getDate() + interval);
 
   return {
-    ...card,
-    easiness: newEasiness,
-    interval: newInterval,
-    repetitions: newRepetitions,
-    nextReview,
-    lastReviewed: now,
-    totalReviews: card.totalReviews + 1,
-    successRate: newSuccessRate,
+    repetitions,
+    easeFactor,
+    interval,
+    nextReview: nextReview.toISOString(),
+    lastReviewed: now.toISOString(),
   };
 }
 
 /**
- * Détermine si une carte doit être révisée aujourd'hui
+ * Vérifie si une carte doit être révisée aujourd'hui
+ * @param cardState État de la carte
+ * @returns true si la carte doit être révisée
  */
-export function isDueForReview(card: CardReview): boolean {
-  return new Date() >= card.nextReview;
+export function shouldReviewToday(cardState: CardReviewState | undefined): boolean {
+  if (!cardState) return true; // Nouvelle carte
+  return new Date(cardState.nextReview) <= new Date();
 }
 
 /**
- * Filtre et trie les cartes à réviser
+ * Retourne le nombre de jours avant la prochaine révision
+ * @param cardState État de la carte
+ * @returns Nombre de jours (peut être négatif si en retard)
  */
-export function getCardsToReview(cards: CardReview[], limit?: number): CardReview[] {
-  const dueCards = cards.filter(isDueForReview);
-  
-  // Trier par priorité :
-  // 1. Cartes en retard (plus anciennes d'abord)
-  // 2. Nouvelles cartes (jamais révisées)
-  // 3. Cartes avec faible taux de réussite
-  const sorted = dueCards.sort((a, b) => {
-    // Nouvelles cartes en priorité
-    if (a.totalReviews === 0 && b.totalReviews > 0) return -1;
-    if (b.totalReviews === 0 && a.totalReviews > 0) return 1;
-
-    // Ensuite par date de révision (plus ancienne d'abord)
-    const dateCompare = a.nextReview.getTime() - b.nextReview.getTime();
-    if (dateCompare !== 0) return dateCompare;
-
-    // Finalement par taux de réussite (plus faible d'abord)
-    return a.successRate - b.successRate;
-  });
-
-  return limit ? sorted.slice(0, limit) : sorted;
-}
-
-/**
- * Obtient les statistiques de révision
- */
-export function getReviewStats(cards: CardReview[]) {
+export function daysUntilNextReview(cardState: CardReviewState): number {
   const now = new Date();
-  
-  const due = cards.filter(isDueForReview).length;
-  const newCards = cards.filter(c => c.totalReviews === 0).length;
-  const learning = cards.filter(c => c.repetitions > 0 && c.repetitions < 3).length;
-  const mature = cards.filter(c => c.repetitions >= 3).length;
-  
-  const avgSuccessRate = cards.length > 0
-    ? cards.reduce((sum, c) => sum + c.successRate, 0) / cards.length
-    : 0;
-
-  // Cartes à revoir dans les prochains jours
-  const tomorrow = new Date(now);
-  tomorrow.setDate(tomorrow.getDate() + 1);
-  const nextWeek = new Date(now);
-  nextWeek.setDate(nextWeek.getDate() + 7);
-
-  const dueTomorrow = cards.filter(c => c.nextReview >= now && c.nextReview < tomorrow).length;
-  const dueThisWeek = cards.filter(c => c.nextReview >= now && c.nextReview < nextWeek).length;
-
-  return {
-    total: cards.length,
-    due,
-    newCards,
-    learning,
-    mature,
-    avgSuccessRate: Math.round(avgSuccessRate),
-    dueTomorrow,
-    dueThisWeek,
-  };
-}
-
-/**
- * Exporte les données de révision (pour sauvegarde)
- */
-export function exportReviewData(cards: CardReview[]): string {
-  return JSON.stringify(cards);
-}
-
-/**
- * Importe les données de révision (depuis sauvegarde)
- */
-export function importReviewData(jsonData: string): CardReview[] {
-  try {
-    const data = JSON.parse(jsonData);
-    return data.map((card: any) => ({
-      ...card,
-      nextReview: new Date(card.nextReview),
-      lastReviewed: new Date(card.lastReviewed),
-    }));
-  } catch (error) {
-    console.error("Erreur d'importation:", error);
-    return [];
-  }
-}
-
-/**
- * Suggestion de session de révision quotidienne
- */
-export function getSuggestedDailySession(
-  cards: CardReview[],
-  maxNewCards: number = 10,
-  maxReviews: number = 50
-): CardReview[] {
-  const dueCards = getCardsToReview(cards);
-  const newCards = dueCards.filter(c => c.totalReviews === 0).slice(0, maxNewCards);
-  const reviewCards = dueCards.filter(c => c.totalReviews > 0).slice(0, maxReviews - newCards.length);
-  
-  return [...newCards, ...reviewCards];
+  const nextReview = new Date(cardState.nextReview);
+  const diffTime = nextReview.getTime() - now.getTime();
+  return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 }
