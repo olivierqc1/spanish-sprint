@@ -1,62 +1,86 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { calculateNextReview, type ReviewQuality } from "@/lib/spacedRepetition";
 
-export interface CardReviewState {
-  repetitions: number;
-  easeFactor: number;
-  interval: number;
-  nextReview: string;
-  lastReviewed: string;
+interface ProgressStore {
+  currentStreak: number; // Nombre de jours consécutifs d'étude
+  longestStreak: number; // Plus longue série de jours
+  totalStudyTime: number; // Temps total d'étude en minutes
+  completedLessons: number; // Nombre de leçons complétées
+  lastStudyDate: string | null; // Date de la dernière étude
+  
+  // Actions
+  updateStreak: () => void;
+  addStudyTime: (minutes: number) => void;
+  completeLesson: () => void;
+  resetProgress: () => void;
 }
 
-interface ReviewStore {
-  reviewState: Record<number, CardReviewState>;
-  recordReview: (cardId: number, quality: ReviewQuality) => void;
-  resetCard: (cardId: number) => void;
-  resetAll: () => void;
-}
-
-export const useReviewStore = create<ReviewStore>()(
+export const useProgressStore = create<ProgressStore>()(
   persist(
-    (set) => ({
-      reviewState: {},
+    (set, get) => ({
+      currentStreak: 0,
+      longestStreak: 0,
+      totalStudyTime: 0,
+      completedLessons: 0,
+      lastStudyDate: null,
 
-      recordReview: (cardId: number, quality: ReviewQuality) => {
-        set((state) => {
-          const currentState = state.reviewState[cardId] || {
-            repetitions: 0,
-            easeFactor: 2.5,
-            interval: 0,
-            nextReview: new Date().toISOString(),
-            lastReviewed: new Date().toISOString(),
-          };
+      updateStreak: () => {
+        const today = new Date().toDateString();
+        const lastDate = get().lastStudyDate;
 
-          const newState = calculateNextReview(currentState, quality);
+        if (!lastDate) {
+          // Première étude
+          set({ currentStreak: 1, longestStreak: 1, lastStudyDate: today });
+        } else if (lastDate === today) {
+          // Déjà étudié aujourd'hui, ne rien faire
+          return;
+        } else {
+          const lastStudy = new Date(lastDate);
+          const todayDate = new Date(today);
+          const diffTime = todayDate.getTime() - lastStudy.getTime();
+          const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
-          return {
-            reviewState: {
-              ...state.reviewState,
-              [cardId]: newState,
-            },
-          };
-        });
+          if (diffDays === 1) {
+            // Jour consécutif
+            const newStreak = get().currentStreak + 1;
+            set({
+              currentStreak: newStreak,
+              longestStreak: Math.max(newStreak, get().longestStreak),
+              lastStudyDate: today,
+            });
+          } else {
+            // Série brisée
+            set({ currentStreak: 1, lastStudyDate: today });
+          }
+        }
       },
 
-      resetCard: (cardId: number) => {
-        set((state) => {
-          const newState = { ...state.reviewState };
-          delete newState[cardId];
-          return { reviewState: newState };
-        });
+      addStudyTime: (minutes: number) => {
+        set((state) => ({ 
+          totalStudyTime: state.totalStudyTime + minutes 
+        }));
+        get().updateStreak();
       },
 
-      resetAll: () => {
-        set({ reviewState: {} });
+      completeLesson: () => {
+        set((state) => ({ 
+          completedLessons: state.completedLessons + 1 
+        }));
+        get().updateStreak();
+      },
+
+      resetProgress: () => {
+        set({
+          currentStreak: 0,
+          longestStreak: 0,
+          totalStudyTime: 0,
+          completedLessons: 0,
+          lastStudyDate: null,
+        });
       },
     }),
     {
-      name: "spanish-sprint-review-storage",
+      name: "spanish-sprint-progress-storage",
     }
   )
 );
