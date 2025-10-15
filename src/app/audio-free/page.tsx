@@ -131,7 +131,7 @@ export default function AudioManagerFree() {
                         country === 'Argentine' ? 'es-ar' : 'es-co';
       
       // Clé API gratuite VoiceRSS (tu peux t'inscrire sur voicerss.org pour la tienne)
-      const apiKey = 'demo'; // Remplace par ta clé gratuite de voicerss.org
+      const apiKey = '688836a36b064ad0a1e9c55be34ac08b'
       
       const url = `https://api.voicerss.org/?key=${apiKey}&hl=${voiceCode}&src=${encodeURIComponent(text)}&c=MP3&f=44khz_16bit_stereo`;
       
