@@ -1,292 +1,206 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
-import { useReviewStore } from "@/store/reviewStore";
-import { useProgressStore } from "@/state/progress";
 
-type Badge = {
+import { useState, useEffect } from "react";
+import { useReviewStore } from "@/store/reviewStore";
+import { useProgressStore } from "@/store/progressStore";
+
+interface Badge {
   id: string;
-  icon: string;
-  title: string;
+  name: string;
   description: string;
-  category: "streak" | "cards" | "study" | "mastery" | "special";
+  icon: string;
   requirement: number;
   unlocked: boolean;
-  progress: number;
-  rarity: "common" | "rare" | "epic" | "legendary";
-};
+}
+
+type BadgeCategory = "reviews" | "streak" | "studyTime" | "lessons";
 
 export default function Badges() {
   const { reviews } = useReviewStore();
   const { currentStreak, totalStudyTime, completedLessons } = useProgressStore();
   const [showUnlockedAnimation, setShowUnlockedAnimation] = useState<string | null>(null);
 
-  // Calculer les statistiques
-  const stats = useMemo(() => {
-    const allReviews = Object.values(reviews);
-    const mature = allReviews.filter(r => r.repetitions >= 6).length;
-    const totalReviews = allReviews.reduce((sum, r) => sum + r.totalReviews, 0);
-    const perfectCards = allReviews.filter(r => r.successRate === 100 && r.totalReviews >= 5).length;
-    
-    return {
-      mature,
-      totalReviews,
-      perfectCards,
-      totalCards: allReviews.length,
-      hoursStudied: Math.floor(totalStudyTime / 60)
-    };
-  }, [reviews, totalStudyTime]);
-
-  // Définir tous les badges
-  const badges = useMemo((): Badge[] => {
-    const allBadges: Omit<Badge, "unlocked" | "progress">[] = [
-      // STREAK
-      { id: "streak_3", icon: "🔥", title: "Première flamme", description: "3 jours consécutifs", category: "streak", requirement: 3, rarity: "common" },
-      { id: "streak_7", icon: "🔥", title: "Une semaine !", description: "7 jours consécutifs", category: "streak", requirement: 7, rarity: "rare" },
-      { id: "streak_30", icon: "🔥", title: "Mois entier", description: "30 jours consécutifs", category: "streak", requirement: 30, rarity: "epic" },
-      { id: "streak_100", icon: "🔥", title: "Centurion", description: "100 jours consécutifs", category: "streak", requirement: 100, rarity: "legendary" },
-
-      // CARTES
-      { id: "cards_10", icon: "🎴", title: "Collectionneur", description: "10 cartes maîtrisées", category: "cards", requirement: 10, rarity: "common" },
-      { id: "cards_50", icon: "🎴", title: "Expert", description: "50 cartes maîtrisées", category: "cards", requirement: 50, rarity: "rare" },
-      { id: "cards_100", icon: "🎴", title: "Maître", description: "100 cartes maîtrisées", category: "cards", requirement: 100, rarity: "epic" },
-      { id: "cards_200", icon: "🎴", title: "Grand Maître", description: "200 cartes maîtrisées", category: "cards", requirement: 200, rarity: "legendary" },
-
-      // RÉVISIONS
-      { id: "reviews_100", icon: "📚", title: "Débutant studieux", description: "100 révisions totales", category: "study", requirement: 100, rarity: "common" },
-      { id: "reviews_500", icon: "📚", title: "Étudiant dévoué", description: "500 révisions totales", category: "study", requirement: 500, rarity: "rare" },
-      { id: "reviews_1000", icon: "📚", title: "Marathonien", description: "1000 révisions totales", category: "study", requirement: 1000, rarity: "epic" },
-      { id: "reviews_5000", icon: "📚", title: "Légende", description: "5000 révisions totales", category: "study", requirement: 5000, rarity: "legendary" },
-
-      // TEMPS D'ÉTUDE
-      { id: "time_10", icon: "⏰", title: "Première décennie", description: "10 heures d'étude", category: "study", requirement: 10, rarity: "common" },
-      { id: "time_50", icon: "⏰", title: "Semi-siècle", description: "50 heures d'étude", category: "study", requirement: 50, rarity: "rare" },
-      { id: "time_100", icon: "⏰", title: "Centenaire", description: "100 heures d'étude", category: "study", requirement: 100, rarity: "epic" },
-
-      // MAÎTRISE
-      { id: "perfect_10", icon: "✨", title: "Perfectionniste", description: "10 cartes avec 100% de réussite", category: "mastery", requirement: 10, rarity: "rare" },
-      { id: "perfect_50", icon: "✨", title: "Perfection incarnée", description: "50 cartes avec 100% de réussite", category: "mastery", requirement: 50, rarity: "epic" },
-
-      // SPÉCIAUX
-      { id: "first_review", icon: "🌟", title: "Premiers pas", description: "Première session de révision", category: "special", requirement: 1, rarity: "common" },
-      { id: "night_owl", icon: "🦉", title: "Oiseau de nuit", description: "Étudier après minuit", category: "special", requirement: 1, rarity: "rare" },
-      { id: "early_bird", icon: "🐦", title: "Lève-tôt", description: "Étudier avant 6h du matin", category: "special", requirement: 1, rarity: "rare" },
-    ];
-
-    // Calculer l'état de déverrouillage
-    return allBadges.map(badge => {
-      let current = 0;
-      let unlocked = false;
-
-      switch (badge.id) {
-        // STREAK
-        case "streak_3":
-        case "streak_7":
-        case "streak_30":
-        case "streak_100":
-          current = currentStreak;
-          unlocked = currentStreak >= badge.requirement;
-          break;
-
-        // CARTES
-        case "cards_10":
-        case "cards_50":
-        case "cards_100":
-        case "cards_200":
-          current = stats.mature;
-          unlocked = stats.mature >= badge.requirement;
-          break;
-
-        // RÉVISIONS
-        case "reviews_100":
-        case "reviews_500":
-        case "reviews_1000":
-        case "reviews_5000":
-          current = stats.totalReviews;
-          unlocked = stats.totalReviews >= badge.requirement;
-          break;
-
-        // TEMPS
-        case "time_10":
-        case "time_50":
-        case "time_100":
-          current = stats.hoursStudied;
-          unlocked = stats.hoursStudied >= badge.requirement;
-          break;
-
-        // MAÎTRISE
-        case "perfect_10":
-        case "perfect_50":
-          current = stats.perfectCards;
-          unlocked = stats.perfectCards >= badge.requirement;
-          break;
-
-        // SPÉCIAUX
-        case "first_review":
-          current = stats.totalReviews > 0 ? 1 : 0;
-          unlocked = stats.totalReviews > 0;
-          break;
-
-        default:
-          unlocked = false;
-      }
-
-      return {
-        ...badge,
-        unlocked,
-        progress: Math.min(100, (current / badge.requirement) * 100)
-      };
-    });
-  }, [currentStreak, stats]);
-
-  // Compter les badges déverrouillés
-  const unlockedCount = badges.filter(b => b.unlocked).length;
-  const totalBadges = badges.length;
-
-  // Grouper par catégorie
-  const badgesByCategory = useMemo(() => {
-    const categories: Record<string, Badge[]> = {};
-    badges.forEach(badge => {
-      if (!categories[badge.category]) {
-        categories[badge.category] = [];
-      }
-      categories[badge.category].push(badge);
-    });
-    return categories;
-  }, [badges]);
-
-  const categoryNames = {
-    streak: "🔥 Séries",
-    cards: "🎴 Collection",
-    study: "📚 Étude",
-    mastery: "✨ Maîtrise",
-    special: "🌟 Spéciaux"
+  const allBadges: Record<BadgeCategory, Badge[]> = {
+    reviews: [
+      { id: "review1", name: "Première révision", description: "Complétez votre première révision", icon: "🌱", requirement: 1, unlocked: reviews >= 1 },
+      { id: "review10", name: "Apprenti", description: "Complétez 10 révisions", icon: "📚", requirement: 10, unlocked: reviews >= 10 },
+      { id: "review50", name: "Étudiant dédié", description: "Complétez 50 révisions", icon: "🎓", requirement: 50, unlocked: reviews >= 50 },
+      { id: "review100", name: "Expert", description: "Complétez 100 révisions", icon: "🏆", requirement: 100, unlocked: reviews >= 100 },
+      { id: "review500", name: "Maître", description: "Complétez 500 révisions", icon: "👑", requirement: 500, unlocked: reviews >= 500 },
+    ],
+    streak: [
+      { id: "streak3", name: "Régularité", description: "Étudiez 3 jours consécutifs", icon: "🔥", requirement: 3, unlocked: currentStreak >= 3 },
+      { id: "streak7", name: "Semaine parfaite", description: "Étudiez 7 jours consécutifs", icon: "⭐", requirement: 7, unlocked: currentStreak >= 7 },
+      { id: "streak30", name: "Mois de dévouement", description: "Étudiez 30 jours consécutifs", icon: "💎", requirement: 30, unlocked: currentStreak >= 30 },
+      { id: "streak100", name: "Légende", description: "Étudiez 100 jours consécutifs", icon: "🌟", requirement: 100, unlocked: currentStreak >= 100 },
+    ],
+    studyTime: [
+      { id: "time1", name: "Premier pas", description: "Étudiez pendant 1 heure au total", icon: "⏰", requirement: 60, unlocked: totalStudyTime >= 60 },
+      { id: "time10", name: "Marathonien", description: "Étudiez pendant 10 heures au total", icon: "🏃", requirement: 600, unlocked: totalStudyTime >= 600 },
+      { id: "time50", name: "Ultra marathonien", description: "Étudiez pendant 50 heures au total", icon: "🚀", requirement: 3000, unlocked: totalStudyTime >= 3000 },
+      { id: "time100", name: "Champion", description: "Étudiez pendant 100 heures au total", icon: "🥇", requirement: 6000, unlocked: totalStudyTime >= 6000 },
+    ],
+    lessons: [
+      { id: "lesson1", name: "Première leçon", description: "Complétez votre première leçon", icon: "📖", requirement: 1, unlocked: completedLessons >= 1 },
+      { id: "lesson10", name: "Lecteur assidu", description: "Complétez 10 leçons", icon: "📕", requirement: 10, unlocked: completedLessons >= 10 },
+      { id: "lesson50", name: "Bibliophile", description: "Complétez 50 leçons", icon: "📚", requirement: 50, unlocked: completedLessons >= 50 },
+      { id: "lesson100", name: "Érudit", description: "Complétez 100 leçons", icon: "🎖️", requirement: 100, unlocked: completedLessons >= 100 },
+    ],
   };
 
-  const rarityColors = {
-    common: "#93a2b8",
-    rare: "#60a5fa",
-    epic: "#a78bfa",
-    legendary: "#fbbf24"
-  };
+  // Détection des nouveaux badges débloqués
+  useEffect(() => {
+    Object.values(allBadges).flat().forEach((badge) => {
+      const wasUnlocked = localStorage.getItem(`badge_${badge.id}`);
+      if (badge.unlocked && !wasUnlocked) {
+        localStorage.setItem(`badge_${badge.id}`, "true");
+        setShowUnlockedAnimation(badge.id);
+        setTimeout(() => setShowUnlockedAnimation(null), 3000);
+      }
+    });
+  }, [reviews, currentStreak, totalStudyTime, completedLessons]);
+
+  const totalBadges = Object.values(allBadges).flat().length;
+  const unlockedBadges = Object.values(allBadges).flat().filter((b) => b.unlocked).length;
 
   return (
-    <div className="vstack">
-      <div className="card">
-        <h2 style={{ margin: "0 0 16px 0" }}>🏆 Badges & Achievements</h2>
-        
-        {/* Progression globale */}
-        <div className="card" style={{ background: "#1e3a5f", marginBottom: "16px" }}>
-          <div className="hstack" style={{ justifyContent: "space-between", marginBottom: "8px" }}>
-            <strong>Progression totale</strong>
-            <strong>{unlockedCount} / {totalBadges}</strong>
+    <div>
+      <h2 style={{ marginBottom: "20px" }}>🏅 Badges et Réalisations</h2>
+
+      {/* Animation de déblocage */}
+      {showUnlockedAnimation && (
+        <div
+          style={{
+            position: "fixed",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            backgroundColor: "rgba(0, 123, 255, 0.95)",
+            color: "white",
+            padding: "30px",
+            borderRadius: "15px",
+            textAlign: "center",
+            zIndex: 1000,
+            animation: "fadeIn 0.5s ease",
+            boxShadow: "0 8px 16px rgba(0,0,0,0.3)",
+          }}
+        >
+          <h3 style={{ fontSize: "32px", margin: "0 0 10px 0" }}>🎉 Nouveau badge débloqué !</h3>
+          <p style={{ fontSize: "48px", margin: "10px 0" }}>
+            {Object.values(allBadges).flat().find((b) => b.id === showUnlockedAnimation)?.icon}
+          </p>
+          <p style={{ fontSize: "20px", fontWeight: "bold" }}>
+            {Object.values(allBadges).flat().find((b) => b.id === showUnlockedAnimation)?.name}
+          </p>
+        </div>
+      )}
+
+      {/* Statistiques globales */}
+      <div
+        style={{
+          marginBottom: "30px",
+          padding: "20px",
+          backgroundColor: "#f8f9fa",
+          borderRadius: "10px",
+          border: "1px solid #dee2e6",
+        }}
+      >
+        <h3 style={{ marginBottom: "15px" }}>📊 Vos statistiques</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "15px" }}>
+          <div style={{ textAlign: "center" }}>
+            <div style={{ fontSize: "32px", color: "#007bff" }}>{reviews}</div>
+            <div style={{ fontSize: "14px", color: "#666" }}>Révisions totales</div>
           </div>
-          <div style={{ width: "100%", background: "#0f1720", borderRadius: "999px", height: "12px" }}>
-            <div 
-              style={{ 
-                width: `${(unlockedCount / totalBadges) * 100}%`, 
-                background: "linear-gradient(90deg, #60a5fa, #10b981)", 
-                height: "100%", 
-                borderRadius: "999px",
-                transition: "width 0.5s"
-              }} 
+          <div style={{ textAlign: "center" }}>
+            <div style={{ fontSize: "32px", color: "#fd7e14" }}>{currentStreak}</div>
+            <div style={{ fontSize: "14px", color: "#666" }}>Jours consécutifs</div>
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <div style={{ fontSize: "32px", color: "#28a745" }}>{Math.floor(totalStudyTime / 60)}h {totalStudyTime % 60}m</div>
+            <div style={{ fontSize: "14px", color: "#666" }}>Temps d'étude</div>
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <div style={{ fontSize: "32px", color: "#6f42c1" }}>{completedLessons}</div>
+            <div style={{ fontSize: "14px", color: "#666" }}>Leçons complétées</div>
+          </div>
+        </div>
+        <div style={{ marginTop: "20px", textAlign: "center" }}>
+          <p style={{ fontSize: "18px", fontWeight: "bold", color: "#007bff" }}>
+            {unlockedBadges} / {totalBadges} badges débloqués ({Math.round((unlockedBadges / totalBadges) * 100)}%)
+          </p>
+          <div
+            style={{
+              width: "100%",
+              height: "20px",
+              backgroundColor: "#e9ecef",
+              borderRadius: "10px",
+              overflow: "hidden",
+              marginTop: "10px",
+            }}
+          >
+            <div
+              style={{
+                width: `${(unlockedBadges / totalBadges) * 100}%`,
+                height: "100%",
+                backgroundColor: "#007bff",
+                transition: "width 0.3s ease",
+              }}
             />
           </div>
         </div>
+      </div>
 
-        {/* Badges par catégorie */}
-        {Object.entries(badgesByCategory).map(([category, categoryBadges]) => (
-          <div key={category} style={{ marginBottom: "24px" }}>
-            <h3 style={{ margin: "0 0 12px 0" }}>
-              {categoryNames[category as keyof typeof categoryNames]}
-            </h3>
-            <div style={{ 
-              display: "grid", 
-              gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", 
-              gap: "12px" 
-            }}>
-              {categoryBadges.map(badge => (
+      {/* Catégories de badges */}
+      {Object.entries(allBadges).map(([category, badges]) => (
+        <div key={category} style={{ marginBottom: "30px" }}>
+          <h3 style={{ marginBottom: "15px", textTransform: "capitalize" }}>
+            {category === "reviews"
+              ? "🎯 Révisions"
+              : category === "streak"
+              ? "🔥 Régularité"
+              : category === "studyTime"
+              ? "⏱️ Temps d'étude"
+              : "📚 Leçons"}
+          </h3>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+              gap: "15px",
+            }}
+          >
+            {badges.map((badge) => (
+              <div
+                key={badge.id}
+                style={{
+                  padding: "20px",
+                  border: badge.unlocked ? "2px solid #28a745" : "2px solid #dee2e6",
+                  borderRadius: "10px",
+                  backgroundColor: badge.unlocked ? "#d4edda" : "#f8f9fa",
+                  textAlign: "center",
+                  opacity: badge.unlocked ? 1 : 0.5,
+                  transition: "all 0.3s ease",
+                }}
+              >
+                <div style={{ fontSize: "48px", marginBottom: "10px" }}>{badge.icon}</div>
+                <h4 style={{ margin: "0 0 5px 0", fontSize: "16px" }}>{badge.name}</h4>
+                <p style={{ margin: "0 0 10px 0", fontSize: "12px", color: "#666" }}>
+                  {badge.description}
+                </p>
                 <div
-                  key={badge.id}
-                  className="card"
                   style={{
-                    background: badge.unlocked ? "#064e3b" : "#1f2a37",
-                    border: `2px solid ${badge.unlocked ? rarityColors[badge.rarity] : "#334155"}`,
-                    opacity: badge.unlocked ? 1 : 0.6,
-                    cursor: "pointer",
-                    transition: "all 0.2s",
-                    position: "relative"
+                    fontSize: "12px",
+                    color: badge.unlocked ? "#28a745" : "#6c757d",
+                    fontWeight: "bold",
                   }}
-                  title={`${badge.progress.toFixed(0)}% complété`}
                 >
-                  <div style={{ fontSize: "32px", textAlign: "center", marginBottom: "8px" }}>
-                    {badge.icon}
-                  </div>
-                  <div style={{ textAlign: "center" }}>
-                    <strong style={{ fontSize: "14px" }}>{badge.title}</strong>
-                    <div className="muted" style={{ fontSize: "12px", marginTop: "4px" }}>
-                      {badge.description}
-                    </div>
-                  </div>
-
-                  {!badge.unlocked && (
-                    <div style={{ marginTop: "8px" }}>
-                      <div style={{ width: "100%", background: "#0f1720", borderRadius: "999px", height: "4px" }}>
-                        <div 
-                          style={{ 
-                            width: `${badge.progress}%`, 
-                            background: rarityColors[badge.rarity], 
-                            height: "100%", 
-                            borderRadius: "999px",
-                            transition: "width 0.5s"
-                          }} 
-                        />
-                      </div>
-                      <div className="muted" style={{ fontSize: "10px", textAlign: "center", marginTop: "4px" }}>
-                        {badge.progress.toFixed(0)}%
-                      </div>
-                    </div>
-                  )}
-
-                  {badge.unlocked && (
-                    <div style={{ 
-                      position: "absolute", 
-                      top: "8px", 
-                      right: "8px", 
-                      fontSize: "20px" 
-                    }}>
-                      ✅
-                    </div>
-                  )}
+                  {badge.unlocked ? "✅ Débloqué" : `🔒 ${badge.requirement} requis`}
                 </div>
-              ))}
-            </div>
-          </div>
-        ))}
-
-        {/* Légende raretés */}
-        <div className="card" style={{ background: "#0b1220", marginTop: "16px" }}>
-          <strong style={{ display: "block", marginBottom: "8px" }}>Raretés :</strong>
-          <div className="hstack" style={{ gap: "16px", flexWrap: "wrap", fontSize: "12px" }}>
-            <div className="hstack">
-              <div style={{ width: "12px", height: "12px", borderRadius: "2px", background: rarityColors.common }} />
-              <span className="muted" style={{ marginLeft: "4px" }}>Commun</span>
-            </div>
-            <div className="hstack">
-              <div style={{ width: "12px", height: "12px", borderRadius: "2px", background: rarityColors.rare }} />
-              <span className="muted" style={{ marginLeft: "4px" }}>Rare</span>
-            </div>
-            <div className="hstack">
-              <div style={{ width: "12px", height: "12px", borderRadius: "2px", background: rarityColors.epic }} />
-              <span className="muted" style={{ marginLeft: "4px" }}>Épique</span>
-            </div>
-            <div className="hstack">
-              <div style={{ width: "12px", height: "12px", borderRadius: "2px", background: rarityColors.legendary }} />
-              <span className="muted" style={{ marginLeft: "4px" }}>Légendaire</span>
-            </div>
+              </div>
+            ))}
           </div>
         </div>
-
-      </div>
+      ))}
     </div>
   );
-}
+            }
