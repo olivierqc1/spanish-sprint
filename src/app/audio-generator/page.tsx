@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react';
 
 // Données des conversations à générer
