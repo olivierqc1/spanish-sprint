@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react';
 
 // Base de données des conversations (tu peux aussi mettre ça dans Supabase plus tard)
