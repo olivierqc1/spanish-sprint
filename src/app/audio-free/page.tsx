@@ -4,8 +4,8 @@ import { createClient } from '@supabase/supabase-js';
 
 // Init Supabase (utilise tes variables d'environnement)
 const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://etsbxwlyxeuynhgqujtr.supabase.co',
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV0c2J4d2x5eGV1eW5oZ3F1anRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk5MDE0NTEsImV4cCI6MjA3NTQ3NzQ1MX0.26AVDbvdr0HbrpxyUTn5lTss-_6G5t8w5ILd2il1ZJ0'
+  process.env.NEXT_PUBLIC_SUPABASE_URL || '',
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
 );
 
 const INITIAL_CONVERSATIONS = [
@@ -56,10 +56,10 @@ const VOICES = {
 export default function AudioManagerFree() {
   const [conversations, setConversations] = useState(INITIAL_CONVERSATIONS);
   const [activeTab, setActiveTab] = useState('list');
-  const [selectedConv, setSelectedConv] = useState(null);
+  const [selectedConv, setSelectedConv] = useState<any>(null);
   const [generating, setGenerating] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0, status: '' });
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState<any[]>([]);
   
   // Nouveau formulaire
   const [newConv, setNewConv] = useState({
@@ -70,12 +70,12 @@ export default function AudioManagerFree() {
   });
 
   // FONCTION PRINCIPALE : Générer les audios GRATUITEMENT
-  const generateAudios = async (conv) => {
+  const generateAudios = async (conv: any) => {
     setGenerating(true);
     setResults([]);
     setProgress({ current: 0, total: conv.lines.length, status: 'Démarrage...' });
 
-    const generatedResults = [];
+    const generatedResults: any[] = [];
 
     try {
       for (let i = 0; i < conv.lines.length; i++) {
@@ -117,22 +117,26 @@ export default function AudioManagerFree() {
       
     } catch (error) {
       console.error('Erreur:', error);
-      alert(`❌ Erreur: ${error.message}`);
+      alert(`❌ Erreur: ${error}`);
     } finally {
       setGenerating(false);
     }
   };
 
   // Générer l'audio avec une API GRATUITE
-  const generateAudioFree = async (text, country, gender) => {
+  const generateAudioFree = async (text: string, country: string, gender: string) => {
     try {
       // Option 1 : VoiceRSS (gratuit, 350 requêtes/jour)
       const voiceCode = country === 'Espagne' ? 'es-es' : 
                         country === 'Mexique' ? 'es-mx' : 
                         country === 'Argentine' ? 'es-ar' : 'es-co';
       
-      // Clé API gratuite VoiceRSS (tu peux t'inscrire sur voicerss.org pour la tienne)
-      const apiKey = '688836a36b064ad0a1e9c55be34ac08b'
+      // Clé API depuis variable d'environnement
+      const apiKey = process.env.NEXT_PUBLIC_VOICERSS_API_KEY || '';
+      
+      if (!apiKey) {
+        throw new Error('Clé API VoiceRSS manquante');
+      }
       
       const url = `https://api.voicerss.org/?key=${apiKey}&hl=${voiceCode}&src=${encodeURIComponent(text)}&c=MP3&f=44khz_16bit_stereo`;
       
@@ -153,8 +157,8 @@ export default function AudioManagerFree() {
   };
 
   // Fallback : Web Speech API (qualité moyenne mais gratuit et illimité)
-  const generateWithWebSpeech = async (text, country, gender) => {
-    return new Promise((resolve, reject) => {
+  const generateWithWebSpeech = async (text: string, country: string, gender: string) => {
+    return new Promise<Blob>((resolve, reject) => {
       if (!('speechSynthesis' in window)) {
         reject(new Error('Synthèse vocale non supportée'));
         return;
@@ -205,7 +209,7 @@ export default function AudioManagerFree() {
   };
 
   // Upload sur Supabase
-  const uploadToSupabase = async (blob, filename) => {
+  const uploadToSupabase = async (blob: Blob, filename: string) => {
     try {
       const { data, error } = await supabase.storage
         .from('audios')
@@ -236,14 +240,14 @@ export default function AudioManagerFree() {
   };
 
   // Mettre à jour une ligne
-  const updateLine = (index, field, value) => {
+  const updateLine = (index: number, field: string, value: string) => {
     const updatedLines = [...newConv.lines];
-    updatedLines[index][field] = value;
+    (updatedLines[index] as any)[field] = value;
     setNewConv({ ...newConv, lines: updatedLines });
   };
 
   // Supprimer une ligne
-  const removeLine = (index) => {
+  const removeLine = (index: number) => {
     if (newConv.lines.length > 1) {
       const updatedLines = newConv.lines.filter((_, i) => i !== index);
       setNewConv({ ...newConv, lines: updatedLines });
@@ -336,7 +340,7 @@ export default function AudioManagerFree() {
                 }}
               >
                 <div style={{ fontSize: '28px', marginBottom: '10px' }}>
-                  {VOICES[conv.country]?.homme.flag}
+                  {(VOICES as any)[conv.country]?.homme.flag}
                 </div>
                 <h3 style={{ margin: '10px 0' }}>{conv.title}</h3>
                 <p style={{ color: '#93a2b8', fontSize: '14px' }}>
@@ -383,7 +387,7 @@ export default function AudioManagerFree() {
               >
                 {Object.keys(VOICES).map(country => (
                   <option key={country} value={country}>
-                    {VOICES[country].homme.flag} {country}
+                    {(VOICES as any)[country].homme.flag} {country}
                   </option>
                 ))}
               </select>
@@ -468,7 +472,7 @@ export default function AudioManagerFree() {
               {conversations.map(conv => (
                 <div key={conv.id} style={{ background: '#0b1220', border: '1px solid #334155', borderRadius: '12px', padding: '20px' }}>
                   <div style={{ marginBottom: '15px' }}>
-                    <span style={{ fontSize: '28px' }}>{VOICES[conv.country]?.homme.flag}</span>
+                    <span style={{ fontSize: '28px' }}>{(VOICES as any)[conv.country]?.homme.flag}</span>
                     <h3 style={{ margin: '10px 0' }}>{conv.title}</h3>
                     <p style={{ color: '#93a2b8', fontSize: '14px' }}>
                       {conv.lines.length} répliques • {conv.level}
@@ -526,4 +530,6 @@ export default function AudioManagerFree() {
                   </button>
                 </div>
                 {results.map((result, idx) => (
-                  <
+                  <div 
+                    key={idx}
+   
