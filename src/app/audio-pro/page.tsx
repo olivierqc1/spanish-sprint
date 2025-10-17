@@ -524,4 +524,253 @@ export default function AudioManagerPro() {
                   value={aiLevel}
                   onChange={(e) => setAiLevel(e.target.value)}
                   style={{
-                    width
+                    width: '100%',
+                    padding: '12px',
+                    background: '#1e3a5f',
+                    border: '1px solid #334155',
+                    borderRadius: '8px',
+                    color: '#e5e7eb'
+                  }}
+                >
+                  <option value="A1">A1 - Débutant</option>
+                  <option value="A2">A2 - Élémentaire</option>
+                  <option value="B1">B1 - Intermédiaire</option>
+                  <option value="B2">B2 - Avancé</option>
+                </select>
+              </div>
+            </div>
+
+            <button
+              onClick={generateWithAI}
+              disabled={generatingAI}
+              style={{
+                width: '100%',
+                padding: '15px',
+                background: generatingAI ? '#334155' : '#10b981',
+                border: 'none',
+                borderRadius: '8px',
+                color: 'white',
+                cursor: generatingAI ? 'not-allowed' : 'pointer',
+                fontWeight: 'bold',
+                fontSize: '16px'
+              }}
+            >
+              {generatingAI ? '⏳ Génération...' : '✨ Générer avec AI'}
+            </button>
+          </div>
+        )}
+
+        {activeTab === 'manual' && isConfigured && (
+          <div style={{ background: '#0b1220', border: '1px solid #334155', borderRadius: '12px', padding: '30px' }}>
+            <h2 style={{ marginBottom: '20px' }}>✍️ Ajouter manuellement</h2>
+            
+            <input
+              type="text"
+              placeholder="Titre de la conversation"
+              value={newConv.title}
+              onChange={(e) => setNewConv({ ...newConv, title: e.target.value })}
+              style={{
+                width: '100%',
+                padding: '12px',
+                marginBottom: '20px',
+                background: '#1e3a5f',
+                border: '1px solid #334155',
+                borderRadius: '8px',
+                color: '#e5e7eb',
+                fontSize: '16px'
+              }}
+            />
+
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '30px' }}>
+              <select
+                value={newConv.country}
+                onChange={(e) => setNewConv({ ...newConv, country: e.target.value })}
+                style={{
+                  padding: '12px',
+                  background: '#1e3a5f',
+                  border: '1px solid #334155',
+                  borderRadius: '8px',
+                  color: '#e5e7eb'
+                }}
+              >
+                {Object.keys(GOOGLE_VOICES).map(country => (
+                  <option key={country} value={country}>{GOOGLE_VOICES[country].homme[0].flag} {country}</option>
+                ))}
+              </select>
+
+              <select
+                value={newConv.level}
+                onChange={(e) => setNewConv({ ...newConv, level: e.target.value })}
+                style={{
+                  padding: '12px',
+                  background: '#1e3a5f',
+                  border: '1px solid #334155',
+                  borderRadius: '8px',
+                  color: '#e5e7eb'
+                }}
+              >
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+              </select>
+            </div>
+
+            {newConv.lines.map((line, idx) => (
+              <div key={idx} style={{ background: '#1e3a5f', padding: '20px', borderRadius: '8px', marginBottom: '15px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>
+                  <strong>Réplique {idx + 1}</strong>
+                  {newConv.lines.length > 1 && (
+                    <button
+                      onClick={() => removeLine(idx)}
+                      style={{ padding: '4px 12px', background: '#7f1d1d', border: 'none', borderRadius: '6px', color: 'white', cursor: 'pointer' }}
+                    >🗑️</button>
+                  )}
+                </div>
+
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginBottom: '15px' }}>
+                  <input
+                    type="text"
+                    placeholder="Nom (ex: Carlos)"
+                    value={line.speaker}
+                    onChange={(e) => updateLine(idx, 'speaker', e.target.value)}
+                    style={{ padding: '10px', background: '#0b1220', border: '1px solid #334155', borderRadius: '6px', color: '#e5e7eb' }}
+                  />
+                  <select
+                    value={line.gender}
+                    onChange={(e) => updateLine(idx, 'gender', e.target.value)}
+                    style={{ padding: '10px', background: '#0b1220', border: '1px solid #334155', borderRadius: '6px', color: '#e5e7eb' }}
+                  >
+                    <option value="homme">♂️ Homme</option>
+                    <option value="femme">♀️ Femme</option>
+                  </select>
+                </div>
+
+                <textarea
+                  placeholder="Texte en espagnol..."
+                  value={line.text}
+                  onChange={(e) => updateLine(idx, 'text', e.target.value)}
+                  rows={2}
+                  style={{ width: '100%', padding: '10px', background: '#0b1220', border: '1px solid #334155', borderRadius: '6px', color: '#e5e7eb', resize: 'vertical' }}
+                />
+              </div>
+            ))}
+
+            <div style={{ display: 'flex', gap: '15px' }}>
+              <button onClick={addLine} style={{ flex: 1, padding: '15px', background: '#334155', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer', fontWeight: 'bold' }}>
+                ➕ Ajouter une réplique
+              </button>
+              <button onClick={saveConversation} style={{ flex: 2, padding: '15px', background: '#10b981', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer', fontWeight: 'bold' }}>
+                💾 Sauvegarder
+              </button>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'generate' && isConfigured && (
+          <div>
+            <h2 style={{ marginBottom: '20px' }}>🚀 Générer les audios</h2>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px', marginBottom: '30px' }}>
+              {conversations.map(conv => (
+                <div key={conv.id} style={{ background: '#0b1220', border: '1px solid #334155', borderRadius: '12px', padding: '20px' }}>
+                  <div style={{ marginBottom: '15px' }}>
+                    <span style={{ fontSize: '28px' }}>{GOOGLE_VOICES[conv.country]?.homme[0].flag}</span>
+                    <h3 style={{ margin: '10px 0' }}>{conv.title}</h3>
+                    <p style={{ color: '#93a2b8', fontSize: '14px' }}>
+                      {conv.lines.length} répliques • {conv.level}
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => generateAudios(conv)}
+                    disabled={generating}
+                    style={{
+                      width: '100%',
+                      padding: '12px',
+                      background: generating ? '#334155' : '#10b981',
+                      border: 'none',
+                      borderRadius: '8px',
+                      color: 'white',
+                      cursor: generating ? 'not-allowed' : 'pointer',
+                      fontWeight: 'bold'
+                    }}
+                  >
+                    {generating ? '⏳ En cours...' : '🎙️ Générer'}
+                  </button>
+                </div>
+              ))}
+            </div>
+
+            {generating && (
+              <div style={{ padding: '30px', background: '#1e3a5f', borderRadius: '12px', marginBottom: '30px' }}>
+                <h3 style={{ marginBottom: '15px' }}>Génération en cours...</h3>
+                <p style={{ fontSize: '20px', color: '#60a5fa', margin: '10px 0' }}>
+                  {progress.current} / {progress.total}
+                </p>
+                <p style={{ color: '#93a2b8', fontSize: '14px' }}>{progress.status}</p>
+                <div style={{ width: '100%', height: '20px', background: '#0b1220', borderRadius: '10px', overflow: 'hidden', marginTop: '15px' }}>
+                  <div style={{
+                    width: `${(progress.current / progress.total) * 100}%`,
+                    height: '100%',
+                    background: '#10b981',
+                    transition: 'width 0.3s'
+                  }} />
+                </div>
+              </div>
+            )}
+
+            {results.length > 0 && (
+              <div style={{ background: '#0b1220', border: '1px solid #334155', borderRadius: '12px', padding: '30px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
+                  <h3>✅ Résultats ({results.filter(r => r.status === 'success').length}/{results.length})</h3>
+                  <button
+                    onClick={downloadResults}
+                    style={{ padding: '8px 16px', background: '#60a5fa', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer' }}
+                  >📥 Télécharger JSON</button>
+                </div>
+                {results.map((result, idx) => (
+                  <div 
+                    key={idx}
+                    style={{ 
+                      background: result.status === 'success' ? '#064e3b' : '#7f1d1d',
+                      padding: '15px',
+                      borderRadius: '8px',
+                      marginBottom: '10px'
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <div style={{ flex: 1 }}>
+                        <strong>{result.speaker}</strong>
+                        <p style={{ margin: '5px 0', color: '#d1d5db' }}>{result.text}</p>
+                        <small style={{ color: '#9ca3af' }}>{result.filename}</small>
+                      </div>
+                      {result.status === 'success' && result.url && (
+                        <div style={{ display: 'flex', gap: '10px' }}>
+                          <audio controls src={result.url} style={{ height: '40px' }} />
+                          <a 
+                            href={result.url} 
+                            download 
+                            style={{ 
+                              padding: '8px 16px', 
+                              background: '#60a5fa', 
+                              borderRadius: '6px', 
+                              color: 'white', 
+                              textDecoration: 'none' 
+                            }}
+                          >📥</a>
+                        </div>
+                      )}
+                      {result.status === 'failed' && (
+                        <span style={{ color: '#fca5a5' }}>❌ Échec</span>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+                    }
