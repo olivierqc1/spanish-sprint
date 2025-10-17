@@ -1,19 +1,45 @@
 "use client";
 import { useState } from 'react';
+import { Card } from '@/components/ui/Card';
+import { Button } from '@/components/ui/Button';
+import { Badge } from '@/components/ui/Badge';
+import { Flag } from '@/components/ui/Flag';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
-// Données des conversations à générer
-const CONVERSATIONS = [
+// Types
+interface ConversationLine {
+  speaker: string;
+  gender: 'homme' | 'femme';
+  text: string;
+}
+
+interface Conversation {
+  id: string;
+  country: string;
+  level: string;
+  title: string;
+  lines: ConversationLine[];
+}
+
+interface AudioResult {
+  text: string;
+  speaker: string;
+  audio: { success: boolean };
+}
+
+// Données des conversations
+const CONVERSATIONS: Conversation[] = [
   {
     id: "conv_es_a1_cafe",
     country: "Espagne",
     level: "A1",
     title: "Au café",
     lines: [
-      { speaker: "A", gender: "homme", text: "Hola María, ¿cómo estás?" },
-      { speaker: "B", gender: "femme", text: "Muy bien, gracias. ¿Y tú?" },
-      { speaker: "A", gender: "homme", text: "Bien también. ¿Qué vas a tomar?" },
-      { speaker: "B", gender: "femme", text: "Un café con leche y un croissant, por favor." },
-      { speaker: "A", gender: "homme", text: "Para mí, un zumo de naranja." },
+      { speaker: "Carlos", gender: "homme", text: "Hola María, ¿cómo estás?" },
+      { speaker: "María", gender: "femme", text: "Muy bien, gracias. ¿Y tú?" },
+      { speaker: "Carlos", gender: "homme", text: "Bien también. ¿Qué vas a tomar?" },
+      { speaker: "María", gender: "femme", text: "Un café con leche y un croissant, por favor." },
+      { speaker: "Carlos", gender: "homme", text: "Para mí, un zumo de naranja." },
     ]
   },
   {
@@ -22,11 +48,11 @@ const CONVERSATIONS = [
     level: "A1",
     title: "Au marché",
     lines: [
-      { speaker: "A", gender: "homme", text: "Buenos días. ¿Cuánto cuestan los aguacates?" },
-      { speaker: "B", gender: "homme", text: "Treinta pesos el kilo, güerito." },
-      { speaker: "A", gender: "homme", text: "Dame dos kilos, por favor. ¿Y los mangos?" },
-      { speaker: "B", gender: "homme", text: "Los mangos están a veinte pesos el kilo." },
-      { speaker: "A", gender: "homme", text: "Perfecto, un kilo de mangos también." },
+      { speaker: "Cliente", gender: "homme", text: "Buenos días. ¿Cuánto cuestan los aguacates?" },
+      { speaker: "Vendedor", gender: "homme", text: "Treinta pesos el kilo, güerito." },
+      { speaker: "Cliente", gender: "homme", text: "Dame dos kilos, por favor. ¿Y los mangos?" },
+      { speaker: "Vendedor", gender: "homme", text: "Los mangos están a veinte pesos el kilo." },
+      { speaker: "Cliente", gender: "homme", text: "Perfecto, un kilo de mangos también." },
     ]
   },
   {
@@ -35,56 +61,34 @@ const CONVERSATIONS = [
     level: "A2",
     title: "Réservation d'hôtel",
     lines: [
-      { speaker: "A", gender: "femme", text: "Hotel Sol y Mar, buenas tardes." },
-      { speaker: "B", gender: "homme", text: "Buenas tardes. Quería reservar una habitación para el fin de semana." },
-      { speaker: "A", gender: "femme", text: "Perfecto. ¿Para cuántas personas?" },
-      { speaker: "B", gender: "homme", text: "Para dos personas. Una habitación doble con vistas al mar, si es posible." },
+      { speaker: "Recepcionista", gender: "femme", text: "Hotel Sol y Mar, buenas tardes." },
+      { speaker: "Cliente", gender: "homme", text: "Buenas tardes. Quería reservar una habitación para el fin de semana." },
+      { speaker: "Recepcionista", gender: "femme", text: "Perfecto. ¿Para cuántas personas?" },
+      { speaker: "Cliente", gender: "homme", text: "Para dos personas. Una habitación doble con vistas al mar, si es posible." },
     ]
   },
 ];
 
-// Voix disponibles par pays
-const VOICES = {
-  "Espagne": {
-    "homme": "es-ES-AlvaroNeural",
-    "femme": "es-ES-ElviraNeural"
-  },
-  "Mexique": {
-    "homme": "es-MX-JorgeNeural",
-    "femme": "es-MX-DaliaNeural"
-  },
-  "Argentine": {
-    "homme": "es-AR-TomasNeural",
-    "femme": "es-AR-ElenaNeural"
-  },
-  "Colombie": {
-    "homme": "es-CO-GonzaloNeural",
-    "femme": "es-CO-SalomeNeural"
-  }
-};
-
 export default function AudioGenerator() {
-  const [selectedConv, setSelectedConv] = useState(null);
+  const [selectedConv, setSelectedConv] = useState<Conversation | null>(null);
   const [generating, setGenerating] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0 });
-  const [results, setResults] = useState([]);
-  const [error, setError] = useState(null);
+  const [results, setResults] = useState<AudioResult[]>([]);
+  const [error, setError] = useState<string | null>(null);
 
-  // Fonction pour générer les audios
-  const generateAudios = async (conversation) => {
+  const generateAudios = async (conversation: Conversation) => {
     setGenerating(true);
     setError(null);
     setResults([]);
     setProgress({ current: 0, total: conversation.lines.length });
 
     try {
-      const generatedFiles = [];
+      const generatedFiles: AudioResult[] = [];
 
       for (let i = 0; i < conversation.lines.length; i++) {
         const line = conversation.lines[i];
         setProgress({ current: i + 1, total: conversation.lines.length });
 
-        // Générer l'audio avec Web Speech API (alternative simple)
         const audio = await generateAudioSimple(line.text, conversation.country, line.gender);
         
         generatedFiles.push({
@@ -97,16 +101,16 @@ export default function AudioGenerator() {
       setResults(generatedFiles);
       alert(`✅ ${generatedFiles.length} audios générés avec succès !`);
     } catch (err) {
-      setError(err.message);
-      alert(`❌ Erreur : ${err.message}`);
+      const errorMessage = err instanceof Error ? err.message : 'Erreur inconnue';
+      setError(errorMessage);
+      alert(`❌ Erreur : ${errorMessage}`);
     } finally {
       setGenerating(false);
     }
   };
 
-  // Génération audio simple avec Web Speech API
-  const generateAudioSimple = async (text, country, gender) => {
-    return new Promise((resolve, reject) => {
+  const generateAudioSimple = async (text: string, country: string, gender: string) => {
+    return new Promise<{ success: boolean }>((resolve, reject) => {
       if (!('speechSynthesis' in window)) {
         reject(new Error('Votre navigateur ne supporte pas la synthèse vocale'));
         return;
@@ -114,7 +118,6 @@ export default function AudioGenerator() {
 
       const utterance = new SpeechSynthesisUtterance(text);
       
-      // Configurer la voix
       const voices = window.speechSynthesis.getVoices();
       const spanishVoice = voices.find(v => v.lang.startsWith('es'));
       if (spanishVoice) utterance.voice = spanishVoice;
@@ -130,7 +133,6 @@ export default function AudioGenerator() {
     });
   };
 
-  // Télécharger tous les résultats
   const downloadAllResults = () => {
     const dataStr = JSON.stringify(results, null, 2);
     const dataBlob = new Blob([dataStr], { type: 'application/json' });
@@ -142,189 +144,159 @@ export default function AudioGenerator() {
   };
 
   return (
-    <div style={{ padding: '40px', maxWidth: '1200px', margin: '0 auto' }}>
-      <h1 style={{ fontSize: '32px', marginBottom: '30px', textAlign: 'center' }}>
-        🎙️ Générateur d'Audios de Conversations
-      </h1>
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 p-5 md:p-10">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="flex justify-between items-center mb-8">
+          <div>
+            <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+              🎙️ Générateur d'Audios
+            </h1>
+            <p className="text-slate-600 dark:text-slate-400">
+              Synthèse vocale pour vos conversations en espagnol
+            </p>
+          </div>
+          <ThemeToggle />
+        </div>
 
-      {/* Sélection de conversation */}
-      <div style={{ marginBottom: '40px' }}>
-        <h2 style={{ fontSize: '20px', marginBottom: '20px' }}>
-          1️⃣ Choisir une conversation
-        </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
-          {CONVERSATIONS.map((conv) => (
-            <div
-              key={conv.id}
-              onClick={() => setSelectedConv(conv)}
-              style={{
-                padding: '20px',
-                border: selectedConv?.id === conv.id ? '3px solid #007bff' : '2px solid #ddd',
-                borderRadius: '12px',
-                cursor: 'pointer',
-                backgroundColor: selectedConv?.id === conv.id ? '#e7f3ff' : '#fff',
-                transition: 'all 0.2s',
-              }}
-            >
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-                <span style={{ fontSize: '24px' }}>
-                  {conv.country === 'Espagne' ? '🇪🇸' : conv.country === 'Mexique' ? '🇲🇽' : '🌍'}
-                </span>
-                <span style={{ 
-                  padding: '4px 12px', 
-                  backgroundColor: '#007bff', 
-                  color: 'white', 
-                  borderRadius: '12px',
-                  fontSize: '12px',
-                  fontWeight: 'bold'
-                }}>
-                  {conv.level}
-                </span>
-              </div>
-              <h3 style={{ margin: '10px 0', fontSize: '18px' }}>{conv.title}</h3>
-              <p style={{ color: '#666', fontSize: '14px', margin: 0 }}>
-                {conv.country} • {conv.lines.length} répliques
-              </p>
+        {/* Sélection de conversation */}
+        <Card className="mb-8">
+          <h2 className="text-xl font-bold mb-4">1️⃣ Choisir une conversation</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {CONVERSATIONS.map((conv) => (
+              <button
+                key={conv.id}
+                onClick={() => setSelectedConv(conv)}
+                className={`
+                  text-left p-5 rounded-xl border-2 transition-all
+                  ${selectedConv?.id === conv.id 
+                    ? 'border-blue-500 bg-blue-50 dark:bg-blue-950/30' 
+                    : 'border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-700'
+                  }
+                `}
+              >
+                <div className="flex justify-between items-start mb-3">
+                  <Flag country={conv.country} size="lg" />
+                  <Badge variant="primary">{conv.level}</Badge>
+                </div>
+                <h3 className="font-semibold mb-2">{conv.title}</h3>
+                <p className="text-sm text-slate-600 dark:text-slate-400">
+                  {conv.country} • {conv.lines.length} répliques
+                </p>
+              </button>
+            ))}
+          </div>
+        </Card>
+
+        {/* Aperçu de la conversation */}
+        {selectedConv && (
+          <Card className="mb-8">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold">
+                2️⃣ Aperçu : {selectedConv.title}
+              </h2>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setSelectedConv(null)}
+              >
+                ✕
+              </Button>
             </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Aperçu de la conversation sélectionnée */}
-      {selectedConv && (
-        <div style={{ marginBottom: '40px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '12px' }}>
-          <h2 style={{ fontSize: '20px', marginBottom: '20px' }}>
-            2️⃣ Aperçu : {selectedConv.title}
-          </h2>
-          <div style={{ marginBottom: '20px' }}>
-            {selectedConv.lines.map((line, idx) => (
-              <div
-                key={idx}
-                style={{
-                  padding: '15px',
-                  backgroundColor: line.speaker === 'A' ? '#e3f2fd' : '#fff3e0',
-                  borderRadius: '8px',
-                  marginBottom: '10px',
-                  borderLeft: `4px solid ${line.speaker === 'A' ? '#2196f3' : '#ff9800'}`,
-                }}
-              >
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '5px' }}>
-                  <strong style={{ color: line.speaker === 'A' ? '#1976d2' : '#f57c00' }}>
-                    {line.speaker === 'A' ? '👤 Speaker A' : '👤 Speaker B'}
-                  </strong>
-                  <span style={{ fontSize: '12px', color: '#666' }}>
-                    {line.gender === 'homme' ? '♂️ Homme' : '♀️ Femme'}
-                  </span>
-                </div>
-                <p style={{ margin: 0, fontSize: '16px' }}>{line.text}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Bouton de génération */}
-          <button
-            onClick={() => generateAudios(selectedConv)}
-            disabled={generating}
-            style={{
-              width: '100%',
-              padding: '20px',
-              fontSize: '18px',
-              fontWeight: 'bold',
-              backgroundColor: generating ? '#ccc' : '#28a745',
-              color: 'white',
-              border: 'none',
-              borderRadius: '12px',
-              cursor: generating ? 'not-allowed' : 'pointer',
-              transition: 'all 0.2s',
-            }}
-          >
-            {generating ? (
-              <>
-                ⏳ Génération en cours... {progress.current}/{progress.total}
-              </>
-            ) : (
-              <>
-                🚀 Générer les audios ({selectedConv.lines.length} fichiers)
-              </>
-            )}
-          </button>
-        </div>
-      )}
-
-      {/* Erreur */}
-      {error && (
-        <div style={{ padding: '20px', backgroundColor: '#f8d7da', borderRadius: '8px', marginBottom: '20px' }}>
-          <strong style={{ color: '#721c24' }}>❌ Erreur :</strong>
-          <p style={{ margin: '10px 0 0 0', color: '#721c24' }}>{error}</p>
-        </div>
-      )}
-
-      {/* Résultats */}
-      {results.length > 0 && (
-        <div style={{ marginTop: '40px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-            <h2 style={{ fontSize: '20px', margin: 0 }}>
-              3️⃣ Résultats ({results.length} audios générés)
-            </h2>
-            <button
-              onClick={downloadAllResults}
-              style={{
-                padding: '10px 20px',
-                backgroundColor: '#007bff',
-                color: 'white',
-                border: 'none',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                fontSize: '14px',
-              }}
-            >
-              📥 Télécharger JSON
-            </button>
-          </div>
-
-          <div style={{ backgroundColor: '#f8f9fa', borderRadius: '12px', padding: '20px' }}>
-            {results.map((result, idx) => (
-              <div
-                key={idx}
-                style={{
-                  padding: '15px',
-                  backgroundColor: 'white',
-                  borderRadius: '8px',
-                  marginBottom: '10px',
-                  border: '1px solid #ddd',
-                }}
-              >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <div>
-                    <strong>{result.speaker}</strong>
-                    <p style={{ margin: '5px 0 0 0', color: '#666' }}>{result.text}</p>
+            <div className="space-y-3 mb-6">
+              {selectedConv.lines.map((line, idx) => (
+                <Card key={idx} variant="primary" className="text-sm">
+                  <div className="flex justify-between items-start mb-2">
+                    <strong className="text-blue-600 dark:text-blue-400">{line.speaker}</strong>
+                    <Badge variant="default">
+                      {line.gender === 'homme' ? '♂️' : '♀️'}
+                    </Badge>
                   </div>
-                  <span style={{ fontSize: '24px' }}>✅</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+                  <p className="text-slate-700 dark:text-slate-200">{line.text}</p>
+                </Card>
+              ))}
+            </div>
 
-      {/* Guide d'utilisation */}
-      <div style={{ marginTop: '60px', padding: '30px', backgroundColor: '#e7f3ff', borderRadius: '12px' }}>
-        <h2 style={{ fontSize: '20px', marginBottom: '20px' }}>💡 Comment ça marche ?</h2>
-        <ol style={{ lineHeight: '2', fontSize: '16px' }}>
-          <li><strong>Choisir</strong> une conversation dans la liste ci-dessus</li>
-          <li><strong>Vérifier</strong> l'aperçu des répliques</li>
-          <li><strong>Cliquer</strong> sur "Générer les audios"</li>
-          <li><strong>Attendre</strong> quelques secondes (les audios sont lus automatiquement)</li>
-          <li><strong>Télécharger</strong> le fichier JSON avec les résultats</li>
-        </ol>
-        
-        <div style={{ marginTop: '20px', padding: '15px', backgroundColor: '#fff3cd', borderRadius: '8px' }}>
-          <p style={{ margin: 0, fontSize: '14px' }}>
-            ⚠️ <strong>Note :</strong> Cette version utilise la synthèse vocale de votre navigateur.
-            Pour une meilleure qualité, vous pouvez utiliser le script Python avec Edge-TTS.
-          </p>
-        </div>
+            <Button
+              onClick={() => generateAudios(selectedConv)}
+              disabled={generating}
+              loading={generating}
+              className="w-full"
+              size="lg"
+            >
+              {generating 
+                ? `⏳ Génération... ${progress.current}/${progress.total}` 
+                : `🚀 Générer les audios (${selectedConv.lines.length} fichiers)`
+              }
+            </Button>
+          </Card>
+        )}
+
+        {/* Barre de progression */}
+        {generating && (
+          <Card variant="primary" className="mb-8">
+            <h3 className="text-lg font-semibold mb-3">⏳ Génération en cours...</h3>
+            <p className="text-2xl text-blue-400 font-bold mb-2">
+              {progress.current} / {progress.total}
+            </p>
+            <div className="w-full h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-emerald-500 transition-all duration-300"
+                style={{ width: `${(progress.current / progress.total) * 100}%` }}
+              />
+            </div>
+          </Card>
+        )}
+
+        {/* Erreur */}
+        {error && (
+          <Card variant="danger" className="mb-8">
+            <strong className="block mb-2">❌ Erreur :</strong>
+            <p>{error}</p>
+          </Card>
+        )}
+
+        {/* Résultats */}
+        {results.length > 0 && (
+          <Card>
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold">
+                3️⃣ Résultats ({results.length} audios)
+              </h2>
+              <Button onClick={downloadAllResults} variant="secondary">
+                📥 Télécharger JSON
+              </Button>
+            </div>
+
+            <div className="space-y-3">
+              {results.map((result, idx) => (
+                <Card key={idx} variant="success">
+                  <div className="flex justify-between items-center">
+                    <div className="flex-1">
+                      <strong className="block mb-1">{result.speaker}</strong>
+                      <p className="text-sm text-slate-600 dark:text-slate-400">{result.text}</p>
+                    </div>
+                    <span className="text-2xl ml-4">✅</span>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </Card>
+        )}
+
+        {/* Guide */}
+        <Card variant="primary" className="mt-8">
+          <h2 className="text-xl font-bold mb-4">💡 Comment ça marche ?</h2>
+          <ol className="space-y-2 text-slate-300">
+            <li><strong>1.</strong> Choisir une conversation</li>
+            <li><strong>2.</strong> Vérifier l'aperçu</li>
+            <li><strong>3.</strong> Cliquer sur "Générer"</li>
+            <li><strong>4.</strong> Attendre la synthèse vocale</li>
+            <li><strong>5.</strong> Télécharger les résultats</li>
+          </ol>
+        </Card>
       </div>
     </div>
   );
-}
+              }
