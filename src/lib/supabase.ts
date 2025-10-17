@@ -1,35 +1,38 @@
 // src/lib/supabase.ts
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@supabase/supabase-js';
+import { config, validateConfig } from './config';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+// Valider au chargement
+validateConfig();
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+export const supabase = createClient(
+  config.supabase.url!,
+  config.supabase.anonKey!
+);
 
 // Fonction pour uploader un audio
-export async function uploadAudio(file: File, filename: string) {
+export async function uploadAudio(file: File | Blob, filename: string): Promise<string> {
   const { data, error } = await supabase.storage
     .from('audios')
     .upload(filename, file, {
-      cacheControl: '3600',
-      upsert: false
-    })
+      contentType: 'audio/mpeg',
+      upsert: true
+    });
 
-  if (error) throw error
+  if (error) throw error;
 
-  // Obtenir l'URL publique
   const { data: { publicUrl } } = supabase.storage
     .from('audios')
-    .getPublicUrl(filename)
+    .getPublicUrl(filename);
 
-  return publicUrl
+  return publicUrl;
 }
 
 // Fonction pour obtenir l'URL d'un audio
-export function getAudioUrl(filename: string) {
+export function getAudioUrl(filename: string): string {
   const { data: { publicUrl } } = supabase.storage
     .from('audios')
-    .getPublicUrl(filename)
+    .getPublicUrl(filename);
   
-  return publicUrl
+  return publicUrl;
 }
