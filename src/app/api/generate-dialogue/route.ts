@@ -1,118 +1,153 @@
-// Fichier : src/app/api/generate-dialogue/route.ts
-// Cette API génère automatiquement des dialogues avec OpenAI/Claude
-
+// src/app/api/generate-dialogue/route.ts
 import { NextRequest, NextResponse } from 'next/server';
+import { z } from 'zod';
+import { config } from '@/lib/config';
+
+const requestSchema = z.object({
+  topic: z.string().min(3).max(100),
+  country: z.string(),
+  level: z.enum(['A1', 'A2', 'B1', 'B2']),
+});
+
+const COUNTRY_EXAMPLES: Record<string, { names: string[], vocab: string[] }> = {
+  'Espagne': {
+    names: ['Carlos', 'María', 'Javier', 'Ana', 'Pablo', 'Laura'],
+    vocab: ['tío', 'vale', 'guay', 'chaval', 'piso', 'móvil'],
+  },
+  'Mexique': {
+    names: ['Juan', 'Sofía', 'Miguel', 'Lucía', 'Diego', 'Fernanda'],
+    vocab: ['güey', 'chido', 'ahorita', 'camión', 'platicar', 'celular'],
+  },
+  'Argentine': {
+    names: ['Mateo', 'Valentina', 'Santiago', 'Emma', 'Benjamín', 'Martina'],
+    vocab: ['che', 'boludo', 'colectivo', 'subte', 'pibe', 'departamento'],
+  },
+};
 
 export async function POST(request: NextRequest) {
   try {
-    const { topic, country, level } = await request.json();
+    const body = await request.json();
+    
+    // Validate input
+    const validatedData = requestSchema.parse(body);
+    const { topic, country, level } = validatedData;
 
-    // Validation
-    if (!topic || !country || !level) {
+    if (!config.openai.apiKey) {
+      throw new Error('OpenAI API key not configured');
+    }
+
+    const countryData = COUNTRY_EXAMPLES[country] || COUNTRY_EXAMPLES['Espagne'];
+
+    const prompt = `Génère un dialogue authentique en espagnol pour le thème "${topic}".
+
+CONTEXTE :
+- Pays : ${country}
+- Niveau CECRL : ${level}
+- Utilise le vocabulaire et les expressions typiques de ${country}
+- Adapte la complexité grammaticale au niveau ${level}
+- Noms typiques : ${countryData.names.join(', ')}
+- Expressions locales à intégrer si possible : ${countryData.vocab.join(', ')}
+
+CONSIGNES :
+- 4 à 6 répliques alternant entre 2 personnes
+- Utilise des prénoms locaux appropriés
+- Rends le dialogue naturel et conversationnel
+- ${level === 'A1' ? 'Phrases simples, présent de l\'indicatif' : ''}
+- ${level === 'A2' ? 'Présent + passé composé, connecteurs basiques' : ''}
+- ${level === 'B1' ? 'Tous les temps, subjonctif si nécessaire' : ''}
+
+RÉPONDS UNIQUEMENT avec ce JSON (PAS de markdown) :
+{
+  "title": "Titre court en français",
+  "lines": [
+    {
+      "text": "Texte en espagnol",
+      "speaker": "Prénom local",
+      "gender": "homme" ou "femme"
+    }
+  ]
+}`;
+
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${config.openai.apiKey}`,
+      },
+      body: JSON.stringify({
+        model: 'gpt-4o-mini',
+        messages: [
+          {
+            role: 'system',
+            content: 'Tu es un expert en didactique des langues, spécialisé dans la création de dialogues pédagogiques en espagnol. Tu réponds TOUJOURS en JSON valide, sans markdown.',
+          },
+          {
+            role: 'user',
+            content: prompt,
+          },
+        ],
+        temperature: 0.8,
+        max_tokens: 1000,
+      }),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}));
+      throw new Error(
+        `OpenAI API error: ${response.status} - ${errorData.error?.message || 'Unknown error'}`
+      );
+    }
+
+    const data = await response.json();
+    let content = data.choices[0]?.message?.content;
+
+    if (!content) {
+      throw new Error('No content in OpenAI response');
+    }
+
+    // Clean markdown if present
+    content = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+
+    // Parse JSON
+    const dialogue = JSON.parse(content);
+
+    // Validate structure
+    if (!dialogue.title || !Array.isArray(dialogue.lines) || dialogue.lines.length === 0) {
+      throw new Error('Invalid dialogue structure');
+    }
+
+    return NextResponse.json(dialogue);
+
+  } catch (error) {
+    console.error('Error generating dialogue:', error);
+
+    if (error instanceof z.ZodError) {
       return NextResponse.json(
-        { error: 'Paramètres manquants' },
+        { error: 'Invalid request data', details: error.errors },
         { status: 400 }
       );
     }
 
-    // Prompt pour générer un dialogue naturel
-    const prompt = `Génère un dialogue en espagnol authentique pour le thème "${topic}".
-
-Contexte :
-- Pays : ${country}
-- Niveau CECRL : ${level}
-- Utilise le vocabulaire et les expressions typiques de ${country}
-- Adapte la complexité au niveau ${level}
-
-Génère un dialogue avec 4-6 répliques alternant entre 2 personnes.
-
-Réponds UNIQUEMENT avec ce format JSON (sans markdown) :
-{
-  "title": "Titre du dialogue en français",
-  "lines": [
-    {
-      "text": "Texte en espagnol",
-      "speaker": "Prénom local approprié",
-      "gender": "homme" ou "femme"
+    if (error instanceof SyntaxError) {
+      return NextResponse.json(
+        { error: 'Invalid JSON response from AI' },
+        { status: 500 }
+      );
     }
-  ]
-}
 
-Exemple pour "Au café" en Espagne niveau A1 :
-{
-  "title": "Commander au café",
-  "lines": [
-    { "text": "Hola, buenos días", "speaker": "Carlos", "gender": "homme" },
-    { "text": "Buenos días, ¿qué desea?", "speaker": "María", "gender": "femme" },
-    { "text": "Un café con leche, por favor", "speaker": "Carlos", "gender": "homme" },
-    { "text": "Aquí tiene. Son dos euros", "speaker": "María", "gender": "femme" }
-  ]
-}`;
-
-    // Utiliser OpenAI ou Claude (selon ce que tu as)
-    // Option 1 : OpenAI
-    const openaiResponse = await fetch('https://api.openai.com/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
+    return NextResponse.json(
+      { 
+        error: error instanceof Error ? error.message : 'Internal server error',
       },
-      body: JSON.stringify({
-        model: 'gpt-3.5-turbo',
-        messages: [
-          {
-            role: 'system',
-            content: 'Tu es un expert en didactique des langues, spécialisé dans l\'enseignement de l\'espagnol. Tu crées des dialogues authentiques et pédagogiques.'
-          },
-          {
-            role: 'user',
-            content: prompt
-          }
-        ],
-        temperature: 0.7
-      })
-    });
-
-    if (!openaiResponse.ok) {
-      throw new Error('Erreur OpenAI API');
-    }
-
-    const openaiData = await openaiResponse.json();
-    let content = openaiData.choices[0].message.content;
-
-    // Nettoyer les backticks markdown si présents
-    content = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-
-    // Parser le JSON
-    const dialogue = JSON.parse(content);
-
-    return NextResponse.json(dialogue);
-
-  } catch (error: any) {
-    console.error('Erreur génération dialogue:', error);
-    
-    // Fallback : générer un dialogue simple
-    return NextResponse.json({
-      title: `Dialogue : ${request.json().then(d => d.topic)}`,
-      lines: [
-        {
-          text: "Hola, ¿cómo estás?",
-          speaker: "Speaker A",
-          gender: "homme"
-        },
-        {
-          text: "Muy bien, gracias. ¿Y tú?",
-          speaker: "Speaker B",
-          gender: "femme"
-        }
-      ]
-    });
+      { status: 500 }
+    );
   }
 }
 
 export async function GET() {
   return NextResponse.json({
     status: 'online',
-    message: 'API de génération de dialogues active'
+    message: 'API de génération de dialogues active',
+    models: ['gpt-4o-mini'],
   });
 }
