@@ -1,13 +1,312 @@
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:#0f1720;color:#e5e7eb;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
-main{max-width:1100px;margin:0 auto;padding:24px}
-.card{background:#0f1720;border:1px solid #1f2a37;border-radius:16px;padding:16px;margin:16px 0}
-.hstack{display:flex;gap:12px;align-items:center}
-.vstack{display:flex;gap:12px;flex-direction:column}
-.badge{padding:2px 8px;border:1px solid #334155;border-radius:999px;font-size:12px}
-.muted{color:#93a2b8}
-hr{border-color:#1f2a37}
-input,select,textarea,button{border-radius:10px;border:1px solid #334155;background:#0b1220;color:#e5e7eb;padding:8px 10px}
-button{cursor:pointer}
-.section{display:grid;grid-template-columns:1fr;gap:16px}
-@media (min-width: 980px){.section{grid-template-columns:1fr 1fr}}
+/* src/app/global.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS pour thèmes */
+:root {
+  --background: 248 250 252; /* slate-50 */
+  --foreground: 15 23 42; /* slate-900 */
+  --card: 255 255 255;
+  --card-foreground: 15 23 42;
+  --primary: 59 130 246; /* blue-500 */
+  --primary-foreground: 255 255 255;
+  --secondary: 100 116 139; /* slate-500 */
+  --muted: 241 245 249; /* slate-100 */
+  --border: 226 232 240; /* slate-200 */
+}
+
+.dark {
+  --background: 2 6 23; /* slate-950 */
+  --foreground: 226 232 240; /* slate-200 */
+  --card: 15 23 42; /* slate-900 */
+  --card-foreground: 226 232 240;
+  --primary: 96 165 250; /* blue-400 */
+  --primary-foreground: 2 6 23;
+  --secondary: 100 116 139;
+  --muted: 30 41 59; /* slate-800 */
+  --border: 51 65 85; /* slate-700 */
+}
+
+/* Reset de base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--muted));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--secondary));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--primary));
+}
+
+/* Animations personnalisées */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Utility classes */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-in-out;
+}
+
+/* Focus visible pour accessibilité */
+*:focus-visible {
+  outline: 2px solid rgb(var(--primary));
+  outline-offset: 2px;
+}
+
+/* Sélection de texte */
+::selection {
+  background-color: rgb(var(--primary) / 0.3);
+  color: rgb(var(--foreground));
+}
+
+/* Styles pour les composants Card */
+.card {
+  background: rgb(var(--card));
+  border: 1px solid rgb(var(--border));
+  border-radius: 16px;
+  padding: 16px;
+  margin: 16px 0;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: rgb(var(--primary));
+}
+
+/* Styles pour les inputs */
+input,
+select,
+textarea {
+  background: rgb(var(--muted));
+  border: 1px solid rgb(var(--border));
+  border-radius: 10px;
+  padding: 8px 12px;
+  color: rgb(var(--foreground));
+  transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgb(var(--primary));
+  box-shadow: 0 0 0 3px rgb(var(--primary) / 0.1);
+}
+
+input::placeholder {
+  color: rgb(var(--secondary));
+}
+
+/* Styles pour les boutons */
+button {
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid rgb(var(--border));
+}
+
+/* Layout helpers */
+.hstack {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.vstack {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+/* Text utilities */
+.muted {
+  color: rgb(var(--secondary));
+}
+
+.text-gradient {
+  background: linear-gradient(to right, rgb(var(--primary)), rgb(147 51 234)); /* blue-500 to purple-600 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Grid responsive */
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Toast customization */
+.Toaster__toast {
+  border-radius: 12px !important;
+  padding: 16px !important;
+  font-weight: 500;
+}
+
+/* Loading spinner */
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgb(var(--muted));
+  border-top-color: rgb(var(--primary));
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Empty state */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: rgb(var(--secondary));
+}
+
+.empty-state img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgb(var(--primary) / 0.1);
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .grid-responsive {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 12px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus trap pour modals */
+.focus-trap:focus {
+  outline: 2px solid rgb(var(--primary));
+  outline-offset: 2px;
+}
