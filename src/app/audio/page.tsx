@@ -546,10 +546,85 @@ export default function AudioManager() {
         )}
 
         {/* ONGLET: Générer les audios */}
-        {activeTab === 'generate' && (
-          <div>
-            <h2 style={{ fontSize: '24px', marginBottom: '20px' }}>
-              🚀 Générer les audios
-            </h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
+              {conversations.map((conv) => (
+                <div
+                  key={conv.id}
+                  style={{
+                    background: '#0b1220',
+                    border: '1px solid #334155',
+                    borderRadius: '12px',
+                    padding: '20px'
+                  }}
+                >
+                  <div style={{ marginBottom: '15px' }}>
+                    <span style={{ fontSize: '28px' }}>
+                      {VOICE_CONFIG[conv.country]?.flag}
+                    </span>
+                    <h3 style={{ margin: '10px 0', fontSize: '18px' }}>{conv.title}</h3>
+                    <p style={{ color: '#93a2b8', fontSize: '14px', margin: '5px 0' }}>
+                      {conv.country} • {conv.level}
+                    </p>
+                    <p style={{ color: '#93a2b8', fontSize: '14px', margin: 0 }}>
+                      {conv.lines.length} répliques
+                    </p>
+                  </div>
+
+                  <button
+                    onClick={() => generateAudios(conv)}
+                    disabled={generating}
+                    style={{
+                      width: '100%',
+                      padding: '12px',
+                      background: generating ? '#334155' : '#10b981',
+                      border: 'none',
+                      borderRadius: '8px',
+                      color: 'white',
+                      cursor: generating ? 'not-allowed' : 'pointer',
+                      fontSize: '16px',
+                      fontWeight: 'bold'
+                    }}
+                  >
+                    {generating ? '⏳ En cours...' : '🚀 Générer les audios'}
+                  </button>
+                </div>
+              ))}
+            </div>
+
+            {generating && (
+              <div style={{
+                marginTop: '30px',
+                padding: '30px',
+                background: '#0b1220',
+                border: '1px solid #334155',
+                borderRadius: '12px'
+              }}>
+                <h3 style={{ marginBottom: '15px' }}>⏳ Génération en cours...</h3>
+                <p style={{ fontSize: '18px', color: '#60a5fa' }}>
+                  {generationProgress.current} / {generationProgress.total}
+                </p>
+                <div style={{
+                  width: '100%',
+                  height: '20px',
+                  background: '#1e3a5f',
+                  borderRadius: '10px',
+                  overflow: 'hidden',
+                  marginTop: '15px'
+                }}>
+                  <div style={{
+                    width: `${(generationProgress.current / generationProgress.total) * 100}%`,
+                    height: '100%',
+                    background: '#10b981',
+                    transition: 'width 0.3s'
+                  }} />
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
     
