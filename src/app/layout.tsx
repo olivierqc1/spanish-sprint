@@ -1,5 +1,6 @@
 // src/app/layout.tsx
 import { Toaster } from 'react-hot-toast';
+import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import "./global.css";
 
 export const metadata = {
@@ -9,10 +10,12 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr">
-      <body>
-        <Toaster position="top-right" />
-        {children}
+    <html lang="fr" suppressHydrationWarning>
+      <body className="bg-slate-950 text-slate-100 dark:bg-slate-950 dark:text-slate-100">
+        <ThemeProvider>
+          <Toaster position="top-right" />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
