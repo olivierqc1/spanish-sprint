@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
@@ -7,8 +7,7 @@ const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV0c2J4d2x5eGV1eW5oZ3F1anRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk5MDE0NTEsImV4cCI6MjA3NTQ3NzQ1MX0.26AVDbvdr0HbrpxyUTn5lTss-_6G5t8w5ILd2il1ZJ0'
 );
 
-// Configuration Google Cloud TTS - Toutes les voix disponibles
-const GOOGLE_VOICES = {
+const GOOGLE_VOICES: any = {
   "Espagne": {
     homme: [
       { name: "es-ES-Standard-B", quality: "Standard", flag: "🇪🇸" },
@@ -34,20 +33,12 @@ const GOOGLE_VOICES = {
     ]
   },
   "Argentine": {
-    homme: [
-      { name: "es-ES-Neural2-B", quality: "Neural", flag: "🇦🇷" },
-    ],
-    femme: [
-      { name: "es-ES-Neural2-A", quality: "Neural", flag: "🇦🇷" },
-    ]
+    homme: [{ name: "es-ES-Neural2-B", quality: "Neural", flag: "🇦🇷" }],
+    femme: [{ name: "es-ES-Neural2-A", quality: "Neural", flag: "🇦🇷" }]
   },
   "Colombie": {
-    homme: [
-      { name: "es-US-Neural2-B", quality: "Neural", flag: "🇨🇴" },
-    ],
-    femme: [
-      { name: "es-US-Neural2-A", quality: "Neural", flag: "🇨🇴" },
-    ]
+    homme: [{ name: "es-US-Neural2-B", quality: "Neural", flag: "🇨🇴" }],
+    femme: [{ name: "es-US-Neural2-A", quality: "Neural", flag: "🇨🇴" }]
   }
 };
 
@@ -57,7 +48,6 @@ export default function AudioManagerPro() {
   const [apiKey, setApiKey] = useState('');
   const [isConfigured, setIsConfigured] = useState(false);
   
-  // État pour les conversations
   const [conversations, setConversations] = useState([
     {
       id: "demo_es_cafe",
@@ -71,7 +61,6 @@ export default function AudioManagerPro() {
     }
   ]);
 
-  // État pour nouveau dialogue
   const [newConv, setNewConv] = useState({
     title: '',
     country: 'Espagne',
@@ -79,18 +68,23 @@ export default function AudioManagerPro() {
     lines: [{ text: '', speaker: '', gender: 'homme' }]
   });
 
-  // État pour le générateur AI
   const [aiTopic, setAiTopic] = useState('');
   const [aiCountry, setAiCountry] = useState('Espagne');
   const [aiLevel, setAiLevel] = useState('A1');
   const [generatingAI, setGeneratingAI] = useState(false);
 
-  // État pour la génération audio
   const [generating, setGenerating] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0, status: '' });
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState<any[]>([]);
 
-  // Sauvegarder la clé API
+  useEffect(() => {
+    const savedKey = localStorage.getItem('google_cloud_api_key');
+    if (savedKey) {
+      setApiKey(savedKey);
+      setIsConfigured(true);
+    }
+  }, []);
+
   const saveApiKey = () => {
     if (!apiKey) {
       alert('⚠️ Entre ta clé API Google Cloud');
@@ -102,16 +96,6 @@ export default function AudioManagerPro() {
     alert('✅ Configuration sauvegardée !');
   };
 
-  // Vérifier si déjà configuré
-  useState(() => {
-    const savedKey = localStorage.getItem('google_cloud_api_key');
-    if (savedKey) {
-      setApiKey(savedKey);
-      setIsConfigured(true);
-    }
-  }, []);
-
-  // Générer un dialogue avec AI
   const generateWithAI = async () => {
     if (!aiTopic) {
       alert('⚠️ Entre un thème !');
@@ -121,7 +105,6 @@ export default function AudioManagerPro() {
     setGeneratingAI(true);
 
     try {
-      // Appeler l'API pour générer le dialogue
       const response = await fetch('/api/generate-dialogue', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -136,7 +119,6 @@ export default function AudioManagerPro() {
 
       const dialogue = await response.json();
       
-      // Ajouter aux conversations
       const newConversation = {
         id: `ai_${Date.now()}`,
         title: dialogue.title || aiTopic,
@@ -152,16 +134,15 @@ export default function AudioManagerPro() {
 
     } catch (error) {
       console.error('Erreur:', error);
-      alert(`❌ Erreur: ${error.message}`);
+      alert(`❌ Erreur: ${error}`);
     } finally {
       setGeneratingAI(false);
     }
   };
 
-  // Générer les audios avec Google Cloud TTS
-  const generateAudios = async (conv) => {
+  const generateAudios = async (conv: any) => {
     if (!apiKey) {
-      alert('⚠️ Configure d\'abord ta clé API Google Cloud dans l\'onglet ⚙️ Configuration');
+      alert('⚠️ Configure d\'abord ta clé API Google Cloud');
       setActiveTab('setup');
       return;
     }
@@ -170,7 +151,7 @@ export default function AudioManagerPro() {
     setResults([]);
     setProgress({ current: 0, total: conv.lines.length, status: 'Démarrage...' });
 
-    const generatedResults = [];
+    const generatedResults: any[] = [];
 
     try {
       for (let i = 0; i < conv.lines.length; i++) {
@@ -183,11 +164,9 @@ export default function AudioManagerPro() {
           status: `Génération ${i + 1}/${conv.lines.length}: "${line.text.substring(0, 30)}..."`
         });
 
-        // Générer l'audio
         const audioBlob = await generateWithGoogleTTS(line.text, conv.country, line.gender);
         
         if (audioBlob) {
-          // Upload sur Supabase
           const url = await uploadToSupabase(audioBlob, filename);
           
           generatedResults.push({
@@ -209,20 +188,19 @@ export default function AudioManagerPro() {
 
       setResults(generatedResults);
       const successCount = generatedResults.filter(r => r.status === 'success').length;
-      alert(`✅ ${successCount}/${conv.lines.length} audios générés avec succès !`);
+      alert(`✅ ${successCount}/${conv.lines.length} audios générés !`);
       
     } catch (error) {
       console.error('Erreur:', error);
-      alert(`❌ Erreur: ${error.message}`);
+      alert(`❌ Erreur: ${error}`);
     } finally {
       setGenerating(false);
     }
   };
 
-  // Générer avec Google Cloud TTS
-  const generateWithGoogleTTS = async (text, country, gender) => {
+  const generateWithGoogleTTS = async (text: string, country: string, gender: string) => {
     try {
-      const voice = GOOGLE_VOICES[country]?.[gender]?.[1]; // Utiliser Neural2 (meilleure qualité)
+      const voice = GOOGLE_VOICES[country]?.[gender]?.[1];
       
       if (!voice) {
         throw new Error('Voix non trouvée');
@@ -254,7 +232,6 @@ export default function AudioManagerPro() {
 
       const data = await response.json();
       
-      // Convertir base64 en blob
       const audioContent = data.audioContent;
       const byteCharacters = atob(audioContent);
       const byteNumbers = new Array(byteCharacters.length);
@@ -270,8 +247,7 @@ export default function AudioManagerPro() {
     }
   };
 
-  // Upload sur Supabase
-  const uploadToSupabase = async (blob, filename) => {
+  const uploadToSupabase = async (blob: Blob, filename: string) => {
     try {
       const { data, error } = await supabase.storage
         .from('audios')
@@ -293,7 +269,6 @@ export default function AudioManagerPro() {
     }
   };
 
-  // Gestion du formulaire manuel
   const addLine = () => {
     setNewConv({
       ...newConv,
@@ -301,13 +276,13 @@ export default function AudioManagerPro() {
     });
   };
 
-  const updateLine = (index, field, value) => {
+  const updateLine = (index: number, field: string, value: string) => {
     const updatedLines = [...newConv.lines];
-    updatedLines[index][field] = value;
+    (updatedLines[index] as any)[field] = value;
     setNewConv({ ...newConv, lines: updatedLines });
   };
 
-  const removeLine = (index) => {
+  const removeLine = (index: number) => {
     if (newConv.lines.length > 1) {
       setNewConv({
         ...newConv,
@@ -338,21 +313,27 @@ export default function AudioManagerPro() {
     alert('✅ Conversation sauvegardée !');
   };
 
+  const downloadResults = () => {
+    const dataStr = JSON.stringify(results, null, 2);
+    const dataBlob = new Blob([dataStr], { type: 'application/json' });
+    const url = URL.createObjectURL(dataBlob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `audios_pro_${Date.now()}.json`;
+    link.click();
+  };
+
   return (
     <div style={{ minHeight: '100vh', background: '#0f1720', color: '#e5e7eb', padding: '20px' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         
-        {/* Header */}
         <div style={{ marginBottom: '40px', textAlign: 'center' }}>
-          <h1 style={{ fontSize: '36px', marginBottom: '10px' }}>
-            🎙️ Audio Manager PRO
-          </h1>
+          <h1 style={{ fontSize: '36px', marginBottom: '10px' }}>🎙️ Audio Manager PRO</h1>
           <p style={{ color: '#93a2b8', fontSize: '14px' }}>
-            Google Cloud TTS (1M caractères/mois) • Générateur AI • Qualité professionnelle
+            Google Cloud TTS • Générateur AI • Qualité professionnelle
           </p>
         </div>
 
-        {/* Navigation */}
         <div style={{ display: 'flex', gap: '10px', marginBottom: '30px', borderBottom: '1px solid #334155', paddingBottom: '10px', flexWrap: 'wrap' }}>
           {!isConfigured && (
             <button onClick={() => setActiveTab('setup')} style={{
@@ -362,9 +343,7 @@ export default function AudioManagerPro() {
               borderRadius: '8px',
               color: '#e5e7eb',
               cursor: 'pointer'
-            }}>
-              ⚙️ Configuration
-            </button>
+            }}>⚙️ Configuration</button>
           )}
           {isConfigured && (
             <>
@@ -375,9 +354,7 @@ export default function AudioManagerPro() {
                 borderRadius: '8px',
                 color: '#e5e7eb',
                 cursor: 'pointer'
-              }}>
-                📋 Conversations ({conversations.length})
-              </button>
+              }}>📋 Conversations ({conversations.length})</button>
               <button onClick={() => setActiveTab('ai')} style={{
                 padding: '12px 24px',
                 background: activeTab === 'ai' ? '#1e3a5f' : 'transparent',
@@ -385,9 +362,7 @@ export default function AudioManagerPro() {
                 borderRadius: '8px',
                 color: '#e5e7eb',
                 cursor: 'pointer'
-              }}>
-                ✨ Générer avec AI
-              </button>
+              }}>✨ Générer avec AI</button>
               <button onClick={() => setActiveTab('manual')} style={{
                 padding: '12px 24px',
                 background: activeTab === 'manual' ? '#1e3a5f' : 'transparent',
@@ -395,9 +370,7 @@ export default function AudioManagerPro() {
                 borderRadius: '8px',
                 color: '#e5e7eb',
                 cursor: 'pointer'
-              }}>
-                ✍️ Ajouter manuellement
-              </button>
+              }}>✍️ Ajouter manuellement</button>
               <button onClick={() => setActiveTab('generate')} style={{
                 padding: '12px 24px',
                 background: activeTab === 'generate' ? '#1e3a5f' : 'transparent',
@@ -405,14 +378,11 @@ export default function AudioManagerPro() {
                 borderRadius: '8px',
                 color: '#e5e7eb',
                 cursor: 'pointer'
-              }}>
-                🚀 Générer audios
-              </button>
+              }}>🚀 Générer audios</button>
             </>
           )}
         </div>
 
-        {/* ONGLET: Configuration */}
         {activeTab === 'setup' && (
           <div style={{ background: '#0b1220', border: '1px solid #334155', borderRadius: '12px', padding: '40px' }}>
             <h2 style={{ marginBottom: '30px', textAlign: 'center' }}>⚙️ Configuration Google Cloud TTS</h2>
@@ -424,35 +394,28 @@ export default function AudioManagerPro() {
                   <ol style={{ lineHeight: '2' }}>
                     <li>Va sur <a href="https://console.cloud.google.com" target="_blank" style={{ color: '#60a5fa' }}>console.cloud.google.com</a></li>
                     <li>Connecte-toi avec ton compte Google</li>
-                    <li>Accepte les conditions (c'est gratuit, pas de carte bancaire nécessaire)</li>
+                    <li>Accepte les conditions (gratuit)</li>
                   </ol>
                 </div>
                 <button onClick={() => setSetupStep(2)} style={{ width: '100%', padding: '15px', background: '#10b981', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer', fontWeight: 'bold' }}>
-                  ✅ J'ai créé mon compte → Étape suivante
+                  ✅ Compte créé → Étape suivante
                 </button>
               </div>
             )}
 
             {setupStep === 2 && (
               <div>
-                <h3 style={{ marginBottom: '20px' }}>Étape 2/3 : Activer l'API Text-to-Speech</h3>
+                <h3 style={{ marginBottom: '20px' }}>Étape 2/3 : Activer l&apos;API Text-to-Speech</h3>
                 <div style={{ background: '#1e3a5f', padding: '20px', borderRadius: '8px', marginBottom: '20px' }}>
                   <ol style={{ lineHeight: '2' }}>
-                    <li>Dans Google Cloud Console, cherche "Text-to-Speech API"</li>
-                    <li>Clique sur "ACTIVER"</li>
-                    <li>Attends 30 secondes que ça s'active</li>
+                    <li>Dans Google Cloud Console, cherche &quot;Text-to-Speech API&quot;</li>
+                    <li>Clique sur &quot;ACTIVER&quot;</li>
+                    <li>Attends 30 secondes</li>
                   </ol>
-                  <p style={{ marginTop: '15px', color: '#93a2b8', fontSize: '14px' }}>
-                    💡 Lien direct : <a href="https://console.cloud.google.com/apis/library/texttospeech.googleapis.com" target="_blank" style={{ color: '#60a5fa' }}>Activer Text-to-Speech API</a>
-                  </p>
                 </div>
                 <div style={{ display: 'flex', gap: '10px' }}>
-                  <button onClick={() => setSetupStep(1)} style={{ flex: 1, padding: '15px', background: '#334155', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer' }}>
-                    ← Retour
-                  </button>
-                  <button onClick={() => setSetupStep(3)} style={{ flex: 2, padding: '15px', background: '#10b981', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer', fontWeight: 'bold' }}>
-                    ✅ API activée → Étape suivante
-                  </button>
+                  <button onClick={() => setSetupStep(1)} style={{ flex: 1, padding: '15px', background: '#334155', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer' }}>← Retour</button>
+                  <button onClick={() => setSetupStep(3)} style={{ flex: 2, padding: '15px', background: '#10b981', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer', fontWeight: 'bold' }}>✅ API activée → Suivant</button>
                 </div>
               </div>
             )}
@@ -462,17 +425,14 @@ export default function AudioManagerPro() {
                 <h3 style={{ marginBottom: '20px' }}>Étape 3/3 : Créer une clé API</h3>
                 <div style={{ background: '#1e3a5f', padding: '20px', borderRadius: '8px', marginBottom: '20px' }}>
                   <ol style={{ lineHeight: '2' }}>
-                    <li>Va dans "APIs & Services" → "Credentials"</li>
-                    <li>Clique sur "CREATE CREDENTIALS" → "API Key"</li>
-                    <li>Copie la clé qui s'affiche (commence par AIza...)</li>
-                    <li>Colle-la ci-dessous :</li>
+                    <li>Va dans &quot;APIs & Services&quot; → &quot;Credentials&quot;</li>
+                    <li>Clique sur &quot;CREATE CREDENTIALS&quot; → &quot;API Key&quot;</li>
+                    <li>Copie la clé (commence par AIza...)</li>
                   </ol>
                 </div>
 
                 <div style={{ marginBottom: '20px' }}>
-                  <label style={{ display: 'block', marginBottom: '10px', color: '#93a2b8' }}>
-                    Ta clé API Google Cloud :
-                  </label>
+                  <label style={{ display: 'block', marginBottom: '10px', color: '#93a2b8' }}>Ta clé API Google Cloud :</label>
                   <input
                     type="text"
                     value={apiKey}
@@ -492,35 +452,19 @@ export default function AudioManagerPro() {
                 </div>
 
                 <div style={{ display: 'flex', gap: '10px' }}>
-                  <button onClick={() => setSetupStep(2)} style={{ flex: 1, padding: '15px', background: '#334155', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer' }}>
-                    ← Retour
-                  </button>
-                  <button onClick={saveApiKey} style={{ flex: 2, padding: '15px', background: '#10b981', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer', fontWeight: 'bold' }}>
-                    💾 Sauvegarder et commencer
-                  </button>
-                </div>
-
-                <div style={{ marginTop: '20px', padding: '15px', background: '#064e3b', borderRadius: '8px', fontSize: '14px' }}>
-                  <strong>✅ C'est gratuit :</strong>
-                  <ul style={{ marginTop: '10px', marginBottom: 0 }}>
-                    <li>1 million de caractères/mois gratuits</li>
-                    <li>≈ 1000 conversations</li>
-                    <li>Qualité professionnelle</li>
-                  </ul>
+                  <button onClick={() => setSetupStep(2)} style={{ flex: 1, padding: '15px', background: '#334155', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer' }}>← Retour</button>
+                  <button onClick={saveApiKey} style={{ flex: 2, padding: '15px', background: '#10b981', border: 'none', borderRadius: '8px', color: 'white', cursor: 'pointer', fontWeight: 'bold' }}>💾 Sauvegarder</button>
                 </div>
               </div>
             )}
           </div>
         )}
 
-        {/* ONGLET: Liste */}
         {activeTab === 'list' && isConfigured && (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
             {conversations.map(conv => (
               <div key={conv.id} style={{ background: '#0b1220', border: '1px solid #334155', borderRadius: '12px', padding: '20px' }}>
-                <div style={{ fontSize: '28px', marginBottom: '10px' }}>
-                  {GOOGLE_VOICES[conv.country]?.homme[0].flag}
-                </div>
+                <div style={{ fontSize: '28px', marginBottom: '10px' }}>{GOOGLE_VOICES[conv.country]?.homme[0].flag}</div>
                 <h3 style={{ margin: '10px 0' }}>{conv.title}</h3>
                 <p style={{ color: '#93a2b8', fontSize: '14px' }}>
                   {conv.country} • {conv.level} • {conv.lines.length} répliques
@@ -530,13 +474,54 @@ export default function AudioManagerPro() {
           </div>
         )}
 
-        {/* ONGLET: Générateur AI */}
         {activeTab === 'ai' && isConfigured && (
           <div style={{ background: '#0b1220', border: '1px solid #334155', borderRadius: '12px', padding: '40px', maxWidth: '600px', margin: '0 auto' }}>
             <h2 style={{ marginBottom: '30px', textAlign: 'center' }}>✨ Générer un dialogue avec AI</h2>
             
             <div style={{ marginBottom: '20px' }}>
-              <label style={{ display: 'block', marginBottom: '10px', color: '#93a2b8' }}>
-                Thème du dialogue :
-              </label>
-      
+              <label style={{ display: 'block', marginBottom: '10px', color: '#93a2b8' }}>Thème du dialogue :</label>
+              <input
+                type="text"
+                value={aiTopic}
+                onChange={(e) => setAiTopic(e.target.value)}
+                placeholder="Ex: Commander au restaurant..."
+                style={{
+                  width: '100%',
+                  padding: '12px',
+                  background: '#1e3a5f',
+                  border: '1px solid #334155',
+                  borderRadius: '8px',
+                  color: '#e5e7eb',
+                  fontSize: '16px'
+                }}
+              />
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '30px' }}>
+              <div>
+                <label style={{ display: 'block', marginBottom: '10px', color: '#93a2b8' }}>Pays :</label>
+                <select
+                  value={aiCountry}
+                  onChange={(e) => setAiCountry(e.target.value)}
+                  style={{
+                    width: '100%',
+                    padding: '12px',
+                    background: '#1e3a5f',
+                    border: '1px solid #334155',
+                    borderRadius: '8px',
+                    color: '#e5e7eb'
+                  }}
+                >
+                  {Object.keys(GOOGLE_VOICES).map(country => (
+                    <option key={country} value={country}>{GOOGLE_VOICES[country].homme[0].flag} {country}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label style={{ display: 'block', marginBottom: '10px', color: '#93a2b8' }}>Niveau :</label>
+                <select
+                  value={aiLevel}
+                  onChange={(e) => setAiLevel(e.target.value)}
+                  style={{
+                    width
