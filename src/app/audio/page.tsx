@@ -1,7 +1,7 @@
 "use client";
 import { useState } from 'react';
 
-// Base de données des conversations (tu peux aussi mettre ça dans Supabase plus tard)
+// Base de données des conversations
 const INITIAL_CONVERSATIONS = [
   {
     id: "conv_es_a1_cafe",
@@ -39,7 +39,7 @@ const VOICE_CONFIG = {
 
 export default function AudioManager() {
   const [conversations, setConversations] = useState(INITIAL_CONVERSATIONS);
-  const [activeTab, setActiveTab] = useState('list'); // 'list', 'add', 'generate'
+  const [activeTab, setActiveTab] = useState('list');
   const [selectedConv, setSelectedConv] = useState(null);
   const [generating, setGenerating] = useState(false);
   const [generationProgress, setGenerationProgress] = useState({ current: 0, total: 0 });
@@ -111,10 +111,10 @@ export default function AudioManager() {
         const line = conv.lines[i];
         setGenerationProgress({ current: i + 1, total: conv.lines.length });
 
-        // Simuler la génération (en vrai, tu appellerais une API)
+        // Simuler la génération
         await new Promise(resolve => setTimeout(resolve, 1000));
         
-        // Générer avec Web Speech API pour la démo
+        // Générer avec Web Speech API
         await speakText(line.text, conv.country, line.gender);
 
         results.push({
@@ -546,85 +546,10 @@ export default function AudioManager() {
         )}
 
         {/* ONGLET: Générer les audios */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
-              {conversations.map((conv) => (
-                <div
-                  key={conv.id}
-                  style={{
-                    background: '#0b1220',
-                    border: '1px solid #334155',
-                    borderRadius: '12px',
-                    padding: '20px'
-                  }}
-                >
-                  <div style={{ marginBottom: '15px' }}>
-                    <span style={{ fontSize: '28px' }}>
-                      {VOICE_CONFIG[conv.country]?.flag}
-                    </span>
-                    <h3 style={{ margin: '10px 0', fontSize: '18px' }}>{conv.title}</h3>
-                    <p style={{ color: '#93a2b8', fontSize: '14px', margin: '5px 0' }}>
-                      {conv.country} • {conv.level}
-                    </p>
-                    <p style={{ color: '#93a2b8', fontSize: '14px', margin: 0 }}>
-                      {conv.lines.length} répliques
-                    </p>
-                  </div>
-
-                  <button
-                    onClick={() => generateAudios(conv)}
-                    disabled={generating}
-                    style={{
-                      width: '100%',
-                      padding: '12px',
-                      background: generating ? '#334155' : '#10b981',
-                      border: 'none',
-                      borderRadius: '8px',
-                      color: 'white',
-                      cursor: generating ? 'not-allowed' : 'pointer',
-                      fontSize: '16px',
-                      fontWeight: 'bold'
-                    }}
-                  >
-                    {generating ? '⏳ En cours...' : '🚀 Générer les audios'}
-                  </button>
-                </div>
-              ))}
-            </div>
-
-            {generating && (
-              <div style={{
-                marginTop: '30px',
-                padding: '30px',
-                background: '#0b1220',
-                border: '1px solid #334155',
-                borderRadius: '12px'
-              }}>
-                <h3 style={{ marginBottom: '15px' }}>⏳ Génération en cours...</h3>
-                <p style={{ fontSize: '18px', color: '#60a5fa' }}>
-                  {generationProgress.current} / {generationProgress.total}
-                </p>
-                <div style={{
-                  width: '100%',
-                  height: '20px',
-                  background: '#1e3a5f',
-                  borderRadius: '10px',
-                  overflow: 'hidden',
-                  marginTop: '15px'
-                }}>
-                  <div style={{
-                    width: `${(generationProgress.current / generationProgress.total) * 100}%`,
-                    height: '100%',
-                    background: '#10b981',
-                    transition: 'width 0.3s'
-                  }} />
-                </div>
-              </div>
-            )}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
-
-    
+        {activeTab === 'generate' && (
+          <div>
+            <h2 style={{ fontSize: '24px', marginBottom: '20px' }}>
+              🚀 Générer les audios
+            </h2>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
