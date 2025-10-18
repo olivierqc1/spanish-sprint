@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
 
-// Base de données des conversations
 const INITIAL_CONVERSATIONS = [
   {
     id: "conv_es_a1_cafe",
@@ -29,8 +28,7 @@ const INITIAL_CONVERSATIONS = [
   }
 ];
 
-// Configuration des voix par pays
-const VOICE_CONFIG = {
+const VOICE_CONFIG: Record<string, { homme: string; femme: string; flag: string }> = {
   "Espagne": { homme: "es-ES-Standard-B", femme: "es-ES-Standard-A", flag: "🇪🇸" },
   "Mexique": { homme: "es-MX-Standard-B", femme: "es-MX-Standard-A", flag: "🇲🇽" },
   "Argentine": { homme: "es-ES-Standard-B", femme: "es-ES-Standard-A", flag: "🇦🇷" },
@@ -40,11 +38,10 @@ const VOICE_CONFIG = {
 export default function AudioManager() {
   const [conversations, setConversations] = useState(INITIAL_CONVERSATIONS);
   const [activeTab, setActiveTab] = useState('list');
-  const [selectedConv, setSelectedConv] = useState(null);
+  const [selectedConv, setSelectedConv] = useState<any>(null);
   const [generating, setGenerating] = useState(false);
   const [generationProgress, setGenerationProgress] = useState({ current: 0, total: 0 });
   
-  // État pour le formulaire d'ajout
   const [newConv, setNewConv] = useState({
     title: '',
     country: 'Espagne',
@@ -52,7 +49,6 @@ export default function AudioManager() {
     lines: [{ text: '', speaker: '', gender: 'homme' }]
   });
 
-  // Ajouter une ligne au formulaire
   const addLine = () => {
     setNewConv({
       ...newConv,
@@ -60,20 +56,17 @@ export default function AudioManager() {
     });
   };
 
-  // Mettre à jour une ligne
-  const updateLine = (index, field, value) => {
+  const updateLine = (index: number, field: string, value: string) => {
     const updatedLines = [...newConv.lines];
-    updatedLines[index][field] = value;
+    updatedLines[index] = { ...updatedLines[index], [field]: value };
     setNewConv({ ...newConv, lines: updatedLines });
   };
 
-  // Supprimer une ligne
-  const removeLine = (index) => {
+  const removeLine = (index: number) => {
     const updatedLines = newConv.lines.filter((_, i) => i !== index);
     setNewConv({ ...newConv, lines: updatedLines });
   };
 
-  // Sauvegarder la nouvelle conversation
   const saveNewConversation = () => {
     if (!newConv.title || newConv.lines.some(l => !l.text)) {
       alert('⚠️ Remplis tous les champs !');
@@ -99,8 +92,7 @@ export default function AudioManager() {
     alert('✅ Conversation ajoutée !');
   };
 
-  // Générer les audios
-  const generateAudios = async (conv) => {
+  const generateAudios = async (conv: any) => {
     setGenerating(true);
     setGenerationProgress({ current: 0, total: conv.lines.length });
 
@@ -111,10 +103,7 @@ export default function AudioManager() {
         const line = conv.lines[i];
         setGenerationProgress({ current: i + 1, total: conv.lines.length });
 
-        // Simuler la génération
         await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        // Générer avec Web Speech API
         await speakText(line.text, conv.country, line.gender);
 
         results.push({
@@ -128,16 +117,15 @@ export default function AudioManager() {
       alert(`✅ ${results.length} audios générés !`);
       console.log('Résultats:', results);
       
-    } catch (error) {
+    } catch (error: any) {
       alert(`❌ Erreur: ${error.message}`);
     } finally {
       setGenerating(false);
     }
   };
 
-  // Fonction pour parler (Web Speech API)
-  const speakText = (text, country, gender) => {
-    return new Promise((resolve, reject) => {
+  const speakText = (text: string, country: string, gender: string) => {
+    return new Promise<void>((resolve, reject) => {
       if (!('speechSynthesis' in window)) {
         reject(new Error('Synthèse vocale non supportée'));
         return;
@@ -149,18 +137,16 @@ export default function AudioManager() {
       utterance.pitch = gender === 'femme' ? 1.2 : 0.9;
 
       utterance.onend = () => resolve();
-      utterance.onerror = reject;
+      utterance.onerror = () => reject(new Error('Erreur de synthèse vocale'));
 
       window.speechSynthesis.speak(utterance);
     });
   };
 
-  // INTERFACE
   return (
     <div style={{ minHeight: '100vh', background: '#0f1720', color: '#e5e7eb', padding: '20px' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         
-        {/* Header */}
         <header style={{ marginBottom: '40px', textAlign: 'center' }}>
           <h1 style={{ fontSize: '36px', marginBottom: '10px' }}>
             🎙️ Gestionnaire Audio - Spanish Sprint
@@ -170,7 +156,6 @@ export default function AudioManager() {
           </p>
         </header>
 
-        {/* Navigation */}
         <nav style={{ 
           display: 'flex', 
           gap: '10px', 
@@ -222,7 +207,6 @@ export default function AudioManager() {
           </button>
         </nav>
 
-        {/* ONGLET: Liste des conversations */}
         {activeTab === 'list' && (
           <div>
             <h2 style={{ fontSize: '24px', marginBottom: '20px' }}>
@@ -267,7 +251,6 @@ export default function AudioManager() {
               ))}
             </div>
 
-            {/* Détails de la conversation sélectionnée */}
             {selectedConv && (
               <div style={{
                 marginTop: '30px',
@@ -295,7 +278,7 @@ export default function AudioManager() {
                   </button>
                 </div>
 
-                {selectedConv.lines.map((line, idx) => (
+                {selectedConv.lines.map((line: any, idx: number) => (
                   <div
                     key={idx}
                     style={{
@@ -322,7 +305,6 @@ export default function AudioManager() {
           </div>
         )}
 
-        {/* ONGLET: Ajouter une conversation */}
         {activeTab === 'add' && (
           <div style={{
             background: '#0b1220',
@@ -334,7 +316,6 @@ export default function AudioManager() {
               ➕ Nouvelle conversation
             </h2>
 
-            {/* Infos générales */}
             <div style={{ marginBottom: '30px' }}>
               <label style={{ display: 'block', marginBottom: '8px', color: '#93a2b8' }}>
                 Titre de la conversation
@@ -407,7 +388,6 @@ export default function AudioManager() {
               </div>
             </div>
 
-            {/* Lignes de dialogue */}
             <h3 style={{ fontSize: '18px', marginBottom: '15px' }}>Répliques</h3>
             {newConv.lines.map((line, index) => (
               <div
@@ -545,11 +525,23 @@ export default function AudioManager() {
           </div>
         )}
 
-        {/* ONGLET: Générer les audios */}
         {activeTab === 'generate' && (
           <div>
             <h2 style={{ fontSize: '24px', marginBottom: '20px' }}>
               🚀 Générer les audios
             </h2>
             
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
+              {conversations.map((conv) => (
+                <div
+                  key={conv.id}
+                  style={{
+                    background: '#0b1220',
+                    border: '1px solid #334155',
+                    borderRadius: '12px',
+                    padding: '20px'
+                  }}
+                >
+                  <div style={{ marginBottom: '15px' }}>
+                    <span style={{ fontSize: '28px' }}>
+                      {VOICE_CONFIG[
