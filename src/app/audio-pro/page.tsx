@@ -1,4 +1,3 @@
-// src/app/audio-pro/page.tsx
 'use client';
 import { useState, useEffect } from 'react';
 import { uploadAudio } from '@/lib/supabase';
@@ -15,9 +14,6 @@ import { AIDialogueGenerator } from '@/components/audio/AIDialogueGenerator';
 import { AudioProgress } from '@/components/audio/AudioProgress';
 import { Toaster } from 'react-hot-toast';
 
-// ============================================================================
-// CONFIGURATION DES VOIX GOOGLE CLOUD
-// ============================================================================
 const GOOGLE_VOICES: Record<string, Record<string, VoiceConfig[]>> = {
   "Espagne": {
     homme: [
@@ -55,11 +51,7 @@ const GOOGLE_VOICES: Record<string, Record<string, VoiceConfig[]>> = {
 
 type Tab = 'setup' | 'list' | 'ai' | 'manual' | 'generate';
 
-// ============================================================================
-// COMPOSANT PRINCIPAL
-// ============================================================================
 export default function AudioManagerPro() {
-  // ========== STATE MANAGEMENT ==========
   const [activeTab, setActiveTab] = useState<Tab>('setup');
   const [setupStep, setSetupStep] = useState(1);
   const [apiKey, setApiKey] = useState('');
@@ -77,7 +69,6 @@ export default function AudioManagerPro() {
   const [results, setResults] = useState<AudioResult[]>([]);
   const [selectedConv, setSelectedConv] = useState<Conversation | null>(null);
 
-  // ========== LIFECYCLE ==========
   useEffect(() => {
     const savedKey = localStorage.getItem('google_cloud_api_key');
     if (savedKey) {
@@ -87,7 +78,6 @@ export default function AudioManagerPro() {
     }
   }, []);
 
-  // ========== API KEY MANAGEMENT ==========
   const validateAndSaveApiKey = () => {
     setApiKeyError('');
     
@@ -114,7 +104,6 @@ export default function AudioManagerPro() {
     }
   };
 
-  // ========== GOOGLE TTS GENERATION ==========
   const generateWithGoogleTTS = async (
     text: string, 
     country: string, 
@@ -127,7 +116,6 @@ export default function AudioManagerPro() {
         throw new Error(`Voix non disponible pour ${country} (${gender})`);
       }
 
-      // Utiliser la voix Neural (index 1) ou la première disponible
       const voice = voiceOptions[1] || voiceOptions[0];
 
       const response = await fetch(
@@ -164,7 +152,6 @@ export default function AudioManagerPro() {
         throw new Error('Pas de contenu audio dans la réponse');
       }
 
-      // Convertir base64 en Blob
       const audioContent = data.audioContent;
       const byteCharacters = atob(audioContent);
       const byteNumbers = new Array(byteCharacters.length);
@@ -182,7 +169,6 @@ export default function AudioManagerPro() {
     }
   };
 
-  // ========== AUDIO GENERATION WORKFLOW ==========
   const generateAudios = async (conv: Conversation) => {
     if (!apiKey) {
       notify.error('⚠️ Configure d\'abord ta clé API Google Cloud');
@@ -215,7 +201,6 @@ export default function AudioManagerPro() {
         });
 
         try {
-          // Générer l'audio
           const audioBlob = await generateWithGoogleTTS(
             line.text, 
             conv.country, 
@@ -226,7 +211,6 @@ export default function AudioManagerPro() {
             throw new Error('Échec de génération audio');
           }
 
-          // Upload vers Supabase
           const url = await uploadAudio(audioBlob, filename);
           
           generatedResults.push({
@@ -269,7 +253,6 @@ export default function AudioManagerPro() {
     }
   };
 
-  // ========== UTILITY FUNCTIONS ==========
   const downloadResults = () => {
     const dataStr = JSON.stringify(results, null, 2);
     const dataBlob = new Blob([dataStr], { type: 'application/json' });
@@ -285,13 +268,11 @@ export default function AudioManagerPro() {
     return GOOGLE_VOICES[country]?.homme?.[0]?.flag || '🌍';
   };
 
-  // ========== RENDER ==========
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-5">
       <Toaster position="top-right" />
       
       <div className="max-w-7xl mx-auto">
-        {/* ===== HEADER ===== */}
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             🎙️ Audio Manager PRO
@@ -301,7 +282,6 @@ export default function AudioManagerPro() {
           </p>
         </div>
 
-        {/* ===== TABS ===== */}
         <div className="flex gap-2 mb-8 border-b border-slate-800 pb-2 overflow-x-auto">
           {!isConfigured ? (
             <Button
@@ -347,7 +327,6 @@ export default function AudioManagerPro() {
           )}
         </div>
 
-        {/* ===== TAB: SETUP ===== */}
         {activeTab === 'setup' && (
           <Card className="max-w-2xl mx-auto">
             <h2 className="text-2xl font-bold mb-6 text-center">
@@ -452,7 +431,6 @@ export default function AudioManagerPro() {
           </Card>
         )}
 
-        {/* ===== TAB: LIST ===== */}
         {activeTab === 'list' && isConfigured && (
           <div>
             {conversations.length === 0 ? (
@@ -505,7 +483,6 @@ export default function AudioManagerPro() {
               </>
             )}
 
-            {/* Preview de la conversation sélectionnée */}
             {selectedConv && (
               <Card className="mt-8">
                 <div className="flex justify-between items-center mb-4">
@@ -539,7 +516,6 @@ export default function AudioManagerPro() {
           </div>
         )}
 
-        {/* ===== TAB: AI ===== */}
         {activeTab === 'ai' && isConfigured && (
           <AIDialogueGenerator
             countries={Object.keys(GOOGLE_VOICES)}
@@ -550,7 +526,38 @@ export default function AudioManagerPro() {
           />
         )}
 
-        {/* ===== TAB: MANUAL ===== */}
         {activeTab === 'manual' && isConfigured && (
           <div className="max-w-3xl mx-auto">
-    
+            <ConversationForm 
+              onSave={(conv) => {
+                addConversation(conv);
+                setActiveTab('list');
+              }}
+              countries={Object.keys(GOOGLE_VOICES)}
+            />
+          </div>
+        )}
+
+        {activeTab === 'generate' && isConfigured && (
+          <div>
+            {conversations.length === 0 ? (
+              <Card className="text-center py-12">
+                <p className="text-slate-400 mb-4">
+                  Aucune conversation à générer
+                </p>
+                <Button onClick={() => setActiveTab('list')}>
+                  ← Retour à la liste
+                </Button>
+              </Card>
+            ) : (
+              <>
+                <div className="mb-6">
+                  <h2 className="text-2xl font-bold mb-2">
+                    🚀 Générer les audios
+                  </h2>
+                  <p className="text-slate-400">
+                    Sélectionne une conversation pour générer ses audios avec Google Cloud TTS
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
