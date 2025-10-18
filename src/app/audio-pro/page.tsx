@@ -553,4 +553,4 @@ export default function AudioManagerPro() {
         {/* ===== TAB: MANUAL ===== */}
         {activeTab === 'manual' && isConfigured && (
           <div className="max-w-3xl mx-auto">
-            
+    
