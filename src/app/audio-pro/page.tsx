@@ -274,15 +274,15 @@ export default function AudioManagerPro() {
       
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold mb-2">
             🎙️ Audio Manager PRO
           </h1>
           <p className="text-slate-400">
-            Google Cloud TTS • Générateur AI • Qualité professionnelle
+            Google Cloud TTS • Générateur AI
           </p>
         </div>
 
-        <div className="flex gap-2 mb-8 border-b border-slate-800 pb-2 overflow-x-auto">
+        <div className="flex gap-2 mb-8">
           {!isConfigured ? (
             <Button
               variant={activeTab === 'setup' ? 'primary' : 'ghost'}
@@ -302,50 +302,46 @@ export default function AudioManagerPro() {
                 variant={activeTab === 'ai' ? 'primary' : 'ghost'}
                 onClick={() => setActiveTab('ai')}
               >
-                ✨ Générer avec AI
+                ✨ AI
               </Button>
               <Button
                 variant={activeTab === 'manual' ? 'primary' : 'ghost'}
                 onClick={() => setActiveTab('manual')}
               >
-                ✍️ Ajouter manuellement
+                ✍️ Manuel
               </Button>
               <Button
                 variant={activeTab === 'generate' ? 'primary' : 'ghost'}
                 onClick={() => setActiveTab('generate')}
               >
-                🚀 Générer audios
+                🚀 Générer
               </Button>
               <Button
                 variant="ghost"
                 onClick={resetApiKey}
-                className="ml-auto"
               >
-                🔓 Changer clé API
+                🔓 Changer clé
               </Button>
             </>
           )}
         </div>
 
         {activeTab === 'setup' && (
-          <Card className="max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              ⚙️ Configuration Google Cloud TTS
-            </h2>
+          <Card>
+            <h2 className="text-2xl font-bold mb-6">Configuration</h2>
             
             {setupStep === 1 && (
               <div className="space-y-6">
                 <Card variant="primary">
-                  <h3 className="font-semibold mb-3">📋 Étape 1/3 : Créer un compte</h3>
+                  <h3 className="font-semibold mb-3">Étape 1/3</h3>
                   <ol className="space-y-2 text-sm">
-                    <li>1. Va sur <a href="https://console.cloud.google.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">console.cloud.google.com</a></li>
-                    <li>2. Connecte-toi avec ton compte Google</li>
-                    <li>3. Accepte les conditions (gratuit 300$ de crédit)</li>
+                    <li>1. Va sur console.cloud.google.com</li>
+                    <li>2. Connecte-toi</li>
+                    <li>3. Accepte les conditions</li>
                   </ol>
                 </Card>
-
                 <Button onClick={() => setSetupStep(2)} className="w-full">
-                  ✅ Compte créé → Étape suivante
+                  Suivant
                 </Button>
               </div>
             )}
@@ -353,20 +349,19 @@ export default function AudioManagerPro() {
             {setupStep === 2 && (
               <div className="space-y-6">
                 <Card variant="primary">
-                  <h3 className="font-semibold mb-3">📋 Étape 2/3 : Activer l'API</h3>
+                  <h3 className="font-semibold mb-3">Étape 2/3</h3>
                   <ol className="space-y-2 text-sm">
-                    <li>1. Dans la console, cherche "Text-to-Speech API"</li>
+                    <li>1. Cherche "Text-to-Speech API"</li>
                     <li>2. Clique sur "ACTIVER"</li>
                     <li>3. Attends 30 secondes</li>
                   </ol>
                 </Card>
-
                 <div className="flex gap-3">
-                  <Button variant="secondary" onClick={() => setSetupStep(1)} className="flex-1">
-                    ← Retour
+                  <Button variant="secondary" onClick={() => setSetupStep(1)}>
+                    Retour
                   </Button>
-                  <Button onClick={() => setSetupStep(3)} className="flex-[2]">
-                    ✅ API activée → Suivant
+                  <Button onClick={() => setSetupStep(3)}>
+                    Suivant
                   </Button>
                 </div>
               </div>
@@ -375,18 +370,16 @@ export default function AudioManagerPro() {
             {setupStep === 3 && (
               <div className="space-y-6">
                 <Card variant="primary">
-                  <h3 className="font-semibold mb-3">📋 Étape 3/3 : Créer une clé API</h3>
+                  <h3 className="font-semibold mb-3">Étape 3/3</h3>
                   <ol className="space-y-2 text-sm">
-                    <li>1. Va dans "APIs & Services" → "Credentials"</li>
-                    <li>2. Clique sur "CREATE CREDENTIALS" → "API Key"</li>
-                    <li>3. Copie la clé (commence par AIza...)</li>
+                    <li>1. Va dans "Credentials"</li>
+                    <li>2. "CREATE CREDENTIALS" → "API Key"</li>
+                    <li>3. Copie la clé</li>
                   </ol>
                 </Card>
 
                 <div>
-                  <label className="block text-sm text-slate-400 mb-2">
-                    Ta clé API Google Cloud :
-                  </label>
+                  <label className="block text-sm mb-2">Ta clé API :</label>
                   <input
                     type="password"
                     value={apiKey}
@@ -395,35 +388,19 @@ export default function AudioManagerPro() {
                       setApiKeyError('');
                     }}
                     placeholder="AIzaSy..."
-                    className={`w-full px-4 py-3 bg-blue-950 border rounded-lg text-slate-100 font-mono focus:outline-none ${
-                      apiKeyError 
-                        ? 'border-red-500 focus:border-red-500' 
-                        : 'border-blue-700 focus:border-blue-500'
-                    }`}
+                    className="w-full px-4 py-3 bg-blue-950 border border-blue-700 rounded-lg"
                   />
                   {apiKeyError && (
-                    <p className="text-red-400 text-sm mt-2">❌ {apiKeyError}</p>
+                    <p className="text-red-400 text-sm mt-2">{apiKeyError}</p>
                   )}
-                  <p className="text-xs text-slate-500 mt-2">
-                    🔒 Ta clé est stockée localement et jamais envoyée à nos serveurs
-                  </p>
                 </div>
 
                 <div className="flex gap-3">
-                  <Button
-                    variant="secondary"
-                    onClick={() => setSetupStep(2)}
-                    className="flex-1"
-                  >
-                    ← Retour
+                  <Button variant="secondary" onClick={() => setSetupStep(2)}>
+                    Retour
                   </Button>
-                  <Button
-                    variant="primary"
-                    onClick={validateAndSaveApiKey}
-                    className="flex-[2]"
-                    disabled={!apiKey.trim()}
-                  >
-                    💾 Sauvegarder
+                  <Button onClick={validateAndSaveApiKey} disabled={!apiKey.trim()}>
+                    Sauvegarder
                   </Button>
                 </div>
               </div>
@@ -435,83 +412,28 @@ export default function AudioManagerPro() {
           <div>
             {conversations.length === 0 ? (
               <Card className="text-center py-12">
-                <p className="text-slate-400 mb-4">
-                  Aucune conversation pour le moment
-                </p>
+                <p className="mb-4">Aucune conversation</p>
                 <div className="flex gap-3 justify-center">
                   <Button onClick={() => setActiveTab('ai')}>
-                    ✨ Générer avec l'IA
+                    ✨ Générer avec IA
                   </Button>
                   <Button variant="secondary" onClick={() => setActiveTab('manual')}>
-                    ✍️ Ajouter manuellement
+                    ✍️ Ajouter
                   </Button>
                 </div>
               </Card>
             ) : (
-              <>
-                <div className="flex justify-between items-center mb-6">
-                  <h2 className="text-2xl font-bold">
-                    Mes conversations ({conversations.length})
-                  </h2>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                  {conversations.map(conv => (
-                    <div key={conv.id} className="relative group">
-                      <ConversationCard
-                        conversation={conv}
-                        flag={getCountryFlag(conv.country)}
-                        onSelect={setSelectedConv}
-                        isSelected={selectedConv?.id === conv.id}
-                      />
-                      <Button
-                        variant="danger"
-                        size="sm"
-                        onClick={() => {
-                          if (confirm(`Supprimer "${conv.title}" ?`)) {
-                            removeConversation(conv.id);
-                            notify.success('Conversation supprimée');
-                          }
-                        }}
-                        className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                      >
-                        🗑️
-                      </Button>
-                    </div>
-                  ))}
-                </div>
-              </>
-            )}
-
-            {selectedConv && (
-              <Card className="mt-8">
-                <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-xl font-bold">
-                    {getCountryFlag(selectedConv.country)} {selectedConv.title}
-                  </h3>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => setSelectedConv(null)}
-                  >
-                    ✕
-                  </Button>
-                </div>
-
-                <div className="space-y-2">
-                  {selectedConv.lines.map((line, idx) => (
-                    <Card key={idx} variant="primary" className="text-sm">
-                      <div className="flex justify-between items-start mb-1">
-                        <strong className="text-blue-400">{line.speaker}</strong>
-                        <Badge variant="default">
-                          {line.gender === 'homme' ? '♂️' : '♀️'}
-                        </Badge>
-                      </div>
-                      <p className="text-slate-200">{line.text}</p>
-                    </Card>
-                  ))}
-                </div>
-              </Card>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {conversations.map(conv => (
+                  <ConversationCard
+                    key={conv.id}
+                    conversation={conv}
+                    flag={getCountryFlag(conv.country)}
+                    onSelect={setSelectedConv}
+                    isSelected={selectedConv?.id === conv.id}
+                  />
+                ))}
+              </div>
             )}
           </div>
         )}
@@ -527,37 +449,78 @@ export default function AudioManagerPro() {
         )}
 
         {activeTab === 'manual' && isConfigured && (
-          <div className="max-w-3xl mx-auto">
-            <ConversationForm 
-              onSave={(conv) => {
-                addConversation(conv);
-                setActiveTab('list');
-              }}
-              countries={Object.keys(GOOGLE_VOICES)}
-            />
-          </div>
+          <ConversationForm 
+            onSave={(conv) => {
+              addConversation(conv);
+              setActiveTab('list');
+            }}
+            countries={Object.keys(GOOGLE_VOICES)}
+          />
         )}
 
         {activeTab === 'generate' && isConfigured && (
           <div>
             {conversations.length === 0 ? (
               <Card className="text-center py-12">
-                <p className="text-slate-400 mb-4">
-                  Aucune conversation à générer
-                </p>
+                <p className="mb-4">Aucune conversation</p>
                 <Button onClick={() => setActiveTab('list')}>
-                  ← Retour à la liste
+                  Retour
                 </Button>
               </Card>
             ) : (
-              <>
-                <div className="mb-6">
-                  <h2 className="text-2xl font-bold mb-2">
-                    🚀 Générer les audios
-                  </h2>
-                  <p className="text-slate-400">
-                    Sélectionne une conversation pour générer ses audios avec Google Cloud TTS
-                  </p>
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {conversations.map(conv => (
+                    <Card key={conv.id}>
+                      <div className="mb-4">
+                        <span className="text-3xl">{getCountryFlag(conv.country)}</span>
+                        <h3 className="text-lg font-semibold">{conv.title}</h3>
+                        <p className="text-sm text-slate-400">
+                          {conv.lines.length} répliques
+                        </p>
+                      </div>
+                      <Button
+                        onClick={() => generateAudios(conv)}
+                        disabled={generating}
+                        loading={generating}
+                        className="w-full"
+                      >
+                        🚀 Générer
+                      </Button>
+                    </Card>
+                  ))}
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {generating && <AudioProgress progress={progress} />}
+
+                {results.length > 0 && (
+                  <Card>
+                    <div className="flex justify-between mb-4">
+                      <h3 className="text-xl font-bold">
+                        Résultats ({results.filter(r => r.status === 'success').length}/{results.length})
+                      </h3>
+                      <Button onClick={downloadResults} variant="secondary">
+                        📥 Télécharger
+                      </Button>
+                    </div>
+                    <div className="space-y-2">
+                      {results.map((result, idx) => (
+                        <Card 
+                          key={idx} 
+                          variant={result.status === 'success' ? 'success' : 'danger'}
+                        >
+                          <strong>{result.speaker}</strong>
+                          <p className="text-sm">{result.text}</p>
+                        </Card>
+                      ))}
+                    </div>
+                  </Card>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+                    }
