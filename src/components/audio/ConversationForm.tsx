@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { conversationSchema } from '@/lib/validations';
 import { Conversation, ConversationLine } from '@/types/audio';
-import { Card } from '@/components/ui/Card';
+import { card } from '@/components/ui/card';
 import { Button } from '@/components/ui/Button';
 import { notify } from '@/lib/notifications';
 import { z } from 'zod';
