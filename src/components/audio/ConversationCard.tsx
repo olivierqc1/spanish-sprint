@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/Card'; // Utilisez Card avec une majuscule
 
 interface ConversationCardProps {
   children: React.ReactNode;
@@ -11,7 +11,7 @@ interface ConversationCardProps {
   onSelect?: (conversation: any) => void;
 }
 
-const ConversationCard: React.FC<ConversationCardProps> = ({
+export const ConversationCard: React.FC<ConversationCardProps> = ({
   children,
   className = '',
   isSelected = false,
