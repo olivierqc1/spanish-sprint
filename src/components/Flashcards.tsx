@@ -2,8 +2,15 @@
 
 import { useState } from "react";
 
+// 🧩 Import des jeux de cartes selon le niveau
+import { wordsA1 } from "../data/words/A1";
+import { wordsA2 } from "../data/words/A2";
+import { wordsB1 } from "../data/words/B1";
+// Tu pourras ajouter plus tard : import { wordsB2 } from "../data/words/B2"; etc.
+
 type Level = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
 type Country = "ALL" | "spain" | "mexico" | "argentina";
+type Category = "verbe" | "nom" | "adjectif" | "autre";
 
 export interface Card {
   id: number;
@@ -11,22 +18,44 @@ export interface Card {
   back: string;
   level: Level;
   country: Country;
+  category?: Category;
 }
 
 interface FlashcardsProps {
-  cards: Card[];
   level: Level;
   country: Country;
+  category?: Category;
 }
 
-export default function Flashcards({ cards, level, country }: FlashcardsProps) {
+export default function Flashcards({ level, country, category }: FlashcardsProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const filteredCards = cards.filter((card) => {
+  // 🧠 Choix automatique du bon fichier selon le niveau
+  let allCards: Card[] = [];
+
+  switch (level) {
+    case "A1":
+      allCards = wordsA1;
+      break;
+    case "A2":
+      allCards = wordsA2;
+      break;
+    case "B1":
+      allCards = wordsB1;
+      break;
+    // Tu pourras continuer plus tard :
+    // case "B2": allCards = wordsB2; break;
+    default:
+      allCards = wordsA1;
+  }
+
+  // 🎯 Filtrage par pays et catégorie
+  const filteredCards = allCards.filter((card) => {
     const levelMatch = card.level === level;
     const countryMatch = country === "ALL" || card.country === country;
-    return levelMatch && countryMatch;
+    const categoryMatch = !category || card.category === category;
+    return levelMatch && countryMatch && categoryMatch;
   });
 
   const handleNext = () => {
@@ -46,7 +75,7 @@ export default function Flashcards({ cards, level, country }: FlashcardsProps) {
       <div>
         <h2 style={{ marginBottom: "20px" }}>Flashcards</h2>
         <p style={{ textAlign: "center", color: "#666" }}>
-          Aucune carte disponible pour ce niveau et ce pays.
+          Aucune carte disponible pour ce niveau, ce pays ou cette catégorie.
         </p>
       </div>
     );
@@ -56,7 +85,9 @@ export default function Flashcards({ cards, level, country }: FlashcardsProps) {
 
   return (
     <div>
-      <h2 style={{ marginBottom: "20px" }}>Flashcards</h2>
+      <h2 style={{ marginBottom: "20px", textAlign: "center" }}>
+        Flashcards – Niveau {level}
+      </h2>
       <div
         style={{
           display: "flex",
@@ -81,8 +112,10 @@ export default function Flashcards({ cards, level, country }: FlashcardsProps) {
             color: isFlipped ? "#fff" : "#000",
             fontSize: "32px",
             fontWeight: "bold",
+            textAlign: "center",
             transition: "all 0.3s ease",
             boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+            padding: "10px",
           }}
         >
           {isFlipped ? currentCard.back : currentCard.front}
