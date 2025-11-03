@@ -5,7 +5,7 @@ import { notify, handleError } from '@/lib/notifications';
 import { apiKeySchema } from '@/lib/validations';
 import { useConversations } from '@/hooks/useConversations';
 import { Conversation, AudioResult, GenerationProgress, VoiceConfig } from '@/types/audio';
-import { Card } from '@/components/ui/card';
+import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { ConversationCard } from '@/components/audio/ConversationCard';
