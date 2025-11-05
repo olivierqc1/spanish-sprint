@@ -98,4 +98,6 @@ export const wordsB1 = [
   { id: 97, front: "descuidar", back: "négliger / laisser aller", level: "B1", country: "ALL", category: "verbe" },
   { id: 98, front: "afirmar", back: "affirmer / confirmer", level: "B1", country: "ALL", category: "verbe" },
   { id: 99, front: "suicidarse", back: "se suicider", level: "B1", country: "ALL", category: "verbe" },
-  { id: 100, front: "agradecer", back: "remercier / être reconnaissant",
+  { id: 100, front: "agradecer", back: "remercier / être reconnaissant", level: "B1", country: "ALL", category: "verbe" 
+},
+];
