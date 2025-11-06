@@ -429,7 +429,7 @@ export default function AudioManagerPro() {
                     key={conv.id}
                     conversation={conv}
                     flag={getCountryFlag(conv.country)}
-                    onSelect={setSelectedConv}
+                   onSelect={(conv) => setSelectedConv(conv)} 
                     isSelected={selectedConv?.id === conv.id}
                   />
                 ))}
