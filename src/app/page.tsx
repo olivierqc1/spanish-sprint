@@ -277,7 +277,7 @@ export default function Home() {
         {activeTab === "listening" && <Listening items={audios} level={level} country={country} />}
         {activeTab === "reading" && <Reading items={allTexts} level={level} country={country} />}
         {activeTab === "conversations" && <ConversationPractice level={level} country={country} />}
-        {activeTab === "flashcards" && <Flashcards cards={cards} level={level} country={country} />}
+        {activeTab === "flashcards" && <Flashcards level={level} country={country} />}
         {activeTab === "smartreview" && <SmartReview cards={cards} level={level} country={country} />}
         {activeTab === "badges" && <Badges />}
       </div>
