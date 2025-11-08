@@ -1,7 +1,7 @@
 // src/components/ui/Card.tsx
-import { ReactNode } from 'react';
+import { ReactNode, HTMLAttributes } from 'react';
 
-interface CardProps {
+interface CardProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   className?: string;
   variant?: 'default' | 'primary' | 'success' | 'danger';
@@ -19,9 +19,9 @@ const variantClasses = {
   danger: 'bg-red-950 border-red-700',
 };
 
-export function Card({ children, className = '', variant = 'default' }: CardProps) {
+export function Card({ children, className = '', variant = 'default', ...props }: CardProps) {
   return (
-    <div className={`p-5 border rounded-xl ${variantClasses[variant]} ${className}`}>
+    <div className={`p-5 border rounded-xl ${variantClasses[variant]} ${className}`} {...props}>
       {children}
     </div>
   );
