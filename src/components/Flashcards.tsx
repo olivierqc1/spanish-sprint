@@ -16,9 +16,9 @@ export interface Card {
   id: number;
   front: string;
   back: string;
-  level: Level;
-  country: Country;
-  category?: Category;
+  level: string;
+  country: string;
+  category?: string;
 }
 
 interface FlashcardsProps {
