@@ -1,6 +1,6 @@
 // src/components/audio/AudioProgress.tsx
 import { GenerationProgress } from '@/types/audio';
-import { card } from '@/components/ui/card';
+import { Card } from '@/components/ui/Card';
 
 interface AudioProgressProps {
   progress: GenerationProgress;
