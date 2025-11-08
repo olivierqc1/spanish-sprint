@@ -2,7 +2,7 @@
 'use client';
 import { useState } from 'react';
 import { Conversation } from '@/types/audio';
-import { card } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/Button';
 import { notify, handleError } from '@/lib/notifications';
 
