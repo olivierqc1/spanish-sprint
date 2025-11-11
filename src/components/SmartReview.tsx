@@ -24,7 +24,7 @@ export default function SmartReview({ cards, level, country }: SmartReviewProps)
 
   // Obtenir les cartes à réviser aujourd'hui
   const cardsToReview = filteredCards.filter((card) => {
-    const cardState = reviewState[card.id];
+    const cardState = reviewState[parseInt(card.id)];
     if (!cardState) return true; // Nouvelle carte
     return new Date(cardState.nextReview) <= new Date();
   });
@@ -56,10 +56,10 @@ export default function SmartReview({ cards, level, country }: SmartReviewProps)
   }
 
   const currentCard = cardsToReview[currentIndex];
-  const cardState = reviewState[currentCard.id];
+  const cardState = reviewState[parseInt(currentCard.id)];
 
   const handleReview = (quality: ReviewQuality) => {
-    recordReview(currentCard.id, quality);
+    recordReview(parseInt(currentCard.id), quality);
     setIsFlipped(false);
 
     if (currentIndex < cardsToReview.length - 1) {
