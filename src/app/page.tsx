@@ -70,21 +70,21 @@ export default function Home() {
 
   const cards = [
     {
-      id: 1,
+      id: "1",
       front: "Hola",
       back: "Hello",
       level: "A1" as Level,
       country: "ALL" as Country,
     },
     {
-      id: 2,
+      id: "2",
       front: "Gracias",
       back: "Thank you",
       level: "A1" as Level,
       country: "ALL" as Country,
     },
     {
-      id: 3,
+      id: "3",
       front: "Por favor",
       back: "Please",
       level: "A1" as Level,
