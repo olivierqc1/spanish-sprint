@@ -4,73 +4,10 @@ export type AudioItem = {
   id: string;
   level: "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
   title: string;
-  country: "Espagne" | "Mexique";
+  country: "Espagne" | "Mexique" | "Colombie" | "Argentine";
   src: string;
   script: string;
-  questions: AudioQA[
-// === AJOUT MULTIPAYS (Espagne, Mexique, Colombie, Argentine) ===
-{
-  id: "co_a1_tienda",
-  level: "A1",
-  country: "Colombie",
-  title: "Comprando frutas",
-  src: "/audio/co_a1_tienda.mp3",
-  script: "Buenos días. ¿Cuánto vale el banano? — Mil pesos el kilo. — Perfecto, me llevo dos kilos.",
-  questions: [
-    { q: "¿Qué quiere comprar?", accept: ["banano", "bananos"] },
-    { q: "¿Cuánto cuesta?", accept: ["mil pesos", "1000 pesos"] }
-  ]
-},
-{
-  id: "ar_a1_autobus",
-  level: "A1",
-  country: "Argentine",
-  title: "Tomando el colectivo",
-  src: "/audio/ar_a1_autobus.mp3",
-  script: "Disculpe, ¿este colectivo va al centro? — Sí, baja en la avenida Corrientes. — Perfecto, gracias.",
-  questions: [
-    { q: "¿Qué transporte usa?", accept: ["colectivo", "autobús"] },
-    { q: "¿Dónde debe bajar?", accept: ["avenida corrientes", "corrientes"] }
-  ]
-},
-{
-  id: "co_a2_trabajo",
-  level: "A2",
-  country: "Colombie",
-  title: "En el trabajo",
-  src: "/audio/co_a2_trabajo.mp3",
-  script: "Trabajo en una oficina en Bogotá. Llego a las ocho y salgo a las cinco. Me gusta mi trabajo porque hablo con mucha gente.",
-  questions: [
-    { q: "¿Dónde trabaja?", accept: ["bogotá", "oficina"] },
-    { q: "¿A qué hora llega?", accept: ["ocho", "a las ocho"] }
-  ]
-},
-{
-  id: "ar_a2_futbol",
-  level: "A2",
-  country: "Argentine",
-  title: "Hablando de fútbol",
-  src: "/audio/ar_a2_futbol.mp3",
-  script: "El domingo voy a ver el partido de Boca Juniors con mis amigos. ¡Nos encanta el fútbol argentino!",
-  questions: [
-    { q: "¿Qué equipo va a ver?", accept: ["boca juniors", "boca"] },
-    { q: "¿Con quién va?", accept: ["sus amigos", "con sus amigos"] }
-  ]
-},
-{
-  id: "mx_a2_familia",
-  level: "A2",
-  country: "Mexique",
-  title: "Mi familia",
-  src: "/audio/mx_a2_familia.mp3",
-  script: "Tengo una familia grande: mis padres, tres hermanos y dos perros. Vivimos en Puebla y nos reunimos todos los domingos.",
-  questions: [
-    { q: "¿Cuántos hermanos tiene?", accept: ["tres", "3"] },
-    { q: "¿Dónde vive?", accept: ["puebla"] }
-  ]
-}
-
-];
+  questions: AudioQA[];
 };
 
 export const audios: AudioItem[] = [
@@ -621,73 +558,4 @@ export const audios: AudioItem[] = [
     country: "Espagne",
     title: "Tecnología en la vida diaria",
     src: "/audio/es_b1_tecnologia.mp3",
-    script: "La tecnología ha cambiado completamente nuestra forma de vivir. Ahora podemos trabajar desde casa, comprar online y comunicarnos instantáneamente.",
-questions: [
-  { q: "¿Qué menciona?", accept: ["tecnología", "tecnologia"] },
-  { q: "¿Qué podemos hacer?", accept: ["trabajar desde casa", "comprar online"] },
-],
-},
-
-// === AJOUT MULTIPAYS (Espagne, Mexique, Colombie, Argentine) ===
-{
-  id: "co_a1_tienda",
-  level: "A1",
-  country: "Colombie",
-  title: "Comprando frutas",
-  src: "/audio/co_a1_tienda.mp3",
-  script: "Buenos días. ¿Cuánto vale el banano? — Mil pesos el kilo. — Perfecto, me llevo dos kilos.",
-  questions: [
-    { q: "¿Qué quiere comprar?", accept: ["banano", "bananos"] },
-    { q: "¿Cuánto cuesta?", accept: ["mil pesos", "1000 pesos"] }
-  ]
-},
-{
-  id: "ar_a1_autobus",
-  level: "A1",
-  country: "Argentine",
-  title: "Tomando el colectivo",
-  src: "/audio/ar_a1_autobus.mp3",
-  script: "Disculpe, ¿este colectivo va al centro? — Sí, baja en la avenida Corrientes. — Perfecto, gracias.",
-  questions: [
-    { q: "¿Qué transporte usa?", accept: ["colectivo", "autobús"] },
-    { q: "¿Dónde debe bajar?", accept: ["avenida corrientes", "corrientes"] }
-  ]
-},
-{
-  id: "co_a2_trabajo",
-  level: "A2",
-  country: "Colombie",
-  title: "En el trabajo",
-  src: "/audio/co_a2_trabajo.mp3",
-  script: "Trabajo en una oficina en Bogotá. Llego a las ocho y salgo a las cinco. Me gusta mi trabajo porque hablo con mucha gente.",
-  questions: [
-    { q: "¿Dónde trabaja?", accept: ["bogotá", "oficina"] },
-    { q: "¿A qué hora llega?", accept: ["ocho", "a las ocho"] }
-  ]
-},
-{
-  id: "ar_a2_futbol",
-  level: "A2",
-  country: "Argentine",
-  title: "Hablando de fútbol",
-  src: "/audio/ar_a2_futbol.mp3",
-  script: "El domingo voy a ver el partido de Boca Juniors con mis amigos. ¡Nos encanta el fútbol argentino!",
-  questions: [
-    { q: "¿Qué equipo va a ver?", accept: ["boca juniors", "boca"] },
-    { q: "¿Con quién va?", accept: ["sus amigos", "con sus amigos"] }
-  ]
-},
-{
-  id: "mx_a2_familia",
-  level: "A2",
-  country: "Mexique",
-  title: "Mi familia",
-  src: "/audio/mx_a2_familia.mp3",
-  script: "Tengo una familia grande: mis padres, tres hermanos y dos perros. Vivimos en Puebla y nos reunimos todos los domingos.",
-  questions: [
-    { q: "¿Cuántos hermanos tiene?", accept: ["tres", "3"] },
-    { q: "¿Dónde vive?", accept: ["puebla"] }
-  ]
-}
-
-];
+    script: "La tecnología ha cambiado completamente nuestra forma de vivir. Ahora podemos trabajar desde casa, comprar online y
