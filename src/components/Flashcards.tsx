@@ -13,7 +13,7 @@ type Country = "ALL" | "spain" | "mexico" | "argentina";
 type Category = "verbe" | "nom" | "adjectif" | "autre";
 
 export interface Card {
-  id: number;
+  id: string;
   front: string;
   back: string;
   level: string;
