@@ -282,6 +282,210 @@ export const cotidiano_basics: GrammarPoint = {
     { id: DID(), prompt: "J’ai besoin d’un médecin →", answer: "Necesito un médico." },
   ],
 };
+/* ------------------------------------------------------- */
+/* A1 — PRÉPOSITION "DE" : possession, origine, matière    */
+/* ------------------------------------------------------- */
+
+export const preposicion_de: GrammarPoint = {
+  id: "preposicion_de",
+  level: "A1",
+  title: "La préposition DE — possession, origine, matière",
+  note: `
+📚 RÉCAPITULATIF DE LA PRÉPOSITION "DE"
+
+1️⃣ POSSESSION (de qui ?)
+   • de + NOM PROPRE (sans article) : El libro de María (le livre de María)
+   • de + ARTICLE + NOM : El libro del profesor (le livre du professeur)
+   
+   ⚠️ CONTRACTION OBLIGATOIRE : de + el = del
+   ✅ El coche del médico (la voiture du médecin)
+   ❌ El coche de el médico (FAUX!)
+   
+   Mais : de + la / de + los / de + las (PAS de contraction)
+   ✅ La casa de la profesora
+   ✅ Los juguetes de los niños
+
+2️⃣ ORIGINE (d'où ?)
+   • Ser + de + LIEU : Soy de Francia (Je suis de France)
+   • Venir + de + LIEU : Vengo de Madrid (Je viens de Madrid)
+   
+   Exemples :
+   • Soy de México (pays sans article)
+   • El vino es de España
+   • Somos de la ciudad de París (avec article si précisé)
+
+3️⃣ MATIÈRE (en quoi c'est fait ?)
+   • de + MATÉRIAU : Una mesa de madera (une table en bois)
+   
+   Exemples :
+   • Un anillo de oro (une bague en or)
+   • Una botella de vidrio (une bouteille en verre)
+   • Zapatos de cuero (chaussures en cuir)
+
+4️⃣ EXPRESSIONS COURANTES
+   • Un vaso de agua (un verre d'eau)
+   • Una taza de café (une tasse de café)
+   • El profesor de español (le professeur d'espagnol)
+   • La puerta del dormitorio (la porte de la chambre)
+
+🎯 RÈGLE D'OR : de + el = del (TOUJOURS!)
+  `,
+  drills: [
+    // POSSESSION - avec contraction del
+    { id: DID(), prompt: "Le livre du professeur → El libro ___ profesor (de + el = ?)", answer: "del" },
+    { id: DID(), prompt: "Les clés du directeur → Las llaves ___ director (de + el = ?)", answer: "del" },
+    { id: DID(), prompt: "La voiture de la voisine → El coche ___ vecina (de + la)", answer: "de la" },
+    { id: DID(), prompt: "Le chien des enfants → El perro ___ niños (de + los)", answer: "de los" },
+    { id: DID(), prompt: "La maison des parents → La casa ___ padres (de + los)", answer: "de los" },
+    { id: DID(), prompt: "Les jouets de l'enfant → Los juguetes ___ niño (de + el = ?)", answer: "del" },
+    
+    // POSSESSION - sans article (noms propres)
+    { id: DID(), prompt: "Le livre de María → El libro ___ María (nom propre)", answer: "de" },
+    { id: DID(), prompt: "Le chien de Juan → El perro ___ Juan", answer: "de" },
+    { id: DID(), prompt: "La voiture de Pedro → El coche ___ Pedro", answer: "de" },
+
+    // ORIGINE
+    { id: DID(), prompt: "Je suis de France → Soy ___ Francia", answer: "de" },
+    { id: DID(), prompt: "Elle est de Madrid → Es ___ Madrid", answer: "de" },
+    { id: DID(), prompt: "Ils sont du Mexique → Son ___ México", answer: "de" },
+    { id: DID(), prompt: "Ce vin est d'Espagne → Este vino es ___ España", answer: "de" },
+
+    // MATIÈRE
+    { id: DID(), prompt: "Une table en bois → Una mesa ___ madera", answer: "de" },
+    { id: DID(), prompt: "Un bracelet en or → Un brazalete ___ oro", answer: "de" },
+    { id: DID(), prompt: "Une bouteille en verre → Una botella ___ vidrio", answer: "de" },
+    { id: DID(), prompt: "Des chaussures en cuir → Zapatos ___ cuero", answer: "de" },
+
+    // CONTRACTION OBLIGATOIRE DE + EL = DEL
+    { id: DID(), prompt: "Le centre de la ville → El centro ___ ciudad (de + la)", answer: "de la" },
+    { id: DID(), prompt: "Le début du film → El comienzo ___ película (de + la)", answer: "de la" },
+    { id: DID(), prompt: "La fin du livre → El final ___ libro (de + el = ?)", answer: "del" },
+    { id: DID(), prompt: "L'ami du garçon → El amigo ___ chico (de + el = ?)", answer: "del" },
+    { id: DID(), prompt: "Le toit de la maison → El techo ___ casa (de + la)", answer: "de la" },
+    { id: DID(), prompt: "La porte du bureau → La puerta ___ despacho (de + el = ?)", answer: "del" },
+    { id: DID(), prompt: "Le propriétaire de l'appartement → El dueño ___ apartamento (de + el = ?)", answer: "del" },
+
+    // EXPRESSIONS COURANTES
+    { id: DID(), prompt: "Un verre d'eau → Un vaso ___ agua", answer: "de" },
+    { id: DID(), prompt: "Un cours d'espagnol → Una clase ___ español", answer: "de" },
+    { id: DID(), prompt: "Le professeur de maths → El profesor ___ matemáticas", answer: "de" },
+    { id: DID(), prompt: "La porte de la chambre → La puerta ___ dormitorio (de + el = ?)", answer: "del" },
+    { id: DID(), prompt: "Un morceau de pain → Un trozo ___ pan", answer: "de" },
+    { id: DID(), prompt: "La couleur du ciel → El color ___ cielo (de + el = ?)", answer: "del" },
+  ],
+};
+
+/* ------------------------------------------------------- */
+/* A1-A2 — DÉMONSTRATIFS : este/ese/aquel                  */
+/* ------------------------------------------------------- */
+
+export const demostrativos: GrammarPoint = {
+  id: "demostrativos",
+  level: "A1",
+  title: "Démonstratifs — este/ese/aquel (ce, cet, cette)",
+  note: `
+📚 RÉCAPITULATIF DES DÉMONSTRATIFS ESPAGNOLS
+
+Les démonstratifs indiquent la DISTANCE entre celui qui parle et l'objet.
+
+┌─────────────────────────────────────────────────────────────┐
+│ DISTANCE │ MASCULIN  │ FÉMININ   │ MASCULIN  │ FÉMININ     │
+│          │ SINGULIER │ SINGULIER │ PLURIEL   │ PLURIEL     │
+├─────────────────────────────────────────────────────────────┤
+│ PRÈS     │ este      │ esta      │ estos     │ estas       │
+│ (ici)    │ ce...ci   │ cette...ci│ ces...ci  │ ces...ci    │
+├─────────────────────────────────────────────────────────────┤
+│ MOYEN    │ ese       │ esa       │ esos      │ esas        │
+│ (là)     │ ce...là   │ cette...là│ ces...là  │ ces...là    │
+├─────────────────────────────────────────────────────────────┤
+│ LOIN     │ aquel     │ aquella   │ aquellos  │ aquellas    │
+│ (là-bas) │ ce...là-bas│cette...là│ces...là-bas│ces...là-bas│
+└─────────────────────────────────────────────────────────────┘
+
+🔹 ESTE (près de moi) 👋
+   • Este libro (ce livre-ci que je tiens)
+   • Esta casa (cette maison-ci où je suis)
+   • Estos zapatos (ces chaussures-ci que je porte)
+   • Estas llaves (ces clés-ci dans ma main)
+
+🔸 ESE (distance moyenne) 👉
+   • Ese coche (cette voiture-là près de toi)
+   • Esa mesa (cette table-là à quelques mètres)
+   • Esos niños (ces enfants-là que tu vois)
+   • Esas flores (ces fleurs-là dans le jardin)
+
+🔹 AQUEL (loin) 👈🏔️
+   • Aquel edificio (ce bâtiment là-bas)
+   • Aquella montaña (cette montagne au loin)
+   • Aquellos días (ces jours-là, dans le passé)
+   • Aquellas nubes (ces nuages là-bas à l'horizon)
+
+⚠️ ACCORD OBLIGATOIRE avec le nom :
+   ✅ Este libro (masculin singulier)
+   ✅ Esta mesa (féminin singulier)
+   ✅ Estos libros (masculin pluriel)
+   ✅ Estas mesas (féminin pluriel)
+
+💡 ASTUCE : 
+   • ESTE = près de moi (je peux le toucher)
+   • ESE = près de toi (tu peux le toucher)
+   • AQUEL = loin de nous deux (personne ne peut le toucher)
+  `,
+  drills: [
+    // ESTE (près, masculin singulier)
+    { id: DID(), prompt: "Ce livre (près) → ___ libro", answer: "este" },
+    { id: DID(), prompt: "Ce garçon (près) → ___ chico", answer: "este" },
+    { id: DID(), prompt: "Ce café (près) → ___ café", answer: "este" },
+    { id: DID(), prompt: "Ce pain (près, el pan) → ___ pan", answer: "este" },
+
+    // ESTA (près, féminin singulier)
+    { id: DID(), prompt: "Cette maison (près) → ___ casa", answer: "esta" },
+    { id: DID(), prompt: "Cette table (près) → ___ mesa", answer: "esta" },
+    { id: DID(), prompt: "Cette pomme (près, la manzana) → ___ manzana", answer: "esta" },
+    { id: DID(), prompt: "Cette voiture (près, el coche) → ___ coche", answer: "este" },
+
+    // ESTOS (près, masculin pluriel)
+    { id: DID(), prompt: "Ces livres (près) → ___ libros", answer: "estos" },
+    { id: DID(), prompt: "Ces garçons (près) → ___ chicos", answer: "estos" },
+
+    // ESTAS (près, féminin pluriel)
+    { id: DID(), prompt: "Ces maisons (près) → ___ casas", answer: "estas" },
+    { id: DID(), prompt: "Ces tables (près) → ___ mesas", answer: "estas" },
+
+    // ESE (distance moyenne, masculin singulier)
+    { id: DID(), prompt: "Ce livre (là, moyen) → ___ libro", answer: "ese" },
+    { id: DID(), prompt: "Ce garçon (là) → ___ chico", answer: "ese" },
+    { id: DID(), prompt: "Ce parc (là, el parque) → ___ parque", answer: "ese" },
+
+    // ESA (distance moyenne, féminin singulier)
+    { id: DID(), prompt: "Cette maison (là) → ___ casa", answer: "esa" },
+    { id: DID(), prompt: "Cette fleur (là, la flor) → ___ flor", answer: "esa" },
+    { id: DID(), prompt: "Cette rue (là, la calle) → ___ calle", answer: "esa" },
+
+    // ESOS/ESAS (distance moyenne, pluriel)
+    { id: DID(), prompt: "Ces livres (là) → ___ libros", answer: "esos" },
+    { id: DID(), prompt: "Ces maisons (là) → ___ casas", answer: "esas" },
+
+    // AQUEL (loin, masculin singulier)
+    { id: DID(), prompt: "Ce bâtiment (là-bas, loin) → ___ edificio", answer: "aquel" },
+    { id: DID(), prompt: "Ce jour (là, loin dans le temps) → ___ día", answer: "aquel" },
+
+    // AQUELLA (loin, féminin singulier)
+    { id: DID(), prompt: "Cette montagne (là-bas) → ___ montaña", answer: "aquella" },
+    { id: DID(), prompt: "Cette époque (là) → ___ época", answer: "aquella" },
+
+    // AQUELLOS/AQUELLAS (loin, pluriel)
+    { id: DID(), prompt: "Ces arbres (là-bas, los árboles) → ___ árboles", answer: "aquellos" },
+    { id: DID(), prompt: "Ces années (là, los años) → ___ años", answer: "aquellos" },
+
+    // PHRASES COMPLÈTES
+    { id: DID(), prompt: "Je veux ce pain (près, el pan) → Quiero ___ pan", answer: "este" },
+    { id: DID(), prompt: "J'aime cette robe (près, el vestido) → Me gusta ___ vestido", answer: "este" },
+    { id: DID(), prompt: "Ces chaussures (là) sont belles (los zapatos) → ___ zapatos son bonitos", answer: "esos" },
+    { id: DID(), prompt: "Cette montagne (là-bas) est haute → ___ montaña es alta", answer: "aquella" },
+    { id: DID(), prompt: "Ces livres (près) sont intéressants → ___ libros son interesantes", answer: "estos" },
+  ],
+};
 
 /* --------------------- */
 /* EXPORT PRINCIPAL      */
