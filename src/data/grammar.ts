@@ -283,6 +283,424 @@ export const cotidiano_basics: GrammarPoint = {
   ],
 };
 /* ------------------------------------------------------- */
+/* A1 — GENRE : Masculin et Féminin                        */
+/* ------------------------------------------------------- */
+
+export const genero_sustantivos: GrammarPoint = {
+  id: "genero_sustantivos",
+  level: "A1",
+  title: "Le genre des noms — masculin et féminin",
+  note: `
+📚 LE GENRE DES NOMS EN ESPAGNOL
+
+En espagnol, TOUS les noms ont un genre : masculin ou féminin.
+
+🔵 MASCULIN (EL)
+Généralement terminés par :
+• -O : el libro, el gato, el vino, el museo
+• -OR : el profesor, el doctor, el amor
+• -AJE : el viaje, el garaje, el mensaje
+• Jours/mois : el lunes, el enero
+• Fleuves/mers : el Sena, el Mediterráneo
+• Nombres/lettres : el tres, el A
+
+🔴 FÉMININ (LA)
+Généralement terminés par :
+• -A : la casa, la mesa, la playa, la comida
+• -CIÓN/-SIÓN : la canción, la televisión
+• -DAD/-TAD : la ciudad, la libertad
+• -EZ : la vez, la nuez
+• -TRIZ : la actriz, la directriz
+
+⚠️ EXCEPTIONS IMPORTANTES :
+• el día (jour) - masculin !
+• el mapa (carte) - masculin !
+• el problema - masculin !
+• el sistema - masculin !
+• el planeta - masculin !
+• el idioma (langue) - masculin !
+• el programa - masculin !
+
+• la mano (main) - féminin !
+• la foto (photo) - féminin !
+• la moto - féminin !
+• la radio - féminin !
+
+💡 CHANGEMENTS DE GENRE :
+• el profesor → la profesora
+• el alumno → la alumna
+• el gato → la gata
+• el doctor → la doctora
+• el niño → la niña
+  `,
+  drills: [
+    // TERMINAISON -O (masculin)
+    { id: DID(), prompt: "livre → ___ libro (el ou la ?)", answer: "el" },
+    { id: DID(), prompt: "chat → ___ gato", answer: "el" },
+    { id: DID(), prompt: "vin → ___ vino", answer: "el" },
+    { id: DID(), prompt: "musée → ___ museo", answer: "el" },
+    { id: DID(), prompt: "garçon → ___ niño", answer: "el" },
+    { id: DID(), prompt: "appartement → ___ piso", answer: "el" },
+    { id: DID(), prompt: "ami → ___ amigo", answer: "el" },
+
+    // TERMINAISON -A (féminin)
+    { id: DID(), prompt: "maison → ___ casa (el ou la ?)", answer: "la" },
+    { id: DID(), prompt: "table → ___ mesa", answer: "la" },
+    { id: DID(), prompt: "plage → ___ playa", answer: "la" },
+    { id: DID(), prompt: "nourriture → ___ comida", answer: "la" },
+    { id: DID(), prompt: "fille → ___ niña", answer: "la" },
+    { id: DID(), prompt: "amie → ___ amiga", answer: "la" },
+    { id: DID(), prompt: "fenêtre → ___ ventana", answer: "la" },
+
+    // TERMINAISON -OR (masculin)
+    { id: DID(), prompt: "professeur → ___ profesor", answer: "el" },
+    { id: DID(), prompt: "docteur → ___ doctor", answer: "el" },
+    { id: DID(), prompt: "amour → ___ amor", answer: "el" },
+    { id: DID(), prompt: "couleur → ___ color", answer: "el" },
+
+    // TERMINAISON -CIÓN/-SIÓN (féminin)
+    { id: DID(), prompt: "chanson → ___ canción", answer: "la" },
+    { id: DID(), prompt: "télévision → ___ televisión", answer: "la" },
+    { id: DID(), prompt: "station → ___ estación", answer: "la" },
+    { id: DID(), prompt: "situation → ___ situación", answer: "la" },
+    { id: DID(), prompt: "passion → ___ pasión", answer: "la" },
+
+    // TERMINAISON -DAD (féminin)
+    { id: DID(), prompt: "ville → ___ ciudad", answer: "la" },
+    { id: DID(), prompt: "liberté → ___ libertad", answer: "la" },
+    { id: DID(), prompt: "université → ___ universidad", answer: "la" },
+    { id: DID(), prompt: "qualité → ___ calidad", answer: "la" },
+
+    // EXCEPTIONS MASCULINES en -A
+    { id: DID(), prompt: "jour → ___ día (EXCEPTION !)", answer: "el" },
+    { id: DID(), prompt: "carte → ___ mapa (EXCEPTION !)", answer: "el" },
+    { id: DID(), prompt: "problème → ___ problema (EXCEPTION !)", answer: "el" },
+    { id: DID(), prompt: "système → ___ sistema (EXCEPTION !)", answer: "el" },
+    { id: DID(), prompt: "planète → ___ planeta (EXCEPTION !)", answer: "el" },
+    { id: DID(), prompt: "langue/idiome → ___ idioma (EXCEPTION !)", answer: "el" },
+    { id: DID(), prompt: "programme → ___ programa (EXCEPTION !)", answer: "el" },
+
+    // EXCEPTIONS FÉMININES en -O
+    { id: DID(), prompt: "main → ___ mano (EXCEPTION !)", answer: "la" },
+    { id: DID(), prompt: "photo → ___ foto (EXCEPTION !)", answer: "la" },
+    { id: DID(), prompt: "moto → ___ moto (EXCEPTION !)", answer: "la" },
+    { id: DID(), prompt: "radio → ___ radio (EXCEPTION !)", answer: "la" },
+
+    // PAIRES MASCULIN/FÉMININ
+    { id: DID(), prompt: "le professeur (homme) → ___ profesor", answer: "el" },
+    { id: DID(), prompt: "la professeure (femme) → ___ profesora", answer: "la" },
+    { id: DID(), prompt: "l'élève (garçon) → ___ alumno", answer: "el" },
+    { id: DID(), prompt: "l'élève (fille) → ___ alumna", answer: "la" },
+    { id: DID(), prompt: "le chat (mâle) → ___ gato", answer: "el" },
+    { id: DID(), prompt: "la chatte → ___ gata", answer: "la" },
+  ],
+};
+
+/* ------------------------------------------------------- */
+/* A1 — ARTICLES DÉFINIS : el, la, los, las                */
+/* ------------------------------------------------------- */
+
+export const articulos_definidos: GrammarPoint = {
+  id: "articulos_definidos",
+  level: "A1",
+  title: "Articles définis — el, la, los, las (le, la, les)",
+  note: `
+📚 LES ARTICLES DÉFINIS EN ESPAGNOL
+
+Les articles définis désignent quelque chose de PRÉCIS, de CONNU.
+
+┌────────────────────────────────────────┐
+│          │ MASCULIN  │ FÉMININ        │
+├────────────────────────────────────────┤
+│ SINGULIER│ EL        │ LA             │
+│          │ el libro  │ la casa        │
+├────────────────────────────────────────┤
+│ PLURIEL  │ LOS       │ LAS            │
+│          │ los libros│ las casas      │
+└────────────────────────────────────────┘
+
+🔹 UTILISATION :
+• Choses spécifiques : El libro que compré (le livre que j'ai acheté)
+• Généralisations : El agua es importante (l'eau est importante)
+• Parties du corps : Me duele la cabeza (j'ai mal à la tête)
+• Jours de la semaine : El lunes voy al cine (lundi je vais au cinéma)
+• Langues après "hablar" : Hablo el español (je parle espagnol)
+
+⚠️ CONTRACTION OBLIGATOIRE :
+• a + el = AL : Voy al cine (Je vais au cinéma)
+• de + el = DEL : Vengo del trabajo (Je viens du travail)
+
+❌ PAS de contraction avec la/los/las :
+• a la, de la, a los, de los, a las, de las
+  `,
+  drills: [
+    // SINGULIER MASCULIN (EL)
+    { id: DID(), prompt: "le livre → ___ libro", answer: "el" },
+    { id: DID(), prompt: "le chat → ___ gato", answer: "el" },
+    { id: DID(), prompt: "le chien → ___ perro", answer: "el" },
+    { id: DID(), prompt: "le jour → ___ día", answer: "el" },
+    { id: DID(), prompt: "le soleil → ___ sol", answer: "el" },
+    { id: DID(), prompt: "le professeur → ___ profesor", answer: "el" },
+
+    // SINGULIER FÉMININ (LA)
+    { id: DID(), prompt: "la maison → ___ casa", answer: "la" },
+    { id: DID(), prompt: "la table → ___ mesa", answer: "la" },
+    { id: DID(), prompt: "la fille → ___ niña", answer: "la" },
+    { id: DID(), prompt: "la lune → ___ luna", answer: "la" },
+    { id: DID(), prompt: "la main → ___ mano", answer: "la" },
+    { id: DID(), prompt: "la ville → ___ ciudad", answer: "la" },
+
+    // PLURIEL MASCULIN (LOS)
+    { id: DID(), prompt: "les livres → ___ libros", answer: "los" },
+    { id: DID(), prompt: "les chats → ___ gatos", answer: "los" },
+    { id: DID(), prompt: "les chiens → ___ perros", answer: "los" },
+    { id: DID(), prompt: "les jours → ___ días", answer: "los" },
+    { id: DID(), prompt: "les professeurs → ___ profesores", answer: "los" },
+
+    // PLURIEL FÉMININ (LAS)
+    { id: DID(), prompt: "les maisons → ___ casas", answer: "las" },
+    { id: DID(), prompt: "les tables → ___ mesas", answer: "las" },
+    { id: DID(), prompt: "les filles → ___ niñas", answer: "las" },
+    { id: DID(), prompt: "les mains → ___ manos", answer: "las" },
+    { id: DID(), prompt: "les villes → ___ ciudades", answer: "las" },
+
+    // CONTRACTION A + EL = AL
+    { id: DID(), prompt: "Je vais au cinéma → Voy ___ cine (a + el = ?)", answer: "al" },
+    { id: DID(), prompt: "Je vais au parc → Voy ___ parque (a + el = ?)", answer: "al" },
+    { id: DID(), prompt: "Je vais au marché → Voy ___ mercado (a + el = ?)", answer: "al" },
+    
+    // CONTRACTION DE + EL = DEL
+    { id: DID(), prompt: "Je viens du travail → Vengo ___ trabajo (de + el = ?)", answer: "del" },
+    { id: DID(), prompt: "Le livre du professeur → El libro ___ profesor (de + el = ?)", answer: "del" },
+    { id: DID(), prompt: "La porte du bureau → La puerta ___ despacho (de + el = ?)", answer: "del" },
+
+    // PAS DE CONTRACTION avec LA/LOS/LAS
+    { id: DID(), prompt: "Je vais à la plage → Voy ___ playa (a + la, pas de contraction)", answer: "a la" },
+    { id: DID(), prompt: "Je viens de la maison → Vengo ___ casa (de + la)", answer: "de la" },
+    { id: DID(), prompt: "Je vais aux magasins → Voy ___ tiendas (a + las)", answer: "a las" },
+
+    // PHRASES AVEC ARTICLES
+    { id: DID(), prompt: "L'eau est importante → ___ agua es importante", answer: "el" },
+    { id: DID(), prompt: "J'aime le café → Me gusta ___ café", answer: "el" },
+    { id: DID(), prompt: "Les enfants jouent → ___ niños juegan", answer: "los" },
+    { id: DID(), prompt: "Les fleurs sont belles → ___ flores son bonitas", answer: "las" },
+  ],
+};
+
+/* ------------------------------------------------------- */
+/* A1 — ARTICLES INDÉFINIS : un, una, unos, unas           */
+/* ------------------------------------------------------- */
+
+export const articulos_indefinidos: GrammarPoint = {
+  id: "articulos_indefinidos",
+  level: "A1",
+  title: "Articles indéfinis — un, una, unos, unas (un, une, des)",
+  note: `
+📚 LES ARTICLES INDÉFINIS EN ESPAGNOL
+
+Les articles indéfinis désignent quelque chose de NON-SPÉCIFIQUE, d'INDÉTERMINÉ.
+
+┌────────────────────────────────────────┐
+│          │ MASCULIN  │ FÉMININ        │
+├────────────────────────────────────────┤
+│ SINGULIER│ UN        │ UNA            │
+│          │ un libro  │ una casa       │
+├────────────────────────────────────────┤
+│ PLURIEL  │ UNOS      │ UNAS           │
+│          │ unos libros│unas casas     │
+│          │ (quelques)│ (quelques)     │
+└────────────────────────────────────────┘
+
+🔹 UTILISATION :
+• Un objet parmi d'autres : Tengo un libro (j'ai un livre)
+• Première mention : Veo una casa (je vois une maison)
+• Approximation au pluriel : Unos diez años (environ dix ans)
+
+🔸 DIFFÉRENCE UN vs UNO :
+• UN + nom : un libro, un día
+• UNO seul (sans nom) : Tengo uno (j'en ai un)
+
+⚠️ OMISSION de l'article :
+En espagnol, on OMET l'article indéfini après SER + profession/nationalité :
+✅ Soy profesor (Je suis professeur) - PAS "un profesor"
+✅ Es médico (Il est médecin) - PAS "un médico"
+✅ Somos estudiantes (Nous sommes étudiants)
+
+MAIS si qualifié :
+✅ Es un buen profesor (C'est un bon professeur)
+  `,
+  drills: [
+    // SINGULIER MASCULIN (UN)
+    { id: DID(), prompt: "un livre → ___ libro", answer: "un" },
+    { id: DID(), prompt: "un chat → ___ gato", answer: "un" },
+    { id: DID(), prompt: "un chien → ___ perro", answer: "un" },
+    { id: DID(), prompt: "un ami → ___ amigo", answer: "un" },
+    { id: DID(), prompt: "un jour → ___ día", answer: "un" },
+    { id: DID(), prompt: "un problème → ___ problema", answer: "un" },
+
+    // SINGULIER FÉMININ (UNA)
+    { id: DID(), prompt: "une maison → ___ casa", answer: "una" },
+    { id: DID(), prompt: "une table → ___ mesa", answer: "una" },
+    { id: DID(), prompt: "une fille → ___ niña", answer: "una" },
+    { id: DID(), prompt: "une amie → ___ amiga", answer: "una" },
+    { id: DID(), prompt: "une main → ___ mano", answer: "una" },
+    { id: DID(), prompt: "une ville → ___ ciudad", answer: "una" },
+
+    // PLURIEL MASCULIN (UNOS)
+    { id: DID(), prompt: "quelques livres → ___ libros", answer: "unos" },
+    { id: DID(), prompt: "quelques chats → ___ gatos", answer: "unos" },
+    { id: DID(), prompt: "quelques amis → ___ amigos", answer: "unos" },
+    { id: DID(), prompt: "environ dix jours → ___ diez días", answer: "unos" },
+
+    // PLURIEL FÉMININ (UNAS)
+    { id: DID(), prompt: "quelques maisons → ___ casas", answer: "unas" },
+    { id: DID(), prompt: "quelques tables → ___ mesas", answer: "unas" },
+    { id: DID(), prompt: "quelques filles → ___ niñas", answer: "unas" },
+    { id: DID(), prompt: "environ cinq heures → ___ cinco horas", answer: "unas" },
+
+    // UN vs UNO
+    { id: DID(), prompt: "un livre → ___ libro (avec nom)", answer: "un" },
+    { id: DID(), prompt: "J'en ai un → Tengo ___ (sans nom)", answer: "uno" },
+    { id: DID(), prompt: "un jour → ___ día (avec nom)", answer: "un" },
+
+    // OMISSION après SER
+    { id: DID(), prompt: "Je suis professeur → Soy ___ (profession, pas d'article !)", answer: "profesor" },
+    { id: DID(), prompt: "Il est médecin → Es ___ (pas d'article !)", answer: "médico" },
+    { id: DID(), prompt: "Elle est étudiante → Es ___ (pas d'article !)", answer: "estudiante" },
+    { id: DID(), prompt: "Nous sommes ingénieurs → Somos ___ (pas d'article !)", answer: "ingenieros" },
+
+    // MAIS avec adjectif
+    { id: DID(), prompt: "C'est un bon professeur → Es ___ buen profesor (avec adjectif)", answer: "un" },
+    { id: DID(), prompt: "C'est une bonne amie → Es ___ buena amiga", answer: "una" },
+
+    // PHRASES COMPLÈTES
+    { id: DID(), prompt: "J'ai un chien → Tengo ___ perro", answer: "un" },
+    { id: DID(), prompt: "Je veux une voiture → Quiero ___ coche", answer: "un" },
+    { id: DID(), prompt: "Il y a des livres → Hay ___ libros", answer: "unos" },
+    { id: DID(), prompt: "Je vois des filles → Veo ___ niñas", answer: "unas" },
+  ],
+};
+
+/* ------------------------------------------------------- */
+/* A1 — ACCORD DES ADJECTIFS                               */
+/* ------------------------------------------------------- */
+
+export const acuerdo_adjetivos: GrammarPoint = {
+  id: "acuerdo_adjetivos",
+  level: "A1",
+  title: "Accord des adjectifs — masculin/féminin, singulier/pluriel",
+  note: `
+📚 L'ACCORD DES ADJECTIFS EN ESPAGNOL
+
+Les adjectifs s'accordent TOUJOURS en genre (M/F) et en nombre (S/P) avec le nom.
+
+┌──────────────────────────────────────────────────────┐
+│ ADJECTIFS en -O/-A (majorité)                        │
+├──────────────────────────────────────────────────────┤
+│ Masculin singulier  │ -O   │ el gato blanco         │
+│ Féminin singulier   │ -A   │ la casa blanca         │
+│ Masculin pluriel    │ -OS  │ los gatos blancos      │
+│ Féminin pluriel     │ -AS  │ las casas blancas      │
+└──────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────┐
+│ ADJECTIFS en -E (invariables au genre)               │
+├──────────────────────────────────────────────────────┤
+│ Masculin/Féminin S  │ -E   │ el/la estudiante grande│
+│ Masculin/Féminin P  │ -ES  │ los/las estudiantes    │
+│                     │      │ grandes                │
+└──────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────┐
+│ ADJECTIFS en CONSONNE (nationalités, etc.)           │
+├──────────────────────────────────────────────────────┤
+│ Masculin singulier  │ -    │ el chico español       │
+│ Féminin singulier   │ +A   │ la chica española      │
+│ Masculin pluriel    │ +ES  │ los chicos españoles   │
+│ Féminin pluriel     │ +AS  │ las chicas españolas   │
+└──────────────────────────────────────────────────────┘
+
+🔹 EXEMPLES COURANTS :
+• bonito/a (joli/e) : un perro bonito, una casa bonita
+• alto/a (grand/e) : un chico alto, una chica alta
+• pequeño/a (petit/e) : un gato pequeño, una mesa pequeña
+• grande (grand/e) : un libro grande, una casa grande
+• inteligente : un niño inteligente, una niña inteligente
+• feliz (heureux/se) : un día feliz, una mujer feliz
+
+⚠️ POSITION :
+En général, l'adjectif se place APRÈS le nom :
+• Un libro interesante (un livre intéressant)
+• Una casa grande (une grande maison)
+
+Exceptions (avant le nom) :
+• bueno/a (bon/ne) → buen (devant nom masc. sing.)
+• malo/a (mauvais/e) → mal (devant nom masc. sing.)
+• Un buen libro (un bon livre)
+• Un mal día (un mauvais jour)
+  `,
+  drills: [
+    // ADJECTIFS EN -O/-A (accord de base)
+    { id: DID(), prompt: "un chat blanc → un gato ___ (blanco/blanca)", answer: "blanco" },
+    { id: DID(), prompt: "une maison blanche → una casa ___ (blanco/blanca)", answer: "blanca" },
+    { id: DID(), prompt: "des chats blancs → unos gatos ___ (blancos/blancas)", answer: "blancos" },
+    { id: DID(), prompt: "des maisons blanches → unas casas ___ (blancos/blancas)", answer: "blancas" },
+
+    { id: DID(), prompt: "un garçon petit → un niño ___ (pequeño/pequeña)", answer: "pequeño" },
+    { id: DID(), prompt: "une fille petite → una niña ___ (pequeño/pequeña)", answer: "pequeña" },
+    { id: DID(), prompt: "des garçons petits → unos niños ___ (pequeños/pequeñas)", answer: "pequeños" },
+    { id: DID(), prompt: "des filles petites → unas niñas ___ (pequeños/pequeñas)", answer: "pequeñas" },
+
+    { id: DID(), prompt: "un livre intéressant → un libro ___ (interesante)", answer: "interesante" },
+    { id: DID(), prompt: "une maison intéressante → una casa ___ (interesante)", answer: "interesante" },
+    { id: DID(), prompt: "des livres intéressants → unos libros ___ (interesantes)", answer: "interesantes" },
+
+    // NATIONALITÉS
+    { id: DID(), prompt: "un garçon espagnol → un chico ___ (español/española)", answer: "español" },
+    { id: DID(), prompt: "une fille espagnole → una chica ___ (español/española)", answer: "española" },
+    { id: DID(), prompt: "des garçons espagnols → unos chicos ___ (españoles/españolas)", answer: "españoles" },
+    { id: DID(), prompt: "des filles espagnoles → unas chicas ___ (españoles/españolas)", answer: "españolas" },
+
+    { id: DID(), prompt: "un homme français → un hombre ___ (francés/francesa)", answer: "francés" },
+    { id: DID(), prompt: "une femme française → una mujer ___ (francés/francesa)", answer: "francesa" },
+
+    // COULEURS
+    { id: DID(), prompt: "un chat noir → un gato ___ (negro/negra)", answer: "negro" },
+    { id: DID(), prompt: "une voiture noire → un coche ___ (negro/negra)", answer: "negro" },
+    { id: DID(), prompt: "une maison rouge → una casa ___ (rojo/roja)", answer: "roja" },
+    { id: DID(), prompt: "des fleurs rouges → unas flores ___ (rojos/rojas)", answer: "rojas" },
+
+    // ADJECTIFS INVARIABLES EN GENRE (-E)
+    { id: DID(), prompt: "un garçon intelligent → un niño ___ (inteligente)", answer: "inteligente" },
+    { id: DID(), prompt: "une fille intelligente → una niña ___ (inteligente)", answer: "inteligente" },
+    { id: DID(), prompt: "une grande maison → una casa ___ (grande)", answer: "grande" },
+    { id: DID(), prompt: "un grand livre → un libro ___ (grande)", answer: "grande" },
+
+    // ADJECTIFS SPÉCIAUX : BUENO/MALO
+    { id: DID(), prompt: "un bon livre → un ___ libro (buen/bueno)", answer: "buen" },
+    { id: DID(), prompt: "un livre bon → un libro ___ (buen/bueno)", answer: "bueno" },
+    { id: DID(), prompt: "une bonne maison → una ___ casa (buena)", answer: "buena" },
+    { id: DID(), prompt: "un mauvais jour → un ___ día (mal/malo)", answer: "mal" },
+
+    // PHRASES COMPLÈTES
+    { id: DID(), prompt: "J'ai un chat noir → Tengo un gato ___ (negro/negra)", answer: "negro" },
+    { id: DID(), prompt: "J'aime la maison blanche → Me gusta la casa ___ (blanco/blanca)", answer: "blanca" },
+    { id: DID(), prompt: "Les filles sont grandes → Las niñas son ___ (grandes)", answer: "grandes" },
+    { id: DID(), prompt: "C'est une femme intelligente → Es una mujer ___ (inteligente)", answer: "inteligente" },
+  ],
+};
+
+// Ajoute ces nouveaux points de grammaire à l'export principal
+export const grammarPoints: GrammarPoint[] = [
+  // ... (garde tous les points existants)
+  
+  // NOUVEAUX : Genre et articles
+  genero_sustantivos,
+  articulos_definidos,
+  articulos_indefinidos,
+  acuerdo_adjetivos,
+];
+/* ------------------------------------------------------- */
 /* A1 — PRÉPOSITION "DE" : possession, origine, matière    */
 /* ------------------------------------------------------- */
 
