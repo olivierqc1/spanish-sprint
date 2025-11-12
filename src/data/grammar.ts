@@ -20,7 +20,7 @@ const DID = () => `d${++_id}`;
 export const presente_regulares: GrammarPoint = {
   id: "presente_regulares",
   level: "A1",
-  title: "Présent de l’indicatif — verbes réguliers (50)",
+  title: "Présent de l'indicatif — verbes réguliers (50)",
   note:
     "Rappels: -AR (o, as, a, amos, áis, an) · -ER (o, es, e, emos, éis, en) · -IR (o, es, e, imos, ís, en).",
   drills: [
@@ -65,7 +65,7 @@ export const presente_regulares: GrammarPoint = {
     { id: DID(), prompt: "Conjugue «recibir» (nosotros) = recevoir", answer: "recibimos" },
     { id: DID(), prompt: "Conjugue «permitir» (vosotros) = permettre", answer: "permitís" },
     { id: DID(), prompt: "Conjugue «subir» (ellos) = monter", answer: "suben" },
-    { id: DID(), prompt: "Conjugue «salir» (yo) = sortir", answer: "salgo" }, // go-verb mais présent simple attendu
+    { id: DID(), prompt: "Conjugue «salir» (yo) = sortir", answer: "salgo" },
     { id: DID(), prompt: "Conjugue «partir» (tú) = partir", answer: "partes" },
     { id: DID(), prompt: "Conjugue «existir» (él) = exister", answer: "existe" },
     { id: DID(), prompt: "Conjugue «decidir» (nosotros) = décider", answer: "decidimos" },
@@ -124,7 +124,7 @@ export const preterito_indefinido_regulares: GrammarPoint = {
     { id: DID(), prompt: "Conjugue «cantar» (ellos) = chanter", answer: "cantaron" },
     { id: DID(), prompt: "Conjugue «comer» (yo) = manger", answer: "comí" },
     { id: DID(), prompt: "Conjugue «beber» (tú) = boire", answer: "bebiste" },
-    { id: DID(), prompt: "Conjugue «leer» (ella) = lire", answer: "leyó" }, // orthographe spéciale
+    { id: DID(), prompt: "Conjugue «leer» (ella) = lire", answer: "leyó" },
     { id: DID(), prompt: "Conjugue «vender» (nosotros) = vendre", answer: "vendimos" },
     { id: DID(), prompt: "Conjugue «aprender» (vosotros) = apprendre", answer: "aprendisteis" },
     { id: DID(), prompt: "Conjugue «correr» (ellos) = courir", answer: "corrieron" },
@@ -134,9 +134,9 @@ export const preterito_indefinido_regulares: GrammarPoint = {
     { id: DID(), prompt: "Conjugue «recibir» (nosotros) = recevoir", answer: "recibimos" },
     { id: DID(), prompt: "Conjugue «subir» (vosotros) = monter", answer: "subisteis" },
     { id: DID(), prompt: "Conjugue «decidir» (ellos) = décider", answer: "decidieron" },
-    { id: DID(), prompt: "Conjugue «pagar» (yo) = payer", answer: "pagué" }, // g→gu
-    { id: DID(), prompt: "Conjugue «llegar» (yo) = arriver", answer: "llegué" }, // g→gu
-    { id: DID(), prompt: "Conjugue «buscar» (yo) = chercher", answer: "busqué" }, // c→qu
+    { id: DID(), prompt: "Conjugue «pagar» (yo) = payer", answer: "pagué" },
+    { id: DID(), prompt: "Conjugue «llegar» (yo) = arriver", answer: "llegué" },
+    { id: DID(), prompt: "Conjugue «buscar» (yo) = chercher", answer: "busqué" },
   ],
 };
 
@@ -181,7 +181,6 @@ export const imperfecto: GrammarPoint = {
     { id: DID(), prompt: "Conjugue «vivir» (tú) = vivre", answer: "vivías" },
     { id: DID(), prompt: "Conjugue «trabajar» (ella) = travailler", answer: "trabajaba" },
     { id: DID(), prompt: "Conjugue «escribir» (ellos) = écrire", answer: "escribían" },
-    // irréguliers
     { id: DID(), prompt: "Conjugue «ir» (nosotros) = aller", answer: "íbamos" },
     { id: DID(), prompt: "Conjugue «ser» (yo) = être (essence)", answer: "era" },
     { id: DID(), prompt: "Conjugue «ver» (él) = voir", answer: "veía" },
@@ -196,7 +195,7 @@ export const futuro_simple_regulares: GrammarPoint = {
   id: "futuro_simple_regulares",
   level: "B1",
   title: "Futuro simple — réguliers",
-  note: "Verbe à l’infinitif + terminaisons (é, ás, á, emos, éis, án).",
+  note: "Verbe à l'infinitif + terminaisons (é, ás, á, emos, éis, án).",
   drills: [
     { id: DID(), prompt: "Conjugue «hablar» (yo) au futur = parler", answer: "hablaré" },
     { id: DID(), prompt: "Conjugue «comer» (ella) = manger", answer: "comerá" },
@@ -235,7 +234,7 @@ export const futuro_simple_irregulares: GrammarPoint = {
 export const cotidiano_basics: GrammarPoint = {
   id: "cotidiano_basics",
   level: "A1",
-  title: "Vie quotidienne — l’heure, dates, prix, directions, café",
+  title: "Vie quotidienne — l'heure, dates, prix, directions, café",
   note:
     "Exercices de communication pratique. Réponds en espagnol. Les réponses sont des modèles usuels.",
   drills: [
@@ -249,39 +248,40 @@ export const cotidiano_basics: GrammarPoint = {
     // DATES
     { id: DID(), prompt: "Nous sommes le 5 mai →", answer: "Es el cinco de mayo." },
     { id: DID(), prompt: "Mon anniversaire est le 12 août →", answer: "Mi cumpleaños es el doce de agosto." },
-    { id: DID(), prompt: "Aujourd’hui c’est lundi →", answer: "Hoy es lunes." },
-    { id: DID(), prompt: "Demain c’est mercredi →", answer: "Mañana es miércoles." },
+    { id: DID(), prompt: "Aujourd'hui c'est lundi →", answer: "Hoy es lunes." },
+    { id: DID(), prompt: "Demain c'est mercredi →", answer: "Mañana es miércoles." },
 
     // PRIX & ACHATS
     { id: DID(), prompt: "Combien ça coûte ? →", answer: "¿Cuánto cuesta?" },
-    { id: DID(), prompt: "C’est 7,50 € →", answer: "Cuesta siete con cincuenta." },
+    { id: DID(), prompt: "C'est 7,50 € →", answer: "Cuesta siete con cincuenta." },
     { id: DID(), prompt: "Je voudrais payer en carte →", answer: "Quisiera pagar con tarjeta." },
     { id: DID(), prompt: "Avez-vous un reçu ? →", answer: "¿Tiene recibo?" },
 
     // CAFÉ/RESTAURANT
-    { id: DID(), prompt: "Un café au lait, s’il vous plaît →", answer: "Un café con leche, por favor." },
-    { id: DID(), prompt: "L’addition, s’il vous plaît →", answer: "La cuenta, por favor." },
-    { id: DID(), prompt: "De l’eau plate / gazeuse →", answer: "Agua sin gas / con gas." },
+    { id: DID(), prompt: "Un café au lait, s'il vous plaît →", answer: "Un café con leche, por favor." },
+    { id: DID(), prompt: "L'addition, s'il vous plaît →", answer: "La cuenta, por favor." },
+    { id: DID(), prompt: "De l'eau plate / gazeuse →", answer: "Agua sin gas / con gas." },
     { id: DID(), prompt: "Sans sucre, merci →", answer: "Sin azúcar, gracias." },
 
     // DIRECTIONS
     { id: DID(), prompt: "Où est le métro ? →", answer: "¿Dónde está el metro?" },
     { id: DID(), prompt: "Tournez à droite →", answer: "Gire a la derecha." },
     { id: DID(), prompt: "Toujours tout droit →", answer: "Siga todo recto." },
-    { id: DID(), prompt: "C’est loin ? →", answer: "¿Está lejos?" },
-    { id: DID(), prompt: "J’ai besoin d’un taxi →", answer: "Necesito un taxi." },
+    { id: DID(), prompt: "C'est loin ? →", answer: "¿Está lejos?" },
+    { id: DID(), prompt: "J'ai besoin d'un taxi →", answer: "Necesito un taxi." },
 
     // HÔTEL & VOYAGE
-    { id: DID(), prompt: "J’ai une réservation au nom de… →", answer: "Tengo una reserva a nombre de…" },
+    { id: DID(), prompt: "J'ai une réservation au nom de… →", answer: "Tengo una reserva a nombre de…" },
     { id: DID(), prompt: "À quelle heure est le check-out ? →", answer: "¿A qué hora es el check-out?" },
     { id: DID(), prompt: "Où est la gare routière ? →", answer: "¿Dónde está la estación de autobuses?" },
 
     // PETITES URGENCES
-    { id: DID(), prompt: "Aidez-moi, s’il vous plaît →", answer: "Ayúdeme, por favor." },
-    { id: DID(), prompt: "J’ai perdu mon portefeuille →", answer: "Perdí mi cartera." },
-    { id: DID(), prompt: "J’ai besoin d’un médecin →", answer: "Necesito un médico." },
+    { id: DID(), prompt: "Aidez-moi, s'il vous plaît →", answer: "Ayúdeme, por favor." },
+    { id: DID(), prompt: "J'ai perdu mon portefeuille →", answer: "Perdí mi cartera." },
+    { id: DID(), prompt: "J'ai besoin d'un médecin →", answer: "Necesito un médico." },
   ],
 };
+
 /* ------------------------------------------------------- */
 /* A1 — GENRE : Masculin et Féminin                        */
 /* ------------------------------------------------------- */
@@ -690,16 +690,6 @@ Exceptions (avant le nom) :
   ],
 };
 
-// Ajoute ces nouveaux points de grammaire à l'export principal
-export const grammarPoints: GrammarPoint[] = [
-  // ... (garde tous les points existants)
-  
-  // NOUVEAUX : Genre et articles
-  genero_sustantivos,
-  articulos_definidos,
-  articulos_indefinidos,
-  acuerdo_adjetivos,
-];
 /* ------------------------------------------------------- */
 /* A1 — PRÉPOSITION "DE" : possession, origine, matière    */
 /* ------------------------------------------------------- */
@@ -927,4 +917,14 @@ export const grammarPoints: GrammarPoint[] = [
 
   // Pratique quotidienne
   cotidiano_basics,
+
+  // Genre et articles
+  genero_sustantivos,
+  articulos_definidos,
+  articulos_indefinidos,
+  acuerdo_adjetivos,
+
+  // Prépositions et démonstratifs
+  preposicion_de,
+  demostrativos,
 ];
