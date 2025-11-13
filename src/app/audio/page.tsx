@@ -81,7 +81,7 @@ export default function AudioManager() {
     setGenerationProgress({ current: 0, total: conv.lines.length });
 
     try {
-      const results = [];
+      const results: any[] = [];
       
       for (let i = 0; i < conv.lines.length; i++) {
         const line = conv.lines[i];
@@ -446,4 +446,4 @@ export default function AudioManager() {
       </div>
     </div>
   );
-            }
+}
