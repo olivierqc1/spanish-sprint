@@ -1,4 +1,4 @@
-import type { ReadingItem } from "@/components/Reading";
+import type { ReadingItem } from "./culturalTexts";
 import { spainA1 } from "./spainA1";
 import { spainA2 } from "./spainA2";
 import { spainB1 } from "./spainB1";
