@@ -265,4 +265,16 @@ export const cards: Card[] = [
   { id:"es-b1-9", front:"convivencia", back:"coexistence", level:"B1", tag:"histoire", country:"Espagne" },
   { id:"es-b1-10", front:"transición", back:"transition démocratique", level:"B1", tag:"histoire", country:"Espagne" },
 
-  //
+  //// ==================== B1 MEXIQUE (10 cartes) ====================
+  
+  { id:"mx-b1-1", front:"mestizaje", back:"métissage", level:"B1", tag:"culture", country:"Mexique" },
+  { id:"mx-b1-2", front:"revolución", back:"révolution", level:"B1", tag:"histoire", country:"Mexique" },
+  { id:"mx-b1-3", front:"ejido", back:"terre communale", level:"B1", tag:"agriculture", country:"Mexique" },
+  { id:"mx-b1-4", front:"chinampas", back:"jardins flottants", level:"B1", tag:"agriculture", country:"Mexique" },
+  { id:"mx-b1-5", front:"tlacuache", back:"opossum", level:"B1", tag:"faune", country:"Mexique" },
+  { id:"mx-b1-6", front:"nopal", back:"figuier de barbarie", level:"B1", tag:"flore", country:"Mexique" },
+  { id:"mx-b1-7", front:"alebrijes", back:"sculptures fantastiques", level:"B1", tag:"artisanat", country:"Mexique" },
+  { id:"mx-b1-8", front:"lucha libre", back:"catch mexicain", level:"B1", tag:"sport", country:"Mexique" },
+  { id:"mx-b1-9", front:"ofrenda", back:"autel des morts", level:"B1", tag:"traditions", country:"Mexique" },
+  { id:"mx-b1-10", front:"corrido", back:"ballade narrative", level:"B1", tag:"musique", country:"Mexique" }
+];
