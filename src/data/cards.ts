@@ -1,4 +1,14 @@
-import type { Card } from "@/components/Flashcards";
+// src/data/cards.ts
+
+// Définis le type Card ici avec tag
+export type Card = {
+  id: string;
+  front: string;
+  back: string;
+  level: "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
+  tag?: string;
+  country?: string;
+};
 
 export const cards: Card[] = [
   // ==================== A1 BASE (60 cartes) ====================
@@ -255,7 +265,4 @@ export const cards: Card[] = [
   { id:"es-b1-9", front:"convivencia", back:"coexistence", level:"B1", tag:"histoire", country:"Espagne" },
   { id:"es-b1-10", front:"transición", back:"transition démocratique", level:"B1", tag:"histoire", country:"Espagne" },
 
-  // ==================== B1 MEXIQUE (10 cartes) ====================
-  
-  { id:"mx-b1-1", front:"mestizaje", back:"métissage", level:"B1", tag:"idée", country:"Mexique" },
-];
+  //
