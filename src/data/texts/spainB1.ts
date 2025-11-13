@@ -1,4 +1,4 @@
-import type { ReadingItem } from "@/components/Reading";
+import type { ReadingItem } from "./culturalTexts";
 
 export const spainB1: ReadingItem[] = [
   {
