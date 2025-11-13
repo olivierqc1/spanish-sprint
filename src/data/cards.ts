@@ -101,7 +101,7 @@ export const cards: Card[] = [
   { id:"es-a1-13", front:"tapas", back:"petits plats", level:"A1", tag:"nourriture", country:"Espagne" },
   { id:"es-a1-14", front:"paella", back:"paella", level:"A1", tag:"nourriture", country:"Espagne" },
   { id:"es-a1-15", front:"jamón", back:"jambon", level:"A1", tag:"nourriture", country:"Espagne" },
-  { id:"es-a1-16", front:"chorizo", back:"chorizo", level:"A1", tag:"nourriture", country:"Espagne" },
+  { id:"es-a1-16", front:"chorizo", back:"chorizo", level:"A1", tag:"nourriture", country:"Mexique" },
   { id:"es-a1-17", front:"tortilla", back:"omelette espagnole", level:"A1", tag:"nourriture", country:"Espagne" },
   { id:"es-a1-18", front:"aceite", back:"huile", level:"A1", tag:"nourriture", country:"Espagne" },
   { id:"es-a1-19", front:"aceituna", back:"olive", level:"A1", tag:"nourriture", country:"Espagne" },
