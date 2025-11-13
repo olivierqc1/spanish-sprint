@@ -1,5 +1,5 @@
 // src/data/texts/spainA1_enriched.ts
-import type { ReadingItem } from "@/components/Reading";
+import type { ReadingItem } from "./culturalTexts";
 
 export const spainA1Enriched: ReadingItem[] = [
   // 15 TEXTES A1 ESPAGNE
