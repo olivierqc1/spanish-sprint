@@ -1,36 +1,18 @@
+// src/app/audio-generator/page.tsx
 "use client";
+
 import { useState } from 'react';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { Flag } from '@/components/ui/Flag';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import type { Conversation, ConversationLine } from '@/types/audio';
 
-// Types
-interface ConversationLine {
-  speaker: string;
-  gender: 'homme' | 'femme';
-  text: string;
-}
-
-interface Conversation {
-  id: string;
-  country: string;
-  level: string;
-  title: string;
-  lines: ConversationLine[];
-}
-
-interface AudioResult {
-  text: string;
-  speaker: string;
-  audio: { success: boolean };
-}
-
-// Données des conversations
-const CONVERSATIONS: Conversation[] = [
+// Sample conversations
+const SAMPLE_CONVERSATIONS: Conversation[] = [
   {
-    id: "conv_es_a1_cafe",
+    id: "sample_cafe",
     country: "Espagne",
     level: "A1",
     title: "Au café",
@@ -39,41 +21,31 @@ const CONVERSATIONS: Conversation[] = [
       { speaker: "María", gender: "femme", text: "Muy bien, gracias. ¿Y tú?" },
       { speaker: "Carlos", gender: "homme", text: "Bien también. ¿Qué vas a tomar?" },
       { speaker: "María", gender: "femme", text: "Un café con leche y un croissant, por favor." },
-      { speaker: "Carlos", gender: "homme", text: "Para mí, un zumo de naranja." },
     ]
   },
   {
-    id: "conv_mx_a1_mercado",
+    id: "sample_mercado",
     country: "Mexique",
     level: "A1",
     title: "Au marché",
     lines: [
       { speaker: "Cliente", gender: "homme", text: "Buenos días. ¿Cuánto cuestan los aguacates?" },
       { speaker: "Vendedor", gender: "homme", text: "Treinta pesos el kilo, güerito." },
-      { speaker: "Cliente", gender: "homme", text: "Dame dos kilos, por favor. ¿Y los mangos?" },
-      { speaker: "Vendedor", gender: "homme", text: "Los mangos están a veinte pesos el kilo." },
-      { speaker: "Cliente", gender: "homme", text: "Perfecto, un kilo de mangos también." },
-    ]
-  },
-  {
-    id: "conv_es_a2_hotel",
-    country: "Espagne",
-    level: "A2",
-    title: "Réservation d'hôtel",
-    lines: [
-      { speaker: "Recepcionista", gender: "femme", text: "Hotel Sol y Mar, buenas tardes." },
-      { speaker: "Cliente", gender: "homme", text: "Buenas tardes. Quería reservar una habitación para el fin de semana." },
-      { speaker: "Recepcionista", gender: "femme", text: "Perfecto. ¿Para cuántas personas?" },
-      { speaker: "Cliente", gender: "homme", text: "Para dos personas. Una habitación doble con vistas al mar, si es posible." },
     ]
   },
 ];
+
+interface AudioGenerationResult {
+  text: string;
+  speaker: string;
+  success: boolean;
+}
 
 export default function AudioGenerator() {
   const [selectedConv, setSelectedConv] = useState<Conversation | null>(null);
   const [generating, setGenerating] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0 });
-  const [results, setResults] = useState<AudioResult[]>([]);
+  const [results, setResults] = useState<AudioGenerationResult[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   const generateAudios = async (conversation: Conversation) => {
@@ -83,23 +55,33 @@ export default function AudioGenerator() {
     setProgress({ current: 0, total: conversation.lines.length });
 
     try {
-      const generatedFiles: AudioResult[] = [];
+      const generatedFiles: AudioGenerationResult[] = [];
 
       for (let i = 0; i < conversation.lines.length; i++) {
         const line = conversation.lines[i];
         setProgress({ current: i + 1, total: conversation.lines.length });
 
-        const audio = await generateAudioSimple(line.text, conversation.country, line.gender);
+        // Utilise Web Speech API
+        const success = await speakText(line.text, conversation.country, line.gender);
         
         generatedFiles.push({
           text: line.text,
           speaker: line.speaker,
-          audio: audio
+          success
         });
+
+        // Petit délai entre chaque génération
+        await new Promise(resolve => setTimeout(resolve, 500));
       }
 
       setResults(generatedFiles);
-      alert(`✅ ${generatedFiles.length} audios générés avec succès !`);
+      const successCount = generatedFiles.filter(f => f.success).length;
+      
+      if (successCount === generatedFiles.length) {
+        alert(`✅ ${successCount} audios générés avec succès !`);
+      } else {
+        alert(`⚠️ ${successCount}/${generatedFiles.length} audios générés`);
+      }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Erreur inconnue';
       setError(errorMessage);
@@ -109,38 +91,51 @@ export default function AudioGenerator() {
     }
   };
 
-  const generateAudioSimple = async (text: string, country: string, gender: string) => {
-    return new Promise<{ success: boolean }>((resolve, reject) => {
+  const speakText = (text: string, country: string, gender: string): Promise<boolean> => {
+    return new Promise((resolve, reject) => {
       if (!('speechSynthesis' in window)) {
-        reject(new Error('Votre navigateur ne supporte pas la synthèse vocale'));
+        reject(new Error('Synthèse vocale non supportée'));
         return;
       }
 
       const utterance = new SpeechSynthesisUtterance(text);
       
-      const voices = window.speechSynthesis.getVoices();
-      const spanishVoice = voices.find(v => v.lang.startsWith('es'));
-      if (spanishVoice) utterance.voice = spanishVoice;
+      // Configuration selon le pays
+      const langMap: Record<string, string> = {
+        'Espagne': 'es-ES',
+        'Mexique': 'es-MX',
+        'Argentine': 'es-AR',
+        'Colombie': 'es-CO',
+      };
       
-      utterance.lang = 'es-ES';
+      utterance.lang = langMap[country] || 'es-ES';
       utterance.rate = 0.9;
       utterance.pitch = gender === 'femme' ? 1.2 : 0.9;
 
-      utterance.onend = () => resolve({ success: true });
-      utterance.onerror = (err) => reject(err);
+      // Essayer de trouver une voix espagnole
+      const voices = window.speechSynthesis.getVoices();
+      const spanishVoice = voices.find(v => v.lang.startsWith('es'));
+      if (spanishVoice) utterance.voice = spanishVoice;
+
+      utterance.onend = () => resolve(true);
+      utterance.onerror = (err) => {
+        console.error('Speech error:', err);
+        resolve(false);
+      };
 
       window.speechSynthesis.speak(utterance);
     });
   };
 
-  const downloadAllResults = () => {
+  const downloadResults = () => {
     const dataStr = JSON.stringify(results, null, 2);
     const dataBlob = new Blob([dataStr], { type: 'application/json' });
     const url = URL.createObjectURL(dataBlob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `results_${selectedConv?.id}.json`;
+    link.download = `results_${selectedConv?.id || 'unknown'}.json`;
     link.click();
+    URL.revokeObjectURL(url);
   };
 
   return (
@@ -163,7 +158,7 @@ export default function AudioGenerator() {
         <Card className="mb-8">
           <h2 className="text-xl font-bold mb-4">1️⃣ Choisir une conversation</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {CONVERSATIONS.map((conv) => (
+            {SAMPLE_CONVERSATIONS.map((conv) => (
               <button
                 key={conv.id}
                 onClick={() => setSelectedConv(conv)}
@@ -262,22 +257,24 @@ export default function AudioGenerator() {
           <Card>
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-bold">
-                3️⃣ Résultats ({results.length} audios)
+                3️⃣ Résultats ({results.filter(r => r.success).length}/{results.length} audios)
               </h2>
-              <Button onClick={downloadAllResults} variant="secondary">
+              <Button onClick={downloadResults} variant="secondary">
                 📥 Télécharger JSON
               </Button>
             </div>
 
             <div className="space-y-3">
               {results.map((result, idx) => (
-                <Card key={idx} variant="success">
+                <Card key={idx} variant={result.success ? "success" : "danger"}>
                   <div className="flex justify-between items-center">
                     <div className="flex-1">
                       <strong className="block mb-1">{result.speaker}</strong>
                       <p className="text-sm text-slate-600 dark:text-slate-400">{result.text}</p>
                     </div>
-                    <span className="text-2xl ml-4">✅</span>
+                    <span className="text-2xl ml-4">
+                      {result.success ? '✅' : '❌'}
+                    </span>
                   </div>
                 </Card>
               ))}
@@ -288,15 +285,21 @@ export default function AudioGenerator() {
         {/* Guide */}
         <Card variant="primary" className="mt-8">
           <h2 className="text-xl font-bold mb-4">💡 Comment ça marche ?</h2>
-          <ol className="space-y-2 text-slate-300">
+          <ol className="space-y-2">
             <li><strong>1.</strong> Choisir une conversation</li>
             <li><strong>2.</strong> Vérifier l'aperçu</li>
             <li><strong>3.</strong> Cliquer sur "Générer"</li>
-            <li><strong>4.</strong> Attendre la synthèse vocale</li>
+            <li><strong>4.</strong> Attendre la synthèse vocale (Web Speech API)</li>
             <li><strong>5.</strong> Télécharger les résultats</li>
           </ol>
+          <div className="mt-4 p-3 bg-yellow-50 dark:bg-yellow-950/30 rounded-lg border border-yellow-200 dark:border-yellow-800">
+            <p className="text-sm text-yellow-800 dark:text-yellow-200">
+              ⚠️ <strong>Note :</strong> Cette version utilise Web Speech API du navigateur. 
+              Pour une qualité professionnelle, utilise <strong>Audio Manager PRO</strong> avec Google Cloud TTS.
+            </p>
+          </div>
         </Card>
       </div>
     </div>
   );
-              }
+}
