@@ -1,7 +1,6 @@
 "use client";
 
-type Level = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
-type Country = "ALL" | "spain" | "mexico" | "argentina";
+import type { Level, Country } from "@/components/LevelPicker";
 
 interface TextItem {
   id: number;
@@ -19,7 +18,7 @@ interface ReadingProps {
 
 export default function Reading({ items, level, country }: ReadingProps) {
   const filteredItems = items.filter((item) => {
-    const levelMatch = item.level === level;
+    const levelMatch = level === "ALL" || item.level === level;
     const countryMatch = country === "ALL" || item.country === country;
     return levelMatch && countryMatch;
   });
@@ -74,6 +73,16 @@ export default function Reading({ items, level, country }: ReadingProps) {
                     ? "🇲🇽 Mexique"
                     : item.country === "argentina"
                     ? "🇦🇷 Argentine"
+                    : item.country === "colombia"
+                    ? "🇨🇴 Colombie"
+                    : item.country === "peru"
+                    ? "🇵🇪 Pérou"
+                    : item.country === "chile"
+                    ? "🇨🇱 Chili"
+                    : item.country === "cuba"
+                    ? "🇨🇺 Cuba"
+                    : item.country === "venezuela"
+                    ? "🇻🇪 Venezuela"
                     : "🌍 Tous"}
                 </span>
               </div>
