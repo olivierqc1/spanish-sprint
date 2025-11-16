@@ -1,7 +1,7 @@
 // src/app/layout.tsx
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import { ToastProvider } from '@/contexts/ToastContext';
-import { LanguageProvider } from '@/i18n/LanguageContext';
+import { LanguageProvider } from '../../i18n/LanguageContext';
 import "./global.css";
 
 export const metadata = {
