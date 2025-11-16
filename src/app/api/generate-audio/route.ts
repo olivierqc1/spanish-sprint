@@ -43,14 +43,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Sélectionner la voix
-    const voice = VOICES[country]?.[gender];
-    if (!voice) {
+    // Sélectionner la voix avec types explicites
+    const genderKey = gender as 'homme' | 'femme';
+    const countryVoices = VOICES[country];
+    
+    if (!countryVoices || !countryVoices[genderKey]) {
       return NextResponse.json(
         { error: 'Voix non trouvée' },
         { status: 400 }
       );
     }
+
+    const voice = countryVoices[genderKey];
 
     // Générer l'audio avec Edge-TTS via commande
     // Note : Cette approche nécessite edge-tts installé sur le serveur
