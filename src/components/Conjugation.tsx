@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
-import type { Level } from "./LevelPicker";
+import type { Level, Country } from "./LevelPicker";
 
 type ConjugationExercise = {
   id: string;
@@ -178,7 +178,7 @@ const conjugationBank: ConjugationExercise[] = [
 function normalize(str: string): string {
   return str.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
-export default function Conjugation({ level, country }: { level: Level; country: "ALL" | "spain" | "mexico"; }) {
+export default function Conjugation({ level, country }: { level: Level; country: Country; }) {
   const [mode, setMode] = useState<LearningMode>("theory");
   const [selectedTense, setSelectedTense] = useState<string>("présent");
   const [idx, setIdx] = useState(0);
