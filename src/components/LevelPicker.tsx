@@ -4,7 +4,7 @@ import { useId } from "react";
 export type Level = "A1" | "A2" | "B1" | "ALL";
 export type Country = "spain" | "mexico" | "argentina" | "colombia" | "peru" | "chile" | "cuba" | "venezuela" | "ALL";
 
-type Sections = {
+export type Sections = {
   listening: boolean;
   reading: boolean;
   flashcards: boolean;
