@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import type { Level, Country } from "@/components/LevelPicker";
 
 // 🧩 Import des jeux de cartes selon le niveau
 import { wordsA1 } from "../data/words/A1";
@@ -8,8 +9,6 @@ import { wordsA2 } from "../data/words/A2";
 import { wordsB1 } from "../data/words/B1";
 // Tu pourras ajouter plus tard : import { wordsB2 } from "../data/words/B2"; etc.
 
-type Level = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
-type Country = "ALL" | "spain" | "mexico" | "argentina";
 type Category = "verbe" | "nom" | "adjectif" | "autre";
 
 export interface Card {
@@ -44,6 +43,10 @@ export default function Flashcards({ level, country, category }: FlashcardsProps
     case "B1":
       allCards = wordsB1;
       break;
+    case "ALL":
+      // Pour "ALL", on combine tous les niveaux
+      allCards = [...wordsA1, ...wordsA2, ...wordsB1];
+      break;
     // Tu pourras continuer plus tard :
     // case "B2": allCards = wordsB2; break;
     default:
@@ -52,7 +55,7 @@ export default function Flashcards({ level, country, category }: FlashcardsProps
 
   // 🎯 Filtrage par pays et catégorie
   const filteredCards = allCards.filter((card) => {
-    const levelMatch = card.level === level;
+    const levelMatch = level === "ALL" || card.level === level;
     const countryMatch = country === "ALL" || card.country === country;
     const categoryMatch = !category || card.category === category;
     return levelMatch && countryMatch && categoryMatch;
