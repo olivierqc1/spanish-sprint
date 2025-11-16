@@ -4,11 +4,12 @@ import { useState } from "react";
 import { useReviewStore } from "@/store/reviewStore";
 import type { ReviewQuality } from "@/lib/spacedRepetition";
 import type { Card } from "@/components/Flashcards";
+import type { Level, Country } from "@/components/LevelPicker";
 
 type SmartReviewProps = {
   cards: Card[];
-  level: string;
-  country: string;
+  level: Level;
+  country: Country;
 };
 
 export default function SmartReview({ cards, level, country }: SmartReviewProps) {
@@ -17,7 +18,7 @@ export default function SmartReview({ cards, level, country }: SmartReviewProps)
 
   // Filtrer les cartes selon le niveau et le pays
   const filteredCards = cards.filter((card) => {
-    const levelMatch = card.level === level;
+    const levelMatch = level === "ALL" || card.level === level;
     const countryMatch = country === "ALL" || card.country === country;
     return levelMatch && countryMatch;
   });
