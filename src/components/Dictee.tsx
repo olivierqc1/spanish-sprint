@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
-import type { Level } from "./LevelPicker";
+import type { Level, Country } from "./LevelPicker";
 
 export type DicteeItem = {
   id: string;
@@ -16,7 +16,7 @@ export default function Dictee({
 }: {
   items: DicteeItem[];
   level: Level;
-  country: "ALL" | "spain" | "mexico";
+  country: Country;
 }) {
   const [idx, setIdx] = useState(0);
   const [text, setText] = useState("");
