@@ -2,19 +2,19 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { LevelPicker, type Level, type Country, type Sections } from "@/components/LevelPicker";
-import { Dashboard } from "@/components/Dashboard";
-import { Listening } from "@/components/Listening";
-import { Reading } from "@/components/Reading";
-import { Flashcards } from "@/components/Flashcards";
-import { SmartReview } from "@/components/SmartReview";
-import { Badges } from "@/components/Badges";
-import { Conjugation } from "@/components/Conjugation";
-import { VocabQuiz } from "@/components/VocabQuiz";
-import { Orthographe } from "@/components/Orthographe";
-import { Dictee } from "@/components/Dictee";
-import { DailyPlan } from "@/components/Dailyplan";
-import { GrammarExplorer } from "@/components/GrammarExplorer";
+import LevelPicker, { type Level, type Country, type Sections } from "@/components/LevelPicker";
+import Dashboard from "@/components/Dashboard";
+import Listening from "@/components/Listening";
+import Reading from "@/components/Reading";
+import Flashcards from "@/components/Flashcards";
+import SmartReview from "@/components/SmartReview";
+import Badges from "@/components/Badges";
+import Conjugation from "@/components/Conjugation";
+import VocabQuiz from "@/components/VocabQuiz";
+import Orthographe from "@/components/Orthographe";
+import Dictee from "@/components/Dictee";
+import DailyPlan from "@/components/Dailyplan";
+import GrammarExplorer from "@/components/GrammarExplorer";
 
 // Data imports
 import { wordsA1 } from "@/data/words/A1";
