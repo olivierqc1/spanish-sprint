@@ -1,6 +1,6 @@
 // components/AnnouncementBanner.tsx
 'use client';
-import { useAnnouncementStore, type AnnouncementType } from '@/stores/announcementStore';
+import { useAnnouncementStore, type AnnouncementType } from '@/store/announcementStore';
 import { useTranslation } from '../../i18n/useTranslation';
 import { X } from 'lucide-react';
 import Link from 'next/link';
