@@ -15,7 +15,7 @@ export default function AnnouncementPanel() {
     messageFr: '',
     messageEn: '',
     startDate: new Date(),
-    endDate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // +30 jours
+    endDate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
     priority: 2,
     dismissible: true,
     link: '',
@@ -33,27 +33,27 @@ export default function AnnouncementPanel() {
       return;
     }
 
-  const newAnnouncement: Announcement = {
-  id: editingId || Date.now().toString(),
-  type: formData.type || 'info',
-  messageFr: formData.messageFr,
-  messageEn: formData.messageEn,
-  startDate: formData.startDate || new Date(),
-  endDate: formData.endDate || new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
-  priority: formData.priority || 2,
-  dismissible: formData.dismissible ?? true,
-  link: formData.link,
-  linkTextFr: formData.linkTextFr,
-  linkTextEn: formData.linkTextEn
-};
+    const newAnnouncement: Announcement = {
+      id: editingId || Date.now().toString(),
+      type: formData.type || 'info',
+      messageFr: formData.messageFr,
+      messageEn: formData.messageEn,
+      startDate: formData.startDate || new Date(),
+      endDate: formData.endDate || new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+      priority: formData.priority || 2,
+      dismissible: formData.dismissible ?? true,
+      link: formData.link,
+      linkTextFr: formData.linkTextFr,
+      linkTextEn: formData.linkTextEn
+    };
 
-if (editingId) {
-  removeAnnouncement(editingId);
-  addAnnouncement(newAnnouncement);
-  setEditingId(null);
-} else {
-  addAnnouncement(newAnnouncement);
-}
+    if (editingId) {
+      removeAnnouncement(editingId);
+      addAnnouncement(newAnnouncement);
+      setEditingId(null);
+    } else {
+      addAnnouncement(newAnnouncement);
+    }
 
     setFormData({
       type: 'info',
@@ -263,9 +263,9 @@ if (editingId) {
       <div className="space-y-4">
         {announcements.map((announcement) => {
           const startDate = new Date(announcement.startDate);
-          const endDate = new Date(announcement.endDate);
+          const endDate = announcement.endDate ? new Date(announcement.endDate) : null;
           const now = new Date();
-          const isActive = now >= startDate && now <= endDate;
+          const isActive = now >= startDate && (!endDate || now <= endDate);
 
           return (
             <div
@@ -300,7 +300,7 @@ if (editingId) {
                   <p className="text-sm font-medium mb-1">🇫🇷 {announcement.messageFr}</p>
                   <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">🇬🇧 {announcement.messageEn}</p>
                   <div className="text-xs text-gray-500">
-                    {startDate.toLocaleDateString()} → {endDate.toLocaleDateString()}
+                    {startDate.toLocaleDateString()} → {endDate ? endDate.toLocaleDateString() : '∞'}
                   </div>
                 </div>
                 <div className="flex gap-2">
