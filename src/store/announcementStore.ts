@@ -12,9 +12,9 @@ export interface Announcement {
   linkTextFr?: string;
   linkTextEn?: string;
   dismissible: boolean;
-  startDate: string;
-  endDate?: string;
-  priority: number; // Plus le nombre est élevé, plus la priorité est haute
+  startDate: string | Date;
+  endDate?: string | Date;
+  priority: number;
 }
 
 interface AnnouncementStore {
@@ -26,6 +26,7 @@ interface AnnouncementStore {
   dismissAnnouncement: (id: string) => void;
   addAnnouncement: (announcement: Announcement) => void;
   removeAnnouncement: (id: string) => void;
+  updateAnnouncement: (id: string, updates: Partial<Announcement>) => void;
   clearDismissed: () => void;
 }
 
@@ -41,18 +42,15 @@ export const useAnnouncementStore = create<AnnouncementStore>()(
         
         return announcements
           .filter((announcement) => {
-            // Vérifier si l'annonce n'est pas dismissée
             if (dismissedIds.includes(announcement.id)) {
               return false;
             }
             
-            // Vérifier la date de début
             const startDate = new Date(announcement.startDate);
             if (now < startDate) {
               return false;
             }
             
-            // Vérifier la date de fin si elle existe
             if (announcement.endDate) {
               const endDate = new Date(announcement.endDate);
               if (now > endDate) {
@@ -62,7 +60,7 @@ export const useAnnouncementStore = create<AnnouncementStore>()(
             
             return true;
           })
-          .sort((a, b) => b.priority - a.priority); // Trier par priorité décroissante
+          .sort((a, b) => b.priority - a.priority);
       },
 
       dismissAnnouncement: (id: string) => {
@@ -80,6 +78,14 @@ export const useAnnouncementStore = create<AnnouncementStore>()(
       removeAnnouncement: (id: string) => {
         set((state) => ({
           announcements: state.announcements.filter((a) => a.id !== id),
+        }));
+      },
+
+      updateAnnouncement: (id: string, updates: Partial<Announcement>) => {
+        set((state) => ({
+          announcements: state.announcements.map((a) =>
+            a.id === id ? { ...a, ...updates } : a
+          ),
         }));
       },
 
