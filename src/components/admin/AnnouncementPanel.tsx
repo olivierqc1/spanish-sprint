@@ -1,13 +1,13 @@
 // components/admin/AnnouncementPanel.tsx
 'use client';
 import { useState } from 'react';
-import { useAnnouncementStore, type Announcement, type AnnouncementType } from '@/stores/announcementStore';
+import { useAnnouncementStore, type Announcement, type AnnouncementType } from '@/store/announcementStore';
 import { useTranslation } from '../../../i18n/useTranslation';
 import { Plus, Edit, Trash2, X } from 'lucide-react';
 
 export default function AnnouncementPanel() {
   const { t } = useTranslation();
-  const { announcements, addAnnouncement, removeAnnouncement, updateAnnouncement } = useAnnouncementStore();
+  const { announcements, addAnnouncement, removeAnnouncement } = useAnnouncementStore();
   const [isCreating, setIsCreating] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [formData, setFormData] = useState<Partial<Announcement>>({
@@ -33,25 +33,27 @@ export default function AnnouncementPanel() {
       return;
     }
 
-    if (editingId) {
-      updateAnnouncement(editingId, formData);
-      setEditingId(null);
-    } else {
-      const newAnnouncement: Announcement = {
-        id: Date.now().toString(),
-        type: formData.type || 'info',
-        messageFr: formData.messageFr,
-        messageEn: formData.messageEn,
-        startDate: formData.startDate || new Date(),
-        endDate: formData.endDate || new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
-        priority: formData.priority || 2,
-        dismissible: formData.dismissible ?? true,
-        link: formData.link,
-        linkTextFr: formData.linkTextFr,
-        linkTextEn: formData.linkTextEn
-      };
-      addAnnouncement(newAnnouncement);
-    }
+  const newAnnouncement: Announcement = {
+  id: editingId || Date.now().toString(),
+  type: formData.type || 'info',
+  messageFr: formData.messageFr,
+  messageEn: formData.messageEn,
+  startDate: formData.startDate || new Date(),
+  endDate: formData.endDate || new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+  priority: formData.priority || 2,
+  dismissible: formData.dismissible ?? true,
+  link: formData.link,
+  linkTextFr: formData.linkTextFr,
+  linkTextEn: formData.linkTextEn
+};
+
+if (editingId) {
+  removeAnnouncement(editingId);
+  addAnnouncement(newAnnouncement);
+  setEditingId(null);
+} else {
+  addAnnouncement(newAnnouncement);
+}
 
     setFormData({
       type: 'info',
