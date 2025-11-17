@@ -219,114 +219,117 @@ export function ConversationForm({ onSave, countries, initialData }: Conversatio
                   {lines.map((line, idx) => (
                     <Draggable key={idx} draggableId={`line-${idx}`} index={idx}>
                       {(provided, snapshot) => (
-                        <Card
+                        <div
                           ref={provided.innerRef}
                           {...provided.draggableProps}
-                          variant="primary"
-                          className={`relative ${
-                            snapshot.isDragging ? 'shadow-2xl scale-105' : ''
-                          } transition-all`}
                         >
-                          {/* Drag Handle */}
-                          <div
-                            {...provided.dragHandleProps}
-                            className="absolute left-2 top-1/2 -translate-y-1/2 cursor-grab active:cursor-grabbing"
+                          <Card
+                            variant="primary"
+                            className={`relative ${
+                              snapshot.isDragging ? 'shadow-2xl scale-105' : ''
+                            } transition-all`}
                           >
-                            <GripVertical className="w-5 h-5 text-slate-500" />
-                          </div>
-
-                          <div className="pl-8">
-                            {/* Header */}
-                            <div className="flex justify-between items-center mb-3">
-                              <div className="flex items-center gap-2">
-                                <strong className="text-blue-400">Réplique {idx + 1}</strong>
-                                <Badge variant="default">
-                                  {getWordCount(line.text)} mots
-                                </Badge>
-                              </div>
-                              <div className="flex gap-2">
-                                <Button
-                                  variant="ghost"
-                                  size="sm"
-                                  onClick={() => duplicateLine(idx)}
-                                  title="Dupliquer"
-                                >
-                                  <Plus className="w-4 h-4" />
-                                </Button>
-                                {lines.length > 1 && (
-                                  <Button
-                                    variant="danger"
-                                    size="sm"
-                                    onClick={() => removeLine(idx)}
-                                    title="Supprimer"
-                                  >
-                                    <Trash2 className="w-4 h-4" />
-                                  </Button>
-                                )}
-                              </div>
+                            {/* Drag Handle */}
+                            <div
+                              {...provided.dragHandleProps}
+                              className="absolute left-2 top-1/2 -translate-y-1/2 cursor-grab active:cursor-grabbing"
+                            >
+                              <GripVertical className="w-5 h-5 text-slate-500" />
                             </div>
 
-                            {/* Inputs */}
-                            <div className="grid grid-cols-2 gap-3 mb-3">
+                            <div className="pl-8">
+                              {/* Header */}
+                              <div className="flex justify-between items-center mb-3">
+                                <div className="flex items-center gap-2">
+                                  <strong className="text-blue-400">Réplique {idx + 1}</strong>
+                                  <Badge variant="default">
+                                    {getWordCount(line.text)} mots
+                                  </Badge>
+                                </div>
+                                <div className="flex gap-2">
+                                  <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    onClick={() => duplicateLine(idx)}
+                                    title="Dupliquer"
+                                  >
+                                    <Plus className="w-4 h-4" />
+                                  </Button>
+                                  {lines.length > 1 && (
+                                    <Button
+                                      variant="danger"
+                                      size="sm"
+                                      onClick={() => removeLine(idx)}
+                                      title="Supprimer"
+                                    >
+                                      <Trash2 className="w-4 h-4" />
+                                    </Button>
+                                  )}
+                                </div>
+                              </div>
+
+                              {/* Inputs */}
+                              <div className="grid grid-cols-2 gap-3 mb-3">
+                                <div>
+                                  <input
+                                    type="text"
+                                    placeholder="Nom (ex: Carlos)"
+                                    value={line.speaker}
+                                    onChange={(e) => updateLine(idx, 'speaker', e.target.value)}
+                                    className={`
+                                      w-full px-3 py-2 rounded-lg
+                                      bg-slate-950 text-slate-100
+                                      border-2 transition-colors
+                                      ${errors[`lines.${idx}.speaker`]
+                                        ? 'border-red-500'
+                                        : 'border-slate-700 focus:border-blue-500'
+                                      }
+                                      focus:outline-none
+                                    `}
+                                  />
+                                  {errors[`lines.${idx}.speaker`] && (
+                                    <p className="text-red-400 text-xs mt-1">
+                                      {errors[`lines.${idx}.speaker`]}
+                                    </p>
+                                  )}
+                                </div>
+
+                                <select
+                                  value={line.gender}
+                                  onChange={(e) => updateLine(idx, 'gender', e.target.value as 'homme' | 'femme')}
+                                  className="px-3 py-2 rounded-lg bg-slate-950 border-2 border-slate-700 text-slate-100 focus:border-blue-500 focus:outline-none"
+                                >
+                                  <option value="homme">♂️ Homme</option>
+                                  <option value="femme">♀️ Femme</option>
+                                </select>
+                              </div>
+
                               <div>
-                                <input
-                                  type="text"
-                                  placeholder="Nom (ex: Carlos)"
-                                  value={line.speaker}
-                                  onChange={(e) => updateLine(idx, 'speaker', e.target.value)}
+                                <textarea
+                                  placeholder="Texte en espagnol..."
+                                  value={line.text}
+                                  onChange={(e) => updateLine(idx, 'text', e.target.value)}
+                                  rows={2}
                                   className={`
                                     w-full px-3 py-2 rounded-lg
                                     bg-slate-950 text-slate-100
-                                    border-2 transition-colors
-                                    ${errors[`lines.${idx}.speaker`]
+                                    border-2 transition-colors resize-none
+                                    ${errors[`lines.${idx}.text`]
                                       ? 'border-red-500'
                                       : 'border-slate-700 focus:border-blue-500'
                                     }
                                     focus:outline-none
                                   `}
                                 />
-                                {errors[`lines.${idx}.speaker`] && (
+                                {errors[`lines.${idx}.text`] && (
                                   <p className="text-red-400 text-xs mt-1">
-                                    {errors[`lines.${idx}.speaker`]}
+                                    {errors[`lines.${idx}.text`]}
                                   </p>
                                 )}
                               </div>
-
-                              <select
-                                value={line.gender}
-                                onChange={(e) => updateLine(idx, 'gender', e.target.value as 'homme' | 'femme')}
-                                className="px-3 py-2 rounded-lg bg-slate-950 border-2 border-slate-700 text-slate-100 focus:border-blue-500 focus:outline-none"
-                              >
-                                <option value="homme">♂️ Homme</option>
-                                <option value="femme">♀️ Femme</option>
-                              </select>
                             </div>
-
-                            <div>
-                              <textarea
-                                placeholder="Texte en espagnol..."
-                                value={line.text}
-                                onChange={(e) => updateLine(idx, 'text', e.target.value)}
-                                rows={2}
-                                className={`
-                                  w-full px-3 py-2 rounded-lg
-                                  bg-slate-950 text-slate-100
-                                  border-2 transition-colors resize-none
-                                  ${errors[`lines.${idx}.text`]
-                                    ? 'border-red-500'
-                                    : 'border-slate-700 focus:border-blue-500'
-                                  }
-                                  focus:outline-none
-                                `}
-                              />
-                              {errors[`lines.${idx}.text`] && (
-                                <p className="text-red-400 text-xs mt-1">
-                                  {errors[`lines.${idx}.text`]}
-                                </p>
-                              )}
-                            </div>
-                          </div>
-                        </Card>
+                          </Card>
+                        </div>
                       )}
                     </Draggable>
                   ))}
