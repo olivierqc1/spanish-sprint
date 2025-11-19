@@ -6,15 +6,16 @@ import presenteIrregulares from "./grammar_quizz/presente_irregulares.json";
 import presenteProgresivo from "./grammar_quizz/presente_progresivo.json";
 import serEstar from "./grammar_quizz/ser_estar.json";
 import reflexivos from "./grammar_quizz/verbos_reflexivos.json";
-import pretIndefinidoReg from "./grammar_quizz/indefinido_regulares.json";
-import pretIndefinidoIrreg from "./grammar_quizz/indefinido_irregulares.json";
-import articulo from "./grammar_quizz/articulos.json";
-import genero from "./grammar_quizz/genero.json";
+import pretIndefinidoReg from "./grammar_quizz/preterito_indefinido_regulares.json";
+import pretIndefinidoIrreg from "./grammar_quizz/preterito_indefinido_irregulares.json";
+import articulosDefinidos from "./grammar_quizz/articulos_definidos.json";
+import articulosIndefinidos from "./grammar_quizz/articulos_indefinidos.json";
+import genero from "./grammar_quizz/genero_sustantivos.json";
 import plural from "./grammar_quizz/plural.json";
 import pronombres from "./grammar_quizz/pronombres.json";
 import posesivos from "./grammar_quizz/posesivos.json";
 import demostrativos from "./grammar_quizz/demostrativos.json";
-import adjetivos from "./grammar_quizz/adjetivos.json";
+import adjetivos from "./grammar_quizz/acuerdo_adjetivos.json";
 import comparativos from "./grammar_quizz/comparativos.json";
 import superlativos from "./grammar_quizz/superlativos.json";
 
@@ -86,14 +87,23 @@ export const grammarPoints: GrammarPoint[] = [
     data: pretIndefinidoIrreg
   },
 
-  // NOM & ADJECTIF
+  // ARTICLES
   {
-    id: "articulos",
-    title: "Articles définis et indéfinis",
+    id: "articulos_definidos",
+    title: "Articles définis (el, la, los, las)",
     level: "A1",
-    note: "Le, la, un, une en espagnol.",
-    data: articulo
+    note: "Le, la, les en espagnol.",
+    data: articulosDefinidos
   },
+  {
+    id: "articulos_indefinidos",
+    title: "Articles indéfinis (un, una, unos, unas)",
+    level: "A1",
+    note: "Un, une, des en espagnol.",
+    data: articulosIndefinidos
+  },
+
+  // NOM & ADJECTIF
   {
     id: "genero",
     title: "Genre des noms",
@@ -135,20 +145,23 @@ export const grammarPoints: GrammarPoint[] = [
   // ADJECTIFS + COMPARAISONS
   {
     id: "adjetivos",
-    title: "Adjectifs qualificatifs",
+    title: "Accord des adjectifs",
     level: "A1",
+    note: "Accord en genre et en nombre.",
     data: adjetivos
   },
   {
     id: "comparativos",
     title: "Comparatifs",
     level: "A2",
+    note: "Plus que, moins que, aussi que...",
     data: comparativos
   },
   {
     id: "superlativos",
     title: "Superlatifs",
     level: "A2",
+    note: "Le plus, le moins, -ísimo...",
     data: superlativos
   }
 ];
