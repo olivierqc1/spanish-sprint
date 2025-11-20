@@ -1,14 +1,12 @@
 // src/data/grammar.ts
+// VERSION MINIMALE - N'importe AUCUN fichier manquant
 
-// --- IMPORTS DES FICHIERS JSON QUI EXISTENT DÉJÀ ---
+// --- IMPORTS DES FICHIERS JSON QUI EXISTENT ---
 import presenteRegulares from "./grammar_quizz/presente_regulares.json";
 import presenteIrregulares from "./grammar_quizz/presente_irregulares.json";
 import presenteProgresivo from "./grammar_quizz/presente_progresivo.json";
 import serEstar from "./grammar_quizz/ser_estar.json";
 import reflexivos from "./grammar_quizz/verbos_reflexivos.json";
-import articulosDefinidos from "./grammar_quizz/articulos_definidos.json";
-import articulosIndefinidos from "./grammar_quizz/articulos_indefinidos.json";
-import genero from "./grammar_quizz/genero_sustantivos.json";
 import posesivos from "./grammar_quizz/posesivos.json";
 import demostrativos from "./grammar_quizz/demostrativos.json";
 import adjetivos from "./grammar_quizz/acuerdo_adjetivos.json";
@@ -16,6 +14,7 @@ import adverbiosFrecuencia from "./grammar_quizz/adverbios_frecuencia.json";
 import cotidianoBasics from "./grammar_quizz/cotidiano_basics.json";
 import futuroSimpleReg from "./grammar_quizz/futuro_simple_regulares.json";
 import futuroSimpleIrreg from "./grammar_quizz/futuro_simple_irregulares.json";
+import genero from "./grammar_quizz/genero_sustantivos.json";
 import gustar from "./grammar_quizz/gustar.json";
 import hayEstar from "./grammar_quizz/hay_estar.json";
 import imperfecto from "./grammar_quizz/imperfecto.json";
@@ -23,10 +22,7 @@ import interrogativos from "./grammar_quizz/interrogatives.json";
 import muyVsMucho from "./grammar_quizz/muy_vs_mucho.json";
 import negacion from "./grammar_quizz/negacion.json";
 import numeros from "./grammar_quizz/numeros.json";
-import preposicionDe from "./grammar_quizz/preposicion_de.json";
 import preposicionesLugar from "./grammar_quizz/preposiciones_lugar.json";
-import pretIndefinidoReg from "./grammar_quizz/preterito_indefinido_regulares.json";
-import pretIndefinidoIrreg from "./grammar_quizz/preterito_indefinido_irregulares.json";
 
 // --- TYPE ---
 export type GrammarPoint = {
@@ -94,21 +90,7 @@ export const grammarPoints: GrammarPoint[] = [
     data: gustar
   },
 
-  // PRETÉRITO
-  {
-    id: "indefinido_regulares",
-    title: "Passé simple – verbes réguliers",
-    level: "A2",
-    note: "Conjugaison du passé simple.",
-    data: pretIndefinidoReg
-  },
-  {
-    id: "indefinido_irregulares",
-    title: "Passé simple – verbes irréguliers",
-    level: "A2",
-    note: "Verbes irréguliers du passé simple.",
-    data: pretIndefinidoIrreg
-  },
+  // IMPARFAIT & FUTUR
   {
     id: "imperfecto",
     title: "Imparfait – actions habituelles",
@@ -116,8 +98,6 @@ export const grammarPoints: GrammarPoint[] = [
     note: "Décrire des habitudes et situations passées.",
     data: imperfecto
   },
-
-  // FUTUR
   {
     id: "futuro_simple_regulares",
     title: "Futur simple – verbes réguliers",
@@ -131,22 +111,6 @@ export const grammarPoints: GrammarPoint[] = [
     level: "A2",
     note: "Radicaux irréguliers au futur.",
     data: futuroSimpleIrreg
-  },
-
-  // ARTICLES
-  {
-    id: "articulos_definidos",
-    title: "Articles définis (el, la, los, las)",
-    level: "A1",
-    note: "Le, la, les en espagnol.",
-    data: articulosDefinidos
-  },
-  {
-    id: "articulos_indefinidos",
-    title: "Articles indéfinis (un, una, unos, unas)",
-    level: "A1",
-    note: "Un, une, des en espagnol.",
-    data: articulosIndefinidos
   },
 
   // NOMS
@@ -216,13 +180,6 @@ export const grammarPoints: GrammarPoint[] = [
   },
 
   // PRÉPOSITIONS
-  {
-    id: "preposicion_de",
-    title: "Préposition DE",
-    level: "A1",
-    note: "Possession, origine, matière.",
-    data: preposicionDe
-  },
   {
     id: "preposiciones_lugar",
     title: "Prépositions de lieu",
