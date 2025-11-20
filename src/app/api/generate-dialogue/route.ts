@@ -1,7 +1,7 @@
 // src/app/api/generate-dialogue/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { config } from '/lib/config';
+import { config } from '../../../lib/config';
 
 const requestSchema = z.object({
   topic: z.string().min(3).max(100),
