@@ -1,32 +1,29 @@
-// Fichier : src/app/api/generate-audio/route.ts
-// Cette API génère des MP3 GRATUITS avec Edge-TTS
-
+// src/app/api/generate-audio/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 
-// Configuration Supabase
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 );
 
-// Voix disponibles par pays
-const VOICES: Record<string, { homme: string; femme: string }> = {
+// Voix Google Cloud par pays et genre
+const GOOGLE_VOICES: Record<string, { homme: string; femme: string }> = {
   "Espagne": {
-    homme: "es-ES-AlvaroNeural",
-    femme: "es-ES-ElviraNeural"
+    homme: "es-ES-Neural2-B",      // Voix masculine espagnole
+    femme: "es-ES-Neural2-A"       // Voix féminine espagnole
   },
   "Mexique": {
-    homme: "es-MX-JorgeNeural",
-    femme: "es-MX-DaliaNeural"
+    homme: "es-US-Neural2-B",      // Voix masculine latino-américaine
+    femme: "es-US-Neural2-A"       // Voix féminine latino-américaine
   },
   "Argentine": {
-    homme: "es-AR-TomasNeural",
-    femme: "es-AR-ElenaNeural"
+    homme: "es-US-Neural2-C",      // Alternative voix masculine
+    femme: "es-US-Neural2-A"
   },
   "Colombie": {
-    homme: "es-CO-GonzaloNeural",
-    femme: "es-CO-SalomeNeural"
+    homme: "es-US-Neural2-B",
+    femme: "es-US-Neural2-A"
   }
 };
 
@@ -36,52 +33,78 @@ export async function POST(request: NextRequest) {
     const { text, country, gender, filename } = body;
 
     // Validation
-    if (!text || !country || !gender || !filename) {
+    if (!text || !country || !filename) {
       return NextResponse.json(
-        { error: 'Paramètres manquants' },
+        { error: 'Paramètres manquants: text, country, filename requis' },
         { status: 400 }
       );
     }
 
-    // Sélectionner la voix avec types explicites
-    const genderKey = gender as 'homme' | 'femme';
-    const countryVoices = VOICES[country];
-    
-    if (!countryVoices || !countryVoices[genderKey]) {
+    if (!process.env.GOOGLE_CLOUD_TTS_API_KEY) {
       return NextResponse.json(
-        { error: 'Voix non trouvée' },
-        { status: 400 }
+        { error: 'GOOGLE_CLOUD_TTS_API_KEY non configurée' },
+        { status: 500 }
       );
     }
 
-    const voice = countryVoices[genderKey];
+    // Sélectionner la voix
+    const genderKey = (gender || 'homme') as 'homme' | 'femme';
+    const voiceName = GOOGLE_VOICES[country]?.[genderKey] || 'es-ES-Neural2-A';
+    const languageCode = voiceName.substring(0, 5); // ex: "es-ES"
 
-    // Générer l'audio avec Edge-TTS via commande
-    // Note : Cette approche nécessite edge-tts installé sur le serveur
-    // Pour Vercel/déploiement cloud, on utilisera une alternative
-    
-    // ALTERNATIVE GRATUITE : Utiliser Google Cloud TTS (gratuit jusqu'à 1M caractères/mois)
-    // Ou bien : utiliser une API tierce gratuite comme ttsmaker.com API
-    
-    // Pour l'instant, on va créer une solution qui fonctionne localement
-    // et on ajoutera le déploiement après
+    console.log(`Génération audio: ${text.substring(0, 50)}... avec ${voiceName}`);
 
-    const response = await generateWithEdgeTTS(text, voice);
-    
-    if (!response) {
-      throw new Error('Échec de génération audio');
+    // Appeler Google Cloud Text-to-Speech API
+    const ttsResponse = await fetch(
+      `https://texttospeech.googleapis.com/v1/text:synthesize?key=${process.env.GOOGLE_CLOUD_TTS_API_KEY}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          input: { text },
+          voice: {
+            languageCode: languageCode,
+            name: voiceName
+          },
+          audioConfig: {
+            audioEncoding: 'MP3',
+            speakingRate: 0.95,    // Légèrement plus lent pour l'apprentissage
+            pitch: 0.0,
+            volumeGainDb: 0.0
+          }
+        })
+      }
+    );
+
+    if (!ttsResponse.ok) {
+      const errorText = await ttsResponse.text();
+      console.error('Erreur Google TTS:', errorText);
+      throw new Error(`Google TTS API error: ${ttsResponse.status} - ${errorText}`);
     }
 
-    // Upload sur Supabase
+    const ttsData = await ttsResponse.json();
+    
+    if (!ttsData.audioContent) {
+      throw new Error('Pas de contenu audio dans la réponse Google TTS');
+    }
+
+    // Convertir base64 en buffer
+    const audioBuffer = Buffer.from(ttsData.audioContent, 'base64');
+
+    console.log(`Audio généré: ${audioBuffer.length} bytes`);
+
+    // Upload sur Supabase Storage
     const { data: uploadData, error: uploadError } = await supabase.storage
       .from('audios')
-      .upload(filename, response, {
+      .upload(filename, audioBuffer, {
         contentType: 'audio/mpeg',
-        upsert: true
+        upsert: true,
+        cacheControl: '3600'
       });
 
     if (uploadError) {
-      throw uploadError;
+      console.error('Erreur upload Supabase:', uploadError);
+      throw new Error(`Erreur Supabase: ${uploadError.message}`);
     }
 
     // Récupérer l'URL publique
@@ -89,72 +112,35 @@ export async function POST(request: NextRequest) {
       .from('audios')
       .getPublicUrl(filename);
 
+    console.log(`✓ Audio uploadé: ${publicUrl}`);
+
     return NextResponse.json({
       success: true,
       url: publicUrl,
-      filename
+      filename,
+      voice: voiceName,
+      size: audioBuffer.length
     });
 
   } catch (error: any) {
     console.error('Erreur génération audio:', error);
     return NextResponse.json(
-      { error: error.message || 'Erreur serveur' },
+      { 
+        error: error.message || 'Erreur serveur',
+        details: error.toString()
+      },
       { status: 500 }
     );
   }
 }
 
-// Fonction pour générer l'audio avec Edge-TTS
-async function generateWithEdgeTTS(text: string, voice: string): Promise<Buffer | null> {
-  try {
-    // Utiliser l'API Web Speech de Microsoft Edge (gratuit)
-    // Via fetch vers un service edge-tts-proxy ou directement
-    
-    // Option 1 : Utiliser un service proxy gratuit
-    const response = await fetch('https://edge-tts-proxy.vercel.app/api/generate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text, voice })
-    });
-
-    if (!response.ok) {
-      throw new Error('Échec de génération TTS');
-    }
-
-    const arrayBuffer = await response.arrayBuffer();
-    return Buffer.from(arrayBuffer);
-
-  } catch (error) {
-    console.error('Erreur Edge-TTS:', error);
-    
-    // Option 2 (fallback) : Utiliser une autre API gratuite
-    return await generateWithFallbackAPI(text, voice);
-  }
-}
-
-// API alternative gratuite (fallback)
-async function generateWithFallbackAPI(text: string, voice: string): Promise<Buffer | null> {
-  try {
-    // Utiliser TTSMaker API (gratuit, 10k caractères/semaine)
-    // Ou bien voicerss.org (gratuit avec limite)
-    
-    // Pour l'instant, retourner null pour forcer l'utilisateur à installer localement
-    // ou utiliser une solution cloud
-    
-    console.log('Fallback API appelée pour:', { text, voice });
-    return null;
-    
-  } catch (error) {
-    console.error('Erreur Fallback API:', error);
-    return null;
-  }
-}
-
-// GET endpoint pour tester
+// GET pour tester que l'API fonctionne
 export async function GET() {
   return NextResponse.json({
     status: 'online',
-    message: 'API de génération audio active',
-    voices: VOICES
+    service: 'Google Cloud Text-to-Speech',
+    voices: GOOGLE_VOICES,
+    limits: '1 million caractères/mois gratuit',
+    configured: !!process.env.GOOGLE_CLOUD_TTS_API_KEY
   });
 }
