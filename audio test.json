@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵 Générateur Audio - Spanish Sprint</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+            font-family: inherit;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .status.success {
+            background: #d4edda;
+            border: 2px solid #c3e6cb;
+            color: #155724;
+            display: block;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            border: 2px solid #f5c6cb;
+            color: #721c24;
+            display: block;
+        }
+
+        .status.loading {
+            background: #d1ecf1;
+            border: 2px solid #bee5eb;
+            color: #0c5460;
+            display: block;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .audio-list {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        .audio-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .audio-item strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .config-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .config-section h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .small-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Générateur Audio</h1>
+        <p class="subtitle">Spanish Sprint - Génération d'audio avec Google Cloud TTS</p>
+
+        <!-- Configuration -->
+        <div class="config-section">
+            <h3>⚙️ Configuration</h3>
+            <div class="form-group">
+                <label>Clé API Google Cloud TTS</label>
+                <input type="text" id="apiKey" placeholder="AIzaSy..." value="AIzaSyAz4zhdikACD8eXQ3qcLAXHwdOWKjiCwms">
+                <p class="small-text">Ta clé est stockée localement dans ton navigateur</p>
+            </div>
+            <div class="form-group">
+                <label>URL Supabase</label>
+                <input type="text" id="supabaseUrl" value="https://etsbxwlyxeuynhgqujtr.supabase.co">
+            </div>
+            <div class="form-group">
+                <label>Clé Anon Supabase</label>
+                <input type="text" id="supabaseKey" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV0c2J4d2x5eGV1eW5oZ3F1anRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk5MDE0NTEsImV4cCI6MjA3NTQ3NzQ1MX0.26AVDbvdr0HbrpxyUTn5lTss-_6G5t8w5ILd2il1ZJ0">
+            </div>
+        </div>
+
+        <!-- Formulaire de génération -->
+        <form id="audioForm">
+            <div class="form-group">
+                <label>Texte en espagnol 🇪🇸</label>
+                <textarea id="text" placeholder="Hola, ¿cómo estás?" required>Hola, ¿cómo estás?</textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Pays 🌍</label>
+                <select id="country" required>
+                    <option value="Espagne">Espagne 🇪🇸</option>
+                    <option value="Mexique">Mexique 🇲🇽</option>
+                    <option value="Argentine">Argentine 🇦🇷</option>
+                    <option value="Colombie">Colombie 🇨🇴</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Voix 🎙️</label>
+                <select id="gender" required>
+                    <option value="femme">Féminine</option>
+                    <option value="homme">Masculine</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Nom du fichier</label>
+                <input type="text" id="filename" placeholder="mon-audio.mp3" required>
+                <p class="small-text">Ex: conversation-restaurant-1.mp3</p>
+            </div>
+
+            <button type="submit">🎙️ Générer l'audio</button>
+        </form>
+
+        <div id="status" class="status"></div>
+
+        <div class="audio-list" id="audioList" style="display: none;">
+            <h3>📂 Audios générés</h3>
+            <div id="audios"></div>
+        </div>
+    </div>
+
+    <script>
+        const VOICES = {
+            "Espagne": {
+                homme: "es-ES-Neural2-B",
+                femme: "es-ES-Neural2-A"
+            },
+            "Mexique": {
+                homme: "es-US-Neural2-B",
+                femme: "es-US-Neural2-A"
+            },
+            "Argentine": {
+                homme: "es-US-Neural2-C",
+                femme: "es-US-Neural2-A"
+            },
+            "Colombie": {
+                homme: "es-US-Neural2-B",
+                femme: "es-US-Neural2-A"
+            }
+        };
+
+        const generatedAudios = [];
+
+        // Auto-générer un nom de fichier
+        document.getElementById('text').addEventListener('input', (e) => {
+            const text = e.target.value;
+            if (text && !document.getElementById('filename').value) {
+                const slug = text.substring(0, 30).toLowerCase()
+                    .replace(/[^a-z0-9]+/g, '-')
+                    .replace(/^-|-$/g, '');
+                document.getElementById('filename').value = `${slug}-${Date.now()}.mp3`;
+            }
+        });
+
+        document.getElementById('audioForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const apiKey = document.getElementById('apiKey').value;
+            const supabaseUrl = document.getElementById('supabaseUrl').value;
+            const supabaseKey = document.getElementById('supabaseKey').value;
+            const text = document.getElementById('text').value;
+            const country = document.getElementById('country').value;
+            const gender = document.getElementById('gender').value;
+            let filename = document.getElementById('filename').value;
+
+            // Ajouter .mp3 si nécessaire
+            if (!filename.endsWith('.mp3')) {
+                filename += '.mp3';
+            }
+
+            const status = document.getElementById('status');
+            status.className = 'status loading';
+            status.textContent = '⏳ Génération en cours...';
+
+            try {
+                // 1. Générer l'audio avec Google Cloud TTS
+                const voiceName = VOICES[country][gender];
+                const languageCode = voiceName.substring(0, 5);
+
+                const ttsResponse = await fetch(
+                    `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`,
+                    {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            input: { text },
+                            voice: {
+                                languageCode: languageCode,
+                                name: voiceName
+                            },
+                            audioConfig: {
+                                audioEncoding: 'MP3',
+                                speakingRate: 0.95,
+                                pitch: 0.0
+                            }
+                        })
+                    }
+                );
+
+                if (!ttsResponse.ok) {
+                    const errorData = await ttsResponse.json();
+                    throw new Error(`Erreur Google TTS: ${errorData.error?.message || 'Erreur inconnue'}`);
+                }
+
+                const ttsData = await ttsResponse.json();
+                
+                // Convertir base64 en blob
+                const audioContent = ttsData.audioContent;
+                const audioBlob = base64ToBlob(audioContent, 'audio/mpeg');
+
+                status.textContent = '⏳ Upload sur Supabase...';
+
+                // 2. Upload sur Supabase
+                const uploadResponse = await fetch(
+                    `${supabaseUrl}/storage/v1/object/audios/${filename}`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${supabaseKey}`,
+                            'Content-Type': 'audio/mpeg'
+                        },
+                        body: audioBlob
+                    }
+                );
+
+                if (!uploadResponse.ok) {
+                    const errorData = await uploadResponse.json();
+                    throw new Error(`Erreur Supabase: ${errorData.message || 'Erreur upload'}`);
+                }
+
+                // 3. Récupérer l'URL publique
+                const publicUrl = `${supabaseUrl}/storage/v1/object/public/audios/${filename}`;
+
+                // Afficher le succès
+                status.className = 'status success';
+                status.innerHTML = `
+                    ✅ Audio généré avec succès !
+                    <audio controls src="${publicUrl}"></audio>
+                    <p style="margin-top: 10px;">
+                        <strong>URL:</strong> 
+                        <a href="${publicUrl}" target="_blank" style="color: #155724; word-break: break-all;">
+                            ${publicUrl}
+                        </a>
+                    </p>
+                `;
+
+                // Ajouter à la liste
+                generatedAudios.push({
+                    text,
+                    filename,
+                    url: publicUrl
+                });
+
+                updateAudioList();
+
+                // Réinitialiser le formulaire
+                document.getElementById('text').value = '';
+                document.getElementById('filename').value = '';
+
+            } catch (error) {
+                status.className = 'status error';
+                status.textContent = `❌ Erreur: ${error.message}`;
+                console.error('Erreur:', error);
+            }
+        });
+
+        function base64ToBlob(base64, contentType) {
+            const byteCharacters = atob(base64);
+            const byteArrays = [];
+
+            for (let offset = 0; offset < byteCharacters.length; offset += 512) {
+                const slice = byteCharacters.slice(offset, offset + 512);
+                const byteNumbers = new Array(slice.length);
+                
+                for (let i = 0; i < slice.length; i++) {
+                    byteNumbers[i] = slice.charCodeAt(i);
+                }
+                
+                const byteArray = new Uint8Array(byteNumbers);
+                byteArrays.push(byteArray);
+            }
+
+            return new Blob(byteArrays, { type: contentType });
+        }
+
+        function updateAudioList() {
+            const audioList = document.getElementById('audioList');
+            const audios = document.getElementById('audios');
+
+            if (generatedAudios.length > 0) {
+                audioList.style.display = 'block';
+                audios.innerHTML = generatedAudios.map((audio, i) => `
+                    <div class="audio-item">
+                        <strong>${i + 1}. ${audio.filename}</strong>
+                        <p style="margin: 5px 0; color: #666;">"${audio.text}"</p>
+                        <audio controls src="${audio.url}"></audio>
+                        <p style="margin-top: 8px;">
+                            <a href="${audio.url}" target="_blank" style="color: #667eea; font-size: 14px;">
+                                🔗 Ouvrir le lien
+                            </a>
+                        </p>
+                    </div>
+                `).join('');
+            }
+        }
+    </script>
+</body>
+</html>
