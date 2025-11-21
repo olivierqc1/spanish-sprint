@@ -2,12 +2,12 @@
 "use client";
 
 import { useState } from 'react';
-import { Card } from '../../components/ui/Card';
-import { Button } from '../../components/ui/Button';
-import { Badge } from '../../components/ui/Badge';
-import { Flag } from '../../components/ui/Flag';
-import { ThemeToggle } from '../../components/ui/ThemeToggle';
-import type { Conversation, ConversationLine } from '../../types/audio';
+import { Card } from '@/components/ui/Card';
+import { Button } from '@/components/ui/Button';
+import { Badge } from '@/components/ui/Badge';
+import { Flag } from '@/components/ui/Flag';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import type { Conversation, ConversationLine } from '@/types/audio';
 
 // Sample conversations
 const SAMPLE_CONVERSATIONS: Conversation[] = [
