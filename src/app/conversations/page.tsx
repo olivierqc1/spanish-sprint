@@ -19,7 +19,20 @@ export default function ConversationsPage() {
           country={country}
           onLevel={setLevel}
           onCountry={setCountry}
-          sections={[]}
+          sections={{
+            listening: false,
+            reading: false,
+            flashcards: false,
+            orthographe: false,
+            dictee: false,
+            spelling: false,
+            grammar: false,
+            conjugation: false,
+            conversation: true,
+            smartReview: false,
+            vocabulary: false,
+            audioPro: false
+          }}
           onSections={() => {}}
         />
 
