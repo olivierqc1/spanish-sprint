@@ -25,7 +25,6 @@ export default function ConversationsPage() {
             flashcards: false,
             orthographe: false,
             dictee: false,
-            spelling: false,
             grammar: false,
             conjugation: false,
             conversation: true,
