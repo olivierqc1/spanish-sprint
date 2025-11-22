@@ -25,7 +25,6 @@ export default function ConjugaisonPage() {
             flashcards: false,
             orthographe: false,
             dictee: false,
-            spelling: false,
             grammar: false,
             conjugation: true,
             conversation: false,
