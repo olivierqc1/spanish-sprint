@@ -36,7 +36,6 @@ export default function AudioPage() {
             flashcards: false,
             orthographe: false,
             dictee: false,
-            spelling: false,
             grammar: false,
             conjugation: false,
             conversation: false,
