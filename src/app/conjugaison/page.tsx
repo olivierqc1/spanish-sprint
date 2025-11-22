@@ -19,7 +19,20 @@ export default function ConjugaisonPage() {
           country={country}
           onLevel={setLevel}
           onCountry={setCountry}
-          sections={[]}
+          sections={{
+            listening: false,
+            reading: false,
+            flashcards: false,
+            orthographe: false,
+            dictee: false,
+            spelling: false,
+            grammar: false,
+            conjugation: true,
+            conversation: false,
+            smartReview: false,
+            vocabulary: false,
+            audioPro: false
+          }}
           onSections={() => {}}
         />
 
