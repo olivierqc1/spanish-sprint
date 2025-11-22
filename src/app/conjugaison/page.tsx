@@ -17,8 +17,10 @@ export default function ConjugaisonPage() {
         <LevelPicker
           level={level}
           country={country}
-          onLevelChange={setLevel}
-          onCountryChange={setCountry}
+          onLevel={setLevel}
+          onCountry={setCountry}
+          sections={[]}
+          onSections={() => {}}
         />
 
         <div className="mt-8">
