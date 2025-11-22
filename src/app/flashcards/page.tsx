@@ -19,7 +19,20 @@ export default function FlashcardsPage() {
           country={country}
           onLevel={setLevel}
           onCountry={setCountry}
-          sections={[]}
+          sections={{
+            listening: false,
+            reading: false,
+            flashcards: true,
+            orthographe: false,
+            dictee: false,
+            spelling: false,
+            grammar: false,
+            conjugation: false,
+            conversation: false,
+            smartReview: false,
+            vocabulary: false,
+            audioPro: false
+          }}
           onSections={() => {}}
         />
 
