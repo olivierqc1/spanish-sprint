@@ -98,7 +98,7 @@ export default function TestAudio() {
             <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded space-y-3">
               <p className="font-medium">✅ Audio généré avec succès !</p>
               <audio controls className="w-full" src={audioUrl}>
-                Ton navigateur ne supporte pas l'audio.
+                Ton navigateur ne supporte pas l&apos;audio.
               </audio>
               
                 href={audioUrl}
