@@ -26,7 +26,6 @@ export default function GrammairePage() {
             flashcards: false,
             orthographe: false,
             dictee: false,
-            spelling: false,
             grammar: true,
             conjugation: false,
             conversation: false,
