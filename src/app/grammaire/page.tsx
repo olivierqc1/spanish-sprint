@@ -20,7 +20,20 @@ export default function GrammairePage() {
           country={country}
           onLevel={setLevel}
           onCountry={setCountry}
-          sections={[]}
+          sections={{
+            listening: false,
+            reading: false,
+            flashcards: false,
+            orthographe: false,
+            dictee: false,
+            spelling: false,
+            grammar: true,
+            conjugation: false,
+            conversation: false,
+            smartReview: false,
+            vocabulary: false,
+            audioPro: false
+          }}
           onSections={() => {}}
         />
 
