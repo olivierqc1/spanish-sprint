@@ -25,7 +25,6 @@ export default function FlashcardsPage() {
             flashcards: true,
             orthographe: false,
             dictee: false,
-            spelling: false,
             grammar: false,
             conjugation: false,
             conversation: false,
