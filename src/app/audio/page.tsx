@@ -30,7 +30,20 @@ export default function AudioPage() {
           country={country}
           onLevel={setLevel}
           onCountry={setCountry}
-          sections={[]}
+          sections={{
+            listening: true,
+            reading: false,
+            flashcards: false,
+            orthographe: false,
+            dictee: false,
+            spelling: false,
+            grammar: false,
+            conjugation: false,
+            conversation: false,
+            smartReview: false,
+            vocabulary: false,
+            audioPro: false
+          }}
           onSections={() => {}}
         />
 
