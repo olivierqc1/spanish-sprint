@@ -27,9 +27,7 @@ export default function ConversationsPage() {
             dictee: false,
             grammar: false,
             conjugation: false,
-            smartReview: false,
-            vocabulary: false,
-            audioPro: false
+            smartReview: false
           }}
           onSections={() => {}}
         />
