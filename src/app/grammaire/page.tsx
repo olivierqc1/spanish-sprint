@@ -28,7 +28,6 @@ export default function GrammairePage() {
             dictee: false,
             grammar: true,
             conjugation: false,
-            conversation: false,
             smartReview: false,
             vocabulary: false,
             audioPro: false
