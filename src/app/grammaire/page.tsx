@@ -28,9 +28,7 @@ export default function GrammairePage() {
             dictee: false,
             grammar: true,
             conjugation: false,
-            smartReview: false,
-            vocabulary: false,
-            audioPro: false
+            smartReview: false
           }}
           onSections={() => {}}
         />
