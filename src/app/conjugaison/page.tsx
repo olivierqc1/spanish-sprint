@@ -27,7 +27,11 @@ export default function ConjugaisonPage() {
             dictee: false,
             grammar: false,
             conjugation: true,
-            smartReview: false
+            smartReview: false,
+            vocabQuiz: false,
+            planning: false,
+            dashboard: false,
+            badges: false
           }}
           onSections={() => {}}
         />
