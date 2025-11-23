@@ -27,7 +27,6 @@ export default function ConversationsPage() {
             dictee: false,
             grammar: false,
             conjugation: false,
-            conversation: true,
             smartReview: false,
             vocabulary: false,
             audioPro: false
