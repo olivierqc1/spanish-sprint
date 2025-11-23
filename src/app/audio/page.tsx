@@ -38,7 +38,6 @@ export default function AudioPage() {
             dictee: false,
             grammar: false,
             conjugation: false,
-            conversation: false,
             smartReview: false,
             vocabulary: false,
             audioPro: false
