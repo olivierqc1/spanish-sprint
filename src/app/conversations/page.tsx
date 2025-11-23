@@ -27,7 +27,11 @@ export default function ConversationsPage() {
             dictee: false,
             grammar: false,
             conjugation: false,
-            smartReview: false
+            smartReview: false,
+            vocabQuiz: false,
+            planning: false,
+            dashboard: false,
+            badges: false
           }}
           onSections={() => {}}
         />
