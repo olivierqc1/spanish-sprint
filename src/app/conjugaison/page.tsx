@@ -27,7 +27,6 @@ export default function ConjugaisonPage() {
             dictee: false,
             grammar: false,
             conjugation: true,
-            conversation: false,
             smartReview: false,
             vocabulary: false,
             audioPro: false
