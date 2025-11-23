@@ -9,6 +9,10 @@ export default function ConversationsPage() {
   const [level, setLevel] = useState<Level>('A1');
   const [country, setCountry] = useState<Country>('ALL');
 
+  // Convertir 'ALL' en un niveau valide pour ConversationPractice
+  const actualLevel = level === 'ALL' ? 'A1' : level;
+  const actualCountry = country === 'ALL' ? 'spain' : country;
+
   return (
     <div className="min-h-screen p-8 bg-gray-900 text-white">
       <div className="max-w-4xl mx-auto">
@@ -37,7 +41,7 @@ export default function ConversationsPage() {
         />
 
         <div className="mt-8">
-          <ConversationPractice level={level} country={country} />
+          <ConversationPractice level={actualLevel} country={actualCountry} />
         </div>
       </div>
     </div>
