@@ -28,7 +28,11 @@ export default function GrammairePage() {
             dictee: false,
             grammar: true,
             conjugation: false,
-            smartReview: false
+            smartReview: false,
+            vocabQuiz: false,
+            planning: false,
+            dashboard: false,
+            badges: false
           }}
           onSections={() => {}}
         />
