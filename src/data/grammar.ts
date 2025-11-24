@@ -23,6 +23,7 @@ import muyVsMucho from "./grammar_quizz/muy_vs_mucho.json";
 import negacion from "./grammar_quizz/negacion.json";
 import numeros from "./grammar_quizz/numeros.json";
 import preposicionesLugar from "./grammar_quizz/preposiciones_lugar.json";
+import weather from "./grammar_quizz/weather.json";
 
 // --- TYPE ---
 export type GrammarPoint = {
