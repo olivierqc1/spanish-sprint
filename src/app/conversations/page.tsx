@@ -9,9 +9,9 @@ export default function ConversationsPage() {
   const [level, setLevel] = useState<Level>('A1');
   const [country, setCountry] = useState<Country>('ALL');
 
-  // Convertir 'ALL' en un niveau valide pour ConversationPractice
-  const actualLevel = level === 'ALL' ? 'A1' : level;
-  const actualCountry = country === 'ALL' ? 'spain' : country;
+  // Convertir 'ALL' en valeurs valides pour ConversationPractice
+  const actualLevel = (level === 'ALL' ? 'A1' : level) as 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
+  const actualCountry = (country === 'ALL' ? 'spain' : country) as 'spain' | 'mexico' | 'argentina' | 'colombia' | 'peru' | 'chile' | 'cuba' | 'venezuela';
 
   return (
     <div className="min-h-screen p-8 bg-gray-900 text-white">
