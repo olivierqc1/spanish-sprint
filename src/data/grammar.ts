@@ -24,6 +24,12 @@ import negacion from "./grammar_quizz/negacion.json";
 import numeros from "./grammar_quizz/numeros.json";
 import preposicionesLugar from "./grammar_quizz/preposiciones_lugar.json";
 import weather from "./grammar_quizz/weather.json";
+import pasadosComparacion from "./grammar_quizz/pasados_comparacion.json";
+import preteritoIndefinidoReg from "./grammar_quizz/preterito_indefinido_regulares.json";
+import preteritoIndefinidoIrreg from "./grammar_quizz/preterito_indefinido_irregulares.json";
+import preteritoPerfecto from "./grammar_quizz/preterito_perfecto.json";
+
+
 
 // --- TYPE ---
 export type GrammarPoint = {
@@ -211,5 +217,33 @@ export const grammarPoints: GrammarPoint[] = [
     level: "A1",
     note: "Décrire le temps qu'il fait.",
     data: weather
-  }
+  },
+{
+  id: "pasados_comparacion",
+  title: "Passé composé vs Passé simple vs Imparfait",
+  level: "A2",
+  note: "Comprendre quand utiliser chaque temps.",
+  data: pasadosComparacion
+},
+{
+  id: "preterito_indefinido_regulares",
+  title: "Passé simple – verbes réguliers",
+  level: "A2",
+  note: "Actions passées terminées.",
+  data: preteritoIndefinidoReg
+},
+{
+  id: "preterito_indefinido_irregulares",
+  title: "Passé simple – verbes irréguliers",
+  level: "A2",
+  note: "Radicaux irréguliers.",
+  data: preteritoIndefinidoIrreg
+},
+{
+  id: "preterito_perfecto",
+  title: "Passé composé (pretérito perfecto)",
+  level: "A2",
+  note: "Actions récentes liées au présent.",
+  data: preteritoPerfecto
+}
 ];
