@@ -9,25 +9,17 @@ export default function ConversationsPage() {
   const [level, setLevel] = useState<Level>('A1');
   const [country, setCountry] = useState<Country>('ALL');
 
-  // Convertir vers les niveaux et pays acceptés par ConversationPractice
-  const actualLevel = (level === 'ALL' ? 'A1' : level) as 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
+  // Convertir Level pour ConversationPractice (pas de "ALL" accepté)
+  const actualLevel: "A1" | "A2" | "B1" | "B2" | "C1" | "C2" = 
+    level === 'ALL' ? 'A1' : level;
   
-  // Mapper vers les 4 pays principaux acceptés par ConversationPractice
-  const getValidCountry = (c: Country): 'spain' | 'mexico' | 'argentina' | 'colombia' => {
-    switch(c) {
-      case 'spain': return 'spain';
-      case 'mexico': return 'mexico';
-      case 'argentina': return 'argentina';
-      case 'colombia': return 'colombia';
-      case 'peru': return 'colombia'; // Pérou → Colombie (proche)
-      case 'chile': return 'argentina'; // Chili → Argentine (proche)
-      case 'cuba': return 'mexico'; // Cuba → Mexique (Caraïbes)
-      case 'venezuela': return 'colombia'; // Venezuela → Colombie (proche)
-      default: return 'spain';
-    }
-  };
-
-  const actualCountry = getValidCountry(country);
+  // Convertir Country pour ConversationPractice (que 4 pays acceptés)
+  const actualCountry: "ALL" | "spain" | "mexico" | "argentina" = 
+    country === 'ALL' || country === 'spain' || country === 'mexico' || country === 'argentina'
+      ? country
+      : country === 'colombia' || country === 'venezuela' || country === 'peru'
+      ? 'mexico'  // Pays proches d'Amérique latine
+      : 'argentina'; // chile, cuba → argentina
 
   return (
     <div className="min-h-screen p-8 bg-gray-900 text-white">
