@@ -9,9 +9,25 @@ export default function ConversationsPage() {
   const [level, setLevel] = useState<Level>('A1');
   const [country, setCountry] = useState<Country>('ALL');
 
-  // Convertir 'ALL' en valeurs valides pour ConversationPractice
+  // Convertir vers les niveaux et pays acceptés par ConversationPractice
   const actualLevel = (level === 'ALL' ? 'A1' : level) as 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
-  const actualCountry = (country === 'ALL' ? 'spain' : country) as 'spain' | 'mexico' | 'argentina' | 'colombia' | 'peru' | 'chile' | 'cuba' | 'venezuela';
+  
+  // Mapper vers les 4 pays principaux acceptés par ConversationPractice
+  const getValidCountry = (c: Country): 'spain' | 'mexico' | 'argentina' | 'colombia' => {
+    switch(c) {
+      case 'spain': return 'spain';
+      case 'mexico': return 'mexico';
+      case 'argentina': return 'argentina';
+      case 'colombia': return 'colombia';
+      case 'peru': return 'colombia'; // Pérou → Colombie (proche)
+      case 'chile': return 'argentina'; // Chili → Argentine (proche)
+      case 'cuba': return 'mexico'; // Cuba → Mexique (Caraïbes)
+      case 'venezuela': return 'colombia'; // Venezuela → Colombie (proche)
+      default: return 'spain';
+    }
+  };
+
+  const actualCountry = getValidCountry(country);
 
   return (
     <div className="min-h-screen p-8 bg-gray-900 text-white">
