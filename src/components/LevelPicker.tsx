@@ -1,7 +1,7 @@
 "use client";
 import { useId } from "react";
 
-export type Level = "A1" | "A2" | "B1" | "ALL";
+export type Level = "A1" | "A2" | "B1" | "B2" | "C1" | "C2" | "ALL";
 export type Country = "spain" | "mexico" | "argentina" | "colombia" | "peru" | "chile" | "cuba" | "venezuela" | "ALL";
 
 export type Sections = {
@@ -66,6 +66,9 @@ export default function LevelPicker({
             <option value="A1">A1 - Débutant</option>
             <option value="A2">A2 - Élémentaire</option>
             <option value="B1">B1 - Intermédiaire</option>
+            <option value="B2">B2 - Intermédiaire Supérieur</option>
+            <option value="C1">C1 - Avancé</option>
+            <option value="C2">C2 - Maîtrise</option>
             <option value="ALL">Tous niveaux</option>
           </select>
         </div>
