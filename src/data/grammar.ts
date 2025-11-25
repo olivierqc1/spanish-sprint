@@ -38,6 +38,7 @@ import pronombres from "./grammar_quizz/pronombres.json";
 import pronombresComplemento from "./grammar_quizz/pronombres_complemento.json";
 import pronombresRelativos from "./grammar_quizz/pronombres_relativos.json";
 import posesivos from "./grammar_quizz/posesivos.json";
+import pronombresPosesivos from "./grammar_quizz/pronombres_posesivos.json";
 import demostrativos from "./grammar_quizz/demostrativos.json";
 
 // Adjectifs
@@ -242,6 +243,13 @@ export const grammarPoints: GrammarPoint[] = [
     level: "A1",
     note: "mi, tu, su...",
     data: posesivos
+  },
+  {
+    id: "pronombres_posesivos",
+    title: "Pronoms possessifs (mío, tuyo, suyo...)",
+    level: "A2",
+    note: "Remplacer un nom avec possession.",
+    data: pronombresPosesivos
   },
   {
     id: "demostrativos",
