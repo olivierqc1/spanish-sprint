@@ -1,35 +1,49 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Conjugation from '@/components/Conjugation';
-
-type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
-type Country = 'spain' | 'mexico' | 'argentina' | 'colombia' | 'peru' | 'chile' | 'cuba' | 'venezuela';
+import ConjugationPractice from '@/components/ConjugationPractice';
+import type { Level, Country } from '@/components/LevelPicker';
 
 export default function ConjugaisonPage() {
   const [level, setLevel] = useState<Level>('A1');
-  const [country, setCountry] = useState<Country>('spain');
+  const [country, setCountry] = useState<Country>('ALL');
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('spanish-sprint-language') as 'fr' | 'en' | null;
-    const savedLevel = localStorage.getItem('spanish-sprint-level') as Level | null;
-    const savedCountry = localStorage.getItem('spanish-sprint-country') as Country | null;
+    const savedLanguage = localStorage.getItem('spanish-sprint-language');
+    const savedLevel = localStorage.getItem('spanish-sprint-level');
+    const savedCountry = localStorage.getItem('spanish-sprint-country');
 
-    if (savedLanguage) setLanguage(savedLanguage);
-    if (savedLevel && savedLevel !== 'ALL') setLevel(savedLevel);
-    if (savedCountry && savedCountry !== 'ALL') setCountry(savedCountry);
+    if (savedLanguage === 'fr' || savedLanguage === 'en') {
+      setLanguage(savedLanguage);
+    }
+    
+    // Vérifier que savedLevel est un Level valide (A1-C2 ou ALL)
+    if (savedLevel) {
+      const validLevels: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2', 'ALL'];
+      if (validLevels.includes(savedLevel as Level)) {
+        setLevel(savedLevel as Level);
+      }
+    }
+    
+    // Vérifier que savedCountry est un Country valide
+    if (savedCountry) {
+      const validCountries: Country[] = ['spain', 'mexico', 'argentina', 'colombia', 'peru', 'chile', 'cuba', 'venezuela', 'ALL'];
+      if (validCountries.includes(savedCountry as Country)) {
+        setCountry(savedCountry as Country);
+      }
+    }
   }, []);
 
   const texts = {
     fr: {
-      title: '⚡ Conjugaison',
+      title: '✍️ Conjugaison',
       level: 'Niveau',
       country: 'Pays',
       back: '← Retour à l\'accueil'
     },
     en: {
-      title: '⚡ Conjugation',
+      title: '✍️ Conjugation',
       level: 'Level',
       country: 'Country',
       back: '← Back to home'
@@ -40,6 +54,7 @@ export default function ConjugaisonPage() {
 
   const countries = {
     fr: {
+      ALL: '🌍 Tous les pays',
       spain: '🇪🇸 Espagne',
       mexico: '🇲🇽 Mexique',
       argentina: '🇦🇷 Argentine',
@@ -50,6 +65,7 @@ export default function ConjugaisonPage() {
       venezuela: '🇻🇪 Venezuela'
     },
     en: {
+      ALL: '🌍 All countries',
       spain: '🇪🇸 Spain',
       mexico: '🇲🇽 Mexico',
       argentina: '🇦🇷 Argentina',
@@ -83,12 +99,13 @@ export default function ConjugaisonPage() {
                 }}
                 className="px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-white text-sm focus:border-blue-500 focus:outline-none"
               >
-                <option value="A1">A1</option>
-                <option value="A2">A2</option>
-                <option value="B1">B1</option>
-                <option value="B2">B2</option>
-                <option value="C1">C1</option>
-                <option value="C2">C2</option>
+                <option value="A1">A1 - Débutant</option>
+                <option value="A2">A2 - Élémentaire</option>
+                <option value="B1">B1 - Intermédiaire</option>
+                <option value="B2">B2 - Intermédiaire Supérieur</option>
+                <option value="C1">C1 - Avancé</option>
+                <option value="C2">C2 - Maîtrise</option>
+                <option value="ALL">Tous niveaux</option>
               </select>
             </div>
 
@@ -111,7 +128,7 @@ export default function ConjugaisonPage() {
           </div>
         </div>
 
-        <Conjugation level={level} country={country} />
+        <ConjugationPractice level={level} country={country} />
       </div>
     </div>
   );
