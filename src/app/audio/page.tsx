@@ -12,13 +12,29 @@ export default function AudioPage() {
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('spanish-sprint-language') as 'fr' | 'en' | null;
-    const savedLevel = localStorage.getItem('spanish-sprint-level') as Level | null;
-    const savedCountry = localStorage.getItem('spanish-sprint-country') as Country | null;
+    const savedLanguage = localStorage.getItem('spanish-sprint-language');
+    const savedLevel = localStorage.getItem('spanish-sprint-level');
+    const savedCountry = localStorage.getItem('spanish-sprint-country');
 
-    if (savedLanguage) setLanguage(savedLanguage);
-    if (savedLevel && savedLevel !== 'ALL') setLevel(savedLevel);
-    if (savedCountry && savedCountry !== 'ALL') setCountry(savedCountry);
+    if (savedLanguage === 'fr' || savedLanguage === 'en') {
+      setLanguage(savedLanguage);
+    }
+    
+    // Vérifier que savedLevel est un Level valide (pas 'ALL')
+    if (savedLevel && savedLevel !== 'ALL') {
+      const validLevels: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+      if (validLevels.includes(savedLevel as Level)) {
+        setLevel(savedLevel as Level);
+      }
+    }
+    
+    // Vérifier que savedCountry est un Country valide (pas 'ALL')
+    if (savedCountry && savedCountry !== 'ALL') {
+      const validCountries: Country[] = ['spain', 'mexico', 'argentina', 'colombia', 'peru', 'chile', 'cuba', 'venezuela'];
+      if (validCountries.includes(savedCountry as Country)) {
+        setCountry(savedCountry as Country);
+      }
+    }
   }, []);
 
   const texts = {
