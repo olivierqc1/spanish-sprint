@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import ConjugationPractice from '@/components/ConjugationPractice';
+import Conjugation from '@/components/Conjugation';
 import type { Level, Country } from '@/components/LevelPicker';
 
 export default function ConjugaisonPage() {
@@ -128,7 +128,7 @@ export default function ConjugaisonPage() {
           </div>
         </div>
 
-        <ConjugationPractice level={level} country={country} />
+        <Conjugation level={level} country={country} />
       </div>
     </div>
   );
