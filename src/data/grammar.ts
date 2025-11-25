@@ -64,7 +64,9 @@ import porVsPara from "./grammar_quizz/por_vs_para.json";
 
 // Pratique
 import numeros from "./grammar_quizz/numeros.json";
+import numerosOrdinales from "./grammar_quizz/numeros_ordinales.json";
 import laHora from "./grammar_quizz/la_hora.json";
+import direcciones from "./grammar_quizz/direcciones.json";
 import cotidianoBasics from "./grammar_quizz/cotidiano_basics.json";
 import weather from "./grammar_quizz/weather.json";
 
@@ -350,11 +352,25 @@ export const grammarPoints: GrammarPoint[] = [
     data: numeros
   },
   {
+    id: "numeros_ordinales",
+    title: "Les nombres ordinaux (primero, segundo, tercero...)",
+    level: "A1",
+    note: "Indiquer l'ordre et la position.",
+    data: numerosOrdinales
+  },
+  {
     id: "la_hora",
     title: "L'heure en espagnol",
     level: "A1",
     note: "Dire l'heure.",
     data: laHora
+  },
+  {
+    id: "direcciones",
+    title: "Donner et comprendre des directions",
+    level: "A1",
+    note: "Se déplacer et demander son chemin.",
+    data: direcciones
   },
   {
     id: "cotidiano_basics",
