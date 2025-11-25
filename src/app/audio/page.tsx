@@ -2,13 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import Listening from '@/components/Listening';
-
-type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
-type Country = 'spain' | 'mexico' | 'argentina' | 'colombia' | 'peru' | 'chile' | 'cuba' | 'venezuela';
+import type { Level, Country } from '@/components/LevelPicker';
 
 export default function AudioPage() {
   const [level, setLevel] = useState<Level>('A1');
-  const [country, setCountry] = useState<Country>('spain');
+  const [country, setCountry] = useState<Country>('ALL');
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
 
   useEffect(() => {
@@ -20,17 +18,17 @@ export default function AudioPage() {
       setLanguage(savedLanguage);
     }
     
-    // Vérifier que savedLevel est un Level valide (pas 'ALL')
-    if (savedLevel && savedLevel !== 'ALL') {
-      const validLevels: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+    // Vérifier que savedLevel est un Level valide (A1-C2 ou ALL)
+    if (savedLevel) {
+      const validLevels: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2', 'ALL'];
       if (validLevels.includes(savedLevel as Level)) {
         setLevel(savedLevel as Level);
       }
     }
     
-    // Vérifier que savedCountry est un Country valide (pas 'ALL')
-    if (savedCountry && savedCountry !== 'ALL') {
-      const validCountries: Country[] = ['spain', 'mexico', 'argentina', 'colombia', 'peru', 'chile', 'cuba', 'venezuela'];
+    // Vérifier que savedCountry est un Country valide
+    if (savedCountry) {
+      const validCountries: Country[] = ['spain', 'mexico', 'argentina', 'colombia', 'peru', 'chile', 'cuba', 'venezuela', 'ALL'];
       if (validCountries.includes(savedCountry as Country)) {
         setCountry(savedCountry as Country);
       }
@@ -56,6 +54,7 @@ export default function AudioPage() {
 
   const countries = {
     fr: {
+      ALL: '🌍 Tous les pays',
       spain: '🇪🇸 Espagne',
       mexico: '🇲🇽 Mexique',
       argentina: '🇦🇷 Argentine',
@@ -66,6 +65,7 @@ export default function AudioPage() {
       venezuela: '🇻🇪 Venezuela'
     },
     en: {
+      ALL: '🌍 All countries',
       spain: '🇪🇸 Spain',
       mexico: '🇲🇽 Mexico',
       argentina: '🇦🇷 Argentina',
@@ -110,12 +110,13 @@ export default function AudioPage() {
                 }}
                 className="px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-white text-sm focus:border-blue-500 focus:outline-none"
               >
-                <option value="A1">A1</option>
-                <option value="A2">A2</option>
-                <option value="B1">B1</option>
-                <option value="B2">B2</option>
-                <option value="C1">C1</option>
-                <option value="C2">C2</option>
+                <option value="A1">A1 - Débutant</option>
+                <option value="A2">A2 - Élémentaire</option>
+                <option value="B1">B1 - Intermédiaire</option>
+                <option value="B2">B2 - Intermédiaire Supérieur</option>
+                <option value="C1">C1 - Avancé</option>
+                <option value="C2">C2 - Maîtrise</option>
+                <option value="ALL">Tous niveaux</option>
               </select>
             </div>
 
