@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 type Drill = {
   prompt: string;
@@ -8,11 +8,13 @@ type Drill = {
 
 type Props = {
   title: string;
+  note?: string;
   drills: Drill[];
   onClose: () => void;
 };
 
-export default function GrammarDrill({ title, drills, onClose }: Props) {
+export default function GrammarDrill({ title, note, drills, onClose }: Props) {
+  const [showExplanation, setShowExplanation] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswer, setUserAnswer] = useState("");
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
@@ -58,6 +60,85 @@ export default function GrammarDrill({ title, drills, onClose }: Props) {
     }
   };
 
+  const startExercises = () => {
+    setShowExplanation(false);
+  };
+
+  // Écran d'explication
+  if (showExplanation && note) {
+    return (
+      <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4 overflow-y-auto">
+        <div className="bg-gray-800 rounded-2xl p-6 max-w-3xl w-full my-8">
+          {/* Header */}
+          <div className="flex justify-between items-start mb-6">
+            <h2 className="text-2xl font-bold">{title}</h2>
+            <button
+              onClick={onClose}
+              className="text-gray-400 hover:text-white text-3xl leading-none"
+            >
+              ×
+            </button>
+          </div>
+
+          {/* Explication avec formatage */}
+          <div className="bg-gray-900 rounded-lg p-6 mb-6 prose prose-invert max-w-none">
+            <div 
+              className="text-base leading-relaxed whitespace-pre-wrap"
+              style={{ 
+                color: '#e5e7eb',
+                lineHeight: '1.8'
+              }}
+            >
+              {note.split('\n').map((line, i) => {
+                // Titres avec emojis
+                if (line.match(/^[⚙️🔹💡🧩📝✅⚠️💬]/)) {
+                  return (
+                    <p key={i} className="font-bold text-blue-300 mt-4 mb-2">
+                      {line}
+                    </p>
+                  );
+                }
+                // Listes avec puces
+                if (line.match(/^[-•➡️]/)) {
+                  return (
+                    <p key={i} className="ml-4 my-1 text-gray-300">
+                      {line}
+                    </p>
+                  );
+                }
+                // Lignes normales
+                return line.trim() ? (
+                  <p key={i} className="my-2 text-gray-200">
+                    {line}
+                  </p>
+                ) : (
+                  <br key={i} />
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Bouton pour commencer */}
+          <div className="flex gap-3">
+            <button
+              onClick={startExercises}
+              className="flex-1 bg-blue-600 hover:bg-blue-700 px-6 py-4 rounded-lg font-semibold text-lg transition"
+            >
+              ✏️ Commencer les exercices ({drills.length})
+            </button>
+            <button
+              onClick={onClose}
+              className="px-6 py-4 bg-gray-700 hover:bg-gray-600 rounded-lg font-semibold transition"
+            >
+              Retour
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Écran de fin
   if (isFinished) {
     const percentage = Math.round((score / drills.length) * 100);
     return (
@@ -70,17 +151,33 @@ export default function GrammarDrill({ title, drills, onClose }: Props) {
           <p className="text-xl mb-6">
             {score} / {drills.length} bonnes réponses
           </p>
-          <button
-            onClick={onClose}
-            className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition"
-          >
-            Retour à la liste
-          </button>
+          <div className="flex gap-3">
+            <button
+              onClick={() => {
+                setCurrentIndex(0);
+                setUserAnswer("");
+                setFeedback(null);
+                setScore(0);
+                setIsFinished(false);
+                setShowExplanation(true);
+              }}
+              className="flex-1 bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg font-semibold transition"
+            >
+              🔄 Recommencer
+            </button>
+            <button
+              onClick={onClose}
+              className="flex-1 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition"
+            >
+              Retour à la liste
+            </button>
+          </div>
         </div>
       </div>
     );
   }
 
+  // Écran d'exercices
   return (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
       <div className="bg-gray-800 rounded-2xl p-6 max-w-2xl w-full">
@@ -144,6 +241,15 @@ export default function GrammarDrill({ title, drills, onClose }: Props) {
 
         {/* Buttons */}
         <div className="mt-6 flex gap-3">
+          {note && (
+            <button
+              onClick={() => setShowExplanation(true)}
+              className="px-4 py-3 bg-gray-700 hover:bg-gray-600 rounded-lg font-semibold transition"
+              title="Revoir l'explication"
+            >
+              📖
+            </button>
+          )}
           {feedback === null ? (
             <button
               onClick={checkAnswer}
