@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import type { GrammarPoint } from "@/data/grammar";
 import GrammarDrill from "./GrammarDrill";
 
@@ -11,11 +11,43 @@ type Props = {
 export default function GrammarExplorer({ points = [], initialLevel = "A1" }: Props) {
   const [level, setLevel] = useState<GrammarPoint["level"]>(initialLevel);
   const [activeExercise, setActiveExercise] = useState<GrammarPoint | null>(null);
+  const [language, setLanguage] = useState<'fr' | 'en'>('fr');
+
+  // Charger la langue depuis localStorage
+  useEffect(() => {
+    const saved = localStorage.getItem('grammarLanguage');
+    if (saved === 'en' || saved === 'fr') {
+      setLanguage(saved);
+    }
+  }, []);
+
+  // Sauvegarder la langue dans localStorage
+  const handleLanguageChange = (lang: 'fr' | 'en') => {
+    setLanguage(lang);
+    localStorage.setItem('grammarLanguage', lang);
+  };
 
   const pool = useMemo(
     () => points.filter(p => (level ? p.level === level : true)),
     [points, level]
   );
+
+  const texts = {
+    fr: {
+      title: "Grammaire",
+      noExercises: "Aucun point de grammaire pour ce niveau.",
+      exercises: "exercices",
+      start: "Commencer"
+    },
+    en: {
+      title: "Grammar",
+      noExercises: "No grammar points for this level.",
+      exercises: "exercises",
+      start: "Start"
+    }
+  };
+
+  const t = texts[language];
 
   // Si un exercice est actif, afficher SEULEMENT le modal
   if (activeExercise && activeExercise.data?.drills) {
@@ -25,6 +57,7 @@ export default function GrammarExplorer({ points = [], initialLevel = "A1" }: Pr
         note={activeExercise.data.note || activeExercise.note}
         drills={activeExercise.data.drills}
         onClose={() => setActiveExercise(null)}
+        language={language}
       />
     );
   }
@@ -32,18 +65,49 @@ export default function GrammarExplorer({ points = [], initialLevel = "A1" }: Pr
   // Sinon afficher la liste
   return (
     <div className="card vstack gap-3 p-4 rounded-2xl shadow">
-      <div className="hstack items-center justify-between">
-        <strong className="text-xl">Grammaire</strong>
-        <select value={level ?? "A1"} onChange={(e) => setLevel(e.target.value as GrammarPoint["level"])}
-          className="bg-gray-800 border border-gray-700 rounded px-3 py-2">
-          <option>A1</option>
-          <option>A2</option>
-          <option>B1</option>
-        </select>
+      <div className="flex items-center justify-between flex-wrap gap-3">
+        <strong className="text-xl">{t.title}</strong>
+        
+        <div className="flex items-center gap-3">
+          {/* Sélecteur de langue */}
+          <div className="flex gap-1 bg-gray-900 rounded-lg p-1">
+            <button
+              onClick={() => handleLanguageChange('fr')}
+              className={`px-3 py-1 rounded-md text-sm font-semibold transition ${
+                language === 'fr' 
+                  ? 'bg-blue-600 text-white' 
+                  : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              FR
+            </button>
+            <button
+              onClick={() => handleLanguageChange('en')}
+              className={`px-3 py-1 rounded-md text-sm font-semibold transition ${
+                language === 'en' 
+                  ? 'bg-blue-600 text-white' 
+                  : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              EN
+            </button>
+          </div>
+
+          {/* Sélecteur de niveau */}
+          <select 
+            value={level ?? "A1"} 
+            onChange={(e) => setLevel(e.target.value as GrammarPoint["level"])}
+            className="bg-gray-800 border border-gray-700 rounded px-3 py-2"
+          >
+            <option>A1</option>
+            <option>A2</option>
+            <option>B1</option>
+          </select>
+        </div>
       </div>
 
       {pool.length === 0 ? (
-        <div className="text-sm text-gray-500">Aucun point de grammaire pour ce niveau.</div>
+        <div className="text-sm text-gray-500">{t.noExercises}</div>
       ) : (
         <div className="vstack gap-2">
           {pool.map(point => (
@@ -58,7 +122,7 @@ export default function GrammarExplorer({ points = [], initialLevel = "A1" }: Pr
                   )}
                   {point.data?.drills && (
                     <div className="text-gray-500 text-xs mt-2">
-                      {point.data.drills.length} exercices
+                      {point.data.drills.length} {t.exercises}
                     </div>
                   )}
                 </div>
@@ -67,9 +131,11 @@ export default function GrammarExplorer({ points = [], initialLevel = "A1" }: Pr
                     {point.level}
                   </span>
                   {point.data?.drills && point.data.drills.length > 0 && (
-                    <button onClick={() => setActiveExercise(point)}
-                      className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm font-semibold transition">
-                      Commencer
+                    <button
+                      onClick={() => setActiveExercise(point)}
+                      className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm font-semibold transition"
+                    >
+                      {t.start}
                     </button>
                   )}
                 </div>
