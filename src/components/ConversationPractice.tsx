@@ -1,32 +1,19 @@
 "use client";
 import { useState, useMemo, useEffect } from "react";
 import type { Country, Level } from "./LevelPicker";
-
-type ConversationData = {
-  id: string;
-  level: Level;
-  country?: Country;
-  topic: string;
-  context: string;
-  conversation: Array<{
-    speaker: "A" | "B";
-    spanish: string;
-    french: string;
-  }>;
-};
+import type { Conversation } from "@/data/conversations";
 
 type Props = {
-  conversations: ConversationData[];
+  conversations: Conversation[];
   level: Level;
   country: Country;
 };
 
 export default function ConversationPractice({ conversations, level, country }: Props) {
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
-  const [selectedConv, setSelectedConv] = useState<ConversationData | null>(null);
+  const [selectedConv, setSelectedConv] = useState<Conversation | null>(null);
   const [showTranslations, setShowTranslations] = useState(false);
 
-  // Charger la langue depuis localStorage
   useEffect(() => {
     const saved = localStorage.getItem('conversationLanguage');
     if (saved === 'en' || saved === 'fr') {
@@ -34,16 +21,30 @@ export default function ConversationPractice({ conversations, level, country }: 
     }
   }, []);
 
-  // Sauvegarder la langue dans localStorage
   const handleLanguageChange = (lang: 'fr' | 'en') => {
     setLanguage(lang);
     localStorage.setItem('conversationLanguage', lang);
   };
 
+  // Mapper les noms de pays pour correspondre aux types
+  const countryMap: Record<string, string> = {
+    'spain': 'Espagne',
+    'mexico': 'Mexique',
+    'argentina': 'Argentine',
+    'colombia': 'Colombie',
+    'peru': 'Pérou',
+    'chile': 'Chili',
+    'cuba': 'Cuba',
+    'venezuela': 'Venezuela'
+  };
+
   const filtered = useMemo(() => {
     let pool = conversations;
     if (level !== "ALL") pool = pool.filter(c => c.level === level);
-    if (country !== "ALL") pool = pool.filter(c => !c.country || c.country === country);
+    if (country !== "ALL") {
+      const mappedCountry = countryMap[country];
+      pool = pool.filter(c => c.country === mappedCountry);
+    }
     return pool;
   }, [conversations, level, country]);
 
@@ -52,6 +53,7 @@ export default function ConversationPractice({ conversations, level, country }: 
       title: "Pratique des conversations",
       noConversations: "Aucune conversation disponible pour ce niveau/pays.",
       context: "Contexte",
+      vocabulary: "Vocabulaire",
       showTranslations: "Afficher les traductions",
       hideTranslations: "Masquer les traductions",
       back: "← Retour",
@@ -61,6 +63,7 @@ export default function ConversationPractice({ conversations, level, country }: 
       title: "Conversation Practice",
       noConversations: "No conversations available for this level/country.",
       context: "Context",
+      vocabulary: "Vocabulary",
       showTranslations: "Show translations",
       hideTranslations: "Hide translations",
       back: "← Back",
@@ -83,14 +86,14 @@ export default function ConversationPractice({ conversations, level, country }: 
         </div>
 
         <div>
-          <strong className="text-xl">{selectedConv.topic}</strong>
+          <strong className="text-xl">{selectedConv.title}</strong>
           <p className="muted" style={{ marginTop: "8px" }}>
             {t.context}: {selectedConv.context}
           </p>
         </div>
 
         <div className="vstack" style={{ gap: "12px" }}>
-          {selectedConv.conversation.map((line, i) => (
+          {selectedConv.lines.map((line, i) => (
             <div
               key={i}
               className="card"
@@ -100,19 +103,25 @@ export default function ConversationPractice({ conversations, level, country }: 
               }}
             >
               <div style={{ fontWeight: "bold", marginBottom: "8px" }}>
-                {line.speaker === "A" ? "👤 Personne A" : "👥 Personne B"}
+                {line.speaker === "A" ? "👤" : "👥"} {line.speakerName}
               </div>
-              <div style={{ fontSize: "18px", marginBottom: showTranslations ? "8px" : "0" }}>
-                {line.spanish}
+              <div style={{ fontSize: "18px" }}>
+                {line.text}
               </div>
-              {showTranslations && (
-                <div className="muted" style={{ fontSize: "14px" }}>
-                  {line.french}
-                </div>
-              )}
             </div>
           ))}
         </div>
+
+        {selectedConv.vocabulary && selectedConv.vocabulary.length > 0 && (
+          <div className="card" style={{ background: "#2d3748" }}>
+            <strong className="text-green-300">{t.vocabulary}:</strong>
+            <ul style={{ marginTop: "12px", paddingLeft: "20px" }}>
+              {selectedConv.vocabulary.map((word, i) => (
+                <li key={i} className="text-gray-300" style={{ marginBottom: "4px" }}>{word}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     );
   }
@@ -122,7 +131,6 @@ export default function ConversationPractice({ conversations, level, country }: 
       <div className="flex items-center justify-between flex-wrap gap-3">
         <strong className="text-xl">{t.title}</strong>
         
-        {/* Sélecteur de langue */}
         <div className="flex gap-1 bg-gray-900 rounded-lg p-1">
           <button
             onClick={() => handleLanguageChange('fr')}
@@ -159,13 +167,14 @@ export default function ConversationPractice({ conversations, level, country }: 
               onClick={() => setSelectedConv(conv)}
             >
               <div>
-                <strong>{conv.topic}</strong>
+                <strong>{conv.title}</strong>
                 <div className="muted" style={{ fontSize: "14px", marginTop: "4px" }}>
                   {conv.context}
                 </div>
               </div>
               <div className="hstack" style={{ gap: "8px" }}>
                 <span className="badge">{conv.level}</span>
+                <span className="badge">{conv.country}</span>
                 <button onClick={(e) => { e.stopPropagation(); setSelectedConv(conv); }}>
                   {t.start}
                 </button>
