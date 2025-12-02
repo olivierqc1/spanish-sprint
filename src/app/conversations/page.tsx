@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import ConversationPractice from '@/components/ConversationPractice';
 import type { Level, Country } from '@/components/LevelPicker';
+import { conversations } from '@/data/conversations';
 
 export default function ConversationsPage() {
   const [level, setLevel] = useState<Level>('A1');
@@ -18,7 +19,6 @@ export default function ConversationsPage() {
       setLanguage(savedLanguage);
     }
     
-    // Vérifier que savedLevel est un Level valide (A1-C2 ou ALL)
     if (savedLevel) {
       const validLevels: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2', 'ALL'];
       if (validLevels.includes(savedLevel as Level)) {
@@ -26,7 +26,6 @@ export default function ConversationsPage() {
       }
     }
     
-    // Vérifier que savedCountry est un Country valide
     if (savedCountry) {
       const validCountries: Country[] = ['spain', 'mexico', 'argentina', 'colombia', 'peru', 'chile', 'cuba', 'venezuela', 'ALL'];
       if (validCountries.includes(savedCountry as Country)) {
@@ -128,8 +127,8 @@ export default function ConversationsPage() {
           </div>
         </div>
 
-        <ConversationPractice level={level} country={country} />
+        <ConversationPractice conversations={conversations} level={level} country={country} />
       </div>
     </div>
   );
-} 
+}
