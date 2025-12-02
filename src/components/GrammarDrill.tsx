@@ -99,89 +99,88 @@ export default function GrammarDrill({ title, note, drills, onClose, language = 
 
   const t = texts[language];
 
-  // Fonction pour parser et formatter le texte
+  // Fonction pour parser et formatter le texte - VERSION SIMPLIFIÉE
   const parseText = (text: string) => {
-    let parsed = text.replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white">$1</strong>');
-    parsed = parsed.replace(/\*([^*]+)\*/g, '<em class="text-blue-200">$1</em>');
+    // Enlever les ** pour le gras
+    let parsed = text.replace(/\*\*/g, '');
     return parsed;
   };
 
-  // Fonction pour formatter l'explication de manière plus claire
-  const formatNote = (text: string, compact = false) => {
+  // Fonction pour formatter l'explication - VERSION TRÈS AÉRÉE
+  const formatNote = (text: string) => {
     const lines = text.split('\n');
     const elements: JSX.Element[] = [];
-    let i = 0;
 
-    while (i < lines.length) {
-      const trimmed = lines[i].trim();
+    lines.forEach((line, i) => {
+      const trimmed = line.trim();
       
-      // Titres avec emojis
+      // Titres avec emojis (⚙️, 💡, etc.) - GROS et espacé
       if (trimmed.match(/^[⚙️🔹💡🧩📝✅⚠️💬📍📊🗣️🎯🔥]/)) {
         elements.push(
           <div 
             key={i} 
-            className={`font-bold text-blue-400 ${compact ? 'text-base mt-4 mb-2' : 'text-xl mt-6 mb-3'}`}
-            dangerouslySetInnerHTML={{ __html: parseText(trimmed) }}
-          />
-        );
-      }
-      // Lignes avec flèches ou puces
-      else if (trimmed.match(/^[➡️•-]/)) {
-        elements.push(
-          <div key={i} className={`flex items-start ${compact ? 'my-1 ml-3' : 'my-2 ml-4'}`}>
-            <span className={`text-blue-400 mr-2 ${compact ? 'text-sm' : 'text-base'}`}>•</span>
-            <span 
-              className={`text-gray-300 ${compact ? 'text-sm' : 'text-base'}`}
-              dangerouslySetInnerHTML={{ __html: parseText(trimmed.replace(/^[➡️•-]\s*/, '')) }} 
-            />
+            className="font-bold text-blue-400 text-xl mb-6 mt-8"
+          >
+            {parseText(trimmed)}
           </div>
         );
       }
-      // Lignes normales
+      // Lignes avec flèches ou puces - TRÈS espacé
+      else if (trimmed.match(/^[➡️•-]/)) {
+        elements.push(
+          <div key={i} className="flex items-start mb-4 ml-2">
+            <span className="text-blue-400 mr-3 text-lg mt-1">→</span>
+            <span className="text-gray-200 text-base leading-relaxed flex-1">
+              {parseText(trimmed.replace(/^[➡️•-]\s*/, ''))}
+            </span>
+          </div>
+        );
+      }
+      // Lignes normales - BIEN espacé
       else if (trimmed) {
         elements.push(
           <p 
             key={i} 
-            className={`text-gray-200 ${compact ? 'text-sm my-1' : 'text-base my-2'} leading-relaxed`}
-            dangerouslySetInnerHTML={{ __html: parseText(trimmed) }}
-          />
+            className="text-gray-100 text-base leading-loose my-4"
+          >
+            {parseText(trimmed)}
+          </p>
         );
       }
-      // Ligne vide
+      // Ligne vide - GRAND espace
       else {
-        elements.push(<div key={i} className={compact ? 'h-2' : 'h-3'} />);
+        elements.push(<div key={i} className="h-6" />);
       }
-      
-      i++;
-    }
+    });
 
     return elements;
   };
 
-  // Écran initial avec l'explication complète
+  // Écran initial avec l'explication complète - VERSION TRÈS AÉRÉE
   if (!hasStarted && note) {
     return (
       <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4 overflow-y-auto">
-        <div className="bg-gray-800 rounded-2xl p-6 max-w-4xl w-full my-8">
-          <div className="flex justify-between items-start mb-6">
+        <div className="bg-gray-800 rounded-2xl p-8 max-w-4xl w-full my-8">
+          <div className="flex justify-between items-start mb-8">
             <h2 className="text-3xl font-bold text-white">{title}</h2>
             <button onClick={onClose} className="text-gray-400 hover:text-white text-3xl leading-none">×</button>
           </div>
           
-          <div className="bg-gray-900 rounded-xl p-8 mb-6 max-h-[65vh] overflow-y-auto">
-            {formatNote(note, false)}
+          {/* Explication avec BEAUCOUP d'espace */}
+          <div className="bg-gray-900 rounded-xl p-10 mb-8 max-h-[65vh] overflow-y-auto">
+            {formatNote(note)}
           </div>
           
-          <div className="flex gap-3">
+          <div className="flex gap-4">
             <button 
               onClick={startExercises} 
-              className="flex-1 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-semibold text-lg transition"
+              className="flex-1 bg-blue-600 hover:bg-blue-700 px-8 py-5 rounded-xl font-semibold text-xl transition"
             >
               ✏️ {t.startButton} ({drills.length})
             </button>
             <button 
               onClick={onClose} 
-              className="px-8 py-4 bg-gray-700 hover:bg-gray-600 rounded-xl font-semibold transition"
+              className="px-8 py-5 bg-gray-700 hover:bg-gray-600 rounded-xl font-semibold text-lg transition"
             >
               {t.backButton}
             </button>
@@ -211,13 +210,13 @@ export default function GrammarDrill({ title, note, drills, onClose, language = 
     );
   }
 
-  // Écran d'exercices avec panneau latéral
+  // Écran d'exercices avec panneau latéral OPTIONNEL
   return (
     <div className="fixed inset-0 bg-black/90 z-50 p-4 overflow-hidden">
       <div className="h-full max-w-7xl mx-auto flex gap-4">
-        {/* Panneau d'explication (collapsible) */}
+        {/* Panneau d'explication (collapsible) - VERSION COMPACTE */}
         {showExplanationPanel && note && (
-          <div className="bg-gray-800 rounded-2xl p-5 w-[350px] flex-shrink-0 overflow-y-auto">
+          <div className="bg-gray-800 rounded-2xl p-6 w-[400px] flex-shrink-0 overflow-y-auto">
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-lg font-bold text-white">📖 {title}</h3>
               <button 
@@ -228,8 +227,8 @@ export default function GrammarDrill({ title, note, drills, onClose, language = 
                 ✕
               </button>
             </div>
-            <div>
-              {formatNote(note, true)}
+            <div className="text-sm">
+              {formatNote(note)}
             </div>
           </div>
         )}
@@ -244,23 +243,24 @@ export default function GrammarDrill({ title, note, drills, onClose, language = 
             <button onClick={onClose} className="text-gray-400 hover:text-white text-2xl ml-4">×</button>
           </div>
 
-          {/* Bouton toggle explication */}
-          <div className="flex items-center justify-between mb-4">
-            {note && (
+          {/* Bouton toggle explication + Score */}
+          <div className="flex items-center justify-between mb-6">
+            {note && !showExplanationPanel && (
               <button
-                onClick={() => setShowExplanationPanel(!showExplanationPanel)}
-                className="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg font-semibold transition text-sm"
+                onClick={() => setShowExplanationPanel(true)}
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition text-sm"
               >
-                {showExplanationPanel ? `✕ ${t.hideExplanation}` : `📖 ${t.showExplanation}`}
+                📖 {t.showExplanation}
               </button>
             )}
+            {note && showExplanationPanel && <div></div>}
             <span className="text-lg">
               {t.score}: <span className="font-bold text-green-400">{score}</span> / {drills.length}
             </span>
           </div>
           
           <div className="bg-gray-900 rounded-lg p-6 mb-6 flex-shrink-0">
-            <p className="text-lg" dangerouslySetInnerHTML={{ __html: currentDrill.prompt }} />
+            <p className="text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: currentDrill.prompt }} />
           </div>
           
           <input 
