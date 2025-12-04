@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { Level, Country } from "@/components/LevelPicker";
 
 // 🧩 Import des jeux de cartes selon le niveau
@@ -15,6 +15,7 @@ export interface Card {
   id: string;
   front: string;
   back: string;
+  backEn?: string;  // Traduction anglaise optionnelle
   level: string;
   country: string;
   category?: string;
@@ -29,6 +30,15 @@ interface FlashcardsProps {
 export default function Flashcards({ level, country, category }: FlashcardsProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [language, setLanguage] = useState<'fr' | 'en'>('fr');
+
+  // Récupérer la langue depuis localStorage
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('spanish-sprint-language');
+    if (savedLanguage === 'fr' || savedLanguage === 'en') {
+      setLanguage(savedLanguage);
+    }
+  }, []);
 
   // 🧠 Choix automatique du bon fichier selon le niveau
   let allCards: Card[] = [];
@@ -73,23 +83,49 @@ export default function Flashcards({ level, country, category }: FlashcardsProps
     );
   };
 
+  const texts = {
+    fr: {
+      title: "Flashcards – Niveau",
+      noCards: "Aucune carte disponible pour ce niveau, ce pays ou cette catégorie.",
+      clickToFlip: "Cliquez sur la carte pour voir la traduction",
+      previous: "← Précédent",
+      next: "Suivant →",
+      cardOf: "Carte"
+    },
+    en: {
+      title: "Flashcards – Level",
+      noCards: "No cards available for this level, country or category.",
+      clickToFlip: "Click on the card to see the translation",
+      previous: "← Previous",
+      next: "Next →",
+      cardOf: "Card"
+    }
+  };
+
+  const t = texts[language];
+
   if (filteredCards.length === 0) {
     return (
       <div>
-        <h2 style={{ marginBottom: "20px" }}>Flashcards</h2>
+        <h2 style={{ marginBottom: "20px" }}>{t.title}</h2>
         <p style={{ textAlign: "center", color: "#666" }}>
-          Aucune carte disponible pour ce niveau, ce pays ou cette catégorie.
+          {t.noCards}
         </p>
       </div>
     );
   }
 
   const currentCard = filteredCards[currentIndex];
+  
+  // Utiliser backEn si disponible et language='en', sinon back
+  const translationText = isFlipped 
+    ? (language === 'en' && currentCard.backEn ? currentCard.backEn : currentCard.back)
+    : currentCard.front;
 
   return (
     <div>
       <h2 style={{ marginBottom: "20px", textAlign: "center" }}>
-        Flashcards – Niveau {level}
+        {t.title} {level}
       </h2>
       <div
         style={{
@@ -121,11 +157,11 @@ export default function Flashcards({ level, country, category }: FlashcardsProps
             padding: "10px",
           }}
         >
-          {isFlipped ? currentCard.back : currentCard.front}
+          {translationText}
         </div>
 
         <p style={{ color: "#666", fontSize: "14px" }}>
-          Cliquez sur la carte pour voir la traduction
+          {t.clickToFlip}
         </p>
 
         <div style={{ display: "flex", gap: "10px" }}>
@@ -141,7 +177,7 @@ export default function Flashcards({ level, country, category }: FlashcardsProps
               fontSize: "16px",
             }}
           >
-            ← Précédent
+            {t.previous}
           </button>
           <button
             onClick={handleNext}
@@ -155,12 +191,12 @@ export default function Flashcards({ level, country, category }: FlashcardsProps
               fontSize: "16px",
             }}
           >
-            Suivant →
+            {t.next}
           </button>
         </div>
 
         <p style={{ color: "#666", fontSize: "14px" }}>
-          Carte {currentIndex + 1} sur {filteredCards.length}
+          {t.cardOf} {currentIndex + 1} / {filteredCards.length}
         </p>
       </div>
     </div>
