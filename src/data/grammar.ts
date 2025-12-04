@@ -25,6 +25,7 @@ import serVsSentirse from "./grammar_quizz/ser_vs_sentirse.json";
 // Verbes
 import reflexivos from "./grammar_quizz/verbos_reflexivos.json";
 import gustar from "./grammar_quizz/gustar.json";
+import cuestaCostar from "./grammar_quizz/cuesta_costar.json";
 
 // Articles
 import articulosDefinidos from "./grammar_quizz/articulos_definidos.json";
@@ -143,6 +144,13 @@ export const grammarPoints: GrammarPoint[] = [
     level: "A1",
     note: "Structure inversée : me gusta...",
     data: gustar
+  },
+  {
+    id: "cuesta_costar",
+    title: "COSTAR (cuesta) - Prix et difficulté",
+    level: "A2",
+    note: "Le verbe costar : coûter un prix ou indiquer une difficulté.",
+    data: cuestaCostar
   },
 
   // ========== TEMPS DU PASSÉ ==========
