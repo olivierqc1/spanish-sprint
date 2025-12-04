@@ -99,5 +99,136 @@ export const wordsB1 = [
   { id: "98", front: "afirmar", back: "affirmer / confirmer", level: "B1", country: "ALL", category: "verbe" },
   { id: "99", front: "suicidarse", back: "se suicider", level: "B1", country: "ALL", category: "verbe" },
   { id: "100", front: "agradecer", back: "remercier / être reconnaissant", level: "B1", country: "ALL", category: "verbe" 
-},
+},// ===================================================
+// À AJOUTER À LA FIN DE src/data/words/B1.ts
+// Copie ces lignes AVANT le dernier ]; du fichier
+// ===================================================
+
+  // NOUVEAUX MOTS B1 - Verbes avancés
+  { id: "101", front: "juzgar", back: "juger", backEn: "to judge", level: "B1", country: "ALL", category: "verbe" },
+  { id: "102", front: "dudar", back: "douter", backEn: "to doubt", level: "B1", country: "ALL", category: "verbe" },
+  { id: "103", front: "empeorar", back: "empirer", backEn: "to worsen", level: "B1", country: "ALL", category: "verbe" },
+  { id: "104", front: "enfermarse", back: "tomber malade", backEn: "to get sick", level: "B1", country: "ALL", category: "verbe" },
+  { id: "105", front: "pelear", back: "se battre", backEn: "to fight", level: "B1", country: "ALL", category: "verbe" },
+  { id: "106", front: "opinar", back: "donner son avis", backEn: "to give opinion", level: "B1", country: "ALL", category: "verbe" },
+  { id: "107", front: "difundir", back: "diffuser", backEn: "to spread", level: "B1", country: "ALL", category: "verbe" },
+  { id: "108", front: "idolatrar", back: "idolâtrer", backEn: "to idolize", level: "B1", country: "ALL", category: "verbe" },
+  { id: "109", front: "repartir", back: "distribuer", backEn: "to distribute", level: "B1", country: "ALL", category: "verbe" },
+  { id: "110", front: "disfrutar", back: "profiter", backEn: "to enjoy", level: "B1", country: "ALL", category: "verbe" },
+  { id: "111", front: "dominar", back: "maîtriser", backEn: "to master", level: "B1", country: "ALL", category: "verbe" },
+  { id: "112", front: "granizar", back: "grêler", backEn: "to hail", level: "B1", country: "ALL", category: "verbe" },
+  { id: "113", front: "asar", back: "griller", backEn: "to grill", level: "B1", country: "ALL", category: "verbe" },
+
+  // Professions spécialisées
+  { id: "114", front: "diseñador/a", back: "designer", backEn: "designer", level: "B1", country: "ALL", category: "nom" },
+  { id: "115", front: "taxista", back: "chauffeur de taxi", backEn: "taxi driver", level: "B1", country: "ALL", category: "nom" },
+  { id: "116", front: "arquitecto/a", back: "architecte", backEn: "architect", level: "B1", country: "ALL", category: "nom" },
+  { id: "117", front: "astronauta", back: "astronaute", backEn: "astronaut", level: "B1", country: "ALL", category: "nom" },
+  { id: "118", front: "biólogo/a", back: "biologiste", backEn: "biologist", level: "B1", country: "ALL", category: "nom" },
+  { id: "119", front: "azafata", back: "hôtesse de l'air", backEn: "flight attendant", level: "B1", country: "ALL", category: "nom" },
+  { id: "120", front: "albañil", back: "ouvrier du bâtiment", backEn: "construction worker", level: "B1", country: "ALL", category: "nom" },
+  { id: "121", front: "empresario/a", back: "chef d'entreprise", backEn: "entrepreneur", level: "B1", country: "ALL", category: "nom" },
+  { id: "122", front: "ingeniero/a", back: "ingénieur", backEn: "engineer", level: "B1", country: "ALL", category: "nom" },
+  { id: "123", front: "fotógrafo/a", back: "photographe", backEn: "photographer", level: "B1", country: "ALL", category: "nom" },
+  { id: "124", front: "juez/a", back: "juge", backEn: "judge", level: "B1", country: "ALL", category: "nom" },
+
+  // Objets spécialisés
+  { id: "125", front: "martillo", back: "marteau", backEn: "hammer", level: "B1", country: "ALL", category: "nom" },
+  { id: "126", front: "anzuelo", back: "hameçon", backEn: "fishhook", level: "B1", country: "ALL", category: "nom" },
+  { id: "127", front: "jeringuilla", back: "seringue", backEn: "syringe", level: "B1", country: "ALL", category: "nom" },
+  { id: "128", front: "casco", back: "casque", backEn: "helmet", level: "B1", country: "ALL", category: "nom" },
+  { id: "129", front: "jarrón", back: "vase", backEn: "vase", level: "B1", country: "ALL", category: "nom" },
+  { id: "130", front: "cucharón", back: "louche", backEn: "ladle", level: "B1", country: "ALL", category: "nom" },
+  { id: "131", front: "tenedor", back: "fourchette", backEn: "fork", level: "B1", country: "ALL", category: "nom" },
+  { id: "132", front: "obra", back: "chantier", backEn: "construction site", level: "B1", country: "ALL", category: "nom" },
+  { id: "133", front: "bandera", back: "drapeau", backEn: "flag", level: "B1", country: "ALL", category: "nom" },
+
+  // Concepts abstraits
+  { id: "134", front: "alegría", back: "joie", backEn: "joy", level: "B1", country: "ALL", category: "nom" },
+  { id: "135", front: "temor", back: "peur", backEn: "fear", level: "B1", country: "ALL", category: "nom" },
+  { id: "136", front: "soledad", back: "solitude", backEn: "solitude", level: "B1", country: "ALL", category: "nom" },
+  { id: "137", front: "vergüenza", back: "honte", backEn: "shame", level: "B1", country: "ALL", category: "nom" },
+  { id: "138", front: "afición", back: "passion/hobby", backEn: "hobby", level: "B1", country: "ALL", category: "nom" },
+  { id: "139", front: "genocidio", back: "génocide", backEn: "genocide", level: "B1", country: "ALL", category: "nom" },
+  { id: "140", front: "población", back: "population", backEn: "population", level: "B1", country: "ALL", category: "nom" },
+  { id: "141", front: "estrés", back: "stress", backEn: "stress", level: "B1", country: "ALL", category: "nom" },
+  { id: "142", front: "despido", back: "licenciement", backEn: "dismissal", level: "B1", country: "ALL", category: "nom" },
+  { id: "143", front: "actuación", back: "performance", backEn: "performance", level: "B1", country: "ALL", category: "nom" },
+  { id: "144", front: "pena", back: "peine", backEn: "sorrow", level: "B1", country: "ALL", category: "nom" },
+  { id: "145", front: "regocijo", back: "joie", backEn: "rejoicing", level: "B1", country: "ALL", category: "nom" },
+
+  // Nature et géographie
+  { id: "146", front: "primavera", back: "printemps", backEn: "spring", level: "B1", country: "ALL", category: "nom" },
+  { id: "147", front: "calabaza", back: "citrouille", backEn: "pumpkin", level: "B1", country: "ALL", category: "nom" },
+  { id: "148", front: "charco", back: "flaque", backEn: "puddle", level: "B1", country: "ALL", category: "nom" },
+  { id: "149", front: "sequía", back: "sécheresse", backEn: "drought", level: "B1", country: "ALL", category: "nom" },
+  { id: "150", front: "arena", back: "sable", backEn: "sand", level: "B1", country: "ALL", category: "nom" },
+  { id: "151", front: "polvo", back: "poussière", backEn: "dust", level: "B1", country: "ALL", category: "nom" },
+  { id: "152", front: "cobre", back: "cuivre", backEn: "copper", level: "B1", country: "ALL", category: "nom" },
+  { id: "153", front: "trigo", back: "blé", backEn: "wheat", level: "B1", country: "ALL", category: "nom" },
+  { id: "154", front: "aceite", back: "huile", backEn: "oil", level: "B1", country: "ALL", category: "nom" },
+  { id: "155", front: "selva", back: "jungle", backEn: "jungle", level: "B1", country: "ALL", category: "nom" },
+  { id: "156", front: "hoja", back: "feuille", backEn: "leaf", level: "B1", country: "ALL", category: "nom" },
+
+  // Animaux additionnels
+  { id: "157", front: "halcón", back: "faucon", backEn: "falcon", level: "B1", country: "ALL", category: "nom" },
+  { id: "158", front: "canguro", back: "kangourou", backEn: "kangaroo", level: "B1", country: "ALL", category: "nom" },
+
+  // Corps et apparence
+  { id: "159", front: "bigote", back: "moustache", backEn: "mustache", level: "B1", country: "ALL", category: "nom" },
+  { id: "160", front: "muslo", back: "cuisse", backEn: "thigh", level: "B1", country: "ALL", category: "nom" },
+  { id: "161", front: "ropa interior", back: "sous-vêtement", backEn: "underwear", level: "B1", country: "ALL", category: "nom" },
+  { id: "162", front: "bragas", back: "culotte", backEn: "panties", level: "B1", country: "ALL", category: "nom" },
+  { id: "163", front: "calzoncillos", back: "caleçon", backEn: "boxer shorts", level: "B1", country: "ALL", category: "nom" },
+  { id: "164", front: "sujetador", back: "soutien-gorge", backEn: "bra", level: "B1", country: "ALL", category: "nom" },
+  { id: "165", front: "tirante", back: "bretelle", backEn: "strap", level: "B1", country: "ALL", category: "nom" },
+
+  // Sports et loisirs
+  { id: "166", front: "esquí", back: "ski", backEn: "ski", level: "B1", country: "ALL", category: "nom" },
+  { id: "167", front: "esquí de fondo", back: "ski de fond", backEn: "cross-country skiing", level: "B1", country: "ALL", category: "nom" },
+  { id: "168", front: "esquí alpino", back: "ski alpin", backEn: "alpine skiing", level: "B1", country: "ALL", category: "nom" },
+  { id: "169", front: "ajedrez", back: "échecs", backEn: "chess", level: "B1", country: "ALL", category: "nom" },
+  { id: "170", front: "pelota", back: "balle", backEn: "ball", level: "B1", country: "ALL", category: "nom" },
+
+  // Autres objets
+  { id: "171", front: "moneda", back: "monnaie", backEn: "coin", level: "B1", country: "ALL", category: "nom" },
+  { id: "172", front: "sonido", back: "son", backEn: "sound", level: "B1", country: "ALL", category: "nom" },
+  { id: "173", front: "llamada", back: "appel", backEn: "call", level: "B1", country: "ALL", category: "nom" },
+  { id: "174", front: "pared", back: "mur", backEn: "wall", level: "B1", country: "ALL", category: "nom" },
+  { id: "175", front: "puesto", back: "poste/place", backEn: "position", level: "B1", country: "ALL", category: "nom" },
+  { id: "176", front: "datos", back: "données", backEn: "data", level: "B1", country: "ALL", category: "nom" },
+  { id: "177", front: "sala", back: "salle", backEn: "room", level: "B1", country: "ALL", category: "nom" },
+  { id: "178", front: "vestuario", back: "costume", backEn: "wardrobe", level: "B1", country: "ALL", category: "nom" },
+  { id: "179", front: "receta", back: "recette", backEn: "recipe", level: "B1", country: "ALL", category: "nom" },
+  { id: "180", front: "transbordador", back: "ferry", backEn: "ferry", level: "B1", country: "ALL", category: "nom" },
+  { id: "181", front: "prisión", back: "prison", backEn: "prison", level: "B1", country: "ALL", category: "nom" },
+  { id: "182", front: "sombrilla", back: "parasol", backEn: "parasol", level: "B1", country: "ALL", category: "nom" },
+  { id: "183", front: "descanso", back: "repos", backEn: "rest", level: "B1", country: "ALL", category: "nom" },
+
+  // Nationalités
+  { id: "184", front: "mejicano/a", back: "mexicain(e)", backEn: "Mexican", level: "B1", country: "ALL", category: "adjectif" },
+  { id: "185", front: "vietnamita", back: "vietnamien(ne)", backEn: "Vietnamese", level: "B1", country: "ALL", category: "adjectif" },
+  { id: "186", front: "griego/a", back: "grec(que)", backEn: "Greek", level: "B1", country: "ALL", category: "adjectif" },
+
+  // Adjectifs d'apparence
+  { id: "187", front: "estampado", back: "imprimé", backEn: "printed", level: "B1", country: "ALL", category: "adjectif" },
+  { id: "188", front: "cómodo/a", back: "confortable", backEn: "comfortable", level: "B1", country: "ALL", category: "adjectif" },
+  { id: "189", front: "sencillo/a", back: "simple", backEn: "simple", level: "B1", country: "ALL", category: "adjectif" },
+  { id: "190", front: "castaño/a", back: "châtain", backEn: "brown (hair)", level: "B1", country: "ALL", category: "adjectif" },
+  { id: "191", front: "calvo/a", back: "chauve", backEn: "bald", level: "B1", country: "ALL", category: "adjectif" },
+  { id: "192", front: "moreno/a", back: "brun(e)", backEn: "dark-haired", level: "B1", country: "ALL", category: "adjectif" },
+  { id: "193", front: "liso", back: "lisse", backEn: "straight", level: "B1", country: "ALL", category: "adjectif" },
+  { id: "194", front: "rizado", back: "bouclé", backEn: "curly", level: "B1", country: "ALL", category: "adjectif" },
+  { id: "195", front: "hermético", back: "hermétique", backEn: "airtight", level: "B1", country: "ALL", category: "adjectif" },
+
+  // Expressions
+  { id: "196", front: "últimamente", back: "dernièrement", backEn: "lately", level: "B1", country: "ALL", category: "autre" },
+  { id: "197", front: "estar en paro", back: "être au chômage", backEn: "to be unemployed", level: "B1", country: "ALL", category: "autre" },
+  { id: "198", front: "nochevieja", back: "réveillon", backEn: "New Year's Eve", level: "B1", country: "ALL", category: "autre" },
+  { id: "199", front: "mediados de", back: "mi-", backEn: "mid-", level: "B1", country: "ALL", category: "autre" },
+  { id: "200", front: "delante", back: "devant", backEn: "in front", level: "B1", country: "ALL", category: "autre" },
+  { id: "201", front: "hacia", back: "vers", backEn: "toward", level: "B1", country: "ALL", category: "autre" },
+  { id: "202", front: "cuadrado", back: "carré", backEn: "square", level: "B1", country: "ALL", category: "adjectif" },
+  { id: "203", front: "cualquier", back: "n'importe lequel", backEn: "any", level: "B1", country: "ALL", category: "autre" },
+  { id: "204", front: "pago", back: "paiement", backEn: "payment", level: "B1", country: "ALL", category: "nom" },
 ];
