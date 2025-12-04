@@ -34,18 +34,23 @@ export default function ConversationsPage() {
     }
   }, []);
 
+  const handleLanguageChange = (lang: 'fr' | 'en') => {
+    setLanguage(lang);
+    localStorage.setItem('spanish-sprint-language', lang);
+  };
+
   const texts = {
     fr: {
       title: '💬 Conversations',
       level: 'Niveau',
       country: 'Pays',
-      back: '← Retour à l\'accueil'
+      back: '← Retour'
     },
     en: {
       title: '💬 Conversations',
       level: 'Level',
       country: 'Country',
-      back: '← Back to home'
+      back: '← Back'
     }
   };
 
@@ -79,9 +84,30 @@ export default function ConversationsPage() {
   return (
     <div className="min-h-screen p-8 bg-gray-900 text-white">
       <div className="max-w-4xl mx-auto">
-        <a href="/" className="text-blue-400 hover:text-blue-300 mb-4 inline-block">
-          {t.back}
-        </a>
+        <div className="flex justify-between items-center mb-6">
+          <a href="/" className="text-blue-400 hover:text-blue-300">
+            {t.back}
+          </a>
+          
+          <div className="flex gap-1 bg-gray-900 rounded-lg p-1">
+            <button
+              onClick={() => handleLanguageChange('fr')}
+              className={`px-3 py-1 rounded-md text-sm font-semibold transition ${
+                language === 'fr' ? 'bg-blue-600 text-white' : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              FR
+            </button>
+            <button
+              onClick={() => handleLanguageChange('en')}
+              className={`px-3 py-1 rounded-md text-sm font-semibold transition ${
+                language === 'en' ? 'bg-blue-600 text-white' : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              EN
+            </button>
+          </div>
+        </div>
 
         <h1 className="text-4xl font-bold mb-6 text-center">{t.title}</h1>
 
