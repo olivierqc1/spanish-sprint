@@ -20,6 +20,7 @@ import futuroSimpleIrreg from "./grammar_quizz/futuro_simple_irregulares.json";
 // Ser/Estar
 import serEstar from "./grammar_quizz/ser_estar.json";
 import hayEstar from "./grammar_quizz/hay_estar.json";
+import serVsSentirse from "./grammar_quizz/ser_vs_sentirse.json";
 
 // Verbes
 import reflexivos from "./grammar_quizz/verbos_reflexivos.json";
@@ -112,6 +113,13 @@ export const grammarPoints: GrammarPoint[] = [
     level: "A1",
     note: "Différences entre ser et estar.",
     data: serEstar
+  },
+  {
+    id: "ser_vs_sentirse",
+    title: "SER vs SENTIRSE – Les différences",
+    level: "A2",
+    note: "Différences entre ser (identité) et sentirse (sensation).",
+    data: serVsSentirse
   },
   {
     id: "hay_estar",
