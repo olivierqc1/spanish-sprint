@@ -9,7 +9,6 @@ export default function FlashcardsPage() {
   const [country, setCountry] = useState<Country>('ALL');
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
 
-  // Récupérer les préférences au chargement
   useEffect(() => {
     const savedLanguage = localStorage.getItem('spanish-sprint-language');
     const savedLevel = localStorage.getItem('spanish-sprint-level');
@@ -19,7 +18,6 @@ export default function FlashcardsPage() {
       setLanguage(savedLanguage);
     }
     
-    // Vérifier que savedLevel est un Level valide (A1-C2 ou ALL)
     if (savedLevel) {
       const validLevels: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2', 'ALL'];
       if (validLevels.includes(savedLevel as Level)) {
@@ -27,7 +25,6 @@ export default function FlashcardsPage() {
       }
     }
     
-    // Vérifier que savedCountry est un Country valide
     if (savedCountry) {
       const validCountries: Country[] = ['spain', 'mexico', 'argentina', 'colombia', 'peru', 'chile', 'cuba', 'venezuela', 'ALL'];
       if (validCountries.includes(savedCountry as Country)) {
@@ -36,18 +33,23 @@ export default function FlashcardsPage() {
     }
   }, []);
 
+  const handleLanguageChange = (lang: 'fr' | 'en') => {
+    setLanguage(lang);
+    localStorage.setItem('spanish-sprint-language', lang);
+  };
+
   const texts = {
     fr: {
       title: '🎴 Flashcards',
       level: 'Niveau',
       country: 'Pays',
-      back: '← Retour à l\'accueil'
+      back: '← Retour'
     },
     en: {
       title: '🎴 Flashcards',
       level: 'Level',
       country: 'Country',
-      back: '← Back to home'
+      back: '← Back'
     }
   };
 
@@ -81,14 +83,33 @@ export default function FlashcardsPage() {
   return (
     <div className="min-h-screen p-8 bg-gray-900 text-white">
       <div className="max-w-4xl mx-auto">
-        {/* Back button */}
-        <a href="/" className="text-blue-400 hover:text-blue-300 mb-4 inline-block">
-          {t.back}
-        </a>
+        <div className="flex justify-between items-center mb-6">
+          <a href="/" className="text-blue-400 hover:text-blue-300">
+            {t.back}
+          </a>
+          
+          <div className="flex gap-1 bg-gray-900 rounded-lg p-1">
+            <button
+              onClick={() => handleLanguageChange('fr')}
+              className={`px-3 py-1 rounded-md text-sm font-semibold transition ${
+                language === 'fr' ? 'bg-blue-600 text-white' : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              FR
+            </button>
+            <button
+              onClick={() => handleLanguageChange('en')}
+              className={`px-3 py-1 rounded-md text-sm font-semibold transition ${
+                language === 'en' ? 'bg-blue-600 text-white' : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              EN
+            </button>
+          </div>
+        </div>
 
         <h1 className="text-4xl font-bold mb-6 text-center">{t.title}</h1>
 
-        {/* Mini configuration panel */}
         <div className="bg-slate-800 rounded-xl p-4 mb-6 border border-slate-700">
           <div className="flex flex-wrap gap-4 items-center justify-center">
             <div className="flex items-center gap-2">
@@ -131,7 +152,6 @@ export default function FlashcardsPage() {
           </div>
         </div>
 
-        {/* Flashcards component */}
         <Flashcards level={level} country={country} />
       </div>
     </div>
