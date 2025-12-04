@@ -99,4 +99,124 @@ export const wordsA2 = [
   { id: "98", front: "acordarse", back: "se souvenir", level: "A2", country: "ALL", category: "verbe" },
   { id: "99", front: "enojarse", back: "se fâcher", level: "A2", country: "ALL", category: "verbe" },
   { id: "100", front: "divertirse", back: "s'amuser", level: "A2", country: "ALL", category: "verbe" },
+// ===================================================
+// À AJOUTER À LA FIN DE src/data/words/A2.ts
+// Copie ces lignes AVANT le dernier ]; du fichier
+// ===================================================
+
+  // NOUVEAUX MOTS A2 - Verbes intermédiaires
+  { id: "101", front: "gastar", back: "dépenser", backEn: "to spend", level: "A2", country: "ALL", category: "verbe" },
+  { id: "102", front: "ahorrar", back: "économiser", backEn: "to save", level: "A2", country: "ALL", category: "verbe" },
+  { id: "103", front: "alquilar", back: "louer", backEn: "to rent", level: "A2", country: "ALL", category: "verbe" },
+  { id: "104", front: "bastar", back: "suffire", backEn: "to be enough", level: "A2", country: "ALL", category: "verbe" },
+  { id: "105", front: "bromear", back: "plaisanter", backEn: "to joke", level: "A2", country: "ALL", category: "verbe" },
+  { id: "106", front: "calcular", back: "calculer", backEn: "to calculate", level: "A2", country: "ALL", category: "verbe" },
+  { id: "107", front: "callarse", back: "se taire", backEn: "to be quiet", level: "A2", country: "ALL", category: "verbe" },
+  { id: "108", front: "confiar", back: "faire confiance", backEn: "to trust", level: "A2", country: "ALL", category: "verbe" },
+  { id: "109", front: "elegir", back: "choisir", backEn: "to choose", level: "A2", country: "ALL", category: "verbe" },
+  { id: "110", front: "firmar", back: "signer", backEn: "to sign", level: "A2", country: "ALL", category: "verbe" },
+  { id: "111", front: "apagar", back: "éteindre", backEn: "to turn off", level: "A2", country: "ALL", category: "verbe" },
+  { id: "112", front: "obedecer", back: "obéir", backEn: "to obey", level: "A2", country: "ALL", category: "verbe" },
+  { id: "113", front: "negar", back: "nier", backEn: "to deny", level: "A2", country: "ALL", category: "verbe" },
+  { id: "114", front: "mezclar", back: "mélanger", backEn: "to mix", level: "A2", country: "ALL", category: "verbe" },
+  { id: "115", front: "reducir", back: "réduire", backEn: "to reduce", level: "A2", country: "ALL", category: "verbe" },
+  { id: "116", front: "saltar", back: "sauter", backEn: "to jump", level: "A2", country: "ALL", category: "verbe" },
+  { id: "117", front: "charlar", back: "bavarder", backEn: "to chat", level: "A2", country: "ALL", category: "verbe" },
+  { id: "118", front: "rascar", back: "gratter", backEn: "to scratch", level: "A2", country: "ALL", category: "verbe" },
+  { id: "119", front: "montar", back: "monter", backEn: "to ride", level: "A2", country: "ALL", category: "verbe" },
+  { id: "120", front: "prestar", back: "prêter", backEn: "to lend", level: "A2", country: "ALL", category: "verbe" },
+  { id: "121", front: "navegar", back: "naviguer", backEn: "to navigate", level: "A2", country: "ALL", category: "verbe" },
+  { id: "122", front: "abrazar", back: "embrasser", backEn: "to hug", level: "A2", country: "ALL", category: "verbe" },
+  { id: "123", front: "odiar", back: "détester", backEn: "to hate", level: "A2", country: "ALL", category: "verbe" },
+  { id: "124", front: "soltar", back: "lâcher", backEn: "to let go", level: "A2", country: "ALL", category: "verbe" },
+  { id: "125", front: "nevar", back: "neiger", backEn: "to snow", level: "A2", country: "ALL", category: "verbe" },
+  { id: "126", front: "tronar", back: "tonner", backEn: "to thunder", level: "A2", country: "ALL", category: "verbe" },
+  { id: "127", front: "costar", back: "coûter", backEn: "to cost", level: "A2", country: "ALL", category: "verbe" },
+  { id: "128", front: "mudarse", back: "déménager", backEn: "to move", level: "A2", country: "ALL", category: "verbe" },
+  { id: "129", front: "coger", back: "prendre", backEn: "to take", level: "A2", country: "ALL", category: "verbe" },
+
+  // Professions
+  { id: "130", front: "bombero/a", back: "pompier", backEn: "firefighter", level: "A2", country: "ALL", category: "nom" },
+  { id: "131", front: "electricista", back: "électricien", backEn: "electrician", level: "A2", country: "ALL", category: "nom" },
+  { id: "132", front: "carpintero/a", back: "charpentier", backEn: "carpenter", level: "A2", country: "ALL", category: "nom" },
+  { id: "133", front: "fontanero/a", back: "plombier", backEn: "plumber", level: "A2", country: "ALL", category: "nom" },
+  { id: "134", front: "peluquero/a", back: "coiffeur", backEn: "hairdresser", level: "A2", country: "ALL", category: "nom" },
+  { id: "135", front: "panadero/a", back: "boulanger", backEn: "baker", level: "A2", country: "ALL", category: "nom" },
+  { id: "136", front: "carnicero/a", back: "boucher", backEn: "butcher", level: "A2", country: "ALL", category: "nom" },
+  { id: "137", front: "cajero/a", back: "caissier", backEn: "cashier", level: "A2", country: "ALL", category: "nom" },
+  { id: "138", front: "cartero/a", back: "facteur", backEn: "mail carrier", level: "A2", country: "ALL", category: "nom" },
+  { id: "139", front: "periodista", back: "journaliste", backEn: "journalist", level: "A2", country: "ALL", category: "nom" },
+  { id: "140", front: "programador/a", back: "programmeur", backEn: "programmer", level: "A2", country: "ALL", category: "nom" },
+  { id: "141", front: "mecánico/a", back: "mécanicien", backEn: "mechanic", level: "A2", country: "ALL", category: "nom" },
+  { id: "142", front: "pintor/a", back: "peintre", backEn: "painter", level: "A2", country: "ALL", category: "nom" },
+
+  // Ville et lieux
+  { id: "143", front: "semáforo", back: "feu de signalisation", backEn: "traffic light", level: "A2", country: "ALL", category: "nom" },
+  { id: "144", front: "peatón", back: "piéton", backEn: "pedestrian", level: "A2", country: "ALL", category: "nom" },
+  { id: "145", front: "esquina", back: "coin de rue", backEn: "corner", level: "A2", country: "ALL", category: "nom" },
+  { id: "146", front: "acera", back: "trottoir", backEn: "sidewalk", level: "A2", country: "ALL", category: "nom" },
+  { id: "147", front: "mercado", back: "marché", backEn: "market", level: "A2", country: "ALL", category: "nom" },
+  { id: "148", front: "rascacielos", back: "gratte-ciel", backEn: "skyscraper", level: "A2", country: "ALL", category: "nom" },
+  { id: "149", front: "bosque", back: "forêt", backEn: "forest", level: "A2", country: "ALL", category: "nom" },
+  { id: "150", front: "fuente", back: "fontaine", backEn: "fountain", level: "A2", country: "ALL", category: "nom" },
+  { id: "151", front: "catarata", back: "cascade", backEn: "waterfall", level: "A2", country: "ALL", category: "nom" },
+
+  // Météo
+  { id: "152", front: "lluvia", back: "pluie", backEn: "rain", level: "A2", country: "ALL", category: "nom" },
+  { id: "153", front: "nube", back: "nuage", backEn: "cloud", level: "A2", country: "ALL", category: "nom" },
+  { id: "154", front: "tormenta", back: "tempête", backEn: "storm", level: "A2", country: "ALL", category: "nom" },
+  { id: "155", front: "granizo", back: "grêle", backEn: "hail", level: "A2", country: "ALL", category: "nom" },
+  { id: "156", front: "trueno", back: "tonnerre", backEn: "thunder", level: "A2", country: "ALL", category: "nom" },
+  { id: "157", front: "relámpago", back: "éclair", backEn: "lightning", level: "A2", country: "ALL", category: "nom" },
+
+  // Vêtements et accessoires
+  { id: "158", front: "cinturón", back: "ceinture", backEn: "belt", level: "A2", country: "ALL", category: "nom" },
+  { id: "159", front: "corbata", back: "cravate", backEn: "tie", level: "A2", country: "ALL", category: "nom" },
+  { id: "160", front: "pulsera", back: "bracelet", backEn: "bracelet", level: "A2", country: "ALL", category: "nom" },
+  { id: "161", front: "monedero", back: "porte-monnaie", backEn: "wallet", level: "A2", country: "ALL", category: "nom" },
+  { id: "162", front: "chancla", back: "tong", backEn: "flip-flop", level: "A2", country: "ALL", category: "nom" },
+  { id: "163", front: "traje", back: "costume", backEn: "suit", level: "A2", country: "ALL", category: "nom" },
+  { id: "164", front: "vestido", back: "robe", backEn: "dress", level: "A2", country: "ALL", category: "nom" },
+  { id: "165", front: "gorro", back: "bonnet", backEn: "beanie", level: "A2", country: "ALL", category: "nom" },
+  { id: "166", front: "pantufla", back: "pantoufle", backEn: "slipper", level: "A2", country: "ALL", category: "nom" },
+  { id: "167", front: "tacón", back: "talon", backEn: "heel", level: "A2", country: "ALL", category: "nom" },
+
+  // Famille
+  { id: "168", front: "sobrino/a", back: "neveu/nièce", backEn: "nephew/niece", level: "A2", country: "ALL", category: "nom" },
+  { id: "169", front: "nieto/a", back: "petit-fils/petite-fille", backEn: "grandson/granddaughter", level: "A2", country: "ALL", category: "nom" },
+  { id: "170", front: "novio/a", back: "petit(e) ami(e)", backEn: "boyfriend/girlfriend", level: "A2", country: "ALL", category: "nom" },
+
+  // Objets divers
+  { id: "171", front: "secador de pelo", back: "sèche-cheveux", backEn: "hair dryer", level: "A2", country: "ALL", category: "nom" },
+  { id: "172", front: "estuche", back: "trousse", backEn: "pencil case", level: "A2", country: "ALL", category: "nom" },
+  { id: "173", front: "papelera", back: "poubelle", backEn: "trash can", level: "A2", country: "ALL", category: "nom" },
+  { id: "174", front: "revista", back: "revue", backEn: "magazine", level: "A2", country: "ALL", category: "nom" },
+  { id: "175", front: "boda", back: "mariage", backEn: "wedding", level: "A2", country: "ALL", category: "nom" },
+  { id: "176", front: "regalo", back: "cadeau", backEn: "gift", level: "A2", country: "ALL", category: "nom" },
+  { id: "177", front: "sueño", back: "rêve", backEn: "dream", level: "A2", country: "ALL", category: "nom" },
+  { id: "178", front: "broma", back: "blague", backEn: "joke", level: "A2", country: "ALL", category: "nom" },
+
+  // Autres mots utiles
+  { id: "179", front: "videojuego", back: "jeu vidéo", backEn: "video game", level: "A2", country: "ALL", category: "nom" },
+  { id: "180", front: "baile", back: "danse", backEn: "dance", level: "A2", country: "ALL", category: "nom" },
+  { id: "181", front: "curso", back: "cours", backEn: "course", level: "A2", country: "ALL", category: "nom" },
+  { id: "182", front: "diario", back: "journal", backEn: "diary", level: "A2", country: "ALL", category: "nom" },
+  { id: "183", front: "verdad", back: "vérité", backEn: "truth", level: "A2", country: "ALL", category: "nom" },
+
+  // Directions
+  { id: "184", front: "norte", back: "nord", backEn: "north", level: "A2", country: "ALL", category: "nom" },
+  { id: "185", front: "sur", back: "sud", backEn: "south", level: "A2", country: "ALL", category: "nom" },
+  { id: "186", front: "oeste", back: "ouest", backEn: "west", level: "A2", country: "ALL", category: "nom" },
+
+  // Adjectifs
+  { id: "187", front: "nublado", back: "nuageux", backEn: "cloudy", level: "A2", country: "ALL", category: "adjectif" },
+  { id: "188", front: "oscuro", back: "sombre", backEn: "dark", level: "A2", country: "ALL", category: "adjectif" },
+  { id: "189", front: "temprano", back: "tôt", backEn: "early", level: "A2", country: "ALL", category: "adjectif" },
+
+  // Expressions
+  { id: "190", front: "a menudo", back: "souvent", backEn: "often", level: "A2", country: "ALL", category: "autre" },
+  { id: "191", front: "mientras", back: "pendant que", backEn: "while", level: "A2", country: "ALL", category: "autre" },
+  { id: "192", front: "anoche", back: "hier soir", backEn: "last night", level: "A2", country: "ALL", category: "autre" },
+  { id: "193", front: "todavía", back: "encore", backEn: "still", level: "A2", country: "ALL", category: "autre" },
+  { id: "194", front: "demasiado", back: "trop", backEn: "too much", level: "A2", country: "ALL", category: "autre" },
 ];
