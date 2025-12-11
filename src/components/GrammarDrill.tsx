@@ -177,7 +177,7 @@ export default function GrammarDrill({ title, note, drills, onClose, language = 
   // Écran initial avec l'explication complète - VERSION TRÈS AÉRÉE
   if (!hasStarted && displayNote) {
     return (
-      <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4 overflow-y-auto"><div className="bg-gray-800 rounded-2xl p-8 max-w-4xl w-full my-8">
+      <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4 overflow-y-auto"> <div className="bg-gray-800 rounded-2xl p-8 max-w-4xl w-full my-8">
           <div className="flex justify-between items-start mb-8">
             <h2 className="text-3xl font-bold text-white">{displayTitle}</h2>
             <button onClick={onClose} className="text-gray-400 hover:text-white text-3xl leading-none">×</button>
