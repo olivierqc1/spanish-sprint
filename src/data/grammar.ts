@@ -11,6 +11,7 @@ import presenteProgresivo from "./grammar_quizz/presente_progresivo.json";
 import imperfecto from "./grammar_quizz/imperfecto.json";
 import preteritoIndefinidoReg from "./grammar_quizz/preterito_indefinido_regulares.json";
 import preteritoIndefinidoIrreg from "./grammar_quizz/preterito_indefinido_irregulares.json";
+import preteritoIrregularesBilingual from "./grammar_quizz/preterito_irregulares_bilingual.json";
 import pasadosComparacion from "./grammar_quizz/pasados_comparacion.json";
 
 // Futur
@@ -76,9 +77,9 @@ import weather from "./grammar_quizz/weather.json";
 // --- TYPE ---
 export type GrammarPoint = {
   id: string;
-  title: string;
+  title: string | { fr: string; en: string };
   level: "A1" | "A2" | "B1" | "A1-A2" | "A2-B1";
-  note?: string;
+  note?: string | { fr: string; en: string };
   data: any;
 };
 
@@ -181,6 +182,16 @@ export const grammarPoints: GrammarPoint[] = [
     level: "A2",
     note: "Radicaux irréguliers.",
     data: preteritoIndefinidoIrreg
+  },
+  {
+    id: "preterito_irregulares_bilingual",
+    title: {
+      fr: "Passé simple – Verbes irréguliers (visuel)",
+      en: "Preterite – Irregular verbs (visual)"
+    },
+    level: "A2",
+    note: "Version détaillée avec tableaux visuels et explications complètes FR/EN.",
+    data: preteritoIrregularesBilingual
   },
 
   // ========== FUTUR ==========
