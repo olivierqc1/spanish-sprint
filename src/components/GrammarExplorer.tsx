@@ -15,7 +15,7 @@ export default function GrammarExplorer({ points = [], initialLevel = "A1" }: Pr
 
   // Charger la langue depuis localStorage
   useEffect(() => {
-    const saved = localStorage.getItem('grammarLanguage');
+    const saved = localStorage.getItem('spanish-sprint-language');
     if (saved === 'en' || saved === 'fr') {
       setLanguage(saved);
     }
@@ -24,7 +24,15 @@ export default function GrammarExplorer({ points = [], initialLevel = "A1" }: Pr
   // Sauvegarder la langue dans localStorage
   const handleLanguageChange = (lang: 'fr' | 'en') => {
     setLanguage(lang);
-    localStorage.setItem('grammarLanguage', lang);
+    localStorage.setItem('spanish-sprint-language', lang);
+  };
+
+  // Helper pour obtenir le texte dans la bonne langue
+  const getText = (value: any): string => {
+    if (!value) return '';
+    if (typeof value === 'string') return value;
+    if (typeof value === 'object' && value[language]) return value[language];
+    return value.fr || value.en || '';
   };
 
   const pool = useMemo(
@@ -114,10 +122,10 @@ export default function GrammarExplorer({ points = [], initialLevel = "A1" }: Pr
             <div key={point.id} className="bg-gray-800 rounded-lg p-4 hover:bg-gray-750 transition">
               <div className="flex justify-between items-start gap-4">
                 <div className="flex-1">
-                  <strong className="text-base block mb-1">{point.title}</strong>
+                  <strong className="text-base block mb-1">{getText(point.title)}</strong>
                   {point.note && (
                     <div className="text-gray-400 text-sm line-clamp-2">
-                      {point.note.substring(0, 100)}...
+                      {getText(point.note).substring(0, 100)}...
                     </div>
                   )}
                   {point.data?.drills && (
