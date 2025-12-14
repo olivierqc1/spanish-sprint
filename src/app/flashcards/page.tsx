@@ -152,7 +152,7 @@ export default function FlashcardsPage() {
           </div>
         </div>
 
-        <Flashcards level={level} country={country} />
+        <Flashcards level={level} country={country} language={language} />
       </div>
     </div>
   );
