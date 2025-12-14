@@ -9,27 +9,16 @@ type Props = {
   language?: 'fr' | 'en';
 };
 
-export default function GrammarExplorer({ points = [], initialLevel = "A1", language: propLanguage }: Props) {
+export default function GrammarExplorer({ points = [], initialLevel = "A1", language: propLanguage = 'fr' }: Props) {
   const [level, setLevel] = useState<GrammarPoint["level"]>(initialLevel);
   const [activeExercise, setActiveExercise] = useState<GrammarPoint | null>(null);
-  const [language, setLanguage] = useState<'fr' | 'en'>('fr');
-
-  // Charger la langue depuis localStorage OU depuis la prop
-  useEffect(() => {
-    if (propLanguage) {
-      setLanguage(propLanguage);
-    } else {
-      const saved = localStorage.getItem('spanish-sprint-language');
-      if (saved === 'en' || saved === 'fr') {
-        setLanguage(saved);
-      }
-    }
-  }, [propLanguage]);
+  
+  // Utiliser directement la prop au lieu d'un state local
+  const language = propLanguage;
 
   // Sauvegarder la langue dans localStorage
   const handleLanguageChange = (lang: 'fr' | 'en') => {
-    setLanguage(lang);
-    localStorage.setItem('spanish-sprint-language', lang);
+    // Cette fonction n'est plus utilisée - le toggle est dans la page parent
   };
 
   // Helper pour obtenir le texte dans la bonne langue
@@ -82,30 +71,6 @@ export default function GrammarExplorer({ points = [], initialLevel = "A1", lang
         <strong className="text-xl">{t.title}</strong>
         
         <div className="flex items-center gap-3">
-          {/* Sélecteur de langue */}
-          <div className="flex gap-1 bg-gray-900 rounded-lg p-1">
-            <button
-              onClick={() => handleLanguageChange('fr')}
-              className={`px-3 py-1 rounded-md text-sm font-semibold transition ${
-                language === 'fr' 
-                  ? 'bg-blue-600 text-white' 
-                  : 'text-gray-400 hover:text-white'
-              }`}
-            >
-              FR
-            </button>
-            <button
-              onClick={() => handleLanguageChange('en')}
-              className={`px-3 py-1 rounded-md text-sm font-semibold transition ${
-                language === 'en' 
-                  ? 'bg-blue-600 text-white' 
-                  : 'text-gray-400 hover:text-white'
-              }`}
-            >
-              EN
-            </button>
-          </div>
-
           {/* Sélecteur de niveau */}
           <select 
             value={level ?? "A1"} 
