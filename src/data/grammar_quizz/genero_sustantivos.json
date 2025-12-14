@@ -1,8 +1,14 @@
 {
   "id": "genero_sustantivos",
-  "title": "Genre des noms (el / la)",
+  "title": {
+    "fr": "Genre des noms (el / la)",
+    "en": "Gender of nouns (el / la)"
+  },
   "level": "A1",
-  "note": "⚙️ En espagnol, tous les noms ont un **genre grammatical** : masculin ou féminin. Il influence les articles, adjectifs et pronoms.\n\n🔹 **Règles générales :**\n- Les mots terminés par **-o** sont généralement **masculins** : *el libro, el chico.*\n- Les mots terminés par **-a** sont généralement **féminins** : *la casa, la chica.*\n\n🔹 **Exceptions fréquentes :**\n- *el día, el mapa, el problema* (masculins malgré le -a)\n- *la mano, la radio* (féminins malgré le -o)\n\n🔹 **Autres terminaisons fréquentes :**\n- Masculins : -ma, -or, -aje, -án, -ambre → *el idioma, el amor, el viaje*\n- Féminins : -ción, -sión, -dad, -tad, -umbre → *la canción, la decisión, la libertad*\n\n💡 **Astuce :** les noms d’arbres et de jours sont masculins (*el lunes, el manzano*), les lettres et les sciences sont féminines (*la A, la química*).",
+  "note": {
+    "fr": "⚙️ En espagnol, tous les noms ont un **genre grammatical** : masculin ou féminin. Il influence les articles, adjectifs et pronoms.\n\n🔹 **Règles générales :**\n- Les mots terminés par **-o** sont généralement **masculins** : *el libro, el chico.*\n- Les mots terminés par **-a** sont généralement **féminins** : *la casa, la chica.*\n\n🔹 **Exceptions fréquentes :**\n- *el día, el mapa, el problema* (masculins malgré le -a)\n- *la mano, la radio* (féminins malgré le -o)\n\n🔹 **Autres terminaisons fréquentes :**\n- Masculins : -ma, -or, -aje, -án, -ambre → *el idioma, el amor, el viaje*\n- Féminins : -ción, -sión, -dad, -tad, -umbre → *la canción, la decisión, la libertad*\n\n💡 **Astuce :** les noms d'arbres et de jours sont masculins (*el lunes, el manzano*), les lettres et les sciences sont féminines (*la A, la química*).",
+    "en": "⚙️ In Spanish, all nouns have a **grammatical gender**: masculine or feminine. It influences articles, adjectives, and pronouns.\n\n🔹 **General rules:**\n- Words ending in **-o** are generally **masculine**: *el libro, el chico.*\n- Words ending in **-a** are generally **feminine**: *la casa, la chica.*\n\n🔹 **Common exceptions:**\n- *el día, el mapa, el problema* (masculine despite the -a)\n- *la mano, la radio* (feminine despite the -o)\n\n🔹 **Other common endings:**\n- Masculine: -ma, -or, -aje, -án, -ambre → *el idioma, el amor, el viaje*\n- Feminine: -ción, -sión, -dad, -tad, -umbre → *la canción, la decisión, la libertad*\n\n💡 **Tip:** tree names and days are masculine (*el lunes, el manzano*), letters and sciences are feminine (*la A, la química*)."
+  },
   "drills": [
     { "prompt": "___ libro (livre)", "answer": "el" },
     { "prompt": "___ casa (maison)", "answer": "la" },
