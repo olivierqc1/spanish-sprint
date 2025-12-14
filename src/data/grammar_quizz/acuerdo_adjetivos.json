@@ -1,8 +1,14 @@
 {
   "id": "acuerdo_adjetivos",
-  "title": "Accord des adjectifs",
+  "title": {
+    "fr": "Accord des adjectifs",
+    "en": "Agreement of adjectives"
+  },
   "level": "A1",
-  "note": "⚙️ En espagnol, les **adjectifs** s’accordent en **genre** (masculin/féminin) et en **nombre** (singulier/pluriel) avec le nom qu’ils qualifient.\n\n🔹 **Règles de base :**\n- Masculin singulier → terminaison en *-o* : *un chico alto*\n- Féminin singulier → *-a* : *una chica alta*\n- Masculin pluriel → *-os* : *chicos altos*\n- Féminin pluriel → *-as* : *chicas altas*\n\n🔹 **Adjectifs invariables :**\nLes adjectifs se terminant par *-e* ou une consonne ne changent pas de genre, seulement de nombre : *un coche grande → una casa grande*, *un hombre feliz → unas mujeres felices*\n\n💡 **Astuce :** l’adjectif suit presque toujours le nom : *una casa bonita*, *unos chicos simpáticos*.",
+  "note": {
+    "fr": "⚙️ En espagnol, les **adjectifs** s'accordent en **genre** (masculin/féminin) et en **nombre** (singulier/pluriel) avec le nom qu'ils qualifient.\n\n🔹 **Règles de base :**\n- Masculin singulier → terminaison en *-o* : *un chico alto*\n- Féminin singulier → *-a* : *una chica alta*\n- Masculin pluriel → *-os* : *chicos altos*\n- Féminin pluriel → *-as* : *chicas altas*\n\n🔹 **Adjectifs invariables :**\nLes adjectifs se terminant par *-e* ou une consonne ne changent pas de genre, seulement de nombre : *un coche grande → una casa grande*, *un hombre feliz → unas mujeres felices*\n\n💡 **Astuce :** l'adjectif suit presque toujours le nom : *una casa bonita*, *unos chicos simpáticos*.",
+    "en": "⚙️ In Spanish, **adjectives** agree in **gender** (masculine/feminine) and **number** (singular/plural) with the noun they modify.\n\n🔹 **Basic rules:**\n- Masculine singular → ending in *-o*: *un chico alto*\n- Feminine singular → *-a*: *una chica alta*\n- Masculine plural → *-os*: *chicos altos*\n- Feminine plural → *-as*: *chicas altas*\n\n🔹 **Invariable adjectives:**\nAdjectives ending in *-e* or a consonant don't change gender, only number: *un coche grande → una casa grande*, *un hombre feliz → unas mujeres felices*\n\n💡 **Tip:** the adjective almost always follows the noun: *una casa bonita*, *unos chicos simpáticos*."
+  },
   "drills": [
     { "prompt": "un chico ___ (haut)", "answer": "alto" },
     { "prompt": "una chica ___ (haute)", "answer": "alta" },
