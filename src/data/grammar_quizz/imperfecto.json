@@ -1,8 +1,14 @@
 {
   "id": "imperfecto",
-  "title": "Imparfait – actions habituelles et descriptions",
+  "title": {
+    "fr": "Imparfait – actions habituelles et descriptions",
+    "en": "Imperfect – habitual actions and descriptions"
+  },
   "level": "A2",
-  "note": "⚙️ L’**imparfait (pretérito imperfecto)** sert à décrire une action passée **habituelle**, **non terminée**, ou à **décrire une situation, un état ou une habitude** dans le passé.\n\n🔹 **Terminaisons régulières :**\n- **-ar** : aba, abas, aba, ábamos, abais, aban → *hablar → hablaba, hablabas, hablaba...*\n- **-er / -ir** : ía, ías, ía, íamos, íais, ían → *comer → comía, comías... / vivir → vivía...*\n\n🔹 **Trois verbes irréguliers seulement :**\n- **ser → era, eras, era, éramos, erais, eran**\n- **ir → iba, ibas, iba, íbamos, ibais, iban**\n- **ver → veía, veías, veía, veíamos, veíais, veían**\n\n💡 **Remarques :**\n- Souvent utilisé avec : *antes, siempre, todos los días, cuando era niño, mientras...*\n- Sert à décrire le contexte pendant qu’un autre verbe au passé simple exprime l’action principale.",
+  "note": {
+    "fr": "⚙️ L'**imparfait (pretérito imperfecto)** sert à décrire une action passée **habituelle**, **non terminée**, ou à **décrire une situation, un état ou une habitude** dans le passé.\n\n🔹 **Terminaisons régulières :**\n- **-ar** : aba, abas, aba, ábamos, abais, aban → *hablar → hablaba, hablabas, hablaba...*\n- **-er / -ir** : ía, ías, ía, íamos, íais, ían → *comer → comía, comías... / vivir → vivía...*\n\n🔹 **Trois verbes irréguliers seulement :**\n- **ser → era, eras, era, éramos, erais, eran**\n- **ir → iba, ibas, iba, íbamos, ibais, iban**\n- **ver → veía, veías, veía, veíamos, veíais, veían**\n\n💡 **Remarques :**\n- Souvent utilisé avec : *antes, siempre, todos los días, cuando era niño, mientras...*\n- Sert à décrire le contexte pendant qu'un autre verbe au passé simple exprime l'action principale.",
+    "en": "⚙️ The **imperfect (pretérito imperfecto)** is used to describe a **habitual** past action, an **unfinished** action, or to **describe a situation, state, or habit** in the past.\n\n🔹 **Regular endings:**\n- **-ar**: aba, abas, aba, ábamos, abais, aban → *hablar → hablaba, hablabas, hablaba...*\n- **-er / -ir**: ía, ías, ía, íamos, íais, ían → *comer → comía, comías... / vivir → vivía...*\n\n🔹 **Only three irregular verbs:**\n- **ser → era, eras, era, éramos, erais, eran**\n- **ir → iba, ibas, iba, íbamos, ibais, iban**\n- **ver → veía, veías, veía, veíamos, veíais, veían**\n\n💡 **Notes:**\n- Often used with: *antes, siempre, todos los días, cuando era niño, mientras...*\n- Used to describe the context while another verb in the preterite expresses the main action."
+  },
   "drills": [
     { "prompt": "Cuando era niño, yo ___ mucho con mis amigos. (jugar)", "answer": "jugaba" },
     { "prompt": "Antes tú ___ en Madrid. (vivir)", "answer": "vivías" },
