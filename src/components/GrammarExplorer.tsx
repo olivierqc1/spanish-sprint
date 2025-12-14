@@ -6,20 +6,25 @@ import GrammarDrill from "./GrammarDrill";
 type Props = {
   points?: GrammarPoint[];
   initialLevel?: GrammarPoint["level"];
+  language?: 'fr' | 'en';
 };
 
-export default function GrammarExplorer({ points = [], initialLevel = "A1" }: Props) {
+export default function GrammarExplorer({ points = [], initialLevel = "A1", language: propLanguage }: Props) {
   const [level, setLevel] = useState<GrammarPoint["level"]>(initialLevel);
   const [activeExercise, setActiveExercise] = useState<GrammarPoint | null>(null);
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
 
-  // Charger la langue depuis localStorage
+  // Charger la langue depuis localStorage OU depuis la prop
   useEffect(() => {
-    const saved = localStorage.getItem('spanish-sprint-language');
-    if (saved === 'en' || saved === 'fr') {
-      setLanguage(saved);
+    if (propLanguage) {
+      setLanguage(propLanguage);
+    } else {
+      const saved = localStorage.getItem('spanish-sprint-language');
+      if (saved === 'en' || saved === 'fr') {
+        setLanguage(saved);
+      }
     }
-  }, []);
+  }, [propLanguage]);
 
   // Sauvegarder la langue dans localStorage
   const handleLanguageChange = (lang: 'fr' | 'en') => {
