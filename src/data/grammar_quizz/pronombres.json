@@ -1,8 +1,14 @@
 {
   "id": "pronombres",
-  "title": "Pronoms personnels sujets",
+  "title": {
+    "fr": "Pronoms personnels sujets",
+    "en": "Subject personal pronouns"
+  },
   "level": "A1",
-  "note": "⚙️ Les **pronoms personnels sujets** remplacent le nom de la personne qui fait l'action. En espagnol, ils sont souvent omis car la terminaison du verbe indique déjà la personne.\n\n🔹 **Liste complète :**\n- **yo** → je\n- **tú** → tu (familier)\n- **él / ella / usted** → il / elle / vous (formel)\n- **nosotros / nosotras** → nous\n- **vosotros / vosotras** → vous (pluriel familier, Espagne)\n- **ellos / ellas / ustedes** → ils / elles / vous (pluriel formel)\n\n💡 **Remarques importantes :**\n1. En espagnol, on omet souvent le pronom sujet : *Hablo español* = Je parle espagnol\n2. On l'utilise pour **insister** ou **clarifier** : *Yo hablo español, pero tú hablas francés.*\n3. **Usted / ustedes** sont des formes de politesse et se conjuguent comme la 3ᵉ personne\n4. **Vosotros** s'utilise principalement en Espagne ; en Amérique latine, on utilise **ustedes**",
+  "note": {
+    "fr": "⚙️ Les **pronoms personnels sujets** remplacent le nom de la personne qui fait l'action. En espagnol, ils sont souvent omis car la terminaison du verbe indique déjà la personne.\n\n🔹 **Liste complète :**\n- **yo** → je\n- **tú** → tu (familier)\n- **él / ella / usted** → il / elle / vous (formel)\n- **nosotros / nosotras** → nous\n- **vosotros / vosotras** → vous (pluriel familier, Espagne)\n- **ellos / ellas / ustedes** → ils / elles / vous (pluriel formel)\n\n💡 **Remarques importantes :**\n1. En espagnol, on omet souvent le pronom sujet : *Hablo español* = Je parle espagnol\n2. On l'utilise pour **insister** ou **clarifier** : *Yo hablo español, pero tú hablas francés.*\n3. **Usted / ustedes** sont des formes de politesse et se conjuguent comme la 3ᵉ personne\n4. **Vosotros** s'utilise principalement en Espagne ; en Amérique latine, on utilise **ustedes**",
+    "en": "⚙️ **Subject personal pronouns** replace the name of the person doing the action. In Spanish, they are often omitted because the verb ending already indicates the person.\n\n🔹 **Complete list:**\n- **yo** → I\n- **tú** → you (informal)\n- **él / ella / usted** → he / she / you (formal)\n- **nosotros / nosotras** → we\n- **vosotros / vosotras** → you (plural informal, Spain)\n- **ellos / ellas / ustedes** → they / you (plural formal)\n\n💡 **Important notes:**\n1. In Spanish, the subject pronoun is often omitted: *Hablo español* = I speak Spanish\n2. It's used to **emphasize** or **clarify**: *Yo hablo español, pero tú hablas francés.*\n3. **Usted / ustedes** are polite forms and conjugate like the 3rd person\n4. **Vosotros** is mainly used in Spain; in Latin America, **ustedes** is used"
+  },
   "drills": [
     { "prompt": "___ hablo español. (je)", "answer": "Yo" },
     { "prompt": "___ estudias medicina. (tu)", "answer": "Tú" },
