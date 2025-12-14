@@ -1,8 +1,14 @@
 {
   "id": "demostrativos",
-  "title": "Les démonstratifs (este, ese, aquel)",
+  "title": {
+    "fr": "Les démonstratifs (este, ese, aquel)",
+    "en": "Demonstratives (este, ese, aquel)"
+  },
   "level": "A1",
-  "note": "⚙️ Les **adjectifs démonstratifs** servent à indiquer la **distance** entre la personne qui parle et l’objet ou la personne désignée.\n\n🔹 **Formes :**\n| Proximité | Masculin singulier | Féminin singulier | Masculin pluriel | Féminin pluriel |\n|------------|--------------------|-------------------|------------------|-----------------|\n| Près (ici) | este | esta | estos | estas |\n| Moyen (là) | ese | esa | esos | esas |\n| Loin (là-bas) | aquel | aquella | aquellos | aquellas |\n\n💡 **Règles d’usage :**\n- **este / esta** → près du locuteur : *este libro (ce livre-ci)*\n- **ese / esa** → près de l’interlocuteur : *esa mesa (cette table-là)*\n- **aquel / aquella** → loin des deux : *aquel coche (cette voiture là-bas)*\n- S’accordent en genre et en nombre avec le nom.\n- Les pronoms démonstratifs s’écrivent **sans accent** aujourd’hui (*éste → este*).",
+  "note": {
+    "fr": "⚙️ Les **adjectifs démonstratifs** servent à indiquer la **distance** entre la personne qui parle et l'objet ou la personne désignée.\n\n🔹 **Formes :**\n| Proximité | Masculin singulier | Féminin singulier | Masculin pluriel | Féminin pluriel |\n|------------|--------------------|-------------------|------------------|-----------------|\n| Près (ici) | este | esta | estos | estas |\n| Moyen (là) | ese | esa | esos | esas |\n| Loin (là-bas) | aquel | aquella | aquellos | aquellas |\n\n💡 **Règles d'usage :**\n- **este / esta** → près du locuteur : *este libro (ce livre-ci)*\n- **ese / esa** → près de l'interlocuteur : *esa mesa (cette table-là)*\n- **aquel / aquella** → loin des deux : *aquel coche (cette voiture là-bas)*\n- S'accordent en genre et en nombre avec le nom.\n- Les pronoms démonstratifs s'écrivent **sans accent** aujourd'hui (*éste → este*).",
+    "en": "⚙️ **Demonstrative adjectives** indicate the **distance** between the speaker and the object or person being referred to.\n\n🔹 **Forms:**\n| Proximity | Masculine singular | Feminine singular | Masculine plural | Feminine plural |\n|------------|--------------------|-------------------|------------------|-----------------|\n| Near (here) | este | esta | estos | estas |\n| Medium (there) | ese | esa | esos | esas |\n| Far (over there) | aquel | aquella | aquellos | aquellas |\n\n💡 **Usage rules:**\n- **este / esta** → near the speaker: *este libro (this book)*\n- **ese / esa** → near the listener: *esa mesa (that table)*\n- **aquel / aquella** → far from both: *aquel coche (that car over there)*\n- They agree in gender and number with the noun.\n- Demonstrative pronouns are written **without accent** today (*éste → este*)."
+  },
   "drills": [
     { "prompt": "___ libro está aquí. (près, masculin singulier)", "answer": "Este" },
     { "prompt": "___ casa es muy bonita. (près, féminin singulier)", "answer": "Esta" },
