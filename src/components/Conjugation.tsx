@@ -282,7 +282,7 @@ export default function Conjugation({ level, country }: ConjugationProps) {
           ? Math.max(0, newProgress[existingIndex].failures - 1) 
           : newProgress[existingIndex].failures + 1,
         lastAttempt: new Date(),
-      };
+};
     } else {
       newProgress.push({
         tense: currentExercise.tense,
@@ -524,4 +524,45 @@ export default function Conjugation({ level, country }: ConjugationProps) {
                     onChange={(e) => setUserAnswer(e.target.value)}
                     onKeyPress={(e) => e.key === 'Enter' && checkAnswer()}
                     placeholder={t.yourAnswer}
-                    className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg
+                    className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white text-center text-xl focus:border-blue-500 focus:outline-none mb-4"
+                    autoFocus
+                  />
+                  <button
+                    onClick={checkAnswer}
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition"
+                  >
+                    {t.check}
+                  </button>
+                </>
+              ) : (
+                <>
+                  <div className={`p-4 rounded-lg mb-4 text-center ${
+                    isCorrect ? 'bg-green-900 bg-opacity-30 border border-green-600' : 'bg-red-900 bg-opacity-30 border border-red-600'
+                  }`}>
+                    <div className="text-2xl mb-2">
+                      {isCorrect ? t.correct : t.incorrect}
+                    </div>
+                    {!isCorrect && (
+                      <div>
+                        <div className="text-slate-400 text-sm">{t.correctAnswer}:</div>
+                        <div className="text-xl font-bold text-green-400">
+                          {getConjugatedForm(currentExercise.verbType, currentExercise.pronoun, currentExercise.tense)}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  <button
+                    onClick={generateExercise}
+                    className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg transition"
+                  >
+                    {t.next} →
+                  </button>
+                </>
+              )}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
