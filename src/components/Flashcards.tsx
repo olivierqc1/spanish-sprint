@@ -7,7 +7,6 @@ import type { Level, Country } from "@/components/LevelPicker";
 import { wordsA1 } from "../data/words/A1";
 import { wordsA2 } from "../data/words/A2";
 import { wordsB1 } from "../data/words/B1";
-// Tu pourras ajouter plus tard : import { wordsB2 } from "../data/words/B2"; etc.
 
 type Category = "verbe" | "nom" | "adjectif" | "autre";
 
@@ -15,7 +14,7 @@ export interface Card {
   id: string;
   front: string;
   back: string;
-  backEn?: string;  // Traduction anglaise optionnelle
+  backEn?: string;
   level: string;
   country: string;
   category?: string;
@@ -25,20 +24,25 @@ interface FlashcardsProps {
   level: Level;
   country: Country;
   category?: Category;
+  language?: 'fr' | 'en';  // Ajout prop language
 }
 
-export default function Flashcards({ level, country, category }: FlashcardsProps) {
+export default function Flashcards({ level, country, category, language: propLanguage }: FlashcardsProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
 
-  // Récupérer la langue depuis localStorage
+  // Utiliser la prop si fournie, sinon localStorage
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('spanish-sprint-language');
-    if (savedLanguage === 'fr' || savedLanguage === 'en') {
-      setLanguage(savedLanguage);
+    if (propLanguage) {
+      setLanguage(propLanguage);
+    } else {
+      const savedLanguage = localStorage.getItem('spanish-sprint-language');
+      if (savedLanguage === 'fr' || savedLanguage === 'en') {
+        setLanguage(savedLanguage);
+      }
     }
-  }, []);
+  }, [propLanguage]);
 
   // 🧠 Choix automatique du bon fichier selon le niveau
   let allCards: Card[] = [];
@@ -54,11 +58,8 @@ export default function Flashcards({ level, country, category }: FlashcardsProps
       allCards = wordsB1;
       break;
     case "ALL":
-      // Pour "ALL", on combine tous les niveaux
       allCards = [...wordsA1, ...wordsA2, ...wordsB1];
       break;
-    // Tu pourras continuer plus tard :
-    // case "B2": allCards = wordsB2; break;
     default:
       allCards = wordsA1;
   }
