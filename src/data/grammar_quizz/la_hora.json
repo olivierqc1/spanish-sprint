@@ -1,8 +1,14 @@
 {
   "id": "la_hora",
-  "title": "L'heure en espagnol",
+  "title": {
+    "fr": "L'heure en espagnol",
+    "en": "Telling time in Spanish"
+  },
   "level": "A1",
-  "note": "⚙️ Pour dire l'heure en espagnol :\n\n🔹 **Structure de base :**\n- **Son las + heure** (pluriel) → *Son las tres* (Il est 3h)\n- **Es la una** (singulier) → *Es la una* (Il est 1h)\n\n🔹 **Les minutes :**\n- **y** (et) pour ajouter : *Son las dos y diez* (2h10)\n- **menos** (moins) pour soustraire : *Son las tres menos cinco* (2h55)\n- **y cuarto** → et quart (15 min)\n- **y media** → et demie (30 min)\n- **menos cuarto** → moins le quart (45 min)\n\n🔹 **Précisions :**\n- *de la mañana* → du matin (6h-12h)\n- *de la tarde* → de l'après-midi (12h-20h)\n- *de la noche* → du soir/nuit (20h-6h)\n- *en punto* → pile\n\n💡 **Exemples :**\n➡️ 1:00 → *Es la una*\n➡️ 2:15 → *Son las dos y cuarto*\n➡️ 3:30 → *Son las tres y media*\n➡️ 4:45 → *Son las cinco menos cuarto*\n➡️ 8:10 → *Son las ocho y diez*",
+  "note": {
+    "fr": "⚙️ Pour dire l'heure en espagnol :\n\n🔹 **Structure de base :**\n- **Son las + heure** (pluriel) → *Son las tres* (Il est 3h)\n- **Es la una** (singulier) → *Es la una* (Il est 1h)\n\n🔹 **Les minutes :**\n- **y** (et) pour ajouter : *Son las dos y diez* (2h10)\n- **menos** (moins) pour soustraire : *Son las tres menos cinco* (2h55)\n- **y cuarto** → et quart (15 min)\n- **y media** → et demie (30 min)\n- **menos cuarto** → moins le quart (45 min)\n\n🔹 **Précisions :**\n- *de la mañana* → du matin (6h-12h)\n- *de la tarde* → de l'après-midi (12h-20h)\n- *de la noche* → du soir/nuit (20h-6h)\n- *en punto* → pile\n\n💡 **Exemples :**\n➡️ 1:00 → *Es la una*\n➡️ 2:15 → *Son las dos y cuarto*\n➡️ 3:30 → *Son las tres y media*\n➡️ 4:45 → *Son las cinco menos cuarto*\n➡️ 8:10 → *Son las ocho y diez*",
+    "en": "⚙️ To tell time in Spanish:\n\n🔹 **Basic structure:**\n- **Son las + hour** (plural) → *Son las tres* (It's 3 o'clock)\n- **Es la una** (singular) → *Es la una* (It's 1 o'clock)\n\n🔹 **Minutes:**\n- **y** (and) to add: *Son las dos y diez* (2:10)\n- **menos** (minus) to subtract: *Son las tres menos cinco* (2:55)\n- **y cuarto** → quarter past (15 min)\n- **y media** → half past (30 min)\n- **menos cuarto** → quarter to (45 min)\n\n🔹 **Specifications:**\n- *de la mañana* → in the morning (6am-12pm)\n- *de la tarde* → in the afternoon (12pm-8pm)\n- *de la noche* → in the evening/night (8pm-6am)\n- *en punto* → sharp/on the dot\n\n💡 **Examples:**\n➡️ 1:00 → *Es la una*\n➡️ 2:15 → *Son las dos y cuarto*\n➡️ 3:30 → *Son las tres y media*\n➡️ 4:45 → *Son las cinco menos cuarto*\n➡️ 8:10 → *Son las ocho y diez*"
+  },
   "drills": [
     { "prompt": "1:00", "answer": "Es la una" },
     { "prompt": "2:00", "answer": "Son las dos" },
