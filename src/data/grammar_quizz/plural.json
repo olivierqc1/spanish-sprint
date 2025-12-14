@@ -1,8 +1,14 @@
 {
   "id": "plural",
-  "title": "Pluriel des noms",
+  "title": {
+    "fr": "Pluriel des noms",
+    "en": "Plural of nouns"
+  },
   "level": "A1",
-  "note": "⚙️ En espagnol, le **pluriel** se forme différemment selon la terminaison du nom.\n\n🔹 **Règles principales :**\n1. **Nom terminé par une voyelle** → ajouter **-s**\n   ➡️ *libro → libros*, *casa → casas*\n\n2. **Nom terminé par une consonne** → ajouter **-es**\n   ➡️ *profesor → profesores*, *ciudad → ciudades*\n\n3. **Nom terminé par -z** → changer en **-ces**\n   ➡️ *lápiz → lápices*, *vez → veces*\n\n4. **Nom terminé par -s** ou **-x** non accentué → **pas de changement**\n   ➡️ *lunes → lunes*, *crisis → crisis*\n\n💡 **Remarque :** Les noms terminés par une voyelle accentuée suivent des règles particulières : *café → cafés*, *rubí → rubíes*",
+  "note": {
+    "fr": "⚙️ En espagnol, le **pluriel** se forme différemment selon la terminaison du nom.\n\n🔹 **Règles principales :**\n1. **Nom terminé par une voyelle** → ajouter **-s**\n   ➡️ *libro → libros*, *casa → casas*\n\n2. **Nom terminé par une consonne** → ajouter **-es**\n   ➡️ *profesor → profesores*, *ciudad → ciudades*\n\n3. **Nom terminé par -z** → changer en **-ces**\n   ➡️ *lápiz → lápices*, *vez → veces*\n\n4. **Nom terminé par -s** ou **-x** non accentué → **pas de changement**\n   ➡️ *lunes → lunes*, *crisis → crisis*\n\n💡 **Remarque :** Les noms terminés par une voyelle accentuée suivent des règles particulières : *café → cafés*, *rubí → rubíes*",
+    "en": "⚙️ In Spanish, the **plural** is formed differently depending on the noun's ending.\n\n🔹 **Main rules:**\n1. **Noun ending in a vowel** → add **-s**\n   ➡️ *libro → libros*, *casa → casas*\n\n2. **Noun ending in a consonant** → add **-es**\n   ➡️ *profesor → profesores*, *ciudad → ciudades*\n\n3. **Noun ending in -z** → change to **-ces**\n   ➡️ *lápiz → lápices*, *vez → veces*\n\n4. **Noun ending in unstressed -s** or **-x** → **no change**\n   ➡️ *lunes → lunes*, *crisis → crisis*\n\n💡 **Note:** Nouns ending in an accented vowel follow special rules: *café → cafés*, *rubí → rubíes*"
+  },
   "drills": [
     { "prompt": "el libro → ___ (les livres)", "answer": "los libros" },
     { "prompt": "la casa → ___ (les maisons)", "answer": "las casas" },
@@ -35,4 +41,4 @@
     { "prompt": "el color → ___ (les couleurs)", "answer": "los colores" },
     { "prompt": "la voz → ___ (les voix)", "answer": "las voces" }
   ]
-} 
+}
