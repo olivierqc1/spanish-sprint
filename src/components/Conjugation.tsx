@@ -121,7 +121,7 @@ interface ExerciseProgress {
   lastAttempt: Date | null;
 }
 
-export default function ConjugationImproved({ level, country }: ConjugationProps) {
+export default function Conjugation({ level, country }: ConjugationProps) {
   const [mode, setMode] = useState<Mode>('theory');
   const [selectedTense, setSelectedTense] = useState<Tense>('presente');
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
@@ -173,6 +173,7 @@ export default function ConjugationImproved({ level, country }: ConjugationProps
       correctAnswer: 'Bonne réponse',
       score: 'Score',
       difficultExercises: 'Exercices difficiles à réviser',
+      pronoun: 'Pronom',
     },
     en: {
       title: '⚡ Conjugation',
@@ -190,6 +191,7 @@ export default function ConjugationImproved({ level, country }: ConjugationProps
       correctAnswer: 'Correct answer',
       score: 'Score',
       difficultExercises: 'Difficult exercises to review',
+      pronoun: 'Pronoun',
     }
   };
 
@@ -265,7 +267,6 @@ export default function ConjugationImproved({ level, country }: ConjugationProps
     }));
 
     // Mettre à jour la progression
-    const key = `${currentExercise.tense}-${currentExercise.pronoun}-${currentExercise.verbType}`;
     const existingIndex = exerciseProgress.findIndex(
       p => p.tense === currentExercise.tense && 
            p.pronoun === currentExercise.pronoun && 
@@ -296,7 +297,9 @@ export default function ConjugationImproved({ level, country }: ConjugationProps
     localStorage.setItem('conjugation-progress', JSON.stringify(newProgress));
   };
 
-  const difficultCount = exerciseProgress.filter(p => p.failures > 0).length;return (
+  const difficultCount = exerciseProgress.filter(p => p.failures > 0).length;
+
+  return (
     <div className="max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold mb-6 text-center">{t.title}</h2>
 
@@ -449,7 +452,7 @@ export default function ConjugationImproved({ level, country }: ConjugationProps
               <table className="w-full">
                 <thead>
                   <tr className="border-b-2 border-slate-700">
-                    <th className="py-3 text-left text-slate-400">Pronom</th>
+                    <th className="py-3 text-left text-slate-400">{t.pronoun}</th>
                     <th className="py-3 text-center text-blue-400">-AR</th>
                     <th className="py-3 text-center text-green-400">-ER</th>
                     <th className="py-3 text-center text-purple-400">-IR</th>
@@ -521,45 +524,4 @@ export default function ConjugationImproved({ level, country }: ConjugationProps
                     onChange={(e) => setUserAnswer(e.target.value)}
                     onKeyPress={(e) => e.key === 'Enter' && checkAnswer()}
                     placeholder={t.yourAnswer}
-                    className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white text-center text-xl focus:border-blue-500 focus:outline-none mb-4"
-                    autoFocus
-                  />
-                  <button
-                    onClick={checkAnswer}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition"
-                  >
-                    {t.check}
-                  </button>
-                </>
-              ) : (
-                <>
-                  <div className={`p-4 rounded-lg mb-4 text-center ${
-                    isCorrect ? 'bg-green-900 bg-opacity-30 border border-green-600' : 'bg-red-900 bg-opacity-30 border border-red-600'
-                  }`}>
-                    <div className="text-2xl mb-2">
-                      {isCorrect ? t.correct : t.incorrect}
-                    </div>
-                    {!isCorrect && (
-                      <div>
-                        <div className="text-slate-400 text-sm">{t.correctAnswer}:</div>
-                        <div className="text-xl font-bold text-green-400">
-                          {getConjugatedForm(currentExercise.verbType, currentExercise.pronoun, currentExercise.tense)}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                  <button
-                    onClick={generateExercise}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg transition"
-                  >
-                    {t.next} →
-                  </button>
-                </>
-              )}
-            </div>
-          )}
-        </div>
-      )}
-    </div>
-  );
-}
+                    className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg
