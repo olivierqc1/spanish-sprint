@@ -1,8 +1,14 @@
 {
   "id": "articulos_definidos",
-  "title": "Articles définis (el, la, los, las)",
+  "title": {
+    "fr": "Articles définis (el, la, los, las)",
+    "en": "Definite articles (el, la, los, las)"
+  },
   "level": "A1",
-  "note": "⚙️ Les **articles définis** servent à parler de quelque chose de connu ou déjà mentionné. En espagnol, ils s’accordent en **genre** et **nombre** avec le nom.\n\n🔹 **Formes :**\n- **el** → masculin singulier (*el coche*)\n- **la** → féminin singulier (*la casa*)\n- **los** → masculin pluriel (*los perros*)\n- **las** → féminin pluriel (*las flores*)\n\n💡 **Règles spéciales :**\n- Devant un mot féminin commençant par *a* accentué, on utilise **el** au singulier pour éviter la répétition sonore : *el agua fría*, *el águila grande* (mais au pluriel : *las aguas*).\n- Les articles sont obligatoires pour parler en général : *Me gusta el café.* (= J’aime le café en général.)",
+  "note": {
+    "fr": "⚙️ Les **articles définis** servent à parler de quelque chose de connu ou déjà mentionné. En espagnol, ils s'accordent en **genre** et **nombre** avec le nom.\n\n🔹 **Formes :**\n- **el** → masculin singulier (*el coche*)\n- **la** → féminin singulier (*la casa*)\n- **los** → masculin pluriel (*los perros*)\n- **las** → féminin pluriel (*las flores*)\n\n💡 **Règles spéciales :**\n- Devant un mot féminin commençant par *a* accentué, on utilise **el** au singulier pour éviter la répétition sonore : *el agua fría*, *el águila grande* (mais au pluriel : *las aguas*).\n- Les articles sont obligatoires pour parler en général : *Me gusta el café.* (= J'aime le café en général.)",
+    "en": "⚙️ **Definite articles** are used to talk about something known or already mentioned. In Spanish, they agree in **gender** and **number** with the noun.\n\n🔹 **Forms:**\n- **el** → masculine singular (*el coche*)\n- **la** → feminine singular (*la casa*)\n- **los** → masculine plural (*los perros*)\n- **las** → feminine plural (*las flores*)\n\n💡 **Special rules:**\n- Before a feminine word starting with stressed *a*, we use **el** in the singular to avoid sound repetition: *el agua fría*, *el águila grande* (but in plural: *las aguas*).\n- Articles are mandatory when speaking in general: *Me gusta el café.* (= I like coffee in general.)"
+  },
   "drills": [
     { "prompt": "___ coche está en la calle. (voiture masculine singulier)", "answer": "El" },
     { "prompt": "___ casa es muy bonita. (maison féminine singulier)", "answer": "La" },
