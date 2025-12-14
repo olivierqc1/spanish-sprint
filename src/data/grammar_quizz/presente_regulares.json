@@ -1,8 +1,14 @@
 {
   "id": "presente_regulares",
-  "title": "Présent – verbes réguliers (-ar, -er, -ir)",
+  "title": {
+    "fr": "Présent – verbes réguliers (-ar, -er, -ir)",
+    "en": "Present tense – regular verbs (-ar, -er, -ir)"
+  },
   "level": "A1",
-  "note": "⚙️ Le présent de l’indicatif espagnol se forme à partir du radical du verbe, auquel on ajoute des terminaisons spécifiques selon le groupe (-ar, -er, -ir).\n\n🔹 **1er groupe (-ar)** : hablar → hablo, hablas, habla, hablamos, habláis, hablan\n🔹 **2e groupe (-er)** : comer → como, comes, come, comemos, coméis, comen\n🔹 **3e groupe (-ir)** : vivir → vivo, vives, vive, vivimos, vivís, viven\n\n💡 **Remarques :**\n- En espagnol, le pronom sujet est souvent omis (*Hablo español* = je parle espagnol).\n- Certains verbes ont des changements orthographiques (*buscar → busco*, *pagar → pago*).",
+  "note": {
+    "fr": "⚙️ Le présent de l'indicatif espagnol se forme à partir du radical du verbe, auquel on ajoute des terminaisons spécifiques selon le groupe (-ar, -er, -ir).\n\n🔹 **1er groupe (-ar)** : hablar → hablo, hablas, habla, hablamos, habláis, hablan\n🔹 **2e groupe (-er)** : comer → como, comes, come, comemos, coméis, comen\n🔹 **3e groupe (-ir)** : vivir → vivo, vives, vive, vivimos, vivís, viven\n\n💡 **Remarques :**\n- En espagnol, le pronom sujet est souvent omis (*Hablo español* = je parle espagnol).\n- Certains verbes ont des changements orthographiques (*buscar → busco*, *pagar → pago*).",
+    "en": "⚙️ The Spanish present indicative is formed from the verb stem, to which specific endings are added according to the group (-ar, -er, -ir).\n\n🔹 **1st group (-ar)**: hablar → hablo, hablas, habla, hablamos, habláis, hablan\n🔹 **2nd group (-er)**: comer → como, comes, come, comemos, coméis, comen\n🔹 **3rd group (-ir)**: vivir → vivo, vives, vive, vivimos, vivís, viven\n\n💡 **Notes:**\n- In Spanish, the subject pronoun is often omitted (*Hablo español* = I speak Spanish).\n- Some verbs have spelling changes (*buscar → busco*, *pagar → pago*)."
+  },
   "drills": [
     { "prompt": "Yo ___ español todos los días. (hablar)", "answer": "hablo" },
     { "prompt": "Tú ___ en un restaurante. (trabajar)", "answer": "trabajas" },
