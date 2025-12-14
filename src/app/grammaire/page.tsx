@@ -158,7 +158,7 @@ export default function GrammairePage() {
           </div>
         </div>
 
-        <GrammarExplorer points={grammarPoints} initialLevel={actualLevel} />
+        <GrammarExplorer points={grammarPoints} initialLevel={actualLevel} language={language} />
       </div>
     </div>
   );
