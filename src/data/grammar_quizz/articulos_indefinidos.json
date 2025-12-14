@@ -1,8 +1,14 @@
 {
   "id": "articulos_indefinidos",
-  "title": "Articles indéfinis (un, una, unos, unas)",
+  "title": {
+    "fr": "Articles indéfinis (un, una, unos, unas)",
+    "en": "Indefinite articles (un, una, unos, unas)"
+  },
   "level": "A1",
-  "note": "⚙️ Les **articles indéfinis** servent à parler de quelque chose **d’indéfini, de non précisé** ou mentionné pour la première fois. Ils s’accordent en **genre** et **nombre** avec le nom.\n\n🔹 **Formes :**\n- **un** → masculin singulier (*un coche*)\n- **una** → féminin singulier (*una casa*)\n- **unos** → masculin pluriel (*unos libros*)\n- **unas** → féminin pluriel (*unas flores*)\n\n💡 **Différence avec les définis :**\n- *El coche está en la calle.* → **La** voiture spécifique est dans la rue.\n- *Un coche está en la calle.* → Il y a **une** voiture (n’importe laquelle) dans la rue.\n\n💡 **Remarque :** les articles indéfinis s’emploient moins souvent au pluriel que les définis, et parfois on les omet devant des professions : *Soy profesor.* (= Je suis professeur.)",
+  "note": {
+    "fr": "⚙️ Les **articles indéfinis** servent à parler de quelque chose **d'indéfini, de non précisé** ou mentionné pour la première fois. Ils s'accordent en **genre** et **nombre** avec le nom.\n\n🔹 **Formes :**\n- **un** → masculin singulier (*un coche*)\n- **una** → féminin singulier (*una casa*)\n- **unos** → masculin pluriel (*unos libros*)\n- **unas** → féminin pluriel (*unas flores*)\n\n💡 **Différence avec les définis :**\n- *El coche está en la calle.* → **La** voiture spécifique est dans la rue.\n- *Un coche está en la calle.* → Il y a **une** voiture (n'importe laquelle) dans la rue.\n\n💡 **Remarque :** les articles indéfinis s'emploient moins souvent au pluriel que les définis, et parfois on les omet devant des professions : *Soy profesor.* (= Je suis professeur.)",
+    "en": "⚙️ **Indefinite articles** are used to talk about something **undefined, unspecified** or mentioned for the first time. They agree in **gender** and **number** with the noun.\n\n🔹 **Forms:**\n- **un** → masculine singular (*un coche*)\n- **una** → feminine singular (*una casa*)\n- **unos** → masculine plural (*unos libros*)\n- **unas** → feminine plural (*unas flores*)\n\n💡 **Difference with definite articles:**\n- *El coche está en la calle.* → **The** specific car is in the street.\n- *Un coche está en la calle.* → There is **a** car (any one) in the street.\n\n💡 **Note:** indefinite articles are used less often in the plural than definite ones, and sometimes they're omitted before professions: *Soy profesor.* (= I am a teacher.)"
+  },
   "drills": [
     { "prompt": "___ coche está aparcado delante. (une voiture, masculin singulier)", "answer": "Un" },
     { "prompt": "___ casa grande está en la esquina. (une maison)", "answer": "Una" },
