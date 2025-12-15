@@ -98,9 +98,7 @@ export const wordsA1 = [
   { id: "97", front: "descubrir", back: "découvrir", backEn: "to discover", level: "A1", country: "ALL", category: "verbe" },
   { id: "98", front: "levantar", back: "lever / soulever", backEn: "to raise/lift", level: "A1", country: "ALL", category: "verbe" },
   { id: "99", front: "intentar", back: "essayer / tenter", backEn: "to try", level: "A1", country: "ALL", category: "verbe" },
-  { id: "100", front: "usar", back: "utiliser / se servir de", backEn: "to use", level: "A1", country: "ALL", category: "verbe" },
-
-  // NOUVEAUX MOTS A1 - Vie quotidienne
+  { id: "100", front: "usar", back: "utiliser / se servir de", backEn: "to use", level: "A1", country: "ALL", category: "verbe" },// NOUVEAUX MOTS A1 - Vie quotidienne
   { id: "101", front: "cocinar", back: "cuisiner", backEn: "to cook", level: "A1", country: "ALL", category: "verbe" },
   { id: "102", front: "bañarse", back: "se baigner", backEn: "to bathe", level: "A1", country: "ALL", category: "verbe" },
   { id: "103", front: "secarse", back: "se sécher", backEn: "to dry oneself", level: "A1", country: "ALL", category: "verbe" },
@@ -175,4 +173,43 @@ export const wordsA1 = [
   { id: "158", front: "alguien", back: "quelqu'un", backEn: "someone", level: "A1", country: "ALL", category: "autre" },
   { id: "159", front: "algo", back: "quelque chose", backEn: "something", level: "A1", country: "ALL", category: "autre" },
   { id: "160", front: "desde", back: "depuis", backEn: "since", level: "A1", country: "ALL", category: "autre" },
+
+  // MOTS DES NOTES MANUSCRITES
+  { id: "161", front: "disfrazarse", back: "se déguiser", backEn: "to disguise oneself", level: "A1", country: "ALL", category: "verbe" },
+  { id: "162", front: "aburrirse", back: "s'ennuyer", backEn: "to get bored", level: "A1", country: "ALL", category: "verbe" },
+  { id: "163", front: "cruzar", back: "traverser", backEn: "to cross", level: "A1", country: "ALL", category: "verbe" },
+  { id: "164", front: "regalar", back: "offrir (cadeau)", backEn: "to give as a gift", level: "A1", country: "ALL", category: "verbe" },
+  { id: "165", front: "filmar", back: "filmer", backEn: "to film", level: "A1", country: "ALL", category: "verbe" },
+  { id: "166", front: "marcar", back: "marquer", backEn: "to mark", level: "A1", country: "ALL", category: "verbe" },
+  { id: "167", front: "pisar", back: "marcher sur", backEn: "to step on", level: "A1", country: "ALL", category: "verbe" },
+  { id: "168", front: "basarse en", back: "se baser sur", backEn: "to be based on", level: "A1", country: "ALL", category: "verbe" },
+  { id: "169", front: "sentirse", back: "se sentir", backEn: "to feel", level: "A1", country: "ALL", category: "verbe" },
+  { id: "170", front: "componer", back: "composer", backEn: "to compose", level: "A1", country: "ALL", category: "verbe" },
+
+  // Noms des notes
+  { id: "171", front: "puente", back: "pont", backEn: "bridge", level: "A1", country: "ALL", category: "nom" },
+  { id: "172", front: "rincón", back: "coin", backEn: "corner", level: "A1", country: "ALL", category: "nom" },
+  { id: "173", front: "espacio", back: "espace", backEn: "space", level: "A1", country: "ALL", category: "nom" },
+  { id: "174", front: "anillo", back: "bague", backEn: "ring", level: "A1", country: "ALL", category: "nom" },
+  { id: "175", front: "magdalena", back: "madeleine", backEn: "madeleine", level: "A1", country: "ALL", category: "nom" },
+  { id: "176", front: "éxito", back: "succès", backEn: "success", level: "A1", country: "ALL", category: "nom" },
+  { id: "177", front: "premio", back: "prix (récompense)", backEn: "prize", level: "A1", country: "ALL", category: "nom" },
+  { id: "178", front: "pregunta", back: "question", backEn: "question", level: "A1", country: "ALL", category: "nom" },
+  { id: "179", front: "madre", back: "mère", backEn: "mother", level: "A1", country: "ALL", category: "nom" },
+  { id: "180", front: "padre", back: "père", backEn: "father", level: "A1", country: "ALL", category: "nom" },
+  { id: "181", front: "carácter", back: "caractère", backEn: "character", level: "A1", country: "ALL", category: "nom" },
+
+  // Adjectifs physiques
+  { id: "182", front: "alto/a", back: "grand(e)", backEn: "tall", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "183", front: "delgado/a", back: "mince", backEn: "thin", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "184", front: "guapo/a", back: "beau/belle", backEn: "handsome/beautiful", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "185", front: "alegre", back: "joyeux/joyeuse", backEn: "cheerful", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "186", front: "activo/a", back: "actif/active", backEn: "active", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "187", front: "sabroso/a", back: "savoureux/savoureuse", backEn: "tasty", level: "A1", country: "ALL", category: "adjectif" },
+
+  // Expressions utiles
+  { id: "188", front: "sobre todo", back: "surtout", backEn: "above all", level: "A1", country: "ALL", category: "autre" },
+  { id: "189", front: "cada", back: "chaque", backEn: "each", level: "A1", country: "ALL", category: "autre" },
+  { id: "190", front: "aún", back: "encore", backEn: "still", level: "A1", country: "ALL", category: "autre" },
+  { id: "191", front: "generalmente", back: "généralement", backEn: "generally", level: "A1", country: "ALL", category: "autre" },
 ];
