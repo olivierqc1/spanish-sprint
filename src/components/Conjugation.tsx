@@ -9,7 +9,19 @@ interface ConjugationProps {
 }
 
 type Mode = 'theory' | 'practice';
-type Tense = 'presente' | 'preterito' | 'imperfecto' | 'futuro' | 'condicional' | 'subjuntivo_presente';
+type Tense = 
+  | 'presente' 
+  | 'preterito' 
+  | 'imperfecto' 
+  | 'futuro' 
+  | 'condicional' 
+  | 'subjuntivo_presente'
+  | 'subjuntivo_imperfecto'
+  | 'perfecto'
+  | 'pluscuamperfecto'
+  | 'futuro_perfecto'
+  | 'imperativo_afirmativo'
+  | 'imperativo_negativo';
 
 const tenseData: Record<Tense, {
   name: { fr: string; en: string };
@@ -108,6 +120,90 @@ const tenseData: Record<Tense, {
       er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
       ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
     }
+  },
+  subjuntivo_imperfecto: {
+    name: { fr: 'Subjonctif imparfait', en: 'Imperfect Subjunctive' },
+    description: { fr: 'Souhait/doute au passé', en: 'Past wish/doubt' },
+    endings: {
+      ar: ['ara', 'aras', 'ara', 'áramos', 'arais', 'aran'],
+      er: ['iera', 'ieras', 'iera', 'iéramos', 'ierais', 'ieran'],
+      ir: ['iera', 'ieras', 'iera', 'iéramos', 'ierais', 'ieran']
+    },
+    examples: {
+      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
+      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
+      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
+    }
+  },
+  perfecto: {
+    name: { fr: 'Passé composé', en: 'Present Perfect' },
+    description: { fr: 'Actions récentes terminées', en: 'Recent completed actions' },
+    endings: {
+      ar: ['he -ado', 'has -ado', 'ha -ado', 'hemos -ado', 'habéis -ado', 'han -ado'],
+      er: ['he -ido', 'has -ido', 'ha -ido', 'hemos -ido', 'habéis -ido', 'han -ido'],
+      ir: ['he -ido', 'has -ido', 'ha -ido', 'hemos -ido', 'habéis -ido', 'han -ido']
+    },
+    examples: {
+      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
+      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
+      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
+    }
+  },
+  pluscuamperfecto: {
+    name: { fr: 'Plus-que-parfait', en: 'Pluperfect' },
+    description: { fr: 'Action antérieure à une autre au passé', en: 'Action before another past action' },
+    endings: {
+      ar: ['había -ado', 'habías -ado', 'había -ado', 'habíamos -ado', 'habíais -ado', 'habían -ado'],
+      er: ['había -ido', 'habías -ido', 'había -ido', 'habíamos -ido', 'habíais -ido', 'habían -ido'],
+      ir: ['había -ido', 'habías -ido', 'había -ido', 'habíamos -ido', 'habíais -ido', 'habían -ido']
+    },
+    examples: {
+      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
+      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
+      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
+    }
+  },
+  futuro_perfecto: {
+    name: { fr: 'Futur antérieur', en: 'Future Perfect' },
+    description: { fr: 'Action future antérieure à une autre', en: 'Future action before another' },
+    endings: {
+      ar: ['habré -ado', 'habrás -ado', 'habrá -ado', 'habremos -ado', 'habréis -ado', 'habrán -ado'],
+      er: ['habré -ido', 'habrás -ido', 'habrá -ido', 'habremos -ido', 'habréis -ido', 'habrán -ido'],
+      ir: ['habré -ido', 'habrás -ido', 'habrá -ido', 'habremos -ido', 'habréis -ido', 'habrán -ido']
+    },
+    examples: {
+      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
+      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
+      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
+    }
+  },
+  imperativo_afirmativo: {
+    name: { fr: 'Impératif affirmatif', en: 'Affirmative Imperative' },
+    description: { fr: 'Ordres et instructions', en: 'Commands and instructions' },
+    endings: {
+      ar: ['-', 'a', 'e', 'emos', 'ad', 'en'],
+      er: ['-', 'e', 'a', 'amos', 'ed', 'an'],
+      ir: ['-', 'e', 'a', 'amos', 'id', 'an']
+    },
+    examples: {
+      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
+      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
+      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
+    }
+  },
+  imperativo_negativo: {
+    name: { fr: 'Impératif négatif', en: 'Negative Imperative' },
+    description: { fr: 'Ordres négatifs', en: 'Negative commands' },
+    endings: {
+      ar: ['-', 'no -es', 'no -e', 'no -emos', 'no -éis', 'no -en'],
+      er: ['-', 'no -as', 'no -a', 'no -amos', 'no -áis', 'no -an'],
+      ir: ['-', 'no -as', 'no -a', 'no -amos', 'no -áis', 'no -an']
+    },
+    examples: {
+      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
+      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
+      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
+    }
   }
 };
 
@@ -196,15 +292,26 @@ export default function Conjugation({ level, country }: ConjugationProps) {
   };
 
   const t = texts[language];
-  const currentTenseData = tenseData[selectedTense];
-
-  const getConjugatedForm = (verbType: 'ar' | 'er' | 'ir', pronounIndex: number, tense: Tense) => {
+  const currentTenseData = tenseData[selectedTense];const getConjugatedForm = (verbType: 'ar' | 'er' | 'ir', pronounIndex: number, tense: Tense) => {
     const example = tenseData[tense].examples[verbType];
     const root = example.verb.slice(0, -2);
     const ending = tenseData[tense].endings[verbType][pronounIndex];
     
     if (tense === 'futuro' || tense === 'condicional') {
       return example.verb + ending;
+    }
+    
+    if (tense === 'perfecto' || tense === 'pluscuamperfecto' || tense === 'futuro_perfecto') {
+      // Pour les temps composés, retourner la forme complète
+      return ending.replace(verbType === 'ar' ? '-ado' : '-ido', verbType === 'ar' ? 'ado' : 'ido');
+    }
+
+    if (tense === 'imperativo_afirmativo' || tense === 'imperativo_negativo') {
+      if (pronounIndex === 0) return '-'; // pas de "yo" à l'impératif
+      if (tense === 'imperativo_negativo') {
+        return ending; // déjà avec "no"
+      }
+      return root + ending;
     }
     
     return root + ending;
@@ -234,9 +341,14 @@ export default function Conjugation({ level, country }: ConjugationProps) {
       const verbType = verbTypes[Math.floor(Math.random() * verbTypes.length)];
       const example = currentTenseData.examples[verbType];
       
+      // Pour l'impératif, éviter "yo" (index 0)
+      const availablePronouns = (selectedTense === 'imperativo_afirmativo' || selectedTense === 'imperativo_negativo')
+        ? [1, 2, 3, 4, 5]
+        : [0, 1, 2, 3, 4, 5];
+      
       exercise = {
         verb: example.verb,
-        pronoun: Math.floor(Math.random() * 6),
+        pronoun: availablePronouns[Math.floor(Math.random() * availablePronouns.length)],
         verbType,
         tense: selectedTense,
       };
@@ -282,7 +394,7 @@ export default function Conjugation({ level, country }: ConjugationProps) {
           ? Math.max(0, newProgress[existingIndex].failures - 1) 
           : newProgress[existingIndex].failures + 1,
         lastAttempt: new Date(),
-};
+      };
     } else {
       newProgress.push({
         tense: currentExercise.tense,
@@ -340,12 +452,12 @@ export default function Conjugation({ level, country }: ConjugationProps) {
           {/* Sélecteur de temps */}
           <div className="bg-slate-800 rounded-xl p-4 mb-6">
             <label className="block text-sm text-slate-400 mb-3">{t.selectTense}</label>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {(Object.keys(tenseData) as Tense[]).map((tense) => (
                 <button
                   key={tense}
                   onClick={() => setSelectedTense(tense)}
-                  className={`px-4 py-3 rounded-lg font-semibold transition ${
+                  className={`px-4 py-3 rounded-lg font-semibold transition text-sm ${
                     selectedTense === tense
                       ? 'bg-blue-600 text-white'
                       : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
@@ -463,13 +575,13 @@ export default function Conjugation({ level, country }: ConjugationProps) {
                     <tr key={index} className="border-b border-slate-700">
                       <td className="py-2 text-slate-300">{pronoun}</td>
                       <td className="py-2 text-center font-mono text-blue-300 font-bold">
-                        -{currentTenseData.endings.ar[index]}
+                        {currentTenseData.endings.ar[index] === '-' ? '-' : `-${currentTenseData.endings.ar[index]}`}
                       </td>
                       <td className="py-2 text-center font-mono text-green-300 font-bold">
-                        -{currentTenseData.endings.er[index]}
+                        {currentTenseData.endings.er[index] === '-' ? '-' : `-${currentTenseData.endings.er[index]}`}
                       </td>
                       <td className="py-2 text-center font-mono text-purple-300 font-bold">
-                        -{currentTenseData.endings.ir[index]}
+                        {currentTenseData.endings.ir[index] === '-' ? '-' : `-${currentTenseData.endings.ir[index]}`}
                       </td>
                     </tr>
                   ))}
