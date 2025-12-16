@@ -43,13 +43,31 @@ export default function ConjugaisonPage() {
       title: '⚡ Conjugaison',
       level: 'Niveau',
       country: 'Pays',
-      back: '← Retour'
+      back: '← Retour',
+      levels: {
+        A1: 'A1 - Débutant',
+        A2: 'A2 - Élémentaire',
+        B1: 'B1 - Intermédiaire',
+        B2: 'B2 - Intermédiaire Supérieur',
+        C1: 'C1 - Avancé',
+        C2: 'C2 - Maîtrise',
+        ALL: 'Tous niveaux'
+      }
     },
     en: {
       title: '⚡ Conjugation',
       level: 'Level',
       country: 'Country',
-      back: '← Back'
+      back: '← Back',
+      levels: {
+        A1: 'A1 - Beginner',
+        A2: 'A2 - Elementary',
+        B1: 'B1 - Intermediate',
+        B2: 'B2 - Upper Intermediate',
+        C1: 'C1 - Advanced',
+        C2: 'C2 - Mastery',
+        ALL: 'All levels'
+      }
     }
   };
 
@@ -123,13 +141,13 @@ export default function ConjugaisonPage() {
                 }}
                 className="px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-white text-sm focus:border-blue-500 focus:outline-none"
               >
-                <option value="A1">A1 - Débutant</option>
-                <option value="A2">A2 - Élémentaire</option>
-                <option value="B1">B1 - Intermédiaire</option>
-                <option value="B2">B2 - Intermédiaire Supérieur</option>
-                <option value="C1">C1 - Avancé</option>
-                <option value="C2">C2 - Maîtrise</option>
-                <option value="ALL">Tous niveaux</option>
+                <option value="A1">{t.levels.A1}</option>
+                <option value="A2">{t.levels.A2}</option>
+                <option value="B1">{t.levels.B1}</option>
+                <option value="B2">{t.levels.B2}</option>
+                <option value="C1">{t.levels.C1}</option>
+                <option value="C2">{t.levels.C2}</option>
+                <option value="ALL">{t.levels.ALL}</option>
               </select>
             </div>
 
