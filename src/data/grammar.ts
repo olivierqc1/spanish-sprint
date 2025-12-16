@@ -1,4 +1,12 @@
-import { GrammarPoint } from "@/types/grammar";
+// Définir le type localement
+export type GrammarPoint = {
+  id: string;
+  title: { fr: string; en: string };
+  level: string;
+  note: { fr: string; en: string };
+  country: string;
+  jsonPath: string;
+};
 
 export const grammarPoints: GrammarPoint[] = [
   {
@@ -616,18 +624,19 @@ export const grammarPoints: GrammarPoint[] = [
     },
     country: "all",
     jsonPath: "/data/grammar_quizz/cotidiano_basics.json"
-  },{
-  id: "participios_como_adjetivos",
-  title: {
-    fr: "Participes passés comme adjectifs (estar + participio)",
-    en: "Past participles as adjectives (estar + participio)"
   },
-  level: "A2",
-  note: {
-    fr: "Utilisation des participes passés avec ESTAR pour décrire un état.",
-    en: "Using past participles with ESTAR to describe a state."
-  },
-  country: "all",
-  jsonPath: "/data/grammar_quizz/participios_como_adjetivos.json"
-}
+  {
+    id: "participios_como_adjetivos",
+    title: {
+      fr: "Participes passés comme adjectifs (estar + participio)",
+      en: "Past participles as adjectives (estar + participio)"
+    },
+    level: "A2",
+    note: {
+      fr: "Utilisation des participes passés avec ESTAR pour décrire un état.",
+      en: "Using past participles with ESTAR to describe a state."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/participios_como_adjetivos.json"
+  }
 ];
