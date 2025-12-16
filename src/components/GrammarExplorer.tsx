@@ -1,7 +1,23 @@
 "use client";
 import React, { useMemo, useState, useEffect } from "react";
-import type { GrammarPoint } from "@/data/grammar";
 import GrammarDrill from "./GrammarDrill";
+
+// Définir le type localement
+type GrammarPoint = {
+  id: string;
+  title: { fr: string; en: string } | string;
+  level: string;
+  note?: { fr: string; en: string } | string;
+  country?: string;
+  jsonPath?: string;
+  data?: {
+    note?: { fr: string; en: string } | string;
+    drills: Array<{
+      prompt: string;
+      answer: string;
+    }>;
+  };
+};
 
 type Props = {
   points?: GrammarPoint[];
