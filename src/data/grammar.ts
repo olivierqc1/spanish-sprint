@@ -638,5 +638,18 @@ export const grammarPoints: GrammarPoint[] = [
     },
     country: "all",
     jsonPath: "/data/grammar_quizz/participios_como_adjetivos.json"
-  }
+  },{
+  id: "desde_vs_desde_hace",
+  title: {
+    fr: "DESDE vs DESDE HACE – Exprimer la durée",
+    en: "DESDE vs DESDE HACE – Expressing duration"
+  },
+  level: "A2",
+  note: {
+    fr: "Différence entre DESDE (point précis) et DESDE HACE (durée).",
+    en: "Difference between DESDE (specific point) and DESDE HACE (duration)."
+  },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/desde_vs_desde_hace.json"
+}
 ];
