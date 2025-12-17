@@ -1,50 +1,31 @@
-// src/data/conjugacion/conficional.ts
-// Remplace [NOM_TEMPS] par: preterito, imperfecto, futuro, etc.
-
-export const [NOM_TEMPS] = {
+export const condicional = {
   metadata: {
-    id: '[nom_temps]',
-    name: { 
-      fr: '[Nom en français]', 
-      en: '[Name in English]' 
-    },
-    description: { 
-      fr: '[Description en français]', 
-      en: '[Description in English]' 
-    },
-    level: 'A2', // A1, A2, B1, etc.
+    id: 'condicional',
+    name: { fr: 'Conditionnel', en: 'Conditional' },
+    description: { fr: 'Actions hypothétiques ou politesse', en: 'Hypothetical actions or politeness' },
+    level: 'A2',
     usage: {
       fr: [
-        'Usage 1 en français avec exemple',
-        'Usage 2 en français avec exemple',
-        'Usage 3 en français avec exemple',
-        'Usage 4 en français avec exemple'
+        'Hypothèses : "Con dinero, viajaría por el mundo" (Avec de l\'argent, je voyagerais dans le monde)',
+        'Politesse : "¿Podrías ayudarme?" (Pourrais-tu m\'aider?)',
+        'Conseils : "Yo no haría eso" (Moi je ne ferais pas ça)',
+        'Futur du passé : "Dijo que vendría" (Il a dit qu\'il viendrait)'
       ],
       en: [
-        'Usage 1 in English with example',
-        'Usage 2 in English with example',
-        'Usage 3 in English with example',
-        'Usage 4 in English with example'
+        'Hypotheses: "Con dinero, viajaría por el mundo" (With money, I would travel the world)',
+        'Politeness: "¿Podrías ayudarme?" (Could you help me?)',
+        'Advice: "Yo no haría eso" (I wouldn\'t do that)',
+        'Future in the past: "Dijo que vendría" (He said he would come)'
       ]
     },
     examples: {
-      fr: [
-        'Exemple de phrase 1',
-        'Exemple de phrase 2',
-        'Exemple de phrase 3',
-        'Exemple de phrase 4'
-      ],
-      en: [
-        'Example sentence 1',
-        'Example sentence 2',
-        'Example sentence 3',
-        'Example sentence 4'
-      ]
+      fr: ['Me gustaría hablar con él', 'Comeríamos más verduras', 'Viviría en una isla', '¿Podrías repetir?'],
+      en: ['I would like to speak with him', 'We would eat more vegetables', 'I would live on an island', 'Could you repeat?']
     },
     endings: {
-      ar: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      er: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      ir: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6']
+      ar: ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'],
+      er: ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'],
+      ir: ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían']
     },
     verbExamples: {
       ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
@@ -53,18 +34,7 @@ export const [NOM_TEMPS] = {
     }
   },
   exercises: [
-    // EXEMPLE D'EXERCICE - Duplique ce format jusqu'à 100 exercices!
-    { 
-      id: 1, 
-      verb: 'hablar', 
-      verbType: 'ar' as const, 
-      pronoun: 0, 
-      prompt: { fr: 'Yo ___ español', en: 'I ___ Spanish' }, 
-      answer: 'hablé', // Adapte selon le temps
-      meaning: { fr: 'J\'ai parlé espagnol', en: 'I spoke Spanish' }, 
-      difficulty: 'easy' as const, 
-      category: 'regular' 
-    },
-    // Ajoute plus d'exercices ici (jusqu'à 100!)
+    { id: 1, verb: 'hablar', verbType: 'ar' as const, pronoun: 0, prompt: { fr: 'Me gustaría ___ con él', en: 'I would like to ___ with him' }, answer: 'hablaría', meaning: { fr: 'J\'aimerais parler avec lui', en: 'I would like to speak with him' }, difficulty: 'easy' as const, category: 'regular' },
+    { id: 2, verb: 'comer', verbType: 'er' as const, pronoun: 3, prompt: { fr: 'Nosotros ___ más verduras', en: 'We ___ more vegetables' }, answer: 'comeríamos', meaning: { fr: 'Nous mangerions plus de légumes', en: 'We would eat more vegetables' }, difficulty: 'easy' as const, category: 'regular' }
   ]
 };
