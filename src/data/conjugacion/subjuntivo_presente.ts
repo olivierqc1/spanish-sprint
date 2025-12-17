@@ -1,50 +1,31 @@
-// src/data/conjugacion/subjuntivo_presente.ts
-// Remplace [NOM_TEMPS] par: preterito, imperfecto, futuro, etc.
-
-export const [NOM_TEMPS] = {
+export const subjuntivo_presente = {
   metadata: {
-    id: '[nom_temps]',
-    name: { 
-      fr: '[Nom en français]', 
-      en: '[Name in English]' 
-    },
-    description: { 
-      fr: '[Description en français]', 
-      en: '[Description in English]' 
-    },
-    level: 'A2', // A1, A2, B1, etc.
+    id: 'subjuntivo_presente',
+    name: { fr: 'Subjonctif présent', en: 'Present Subjunctive' },
+    description: { fr: 'Doute, souhait, émotion, demande', en: 'Doubt, wish, emotion, request' },
+    level: 'B1',
     usage: {
       fr: [
-        'Usage 1 en français avec exemple',
-        'Usage 2 en français avec exemple',
-        'Usage 3 en français avec exemple',
-        'Usage 4 en français avec exemple'
+        'Souhait : "Espero que vengas" (J\'espère que tu viennes)',
+        'Doute : "Dudo que sea verdad" (Je doute que ce soit vrai)',
+        'Émotion : "Me alegra que estés aquí" (Je suis content que tu sois ici)',
+        'Ordre indirect : "Quiero que hables con él" (Je veux que tu parles avec lui)'
       ],
       en: [
-        'Usage 1 in English with example',
-        'Usage 2 in English with example',
-        'Usage 3 in English with example',
-        'Usage 4 in English with example'
+        'Wish: "Espero que vengas" (I hope you come)',
+        'Doubt: "Dudo que sea verdad" (I doubt it\'s true)',
+        'Emotion: "Me alegra que estés aquí" (I\'m glad you\'re here)',
+        'Indirect command: "Quiero que hables con él" (I want you to speak with him)'
       ]
     },
     examples: {
-      fr: [
-        'Exemple de phrase 1',
-        'Exemple de phrase 2',
-        'Exemple de phrase 3',
-        'Exemple de phrase 4'
-      ],
-      en: [
-        'Example sentence 1',
-        'Example sentence 2',
-        'Example sentence 3',
-        'Example sentence 4'
-      ]
+      fr: ['Es importante que hables español', 'No creo que coma mucho', 'Ojalá que vivamos juntos', 'Espero que vengas pronto'],
+      en: ['It\'s important that you speak Spanish', 'I don\'t think he eats much', 'I hope we live together', 'I hope you come soon']
     },
     endings: {
-      ar: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      er: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      ir: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6']
+      ar: ['e', 'es', 'e', 'emos', 'éis', 'en'],
+      er: ['a', 'as', 'a', 'amos', 'áis', 'an'],
+      ir: ['a', 'as', 'a', 'amos', 'áis', 'an']
     },
     verbExamples: {
       ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
@@ -53,18 +34,7 @@ export const [NOM_TEMPS] = {
     }
   },
   exercises: [
-    // EXEMPLE D'EXERCICE - Duplique ce format jusqu'à 100 exercices!
-    { 
-      id: 1, 
-      verb: 'hablar', 
-      verbType: 'ar' as const, 
-      pronoun: 0, 
-      prompt: { fr: 'Yo ___ español', en: 'I ___ Spanish' }, 
-      answer: 'hablé', // Adapte selon le temps
-      meaning: { fr: 'J\'ai parlé espagnol', en: 'I spoke Spanish' }, 
-      difficulty: 'easy' as const, 
-      category: 'regular' 
-    },
-    // Ajoute plus d'exercices ici (jusqu'à 100!)
+    { id: 1, verb: 'hablar', verbType: 'ar' as const, pronoun: 1, prompt: { fr: 'Espero que tú ___ español', en: 'I hope you ___ Spanish' }, answer: 'hables', meaning: { fr: 'J\'espère que tu parles espagnol', en: 'I hope you speak Spanish' }, difficulty: 'medium' as const, category: 'regular' },
+    { id: 2, verb: 'comer', verbType: 'er' as const, pronoun: 2, prompt: { fr: 'No creo que él ___ mucho', en: 'I don\'t think he ___ much' }, answer: 'coma', meaning: { fr: 'Je ne crois pas qu\'il mange beaucoup', en: 'I don\'t think he eats much' }, difficulty: 'medium' as const, category: 'regular' }
   ]
 };
