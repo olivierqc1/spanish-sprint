@@ -1,50 +1,31 @@
-// src/data/conjugacion/perfecto.ts
-// Remplace [NOM_TEMPS] par: preterito, imperfecto, futuro, etc.
-
-export const [NOM_TEMPS] = {
+export const perfecto = {
   metadata: {
-    id: '[nom_temps]',
-    name: { 
-      fr: '[Nom en français]', 
-      en: '[Name in English]' 
-    },
-    description: { 
-      fr: '[Description en français]', 
-      en: '[Description in English]' 
-    },
-    level: 'A2', // A1, A2, B1, etc.
+    id: 'perfecto',
+    name: { fr: 'Passé composé (Pretérito perfecto)', en: 'Present Perfect' },
+    description: { fr: 'Actions récentes ou liées au présent', en: 'Recent actions or connected to present' },
+    level: 'A2',
     usage: {
       fr: [
-        'Usage 1 en français avec exemple',
-        'Usage 2 en français avec exemple',
-        'Usage 3 en français avec exemple',
-        'Usage 4 en français avec exemple'
+        'Actions récentes : "Hoy he hablado con María" (Aujourd\'hui j\'ai parlé avec María)',
+        'Expérience de vie : "He vivido en España" (J\'ai vécu en Espagne)',
+        'Actions non terminées : "Esta semana hemos comido mucho" (Cette semaine nous avons beaucoup mangé)',
+        'Résultat présent : "He perdido las llaves" (J\'ai perdu les clés)'
       ],
       en: [
-        'Usage 1 in English with example',
-        'Usage 2 in English with example',
-        'Usage 3 in English with example',
-        'Usage 4 in English with example'
+        'Recent actions: "Hoy he hablado con María" (Today I have spoken with María)',
+        'Life experience: "He vivido en España" (I have lived in Spain)',
+        'Unfinished time: "Esta semana hemos comido mucho" (This week we have eaten a lot)',
+        'Present result: "He perdido las llaves" (I have lost the keys)'
       ]
     },
     examples: {
-      fr: [
-        'Exemple de phrase 1',
-        'Exemple de phrase 2',
-        'Exemple de phrase 3',
-        'Exemple de phrase 4'
-      ],
-      en: [
-        'Example sentence 1',
-        'Example sentence 2',
-        'Example sentence 3',
-        'Example sentence 4'
-      ]
+      fr: ['He hablado con el jefe', 'Hemos comido juntos', 'Han vivido aquí', '¿Has terminado?'],
+      en: ['I have spoken with the boss', 'We have eaten together', 'They have lived here', 'Have you finished?']
     },
     endings: {
-      ar: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      er: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      ir: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6']
+      ar: ['he -ado', 'has -ado', 'ha -ado', 'hemos -ado', 'habéis -ado', 'han -ado'],
+      er: ['he -ido', 'has -ido', 'ha -ido', 'hemos -ido', 'habéis -ido', 'han -ido'],
+      ir: ['he -ido', 'has -ido', 'ha -ido', 'hemos -ido', 'habéis -ido', 'han -ido']
     },
     verbExamples: {
       ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
@@ -53,18 +34,7 @@ export const [NOM_TEMPS] = {
     }
   },
   exercises: [
-    // EXEMPLE D'EXERCICE - Duplique ce format jusqu'à 100 exercices!
-    { 
-      id: 1, 
-      verb: 'hablar', 
-      verbType: 'ar' as const, 
-      pronoun: 0, 
-      prompt: { fr: 'Yo ___ español', en: 'I ___ Spanish' }, 
-      answer: 'hablé', // Adapte selon le temps
-      meaning: { fr: 'J\'ai parlé espagnol', en: 'I spoke Spanish' }, 
-      difficulty: 'easy' as const, 
-      category: 'regular' 
-    },
-    // Ajoute plus d'exercices ici (jusqu'à 100!)
+    { id: 1, verb: 'hablar', verbType: 'ar' as const, pronoun: 0, prompt: { fr: 'Hoy yo ___ con María', en: 'Today I ___ with María' }, answer: 'he hablado', meaning: { fr: 'Aujourd\'hui j\'ai parlé avec María', en: 'Today I have spoken with María' }, difficulty: 'medium' as const, category: 'regular' },
+    { id: 2, verb: 'comer', verbType: 'er' as const, pronoun: 3, prompt: { fr: 'Nosotros ___ juntos', en: 'We ___ together' }, answer: 'hemos comido', meaning: { fr: 'Nous avons mangé ensemble', en: 'We have eaten together' }, difficulty: 'medium' as const, category: 'regular' }
   ]
 };
