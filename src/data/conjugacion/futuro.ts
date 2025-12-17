@@ -1,50 +1,31 @@
-// src/data/conjugacion/futuro.ts
-// Remplace [NOM_TEMPS] par: preterito, imperfecto, futuro, etc.
-
-export const [NOM_TEMPS] = {
+export const futuro = {
   metadata: {
-    id: '[nom_temps]',
-    name: { 
-      fr: '[Nom en français]', 
-      en: '[Name in English]' 
-    },
-    description: { 
-      fr: '[Description en français]', 
-      en: '[Description in English]' 
-    },
-    level: 'A2', // A1, A2, B1, etc.
+    id: 'futuro',
+    name: { fr: 'Futur simple (Futuro)', en: 'Simple Future' },
+    description: { fr: 'Actions futures ou suppositions sur le présent', en: 'Future actions or assumptions about the present' },
+    level: 'A2',
     usage: {
       fr: [
-        'Usage 1 en français avec exemple',
-        'Usage 2 en français avec exemple',
-        'Usage 3 en français avec exemple',
-        'Usage 4 en français avec exemple'
+        'Actions futures : "Mañana hablaré con él" (Demain je parlerai avec lui)',
+        'Promesses : "Te llamaré esta noche" (Je t\'appellerai ce soir)',
+        'Probabilité au présent : "Serán las tres" (Il doit être trois heures)',
+        'Prédictions : "El año que viene viajaremos mucho" (L\'année prochaine nous voyagerons beaucoup)'
       ],
       en: [
-        'Usage 1 in English with example',
-        'Usage 2 in English with example',
-        'Usage 3 in English with example',
-        'Usage 4 in English with example'
+        'Future actions: "Mañana hablaré con él" (Tomorrow I will speak with him)',
+        'Promises: "Te llamaré esta noche" (I will call you tonight)',
+        'Probability in present: "Serán las tres" (It must be three o\'clock)',
+        'Predictions: "El año que viene viajaremos mucho" (Next year we will travel a lot)'
       ]
     },
     examples: {
-      fr: [
-        'Exemple de phrase 1',
-        'Exemple de phrase 2',
-        'Exemple de phrase 3',
-        'Exemple de phrase 4'
-      ],
-      en: [
-        'Example sentence 1',
-        'Example sentence 2',
-        'Example sentence 3',
-        'Example sentence 4'
-      ]
+      fr: ['El próximo año hablaré mejor español', 'Comeremos a las dos', 'Viviré en Madrid', '¿Vendrás a la fiesta?'],
+      en: ['Next year I will speak Spanish better', 'We will eat at two', 'I will live in Madrid', 'Will you come to the party?']
     },
     endings: {
-      ar: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      er: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      ir: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6']
+      ar: ['é', 'ás', 'á', 'emos', 'éis', 'án'],
+      er: ['é', 'ás', 'á', 'emos', 'éis', 'án'],
+      ir: ['é', 'ás', 'á', 'emos', 'éis', 'án']
     },
     verbExamples: {
       ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
@@ -53,18 +34,8 @@ export const [NOM_TEMPS] = {
     }
   },
   exercises: [
-    // EXEMPLE D'EXERCICE - Duplique ce format jusqu'à 100 exercices!
-    { 
-      id: 1, 
-      verb: 'hablar', 
-      verbType: 'ar' as const, 
-      pronoun: 0, 
-      prompt: { fr: 'Yo ___ español', en: 'I ___ Spanish' }, 
-      answer: 'hablé', // Adapte selon le temps
-      meaning: { fr: 'J\'ai parlé espagnol', en: 'I spoke Spanish' }, 
-      difficulty: 'easy' as const, 
-      category: 'regular' 
-    },
-    // Ajoute plus d'exercices ici (jusqu'à 100!)
+    { id: 1, verb: 'hablar', verbType: 'ar' as const, pronoun: 0, prompt: { fr: 'Mañana yo ___ con él', en: 'Tomorrow I ___ with him' }, answer: 'hablaré', meaning: { fr: 'Demain je parlerai avec lui', en: 'Tomorrow I will speak with him' }, difficulty: 'easy' as const, category: 'regular' },
+    { id: 2, verb: 'comer', verbType: 'er' as const, pronoun: 3, prompt: { fr: 'Nosotros ___ a las dos', en: 'We ___ at two' }, answer: 'comeremos', meaning: { fr: 'Nous mangerons à deux heures', en: 'We will eat at two' }, difficulty: 'easy' as const, category: 'regular' },
+    { id: 3, verb: 'vivir', verbType: 'ir' as const, pronoun: 1, prompt: { fr: '¿Tú ___ en Madrid?', en: 'Will you ___ in Madrid?' }, answer: 'vivirás', meaning: { fr: 'Tu vivras à Madrid?', en: 'Will you live in Madrid?' }, difficulty: 'easy' as const, category: 'regular' }
   ]
 };
