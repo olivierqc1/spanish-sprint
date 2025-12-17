@@ -1,50 +1,31 @@
-// src/data/conjugacion/imperativo_affirmativo.ts
-// Remplace [NOM_TEMPS] par: preterito, imperfecto, futuro, etc.
-
-export const [NOM_TEMPS] = {
+export const imperativo_afirmativo = {
   metadata: {
-    id: '[nom_temps]',
-    name: { 
-      fr: '[Nom en français]', 
-      en: '[Name in English]' 
-    },
-    description: { 
-      fr: '[Description en français]', 
-      en: '[Description in English]' 
-    },
-    level: 'A2', // A1, A2, B1, etc.
+    id: 'imperativo_afirmativo',
+    name: { fr: 'Impératif affirmatif', en: 'Affirmative Imperative' },
+    description: { fr: 'Ordres, instructions, conseils directs', en: 'Direct commands, instructions, advice' },
+    level: 'A2',
     usage: {
       fr: [
-        'Usage 1 en français avec exemple',
-        'Usage 2 en français avec exemple',
-        'Usage 3 en français avec exemple',
-        'Usage 4 en français avec exemple'
+        'Ordres : "¡Habla más alto!" (Parle plus fort!)',
+        'Instructions : "Come despacio" (Mange lentement)',
+        'Conseils : "Vive la vida" (Vis la vie)',
+        'Invitations : "Ven conmigo" (Viens avec moi)'
       ],
       en: [
-        'Usage 1 in English with example',
-        'Usage 2 in English with example',
-        'Usage 3 in English with example',
-        'Usage 4 in English with example'
+        'Commands: "¡Habla más alto!" (Speak louder!)',
+        'Instructions: "Come despacio" (Eat slowly)',
+        'Advice: "Vive la vida" (Live life)',
+        'Invitations: "Ven conmigo" (Come with me)'
       ]
     },
     examples: {
-      fr: [
-        'Exemple de phrase 1',
-        'Exemple de phrase 2',
-        'Exemple de phrase 3',
-        'Exemple de phrase 4'
-      ],
-      en: [
-        'Example sentence 1',
-        'Example sentence 2',
-        'Example sentence 3',
-        'Example sentence 4'
-      ]
+      fr: ['¡Habla claro!', '¡Come más!', '¡Vive feliz!', '¡Venid todos!'],
+      en: ['Speak clearly!', 'Eat more!', 'Live happily!', 'Come everyone!']
     },
     endings: {
-      ar: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      er: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      ir: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6']
+      ar: ['-', 'a', 'e', 'emos', 'ad', 'en'],
+      er: ['-', 'e', 'a', 'amos', 'ed', 'an'],
+      ir: ['-', 'e', 'a', 'amos', 'id', 'an']
     },
     verbExamples: {
       ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
@@ -53,18 +34,7 @@ export const [NOM_TEMPS] = {
     }
   },
   exercises: [
-    // EXEMPLE D'EXERCICE - Duplique ce format jusqu'à 100 exercices!
-    { 
-      id: 1, 
-      verb: 'hablar', 
-      verbType: 'ar' as const, 
-      pronoun: 0, 
-      prompt: { fr: 'Yo ___ español', en: 'I ___ Spanish' }, 
-      answer: 'hablé', // Adapte selon le temps
-      meaning: { fr: 'J\'ai parlé espagnol', en: 'I spoke Spanish' }, 
-      difficulty: 'easy' as const, 
-      category: 'regular' 
-    },
-    // Ajoute plus d'exercices ici (jusqu'à 100!)
+    { id: 1, verb: 'hablar', verbType: 'ar' as const, pronoun: 1, prompt: { fr: '¡___ más alto! (tú)', en: '___ louder! (you)' }, answer: 'habla', meaning: { fr: 'Parle plus fort!', en: 'Speak louder!' }, difficulty: 'easy' as const, category: 'regular' },
+    { id: 2, verb: 'comer', verbType: 'er' as const, pronoun: 4, prompt: { fr: '¡___ más! (vosotros)', en: '___ more! (you all)' }, answer: 'comed', meaning: { fr: 'Mangez plus!', en: 'Eat more!' }, difficulty: 'easy' as const, category: 'regular' }
   ]
 };
