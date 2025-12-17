@@ -1,50 +1,31 @@
-// src/data/conjugacion/imperfecto.ts
-// Remplace [NOM_TEMPS] par: preterito, imperfecto, futuro, etc.
-
-export const [NOM_TEMPS] = {
+export const imperfecto = {
   metadata: {
-    id: '[nom_temps]',
-    name: { 
-      fr: '[Nom en français]', 
-      en: '[Name in English]' 
-    },
-    description: { 
-      fr: '[Description en français]', 
-      en: '[Description in English]' 
-    },
-    level: 'A2', // A1, A2, B1, etc.
+    id: 'imperfecto',
+    name: { fr: 'Imparfait (Imperfecto)', en: 'Imperfect' },
+    description: { fr: 'Actions répétées, habituelles ou en cours dans le passé', en: 'Repeated, habitual, or ongoing actions in the past' },
+    level: 'A2',
     usage: {
       fr: [
-        'Usage 1 en français avec exemple',
-        'Usage 2 en français avec exemple',
-        'Usage 3 en français avec exemple',
-        'Usage 4 en français avec exemple'
+        'Actions habituelles : "Cuando era niño, jugaba al fútbol" (Quand j\'étais enfant, je jouais au foot)',
+        'Descriptions : "La casa era grande y tenía un jardín" (La maison était grande et avait un jardin)',
+        'Actions en cours : "Mientras comía, leía el periódico" (Pendant que je mangeais, je lisais le journal)',
+        'Heure dans le passé : "Eran las tres de la tarde" (Il était trois heures de l\'après-midi)'
       ],
       en: [
-        'Usage 1 in English with example',
-        'Usage 2 in English with example',
-        'Usage 3 in English with example',
-        'Usage 4 in English with example'
+        'Habitual actions: "Cuando era niño, jugaba al fútbol" (When I was a child, I played soccer)',
+        'Descriptions: "La casa era grande y tenía un jardín" (The house was big and had a garden)',
+        'Ongoing actions: "Mientras comía, leía el periódico" (While I ate, I read the newspaper)',
+        'Time in the past: "Eran las tres de la tarde" (It was three in the afternoon)'
       ]
     },
     examples: {
-      fr: [
-        'Exemple de phrase 1',
-        'Exemple de phrase 2',
-        'Exemple de phrase 3',
-        'Exemple de phrase 4'
-      ],
-      en: [
-        'Example sentence 1',
-        'Example sentence 2',
-        'Example sentence 3',
-        'Example sentence 4'
-      ]
+      fr: ['De niño, hablaba mucho', 'Siempre comíamos juntos', 'Vivía cerca del mar', 'Cada día estudiaba dos horas'],
+      en: ['As a child, I talked a lot', 'We always ate together', 'I lived near the sea', 'Every day I studied two hours']
     },
     endings: {
-      ar: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      er: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      ir: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6']
+      ar: ['aba', 'abas', 'aba', 'ábamos', 'abais', 'aban'],
+      er: ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'],
+      ir: ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían']
     },
     verbExamples: {
       ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
@@ -53,18 +34,8 @@ export const [NOM_TEMPS] = {
     }
   },
   exercises: [
-    // EXEMPLE D'EXERCICE - Duplique ce format jusqu'à 100 exercices!
-    { 
-      id: 1, 
-      verb: 'hablar', 
-      verbType: 'ar' as const, 
-      pronoun: 0, 
-      prompt: { fr: 'Yo ___ español', en: 'I ___ Spanish' }, 
-      answer: 'hablé', // Adapte selon le temps
-      meaning: { fr: 'J\'ai parlé espagnol', en: 'I spoke Spanish' }, 
-      difficulty: 'easy' as const, 
-      category: 'regular' 
-    },
-    // Ajoute plus d'exercices ici (jusqu'à 100!)
+    { id: 1, verb: 'hablar', verbType: 'ar' as const, pronoun: 0, prompt: { fr: 'De niño, yo ___ mucho', en: 'As a child, I ___ a lot' }, answer: 'hablaba', meaning: { fr: 'Enfant, je parlais beaucoup', en: 'As a child, I talked a lot' }, difficulty: 'easy' as const, category: 'regular' },
+    { id: 2, verb: 'comer', verbType: 'er' as const, pronoun: 3, prompt: { fr: 'Nosotros ___ juntos', en: 'We ___ together' }, answer: 'comíamos', meaning: { fr: 'Nous mangions ensemble', en: 'We ate together' }, difficulty: 'easy' as const, category: 'regular' },
+    { id: 3, verb: 'vivir', verbType: 'ir' as const, pronoun: 0, prompt: { fr: 'Yo ___ cerca del mar', en: 'I ___ near the sea' }, answer: 'vivía', meaning: { fr: 'Je vivais près de la mer', en: 'I lived near the sea' }, difficulty: 'easy' as const, category: 'regular' }
   ]
 };
