@@ -1,50 +1,31 @@
-// src/data/conjugacion/futuro_perfecto.ts
-// Remplace [NOM_TEMPS] par: preterito, imperfecto, futuro, etc.
-
-export const [NOM_TEMPS] = {
+export const futuro_perfecto = {
   metadata: {
-    id: '[nom_temps]',
-    name: { 
-      fr: '[Nom en français]', 
-      en: '[Name in English]' 
-    },
-    description: { 
-      fr: '[Description en français]', 
-      en: '[Description in English]' 
-    },
-    level: 'A2', // A1, A2, B1, etc.
+    id: 'futuro_perfecto',
+    name: { fr: 'Futur antérieur (Futuro perfecto)', en: 'Future Perfect' },
+    description: { fr: 'Action future avant une autre action future', en: 'Future action before another future action' },
+    level: 'B1',
     usage: {
       fr: [
-        'Usage 1 en français avec exemple',
-        'Usage 2 en français avec exemple',
-        'Usage 3 en français avec exemple',
-        'Usage 4 en français avec exemple'
+        'Antériorité future : "Cuando llegues, ya habré terminado" (Quand tu arriveras, j\'aurai déjà fini)',
+        'Supposition passée : "Habrán llegado ya" (Ils seront déjà arrivés)',
+        'Accomplissement futur : "En 2030 habré vivido aquí 10 años" (En 2030 j\'aurai vécu ici 10 ans)',
+        'Probabilité au passé : "Habrán comido en el camino" (Ils auront mangé en chemin)'
       ],
       en: [
-        'Usage 1 in English with example',
-        'Usage 2 in English with example',
-        'Usage 3 in English with example',
-        'Usage 4 in English with example'
+        'Future prior action: "Cuando llegues, ya habré terminado" (When you arrive, I will have finished)',
+        'Past assumption: "Habrán llegado ya" (They will have arrived already)',
+        'Future accomplishment: "En 2030 habré vivido aquí 10 años" (In 2030 I will have lived here 10 years)',
+        'Past probability: "Habrán comido en el camino" (They will have eaten on the way)'
       ]
     },
     examples: {
-      fr: [
-        'Exemple de phrase 1',
-        'Exemple de phrase 2',
-        'Exemple de phrase 3',
-        'Exemple de phrase 4'
-      ],
-      en: [
-        'Example sentence 1',
-        'Example sentence 2',
-        'Example sentence 3',
-        'Example sentence 4'
-      ]
+      fr: ['Habré hablado con todos', 'Habremos comido antes', 'Habrán vivido 5 años aquí', 'Para entonces habré terminado'],
+      en: ['I will have spoken with everyone', 'We will have eaten before', 'They will have lived here 5 years', 'By then I will have finished']
     },
     endings: {
-      ar: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      er: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      ir: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6']
+      ar: ['habré -ado', 'habrás -ado', 'habrá -ado', 'habremos -ado', 'habréis -ado', 'habrán -ado'],
+      er: ['habré -ido', 'habrás -ido', 'habrá -ido', 'habremos -ido', 'habréis -ido', 'habrán -ido'],
+      ir: ['habré -ido', 'habrás -ido', 'habrá -ido', 'habremos -ido', 'habréis -ido', 'habrán -ido']
     },
     verbExamples: {
       ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
@@ -53,18 +34,6 @@ export const [NOM_TEMPS] = {
     }
   },
   exercises: [
-    // EXEMPLE D'EXERCICE - Duplique ce format jusqu'à 100 exercices!
-    { 
-      id: 1, 
-      verb: 'hablar', 
-      verbType: 'ar' as const, 
-      pronoun: 0, 
-      prompt: { fr: 'Yo ___ español', en: 'I ___ Spanish' }, 
-      answer: 'hablé', // Adapte selon le temps
-      meaning: { fr: 'J\'ai parlé espagnol', en: 'I spoke Spanish' }, 
-      difficulty: 'easy' as const, 
-      category: 'regular' 
-    },
-    // Ajoute plus d'exercices ici (jusqu'à 100!)
+    { id: 1, verb: 'hablar', verbType: 'ar' as const, pronoun: 0, prompt: { fr: 'Para entonces, yo ___ con todos', en: 'By then, I ___ with everyone' }, answer: 'habré hablado', meaning: { fr: 'D\'ici là, j\'aurai parlé avec tout le monde', en: 'By then, I will have spoken with everyone' }, difficulty: 'hard' as const, category: 'regular' }
   ]
 };
