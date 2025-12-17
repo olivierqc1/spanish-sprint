@@ -1,50 +1,31 @@
-// src/data/conjugacion/pluscuamperfecto.ts
-// Remplace [NOM_TEMPS] par: preterito, imperfecto, futuro, etc.
-
-export const [NOM_TEMPS] = {
+export const pluscuamperfecto = {
   metadata: {
-    id: '[nom_temps]',
-    name: { 
-      fr: '[Nom en français]', 
-      en: '[Name in English]' 
-    },
-    description: { 
-      fr: '[Description en français]', 
-      en: '[Description in English]' 
-    },
-    level: 'A2', // A1, A2, B1, etc.
+    id: 'pluscuamperfecto',
+    name: { fr: 'Plus-que-parfait (Pluscuamperfecto)', en: 'Pluperfect' },
+    description: { fr: 'Action passée avant une autre action passée', en: 'Past action before another past action' },
+    level: 'B1',
     usage: {
       fr: [
-        'Usage 1 en français avec exemple',
-        'Usage 2 en français avec exemple',
-        'Usage 3 en français avec exemple',
-        'Usage 4 en français avec exemple'
+        'Antériorité : "Cuando llegué, ya habían comido" (Quand je suis arrivé, ils avaient déjà mangé)',
+        'Expérience passée : "Nunca había hablado español antes" (Je n\'avais jamais parlé espagnol avant)',
+        'Regret : "Ojalá hubiera estudiado más" (J\'aurais aimé avoir étudié plus)',
+        'Cause passée : "Estaba cansado porque había trabajado mucho" (J\'étais fatigué parce que j\'avais beaucoup travaillé)'
       ],
       en: [
-        'Usage 1 in English with example',
-        'Usage 2 in English with example',
-        'Usage 3 in English with example',
-        'Usage 4 in English with example'
+        'Prior action: "Cuando llegué, ya habían comido" (When I arrived, they had already eaten)',
+        'Past experience: "Nunca había hablado español antes" (I had never spoken Spanish before)',
+        'Regret: "Ojalá hubiera estudiado más" (I wish I had studied more)',
+        'Past cause: "Estaba cansado porque había trabajado mucho" (I was tired because I had worked a lot)'
       ]
     },
     examples: {
-      fr: [
-        'Exemple de phrase 1',
-        'Exemple de phrase 2',
-        'Exemple de phrase 3',
-        'Exemple de phrase 4'
-      ],
-      en: [
-        'Example sentence 1',
-        'Example sentence 2',
-        'Example sentence 3',
-        'Example sentence 4'
-      ]
+      fr: ['Ya había hablado con él', 'No habíamos comido antes', 'Habían vivido allí', 'Nunca había visto eso'],
+      en: ['I had already spoken with him', 'We hadn\'t eaten before', 'They had lived there', 'I had never seen that']
     },
     endings: {
-      ar: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      er: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      ir: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6']
+      ar: ['había -ado', 'habías -ado', 'había -ado', 'habíamos -ado', 'habíais -ado', 'habían -ado'],
+      er: ['había -ido', 'habías -ido', 'había -ido', 'habíamos -ido', 'habíais -ido', 'habían -ido'],
+      ir: ['había -ido', 'habías -ido', 'había -ido', 'habíamos -ido', 'habíais -ido', 'habían -ido']
     },
     verbExamples: {
       ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
@@ -53,18 +34,6 @@ export const [NOM_TEMPS] = {
     }
   },
   exercises: [
-    // EXEMPLE D'EXERCICE - Duplique ce format jusqu'à 100 exercices!
-    { 
-      id: 1, 
-      verb: 'hablar', 
-      verbType: 'ar' as const, 
-      pronoun: 0, 
-      prompt: { fr: 'Yo ___ español', en: 'I ___ Spanish' }, 
-      answer: 'hablé', // Adapte selon le temps
-      meaning: { fr: 'J\'ai parlé espagnol', en: 'I spoke Spanish' }, 
-      difficulty: 'easy' as const, 
-      category: 'regular' 
-    },
-    // Ajoute plus d'exercices ici (jusqu'à 100!)
+    { id: 1, verb: 'hablar', verbType: 'ar' as const, pronoun: 0, prompt: { fr: 'Ya yo ___ con él', en: 'I had already ___ with him' }, answer: 'había hablado', meaning: { fr: 'J\'avais déjà parlé avec lui', en: 'I had already spoken with him' }, difficulty: 'medium' as const, category: 'regular' }
   ]
 };
