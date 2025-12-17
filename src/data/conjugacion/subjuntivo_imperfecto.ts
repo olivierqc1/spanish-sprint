@@ -1,50 +1,31 @@
-// src/data/conjugacion/subjuntivo_imperfecto.ts
-// Remplace [NOM_TEMPS] par: preterito, imperfecto, futuro, etc.
-
-export const [NOM_TEMPS] = {
+export const subjuntivo_imperfecto = {
   metadata: {
-    id: '[nom_temps]',
-    name: { 
-      fr: '[Nom en français]', 
-      en: '[Name in English]' 
-    },
-    description: { 
-      fr: '[Description en français]', 
-      en: '[Description in English]' 
-    },
-    level: 'A2', // A1, A2, B1, etc.
+    id: 'subjuntivo_imperfecto',
+    name: { fr: 'Subjonctif imparfait', en: 'Imperfect Subjunctive' },
+    description: { fr: 'Souhait ou doute dans le passé', en: 'Past wish or doubt' },
+    level: 'B2',
     usage: {
       fr: [
-        'Usage 1 en français avec exemple',
-        'Usage 2 en français avec exemple',
-        'Usage 3 en français avec exemple',
-        'Usage 4 en français avec exemple'
+        'Souhait passé : "Quería que vinieras" (Je voulais que tu viennes)',
+        'Condition irréelle : "Si tuviera dinero, viajaría" (Si j\'avais de l\'argent, je voyagerais)',
+        'Après "como si" : "Habla como si supiera todo" (Il parle comme s\'il savait tout)',
+        'Politesse extrême : "Quisiera hablar con usted" (Je voudrais parler avec vous)'
       ],
       en: [
-        'Usage 1 in English with example',
-        'Usage 2 in English with example',
-        'Usage 3 in English with example',
-        'Usage 4 in English with example'
+        'Past wish: "Quería que vinieras" (I wanted you to come)',
+        'Unreal condition: "Si tuviera dinero, viajaría" (If I had money, I would travel)',
+        'After "como si": "Habla como si supiera todo" (He talks as if he knew everything)',
+        'Extreme politeness: "Quisiera hablar con usted" (I would like to speak with you)'
       ]
     },
     examples: {
-      fr: [
-        'Exemple de phrase 1',
-        'Exemple de phrase 2',
-        'Exemple de phrase 3',
-        'Exemple de phrase 4'
-      ],
-      en: [
-        'Example sentence 1',
-        'Example sentence 2',
-        'Example sentence 3',
-        'Example sentence 4'
-      ]
+      fr: ['Si hablara mejor, conseguiría el trabajo', 'Dudaba que comiera tanto', 'Me gustaría que viviéramos cerca', 'Como si fuera fácil'],
+      en: ['If I spoke better, I would get the job', 'I doubted he ate so much', 'I would like us to live nearby', 'As if it were easy']
     },
     endings: {
-      ar: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      er: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      ir: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6']
+      ar: ['ara', 'aras', 'ara', 'áramos', 'arais', 'aran'],
+      er: ['iera', 'ieras', 'iera', 'iéramos', 'ierais', 'ieran'],
+      ir: ['iera', 'ieras', 'iera', 'iéramos', 'ierais', 'ieran']
     },
     verbExamples: {
       ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
@@ -53,18 +34,7 @@ export const [NOM_TEMPS] = {
     }
   },
   exercises: [
-    // EXEMPLE D'EXERCICE - Duplique ce format jusqu'à 100 exercices!
-    { 
-      id: 1, 
-      verb: 'hablar', 
-      verbType: 'ar' as const, 
-      pronoun: 0, 
-      prompt: { fr: 'Yo ___ español', en: 'I ___ Spanish' }, 
-      answer: 'hablé', // Adapte selon le temps
-      meaning: { fr: 'J\'ai parlé espagnol', en: 'I spoke Spanish' }, 
-      difficulty: 'easy' as const, 
-      category: 'regular' 
-    },
-    // Ajoute plus d'exercices ici (jusqu'à 100!)
+    { id: 1, verb: 'hablar', verbType: 'ar' as const, pronoun: 0, prompt: { fr: 'Si yo ___ mejor...', en: 'If I ___ better...' }, answer: 'hablara', meaning: { fr: 'Si je parlais mieux', en: 'If I spoke better' }, difficulty: 'hard' as const, category: 'regular' },
+    { id: 2, verb: 'comer', verbType: 'er' as const, pronoun: 2, prompt: { fr: 'Dudaba que él ___ tanto', en: 'I doubted he ___ so much' }, answer: 'comiera', meaning: { fr: 'Je doutais qu\'il mange autant', en: 'I doubted he ate so much' }, difficulty: 'hard' as const, category: 'regular' }
   ]
 };
