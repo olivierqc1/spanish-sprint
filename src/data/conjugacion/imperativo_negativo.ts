@@ -1,50 +1,31 @@
-// src/data/conjugacion/negativo.ts
-// Remplace [NOM_TEMPS] par: preterito, imperfecto, futuro, etc.
-
-export const [NOM_TEMPS] = {
+export const imperativo_negativo = {
   metadata: {
-    id: '[nom_temps]',
-    name: { 
-      fr: '[Nom en français]', 
-      en: '[Name in English]' 
-    },
-    description: { 
-      fr: '[Description en français]', 
-      en: '[Description in English]' 
-    },
-    level: 'A2', // A1, A2, B1, etc.
+    id: 'imperativo_negativo',
+    name: { fr: 'Impératif négatif', en: 'Negative Imperative' },
+    description: { fr: 'Interdictions, instructions négatives', en: 'Prohibitions, negative instructions' },
+    level: 'A2',
     usage: {
       fr: [
-        'Usage 1 en français avec exemple',
-        'Usage 2 en français avec exemple',
-        'Usage 3 en français avec exemple',
-        'Usage 4 en français avec exemple'
+        'Interdictions : "¡No hables así!" (Ne parle pas comme ça!)',
+        'Conseils négatifs : "No comas tanto" (Ne mange pas autant)',
+        'Avertissements : "No vivas con miedo" (Ne vis pas avec peur)',
+        'Instructions : "No toques eso" (Ne touche pas ça)'
       ],
       en: [
-        'Usage 1 in English with example',
-        'Usage 2 in English with example',
-        'Usage 3 in English with example',
-        'Usage 4 in English with example'
+        'Prohibitions: "¡No hables así!" (Don\'t speak like that!)',
+        'Negative advice: "No comas tanto" (Don\'t eat so much)',
+        'Warnings: "No vivas con miedo" (Don\'t live with fear)',
+        'Instructions: "No toques eso" (Don\'t touch that)'
       ]
     },
     examples: {
-      fr: [
-        'Exemple de phrase 1',
-        'Exemple de phrase 2',
-        'Exemple de phrase 3',
-        'Exemple de phrase 4'
-      ],
-      en: [
-        'Example sentence 1',
-        'Example sentence 2',
-        'Example sentence 3',
-        'Example sentence 4'
-      ]
+      fr: ['¡No hables!', '¡No comas eso!', '¡No vivas solo!', '¡No corráis!'],
+      en: ['Don\'t speak!', 'Don\'t eat that!', 'Don\'t live alone!', 'Don\'t run!']
     },
     endings: {
-      ar: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      er: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6'],
-      ir: ['terminaison1', 'terminaison2', 'terminaison3', 'terminaison4', 'terminaison5', 'terminaison6']
+      ar: ['-', 'no -es', 'no -e', 'no -emos', 'no -éis', 'no -en'],
+      er: ['-', 'no -as', 'no -a', 'no -amos', 'no -áis', 'no -an'],
+      ir: ['-', 'no -as', 'no -a', 'no -amos', 'no -áis', 'no -an']
     },
     verbExamples: {
       ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
@@ -53,18 +34,7 @@ export const [NOM_TEMPS] = {
     }
   },
   exercises: [
-    // EXEMPLE D'EXERCICE - Duplique ce format jusqu'à 100 exercices!
-    { 
-      id: 1, 
-      verb: 'hablar', 
-      verbType: 'ar' as const, 
-      pronoun: 0, 
-      prompt: { fr: 'Yo ___ español', en: 'I ___ Spanish' }, 
-      answer: 'hablé', // Adapte selon le temps
-      meaning: { fr: 'J\'ai parlé espagnol', en: 'I spoke Spanish' }, 
-      difficulty: 'easy' as const, 
-      category: 'regular' 
-    },
-    // Ajoute plus d'exercices ici (jusqu'à 100!)
+    { id: 1, verb: 'hablar', verbType: 'ar' as const, pronoun: 1, prompt: { fr: '¡___ así! (tú)', en: '___ like that! (you)' }, answer: 'no hables', meaning: { fr: 'Ne parle pas comme ça!', en: 'Don\'t speak like that!' }, difficulty: 'medium' as const, category: 'regular' },
+    { id: 2, verb: 'comer', verbType: 'er' as const, pronoun: 1, prompt: { fr: '¡___ eso! (tú)', en: '___ that! (you)' }, answer: 'no comas', meaning: { fr: 'Ne mange pas ça!', en: 'Don\'t eat that!' }, difficulty: 'medium' as const, category: 'regular' }
   ]
 };
