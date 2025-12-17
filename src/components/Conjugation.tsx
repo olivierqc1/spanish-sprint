@@ -1,7 +1,9 @@
+// src/components/Conjugation.tsx
 "use client";
 
 import { useState, useEffect } from "react";
 import type { Level, Country } from "@/components/LevelPicker";
+import { allTenses, pronouns, type Tense, type Exercise } from "@/data/conjugacion";
 
 interface ConjugationProps {
   level: Level;
@@ -9,210 +11,10 @@ interface ConjugationProps {
 }
 
 type Mode = 'theory' | 'practice';
-type Tense = 
-  | 'presente' 
-  | 'preterito' 
-  | 'imperfecto' 
-  | 'futuro' 
-  | 'condicional' 
-  | 'subjuntivo_presente'
-  | 'subjuntivo_imperfecto'
-  | 'perfecto'
-  | 'pluscuamperfecto'
-  | 'futuro_perfecto'
-  | 'imperativo_afirmativo'
-  | 'imperativo_negativo';
-
-const tenseData: Record<Tense, {
-  name: { fr: string; en: string };
-  description: { fr: string; en: string };
-  endings: {
-    ar: string[];
-    er: string[];
-    ir: string[];
-  };
-  examples: {
-    ar: { verb: string; meaning: { fr: string; en: string } };
-    er: { verb: string; meaning: { fr: string; en: string } };
-    ir: { verb: string; meaning: { fr: string; en: string } };
-  };
-}> = {
-  presente: {
-    name: { fr: 'Présent', en: 'Present' },
-    description: { fr: 'Actions habituelles ou actuelles', en: 'Habitual or current actions' },
-    endings: {
-      ar: ['o', 'as', 'a', 'amos', 'áis', 'an'],
-      er: ['o', 'es', 'e', 'emos', 'éis', 'en'],
-      ir: ['o', 'es', 'e', 'imos', 'ís', 'en']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  },
-  preterito: {
-    name: { fr: 'Passé simple', en: 'Preterite' },
-    description: { fr: 'Actions terminées dans le passé', en: 'Completed past actions' },
-    endings: {
-      ar: ['é', 'aste', 'ó', 'amos', 'asteis', 'aron'],
-      er: ['í', 'iste', 'ió', 'imos', 'isteis', 'ieron'],
-      ir: ['í', 'iste', 'ió', 'imos', 'isteis', 'ieron']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  },
-  imperfecto: {
-    name: { fr: 'Imparfait', en: 'Imperfect' },
-    description: { fr: 'Actions répétées ou en cours dans le passé', en: 'Repeated or ongoing past actions' },
-    endings: {
-      ar: ['aba', 'abas', 'aba', 'ábamos', 'abais', 'aban'],
-      er: ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'],
-      ir: ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  },
-  futuro: {
-    name: { fr: 'Futur', en: 'Future' },
-    description: { fr: 'Actions futures', en: 'Future actions' },
-    endings: {
-      ar: ['é', 'ás', 'á', 'emos', 'éis', 'án'],
-      er: ['é', 'ás', 'á', 'emos', 'éis', 'án'],
-      ir: ['é', 'ás', 'á', 'emos', 'éis', 'án']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  },
-  condicional: {
-    name: { fr: 'Conditionnel', en: 'Conditional' },
-    description: { fr: 'Actions hypothétiques', en: 'Hypothetical actions' },
-    endings: {
-      ar: ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'],
-      er: ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'],
-      ir: ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  },
-  subjuntivo_presente: {
-    name: { fr: 'Subjonctif présent', en: 'Present Subjunctive' },
-    description: { fr: 'Doute, souhait, émotion', en: 'Doubt, wish, emotion' },
-    endings: {
-      ar: ['e', 'es', 'e', 'emos', 'éis', 'en'],
-      er: ['a', 'as', 'a', 'amos', 'áis', 'an'],
-      ir: ['a', 'as', 'a', 'amos', 'áis', 'an']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  },
-  subjuntivo_imperfecto: {
-    name: { fr: 'Subjonctif imparfait', en: 'Imperfect Subjunctive' },
-    description: { fr: 'Souhait/doute au passé', en: 'Past wish/doubt' },
-    endings: {
-      ar: ['ara', 'aras', 'ara', 'áramos', 'arais', 'aran'],
-      er: ['iera', 'ieras', 'iera', 'iéramos', 'ierais', 'ieran'],
-      ir: ['iera', 'ieras', 'iera', 'iéramos', 'ierais', 'ieran']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  },
-  perfecto: {
-    name: { fr: 'Passé composé', en: 'Present Perfect' },
-    description: { fr: 'Actions récentes terminées', en: 'Recent completed actions' },
-    endings: {
-      ar: ['he -ado', 'has -ado', 'ha -ado', 'hemos -ado', 'habéis -ado', 'han -ado'],
-      er: ['he -ido', 'has -ido', 'ha -ido', 'hemos -ido', 'habéis -ido', 'han -ido'],
-      ir: ['he -ido', 'has -ido', 'ha -ido', 'hemos -ido', 'habéis -ido', 'han -ido']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  },
-  pluscuamperfecto: {
-    name: { fr: 'Plus-que-parfait', en: 'Pluperfect' },
-    description: { fr: 'Action antérieure à une autre au passé', en: 'Action before another past action' },
-    endings: {
-      ar: ['había -ado', 'habías -ado', 'había -ado', 'habíamos -ado', 'habíais -ado', 'habían -ado'],
-      er: ['había -ido', 'habías -ido', 'había -ido', 'habíamos -ido', 'habíais -ido', 'habían -ido'],
-      ir: ['había -ido', 'habías -ido', 'había -ido', 'habíamos -ido', 'habíais -ido', 'habían -ido']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  },
-  futuro_perfecto: {
-    name: { fr: 'Futur antérieur', en: 'Future Perfect' },
-    description: { fr: 'Action future antérieure à une autre', en: 'Future action before another' },
-    endings: {
-      ar: ['habré -ado', 'habrás -ado', 'habrá -ado', 'habremos -ado', 'habréis -ado', 'habrán -ado'],
-      er: ['habré -ido', 'habrás -ido', 'habrá -ido', 'habremos -ido', 'habréis -ido', 'habrán -ido'],
-      ir: ['habré -ido', 'habrás -ido', 'habrá -ido', 'habremos -ido', 'habréis -ido', 'habrán -ido']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  },
-  imperativo_afirmativo: {
-    name: { fr: 'Impératif affirmatif', en: 'Affirmative Imperative' },
-    description: { fr: 'Ordres et instructions', en: 'Commands and instructions' },
-    endings: {
-      ar: ['-', 'a', 'e', 'emos', 'ad', 'en'],
-      er: ['-', 'e', 'a', 'amos', 'ed', 'an'],
-      ir: ['-', 'e', 'a', 'amos', 'id', 'an']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  },
-  imperativo_negativo: {
-    name: { fr: 'Impératif négatif', en: 'Negative Imperative' },
-    description: { fr: 'Ordres négatifs', en: 'Negative commands' },
-    endings: {
-      ar: ['-', 'no -es', 'no -e', 'no -emos', 'no -éis', 'no -en'],
-      er: ['-', 'no -as', 'no -a', 'no -amos', 'no -áis', 'no -an'],
-      ir: ['-', 'no -as', 'no -a', 'no -amos', 'no -áis', 'no -an']
-    },
-    examples: {
-      ar: { verb: 'hablar', meaning: { fr: 'parler', en: 'to speak' } },
-      er: { verb: 'comer', meaning: { fr: 'manger', en: 'to eat' } },
-      ir: { verb: 'vivir', meaning: { fr: 'vivre', en: 'to live' } }
-    }
-  }
-};
-
-const pronouns = ['yo', 'tú', 'él/ella', 'nosotros', 'vosotros', 'ellos/ellas'];
 
 interface ExerciseProgress {
   tense: Tense;
-  pronoun: number;
-  verbType: 'ar' | 'er' | 'ir';
+  exerciseId: number;
   failures: number;
   lastAttempt: Date | null;
 }
@@ -221,14 +23,10 @@ export default function Conjugation({ level, country }: ConjugationProps) {
   const [mode, setMode] = useState<Mode>('theory');
   const [selectedTense, setSelectedTense] = useState<Tense>('presente');
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
+  const [showUsageDetails, setShowUsageDetails] = useState(false);
   
   // Practice mode states
-  const [currentExercise, setCurrentExercise] = useState<{
-    verb: string;
-    pronoun: number;
-    verbType: 'ar' | 'er' | 'ir';
-    tense: Tense;
-  } | null>(null);
+  const [currentExercise, setCurrentExercise] = useState<Exercise | null>(null);
   const [userAnswer, setUserAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -241,7 +39,6 @@ export default function Conjugation({ level, country }: ConjugationProps) {
       setLanguage(savedLanguage);
     }
 
-    // Charger la progression
     const saved = localStorage.getItem('conjugation-progress');
     if (saved) {
       const parsed = JSON.parse(saved);
@@ -260,7 +57,10 @@ export default function Conjugation({ level, country }: ConjugationProps) {
       selectTense: 'Choisis un temps',
       examples: 'Exemples',
       endings: 'Terminaisons',
-      startPractice: 'Commencer la pratique',
+      usage: 'Utilisation',
+      usageExamples: 'Exemples d\'usage',
+      showDetails: 'Voir les détails d\'usage',
+      hideDetails: 'Masquer les détails',
       yourAnswer: 'Ta réponse',
       check: 'Vérifier',
       next: 'Suivant',
@@ -268,8 +68,9 @@ export default function Conjugation({ level, country }: ConjugationProps) {
       incorrect: '❌ Incorrect',
       correctAnswer: 'Bonne réponse',
       score: 'Score',
-      difficultExercises: 'Exercices difficiles à réviser',
+      difficultExercises: 'à réviser',
       pronoun: 'Pronom',
+      noExercises: 'Aucun exercice disponible pour ce temps. Ajoute des exercices dans',
     },
     en: {
       title: '⚡ Conjugation',
@@ -278,7 +79,10 @@ export default function Conjugation({ level, country }: ConjugationProps) {
       selectTense: 'Choose a tense',
       examples: 'Examples',
       endings: 'Endings',
-      startPractice: 'Start practice',
+      usage: 'Usage',
+      usageExamples: 'Usage examples',
+      showDetails: 'Show usage details',
+      hideDetails: 'Hide details',
       yourAnswer: 'Your answer',
       check: 'Check',
       next: 'Next',
@@ -286,30 +90,32 @@ export default function Conjugation({ level, country }: ConjugationProps) {
       incorrect: '❌ Incorrect',
       correctAnswer: 'Correct answer',
       score: 'Score',
-      difficultExercises: 'Difficult exercises to review',
+      difficultExercises: 'to review',
       pronoun: 'Pronoun',
+      noExercises: 'No exercises available for this tense. Add exercises in',
     }
   };
 
   const t = texts[language];
-  const currentTenseData = tenseData[selectedTense];const getConjugatedForm = (verbType: 'ar' | 'er' | 'ir', pronounIndex: number, tense: Tense) => {
-    const example = tenseData[tense].examples[verbType];
+  const currentTenseData = allTenses[selectedTense];
+
+  const getConjugatedForm = (verbType: 'ar' | 'er' | 'ir', pronounIndex: number, tense: Tense) => {
+    const example = currentTenseData.metadata.verbExamples[verbType];
     const root = example.verb.slice(0, -2);
-    const ending = tenseData[tense].endings[verbType][pronounIndex];
+    const ending = currentTenseData.metadata.endings[verbType][pronounIndex];
     
     if (tense === 'futuro' || tense === 'condicional') {
       return example.verb + ending;
     }
     
     if (tense === 'perfecto' || tense === 'pluscuamperfecto' || tense === 'futuro_perfecto') {
-      // Pour les temps composés, retourner la forme complète
       return ending.replace(verbType === 'ar' ? '-ado' : '-ido', verbType === 'ar' ? 'ado' : 'ido');
     }
 
     if (tense === 'imperativo_afirmativo' || tense === 'imperativo_negativo') {
-      if (pronounIndex === 0) return '-'; // pas de "yo" à l'impératif
+      if (pronounIndex === 0) return '-';
       if (tense === 'imperativo_negativo') {
-        return ending; // déjà avec "no"
+        return ending;
       }
       return root + ending;
     }
@@ -318,7 +124,13 @@ export default function Conjugation({ level, country }: ConjugationProps) {
   };
 
   const generateExercise = () => {
-    // Priorité aux exercices difficiles (failures > 0)
+    const exercises = currentTenseData.exercises;
+    
+    if (exercises.length === 0) {
+      return;
+    }
+
+    // Priorité aux exercices difficiles
     const difficultOnes = exerciseProgress
       .filter(p => p.failures > 0 && p.tense === selectedTense)
       .sort((a, b) => b.failures - a.failures);
@@ -326,32 +138,10 @@ export default function Conjugation({ level, country }: ConjugationProps) {
     let exercise;
 
     if (difficultOnes.length > 0 && Math.random() < 0.7) {
-      // 70% de chance de réviser un exercice difficile
       const difficult = difficultOnes[0];
-      const example = tenseData[difficult.tense].examples[difficult.verbType];
-      exercise = {
-        verb: example.verb,
-        pronoun: difficult.pronoun,
-        verbType: difficult.verbType,
-        tense: difficult.tense,
-      };
+      exercise = exercises.find(ex => ex.id === difficult.exerciseId) || exercises[0];
     } else {
-      // Nouvel exercice aléatoire
-      const verbTypes: ('ar' | 'er' | 'ir')[] = ['ar', 'er', 'ir'];
-      const verbType = verbTypes[Math.floor(Math.random() * verbTypes.length)];
-      const example = currentTenseData.examples[verbType];
-      
-      // Pour l'impératif, éviter "yo" (index 0)
-      const availablePronouns = (selectedTense === 'imperativo_afirmativo' || selectedTense === 'imperativo_negativo')
-        ? [1, 2, 3, 4, 5]
-        : [0, 1, 2, 3, 4, 5];
-      
-      exercise = {
-        verb: example.verb,
-        pronoun: availablePronouns[Math.floor(Math.random() * availablePronouns.length)],
-        verbType,
-        tense: selectedTense,
-      };
+      exercise = exercises[Math.floor(Math.random() * exercises.length)];
     }
 
     setCurrentExercise(exercise);
@@ -362,27 +152,17 @@ export default function Conjugation({ level, country }: ConjugationProps) {
   const checkAnswer = () => {
     if (!currentExercise) return;
 
-    const correct = getConjugatedForm(
-      currentExercise.verbType,
-      currentExercise.pronoun,
-      currentExercise.tense
-    );
-
-    const isAnswerCorrect = userAnswer.trim().toLowerCase() === correct.toLowerCase();
+    const isAnswerCorrect = userAnswer.trim().toLowerCase() === currentExercise.answer.toLowerCase();
     setIsCorrect(isAnswerCorrect);
     setShowResult(true);
 
-    // Mettre à jour le score
     setScore(prev => ({
       correct: prev.correct + (isAnswerCorrect ? 1 : 0),
       total: prev.total + 1
     }));
 
-    // Mettre à jour la progression
     const existingIndex = exerciseProgress.findIndex(
-      p => p.tense === currentExercise.tense && 
-           p.pronoun === currentExercise.pronoun && 
-           p.verbType === currentExercise.verbType
+      p => p.tense === selectedTense && p.exerciseId === currentExercise.id
     );
 
     let newProgress = [...exerciseProgress];
@@ -397,9 +177,8 @@ export default function Conjugation({ level, country }: ConjugationProps) {
       };
     } else {
       newProgress.push({
-        tense: currentExercise.tense,
-        pronoun: currentExercise.pronoun,
-        verbType: currentExercise.verbType,
+        tense: selectedTense,
+        exerciseId: currentExercise.id,
         failures: isAnswerCorrect ? 0 : 1,
         lastAttempt: new Date(),
       });
@@ -410,11 +189,10 @@ export default function Conjugation({ level, country }: ConjugationProps) {
   };
 
   const difficultCount = exerciseProgress.filter(p => p.failures > 0).length;
+  const hasExercises = currentTenseData.exercises.length > 0;
 
   return (
     <div className="max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold mb-6 text-center">{t.title}</h2>
-
       {/* Mode Toggle */}
       <div className="flex gap-4 mb-6 justify-center">
         <button
@@ -430,9 +208,11 @@ export default function Conjugation({ level, country }: ConjugationProps) {
         <button
           onClick={() => {
             setMode('practice');
-            if (!currentExercise) generateExercise();
+            if (!currentExercise && hasExercises) generateExercise();
           }}
+          disabled={!hasExercises}
           className={`px-6 py-3 rounded-lg font-bold transition flex items-center gap-2 ${
+            !hasExercises ? 'opacity-50 cursor-not-allowed' :
             mode === 'practice'
               ? 'bg-green-600 text-white'
               : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
@@ -453,25 +233,70 @@ export default function Conjugation({ level, country }: ConjugationProps) {
           <div className="bg-slate-800 rounded-xl p-4 mb-6">
             <label className="block text-sm text-slate-400 mb-3">{t.selectTense}</label>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-              {(Object.keys(tenseData) as Tense[]).map((tense) => (
+              {(Object.keys(allTenses) as Tense[]).map((tense) => (
                 <button
                   key={tense}
-                  onClick={() => setSelectedTense(tense)}
+                  onClick={() => {
+                    setSelectedTense(tense);
+                    setShowUsageDetails(false);
+                  }}
                   className={`px-4 py-3 rounded-lg font-semibold transition text-sm ${
                     selectedTense === tense
                       ? 'bg-blue-600 text-white'
                       : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
                   }`}
                 >
-                  {tenseData[tense].name[language]}
+                  {allTenses[tense].metadata.name[language]}
                 </button>
               ))}
             </div>
             
             <div className="mt-4 p-3 bg-slate-900 rounded-lg text-center text-slate-300">
-              💡 {currentTenseData.description[language]}
+              💡 {currentTenseData.metadata.description[language]}
             </div>
           </div>
+
+          {/* Bouton détails d'usage */}
+          <div className="mb-6 text-center"><button
+              onClick={() => setShowUsageDetails(!showUsageDetails)}
+              className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition"
+            >
+              {showUsageDetails ? `📖 ${t.hideDetails}` : `📚 ${t.showDetails}`}
+            </button>
+          </div>
+
+          {/* Section détails d'usage */}
+          {showUsageDetails && (
+            <div className="bg-slate-800 rounded-xl p-6 mb-6">
+              <h3 className="text-2xl font-bold mb-4 text-center text-purple-400">
+                {t.usage} - {currentTenseData.metadata.name[language]}
+              </h3>
+              
+              <div className="space-y-4">
+                <div className="bg-slate-900 rounded-lg p-4">
+                  <h4 className="font-bold text-lg mb-3 text-blue-300">{t.usage}:</h4>
+                  <ul className="space-y-2">
+                    {currentTenseData.metadata.usage[language].map((use, index) => (
+                      <li key={index} className="text-slate-300 pl-4 border-l-2 border-blue-500">
+                        • {use}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="bg-slate-900 rounded-lg p-4">
+                  <h4 className="font-bold text-lg mb-3 text-green-300">{t.usageExamples}:</h4>
+                  <ul className="space-y-2">
+                    {currentTenseData.metadata.examples[language].map((example, index) => (
+                      <li key={index} className="text-slate-300 pl-4">
+                        → <span className="font-semibold text-green-400">{example}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Tableaux des 3 verbes */}
           <div className="mb-6">
@@ -481,9 +306,9 @@ export default function Conjugation({ level, country }: ConjugationProps) {
               {/* Verbe -AR */}
               <div className="bg-slate-800 rounded-xl overflow-hidden border-2 border-blue-500">
                 <div className="bg-gradient-to-r from-blue-600 to-blue-500 p-4 text-center">
-                  <div className="text-2xl font-bold">{currentTenseData.examples.ar.verb}</div>
+                  <div className="text-2xl font-bold">{currentTenseData.metadata.verbExamples.ar.verb}</div>
                   <div className="text-sm opacity-90">
-                    {currentTenseData.examples.ar.meaning[language]}
+                    {currentTenseData.metadata.verbExamples.ar.meaning[language]}
                   </div>
                   <div className="text-xs opacity-75 mt-1">-AR</div>
                 </div>
@@ -506,9 +331,9 @@ export default function Conjugation({ level, country }: ConjugationProps) {
               {/* Verbe -ER */}
               <div className="bg-slate-800 rounded-xl overflow-hidden border-2 border-green-500">
                 <div className="bg-gradient-to-r from-green-600 to-green-500 p-4 text-center">
-                  <div className="text-2xl font-bold">{currentTenseData.examples.er.verb}</div>
+                  <div className="text-2xl font-bold">{currentTenseData.metadata.verbExamples.er.verb}</div>
                   <div className="text-sm opacity-90">
-                    {currentTenseData.examples.er.meaning[language]}
+                    {currentTenseData.metadata.verbExamples.er.meaning[language]}
                   </div>
                   <div className="text-xs opacity-75 mt-1">-ER</div>
                 </div>
@@ -531,9 +356,9 @@ export default function Conjugation({ level, country }: ConjugationProps) {
               {/* Verbe -IR */}
               <div className="bg-slate-800 rounded-xl overflow-hidden border-2 border-purple-500">
                 <div className="bg-gradient-to-r from-purple-600 to-purple-500 p-4 text-center">
-                  <div className="text-2xl font-bold">{currentTenseData.examples.ir.verb}</div>
+                  <div className="text-2xl font-bold">{currentTenseData.metadata.verbExamples.ir.verb}</div>
                   <div className="text-sm opacity-90">
-                    {currentTenseData.examples.ir.meaning[language]}
+                    {currentTenseData.metadata.verbExamples.ir.meaning[language]}
                   </div>
                   <div className="text-xs opacity-75 mt-1">-IR</div>
                 </div>
@@ -558,7 +383,7 @@ export default function Conjugation({ level, country }: ConjugationProps) {
           {/* Tableau récapitulatif */}
           <div className="bg-slate-800 rounded-xl p-6">
             <h3 className="text-xl font-bold mb-4 text-center">
-              {t.endings} - {currentTenseData.name[language]}
+              {t.endings} - {currentTenseData.metadata.name[language]}
             </h3>
             <div className="overflow-x-auto">
               <table className="w-full">
@@ -575,13 +400,13 @@ export default function Conjugation({ level, country }: ConjugationProps) {
                     <tr key={index} className="border-b border-slate-700">
                       <td className="py-2 text-slate-300">{pronoun}</td>
                       <td className="py-2 text-center font-mono text-blue-300 font-bold">
-                        {currentTenseData.endings.ar[index] === '-' ? '-' : `-${currentTenseData.endings.ar[index]}`}
+                        {currentTenseData.metadata.endings.ar[index] === '-' ? '-' : `-${currentTenseData.metadata.endings.ar[index]}`}
                       </td>
                       <td className="py-2 text-center font-mono text-green-300 font-bold">
-                        {currentTenseData.endings.er[index] === '-' ? '-' : `-${currentTenseData.endings.er[index]}`}
+                        {currentTenseData.metadata.endings.er[index] === '-' ? '-' : `-${currentTenseData.metadata.endings.er[index]}`}
                       </td>
                       <td className="py-2 text-center font-mono text-purple-300 font-bold">
-                        {currentTenseData.endings.ir[index] === '-' ? '-' : `-${currentTenseData.endings.ir[index]}`}
+                        {currentTenseData.metadata.endings.ir[index] === '-' ? '-' : `-${currentTenseData.metadata.endings.ir[index]}`}
                       </td>
                     </tr>
                   ))}
@@ -593,85 +418,97 @@ export default function Conjugation({ level, country }: ConjugationProps) {
       ) : (
         /* Mode Practice */
         <div className="max-w-2xl mx-auto">
-          {/* Score */}
-          <div className="bg-slate-800 rounded-xl p-4 mb-6 flex justify-between items-center">
-            <div>
-              <span className="text-slate-400">{t.score}: </span>
-              <span className="text-green-400 font-bold">{score.correct}</span>
-              <span className="text-slate-500"> / </span>
-              <span className="font-bold">{score.total}</span>
+          {!hasExercises ? (
+            <div className="bg-yellow-900 bg-opacity-30 border border-yellow-600 rounded-xl p-8 text-center">
+              <div className="text-4xl mb-4">⚠️</div>
+              <div className="text-xl mb-2">{t.noExercises}</div>
+              <code className="text-sm text-yellow-300">
+                src/data/conjugacion/{selectedTense}.ts
+              </code>
             </div>
-            {difficultCount > 0 && (
-              <div className="text-red-400 text-sm">
-                🔥 {difficultCount} {t.difficultExercises}
-              </div>
-            )}
-          </div>
-
-          {currentExercise && (
-            <div className="bg-slate-800 rounded-xl p-8">
-              <div className="text-center mb-6">
-                <div className="text-sm text-slate-400 mb-2">
-                  {tenseData[currentExercise.tense].name[language]}
+          ) : (
+            <>
+              {/* Score */}
+              <div className="bg-slate-800 rounded-xl p-4 mb-6 flex justify-between items-center">
+                <div>
+                  <span className="text-slate-400">{t.score}: </span>
+                  <span className="text-green-400 font-bold">{score.correct}</span>
+                  <span className="text-slate-500"> / </span>
+                  <span className="font-bold">{score.total}</span>
                 </div>
-                <div className="text-3xl font-bold mb-2">
-                  {currentExercise.verb}
-                </div>
-                <div className="text-slate-400">
-                  {tenseData[currentExercise.tense].examples[currentExercise.verbType].meaning[language]}
-                </div>
-              </div>
-
-              <div className="text-center mb-6">
-                <div className="text-xl text-slate-300">
-                  {pronouns[currentExercise.pronoun]} + ?
-                </div>
-              </div>
-
-              {!showResult ? (
-                <>
-                  <input
-                    type="text"
-                    value={userAnswer}
-                    onChange={(e) => setUserAnswer(e.target.value)}
-                    onKeyPress={(e) => e.key === 'Enter' && checkAnswer()}
-                    placeholder={t.yourAnswer}
-                    className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white text-center text-xl focus:border-blue-500 focus:outline-none mb-4"
-                    autoFocus
-                  />
-                  <button
-                    onClick={checkAnswer}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition"
-                  >
-                    {t.check}
-                  </button>
-                </>
-              ) : (
-                <>
-                  <div className={`p-4 rounded-lg mb-4 text-center ${
-                    isCorrect ? 'bg-green-900 bg-opacity-30 border border-green-600' : 'bg-red-900 bg-opacity-30 border border-red-600'
-                  }`}>
-                    <div className="text-2xl mb-2">
-                      {isCorrect ? t.correct : t.incorrect}
-                    </div>
-                    {!isCorrect && (
-                      <div>
-                        <div className="text-slate-400 text-sm">{t.correctAnswer}:</div>
-                        <div className="text-xl font-bold text-green-400">
-                          {getConjugatedForm(currentExercise.verbType, currentExercise.pronoun, currentExercise.tense)}
-                        </div>
-                      </div>
-                    )}
+                {difficultCount > 0 && (
+                  <div className="text-red-400 text-sm">
+                    🔥 {difficultCount} {t.difficultExercises}
                   </div>
-                  <button
-                    onClick={generateExercise}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg transition"
-                  >
-                    {t.next} →
-                  </button>
-                </>
+                )}
+              </div>
+
+              {currentExercise && (
+                <div className="bg-slate-800 rounded-xl p-8">
+                  <div className="text-center mb-6">
+                    <div className="text-sm text-slate-400 mb-2">
+                      {currentTenseData.metadata.name[language]}
+                    </div>
+                    <div className="text-3xl font-bold mb-2">
+                      {currentExercise.verb}
+                    </div>
+                    <div className="text-slate-400">
+                      {currentExercise.meaning[language]}
+                    </div>
+                  </div>
+
+                  <div className="text-center mb-6">
+                    <div className="text-xl text-slate-300">
+                      {currentExercise.prompt[language]}
+                    </div>
+                  </div>
+
+                  {!showResult ? (
+                    <>
+                      <input
+                        type="text"
+                        value={userAnswer}
+                        onChange={(e) => setUserAnswer(e.target.value)}
+                        onKeyPress={(e) => e.key === 'Enter' && checkAnswer()}
+                        placeholder={t.yourAnswer}
+                        className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white text-center text-xl focus:border-blue-500 focus:outline-none mb-4"
+                        autoFocus
+                      />
+                      <button
+                        onClick={checkAnswer}
+                        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition"
+                      >
+                        {t.check}
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <div className={`p-4 rounded-lg mb-4 text-center ${
+                        isCorrect ? 'bg-green-900 bg-opacity-30 border border-green-600' : 'bg-red-900 bg-opacity-30 border border-red-600'
+                      }`}>
+                        <div className="text-2xl mb-2">
+                          {isCorrect ? t.correct : t.incorrect}
+                        </div>
+                        {!isCorrect && (
+                          <div>
+                            <div className="text-slate-400 text-sm">{t.correctAnswer}:</div>
+                            <div className="text-xl font-bold text-green-400">
+                              {currentExercise.answer}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                      <button
+                        onClick={generateExercise}
+                        className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg transition"
+                      >
+                        {t.next} →
+                      </button>
+                    </>
+                  )}
+                </div>
               )}
-            </div>
+            </>
           )}
         </div>
       )}
