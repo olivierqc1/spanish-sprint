@@ -666,5 +666,49 @@ export const grammarPoints: GrammarPoint[] = [
     },
     country: "all",
     jsonPath: "/data/grammar_quizz/parecer_vs_parecerse_a.json"
+  }, // 📋 CODE À AJOUTER DANS src/data/grammar.ts
+// Copie ces 3 entrées à la fin du tableau grammarPoints, juste avant le dernier ]
+
+  {
+    id: "llevar_usos",
+    title: {
+      fr: "Le verbe LLEVAR - Multiples usages",
+      en: "The verb LLEVAR - Multiple uses"
+    },
+    level: "A2",
+    note: {
+      fr: "Les différents sens du verbe LLEVAR (porter, emmener, durée, gérer).",
+      en: "Different meanings of the verb LLEVAR (to carry, to take, duration, to manage)."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/llevar_usos.json"
+  },
+  {
+    id: "caer_usos",
+    title: {
+      fr: "Le verbe CAER - Tomber et ses usages",
+      en: "The verb CAER - To fall and its uses"
+    },
+    level: "A2",
+    note: {
+      fr: "Le verbe CAER (tomber, plaire/déplaire, se rendre compte).",
+      en: "The verb CAER (to fall, to like/dislike, to realize)."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/caer_usos.json"
+  },
+  {
+    id: "chocar_usos",
+    title: {
+      fr: "Le verbe CHOCAR - Heurter et choquer",
+      en: "The verb CHOCAR - To crash and to shock"
+    },
+    level: "A2",
+    note: {
+      fr: "Le verbe CHOCAR (heurter, choquer, toper/trinquer, conflit).",
+      en: "The verb CHOCAR (to crash, to shock, to high-five/toast, conflict)."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/chocar_usos.json"
   }
 ];
