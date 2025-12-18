@@ -26,7 +26,9 @@ export default function Home() {
       grammar: { title: 'Grammaire', desc: 'Exercices de grammaire' },
       conjugation: { title: 'Conjugaison', desc: 'Entraîne-toi aux verbes' },
       conversations: { title: 'Conversations', desc: 'Pratique avec l\'IA' },
-      audioPro: { title: 'Audio Pro', desc: 'Génère des audios' }
+      audioPro: { title: 'Audio Pro', desc: 'Génère des audios' },
+      reading: { title: 'Lecture', desc: 'Lis des textes par pays' },
+      dictee: { title: 'Dictée', desc: 'Écris les mots que tu entends' }
     },
     en: {
       title: '🇪🇸 Spanish Sprint',
@@ -40,7 +42,9 @@ export default function Home() {
       grammar: { title: 'Grammar', desc: 'Grammar exercises' },
       conjugation: { title: 'Conjugation', desc: 'Practice verbs' },
       conversations: { title: 'Conversations', desc: 'Practice with AI' },
-      audioPro: { title: 'Audio Pro', desc: 'Generate audios' }
+      audioPro: { title: 'Audio Pro', desc: 'Generate audios' },
+      reading: { title: 'Reading', desc: 'Read texts by country' },
+      dictee: { title: 'Dictation', desc: 'Write words you hear' }
     }
   };
 
@@ -195,6 +199,28 @@ export default function Home() {
             <p className="text-slate-400">{t.flashcards.desc}</p>
           </a>
 
+          {/* Dictée */}
+          <a 
+            href="/dictee"
+            onClick={handleModuleClick('dictee')}
+            className="bg-slate-800 hover:bg-slate-700 p-8 rounded-xl border border-slate-700 transition-all hover:scale-105 cursor-pointer"
+          >
+            <div className="text-4xl mb-4">✍️</div>
+            <h2 className="text-2xl font-bold mb-2">{t.dictee.title}</h2>
+            <p className="text-slate-400">{t.dictee.desc}</p>
+          </a>
+
+          {/* Reading */}
+          <a 
+            href="/reading"
+            onClick={handleModuleClick('reading')}
+            className="bg-slate-800 hover:bg-slate-700 p-8 rounded-xl border border-slate-700 transition-all hover:scale-105 cursor-pointer"
+          >
+            <div className="text-4xl mb-4">📖</div>
+            <h2 className="text-2xl font-bold mb-2">{t.reading.title}</h2>
+            <p className="text-slate-400">{t.reading.desc}</p>
+          </a>
+
           {/* Audio */}
           <a 
             href="/audio"
@@ -223,7 +249,7 @@ export default function Home() {
             onClick={handleModuleClick('conjugaison')}
             className="bg-slate-800 hover:bg-slate-700 p-8 rounded-xl border border-slate-700 transition-all hover:scale-105 cursor-pointer"
           >
-            <div className="text-4xl mb-4">✍️</div>
+            <div className="text-4xl mb-4">⚡</div>
             <h2 className="text-2xl font-bold mb-2">{t.conjugation.title}</h2>
             <p className="text-slate-400">{t.conjugation.desc}</p>
           </a>
