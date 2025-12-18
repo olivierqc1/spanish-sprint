@@ -1,0 +1,77 @@
+// src/data/readingTexts/chile.ts
+
+import type { ReadingText } from './types';
+
+export const chileTexts: ReadingText[] = [
+  {
+    id: 'chi_a1_1',
+    title: 'El completo chileno',
+    level: 'A1',
+    country: 'chile',
+    type: 'story',
+    excerpt: 'En Chile, el completo es una comida muy popular. Es un hot dog con tomate, palta y mayonesa. A mí me encanta comerlo con un mote con huesillo. Mi papá dice que el mejor completo está en Valparaíso. Los chilenos comemos completos en cualquier momento: de día, de noche, después de carretear. ¡Es bacán!',
+    context: {
+      fr: 'Description du "completo", hot-dog chilien typique. Vocabulaire familier chilien (palta, bacán, carretear).',
+      en: 'Description of the "completo", typical Chilean hot dog. Chilean colloquial vocabulary (palta, bacán, carretear).'
+    },
+    vocab: [
+      'completo - hot-dog chilien',
+      'palta - avocat (Cl)',
+      'mote con huesillo - boisson chilienne',
+      'carretear - faire la fête (Cl)',
+      'bacán - cool/génial (Cl)',
+      'cualquier momento - n\'importe quand'
+    ],
+    questions: {
+      fr: [
+        'Qu\'est-ce qu\'un completo ?',
+        'Avec quoi aime-t-il le manger ?',
+        'Quand les Chiliens mangent-ils des completos ?',
+        'Où est le meilleur completo selon son père ?'
+      ],
+      en: [
+        'What is a completo?',
+        'What does he like to eat it with?',
+        'When do Chileans eat completos?',
+        'Where is the best completo according to his father?'
+      ]
+    }
+  },
+
+  {
+    id: 'chi_a2_1',
+    title: 'Pablo Neruda, poeta chileno',
+    level: 'A2',
+    country: 'chile',
+    author: 'sobre Pablo Neruda',
+    type: 'literature',
+    excerpt: 'Pablo Neruda es el poeta más famoso de Chile. Nació en 1904 en Parral. Ganó el Premio Nobel de Literatura en 1971. Escribió sobre el amor, la naturaleza y la política. Su libro más conocido es "Veinte poemas de amor y una canción desesperada". Neruda amaba el mar y tenía tres casas en Chile: La Chascona en Santiago, La Sebastiana en Valparaíso e Isla Negra en la costa. Murió en 1973 pero su poesía sigue viva. Los chilenos lo consideran un tesoro nacional.',
+    context: {
+      fr: 'Biographie de Pablo Neruda, Prix Nobel et poète emblématique du Chili.',
+      en: 'Biography of Pablo Neruda, Nobel Prize winner and emblematic Chilean poet.'
+    },
+    vocab: [
+      'poeta - poète',
+      'premio - prix',
+      'naturaleza - nature',
+      'conocido - connu',
+      'desesperado - désespéré',
+      'tesoro - trésor',
+      'seguir vivo - rester vivant'
+    ],
+    questions: {
+      fr: [
+        'Quel prix a-t-il gagné ?',
+        'De quoi parle sa poésie ?',
+        'Combien de maisons avait-il au Chili ?',
+        'Comment les Chiliens le considèrent-ils ?'
+      ],
+      en: [
+        'What prize did he win?',
+        'What does his poetry talk about?',
+        'How many houses did he have in Chile?',
+        'How do Chileans consider him?'
+      ]
+    }
+  }
+];
