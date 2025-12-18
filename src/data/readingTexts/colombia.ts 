@@ -1,0 +1,113 @@
+// src/data/readingTexts/colombia.ts
+
+import type { ReadingText } from './types';
+
+export const colombiaTexts: ReadingText[] = [
+  {
+    id: 'col_a1_1',
+    title: 'El café colombiano',
+    level: 'A1',
+    country: 'colombia',
+    type: 'article',
+    excerpt: 'Colombia es famosa por su café. Mi abuelo tiene una finca cafetera. Cada mañana, él recoge los granos de café rojos. Dice que el café colombiano es el mejor del mundo. A mí me gusta el olor del café fresco. En mi familia, tomamos tinto todos los días. Es una bebida muy importante para nosotros.',
+    context: {
+      fr: 'Texte sur le café colombien, produit emblématique du pays. "Tinto" signifie café noir en Colombie.',
+      en: 'Text about Colombian coffee, an emblematic product of the country. "Tinto" means black coffee in Colombia.'
+    },
+    vocab: [
+      'finca - exploitation agricole',
+      'grano - grain',
+      'recoger - ramasser/récolter',
+      'tinto - café noir (Col)',
+      'olor - odeur',
+      'fresco - frais'
+    ],
+    questions: {
+      fr: [
+        'Que fait le grand-père ?',
+        'De quelle couleur sont les grains prêts ?',
+        'Comment appelle-t-on le café noir en Colombie ?',
+        'Pourquoi le café est-il important ?'
+      ],
+      en: [
+        'What does the grandfather do?',
+        'What color are the ready beans?',
+        'What is black coffee called in Colombia?',
+        'Why is coffee important?'
+      ]
+    }
+  },
+
+  {
+    id: 'col_a2_1',
+    title: 'La cumbia colombiana',
+    level: 'A2',
+    country: 'colombia',
+    type: 'article',
+    excerpt: 'La cumbia es el ritmo más importante de Colombia. Tiene raíces africanas, indígenas y españolas. Se baila en parejas con movimientos suaves. La mujer lleva una falda larga de colores y el hombre un sombrero vueltiao. Los instrumentos principales son las maracas, el acordeón y los tambores. La cumbia nació en la costa caribeña pero ahora se baila en todo el país. Es alegre y festiva. Representa la mezcla de culturas que forma Colombia.',
+    context: {
+      fr: 'Description de la cumbia, rythme traditionnel colombien mélangeant influences africaines, indigènes et espagnoles.',
+      en: 'Description of cumbia, traditional Colombian rhythm mixing African, indigenous and Spanish influences.'
+    },
+    vocab: [
+      'raíz - racine',
+      'indígena - indigène',
+      'falda - jupe',
+      'sombrero vueltiao - chapeau colombien traditionnel',
+      'acordeón - accordéon',
+      'tambor - tambour',
+      'mezcla - mélange'
+    ],
+    questions: {
+      fr: [
+        'Quelles sont les origines de la cumbia ?',
+        'Comment se danse-t-elle ?',
+        'Quels sont les instruments principaux ?',
+        'Que représente la cumbia ?'
+      ],
+      en: [
+        'What are the origins of cumbia?',
+        'How is it danced?',
+        'What are the main instruments?',
+        'What does cumbia represent?'
+      ]
+    }
+  },
+
+  {
+    id: 'col_a2_2',
+    title: 'Gabriel García Márquez',
+    level: 'A2',
+    country: 'colombia',
+    type: 'literature',
+    author: 'sobre Gabriel García Márquez',
+    excerpt: 'Gabriel García Márquez, conocido como "Gabo", es el escritor colombiano más famoso. Nació en Aracataca en 1927. Ganó el Premio Nobel de Literatura en 1982. Su novela "Cien años de soledad" es una obra maestra del realismo mágico. Cuenta la historia de la familia Buendía en el pueblo ficticio de Macondo. Gabo mezcla lo real con lo fantástico. Sus libros hablan de amor, soledad y la historia de América Latina. Murió en 2014 pero su literatura es inmortal.',
+    context: {
+      fr: 'Biographie de Gabriel García Márquez, Prix Nobel de littérature et maître du réalisme magique.',
+      en: 'Biography of Gabriel García Márquez, Nobel Prize in Literature and master of magical realism.'
+    },
+    vocab: [
+      'escritor - écrivain',
+      'premio - prix',
+      'obra maestra - chef-d\'œuvre',
+      'realismo mágico - réalisme magique',
+      'ficticio - fictif',
+      'mezclar - mélanger',
+      'inmortal - immortel'
+    ],
+    questions: {
+      fr: [
+        'Quel prix a-t-il gagné ?',
+        'Comment s\'appelle sa novela plus célèbre ?',
+        'Qu\'est-ce que le réalisme magique ?',
+        'De quoi parlent ses livres ?'
+      ],
+      en: [
+        'What prize did he win?',
+        'What is his most famous novel called?',
+        'What is magical realism?',
+        'What do his books talk about?'
+      ]
+    }
+  }
+];
