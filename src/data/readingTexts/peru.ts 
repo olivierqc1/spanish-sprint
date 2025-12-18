@@ -1,0 +1,114 @@
+// src/data/readingTexts/peru.ts
+
+import type { ReadingText } from './types';
+
+export const peruTexts: ReadingText[] = [
+  {
+    id: 'per_a1_1',
+    title: 'La llama peruana',
+    level: 'A1',
+    country: 'peru',
+    type: 'article',
+    excerpt: 'La llama es un animal muy importante en Perú. Vive en las montañas de los Andes. Es grande, tiene pelo suave y puede ser blanca, marrón o negra. Los incas usaban las llamas para transportar cosas. Hoy los peruanos usan su lana para hacer ropa. La llama también da leche y carne. Es un animal tranquilo y amable. En Cusco, muchos turistas se toman fotos con llamas.',
+    context: {
+      fr: 'Description de la llama, animal emblématique du Pérou et des Andes.',
+      en: 'Description of the llama, emblematic animal of Peru and the Andes.'
+    },
+    vocab: [
+      'llama - lama',
+      'montaña - montagne',
+      'pelo - poil/fourrure',
+      'suave - doux',
+      'lana - laine',
+      'tranquilo - tranquille',
+      'amable - aimable'
+    ],
+    questions: {
+      fr: [
+        'Où vit la llama ?',
+        'À quoi servaient les llamas pour les Incas ?',
+        'Que fait-on avec la laine ?',
+        'Où les touristes prennent-ils des photos ?'
+      ],
+      en: [
+        'Where does the llama live?',
+        'What did the Incas use llamas for?',
+        'What is done with the wool?',
+        'Where do tourists take photos?'
+      ]
+    }
+  },
+
+  {
+    id: 'per_a2_1',
+    title: 'Machu Picchu, la ciudad perdida',
+    level: 'A2',
+    country: 'peru',
+    type: 'article',
+    excerpt: 'Machu Picchu es una antigua ciudad inca ubicada en las montañas de Perú. Fue construida en el siglo XV y permaneció escondida durante siglos. En 1911, el explorador Hiram Bingham la redescubrió. Hoy es Patrimonio de la Humanidad y una de las Siete Maravillas del Mundo Moderno. Miles de turistas la visitan cada año. Las terrazas agrícolas y los templos muestran la ingeniería avanzada de los incas. La vista desde arriba es espectacular.',
+    context: {
+      fr: 'Article sur le Machu Picchu, site archéologique emblématique du Pérou et merveille du monde.',
+      en: 'Article about Machu Picchu, Peru\'s emblematic archaeological site and wonder of the world.'
+    },
+    vocab: [
+      'antiguo - ancien',
+      'ubicado - situé',
+      'escondido - caché',
+      'patrimonio - patrimoine',
+      'maravilla - merveille',
+      'terraza - terrasse',
+      'ingeniería - ingénierie'
+    ],
+    questions: {
+      fr: [
+        'Quand Machu Picchu a-t-il été construit ?',
+        'Qui l\'a redécouvert ?',
+        'Que montrent les terrasses et temples ?',
+        'Quelle reconnaissance a-t-il reçue ?'
+      ],
+      en: [
+        'When was Machu Picchu built?',
+        'Who rediscovered it?',
+        'What do the terraces and temples show?',
+        'What recognition has it received?'
+      ]
+    }
+  },
+
+  {
+    id: 'per_a2_2',
+    title: 'El ceviche peruano',
+    level: 'A2',
+    country: 'peru',
+    type: 'article',
+    excerpt: 'El ceviche es el plato nacional de Perú. Se prepara con pescado crudo marinado en jugo de limón. También lleva cebolla morada, ají y cilantro. El ácido del limón "cocina" el pescado. Se sirve con camote dulce y choclo. Hay muchas variedades: de pescado, pulpo o mixto. El ceviche nació en la costa peruana hace miles de años. Los pescadores lo preparaban en sus barcas. Hoy es famoso en todo el mundo. El mejor momento para comerlo es al mediodía.',
+    context: {
+      fr: 'Description du ceviche, plat national péruvien de poisson cru mariné dans du citron.',
+      en: 'Description of ceviche, Peruvian national dish of raw fish marinated in lemon juice.'
+    },
+    vocab: [
+      'crudo - cru',
+      'marinado - mariné',
+      'limón - citron',
+      'cebolla morada - oignon rouge',
+      'ají - piment',
+      'camote - patate douce',
+      'choclo - maïs (Pérou)',
+      'barca - barque'
+    ],
+    questions: {
+      fr: [
+        'Avec quoi est mariné le poisson ?',
+        'Quels accompagnements a le ceviche ?',
+        'Où est né le ceviche ?',
+        'Quel est le meilleur moment pour le manger ?'
+      ],
+      en: [
+        'What is the fish marinated with?',
+        'What accompaniments does ceviche have?',
+        'Where was ceviche born?',
+        'What is the best time to eat it?'
+      ]
+    }
+  }
+];
