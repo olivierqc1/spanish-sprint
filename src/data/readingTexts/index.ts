@@ -9,7 +9,6 @@ export { peruTexts } from './peru';
 export { chileTexts } from './chile';
 export { cubaTexts } from './cuba';
 export { venezuelaTexts } from './venezuela';
-export { poemsTexts } from './poems';
 
 import { spainTexts } from './spain';
 import { mexicoTexts } from './mexico';
@@ -19,7 +18,6 @@ import { peruTexts } from './peru';
 import { chileTexts } from './chile';
 import { cubaTexts } from './cuba';
 import { venezuelaTexts } from './venezuela';
-import { poemsTexts } from './poems';
 
 // Export un tableau combiné de tous les textes
 export const allReadingTexts = [
@@ -30,8 +28,7 @@ export const allReadingTexts = [
   ...peruTexts,
   ...chileTexts,
   ...cubaTexts,
-  ...venezuelaTexts,
-  ...poemsTexts
+  ...venezuelaTexts
 ];
 
 // Export par pays pour un accès facile
@@ -43,8 +40,7 @@ export const readingTextsByCountry = {
   peru: peruTexts,
   chile: chileTexts,
   cuba: cubaTexts,
-  venezuela: venezuelaTexts,
-  poems: poemsTexts
+  venezuela: venezuelaTexts
 };
 
 // Helper pour obtenir les textes d'un pays spécifique
