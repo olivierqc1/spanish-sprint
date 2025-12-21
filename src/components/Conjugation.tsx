@@ -6,84 +6,67 @@ import { useState, useEffect } from 'react';
 type ConjugationExercise = {
   id: number;
   verb: string;
-  pronoun: number; // 0-5 (yo, tú, él, nosotros, vosotros, ellos)
+  pronoun: number;
   tense: string;
-  contextPhrase: { fr: string; en: string }; // NOUVEAU!
+  contextPhrase: string; // Phrase en espagnol
   answer: string;
-  difficulty: 'easy' | 'medium' | 'hard';
 };
 
 type Props = {
   level: 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2' | 'ALL';
-  country: string; // On garde le prop mais on ne l'utilise pas
+  country: string;
 };
 
-// Phrases contextuelles qui donnent des indices sur le temps
+// Phrases contextuelles EN ESPAGNOL
 const CONTEXT_PHRASES = {
-  presente: {
-    fr: [
-      "Tous les jours, je ___",
-      "En ce moment, tu ___",
-      "Généralement, il ___",
-      "Nous ___ toujours",
-      "Vous ___ souvent"
-    ],
-    en: [
-      "Every day, I ___",
-      "Right now, you ___",
-      "Generally, he ___",
-      "We ___ always",
-      "You ___ often"
-    ]
-  },
-  preterito: {
-    fr: [
-      "Hier, je ___",
-      "La semaine dernière, tu ___",
-      "Il y a deux jours, il ___",
-      "L'année dernière, nous ___",
-      "Le mois dernier, vous ___"
-    ],
-    en: [
-      "Yesterday, I ___",
-      "Last week, you ___",
-      "Two days ago, he ___",
-      "Last year, we ___",
-      "Last month, you ___"
-    ]
-  },
-  imperfecto: {
-    fr: [
-      "Quand j'étais petit, je ___",
-      "Avant, tu ___ toujours",
-      "Autrefois, il ___",
-      "Nous ___ chaque été",
-      "Vous ___ tous les samedis"
-    ],
-    en: [
-      "When I was young, I ___",
-      "Before, you ___ always",
-      "In the past, he ___",
-      "We ___ every summer",
-      "You ___ every Saturday"
-    ]
-  },
-  futuro: {
-    fr: [
-      "Demain, je ___",
-      "La semaine prochaine, tu ___",
-      "L'année prochaine, il ___",
-      "Dans un mois, nous ___",
-      "Bientôt, vous ___"
-    ],
-    en: [
-      "Tomorrow, I ___",
-      "Next week, you ___",
-      "Next year, he ___",
-      "In a month, we ___",
-      "Soon, you ___"
-    ]
-  }
+  presente: [
+    "Todos los días, yo ___",
+    "Ahora mismo, tú ___",
+    "Generalmente, él ___",
+    "Nosotros ___ siempre",
+    "Vosotros ___ a menudo",
+    "Ellos ___ cada día"
+  ],
+  preterito: [
+    "Ayer, yo ___",
+    "La semana pasada, tú ___",
+    "Hace dos días, él ___",
+    "El año pasado, nosotros ___",
+    "El mes pasado, vosotros ___",
+    "Anteayer, ellos ___"
+  ],
+  imperfecto: [
+    "Cuando era niño, yo ___",
+    "Antes, tú ___ siempre",
+    "En aquella época, él ___",
+    "Cada verano, nosotros ___",
+    "Todos los sábados, vosotros ___",
+    "De joven, ellos ___"
+  ],
+  futuro: [
+    "Mañana, yo ___",
+    "La semana que viene, tú ___",
+    "El año próximo, él ___",
+    "Dentro de un mes, nosotros ___",
+    "Pronto, vosotros ___",
+    "En el futuro, ellos ___"
+  ],
+  condicional: [
+    "En tu lugar, yo ___",
+    "Si pudieras, tú ___",
+    "Él dijo que ___",
+    "Nosotros ___ si tuviéramos tiempo",
+    "Vosotros ___ en esa situación",
+    "Ellos ___ con más dinero"
+  ],
+  subjuntivo_presente: [
+    "Espero que yo ___",
+    "Quiero que tú ___",
+    "Es importante que él ___",
+    "Ojalá que nosotros ___",
+    "Dudo que vosotros ___",
+    "No creo que ellos ___"
+  ]
 };
 
 export default function Conjugation({ level }: Props) {
@@ -105,19 +88,22 @@ export default function Conjugation({ level }: Props) {
       presente: '🔵 Présent',
       preterito: '🟢 Passé simple',
       imperfecto: '🟡 Imparfait',
-      futuro: '🟠 Futur simple'
+      futuro: '🟠 Futur simple',
+      condicional: '🟣 Conditionnel',
+      subjuntivo_presente: '🔴 Subjonctif présent'
     },
     en: {
       presente: '🔵 Present',
       preterito: '🟢 Preterite', 
       imperfecto: '🟡 Imperfect',
-      futuro: '🟠 Simple Future'
+      futuro: '🟠 Simple Future',
+      condicional: '🟣 Conditional',
+      subjuntivo_presente: '🔴 Present Subjunctive'
     }
   };
 
   const pronouns = ['yo', 'tú', 'él/ella', 'nosotros', 'vosotros', 'ellos/ellas'];
 
-  // Exemples de verbes par temps (à enrichir)
   const verbsByTense: Record<string, Array<{verb: string, conjugations: string[]}>> = {
     presente: [
       { verb: 'hablar', conjugations: ['hablo', 'hablas', 'habla', 'hablamos', 'habláis', 'hablan'] },
@@ -125,7 +111,11 @@ export default function Conjugation({ level }: Props) {
       { verb: 'vivir', conjugations: ['vivo', 'vives', 'vive', 'vivimos', 'vivís', 'viven'] },
       { verb: 'ser', conjugations: ['soy', 'eres', 'es', 'somos', 'sois', 'son'] },
       { verb: 'estar', conjugations: ['estoy', 'estás', 'está', 'estamos', 'estáis', 'están'] },
-      { verb: 'tener', conjugations: ['tengo', 'tienes', 'tiene', 'tenemos', 'tenéis', 'tienen'] }
+      { verb: 'tener', conjugations: ['tengo', 'tienes', 'tiene', 'tenemos', 'tenéis', 'tienen'] },
+      { verb: 'hacer', conjugations: ['hago', 'haces', 'hace', 'hacemos', 'hacéis', 'hacen'] },
+      { verb: 'ir', conjugations: ['voy', 'vas', 'va', 'vamos', 'vais', 'van'] },
+      { verb: 'venir', conjugations: ['vengo', 'vienes', 'viene', 'venimos', 'venís', 'vienen'] },
+      { verb: 'decir', conjugations: ['digo', 'dices', 'dice', 'decimos', 'decís', 'dicen'] }
     ],
     preterito: [
       { verb: 'hablar', conjugations: ['hablé', 'hablaste', 'habló', 'hablamos', 'hablasteis', 'hablaron'] },
@@ -133,7 +123,11 @@ export default function Conjugation({ level }: Props) {
       { verb: 'vivir', conjugations: ['viví', 'viviste', 'vivió', 'vivimos', 'vivisteis', 'vivieron'] },
       { verb: 'ser', conjugations: ['fui', 'fuiste', 'fue', 'fuimos', 'fuisteis', 'fueron'] },
       { verb: 'ir', conjugations: ['fui', 'fuiste', 'fue', 'fuimos', 'fuisteis', 'fueron'] },
-      { verb: 'hacer', conjugations: ['hice', 'hiciste', 'hizo', 'hicimos', 'hicisteis', 'hicieron'] }
+      { verb: 'hacer', conjugations: ['hice', 'hiciste', 'hizo', 'hicimos', 'hicisteis', 'hicieron'] },
+      { verb: 'tener', conjugations: ['tuve', 'tuviste', 'tuvo', 'tuvimos', 'tuvisteis', 'tuvieron'] },
+      { verb: 'estar', conjugations: ['estuve', 'estuviste', 'estuvo', 'estuvimos', 'estuvisteis', 'estuvieron'] },
+      { verb: 'poder', conjugations: ['pude', 'pudiste', 'pudo', 'pudimos', 'pudisteis', 'pudieron'] },
+      { verb: 'poner', conjugations: ['puse', 'pusiste', 'puso', 'pusimos', 'pusisteis', 'pusieron'] }
     ],
     imperfecto: [
       { verb: 'hablar', conjugations: ['hablaba', 'hablabas', 'hablaba', 'hablábamos', 'hablabais', 'hablaban'] },
@@ -149,7 +143,27 @@ export default function Conjugation({ level }: Props) {
       { verb: 'vivir', conjugations: ['viviré', 'vivirás', 'vivirá', 'viviremos', 'viviréis', 'vivirán'] },
       { verb: 'tener', conjugations: ['tendré', 'tendrás', 'tendrá', 'tendremos', 'tendréis', 'tendrán'] },
       { verb: 'poder', conjugations: ['podré', 'podrás', 'podrá', 'podremos', 'podréis', 'podrán'] },
-      { verb: 'hacer', conjugations: ['haré', 'harás', 'hará', 'haremos', 'haréis', 'harán'] }
+      { verb: 'hacer', conjugations: ['haré', 'harás', 'hará', 'haremos', 'haréis', 'harán'] },
+      { verb: 'salir', conjugations: ['saldré', 'saldrás', 'saldrá', 'saldremos', 'saldréis', 'saldrán'] },
+      { verb: 'venir', conjugations: ['vendré', 'vendrás', 'vendrá', 'vendremos', 'vendréis', 'vendrán'] }
+    ],
+    condicional: [
+      { verb: 'hablar', conjugations: ['hablaría', 'hablarías', 'hablaría', 'hablaríamos', 'hablaríais', 'hablarían'] },
+      { verb: 'comer', conjugations: ['comería', 'comerías', 'comería', 'comeríamos', 'comeríais', 'comerían'] },
+      { verb: 'vivir', conjugations: ['viviría', 'vivirías', 'viviría', 'viviríamos', 'viviríais', 'vivirían'] },
+      { verb: 'tener', conjugations: ['tendría', 'tendrías', 'tendría', 'tendríamos', 'tendríais', 'tendrían'] },
+      { verb: 'poder', conjugations: ['podría', 'podrías', 'podría', 'podríamos', 'podríais', 'podrían'] },
+      { verb: 'hacer', conjugations: ['haría', 'harías', 'haría', 'haríamos', 'haríais', 'harían'] }
+    ],
+    subjuntivo_presente: [
+      { verb: 'hablar', conjugations: ['hable', 'hables', 'hable', 'hablemos', 'habléis', 'hablen'] },
+      { verb: 'comer', conjugations: ['coma', 'comas', 'coma', 'comamos', 'comáis', 'coman'] },
+      { verb: 'vivir', conjugations: ['viva', 'vivas', 'viva', 'vivamos', 'viváis', 'vivan'] },
+      { verb: 'ser', conjugations: ['sea', 'seas', 'sea', 'seamos', 'seáis', 'sean'] },
+      { verb: 'estar', conjugations: ['esté', 'estés', 'esté', 'estemos', 'estéis', 'estén'] },
+      { verb: 'tener', conjugations: ['tenga', 'tengas', 'tenga', 'tengamos', 'tengáis', 'tengan'] },
+      { verb: 'hacer', conjugations: ['haga', 'hagas', 'haga', 'hagamos', 'hagáis', 'hagan'] },
+      { verb: 'ir', conjugations: ['vaya', 'vayas', 'vaya', 'vayamos', 'vayáis', 'vayan'] }
     ]
   };
 
@@ -158,19 +172,16 @@ export default function Conjugation({ level }: Props) {
     const verb = verbs[Math.floor(Math.random() * verbs.length)];
     const pronounIndex = Math.floor(Math.random() * 6);
     
-    // Créer une phrase contextuelle
     const contextPhrases = CONTEXT_PHRASES[selectedTense as keyof typeof CONTEXT_PHRASES] || CONTEXT_PHRASES.presente;
-    const contextFr = contextPhrases.fr[Math.floor(Math.random() * contextPhrases.fr.length)];
-    const contextEn = contextPhrases.en[Math.floor(Math.random() * contextPhrases.en.length)];
+    const contextPhrase = contextPhrases[pronounIndex];
 
     setCurrentExercise({
       id: Date.now(),
       verb: verb.verb,
       pronoun: pronounIndex,
       tense: selectedTense,
-      contextPhrase: { fr: contextFr, en: contextEn },
+      contextPhrase,
       answer: verb.conjugations[pronounIndex],
-      difficulty: 'medium'
     });
     setUserAnswer('');
     setShowResult(false);
@@ -198,7 +209,7 @@ export default function Conjugation({ level }: Props) {
       theory: '📚 Théorie',
       practice: '✍️ Pratique',
       score: 'Score',
-      contextHint: '💡 Indice de contexte :',
+      contextHint: '💡 Phrase contextuelle :',
       conjugate: 'Conjugue le verbe',
       check: 'Vérifier',
       next: 'Suivant',
@@ -211,7 +222,7 @@ export default function Conjugation({ level }: Props) {
       theory: '📚 Theory',
       practice: '✍️ Practice',
       score: 'Score',
-      contextHint: '💡 Context hint:',
+      contextHint: '💡 Context phrase:',
       conjugate: 'Conjugate the verb',
       check: 'Check',
       next: 'Next',
@@ -226,7 +237,6 @@ export default function Conjugation({ level }: Props) {
 
   return (
     <div className="space-y-6">
-      {/* Mode toggle */}
       <div className="flex justify-center gap-2">
         <button
           onClick={() => setMode('theory')}
@@ -250,10 +260,9 @@ export default function Conjugation({ level }: Props) {
         </button>
       </div>
 
-      {/* Sélecteur de temps */}
       <div className="bg-slate-800 rounded-xl p-4 border border-slate-700">
         <label className="block text-sm text-slate-400 mb-2">{t.selectTense}</label>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
           {Object.entries(tenses[language]).map(([key, value]) => (
             <button
               key={key}
@@ -272,7 +281,6 @@ export default function Conjugation({ level }: Props) {
 
       {mode === 'practice' ? (
         <>
-          {/* Score */}
           <div className="bg-slate-800 rounded-xl p-4 text-center border border-slate-700">
             <span className="text-slate-400">{t.score}: </span>
             <span className="text-green-400 font-bold text-2xl">{score.correct}</span>
@@ -280,18 +288,15 @@ export default function Conjugation({ level }: Props) {
             <span className="font-bold text-2xl">{score.total}</span>
           </div>
 
-          {/* Exercice */}
           {currentExercise && (
             <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 space-y-4">
-              {/* Phrase contextuelle - NOUVEAU! */}
               <div className="bg-purple-900 bg-opacity-30 border border-purple-600 rounded-lg p-4">
                 <div className="text-sm text-purple-300 mb-1">{t.contextHint}</div>
                 <div className="text-lg font-semibold text-white italic">
-                  "{currentExercise.contextPhrase[language]}"
+                  "{currentExercise.contextPhrase}"
                 </div>
               </div>
 
-              {/* Question */}
               <div className="text-center">
                 <div className="text-slate-400 mb-2">{t.conjugate}</div>
                 <div className="text-4xl font-bold text-blue-400 mb-1">
@@ -355,7 +360,6 @@ export default function Conjugation({ level }: Props) {
           )}
         </>
       ) : (
-        /* Mode théorie - Tables de conjugaison */
         <div className="bg-slate-800 rounded-xl p-6 border border-slate-700">
           <h3 className="text-2xl font-bold mb-4 text-blue-300">
             {tenses[language][selectedTense as keyof typeof tenses['fr']]}
