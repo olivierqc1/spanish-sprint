@@ -1,84 +1,139 @@
-// src/app/dictee/page.tsx
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
-
-type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
-type Country = 'ALL' | 'spain' | 'mexico' | 'argentina' | 'colombia' | 'peru' | 'chile' | 'cuba' | 'venezuela';
-
-// Mots importés depuis les flashcards
-const flashcardsWords = {
-  A1: {
-    spain: ['casa', 'libro', 'mesa', 'silla', 'puerta', 'ventana', 'agua', 'sol', 'luna', 'gato'],
-    mexico: ['maíz', 'chile', 'taco', 'pozole', 'mole', 'aguacate', 'nopal', 'frijol', 'tortilla', 'salsa'],
-    argentina: ['mate', 'asado', 'empanada', 'dulce de leche', 'bondi', 'pibe', 'boludo', 'che', 'pizza', 'vino'],
-    colombia: ['café', 'arepa', 'bandeja paisa', 'aguardiente', 'cumbia', 'salsa', 'parce', 'bacano', 'chévere', 'tinto'],
-    peru: ['ceviche', 'pisco', 'llama', 'quinoa', 'papa', 'machu picchu', 'inca', 'causa', 'anticucho', 'lomo saltado'],
-    chile: ['pisco', 'empanada', 'completo', 'once', 'cachai', 'po', 'fome', 'cuico', 'weón', 'copete'],
-    cuba: ['mojito', 'salsa', 'tabaco', 'ron', 'guagua', 'asere', 'chévere', 'jama', 'yuma', 'cohiba'],
-    venezuela: ['arepa', 'pabellón', 'cachapa', 'hallaca', 'chamo', 'chévere', 'vaina', 'rumba', 'pana', 'cotufas']
-  },
-  A2: {
-    spain: ['ordenador', 'móvil', 'coche', 'autobús', 'estación', 'aeropuerto', 'restaurante', 'tienda', 'mercado', 'banco'],
-    mexico: ['ciudad', 'centro', 'zócalo', 'metro', 'camión', 'carro', 'computadora', 'celular', 'tianguis', 'colonia'],
-    // ... ajouter pour tous les pays
-  }
-  // Ajouter B1, B2, C1, C2...
-};
+import { useState, useEffect } from 'react';
+import type { Level, Country } from '@/components/LevelPicker';
+import { flashcardsWords } from '@/data/words';
 
 export default function DicteePage() {
-  const [language, setLanguage] = useState<'fr' | 'en'>('fr');
   const [level, setLevel] = useState<Level>('A1');
   const [country, setCountry] = useState<Country>('spain');
+  const [language, setLanguage] = useState<'fr' | 'en'>('fr');
   const [currentWord, setCurrentWord] = useState('');
-  const [userInput, setUserInput] = useState('');
+  const [userAnswer, setUserAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
   const [usedWords, setUsedWords] = useState<string[]>([]);
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('spanish-sprint-language');
+    const savedLanguage = localStorage.getItem('spanish-sprint-language');
     const savedLevel = localStorage.getItem('spanish-sprint-level');
     const savedCountry = localStorage.getItem('spanish-sprint-country');
+
+    if (savedLanguage === 'fr' || savedLanguage === 'en') {
+      setLanguage(savedLanguage);
+    }
     
-    if (savedLang === 'fr' || savedLang === 'en') setLanguage(savedLang);
-    if (savedLevel) setLevel(savedLevel as Level);
-    if (savedCountry && savedCountry !== 'ALL') setCountry(savedCountry as Country);
+    if (savedLevel) {
+      const validLevels: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2', 'ALL'];
+      if (validLevels.includes(savedLevel as Level)) {
+        setLevel(savedLevel as Level);
+      }
+    }
+    
+    if (savedCountry) {
+      const validCountries: Country[] = ['spain', 'mexico', 'argentina', 'colombia', 'peru', 'chile', 'cuba', 'venezuela', 'ALL'];
+      if (validCountries.includes(savedCountry as Country)) {
+        setCountry(savedCountry as Country);
+      }
+    }
   }, []);
+
+  const getRandomWord = () => {
+    // FIX: Utilise A1 par défaut si le niveau n'existe pas dans flashcardsWords
+    const safeLevel = (level === 'A1' || level === 'A2') ? level : 'A1';
+    const words = flashcardsWords[safeLevel]?.[country] || flashcardsWords.A1.spain;
+    const availableWords = words.filter(w => !usedWords.includes(w));
+    
+    if (availableWords.length === 0) {
+      setUsedWords([]);
+      return words[Math.floor(Math.random() * words.length)];
+    }
+    
+    return availableWords[Math.floor(Math.random() * availableWords.length)];
+  };
+
+  const speakWord = (word: string) => {
+    const utterance = new SpeechSynthesisUtterance(word);
+    utterance.lang = 'es-ES';
+    utterance.rate = 0.8;
+    speechSynthesis.speak(utterance);
+  };
+
+  const startNewWord = () => {
+    const word = getRandomWord();
+    setCurrentWord(word);
+    setUserAnswer('');
+    setShowResult(false);
+    setUsedWords([...usedWords, word]);
+    speakWord(word);
+  };
+
+  useEffect(() => {
+    startNewWord();
+  }, [level, country]);
+
+  const checkAnswer = () => {
+    const isCorrect = userAnswer.trim().toLowerCase() === currentWord.toLowerCase();
+    setShowResult(true);
+    setScore(prev => ({
+      correct: prev.correct + (isCorrect ? 1 : 0),
+      total: prev.total + 1
+    }));
+  };
+
+  const handleLanguageChange = (lang: 'fr' | 'en') => {
+    setLanguage(lang);
+    localStorage.setItem('spanish-sprint-language', lang);
+  };
 
   const texts = {
     fr: {
-      title: '✍️ Dictée de mots',
-      subtitle: 'Écoute et écris le mot correctement',
+      title: '✍️ Dictée',
+      subtitle: 'Écoute et écris les mots',
       level: 'Niveau',
       country: 'Pays',
-      yourAnswer: 'Écris ici le mot que tu entends',
-      check: 'Vérifier',
-      next: 'Mot suivant',
-      correct: '✅ Correct !',
-      incorrect: '❌ Incorrect',
-      correctAnswer: 'Le bon mot était',
-      score: 'Score',
-      play: '🔊 Écouter',
       back: '← Retour',
-      instructions: 'Clique sur 🔊 pour écouter le mot, puis écris-le dans le champ ci-dessous.'
+      listen: '🔊 Écouter',
+      check: 'Vérifier',
+      next: 'Suivant',
+      score: 'Score',
+      correct: 'Correct !',
+      incorrect: 'Incorrect',
+      answer: 'La réponse était',
+      placeholder: 'Écris le mot...',
+      levels: {
+        A1: 'A1 - Débutant',
+        A2: 'A2 - Élémentaire',
+        B1: 'B1 - Intermédiaire',
+        B2: 'B2 - Intermédiaire Supérieur',
+        C1: 'C1 - Avancé',
+        C2: 'C2 - Maîtrise',
+        ALL: 'Tous niveaux'
+      }
     },
     en: {
-      title: '✍️ Word Dictation',
-      subtitle: 'Listen and write the word correctly',
+      title: '✍️ Dictation',
+      subtitle: 'Listen and write the words',
       level: 'Level',
       country: 'Country',
-      yourAnswer: 'Write the word you hear',
-      check: 'Check',
-      next: 'Next word',
-      correct: '✅ Correct!',
-      incorrect: '❌ Incorrect',
-      correctAnswer: 'The correct word was',
-      score: 'Score',
-      play: '🔊 Listen',
       back: '← Back',
-      instructions: 'Click 🔊 to listen to the word, then write it in the field below.'
+      listen: '🔊 Listen',
+      check: 'Check',
+      next: 'Next',
+      score: 'Score',
+      correct: 'Correct!',
+      incorrect: 'Incorrect',
+      answer: 'The answer was',
+      placeholder: 'Write the word...',
+      levels: {
+        A1: 'A1 - Beginner',
+        A2: 'A2 - Elementary',
+        B1: 'B1 - Intermediate',
+        B2: 'B2 - Upper Intermediate',
+        C1: 'C1 - Advanced',
+        C2: 'C2 - Mastery',
+        ALL: 'All levels'
+      }
     }
   };
 
@@ -86,6 +141,7 @@ export default function DicteePage() {
 
   const countries = {
     fr: {
+      ALL: '🌍 Tous les pays',
       spain: '🇪🇸 Espagne',
       mexico: '🇲🇽 Mexique',
       argentina: '🇦🇷 Argentine',
@@ -96,6 +152,7 @@ export default function DicteePage() {
       venezuela: '🇻🇪 Venezuela'
     },
     en: {
+      ALL: '🌍 All countries',
       spain: '🇪🇸 Spain',
       mexico: '🇲🇽 Mexico',
       argentina: '🇦🇷 Argentina',
@@ -107,112 +164,70 @@ export default function DicteePage() {
     }
   };
 
-  const getRandomWord = () => {
-    const words = flashcardsWords[level]?.[country] || flashcardsWords.A1.spain;
-    const availableWords = words.filter(w => !usedWords.includes(w));
-    
-    if (availableWords.length === 0) {
-      setUsedWords([]);
-      return words[Math.floor(Math.random() * words.length)];
-    }
-    
-    const word = availableWords[Math.floor(Math.random() * availableWords.length)];
-    setUsedWords([...usedWords, word]);
-    return word;
-  };
-
-  const speakWord = () => {
-    if (!currentWord) return;
-    const utterance = new SpeechSynthesisUtterance(currentWord);
-    utterance.lang = 'es-ES';
-    utterance.rate = 0.8;
-    window.speechSynthesis.speak(utterance);
-  };
-
-  const startNewWord = () => {
-    const word = getRandomWord();
-    setCurrentWord(word);
-    setUserInput('');
-    setShowResult(false);
-    
-    // Prononcer automatiquement le nouveau mot
-    setTimeout(() => {
-      const utterance = new SpeechSynthesisUtterance(word);
-      utterance.lang = 'es-ES';
-      utterance.rate = 0.8;
-      window.speechSynthesis.speak(utterance);
-    }, 300);
-  };
-
-  const checkAnswer = () => {
-    const isCorrect = userInput.trim().toLowerCase() === currentWord.toLowerCase();
-    setShowResult(true);
-    setScore(prev => ({
-      correct: prev.correct + (isCorrect ? 1 : 0),
-      total: prev.total + 1
-    }));
-  };
-
-  useEffect(() => {
-    startNewWord();
-  }, [level, country]);
-
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white p-8">
+    <div className="min-h-screen p-8 bg-gray-900 text-white">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="flex justify-between items-center mb-8">
-          <Link href="/" className="text-slate-400 hover:text-white transition">
+        <div className="flex justify-between items-center mb-6">
+          <a href="/" className="text-blue-400 hover:text-blue-300">
             {t.back}
-          </Link>
-          <div className="bg-slate-800 rounded-lg p-1 flex gap-1">
+          </a>
+          
+          <div className="flex gap-1 bg-gray-900 rounded-lg p-1">
             <button
-              onClick={() => setLanguage('fr')}
-              className={`px-4 py-2 rounded-md transition ${
-                language === 'fr' ? 'bg-blue-600 text-white' : 'text-slate-400'
+              onClick={() => handleLanguageChange('fr')}
+              className={`px-3 py-1 rounded-md text-sm font-semibold transition ${
+                language === 'fr' ? 'bg-blue-600 text-white' : 'text-gray-400 hover:text-white'
               }`}
             >
-              🇫🇷 FR
+              FR
             </button>
             <button
-              onClick={() => setLanguage('en')}
-              className={`px-4 py-2 rounded-md transition ${
-                language === 'en' ? 'bg-blue-600 text-white' : 'text-slate-400'
+              onClick={() => handleLanguageChange('en')}
+              className={`px-3 py-1 rounded-md text-sm font-semibold transition ${
+                language === 'en' ? 'bg-blue-600 text-white' : 'text-gray-400 hover:text-white'
               }`}
             >
-              🇬🇧 EN
+              EN
             </button>
           </div>
         </div>
 
         <h1 className="text-4xl font-bold mb-2 text-center">{t.title}</h1>
-        <p className="text-center text-slate-400 mb-8">{t.subtitle}</p>
+        <p className="text-center text-slate-400 mb-6">{t.subtitle}</p>
 
-        {/* Filtres */}
-        <div className="bg-slate-800 rounded-xl p-6 mb-8 border border-slate-700">
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm text-slate-400 mb-2">{t.level}</label>
+        <div className="bg-slate-800 rounded-xl p-4 mb-6 border border-slate-700">
+          <div className="flex flex-wrap gap-4 items-center justify-center">
+            <div className="flex items-center gap-2">
+              <label className="text-sm text-slate-400">{t.level}:</label>
               <select
                 value={level}
-                onChange={(e) => setLevel(e.target.value as Level)}
-                className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white"
+                onChange={(e) => {
+                  const newLevel = e.target.value as Level;
+                  setLevel(newLevel);
+                  localStorage.setItem('spanish-sprint-level', newLevel);
+                }}
+                className="px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-white text-sm focus:border-blue-500 focus:outline-none"
               >
-                <option value="A1">A1</option>
-                <option value="A2">A2</option>
-                <option value="B1">B1</option>
-                <option value="B2">B2</option>
-                <option value="C1">C1</option>
-                <option value="C2">C2</option>
+                <option value="A1">{t.levels.A1}</option>
+                <option value="A2">{t.levels.A2}</option>
+                <option value="B1">{t.levels.B1}</option>
+                <option value="B2">{t.levels.B2}</option>
+                <option value="C1">{t.levels.C1}</option>
+                <option value="C2">{t.levels.C2}</option>
+                <option value="ALL">{t.levels.ALL}</option>
               </select>
             </div>
-            
-            <div>
-              <label className="block text-sm text-slate-400 mb-2">{t.country}</label>
+
+            <div className="flex items-center gap-2">
+              <label className="text-sm text-slate-400">{t.country}:</label>
               <select
                 value={country}
-                onChange={(e) => setCountry(e.target.value as Country)}
-                className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white"
+                onChange={(e) => {
+                  const newCountry = e.target.value as Country;
+                  setCountry(newCountry);
+                  localStorage.setItem('spanish-sprint-country', newCountry);
+                }}
+                className="px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-white text-sm focus:border-blue-500 focus:outline-none"
               >
                 {Object.entries(countries[language]).map(([key, value]) => (
                   <option key={key} value={key}>{value}</option>
@@ -222,73 +237,69 @@ export default function DicteePage() {
           </div>
         </div>
 
-        {/* Score */}
-        <div className="bg-slate-800 rounded-xl p-4 mb-6 text-center">
+        <div className="bg-slate-800 rounded-xl p-4 text-center mb-6 border border-slate-700">
           <span className="text-slate-400">{t.score}: </span>
           <span className="text-green-400 font-bold text-2xl">{score.correct}</span>
           <span className="text-slate-500"> / </span>
           <span className="font-bold text-2xl">{score.total}</span>
         </div>
 
-        {/* Zone de dictée */}
-        <div className="bg-slate-800 rounded-xl p-8 border border-slate-700">
-          <p className="text-center text-slate-400 mb-6">{t.instructions}</p>
-          
-          {/* Bouton écouter */}
-          <div className="flex justify-center mb-6">
-            <button
-              onClick={speakWord}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-2xl font-bold transition transform hover:scale-105"
-            >
-              {t.play}
-            </button>
-          </div>
+        <div className="bg-slate-800 rounded-xl p-8 border border-slate-700 space-y-6">
+          <button
+            onClick={() => speakWord(currentWord)}
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-6 rounded-lg text-3xl transition"
+          >
+            {t.listen}
+          </button>
 
           {!showResult ? (
             <>
               <input
                 type="text"
-                value={userInput}
-                onChange={(e) => setUserInput(e.target.value)}
+                value={userAnswer}
+                onChange={(e) => setUserAnswer(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && checkAnswer()}
-                placeholder={t.yourAnswer}
-                className="w-full px-6 py-4 bg-slate-900 border border-slate-700 rounded-lg text-white text-center text-2xl focus:border-blue-500 focus:outline-none mb-4"
+                placeholder={t.placeholder}
+                className="w-full px-6 py-4 bg-slate-900 border border-slate-700 rounded-lg text-white text-center text-2xl focus:border-blue-500 focus:outline-none"
                 autoFocus
               />
               <button
                 onClick={checkAnswer}
-                disabled={!userInput.trim()}
-                className="w-full bg-green-600 hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-4 rounded-lg transition text-xl"
+                disabled={!userAnswer.trim()}
+                className="w-full bg-green-600 hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-4 rounded-lg text-xl transition"
               >
                 {t.check}
               </button>
             </>
           ) : (
             <>
-              <div className={`p-6 rounded-lg mb-4 text-center ${
-                userInput.trim().toLowerCase() === currentWord.toLowerCase()
+              <div className={`p-6 rounded-lg text-center ${
+                userAnswer.trim().toLowerCase() === currentWord.toLowerCase()
                   ? 'bg-green-900 bg-opacity-30 border-2 border-green-600'
                   : 'bg-red-900 bg-opacity-30 border-2 border-red-600'
               }`}>
                 <div className="text-3xl mb-4">
-                  {userInput.trim().toLowerCase() === currentWord.toLowerCase() ? t.correct : t.incorrect}
+                  {userAnswer.trim().toLowerCase() === currentWord.toLowerCase() 
+                    ? `✅ ${t.correct}`
+                    : `❌ ${t.incorrect}`
+                  }
                 </div>
-                {userInput.trim().toLowerCase() !== currentWord.toLowerCase() && (
+                {userAnswer.trim().toLowerCase() !== currentWord.toLowerCase() && (
                   <div>
-                    <div className="text-slate-400 mb-2">{t.correctAnswer}:</div>
+                    <div className="text-slate-400 mb-2">{t.answer}:</div>
                     <div className="text-3xl font-bold text-green-400">{currentWord}</div>
                     <button
-                      onClick={speakWord}
-                      className="mt-4 bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded-lg transition"
+                      onClick={() => speakWord(currentWord)}
+                      className="mt-4 bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg transition"
                     >
-                      🔊 Réécouter
+                      🔊 {t.listen}
                     </button>
                   </div>
                 )}
               </div>
               <button
                 onClick={startNewWord}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition text-xl"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg text-xl transition"
               >
                 {t.next} →
               </button>
@@ -296,6 +307,6 @@ export default function DicteePage() {
           )}
         </div>
       </div>
-    </main>
+    </div>
   );
-} 
+}
