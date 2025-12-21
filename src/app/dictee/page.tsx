@@ -39,10 +39,26 @@ export default function DicteePage() {
   }, []);
 
   const getRandomWord = () => {
-    // FIX: Utilise A1 par défaut si le niveau n'existe pas dans flashcardsWords
-    const safeLevel = (level === 'A1' || level === 'A2') ? level : 'A1';
-    const words = flashcardsWords[safeLevel]?.[country] || flashcardsWords.A1.spain;
-    const availableWords = words.filter(w => !usedWords.includes(w));
+    // Support A1, A2, B1 - utilise A1 par défaut pour les autres niveaux
+    const safeLevel = (level === 'A1' || level === 'A2' || level === 'B1') ? level : 'A1';
+    const levelWords = flashcardsWords[safeLevel];
+    
+    if (!levelWords || levelWords.length === 0) {
+      // Fallback vers A1 si pas de mots pour ce niveau
+      const words = flashcardsWords.A1.map((w: any) => w.front);
+      const availableWords = words.filter((w: string) => !usedWords.includes(w));
+      
+      if (availableWords.length === 0) {
+        setUsedWords([]);
+        return words[Math.floor(Math.random() * words.length)];
+      }
+      
+      return availableWords[Math.floor(Math.random() * availableWords.length)];
+    }
+    
+    // Extrait le champ "front" de chaque mot
+    const words = levelWords.map((w: any) => w.front);
+    const availableWords = words.filter((w: string) => !usedWords.includes(w));
     
     if (availableWords.length === 0) {
       setUsedWords([]);
