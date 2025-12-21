@@ -1,10 +1,11 @@
 // src/data/words/index.ts
 
-import { A1Words } from './A1';
-import { A2Words } from './A2';
-import { B1Words } from './B1';
+import { wordsA1 } from './A1';
+import { wordsA2 } from './A2';
+import { wordsB1 } from './B1';
 
 export const flashcardsWords = {
-  A1: A1Words,
-  A2: A2Words
+  A1: wordsA1,
+  A2: wordsA2,
+  B1: wordsB1
 };
