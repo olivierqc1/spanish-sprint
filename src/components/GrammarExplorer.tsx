@@ -3,6 +3,7 @@
 
 import { useState, useMemo } from 'react';
 import type { GrammarPoint } from '@/data/grammar';
+import GrammarDrill from './GrammarDrill';
 
 type Props = {
   points: GrammarPoint[];
@@ -10,19 +11,10 @@ type Props = {
   language: 'fr' | 'en';
 };
 
-type QuizData = {
-  theory: { fr: string; en: string };
-  drills: Array<{ prompt: string; answer: string }>;
-};
-
 export default function GrammarExplorer({ points, initialLevel, language }: Props) {
   const [selectedPoint, setSelectedPoint] = useState<GrammarPoint | null>(null);
-  const [quizData, setQuizData] = useState<QuizData | null>(null);
+  const [quizData, setQuizData] = useState<any>(null);
   const [loading, setLoading] = useState(false);
-  const [currentDrill, setCurrentDrill] = useState(0);
-  const [userAnswer, setUserAnswer] = useState('');
-  const [showResult, setShowResult] = useState(false);
-  const [score, setScore] = useState({ correct: 0, total: 0 });
 
   // Filtrer par niveau
   const filtered = useMemo(() => {
@@ -35,21 +27,15 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     });
   }, [points, initialLevel]);
 
-  // Charger les données du quiz
+  // Charger les données du quiz avec import dynamique
   const loadQuiz = async (point: GrammarPoint) => {
     setLoading(true);
     setSelectedPoint(point);
     
     try {
-      const response = await fetch(point.jsonPath);
-      if (!response.ok) throw new Error('Failed to load');
-      
-      const data = await response.json();
-      setQuizData(data);
-      setCurrentDrill(0);
-      setUserAnswer('');
-      setShowResult(false);
-      setScore({ correct: 0, total: 0 });
+      // Import dynamique du JSON - Webpack va les bundler automatiquement
+      const data = await import(`@/data/grammar_quizz/${point.id}.json`);
+      setQuizData(data.default || data);
     } catch (error) {
       console.error('Error loading quiz:', error);
       setQuizData(null);
@@ -58,35 +44,7 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     }
   };
 
-  const checkAnswer = () => {
-    if (!quizData) return;
-    
-    const drill = quizData.drills[currentDrill];
-    const isCorrect = userAnswer.trim().toLowerCase() === drill.answer.toLowerCase();
-    
-    setShowResult(true);
-    setScore(prev => ({
-      correct: prev.correct + (isCorrect ? 1 : 0),
-      total: prev.total + 1
-    }));
-  };
-
-  const nextDrill = () => {
-    if (!quizData) return;
-    
-    if (currentDrill < quizData.drills.length - 1) {
-      setCurrentDrill(prev => prev + 1);
-      setUserAnswer('');
-      setShowResult(false);
-    } else {
-      // Fin du quiz
-      alert(`Quiz terminé! Score: ${score.correct + (showResult && userAnswer.trim().toLowerCase() === quizData.drills[currentDrill].answer.toLowerCase() ? 1 : 0)}/${quizData.drills.length}`);
-      setSelectedPoint(null);
-      setQuizData(null);
-    }
-  };
-
-  // Vue liste des points de grammaire
+  // Vue liste
   if (!selectedPoint) {
     return (
       <div className="space-y-4">
@@ -132,11 +90,11 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     );
   }
 
-  // Vue quiz
+  // Loading
   if (loading) {
     return (
       <div className="bg-slate-800 rounded-xl p-12 text-center border border-slate-700">
-        <div className="spinner mx-auto mb-4"></div>
+        <div className="text-4xl mb-4">⏳</div>
         <p className="text-slate-400">
           {language === 'fr' ? 'Chargement...' : 'Loading...'}
         </p>
@@ -144,6 +102,7 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     );
   }
 
+  // Error
   if (!quizData) {
     return (
       <div className="bg-slate-800 rounded-xl p-12 text-center border border-slate-700">
@@ -160,112 +119,17 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     );
   }
 
-  const drill = quizData.drills[currentDrill];
-
+  // Quiz loaded - use GrammarDrill component
   return (
-    <div className="space-y-6">
-      {/* Header */}
-      <div className="bg-slate-800 rounded-xl p-6 border border-slate-700">
-        <button
-          onClick={() => setSelectedPoint(null)}
-          className="text-blue-400 hover:text-blue-300 mb-3"
-        >
-          {language === 'fr' ? '← Retour à la liste' : '← Back to list'}
-        </button>
-        <h2 className="text-2xl font-bold text-white mb-2">
-          {selectedPoint.title[language]}
-        </h2>
-        <p className="text-slate-400">
-          {selectedPoint.note[language]}
-        </p>
-      </div>
-
-      {/* Score */}
-      <div className="bg-slate-800 rounded-xl p-4 text-center border border-slate-700">
-        <span className="text-slate-400">
-          {language === 'fr' ? 'Score: ' : 'Score: '}
-        </span>
-        <span className="text-green-400 font-bold text-2xl">{score.correct}</span>
-        <span className="text-slate-500"> / </span>
-        <span className="font-bold text-2xl">{score.total}</span>
-        <span className="text-slate-400 ml-4">
-          {language === 'fr' ? 'Question ' : 'Question '}
-          {currentDrill + 1} / {quizData.drills.length}
-        </span>
-      </div>
-
-      {/* Théorie (collapsible) */}
-      <details className="bg-slate-800 rounded-xl border border-slate-700">
-        <summary className="p-4 cursor-pointer hover:bg-slate-750 rounded-xl font-bold text-blue-300">
-          📖 {language === 'fr' ? 'Voir la théorie' : 'View theory'}
-        </summary>
-        <div className="p-6 pt-0 prose prose-invert max-w-none">
-          <div 
-            className="text-slate-300 leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: quizData.theory[language].replace(/\n/g, '<br/>') }}
-          />
-        </div>
-      </details>
-
-      {/* Exercice */}
-      <div className="bg-slate-800 rounded-xl p-6 border border-slate-700">
-        <p className="text-xl mb-4 text-white">
-          {drill.prompt}
-        </p>
-
-        {!showResult ? (
-          <>
-            <input
-              type="text"
-              value={userAnswer}
-              onChange={(e) => setUserAnswer(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && checkAnswer()}
-              placeholder={language === 'fr' ? 'Ta réponse...' : 'Your answer...'}
-              className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white text-lg focus:border-blue-500 focus:outline-none mb-4"
-              autoFocus
-            />
-            <button
-              onClick={checkAnswer}
-              disabled={!userAnswer.trim()}
-              className="w-full bg-green-600 hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-3 rounded-lg transition"
-            >
-              {language === 'fr' ? 'Vérifier' : 'Check'}
-            </button>
-          </>
-        ) : (
-          <>
-            <div className={`p-4 rounded-lg mb-4 ${
-              userAnswer.trim().toLowerCase() === drill.answer.toLowerCase()
-                ? 'bg-green-900 bg-opacity-30 border-2 border-green-600'
-                : 'bg-red-900 bg-opacity-30 border-2 border-red-600'
-            }`}>
-              <div className="text-2xl mb-2">
-                {userAnswer.trim().toLowerCase() === drill.answer.toLowerCase() 
-                  ? '✅ ' + (language === 'fr' ? 'Correct !' : 'Correct!')
-                  : '❌ ' + (language === 'fr' ? 'Incorrect' : 'Incorrect')
-                }
-              </div>
-              {userAnswer.trim().toLowerCase() !== drill.answer.toLowerCase() && (
-                <div>
-                  <div className="text-slate-400 mb-1">
-                    {language === 'fr' ? 'La bonne réponse était :' : 'The correct answer was:'}
-                  </div>
-                  <div className="text-2xl font-bold text-green-400">{drill.answer}</div>
-                </div>
-              )}
-            </div>
-            <button
-              onClick={nextDrill}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition"
-            >
-              {currentDrill < quizData.drills.length - 1
-                ? (language === 'fr' ? 'Question suivante →' : 'Next question →')
-                : (language === 'fr' ? 'Terminer le quiz' : 'Finish quiz')
-              }
-            </button>
-          </>
-        )}
-      </div>
-    </div>
+    <GrammarDrill
+      title={selectedPoint.title}
+      note={quizData.note}
+      drills={quizData.drills}
+      onClose={() => {
+        setSelectedPoint(null);
+        setQuizData(null);
+      }}
+      language={language}
+    />
   );
 }
