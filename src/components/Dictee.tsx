@@ -12,6 +12,16 @@ type WordItem = {
   category: string;
 };
 
+// ✅ TYPE EXPORTÉ POUR exercices.ts
+export type DicteeItem = {
+  id: string;
+  level: string;
+  country: string;
+  title: string;
+  audio: string;
+  transcript: string;
+};
+
 type DicteeExercise = {
   id: string;
   level: Exclude<Level, "ALL">;
