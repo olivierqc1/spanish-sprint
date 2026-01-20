@@ -98,12 +98,15 @@ export const wordsA1 = [
   { id: "97", front: "descubrir", back: "découvrir", backEn: "to discover", level: "A1", country: "ALL", category: "verbe" },
   { id: "98", front: "levantar", back: "lever / soulever", backEn: "to raise/lift", level: "A1", country: "ALL", category: "verbe" },
   { id: "99", front: "intentar", back: "essayer / tenter", backEn: "to try", level: "A1", country: "ALL", category: "verbe" },
-  { id: "100", front: "usar", back: "utiliser / se servir de", backEn: "to use", level: "A1", country: "ALL", category: "verbe" },// NOUVEAUX MOTS A1 - Vie quotidienne
+  { id: "100", front: "usar", back: "utiliser / se servir de", backEn: "to use", level: "A1", country: "ALL", category: "verbe" },
   { id: "101", front: "cocinar", back: "cuisiner", backEn: "to cook", level: "A1", country: "ALL", category: "verbe" },
   { id: "102", front: "bañarse", back: "se baigner", backEn: "to bathe", level: "A1", country: "ALL", category: "verbe" },
   { id: "103", front: "secarse", back: "se sécher", backEn: "to dry oneself", level: "A1", country: "ALL", category: "verbe" },
   { id: "104", front: "vestirse", back: "s'habiller", backEn: "to get dressed", level: "A1", country: "ALL", category: "verbe" },
   { id: "105", front: "despertarse", back: "se réveiller", backEn: "to wake up", level: "A1", country: "ALL", category: "verbe" },
+
+// ⬇️⬇️⬇️ COPIE LA PARTIE 2 ICI ⬇️⬇️⬇️// ⬇️⬇️⬇️ PARTIE 2 - À COLLER APRÈS LA PARTIE 1 ⬇️⬇️⬇️
+
   { id: "106", front: "acostarse", back: "se coucher", backEn: "to go to bed", level: "A1", country: "ALL", category: "verbe" },
   { id: "107", front: "madrugar", back: "se lever tôt", backEn: "to get up early", level: "A1", country: "ALL", category: "verbe" },
   { id: "108", front: "llorar", back: "pleurer", backEn: "to cry", level: "A1", country: "ALL", category: "verbe" },
@@ -117,23 +120,17 @@ export const wordsA1 = [
   { id: "116", front: "añadir", back: "ajouter", backEn: "to add", level: "A1", country: "ALL", category: "verbe" },
   { id: "117", front: "adivinar", back: "deviner", backEn: "to guess", level: "A1", country: "ALL", category: "verbe" },
   { id: "118", front: "contestar", back: "répondre", backEn: "to answer", level: "A1", country: "ALL", category: "verbe" },
-
-  // Corps humain
   { id: "119", front: "brazo", back: "bras", backEn: "arm", level: "A1", country: "ALL", category: "nom" },
   { id: "120", front: "pierna", back: "jambe", backEn: "leg", level: "A1", country: "ALL", category: "nom" },
   { id: "121", front: "pie", back: "pied", backEn: "foot", level: "A1", country: "ALL", category: "nom" },
   { id: "122", front: "cuello", back: "cou", backEn: "neck", level: "A1", country: "ALL", category: "nom" },
   { id: "123", front: "diente", back: "dent", backEn: "tooth", level: "A1", country: "ALL", category: "nom" },
-
-  // Vêtements basiques
   { id: "124", front: "camiseta", back: "t-shirt", backEn: "t-shirt", level: "A1", country: "ALL", category: "nom" },
   { id: "125", front: "chaqueta", back: "veste", backEn: "jacket", level: "A1", country: "ALL", category: "nom" },
   { id: "126", front: "zapato", back: "chaussure", backEn: "shoe", level: "A1", country: "ALL", category: "nom" },
   { id: "127", front: "calcetín", back: "chaussette", backEn: "sock", level: "A1", country: "ALL", category: "nom" },
   { id: "128", front: "gorra", back: "casquette", backEn: "cap", level: "A1", country: "ALL", category: "nom" },
   { id: "129", front: "bufanda", back: "écharpe", backEn: "scarf", level: "A1", country: "ALL", category: "nom" },
-
-  // Objets quotidiens
   { id: "130", front: "mesa", back: "table", backEn: "table", level: "A1", country: "ALL", category: "nom" },
   { id: "131", front: "silla", back: "chaise", backEn: "chair", level: "A1", country: "ALL", category: "nom" },
   { id: "132", front: "peine", back: "peigne", backEn: "comb", level: "A1", country: "ALL", category: "nom" },
@@ -142,29 +139,21 @@ export const wordsA1 = [
   { id: "135", front: "basura", back: "poubelle", backEn: "trash", level: "A1", country: "ALL", category: "nom" },
   { id: "136", front: "mochila", back: "sac à dos", backEn: "backpack", level: "A1", country: "ALL", category: "nom" },
   { id: "137", front: "cuaderno", back: "cahier", backEn: "notebook", level: "A1", country: "ALL", category: "nom" },
-
-  // Aliments
   { id: "138", front: "cebolla", back: "oignon", backEn: "onion", level: "A1", country: "ALL", category: "nom" },
   { id: "139", front: "zanahoria", back: "carotte", backEn: "carrot", level: "A1", country: "ALL", category: "nom" },
   { id: "140", front: "pera", back: "poire", backEn: "pear", level: "A1", country: "ALL", category: "nom" },
   { id: "141", front: "uva", back: "raisin", backEn: "grape", level: "A1", country: "ALL", category: "nom" },
   { id: "142", front: "sal", back: "sel", backEn: "salt", level: "A1", country: "ALL", category: "nom" },
-
-  // Animaux
   { id: "143", front: "jirafa", back: "girafe", backEn: "giraffe", level: "A1", country: "ALL", category: "nom" },
   { id: "144", front: "zorro", back: "renard", backEn: "fox", level: "A1", country: "ALL", category: "nom" },
   { id: "145", front: "ardilla", back: "écureuil", backEn: "squirrel", level: "A1", country: "ALL", category: "nom" },
   { id: "146", front: "lobo", back: "loup", backEn: "wolf", level: "A1", country: "ALL", category: "nom" },
   { id: "147", front: "oso", back: "ours", backEn: "bear", level: "A1", country: "ALL", category: "nom" },
   { id: "148", front: "mariposa", back: "papillon", backEn: "butterfly", level: "A1", country: "ALL", category: "nom" },
-
-  // Couleurs
   { id: "149", front: "morado/a", back: "violet", backEn: "purple", level: "A1", country: "ALL", category: "adjectif" },
   { id: "150", front: "gris", back: "gris", backEn: "gray", level: "A1", country: "ALL", category: "adjectif" },
   { id: "151", front: "beige", back: "beige", backEn: "beige", level: "A1", country: "ALL", category: "adjectif" },
   { id: "152", front: "lila", back: "lilas", backEn: "lilac", level: "A1", country: "ALL", category: "adjectif" },
-
-  // Mots utiles
   { id: "153", front: "siempre", back: "toujours", backEn: "always", level: "A1", country: "ALL", category: "autre" },
   { id: "154", front: "nunca", back: "jamais", backEn: "never", level: "A1", country: "ALL", category: "autre" },
   { id: "155", front: "después", back: "après", backEn: "after", level: "A1", country: "ALL", category: "autre" },
@@ -185,31 +174,43 @@ export const wordsA1 = [
   { id: "168", front: "basarse en", back: "se baser sur", backEn: "to be based on", level: "A1", country: "ALL", category: "verbe" },
   { id: "169", front: "sentirse", back: "se sentir", backEn: "to feel", level: "A1", country: "ALL", category: "verbe" },
   { id: "170", front: "componer", back: "composer", backEn: "to compose", level: "A1", country: "ALL", category: "verbe" },
-
-  // Noms des notes
-  { id: "171", front: "puente", back: "pont", backEn: "bridge", level: "A1", country: "ALL", category: "nom" },
-  { id: "172", front: "rincón", back: "coin", backEn: "corner", level: "A1", country: "ALL", category: "nom" },
-  { id: "173", front: "espacio", back: "espace", backEn: "space", level: "A1", country: "ALL", category: "nom" },
-  { id: "174", front: "anillo", back: "bague", backEn: "ring", level: "A1", country: "ALL", category: "nom" },
-  { id: "175", front: "magdalena", back: "madeleine", backEn: "madeleine", level: "A1", country: "ALL", category: "nom" },
-  { id: "176", front: "éxito", back: "succès", backEn: "success", level: "A1", country: "ALL", category: "nom" },
-  { id: "177", front: "premio", back: "prix (récompense)", backEn: "prize", level: "A1", country: "ALL", category: "nom" },
-  { id: "178", front: "pregunta", back: "question", backEn: "question", level: "A1", country: "ALL", category: "nom" },
-  { id: "179", front: "madre", back: "mère", backEn: "mother", level: "A1", country: "ALL", category: "nom" },
-  { id: "180", front: "padre", back: "père", backEn: "father", level: "A1", country: "ALL", category: "nom" },
-  { id: "181", front: "carácter", back: "caractère", backEn: "character", level: "A1", country: "ALL", category: "nom" },
-
-  // Adjectifs physiques
-  { id: "182", front: "alto/a", back: "grand(e)", backEn: "tall", level: "A1", country: "ALL", category: "adjectif" },
-  { id: "183", front: "delgado/a", back: "mince", backEn: "thin", level: "A1", country: "ALL", category: "adjectif" },
-  { id: "184", front: "guapo/a", back: "beau/belle", backEn: "handsome/beautiful", level: "A1", country: "ALL", category: "adjectif" },
-  { id: "185", front: "alegre", back: "joyeux/joyeuse", backEn: "cheerful", level: "A1", country: "ALL", category: "adjectif" },
-  { id: "186", front: "activo/a", back: "actif/active", backEn: "active", level: "A1", country: "ALL", category: "adjectif" },
-  { id: "187", front: "sabroso/a", back: "savoureux/savoureuse", backEn: "tasty", level: "A1", country: "ALL", category: "adjectif" },
-
-  // Expressions utiles
-  { id: "188", front: "sobre todo", back: "surtout", backEn: "above all", level: "A1", country: "ALL", category: "autre" },
-  { id: "189", front: "cada", back: "chaque", backEn: "each", level: "A1", country: "ALL", category: "autre" },
-  { id: "190", front: "aún", back: "encore", backEn: "still", level: "A1", country: "ALL", category: "autre" },
-  { id: "191", front: "generalmente", back: "généralement", backEn: "generally", level: "A1", country: "ALL", category: "autre" },
+  { id: "171", front: "repetir", back: "répéter", backEn: "to repeat", level: "A1", country: "ALL", category: "verbe" },
+  { id: "172", front: "aburrir", back: "ennuyer", backEn: "to bore", level: "A1", country: "ALL", category: "verbe" },
+  { id: "173", front: "extrañar", back: "manquer", backEn: "to miss", level: "A1", country: "ALL", category: "verbe" },
+  { id: "174", front: "tener hambre", back: "avoir faim", backEn: "to be hungry", level: "A1", country: "ALL", category: "verbe" },
+  { id: "175", front: "obtener", back: "obtenir", backEn: "to obtain", level: "A1", country: "ALL", category: "verbe" },
+  { id: "176", front: "comer", back: "manger", backEn: "to eat", level: "A1", country: "ALL", category: "verbe" },
+  { id: "177", front: "puente", back: "pont", backEn: "bridge", level: "A1", country: "ALL", category: "nom" },
+  { id: "178", front: "rincón", back: "coin", backEn: "corner", level: "A1", country: "ALL", category: "nom" },
+  { id: "179", front: "espacio", back: "espace", backEn: "space", level: "A1", country: "ALL", category: "nom" },
+  { id: "180", front: "anillo", back: "bague", backEn: "ring", level: "A1", country: "ALL", category: "nom" },
+  { id: "181", front: "magdalena", back: "madeleine", backEn: "madeleine", level: "A1", country: "ALL", category: "nom" },
+  { id: "182", front: "éxito", back: "succès", backEn: "success", level: "A1", country: "ALL", category: "nom" },
+  { id: "183", front: "premio", back: "prix (récompense)", backEn: "prize", level: "A1", country: "ALL", category: "nom" },
+  { id: "184", front: "pregunta", back: "question", backEn: "question", level: "A1", country: "ALL", category: "nom" },
+  { id: "185", front: "madre", back: "mère", backEn: "mother", level: "A1", country: "ALL", category: "nom" },
+  { id: "186", front: "padre", back: "père", backEn: "father", level: "A1", country: "ALL", category: "nom" },
+  { id: "187", front: "carácter", back: "caractère", backEn: "character", level: "A1", country: "ALL", category: "nom" },
+  { id: "188", front: "minorías", back: "minorités", backEn: "minorities", level: "A1", country: "ALL", category: "nom" },
+  { id: "189", front: "error", back: "erreur", backEn: "error", level: "A1", country: "ALL", category: "nom" },
+  { id: "190", front: "arco", back: "arc", backEn: "arc/bow", level: "A1", country: "ALL", category: "nom" },
+  { id: "191", front: "escalera", back: "escalier", backEn: "stairs", level: "A1", country: "ALL", category: "nom" },
+  { id: "192", front: "pinza", back: "pince", backEn: "clip/clamp", level: "A1", country: "ALL", category: "nom" },
+  { id: "193", front: "carne", back: "viande", backEn: "meat", level: "A1", country: "ALL", category: "nom" },
+  { id: "194", front: "alto/a", back: "grand(e)", backEn: "tall", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "195", front: "delgado/a", back: "mince", backEn: "thin", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "196", front: "guapo/a", back: "beau/belle", backEn: "handsome/beautiful", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "197", front: "alegre", back: "joyeux/joyeuse", backEn: "cheerful", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "198", front: "activo/a", back: "actif/active", backEn: "active", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "199", front: "sabroso/a", back: "savoureux/savoureuse", backEn: "tasty", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "200", front: "gracioso/a", back: "drôle", backEn: "funny", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "201", front: "rubio/a", back: "blond(e)", backEn: "blonde", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "202", front: "moreno/a", back: "brun(e)", backEn: "dark-haired", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "203", front: "carnoso/a", back: "charnu", backEn: "fleshy", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "204", front: "tejido/a", back: "tissu", backEn: "woven/fabric", level: "A1", country: "ALL", category: "adjectif" },
+  { id: "205", front: "sobre todo", back: "surtout", backEn: "above all", level: "A1", country: "ALL", category: "autre" },
+  { id: "206", front: "cada", back: "chaque", backEn: "each", level: "A1", country: "ALL", category: "autre" },
+  { id: "207", front: "aún", back: "encore", backEn: "still", level: "A1", country: "ALL", category: "autre" },
+  { id: "208", front: "generalmente", back: "généralement", backEn: "generally", level: "A1", country: "ALL", category: "autre" },
+  { id: "209", front: "se parece", back: "se ressembler", backEn: "to look like", level: "A1", country: "ALL", category: "autre" },
 ];
