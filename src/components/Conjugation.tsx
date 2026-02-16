@@ -304,7 +304,10 @@ export default function Conjugation({ level }: Props) {
       correct: '✅ Correct !',
       incorrect: '❌ Incorrect',
       correctAnswer: 'La bonne réponse était',
-      selectTense: 'Choisis un temps'
+      selectTense: 'Choisis un temps',
+      usage: '📍 Quand utiliser',
+      endings: '⚙️ Terminaisons',
+      examples: '💡 Exemples'
     },
     en: {
       theory: '📚 Theory',
@@ -317,11 +320,208 @@ export default function Conjugation({ level }: Props) {
       correct: '✅ Correct!',
       incorrect: '❌ Incorrect',
       correctAnswer: 'The correct answer was',
-      selectTense: 'Choose a tense'
+      selectTense: 'Choose a tense',
+      usage: '📍 When to use',
+      endings: '⚙️ Endings',
+      examples: '💡 Examples'
     }
   };
 
   const t = texts[language];
+
+  // 📚 Explications des temps
+  const tenseExplanations: Record<string, any> = {
+    presente: {
+      fr: {
+        usage: "Actions actuelles, habitudes, vérités générales",
+        exemples: ["Hablo español (Je parle espagnol)", "Como todos los días (Je mange tous les jours)", "El sol sale por el este (Le soleil se lève à l'est)"],
+        terminaisons: {
+          ar: "o, as, a, amos, áis, an",
+          er: "o, es, e, emos, éis, en",
+          ir: "o, es, e, imos, ís, en"
+        }
+      },
+      en: {
+        usage: "Current actions, habits, general truths",
+        exemples: ["Hablo español (I speak Spanish)", "Como todos los días (I eat every day)", "El sol sale por el este (The sun rises in the east)"],
+        terminaisons: {
+          ar: "o, as, a, amos, áis, an",
+          er: "o, es, e, emos, éis, en",
+          ir: "o, es, e, imos, ís, en"
+        }
+      }
+    },
+    preterito_perfecto: {
+      fr: {
+        usage: "Actions récentes, expériences de vie, résultats présents",
+        exemples: ["Hoy he comido paella (Aujourd'hui j'ai mangé de la paella)", "Nunca he estado en México (Je ne suis jamais allé au Mexique)", "¿Has visto mis llaves? (As-tu vu mes clés ?)"],
+        terminaisons: {
+          ar: "he/has/ha/hemos/habéis/han + hablado",
+          er: "he/has/ha/hemos/habéis/han + comido",
+          ir: "he/has/ha/hemos/habéis/han + vivido"
+        },
+        note: "Participes irréguliers : hecho, visto, dicho, escrito, puesto"
+      },
+      en: {
+        usage: "Recent actions, life experiences, present results",
+        exemples: ["Hoy he comido paella (Today I ate paella)", "Nunca he estado en México (I've never been to Mexico)", "¿Has visto mis llaves? (Have you seen my keys?)"],
+        terminaisons: {
+          ar: "he/has/ha/hemos/habéis/han + hablado",
+          er: "he/has/ha/hemos/habéis/han + comido",
+          ir: "he/has/ha/hemos/habéis/han + vivido"
+        },
+        note: "Irregular participles: hecho, visto, dicho, escrito, puesto"
+      }
+    },
+    imperativo: {
+      fr: {
+        usage: "Ordres, conseils, instructions",
+        exemples: ["¡Habla más despacio! (Parle plus lentement !)", "¡Come verduras! (Mange des légumes !)", "¡Ven aquí! (Viens ici !)"],
+        terminaisons: {
+          ar: "tú: -a, usted: -e, nosotros: -emos, vosotros: -ad, ustedes: -en",
+          er: "tú: -e, usted: -a, nosotros: -amos, vosotros: -ed, ustedes: -an",
+          ir: "tú: -e, usted: -a, nosotros: -amos, vosotros: -id, ustedes: -an"
+        },
+        note: "Négatif : No + subjonctif"
+      },
+      en: {
+        usage: "Orders, advice, instructions",
+        exemples: ["¡Habla más despacio! (Speak more slowly!)", "¡Come verduras! (Eat vegetables!)", "¡Ven aquí! (Come here!)"],
+        terminaisons: {
+          ar: "tú: -a, usted: -e, nosotros: -emos, vosotros: -ad, ustedes: -en",
+          er: "tú: -e, usted: -a, nosotros: -amos, vosotros: -ed, ustedes: -an",
+          ir: "tú: -e, usted: -a, nosotros: -amos, vosotros: -id, ustedes: -an"
+        },
+        note: "Negative: No + subjunctive"
+      }
+    },
+    preterito: {
+      fr: {
+        usage: "Actions complètes du passé, événements ponctuels",
+        exemples: ["Ayer comí pizza (Hier j'ai mangé une pizza)", "Viví en París 5 años (J'ai vécu à Paris 5 ans)", "Llegué a las 8 (Je suis arrivé à 8h)"],
+        terminaisons: {
+          ar: "é, aste, ó, amos, asteis, aron",
+          er: "í, iste, ió, imos, isteis, ieron",
+          ir: "í, iste, ió, imos, isteis, ieron"
+        }
+      },
+      en: {
+        usage: "Completed past actions, specific events",
+        exemples: ["Ayer comí pizza (Yesterday I ate pizza)", "Viví en París 5 años (I lived in Paris for 5 years)", "Llegué a las 8 (I arrived at 8)"],
+        terminaisons: {
+          ar: "é, aste, ó, amos, asteis, aron",
+          er: "í, iste, ió, imos, isteis, ieron",
+          ir: "í, iste, ió, imos, isteis, ieron"
+        }
+      }
+    },
+    imperfecto: {
+      fr: {
+        usage: "Habitudes passées, descriptions, actions en cours",
+        exemples: ["Cuando era niño, jugaba al fútbol (Quand j'étais enfant, je jouais au foot)", "Hacía frío (Il faisait froid)", "Vivía en Barcelona (J'habitais à Barcelone)"],
+        terminaisons: {
+          ar: "aba, abas, aba, ábamos, abais, aban",
+          er: "ía, ías, ía, íamos, íais, ían",
+          ir: "ía, ías, ía, íamos, íais, ían"
+        },
+        note: "3 irréguliers : ser (era), ir (iba), ver (veía)"
+      },
+      en: {
+        usage: "Past habits, descriptions, ongoing actions",
+        exemples: ["Cuando era niño, jugaba al fútbol (When I was a child, I played soccer)", "Hacía frío (It was cold)", "Vivía en Barcelona (I lived in Barcelona)"],
+        terminaisons: {
+          ar: "aba, abas, aba, ábamos, abais, aban",
+          er: "ía, ías, ía, íamos, íais, ían",
+          ir: "ía, ías, ía, íamos, íais, ían"
+        },
+        note: "3 irregulars: ser (era), ir (iba), ver (veía)"
+      }
+    },
+    futuro: {
+      fr: {
+        usage: "Actions futures, prédictions, suppositions",
+        exemples: ["Mañana iré al cine (Demain j'irai au cinéma)", "Será difícil (Ce sera difficile)", "¿Dónde estará Juan? (Où peut être Juan ?)"],
+        terminaisons: {
+          ar: "é, ás, á, emos, éis, án (infinitif + terminaison)",
+          er: "é, ás, á, emos, éis, án (infinitif + terminaison)",
+          ir: "é, ás, á, emos, éis, án (infinitif + terminaison)"
+        },
+        note: "Irréguliers : tendré, podré, habré, haré, diré, querré, sabré, pondré, saldré, vendré"
+      },
+      en: {
+        usage: "Future actions, predictions, suppositions",
+        exemples: ["Mañana iré al cine (Tomorrow I'll go to the cinema)", "Será difícil (It will be difficult)", "¿Dónde estará Juan? (Where could Juan be?)"],
+        terminaisons: {
+          ar: "é, ás, á, emos, éis, án (infinitive + ending)",
+          er: "é, ás, á, emos, éis, án (infinitive + ending)",
+          ir: "é, ás, á, emos, éis, án (infinitive + ending)"
+        },
+        note: "Irregulars: tendré, podré, habré, haré, diré, querré, sabré, pondré, saldré, vendré"
+      }
+    },
+    condicional: {
+      fr: {
+        usage: "Politesse, conseils, hypothèses, futur du passé",
+        exemples: ["Me gustaría viajar (J'aimerais voyager)", "Deberías estudiar más (Tu devrais étudier plus)", "Dijo que vendría (Il a dit qu'il viendrait)"],
+        terminaisons: {
+          ar: "ía, ías, ía, íamos, íais, ían (infinitif + terminaison)",
+          er: "ía, ías, ía, íamos, íais, ían (infinitif + terminaison)",
+          ir: "ía, ías, ía, íamos, íais, ían (infinitif + terminaison)"
+        }
+      },
+      en: {
+        usage: "Politeness, advice, hypotheses, future in the past",
+        exemples: ["Me gustaría viajar (I would like to travel)", "Deberías estudiar más (You should study more)", "Dijo que vendría (He said he would come)"],
+        terminaisons: {
+          ar: "ía, ías, ía, íamos, íais, ían (infinitive + ending)",
+          er: "ía, ías, ía, íamos, íais, ían (infinitive + ending)",
+          ir: "ía, ías, ía, íamos, íais, ían (infinitive + ending)"
+        }
+      }
+    },
+    pluscuamperfecto: {
+      fr: {
+        usage: "Actions antérieures à un autre moment du passé",
+        exemples: ["Cuando llegué, ya había comido (Quand je suis arrivé, il avait déjà mangé)", "Nunca había visto el mar (Je n'avais jamais vu la mer)", "Habíamos terminado antes (Nous avions terminé avant)"],
+        terminaisons: {
+          ar: "había/habías/había/habíamos/habíais/habían + hablado",
+          er: "había/habías/había/habíamos/habíais/habían + comido",
+          ir: "había/habías/había/habíamos/habíais/habían + vivido"
+        }
+      },
+      en: {
+        usage: "Actions prior to another past moment",
+        exemples: ["Cuando llegué, ya había comido (When I arrived, he had already eaten)", "Nunca había visto el mar (I had never seen the sea)", "Habíamos terminado antes (We had finished before)"],
+        terminaisons: {
+          ar: "había/habías/había/habíamos/habíais/habían + hablado",
+          er: "había/habías/había/habíamos/habíais/habían + comido",
+          ir: "había/habías/había/habíamos/habíais/habían + vivido"
+        }
+      }
+    },
+    subjuntivo_presente: {
+      fr: {
+        usage: "Souhaits, doutes, émotions, opinions subjectives",
+        exemples: ["Espero que vengas (J'espère que tu viennes)", "Dudo que sea verdad (Je doute que ce soit vrai)", "Es importante que estudies (Il est important que tu étudies)"],
+        terminaisons: {
+          ar: "e, es, e, emos, éis, en",
+          er: "a, as, a, amos, áis, an",
+          ir: "a, as, a, amos, áis, an"
+        },
+        note: "Base : 1ère personne du présent (hablo → hable)"
+      },
+      en: {
+        usage: "Wishes, doubts, emotions, subjective opinions",
+        exemples: ["Espero que vengas (I hope you come)", "Dudo que sea verdad (I doubt it's true)", "Es importante que estudies (It's important that you study)"],
+        terminaisons: {
+          ar: "e, es, e, emos, éis, en",
+          er: "a, as, a, amos, áis, an",
+          ir: "a, as, a, amos, áis, an"
+        },
+        note: "Base: 1st person present (hablo → hable)"
+      }
+    }
+  };
 
   return (
     <div className="space-y-6">
@@ -455,11 +655,46 @@ export default function Conjugation({ level }: Props) {
           )}
         </>
       ) : (
-        <div className="bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 max-h-[70vh] overflow-y-auto">
           <h3 className="text-2xl font-bold mb-4 text-blue-300">
             {tenses[language][selectedTense as keyof typeof tenses['fr']]}
           </h3>
           
+          {/* Explications du temps */}
+          {tenseExplanations[selectedTense] && (
+            <div className="mb-6 bg-blue-900 bg-opacity-20 border border-blue-600 rounded-lg p-4 space-y-3">
+              <div>
+                <div className="text-blue-300 font-bold mb-1">{t.usage}</div>
+                <div className="text-slate-200">{tenseExplanations[selectedTense][language].usage}</div>
+              </div>
+              
+              <div>
+                <div className="text-green-300 font-bold mb-1">{t.endings}</div>
+                <div className="space-y-1">
+                  <div className="text-slate-200"><span className="text-yellow-300 font-mono">-AR:</span> {tenseExplanations[selectedTense][language].terminaisons.ar}</div>
+                  <div className="text-slate-200"><span className="text-yellow-300 font-mono">-ER:</span> {tenseExplanations[selectedTense][language].terminaisons.er}</div>
+                  <div className="text-slate-200"><span className="text-yellow-300 font-mono">-IR:</span> {tenseExplanations[selectedTense][language].terminaisons.ir}</div>
+                </div>
+              </div>
+              
+              <div>
+                <div className="text-purple-300 font-bold mb-1">{t.examples}</div>
+                <div className="space-y-1">
+                  {tenseExplanations[selectedTense][language].exemples.map((ex: string, i: number) => (
+                    <div key={i} className="text-slate-200">• {ex}</div>
+                  ))}
+                </div>
+              </div>
+              
+              {tenseExplanations[selectedTense][language].note && (
+                <div className="text-sm text-orange-300 italic">
+                  ⚠️ {tenseExplanations[selectedTense][language].note}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Conjugaisons des verbes */}
           {verbsByTense[selectedTense]?.map((verb, idx) => (
             <div key={idx} className="mb-6 bg-slate-900 rounded-lg p-4">
               <h4 className="text-xl font-bold text-white mb-3 capitalize">{verb.verb}</h4>
@@ -477,4 +712,4 @@ export default function Conjugation({ level }: Props) {
       )}
     </div>
   );
-}
+                   }
