@@ -710,5 +710,15 @@ export const grammarPoints: GrammarPoint[] = [
     },
     country: "all",
     jsonPath: "/data/grammar_quizz/chocar_usos.json"
-  }
+  },
+import yaTodavia from "./grammar_quizz/ya_todavia.json";
+
+// Dans grammarPoints :
+{
+  id: "ya_todavia",
+  title: { fr: "Ya, todavía, ya no, aún no…", en: "Ya, todavía, ya no, aún no…" },
+  level: "A2",
+  note: yaTodavia.note,
+  data: yaTodavia
+}
 ];
