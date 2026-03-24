@@ -1,0 +1,44 @@
+{
+  "id": "ya_todavia",
+  "title": {
+    "fr": "Ya, todavía, ya no, aún no, todavía no",
+    "en": "Ya, todavía, ya no, aún no, todavía no"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Ces adverbes expriment une **relation temporelle** entre une action et le moment présent.\n\n🔹 **YA** → déjà / maintenant (action accomplie ou changement établi)\n➡️ *Ya he comido.* (J'ai déjà mangé.)\n➡️ *Ya vivo en Madrid.* (Je vis maintenant à Madrid.)\n\n🔹 **TODAVÍA / AÚN** (avec tilde) → encore / toujours (situation qui continue)\n➡️ *Todavía estudio español.* (J'étudie encore l'espagnol.)\n➡️ *Aún no sé qué quiero.* (Je ne sais toujours pas ce que je veux.)\n\n🔹 **YA NO** → ne… plus (rupture avec le passé)\n➡️ *Ya no fumo.* (Je ne fume plus.)\n➡️ *Ya no vivo aquí.* (Je n'habite plus ici.)\n\n🔹 **TODAVÍA NO / AÚN NO** → pas encore (action attendue mais pas accomplie)\n➡️ *Todavía no he llegado.* (Je ne suis pas encore arrivé.)\n➡️ *Aún no lo sé.* (Je ne le sais pas encore.)\n\n🔹 **AUN** (sin tilde) → même (sens concessif, différent!)\n➡️ *Aun así, lo hizo.* (Même ainsi, il l'a fait.)\n\n💡 **Piège classique :** *aún* (avec tilde) = encore/toujours. *Aun* (sans tilde) = même.",
+    "en": "⚙️ These adverbs express a **time relationship** between an action and the present moment.\n\n🔹 **YA** → already / now (completed action or established change)\n➡️ *Ya he comido.* (I've already eaten.)\n➡️ *Ya vivo en Madrid.* (I now live in Madrid.)\n\n🔹 **TODAVÍA / AÚN** (with accent) → still / yet (ongoing situation)\n➡️ *Todavía estudio español.* (I'm still studying Spanish.)\n➡️ *Aún no sé qué quiero.* (I still don't know what I want.)\n\n🔹 **YA NO** → no longer / not anymore (break from the past)\n➡️ *Ya no fumo.* (I no longer smoke.)\n\n🔹 **TODAVÍA NO / AÚN NO** → not yet (expected but not done)\n➡️ *Todavía no he llegado.* (I haven't arrived yet.)\n\n🔹 **AUN** (no accent) → even (concessive, different meaning!)\n➡️ *Aun así, lo hizo.* (Even so, he did it.)\n\n💡 **Classic trap:** *aún* (accent) = still/yet. *Aun* (no accent) = even."
+  },
+  "drills": [
+    { "prompt": "— ¿Has comido? — Sí, ___ he comido. (ya/todavía)", "answer": "ya" },
+    { "prompt": "Antes vivía en Barcelona, pero ___ vivo en Madrid. (ya/ya no)", "answer": "ya" },
+    { "prompt": "— ¿Hablas chino? — No, ___ lo estoy aprendiendo. (ya/todavía)", "answer": "todavía" },
+    { "prompt": "Antes fumaba, pero ___ fumo. (ya/ya no)", "answer": "ya no" },
+    { "prompt": "— ¿Ha llegado el tren? — ___, hay que esperar. (Ya/Todavía no)", "answer": "Todavía no" },
+    { "prompt": "Tengo 35 años y ___ no sé qué quiero hacer. (ya/aún)", "answer": "aún" },
+    { "prompt": "— ¿Sigues viviendo con tus padres? — No, ___ vivo solo. (ya/todavía)", "answer": "ya" },
+    { "prompt": "Ella ___ trabaja aquí; la despidieron el mes pasado. (ya no/todavía)", "answer": "ya no" },
+    { "prompt": "___ no he visto esa película, pero quiero verla. (Todavía/Ya)", "answer": "Todavía" },
+    { "prompt": "No me gusta el jazz, pero ___ así lo escucho a veces. (aun/aún)", "answer": "aun" },
+    { "prompt": "— ¿Has terminado el informe? — ___, dame diez minutos. (Ya/Todavía no)", "answer": "Todavía no" },
+    { "prompt": "___ entiendo un poco de español. (Ya/Ya no)", "answer": "Ya" },
+    { "prompt": "Antes nos hablábamos, pero ___ somos amigos. (ya no/todavía)", "answer": "ya no" },
+    { "prompt": "— ¿Tienes hambre? — Sí, ___ no he desayunado. (todavía/ya)", "answer": "todavía" },
+    { "prompt": "— ¿Está listo el pedido? — ___, en cinco minutos. (Ya/Aún no)", "answer": "Aún no" },
+    { "prompt": "He ___ reservado el hotel para Alemania. (ya/todavía no)", "answer": "ya" },
+    { "prompt": "El cine ___ existe; lo cerraron el año pasado. (ya no/todavía)", "answer": "ya no" },
+    { "prompt": "___ no hemos recibido respuesta de la universidad. (Aún/Ya)", "answer": "Aún" },
+    { "prompt": "— ¿Sabes conducir? — No, ___ no he aprendido. (ya/todavía)", "answer": "todavía" },
+    { "prompt": "Me duele la rodilla, pero ___ corro todos los días. (aun/ya no)", "answer": "aun" },
+    { "prompt": "— ¿Has hecho la maleta? — ___, termino ahora. (Ya/Todavía no)", "answer": "Ya" },
+    { "prompt": "___ no me acuerdo de su nombre. (Todavía/Ya)", "answer": "Todavía" },
+    { "prompt": "Antes me gustaba el reggaetón, pero ___ lo escucho. (ya no/todavía)", "answer": "ya no" },
+    { "prompt": "— ¿Conoces Madrid? — Sí, ___ he estado varias veces. (ya/todavía no)", "answer": "ya" },
+    { "prompt": "___ no tenemos suficiente dinero para el piso. (Aún/Ya)", "answer": "Aún" },
+    { "prompt": "Antes tomaba el metro, pero ___ tengo coche. (ya/ya no)", "answer": "ya" },
+    { "prompt": "— ¿Han llegado los resultados? — ___, estamos esperando. (Ya/Todavía no)", "answer": "Todavía no" },
+    { "prompt": "Estudió mucho y ___ habla inglés perfectamente. (ya/ya no)", "answer": "ya" },
+    { "prompt": "___ así, no me arrepiento de la decisión. (Aun/Aún)", "answer": "Aun" },
+    { "prompt": "— ¿Vive aquí Carmen? — No, ___ se mudó. (ya no/todavía)", "answer": "ya no" }
+  ]
+}
