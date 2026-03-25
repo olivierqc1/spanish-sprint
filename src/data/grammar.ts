@@ -666,9 +666,7 @@ export const grammarPoints: GrammarPoint[] = [
     },
     country: "all",
     jsonPath: "/data/grammar_quizz/parecer_vs_parecerse_a.json"
-  }, // 📋 CODE À AJOUTER DANS src/data/grammar.ts
-// Copie ces 3 entrées à la fin du tableau grammarPoints, juste avant le dernier ]
-
+  },
   {
     id: "llevar_usos",
     title: {
@@ -711,14 +709,18 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/chocar_usos.json"
   },
-import yaTodavia from "./grammar_quizz/ya_todavia.json";
-
-// Dans grammarPoints :
-{
-  id: "ya_todavia",
-  title: { fr: "Ya, todavía, ya no, aún no…", en: "Ya, todavía, ya no, aún no…" },
-  level: "A2",
-  note: yaTodavia.note,
-  data: yaTodavia
-}
+  {
+    id: "ya_todavia",
+    title: {
+      fr: "Ya, todavía, ya no, aún no, todavía no",
+      en: "Ya, todavía, ya no, aún no, todavía no"
+    },
+    level: "A2",
+    note: {
+      fr: "Adverbes temporels pour exprimer le déjà, le encore, le ne plus et le pas encore.",
+      en: "Temporal adverbs to express already, still, no longer, and not yet."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/ya_todavia.json"
+  }
 ];
