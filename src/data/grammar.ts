@@ -710,13 +710,27 @@ export const grammarPoints: GrammarPoint[] = [
     jsonPath: "/data/grammar_quizz/chocar_usos.json"
   },
   {
+    id: "seguir_gerundio",
+    title: {
+      fr: "Seguir + Gérondif – Continuer à faire quelque chose",
+      en: "Seguir + Gerund – To keep doing something"
+    },
+    level: "A2",
+    note: {
+      fr: "Structure seguir + gérondif pour exprimer qu'une action continue.",
+      en: "Seguir + gerund structure to express that an action continues."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/seguir_gerundio.json"
+  },
+  {
     id: "ya_todavia",
     title: {
       fr: "Ya, todavía, ya no, aún no, todavía no",
       en: "Ya, todavía, ya no, aún no, todavía no"
     },
     level: "A2",
-    note: {
+  note: {
       fr: "Adverbes temporels pour exprimer le déjà, le encore, le ne plus et le pas encore.",
       en: "Temporal adverbs to express already, still, no longer, and not yet."
     },
