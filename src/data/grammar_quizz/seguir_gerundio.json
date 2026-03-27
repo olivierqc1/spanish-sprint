@@ -1,0 +1,44 @@
+{
+  "id": "seguir_gerundio",
+  "title": {
+    "fr": "Seguir + Gérondif – Continuer à faire quelque chose",
+    "en": "Seguir + Gerund – To keep doing something"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ **SEGUIR + gérondif** exprime qu'une action **continue** dans le temps. C'est l'équivalent de « continuer à » ou « être encore en train de ».\n\n🔹 **Formation :**\n- **Conjuguer SEGUIR** (verbe irrégulier e→i) + **infinitif en -ndo**\n- -AR → -ando : *hablar → hablando*\n- -ER/-IR → -iendo : *comer → comiendo*, *vivir → viviendo*\n\n🔹 **Conjugaison de SEGUIR :**\n- yo **sigo**\n- tú **sigues**\n- él/ella **sigue**\n- nosotros **seguimos**\n- vosotros **seguís**\n- ellos **siguen**\n\n💡 **Lien avec todavía / ya no :**\n- *Todavía **sigo** estudiando.* → Je continue encore à étudier.\n- ***Ya no sigo** saliendo con él.* → Je ne sors plus avec lui.\n\n💬 **Exemples :**\n➡️ *¿Todavía **sigues practicando** algún deporte?* (Tu continues encore à pratiquer un sport ?)\n➡️ ***Sigo viviendo** en Barcelona.* (Je vis toujours à Barcelone.)\n➡️ *Ella **sigue trabajando** en el mismo sitio.* (Elle travaille toujours au même endroit.)\n➡️ ***¿Sigues escuchando** la misma música?* (Tu écoutes encore la même musique ?)",
+    "en": "⚙️ **SEGUIR + gerund** expresses that an action **continues** over time. It's equivalent to 'to keep doing' or 'to still be doing'.\n\n🔹 **Formation:**\n- **Conjugate SEGUIR** (irregular verb e→i) + **infinitive ending in -ndo**\n- -AR → -ando: *hablar → hablando*\n- -ER/-IR → -iendo: *comer → comiendo*, *vivir → viviendo*\n\n🔹 **SEGUIR conjugation:**\n- yo **sigo**\n- tú **sigues**\n- él/ella **sigue**\n- nosotros **seguimos**\n- vosotros **seguís**\n- ellos **siguen**\n\n💡 **Link with todavía / ya no:**\n- *Todavía **sigo** estudiando.* → I'm still studying.\n- ***Ya no sigo** saliendo con él.* → I'm no longer going out with him.\n\n💬 **Examples:**\n➡️ *¿Todavía **sigues practicando** algún deporte?* (Do you still practice any sport?)\n➡️ ***Sigo viviendo** en Barcelona.* (I still live in Barcelona.)\n➡️ *Ella **sigue trabajando** en el mismo sitio.* (She still works at the same place.)"
+  },
+  "drills": [
+    { "prompt": "Yo ___ estudiando español todos los días. (seguir, yo)", "answer": "sigo" },
+    { "prompt": "¿Tú ___ viviendo en el mismo piso? (seguir, tú)", "answer": "sigues" },
+    { "prompt": "Ella ___ trabajando en el banco. (seguir, ella)", "answer": "sigue" },
+    { "prompt": "Nosotros ___ aprendiendo cosas nuevas. (seguir, nosotros)", "answer": "seguimos" },
+    { "prompt": "¿Vosotros ___ yendo al gimnasio? (seguir, vosotros)", "answer": "seguís" },
+    { "prompt": "Ellos ___ hablando de política. (seguir, ellos)", "answer": "siguen" },
+    { "prompt": "Yo sigo ___ (escuchar) la misma música de antes.", "answer": "escuchando" },
+    { "prompt": "¿Tú sigues ___ (salir) con tus amigos del cole?", "answer": "saliendo" },
+    { "prompt": "Él sigue ___ (vivir) con sus padres a los 35 años.", "answer": "viviendo" },
+    { "prompt": "Nosotros seguimos ___ (hacer) deporte juntos.", "answer": "haciendo" },
+    { "prompt": "Ellos siguen ___ (trabajar) en el mismo proyecto.", "answer": "trabajando" },
+    { "prompt": "¿Vosotros seguís ___ (ver) esa serie?", "answer": "viendo" },
+    { "prompt": "Yo sigo ___ (correr) por el parque cada mañana.", "answer": "corriendo" },
+    { "prompt": "Ella sigue ___ (leer) mucho, como siempre.", "answer": "leyendo" },
+    { "prompt": "¿Tú sigues ___ (ir) al mismo restaurante los viernes?", "answer": "yendo" },
+    { "prompt": "Ellos siguen ___ (discutir) por lo mismo de siempre.", "answer": "discutiendo" },
+    { "prompt": "Nosotros seguimos ___ (intentar) encontrar piso.", "answer": "intentando" },
+    { "prompt": "¿Él sigue ___ (fumar)? Pensaba que lo había dejado.", "answer": "fumando" },
+    { "prompt": "Yo sigo ___ (creer) que tomé la decisión correcta.", "answer": "creyendo" },
+    { "prompt": "¿Vosotros seguís ___ (estudiar) en la misma academia?", "answer": "estudiando" },
+    { "prompt": "Todavía ___ (seguir, ella) practicando piano.", "answer": "sigue" },
+    { "prompt": "A pesar de todo, ___ (seguir, nosotros) adelante.", "answer": "seguimos" },
+    { "prompt": "¿Todavía sigues ___ (comprar) libros en papel?", "answer": "comprando" },
+    { "prompt": "Ella sigue ___ (esperar) una respuesta de la empresa.", "answer": "esperando" },
+    { "prompt": "¿Tú sigues ___ (tomar) el metro para ir al trabajo?", "answer": "tomando" },
+    { "prompt": "Yo sigo ___ (pensar) en ese viaje que hicimos.", "answer": "pensando" },
+    { "prompt": "Ellos siguen ___ (buscar) una solución al problema.", "answer": "buscando" },
+    { "prompt": "¿Vosotros seguís ___ (quedar) los jueves por la noche?", "answer": "quedando" },
+    { "prompt": "Él sigue ___ (dormir) muy poco, es un problema.", "answer": "durmiendo" },
+    { "prompt": "Nosotros seguimos ___ (confiar) en que todo saldrá bien.", "answer": "confiando" }
+  ]
+}
