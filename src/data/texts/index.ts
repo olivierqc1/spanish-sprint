@@ -8,11 +8,9 @@ import { mexicoB1 } from "./mexicoB1";
 import { colombiaA1, colombiaA2, colombiaB1 } from "./colombia";
 import { peruA1, peruA2, peruB1 } from "./peru";
 import { chileA1, chileA2, chileB1 } from "./chile";
-import {
-  argentinaA1, argentinaA2, argentinaB1,
-  cubaA1, cubaA2, cubaB1,
-  venezuelaA1, venezuelaA2, venezuelaB1
-} from "./argentinaTexts";
+import { argentinaA1, argentinaA2, argentinaB1 } from "./argentinaTexts";
+import { cubaA1, cubaA2, cubaB1 } from "./cubaTexts";
+import { venezuelaA1, venezuelaA2, venezuelaB1 } from "./venezuelaTexts";
 
 export const allTexts: ReadingItem[] = [
   // Espagne
