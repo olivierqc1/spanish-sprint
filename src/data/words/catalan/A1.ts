@@ -1,4 +1,4 @@
-// src/data/words/catalan/A1_p1.ts
+// src/data/words/catalan/A1.ts
 
 export interface CatalanCard {
   id: string;
@@ -10,7 +10,7 @@ export interface CatalanCard {
   category: string;
 }
 
-export const catalanWordsA1P1: CatalanCard[] = [
+export const catalanWordsA1: CatalanCard[] = [
 
   // ─── SALUTACIONS ─────────────────────────────────────────────────────────
   { id: 'cat-a1-001', front: 'Bon dia',                  back: 'Bonjour (matin)',            backEn: 'Good morning',           level: 'A1', country: 'catalonia', category: 'salutació' },
@@ -93,29 +93,22 @@ export const catalanWordsA1P1: CatalanCard[] = [
   { id: 'cat-a1-070', front: 'marró',              back: 'marron / brun', backEn: 'brown',  level: 'A1', country: 'catalonia', category: 'color' },
 
   // ─── MENJAR I BEGUDA ─────────────────────────────────────────────────────
-  { id: 'cat-a1-071', front: 'el pa',              back: 'le pain',                           backEn: 'bread',             level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-072', front: "l'aigua",            back: "l'eau",                             backEn: 'water',             level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-073', front: 'el cafè',            back: 'le café',                           backEn: 'coffee',            level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-074', front: 'el vi',              back: 'le vin',                            backEn: 'wine',              level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-075', front: 'la cervesa',         back: 'la bière',                          backEn: 'beer',              level: 'A1', country: 'catalonia', category: 'menjar' },
-];
-// src/data/words/catalan/A1_p2.ts
-import type { CatalanCard } from './A1_p1';
-import { catalanWordsA1P1 } from './A1_p1';
-
-const catalanWordsA1P2: CatalanCard[] = [
-
-  // ─── MENJAR I BEGUDA (suite) ──────────────────────────────────────────────
-  { id: 'cat-a1-076', front: 'la llet',            back: 'le lait',                           backEn: 'milk',              level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-077', front: 'la carn',            back: 'la viande',                         backEn: 'meat',              level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-078', front: 'el peix',            back: 'le poisson',                        backEn: 'fish',              level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-079', front: 'la fruita',          back: 'le fruit',                          backEn: 'fruit',             level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-080', front: 'la verdura',         back: 'le légume',                         backEn: 'vegetable',         level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-081', front: 'el formatge',        back: 'le fromage',                        backEn: 'cheese',            level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-082', front: "l'oli d'oliva",      back: "l'huile d'olive",                   backEn: 'olive oil',         level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-083', front: 'el pa amb tomàquet', back: 'pain frotté à la tomate et huile',  backEn: 'bread with tomato', level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-084', front: 'la crema catalana',  back: 'crème brûlée catalane',             backEn: 'Catalan cream',     level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-071', front: 'el pa',              back: 'le pain',         backEn: 'bread',     level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-072', front: "l'aigua",            back: "l'eau",           backEn: 'water',     level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-073', front: 'el cafè',            back: 'le café',         backEn: 'coffee',    level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-074', front: 'el vi',              back: 'le vin',          backEn: 'wine',      level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-075', front: 'la cervesa',         back: 'la bière',        backEn: 'beer',      level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-076', front: 'la llet',            back: 'le lait',         backEn: 'milk',      level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-077', front: 'la carn',            back: 'la viande',       backEn: 'meat',      level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-078', front: 'el peix',            back: 'le poisson',      backEn: 'fish',      level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-079', front: 'la fruita',          back: 'le fruit',        backEn: 'fruit',     level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-080', front: 'la verdura',         back: 'le légume',       backEn: 'vegetable', level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-081', front: 'el formatge',        back: 'le fromage',      backEn: 'cheese',    level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-082', front: "l'oli d'oliva",      back: "l'huile d'olive", backEn: 'olive oil', level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-083', front: 'el pa amb tomàquet', back: 'pain frotté à la tomate', backEn: 'bread with tomato', level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-084', front: 'la crema catalana',  back: 'crème brûlée catalane',   backEn: 'Catalan cream',    level: 'A1', country: 'catalonia', category: 'menjar' },
   { id: 'cat-a1-085', front: 'els escalivats',     back: 'légumes grillés (poivrons, aubergines)', backEn: 'roasted vegetables', level: 'A1', country: 'catalonia', category: 'menjar' },
+
 
   // ─── FAMILIA ─────────────────────────────────────────────────────────────
   { id: 'cat-a1-086', front: 'el pare',    back: 'le père',       backEn: 'father',      level: 'A1', country: 'catalonia', category: 'familia' },
@@ -193,6 +186,4 @@ const catalanWordsA1P2: CatalanCard[] = [
   { id: 'cat-a1-150', front: 'Tinc set',                 back: "J'ai soif",                 backEn: 'I am thirsty',         level: 'A1', country: 'catalonia', category: 'frase' },
 ];
 
-// Export combiné — c'est cet export que le reste du projet utilise
-export const catalanWordsA1 = [...catalanWordsA1P1, ...catalanWordsA1P2];
 export default catalanWordsA1;
