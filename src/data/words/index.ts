@@ -1,4 +1,3 @@
-// src/data/words/index.ts
 import { wordsA1 } from "./A1";
 import { wordsA2 } from "./A2";
 import { wordsB1 } from "./B1";
@@ -7,7 +6,6 @@ export { wordsA1 } from "./A1";
 export { wordsA2 } from "./A2";
 export { wordsB1 } from "./B1";
 
-// Objet groupé par niveau — utilisé par dictee/page.tsx
 export const flashcardsWords = {
   A1: wordsA1,
   A2: wordsA2,
