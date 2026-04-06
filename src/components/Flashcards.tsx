@@ -6,7 +6,7 @@ import type { Level, Country } from "@/components/LevelPicker";
 import { wordsA1 } from "../data/words/A1";
 import { wordsA2 } from "../data/words/A2";
 import { wordsB1 } from "../data/words/B1";
-import catalanWordsA1 from "../data/words/catalan/A1_p2";
+import catalanWordsA1 from "../data/words/catalan/A1";
 import { catalanWordsA2 } from "../data/words/catalan/A2";
 import { catalanWordsB1 } from "../data/words/catalan/B1";
 
