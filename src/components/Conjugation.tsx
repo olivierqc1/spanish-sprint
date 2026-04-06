@@ -45,7 +45,7 @@ const CAT_GROUPS_FR = [
     name: 'Groupe 3 - verbes en -IR',
     color: '#f59e0b',
     desc: '2 sous-groupes : PUR (dormir, sortir) et INCOATIF (llegir, patir). Incoatif : infixe -eix- au singulier et 3e pluriel.',
-    examples: ['dormir (dormir) - pur', 'sortir (sortir) - pur', 'llegir (lire) - incoatif', 'servir (servir) - incoatif'],
+    examples: ['dormir - pur', 'sortir - pur', 'llegir (lire) - incoatif', 'servir - incoatif'],
     verb: 'llegir (incoatif)',
     conj: {
       present:      ['llegeixo','llegeixes','llegeix','llegim','llegiu','llegeixen'],
@@ -87,7 +87,7 @@ const CAT_GROUPS_EN = [
     name: 'Group 3 - -IR verbs',
     color: '#f59e0b',
     desc: '2 subgroups: PURE (dormir, sortir) and INCHOATIVE (llegir, patir). Inchoative: -eix- infix in singular + 3rd plural.',
-    examples: ['dormir (to sleep) - pure', 'sortir (to go out) - pure', 'llegir (to read) - inchoative', 'servir (to serve) - inchoative'],
+    examples: ['dormir - pure', 'sortir - pure', 'llegir (to read) - inchoative', 'servir - inchoative'],
     verb: 'llegir (inchoative)',
     conj: {
       present:      ['llegeixo','llegeixes','llegeix','llegim','llegiu','llegeixen'],
@@ -99,16 +99,16 @@ const CAT_GROUPS_EN = [
 ];
 
 const CAT_IRREGULARS = [
-  { verb: 'ser',   fr: 'etre (identite)',  en: 'to be (identity)', present: ['soc','ets','es','som','sou','son'],             note: 'Entierement irregulier' },
-  { verb: 'estar', fr: 'etre (etat/lieu)', en: 'to be (state)',    present: ['estic','estas','esta','estem','esteu','estan'],  note: 'Irregulier au singulier' },
-  { verb: 'tenir', fr: 'avoir',            en: 'to have',          present: ['tinc','tens','te','tenim','teniu','tenen'],      note: 'tinc (1sg) / te (3sg)' },
-  { verb: 'anar',  fr: 'aller',            en: 'to go',            present: ['vaig','vas','va','anem','aneu','van'],           note: 'Base du passe periphr.' },
-  { verb: 'fer',   fr: 'faire',            en: 'to do/make',       present: ['faig','fas','fa','fem','feu','fan'],             note: 'faig (1sg)' },
-  { verb: 'voler', fr: 'vouloir',          en: 'to want',          present: ['vull','vols','vol','volem','voleu','volen'],     note: 'vull (1sg)' },
-  { verb: 'poder', fr: 'pouvoir',          en: 'can',              present: ['puc','pots','pot','podem','podeu','poden'],      note: 'puc (1sg)' },
-  { verb: 'saber', fr: 'savoir',           en: 'to know',          present: ['se','saps','sap','sabem','sabeu','saben'],       note: 'se (1sg)' },
-  { verb: 'venir', fr: 'venir',            en: 'to come',          present: ['vinc','vens','ve','venim','veniu','venen'],      note: 'vinc (1sg)' },
-  { verb: 'dir',   fr: 'dire',             en: 'to say',           present: ['dic','dius','diu','diem','dieu','diuen'],        note: 'dic (1sg)' },
+  { verb: 'ser',   fr: 'etre (identite)',  en: 'to be (identity)', present: ['soc','ets','es','som','sou','son'],            note: 'Irregulier complet' },
+  { verb: 'estar', fr: 'etre (etat/lieu)', en: 'to be (state)',    present: ['estic','estas','esta','estem','esteu','estan'], note: 'Irregulier sing.' },
+  { verb: 'tenir', fr: 'avoir',            en: 'to have',          present: ['tinc','tens','te','tenim','teniu','tenen'],     note: 'tinc / te' },
+  { verb: 'anar',  fr: 'aller',            en: 'to go',            present: ['vaig','vas','va','anem','aneu','van'],          note: 'Base passe periphr.' },
+  { verb: 'fer',   fr: 'faire',            en: 'to do/make',       present: ['faig','fas','fa','fem','feu','fan'],            note: 'faig (1sg)' },
+  { verb: 'voler', fr: 'vouloir',          en: 'to want',          present: ['vull','vols','vol','volem','voleu','volen'],    note: 'vull (1sg)' },
+  { verb: 'poder', fr: 'pouvoir',          en: 'can',              present: ['puc','pots','pot','podem','podeu','poden'],     note: 'puc (1sg)' },
+  { verb: 'saber', fr: 'savoir',           en: 'to know',          present: ['se','saps','sap','sabem','sabeu','saben'],      note: 'se (1sg)' },
+  { verb: 'venir', fr: 'venir',            en: 'to come',          present: ['vinc','vens','ve','venim','veniu','venen'],     note: 'vinc (1sg)' },
+  { verb: 'dir',   fr: 'dire',             en: 'to say',           present: ['dic','dius','diu','diem','dieu','diuen'],       note: 'dic (1sg)' },
 ];
 
 const CAT_EXERCISES = [
@@ -123,8 +123,8 @@ const CAT_EXERCISES = [
   { pronoun: 'ell/ella',   verb: 'fer',       tense: 'passe',     answer: 'va fer',     context: 'Ahir, ell ___ els deures.' },
   { pronoun: 'nosaltres',  verb: 'parlar',    tense: 'passe',     answer: 'vam parlar', context: 'Ahir, nosaltres ___ molt.' },
   { pronoun: 'jo',         verb: 'treballar', tense: 'imparfait', answer: 'treballava', context: 'Abans, jo ___ a Madrid.' },
-  { pronoun: 'tu',         verb: 'ser',       tense: 'imparfait', answer: 'eres',       context: 'Quan eres petit, tu ___ molt timid.' },
-  { pronoun: 'jo',         verb: 'parlar',    tense: 'futur',     answer: 'parlare',    context: 'Dema, jo ___ amb el professor.' },
+  { pronoun: 'tu',         verb: 'ser',       tense: 'imparfait', answer: 'eres',       context: 'De petit, tu ___ molt timid.' },
+  { pronoun: 'jo',         verb: 'parlar',    tense: 'futur',     answer: 'parlare',    context: 'Dema, jo ___ amb ell.' },
   { pronoun: 'tu',         verb: 'tenir',     tense: 'futur',     answer: 'tindras',    context: 'Dema, tu ___ temps lliure.' },
   { pronoun: 'ell/ella',   verb: 'fer',       tense: 'futur',     answer: 'fara',       context: 'Dema, ella ___ una paella.' },
 ];
@@ -164,7 +164,7 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
       <div className="bg-yellow-900/20 border border-yellow-700 rounded-xl p-4 text-center">
         <p className="text-yellow-300 font-bold text-lg">Conjugacio catalana</p>
         <p className="text-slate-400 text-sm mt-1">
-          {language === 'fr' ? '3 groupes verbaux + irreguliers essentiels' : '3 verb groups + essential irregulars'}
+          {language === 'fr' ? '3 groupes verbaux + irreguliers' : '3 verb groups + irregulars'}
         </p>
       </div>
 
@@ -209,7 +209,6 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
                 <span key={i} className="px-2 py-1 bg-slate-900 rounded text-xs text-slate-200">{ex}</span>
               ))}
             </div>
-
             <div className="flex gap-2 flex-wrap mb-4">
               {(['present','imperfect','future','periphrastic'] as const).map(t => (
                 <button
@@ -222,7 +221,6 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
                 </button>
               ))}
             </div>
-
             <p className="text-xs text-slate-400 mb-2">
               {language === 'fr' ? 'Exemple : ' : 'Example: '}{group.verb}
             </p>
@@ -234,7 +232,6 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
                 </span>
               </div>
             ))}
-
             {selectedTense === 'periphrastic' && (
               <div className="mt-3 p-3 bg-blue-950/30 border border-blue-800 rounded-lg">
                 <p className="text-blue-300 text-xs">
@@ -253,7 +250,7 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
           <div className="bg-red-950/30 border border-red-800 rounded-xl p-3">
             <p className="text-red-300 text-sm">
               {language === 'fr'
-                ? '10 verbes tres frequents et entierement irreguliers. Priorite absolue.'
+                ? '10 verbes tres frequents, entierement irreguliers. Priorite absolue.'
                 : '10 very frequent and fully irregular verbs. Top priority.'}
             </p>
           </div>
@@ -287,7 +284,6 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
             <span className="text-slate-500"> / {score.total}</span>
             <span className="text-slate-500 ml-2 text-sm">({exIdx + 1}/{CAT_EXERCISES.length})</span>
           </div>
-
           <div className="bg-slate-800 rounded-xl p-5 border border-slate-700 space-y-4">
             <div className="bg-yellow-950/30 border border-yellow-800 rounded-lg p-3">
               <p className="text-white text-lg font-semibold italic">"{ex.context}"</p>
@@ -298,7 +294,6 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
               <p className="text-xl text-slate-300">({ex.pronoun})</p>
               <p className="text-xs text-slate-500 mt-1">{ex.tense}</p>
             </div>
-
             {!showResult ? (
               <>
                 <input
@@ -354,14 +349,14 @@ const TENSES_BY_LEVEL: Record<string, string[]> = {
   ALL: ['presente', 'preterito_perfecto', 'imperativo', 'imperfecto', 'futuro', 'preterito', 'condicional', 'pluscuamperfecto', 'subjuntivo_presente'],
 };
 
-const CTX: Record<string, string[]> = {
-  presente:            ['Cada dia, yo ___', 'Ahora mismo, tu ___', 'Generalmente, el ___', 'Nosotros ___ siempre', 'Vosotros ___ a menudo', 'Ellos ___ cada dia'],
-  preterito_perfecto:  ['Hoy, yo ___', 'Esta semana, tu ___', 'Este mes, el ___', 'Este anio, nosotros ___', 'Ultimamente, vosotros ___', 'Recientemente, ellos ___'],
-  imperativo:          ['Habla asi (tu) ___', 'Haga esto (usted) ___', 'Hagamos (nosotros) ___', 'Hablad (vosotros) ___', 'Hablen (ustedes) ___', 'Ven aqui (tu) ___'],
-  preterito:           ['Ayer, yo ___', 'La semana pasada, tu ___', 'Hace dos dias, el ___', 'El anio pasado, nosotros ___', 'El mes pasado, vosotros ___', 'Anteayer, ellos ___'],
-  imperfecto:          ['Cuando era nino, yo ___', 'Antes, tu ___ siempre', 'En aquella epoca, el ___', 'Cada verano, nosotros ___', 'Los sabados, vosotros ___', 'De joven, ellos ___'],
-  futuro:              ['Manana, yo ___', 'La semana que viene, tu ___', 'El anio proximo, el ___', 'En un mes, nosotros ___', 'Pronto, vosotros ___', 'En el futuro, ellos ___'],
-  condicional:         ['En tu lugar, yo ___', 'Si pudieras, tu ___', 'El dijo que ___', 'Nosotros ___ con tiempo', 'Vosotros ___ en esa situacion', 
+const CTX_PRESENTE            = ['Cada dia, yo ___', 'Ahora, tu ___', 'El ___ siempre', 'Nosotros ___ siempre', 'Vosotros ___ bien', 'Ellos ___ mucho'];
+const CTX_PRET_PERF            = ['Hoy, yo ___', 'Esta semana, tu ___', 'Este mes, el ___', 'Este anio, nosotros ___', 'Ultimamente, vosotros ___', 'Recientemente, ellos ___'];
+const CTX_IMPERATIVO           = ['Hazlo tu: ___', 'Digale usted: ___', 'Hagamos: ___', 'Hablad vosotros: ___', 'Hablen ustedes: ___', 'Ven aqui tu: ___'];
+const CTX_PRETERITO            = ['Ayer, yo ___', 'La semana pasada, tu ___', 'Hace dos dias, el ___', 'El mes pasado, nosotros ___', 'Ese dia, vosotros ___', 'Anteayer, ellos ___'];
+const CTX_IMPERFECTO           = ['De nino, yo ___', 'Antes, tu ___ siempre', 'En esa epoca, el ___', 'Cada verano, nosotros ___', 'Los sabados, vosotros ___', 'De joven, ellos ___'];
+const CTX_FUTURO               = ['Manana, yo ___', 'La semana que viene, tu ___', 'El mes proximo, el ___', 'En un mes, nosotros ___', 'Pronto, vosotros ___', 'Algun dia, ellos ___'];
+const CTX_CONDICIONAL          = ['En tu lugar, yo ___', 'Si pudieras, tu ___', 'El dijo que ___', 'Con tiempo, nosotros ___', 'En esa situacion, vosotros ___', 'Con dinero, ellos ___'];
+const CTX_PLUSCUAMPERFECTO     = ['Antes, yo ya ___', 'Cuando llegaste, tu ya ___', 'Cuando llegue, el ya ___', 'Antes de salir, nosotros ya ___', '
 
 type ConjugationExercise = {
   id: number;
@@ -436,7 +431,7 @@ const verbsByTense: Record<string, Array<{ verb: string; conjugations: string[] 
   condicional: [
     { verb: 'hablar', conjugations: ['hablaria','hablarias','hablaria','hablariamos','hablariais','hablarian'] },
     { verb: 'comer',  conjugations: ['comeria','comerias','comeria','comeriamos','comeriais','comerian'] },
-    { verb: 'vivir',  conjugations: ['viviria','vivirias','viviria','viviriamos','viviriais','uvirian'] },
+    { verb: 'vivir',  conjugations: ['viviria','vivirias','viviria','viviriamos','viviriais','vivirian'] },
     { verb: 'tener',  conjugations: ['tendria','tendrias','tendria','tendriamos','tendriais','tendrian'] },
     { verb: 'poder',  conjugations: ['podria','podrias','podria','podriamos','podriais','podrian'] },
     { verb: 'hacer',  conjugations: ['haria','harias','haria','hariamos','hariais','harian'] },
@@ -514,7 +509,7 @@ export default function Conjugation({ level }: Props) {
     const verb = verbs[Math.floor(Math.random() * verbs.length)];
     const isImperative = selectedTense === 'imperativo';
     const pronounIndex = isImperative ? Math.floor(Math.random() * 5) : Math.floor(Math.random() * 6);
-    const ctxPhrases = CTX[selectedTense] || CTX.presente;
+    const ctxPhrases = CTX[selectedTense] || CTX_PRESENTE;
     setCurrentExercise({
       id: Date.now(),
       verb: verb.verb,
@@ -537,8 +532,8 @@ export default function Conjugation({ level }: Props) {
   };
 
   const t = language === 'fr'
-    ? { theory: 'Theorie', practice: 'Pratique', score: 'Score', contextHint: 'Phrase :', conjugate: 'Conjugue', check: 'Verifier', next: 'Suivant', correct: 'Correct !', incorrect: 'Incorrect', correctAnswer: 'La bonne reponse etait', selectTense: 'Choisis un temps' }
-    : { theory: 'Theory', practice: 'Practice', score: 'Score', contextHint: 'Context:', conjugate: 'Conjugate', check: 'Check', next: 'Next', correct: 'Correct!', incorrect: 'Incorrect', correctAnswer: 'The correct answer was', selectTense: 'Choose a tense' };
+    ? { theory: 'Theorie', practice: 'Pratique', score: 'Score', contextHint: 'Phrase :', conjugate: 'Conjugue', check: 'Verifier', next: 'Suivant', correct: 'Correct !', incorrect: 'Incorrect', correctAnswer: 'Bonne reponse', selectTense: 'Choisis un temps' }
+    : { theory: 'Theory', practice: 'Practice', score: 'Score', contextHint: 'Context:', conjugate: 'Conjugate', check: 'Check', next: 'Next', correct: 'Correct!', incorrect: 'Incorrect', correctAnswer: 'Correct answer', selectTense: 'Choose a tense' };
 
   return (
     <div className="space-y-6">
@@ -564,7 +559,6 @@ export default function Conjugation({ level }: Props) {
             <span className="text-slate-500"> / </span>
             <span className="font-bold text-2xl">{score.total}</span>
           </div>
-
           {currentExercise && (
             <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 space-y-4">
               <div className="bg-purple-900 bg-opacity-30 border border-purple-600 rounded-lg p-4">
