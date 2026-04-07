@@ -525,4 +525,4 @@ CAP A — towards: Cap a casa. (Towards home.)`,
       { catalan: 'Arribo en deu minuts.', fr: "J'arrive dans dix minutes.", en: 'I arrive in ten minutes.' },
     ],
   },
-];
+]; 
