@@ -7,7 +7,7 @@ export interface CatalanExpression {
   literal: { fr: string; en: string };
   meaning: { fr: string; en: string };
   example: { catalan: string; fr: string; en: string };
-  level: 'A2' | 'B1';
+  level: 'A1' | 'A2' | 'B1';
   category: 'quotidien' | 'emotions' | 'temps' | 'argent' | 'corps' | 'barcelona';
 }
 
