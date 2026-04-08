@@ -71,25 +71,25 @@ const CAT_GROUPS_EN = [
 
 const CAT_IRREGULARS = [
   { verb: 'ser',   fr: 'etre (identite)',  en: 'to be (identity)',
-    present: ['soc','ets','es','som','sou','son'],           note: 'Irregulier complet' },
+    present: ['soc','ets','es','som','sou','son'],             note: 'Irregulier complet' },
   { verb: 'estar', fr: 'etre (etat)',      en: 'to be (state)',
     present: ['estic','estas','esta','estem','esteu','estan'], note: 'Irregulier sing.' },
   { verb: 'tenir', fr: 'avoir',            en: 'to have',
-    present: ['tinc','tens','te','tenim','teniu','tenen'],   note: 'tinc / te' },
+    present: ['tinc','tens','te','tenim','teniu','tenen'],     note: 'tinc / te' },
   { verb: 'anar',  fr: 'aller',            en: 'to go',
-    present: ['vaig','vas','va','anem','aneu','van'],        note: 'Base passe periphr.' },
+    present: ['vaig','vas','va','anem','aneu','van'],          note: 'Base passe periphr.' },
   { verb: 'fer',   fr: 'faire',            en: 'to do/make',
-    present: ['faig','fas','fa','fem','feu','fan'],          note: 'faig (1sg)' },
+    present: ['faig','fas','fa','fem','feu','fan'],            note: 'faig (1sg)' },
   { verb: 'voler', fr: 'vouloir',          en: 'to want',
-    present: ['vull','vols','vol','volem','voleu','volen'],  note: 'vull (1sg)' },
+    present: ['vull','vols','vol','volem','voleu','volen'],    note: 'vull (1sg)' },
   { verb: 'poder', fr: 'pouvoir',          en: 'can',
-    present: ['puc','pots','pot','podem','podeu','poden'],   note: 'puc (1sg)' },
+    present: ['puc','pots','pot','podem','podeu','poden'],     note: 'puc (1sg)' },
   { verb: 'saber', fr: 'savoir',           en: 'to know',
-    present: ['se','saps','sap','sabem','sabeu','saben'],    note: 'se (1sg)' },
+    present: ['se','saps','sap','sabem','sabeu','saben'],      note: 'se (1sg)' },
   { verb: 'venir', fr: 'venir',            en: 'to come',
-    present: ['vinc','vens','ve','venim','veniu','venen'],   note: 'vinc (1sg)' },
+    present: ['vinc','vens','ve','venim','veniu','venen'],     note: 'vinc (1sg)' },
   { verb: 'dir',   fr: 'dire',             en: 'to say',
-    present: ['dic','dius','diu','diem','dieu','diuen'],     note: 'dic (1sg)' },
+    present: ['dic','dius','diu','diem','dieu','diuen'],       note: 'dic (1sg)' },
 ];
 
 const CAT_EXERCISES = [
@@ -402,8 +402,6 @@ const CTX: Record<string, string[]> = {
   subjuntivo_presente: CTX_SUBJUNTIVO,
 };
 
-
-
 type ConjugationExercise = {
   id: number; verb: string; pronoun: number;
   tense: string; contextPhrase: string; answer: string;
@@ -429,119 +427,7 @@ const PP6 = ['he dicho','has dicho','ha dicho','hemos dicho','habéis dicho','ha
 const PP7 = ['he puesto','has puesto','ha puesto','hemos puesto','habéis puesto','han puesto'];
 const PP8 = ['he escrito','has escrito','ha escrito','hemos escrito','habéis escrito','han escrito'];
 
-const PQ1 = [
-  'habia hablado','habias hablado','habia hablado',
-  'habiamos hablado','habiais hablado','habian hablado',
-];
-const PQ2 = [
-  'habia comido','habias comido','habia comido',
-  'habiamos comido','habiais comido','habian comido',
-];
-const PQ3 = [
-  'habia vivido','habias vivido','habia vivido',
-  'habiamos vivido','habiais vivido','habian vivido',
-];
-const PQ4 = [
-  'habia hecho','habias hecho','habia hecho',
-  'habiamos hecho','habiais hecho','habian hecho',
-];
-const PQ5 = [
-  'habia visto','habias visto','habia visto',
-  'habiamos visto','habiais visto','habian visto',
-];
-const PQ6 = [
-  'habia escrito','habias escrito','habia escrito',
-  'habiamos escrito','habiais escrito','habian escrito',
-];
-
-const verbsByTense: Record<string, Array<{ verb: string; conjugations: string[] }>> = {
-  presente: [
-    { verb: 'hablar', conjugations: C1 },
-    { verb: 'comer',  conjugations: C2 },
-    { verb: 'vivir',  conjugations: C3 },
-    { verb: 'ser',    conjugations: C4 },
-    { verb: 'estar',  conjugations: C5 },
-    { verb: 'tener',  conjugations: C6 },
-    { verb: 'hacer',  conjugations: C7 },
-    { verb: 'ir',     conjugations: C8 },
-    { verb: 'venir',  conjugations: C9 },
-    { verb: 'decir',  conjugations: C10 },
-  ],
-  preterito_perfecto: [
-    { verb: 'hablar',   conjugations: PP1 },
-    { verb: 'comer',    conjugations: PP2 },
-    { verb: 'vivir',    conjugations: PP3 },
-    { verb: 'hacer',    conjugations: PP4 },
-    { verb: 'ver',      conjugations: PP5 },
-    { verb: 'decir',    conjugations: PP6 },
-    { verb: 'poner',    conjugations: PP7 },
-    { verb: 'escribir', conjugations: PP8 },
-  ],
-  imperativo: [
-    { verb: 'hablar', conjugations: ['habla','hable','hablemos','hablad','hablen'] },
-    { verb: 'comer',  conjugations: ['come','coma','comamos','comed','coman'] },
-    { verb: 'vivir',  conjugations: ['vive','viva','vivamos','vivid','vivan'] },
-    { verb: 'ser',    conjugations: ['se','sea','seamos','sed','sean'] },
-    { verb: 'estar',  conjugations: ['esta','este','estemos','estad','esten'] },
-    { verb: 'ir',     conjugations: ['ve','vaya','vamos','id','vayan'] },
-    { verb: 'tener',  conjugations: ['ten','tenga','tengamos','tened','tengan'] },
-    { verb: 'hacer',  conjugations: ['haz','haga','hagamos','haced','hagan'] },
-  ],
-  preterito: [
-    { verb: 'hablar', conjugations: ['hable','hablaste','habló','hablamos','hablasteis','hablaron'] },
-    { verb: 'comer',  conjugations: ['comi','comiste','comio','comimos','comisteis','comieron'] },
-    { verb: 'vivir',  conjugations: ['vivi','viviste','vivio','vivimos','vivisteis','vivieron'] },
-    { verb: 'ser',    conjugations: ['fui','fuiste','fue','fuimos','fuisteis','fueron'] },
-    { verb: 'hacer',  conjugations: ['hice','hiciste','hizo','hicimos','hicisteis','hicieron'] },
-    { verb: 'tener',  conjugations: ['tuve','tuviste','tuvo','tuvimos','tuvisteis','tuvieron'] },
-    { verb: 'estar',  conjugations: ['estuve','estuviste','estuvo','estuvimos','estuvisteis','estuvieron'] },
-  ],
-  imperfecto: [
-    { verb: 'hablar', conjugations: ['hablaba','hablabas','hablaba','hablábamos','hablabais','hablaban'] },
-    { verb: 'comer',  conjugations: ['comia','comias','comia','comiamos','comiais','comian'] },
-    { verb: 'vivir',  conjugations: ['vivia','vivias','vivia','viviamos','viviais','vivian'] },
-    { verb: 'ser',    conjugations: ['era','eras','era','éramos','erais','eran'] },
-    { verb: 'ir',     conjugations: ['iba','ibas','iba','ibamos','ibais','iban'] },
-    { verb: 'ver',    conjugations: ['veia','veias','veia','veiamos','veiais','veian'] },
-  ],
-  futuro: [
-    { verb: 'hablar', conjugations: ['hablare','hablaras','hablara','hablaremos','hablareis','hablaran'] },
-    { verb: 'comer',  conjugations: ['comere','comeras','comera','comeremos','comereis','comeran'] },
-    { verb: 'vivir',  conjugations: ['vivire','viviras','vivira','viviremos','vivireis','viviran'] },
-    { verb: 'tener',  conjugations: ['tendre','tendras','tendra','tendremos','tendreis','tendran'] },
-    { verb: 'poder',  conjugations: ['podre','podras','podra','podremos','podreis','podran'] },
-    { verb: 'hacer',  conjugations: ['hare','haras','hara','haremos','hareis','haran'] },
-    { verb: 'salir',  conjugations: ['saldre','saldras','saldra','saldremos','saldreis','saldran'] },
-    { verb: 'venir',  conjugations: ['vendre','vendras','vendra','vendremos','vendreis','vendran'] },
-  ],
-  condicional: [
-    { verb: 'hablar',
-      conjugations: ['hablaria','hablarias','hablaria','hablariamos','hablariais','hablarian'] },
-    { verb: 'comer',  conjugations: ['comeria','comerias','comeria','comeriamos','comeriais','comerian'] },
-    { verb: 'vivir',  conjugations: ['viviria','vivirias','viviria','viviriamos','viviriais','vivirian'] },
-    { verb: 'tener',  conjugations: ['tendria','tendrias','tendria','tendriamos','tendriais','tendrian'] },
-    { verb: 'poder',  conjugations: ['podria','podrias','podria','podriamos','podriais','podrian'] },
-    { verb: 'hacer',  conjugations: ['haria','harias','haria','hariamos','hariais','harian'] },
-  ],
-  pluscuamperfecto: [
-    { verb: 'hablar',   conjugations: PQ1 },
-    { verb: 'comer',    conjugations: PQ2 },
-    { verb: 'vivir',    conjugations: PQ3 },
-    { verb: 'hacer',    conjugations: PQ4 },
-    { verb: 'ver',      conjugations: PQ5 },
-    { verb: 'escribir', conjugations: PQ6 },
-  ],
-  subjuntivo_presente: [
-    { verb: 'hablar', conjugations: ['hable','hables','hable','hablemos','hableis','hablen'] },
-    { verb: 'comer',  conjugations: ['coma','comas','coma','comamos','comais','coman'] },
-    { verb: 'vivir',  conjugations: ['viva','vivas','viva','vivamos','vivais','vivan'] },
-    { verb: 'ser',    conjugations: ['sea','seas','sea','seamos','seais','sean'] },
-    { verb: 'estar',  conjugations: ['este','estes','este','estemos','esteis','esten'] },
-    { verb: 'tener',  conjugations: ['tenga','tengas','tenga','tengamos','tengais','tengan'] },
-    { verb: 'hacer',  conjugations: ['haga','hagas','haga','hagamos','hagais','hagan'] },
-    { verb: 'ir',     conjugations: ['vaya','vayas','vaya','vayamos','vayais','vayan'] },
-  ],
-};
+const PQ1 
 
 export default function Conjugation({ level }: Props) {
   const [mode, setMode] = useState<'theory' | 'practice'>('practice');
@@ -555,6 +441,8 @@ export default function Conjugation({ level }: Props) {
 
   const availableTenses = TENSES_BY_LEVEL[level] || TENSES_BY_LEVEL.A1;
 
+  // ── Tous les useEffect AVANT le return conditionnel ──────────────────────
+
   useEffect(() => {
     const saved = localStorage.getItem('spanish-sprint-language');
     if (saved === 'fr' || saved === 'en') setLanguage(saved as 'fr' | 'en');
@@ -566,6 +454,28 @@ export default function Conjugation({ level }: Props) {
     if (!availableTenses.includes(selectedTense)) setSelectedTense('presente');
   }, [level, availableTenses, selectedTense]);
 
+  // generateExercise défini ici pour être accessible par le useEffect suivant
+  const generateExercise = () => {
+    const verbs = verbsByTense[selectedTense] || verbsByTense.presente;
+    const verb = verbs[Math.floor(Math.random() * verbs.length)];
+    const isImp = selectedTense === 'imperativo';
+    const idx = Math.floor(Math.random() * (isImp ? 5 : 6));
+    const ctxArr = CTX[selectedTense] || CTX_PRESENTE;
+    setCurrentExercise({
+      id: Date.now(), verb: verb.verb, pronoun: idx,
+      tense: selectedTense, contextPhrase: ctxArr[idx],
+      answer: verb.conjugations[idx],
+    });
+    setUserAnswer('');
+    setShowResult(false);
+  };
+
+  // Ce useEffect DOIT être avant le return catalan
+  useEffect(() => {
+    if (mode === 'practice' && targetLanguage === 'spanish') generateExercise();
+  }, [mode, selectedTense, targetLanguage]);
+
+  // ── Return conditionnel APRÈS tous les hooks ─────────────────────────────
   if (targetLanguage === 'catalan') return <CatalanSection language={language} />;
 
   const pronouns = ['yo','tu','el/ella','nosotros','vosotros','ellos/ellas'];
@@ -587,23 +497,6 @@ export default function Conjugation({ level }: Props) {
       subjuntivo_presente: 'Subjunctive',
     },
   };
-
-  const generateExercise = () => {
-    const verbs = verbsByTense[selectedTense] || verbsByTense.presente;
-    const verb = verbs[Math.floor(Math.random() * verbs.length)];
-    const isImp = selectedTense === 'imperativo';
-    const idx = Math.floor(Math.random() * (isImp ? 5 : 6));
-    const ctxArr = CTX[selectedTense] || CTX_PRESENTE;
-    setCurrentExercise({
-      id: Date.now(), verb: verb.verb, pronoun: idx,
-      tense: selectedTense, contextPhrase: ctxArr[idx],
-      answer: verb.conjugations[idx],
-    });
-    setUserAnswer('');
-    setShowResult(false);
-  };
-
-  useEffect(() => { if (mode === 'practice') generateExercise(); }, [mode, selectedTense]);
 
   const checkAnswer = () => {
     if (!currentExercise) return;
