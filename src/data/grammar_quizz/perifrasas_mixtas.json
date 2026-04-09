@@ -1,0 +1,168 @@
+{
+  "note": {
+    "fr": "Exercices mixtes sur toutes les periphrases verbales.\n\nRappel des structures :\n\n LLEVAR + gerondif → durée en cours\nEx : Llevo dos horas esperando. (Ça fait 2h que j'attends.)\n\n SEGUIR/CONTINUAR + gerondif → continuer à\nEx : Sigo trabajando aquí. (Je travaille toujours ici.)\n\n ACABAR DE + infinitif → venir de\nEx : Acabo de llegar. (Je viens d'arriver.)\n\n DEJAR DE + infinitif → arrêter de\nEx : He dejado de fumar. (J'ai arrêté de fumer.)\n\n EMPEZAR A / COMENZAR A + infinitif → commencer à\nEx : He empezado a trabajar. (J'ai commencé à travailler.)\n\n VOLVER A + infinitif → refaire, recommencer\nEx : Ha vuelto a llamar. (Il a rappelé / rappelé encore.)\n\n TERMINAR DE + infinitif → finir de\nEx : He terminado de leer. (J'ai fini de lire.)\n\n ESTAR + gerondif → en train de\nEx : Estoy comiendo. (Je suis en train de manger.)\n\n PONERSE A + infinitif → se mettre à (soudain)\nEx : Se puso a llover. (Il s'est mis à pleuvoir.)\n\n ANDAR + gerondif → se balader en faisant (informel)\nEx : Anda buscando trabajo. (Il cherche du boulot par-ci par-là.)",
+    "en": "Mixed exercises on all verbal periphrases.\n\nStructure reminders:\n\n LLEVAR + gerund → ongoing duration\nEx: Llevo dos horas esperando. (I've been waiting for 2 hours.)\n\n SEGUIR/CONTINUAR + gerund → to keep doing\nEx: Sigo trabajando aquí. (I still work here.)\n\n ACABAR DE + infinitive → to have just\nEx: Acabo de llegar. (I have just arrived.)\n\n DEJAR DE + infinitive → to stop doing\nEx: He dejado de fumar. (I stopped smoking.)\n\n EMPEZAR A / COMENZAR A + infinitive → to start doing\nEx: He empezado a trabajar. (I started working.)\n\n VOLVER A + infinitive → to do again\nEx: Ha vuelto a llamar. (He called again.)\n\n TERMINAR DE + infinitive → to finish doing\nEx: He terminado de leer. (I finished reading.)\n\n ESTAR + gerund → to be doing (right now)\nEx: Estoy comiendo. (I am eating.)\n\n PONERSE A + infinitive → to suddenly start\nEx: Se puso a llover. (It started to rain.)\n\n ANDAR + gerund → to go around doing (informal)\nEx: Anda buscando trabajo. (He's going around looking for work.)"
+  },
+  "drills": [
+    {
+      "prompt": "Completa: Eva: ¿___ en el centro de Madrid o te has mudado? (seguir + vivir)",
+      "answer": "sigues viviendo",
+      "hint": "seguir en presente (2a pers.) + gerondif de vivir"
+    },
+    {
+      "prompt": "Completa: No, me fui a Corpa. Y ahora ___ desde casa. (seguir + trabajar)",
+      "answer": "sigo trabajando",
+      "hint": "seguir 1a pers. sing. + gerondif de trabajar"
+    },
+    {
+      "prompt": "Completa: Chus: ___ el trabajo de mi vida. En Médicos Mundi. (empezar a + encontrar)",
+      "answer": "he empezado a encontrar",
+      "hint": "empezar en passé composé (1a pers.) + a + infinitif de encontrar"
+    },
+    {
+      "prompt": "Completa: Montó una empresa, la vendió por mucho dinero y ___. (dejar de + trabajar)",
+      "answer": "ha dejado de trabajar",
+      "hint": "dejar de en passé composé (3a pers.) + infinitif de trabajar"
+    },
+    {
+      "prompt": "Completa: ¿Sabes? Mario ___. (volver a + casarse)",
+      "answer": "se ha vuelto a casar",
+      "hint": "se + volver en passé composé (3a pers.) + a + casar"
+    },
+    {
+      "prompt": "Completa: Es que ___ un bebé. (acabar de + tener)",
+      "answer": "acabo de tener",
+      "hint": "acabar de en présent (1a pers.) + infinitif de tener"
+    },
+    {
+      "prompt": "Completa: ¿Y ahora qué ___? (estar + hacer, tú)",
+      "answer": "estás haciendo",
+      "hint": "estar présent (2a pers.) + gerondif de hacer"
+    },
+    {
+      "prompt": "Completa: Julián lleva un montón de años en esta empresa. ¡___ diez años! (llevar + trabajar allí)",
+      "answer": "lleva diez años trabajando allí",
+      "hint": "llevar 3a pers. + durée + gerondif de trabajar"
+    },
+    {
+      "prompt": "Completa: No, gracias, ___ de comer. No tengo hambre. (acabar de + comer)",
+      "answer": "acabo de comer",
+      "hint": "acabar de présent 1a pers. + comer infinitif"
+    },
+    {
+      "prompt": "Completa: ¡Por fin ___ de pagar la hipoteca! (terminar de + pagar)",
+      "answer": "he terminado de pagar",
+      "hint": "terminar en passé composé 1a pers. + de + pagar"
+    },
+    {
+      "prompt": "Completa: Mi abuela ___ de fumar a los 70 años. ¡Increíble! (dejar de + fumar)",
+      "answer": "dejó de fumar",
+      "hint": "dejar au prétérit 3a pers. + de + fumar"
+    },
+    {
+      "prompt": "Completa: Oye, ¿___ viviendo en el mismo apartamento? (seguir + vivir, vosotros)",
+      "answer": "seguís viviendo",
+      "hint": "seguir présent vosotros + gerondif de vivir"
+    },
+    {
+      "prompt": "Completa: Cuando llegué, ella ___ de salir. Nos cruzamos en la puerta. (acabar de + salir)",
+      "answer": "acababa de salir",
+      "hint": "acabar à l'imparfait (3a pers.) + de + salir — passé récent dans le passé"
+    },
+    {
+      "prompt": "Completa: ¡No ___ a llamarme! Ya te dije que no quiero hablar contigo. (volver a + llamar, tú)",
+      "answer": "vuelvas a llamarme",
+      "hint": "impératif négatif → no + subjonctif de volver (vuelvas) + a + llamarme"
+    },
+    {
+      "prompt": "Completa: Este año ___ a aprender catalán. Es una asignatura pendiente. (empezar a + aprender, yo)",
+      "answer": "he empezado a aprender",
+      "hint": "empezar en passé composé 1a pers. + a + aprender"
+    },
+    {
+      "prompt": "Completa: ¿Cuánto tiempo ___ esperando aquí? (llevar + esperar, tú)",
+      "answer": "llevas esperando",
+      "hint": "llevar présent 2a pers. + gerondif de esperar — sans durée spécifiée (question)"
+    },
+    {
+      "prompt": "Completa: Perdona el retraso, ___ de llegar del aeropuerto. (acabar de + llegar, yo)",
+      "answer": "acabo de llegar",
+      "hint": "acabar de présent 1a pers. + llegar"
+    },
+    {
+      "prompt": "Completa: Anda, ¡Ramón ___ a casarse! ¿Con quién? (volver a + casarse)",
+      "answer": "se ha vuelto a casar",
+      "hint": "se + volver passé composé 3a pers. + a + casar"
+    },
+    {
+      "prompt": "Completa: Yo ___ comiendo cuando me llamaste. (estar + comer, yo, imparfait)",
+      "answer": "estaba comiendo",
+      "hint": "estar à l'imparfait 1a pers. (estaba) + gerondif de comer"
+    },
+    {
+      "prompt": "Completa: Cuando ___ de trabajar, llamé a mis amigos. (terminar de + trabajar, yo, prétérit)",
+      "answer": "terminé de trabajar",
+      "hint": "terminar au prétérit 1a pers. (terminé) + de + trabajar"
+    },
+    {
+      "prompt": "Completa: Mi hija ___ tres años estudiando piano, pero lo dejó. (llevar + estudiar)",
+      "answer": "llevó tres años estudiando",
+      "hint": "llevar au prétérit 3a pers. + durée + gerondif — durée passée révolue"
+    },
+    {
+      "prompt": "Completa: ¿___ buscando trabajo? Tengo una oferta interesante. (seguir + buscar, tú)",
+      "answer": "sigues buscando",
+      "hint": "seguir présent 2a pers. + gerondif de buscar"
+    },
+    {
+      "prompt": "Completa: Me ___ a hablar de eso. No quiero oír más. (dejar de + hablar, ustedes o vosotros)",
+      "answer": "dejad de hablar",
+      "hint": "impératif de dejar (vosotros) + de + hablar — ordre direct"
+    },
+    {
+      "prompt": "Completa: Hace un año que no se ven. ¿Cuándo ___ a verse? (volver a + verse)",
+      "answer": "van a volver a verse",
+      "hint": "ir a (futur proche) + volver a + verse — double périphrase"
+    },
+    {
+      "prompt": "Completa: Oye, ¿ya ___ de leer ese libro que te presté? (terminar de + leer, tú)",
+      "answer": "has terminado de leer",
+      "hint": "terminar en passé composé 2a pers. + de + leer"
+    },
+    {
+      "prompt": "Completa: Nos ___ cuatro horas conduciendo sin parar. (llevar + conducir, nosotros)",
+      "answer": "llevamos cuatro horas conduciendo",
+      "hint": "llevar présent nosotros + durée + gerondif de conducir"
+    },
+    {
+      "prompt": "Completa: Justo ___ a escribirte cuando me llamaste. (ponerse a + escribir, yo, prétérit)",
+      "answer": "me puse a escribirte",
+      "hint": "ponerse au prétérit 1a pers. (me puse) + a + escribirte — se mettre soudainement à"
+    },
+    {
+      "prompt": "Completa: ___ lloviendo toda la semana. ¡Qué hartazgo! (llevar + llover)",
+      "answer": "lleva lloviendo",
+      "hint": "llevar présent 3a pers. + gerondif de llover (lloviendo)"
+    },
+    {
+      "prompt": "Completa: Buenas noticias: Pedro ___ de beber alcohol. (dejar de + beber)",
+      "answer": "ha dejado de beber",
+      "hint": "dejar passé composé 3a pers. + de + beber"
+    },
+    {
+      "prompt": "Completa: Después de dos años de pausa, ___ a entrenar. (volver a + entrenar, yo)",
+      "answer": "he vuelto a entrenar",
+      "hint": "volver passé composé 1a pers. + a + entrenar"
+    },
+    {
+      "prompt": "Completa: ¿Qué ___? Pareces muy concentrada. (estar + hacer, tú)",
+      "answer": "estás haciendo",
+      "hint": "estar présent 2a pers. + gerondif de hacer"
+    },
+    {
+      "prompt": "Completa: El médico me dijo que ___ de tomar tanto café. (tener que + dejar de + tomar)",
+      "answer": "tengo que dejar de tomar",
+      "hint": "tener que (obligation) + dejar de + tomar — double périphrase"
+    }
+  ]
+}
