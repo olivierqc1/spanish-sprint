@@ -230,29 +230,30 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
           </div>
 
           {/* Tableau conjugaison */}
-          <div className="rounded-xl overflow-hidden border border-slate-700">
-            <div className="grid grid-cols-2 text-xs font-bold uppercase tracking-wide"
-              style={{ background: group.color }}>
-              <div className="px-4 py-2 text-white">
-                {language === 'fr' ? 'Pronom' : 'Pronoun'}
-              </div>
-              <div className="px-4 py-2 text-white">
-                {group.verb} — {tenseLabel[language][selectedTense]}
-              </div>
-            </div>
-            {CAT_PRONOUNS.map((pron, i) => (
-              <div key={i}
-                className={`grid grid-cols-2 border-b border-slate-700 last:border-b-0 ${
-                  i % 2 === 0 ? 'bg-slate-900' : 'bg-slate-800'
-                }`}>
-                <div className="px-4 py-3 text-slate-400 text-sm">{pron}</div>
-                <div className="px-4 py-3 font-bold text-base"
-                  style={{ color: group.color }}>
-                  {group.conj[selectedTense][i]}
-                </div>
-              </div>
-            ))}
-          </div>
+          <table className="w-full rounded-xl overflow-hidden border border-slate-700 text-sm">
+            <thead>
+              <tr style={{ background: group.color }}>
+                <th className="px-4 py-3 text-white text-left font-bold w-1/2">
+                  {language === 'fr' ? 'Pronom' : 'Pronoun'}
+                </th>
+                <th className="px-4 py-3 text-white text-left font-bold w-1/2">
+                  {group.verb} — {tenseLabel[language][selectedTense]}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {CAT_PRONOUNS.map((pron, i) => (
+                <tr key={i}
+                  style={{ background: i % 2 === 0 ? '#0f172a' : '#1e293b' }}>
+                  <td className="px-4 py-3 text-slate-400">{pron}</td>
+                  <td className="px-4 py-3 font-bold text-lg"
+                    style={{ color: group.color }}>
+                    {group.conj[selectedTense][i]}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
 
           {selectedTense === 'periphrastic' && (
             <div className="p-3 bg-blue-950/30 border border-blue-800 rounded-lg">
