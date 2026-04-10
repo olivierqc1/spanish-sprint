@@ -11,7 +11,7 @@ export type GrammarPoint = {
 export const grammarPoints: GrammarPoint[] = [
   {
     id: "presente_regulares",
-    title: { 
+    title: {
       fr: "Présent – verbes réguliers (-ar, -er, -ir)",
       en: "Present tense – regular verbs (-ar, -er, -ir)"
     },
@@ -317,6 +317,7 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/negacion.json"
   },
+
   {
     id: "interrogativos",
     title: {
@@ -488,8 +489,8 @@ export const grammarPoints: GrammarPoint[] = [
   {
     id: "preterito_irregulares_visual",
     title: {
-      fr: "Passé simple – Verbes irréguliers (Pretérito Indefinido)",
-      en: "Preterite – Irregular verbs (Pretérito Indefinido)"
+      fr: "Passé simple – Verbes irréguliers (visuel bilingue)",
+      en: "Preterite – Irregular verbs (bilingual visual)"
     },
     level: "A2",
     note: {
@@ -637,6 +638,7 @@ export const grammarPoints: GrammarPoint[] = [
       en: "Using past participles with ESTAR to describe a state."
     },
     country: "all",
+
     jsonPath: "/data/grammar_quizz/participios_como_adjetivos.json"
   },
   {
@@ -730,11 +732,237 @@ export const grammarPoints: GrammarPoint[] = [
       en: "Ya, todavía, ya no, aún no, todavía no"
     },
     level: "A2",
-  note: {
+    note: {
       fr: "Adverbes temporels pour exprimer le déjà, le encore, le ne plus et le pas encore.",
       en: "Temporal adverbs to express already, still, no longer, and not yet."
     },
     country: "all",
     jsonPath: "/data/grammar_quizz/ya_todavia.json"
-  }
+  },
+  // ─── PÉRIPHRASES VERBALES (nouvelles) ──────────────────────────────────────
+  {
+    id: "perifrasas_introduccion",
+    title: {
+      fr: "Périphrases verbales – Introduction",
+      en: "Verbal periphrases – Introduction"
+    },
+    level: "A2",
+    note: {
+      fr: "Vue d'ensemble des périphrases verbales espagnoles.",
+      en: "Overview of Spanish verbal periphrases."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/perifrasas_introduccion.json"
+  },
+  {
+    id: "llevar_gerundio",
+    title: {
+      fr: "Llevar + gérondif – Exprimer la durée en cours",
+      en: "Llevar + gerund – Expressing ongoing duration"
+    },
+    level: "A2",
+    note: {
+      fr: "Llevar + gérondif pour dire depuis combien de temps on fait quelque chose.",
+      en: "Llevar + gerund to say how long you have been doing something."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/llevar_gerundio.json"
+  },
+  {
+    id: "acabar_de",
+    title: {
+      fr: "Acabar de + infinitif – Venir de faire",
+      en: "Acabar de + infinitive – To have just done"
+    },
+    level: "A2",
+    note: {
+      fr: "Acabar de + infinitif pour exprimer un passé très récent.",
+      en: "Acabar de + infinitive for a very recent past."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/acabar_de.json"
+  },
+  {
+    id: "dejar_de",
+    title: {
+      fr: "Dejar de + infinitif – Arrêter de faire",
+      en: "Dejar de + infinitive – To stop doing"
+    },
+    level: "A2",
+    note: {
+      fr: "Dejar de + infinitif pour exprimer l'arrêt d'une habitude ou action.",
+      en: "Dejar de + infinitive to express stopping a habit or action."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/dejar_de.json"
+  },
+  {
+    id: "empezar_a",
+    title: {
+      fr: "Empezar a / Comenzar a + infinitif – Commencer à",
+      en: "Empezar a / Comenzar a + infinitive – To start doing"
+    },
+    level: "A2",
+    note: {
+      fr: "Empezar a + infinitif pour exprimer le début d'une action.",
+      en: "Empezar a + infinitive to express the beginning of an action."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/empezar_a.json"
+  },
+  {
+    id: "volver_a",
+    title: {
+      fr: "Volver a + infinitif – Refaire, recommencer",
+      en: "Volver a + infinitive – To do again, to redo"
+    },
+    level: "A2",
+    note: {
+      fr: "Volver a + infinitif pour exprimer la répétition d'une action.",
+      en: "Volver a + infinitive to express repetition of an action."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/volver_a.json"
+  },
+  {
+    id: "terminar_de",
+    title: {
+      fr: "Terminar de + infinitif – Finir de faire",
+      en: "Terminar de + infinitive – To finish doing"
+    },
+    level: "A2",
+    note: {
+      fr: "Terminar de + infinitif pour exprimer la fin d'une tâche.",
+      en: "Terminar de + infinitive to express the completion of a task."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/terminar_de.json"
+  },
+  {
+    id: "perifrasas_mixtas",
+    title: {
+      fr: "Périphrases verbales – Exercices mixtes",
+      en: "Verbal periphrases – Mixed exercises"
+    },
+    level: "B1",
+    note: {
+      fr: "Exercices mélangeant toutes les périphrases verbales vues.",
+      en: "Exercises mixing all verbal periphrases studied."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/perifrasas_mixtas.json"
+  },
+  // ─── B1 ────────────────────────────────────────────────────────────────────
+  {
+    id: "subjuntivo_presente",
+    title: {
+      fr: "Subjonctif présent – Formation et usages",
+      en: "Present subjunctive – Formation and uses"
+    },
+    level: "B1",
+    note: {
+      fr: "Formation du subjonctif présent et principaux contextes d'utilisation.",
+      en: "Formation of the present subjunctive and main contexts of use."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/subjuntivo_presente.json"
+  },
+  {
+    id: "condicional",
+    title: {
+      fr: "Conditionnel – Formation et usages",
+      en: "Conditional – Formation and uses"
+    },
+    level: "B1",
+    note: {
+      fr: "Formation du conditionnel et ses usages (conseil, hypothèse, politesse).",
+      en: "Formation of the conditional and its uses (advice, hypothesis, politeness)."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/condicional.json"
+  },
+  {
+    id: "futuro_perfecto",
+    title: {
+      fr: "Futur antérieur",
+      en: "Future perfect"
+    },
+    level: "B1",
+    note: {
+      fr: "Formation et usage du futur antérieur (habré + participio).",
+      en: "Formation and use of the future perfect (habré + participio)."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/futuro_perfecto.json"
+  },
+  {
+    id: "pluscuamperfecto",
+    title: {
+      fr: "Plus-que-parfait (había + participio)",
+      en: "Past perfect (había + participio)"
+    },
+    level: "B1",
+    note: {
+      fr: "Formation et usage du plus-que-parfait.",
+      en: "Formation and use of the past perfect."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/pluscuamperfecto.json"
+  },
+  {
+    id: "oraciones_condicionales",
+    title: {
+      fr: "Phrases conditionnelles (si + indicatif/subjonctif)",
+      en: "Conditional sentences (si + indicative/subjunctive)"
+    },
+    level: "B1",
+    note: {
+      fr: "Les trois types de phrases conditionnelles en espagnol.",
+      en: "The three types of conditional sentences in Spanish."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/oraciones_condicionales.json"
+  },
+  {
+    id: "estilo_indirecto",
+    title: {
+      fr: "Le discours indirect",
+      en: "Indirect speech"
+    },
+    level: "B1",
+    note: {
+      fr: "Rapporter les paroles de quelqu'un (dijo que, preguntó si...).",
+      en: "Reporting someone's words (dijo que, preguntó si...)."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/estilo_indirecto.json"
+  },
+  {
+    id: "voz_pasiva",
+    title: {
+      fr: "La voix passive (ser + participio)",
+      en: "The passive voice (ser + participio)"
+    },
+    level: "B1",
+    note: {
+      fr: "Formation et usage de la voix passive en espagnol.",
+      en: "Formation and use of the passive voice in Spanish."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/voz_pasiva.json"
+  },
+  {
+    id: "se_pasivo_impersonal",
+    title: {
+      fr: "SE passif et impersonnel",
+      en: "Passive and impersonal SE"
+    },
+    level: "B1",
+    note: {
+      fr: "Utilisation de SE pour exprimer le passif et l'impersonnel.",
+      en: "Use of SE for passive and impersonal constructions."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/se_pasivo_impersonal.json"
+  },
 ];
