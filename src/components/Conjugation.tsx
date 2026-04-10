@@ -183,59 +183,86 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
 
       {catMode === 'theory' && (
         <div className="space-y-4">
+          {/* Sélecteur groupe */}
           <div className="flex gap-2">
             {groups.map((g, i) => (
               <button key={i} onClick={() => setSelectedGroup(i)}
                 className="px-3 py-2 rounded-lg text-sm font-bold transition flex-1"
-                style={{ background: selectedGroup === i ? g.color : '#1e293b',
-                  color: 'white', border: `2px solid ${g.color}` }}>
+                style={{
+                  background: selectedGroup === i ? g.color : '#1e293b',
+                  color: 'white',
+                  border: `2px solid ${g.color}`,
+                }}>
                 {i === 0 ? '-AR' : i === 1 ? '-RE/-ER' : '-IR'}
               </button>
             ))}
           </div>
-          <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
-            <h3 className="text-lg font-bold mb-2" style={{ color: group.color }}>
+
+          {/* Sélecteur temps */}
+          <div className="flex gap-2">
+            {(['present','imperfect','future','periphrastic'] as const).map(t => (
+              <button key={t} onClick={() => setSelectedTense(t)}
+                className="px-2 py-2 rounded-lg text-xs font-bold transition flex-1"
+                style={{
+                  background: selectedTense === t ? group.color : '#0f172a',
+                  color: 'white',
+                  border: `1px solid ${selectedTense === t ? group.color : '#334155'}`,
+                }}>
+                {tenseLabel[language][t]}
+              </button>
+            ))}
+          </div>
+
+          {/* Info groupe */}
+          <div className="rounded-xl p-4 border"
+            style={{ background: group.color + '18', borderColor: group.color + '55' }}>
+            <h3 className="font-bold text-base mb-1" style={{ color: group.color }}>
               {group.name}
             </h3>
-            <p className="text-slate-300 text-sm mb-4">{group.desc}</p>
-            <div className="flex flex-wrap gap-2 mb-4">
+            <p className="text-slate-300 text-sm mb-2">{group.desc}</p>
+            <div className="flex flex-wrap gap-1">
               {group.examples.map((e, i) => (
-                <span key={i} className="px-2 py-1 bg-slate-900 rounded text-xs text-slate-200">
+                <span key={i} className="px-2 py-0.5 bg-slate-900 rounded text-xs text-slate-300">
                   {e}
                 </span>
               ))}
             </div>
-            <div className="flex gap-2 flex-wrap mb-4">
-              {(['present','imperfect','future','periphrastic'] as const).map(t => (
-                <button key={t} onClick={() => setSelectedTense(t)}
-                  className="px-3 py-1 rounded text-xs font-bold transition"
-                  style={{ background: selectedTense === t ? group.color : '#0f172a', color: 'white' }}>
-                  {tenseLabel[language][t]}
-                </button>
-              ))}
+          </div>
+
+          {/* Tableau conjugaison */}
+          <div className="rounded-xl overflow-hidden border border-slate-700">
+            <div className="grid grid-cols-2 text-xs font-bold uppercase tracking-wide"
+              style={{ background: group.color }}>
+              <div className="px-4 py-2 text-white">
+                {language === 'fr' ? 'Pronom' : 'Pronoun'}
+              </div>
+              <div className="px-4 py-2 text-white">
+                {group.verb} — {tenseLabel[language][selectedTense]}
+              </div>
             </div>
-            <p className="text-xs text-slate-400 mb-2">
-              {language === 'fr' ? 'Exemple : ' : 'Example: '}{group.verb}
-            </p>
             {CAT_PRONOUNS.map((pron, i) => (
               <div key={i}
-                className="flex justify-between items-center p-2 bg-slate-900 rounded mb-1">
-                <span className="text-slate-400 text-sm w-28">{pron}</span>
-                <span className="font-mono text-sm font-bold" style={{ color: group.color }}>
+                className={`grid grid-cols-2 border-b border-slate-700 last:border-b-0 ${
+                  i % 2 === 0 ? 'bg-slate-900' : 'bg-slate-800'
+                }`}>
+                <div className="px-4 py-3 text-slate-400 text-sm">{pron}</div>
+                <div className="px-4 py-3 font-bold text-base"
+                  style={{ color: group.color }}>
                   {group.conj[selectedTense][i]}
-                </span>
+                </div>
               </div>
             ))}
-            {selectedTense === 'periphrastic' && (
-              <div className="mt-3 p-3 bg-blue-950/30 border border-blue-800 rounded-lg">
-                <p className="text-blue-300 text-xs">
-                  {language === 'fr'
-                    ? 'Passe periphr. = anar (present) + infinitif. LE temps du passe oral.'
-                    : 'Periphrastic past = anar (present) + infinitive. THE spoken past tense.'}
-                </p>
-              </div>
-            )}
           </div>
+
+          {selectedTense === 'periphrastic' && (
+            <div className="p-3 bg-blue-950/30 border border-blue-800 rounded-lg">
+              <p className="text-blue-300 text-xs">
+                {language === 'fr'
+                  ? 'Passe periphr. = anar (present) + infinitif. LE temps du passe oral.'
+                  : 'Periphrastic past = anar (present) + infinitive. THE spoken past tense.'}
+              </p>
+            </div>
+          )}
         </div>
       )}
 
@@ -337,6 +364,7 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
 }
 
 // =============================================================================
+
 // SPANISH DATA
 // =============================================================================
 
@@ -445,6 +473,7 @@ const PQ5 = [...PQ5a, ...PQ5b];
 const PQ6a = ['habia escrito','habias escrito','habia escrito'];
 const PQ6b = ['habiamos escrito','habiais escrito','habian escrito'];
 const PQ6 = [...PQ6a, ...PQ6b];
+
 
 const verbsByTense: Record<string, Array<{ verb: string; conjugations: string[] }>> = {
   presente: [
