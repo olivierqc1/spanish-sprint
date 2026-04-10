@@ -30,42 +30,54 @@ const P_IR = {
 
 const CAT_GROUPS_FR = [
   {
-    name: 'Groupe 1 - verbes en -AR', color: '#3b82f6',
-    desc: 'Present : -o/-es/-a/-em/-eu/-en',
-    examples: ['parlar (parler)','treballar (travailler)','comprar (acheter)','estudiar (etudier)'],
-    verb: 'parlar', conj: P_AR,
+    name: 'Groupe 1 — verbes en -AR',
+    color: '#3b82f6',
+    desc: 'Le groupe le plus courant. Terminaisons au présent : -o, -es, -a, -em, -eu, -en.',
+    examples: ['parlar = parler', 'treballar = travailler', 'comprar = acheter', 'estudiar = étudier'],
+    verb: 'parlar',
+    conj: P_AR,
   },
   {
-    name: 'Groupe 2 - verbes en -RE / -ER', color: '#10b981',
-    desc: 'Present : -o/-s/rien (3e sg)/-em/-eu/-en',
-    examples: ['beure (boire)','viure (vivre)','vendre (vendre)','correr (courir)'],
-    verb: 'beure', conj: P_ER,
+    name: 'Groupe 2 — verbes en -RE ou -ER',
+    color: '#10b981',
+    desc: 'Attention : à la 3e personne du singulier, il n\'y a AUCUNE terminaison. Ex : ell beu (il boit).',
+    examples: ['beure = boire', 'viure = vivre', 'vendre = vendre', 'correr = courir'],
+    verb: 'beure',
+    conj: P_ER,
   },
   {
-    name: 'Groupe 3 - verbes en -IR', color: '#f59e0b',
-    desc: 'PUR (dormir) vs INCOATIF (llegir) : infixe -eix-',
-    examples: ['dormir - pur','sortir - pur','llegir (lire) - incoatif','servir - incoatif'],
-    verb: 'llegir', conj: P_IR,
+    name: 'Groupe 3 — verbes en -IR',
+    color: '#f59e0b',
+    desc: 'La majorité des verbes en -IR ajoutent -eix- au singulier et à la 3e pluriel. Ex : jo llegeixo, ell llegeix, ells llegeixen. Exceptions sans -eix- : dormir, sortir.',
+    examples: ['llegir = lire', 'servir = servir', 'patir = souffrir', 'dormir = dormir (sans -eix-)'],
+    verb: 'llegir',
+    conj: P_IR,
   },
 ];
 const CAT_GROUPS_EN = [
   {
-    name: 'Group 1 - -AR verbs', color: '#3b82f6',
-    desc: 'Present: -o/-es/-a/-em/-eu/-en',
-    examples: ['parlar (to speak)','treballar (to work)','comprar (to buy)','estudiar (to study)'],
-    verb: 'parlar', conj: P_AR,
+    name: 'Group 1 — -AR verbs',
+    color: '#3b82f6',
+    desc: 'The most common group. Present endings: -o, -es, -a, -em, -eu, -en.',
+    examples: ['parlar = to speak', 'treballar = to work', 'comprar = to buy', 'estudiar = to study'],
+    verb: 'parlar',
+    conj: P_AR,
   },
   {
-    name: 'Group 2 - -RE / -ER verbs', color: '#10b981',
-    desc: 'Present: -o/-s/nothing (3rd sg)/-em/-eu/-en',
-    examples: ['beure (to drink)','viure (to live)','vendre (to sell)','correr (to run)'],
-    verb: 'beure', conj: P_ER,
+    name: 'Group 2 — -RE / -ER verbs',
+    color: '#10b981',
+    desc: 'Watch out: the 3rd person singular has NO ending at all. Ex: ell beu (he drinks).',
+    examples: ['beure = to drink', 'viure = to live', 'vendre = to sell', 'correr = to run'],
+    verb: 'beure',
+    conj: P_ER,
   },
   {
-    name: 'Group 3 - -IR verbs', color: '#f59e0b',
-    desc: 'PURE (dormir) vs INCHOATIVE (llegir): -eix- infix',
-    examples: ['dormir - pure','sortir - pure','llegir (to read) - inchoative','servir - inchoative'],
-    verb: 'llegir', conj: P_IR,
+    name: 'Group 3 — -IR verbs',
+    color: '#f59e0b',
+    desc: 'Most -IR verbs insert -eix- in the singular and 3rd plural. Ex: jo llegeixo, ell llegeix, ells llegeixen. Exceptions without -eix-: dormir, sortir.',
+    examples: ['llegir = to read', 'servir = to serve', 'patir = to suffer', 'dormir = to sleep (no -eix-)'],
+    verb: 'llegir',
+    conj: P_IR,
   },
 ];
 
@@ -93,36 +105,68 @@ const CAT_IRREGULARS = [
 ];
 
 const CAT_EXERCISES = [
-  { pronoun: 'jo',         verb: 'parlar',
-    tense: 'present',   answer: 'parlo',      context: 'Jo ___ catala cada dia.' },
-  { pronoun: 'tu',         verb: 'tenir',
-    tense: 'present',   answer: 'tens',       context: 'Tu ___ un gat.' },
-  { pronoun: 'ell/ella',   verb: 'ser',
-    tense: 'present',   answer: 'es',         context: 'Ella ___ de Barcelona.' },
-  { pronoun: 'nosaltres',  verb: 'anar',
-    tense: 'present',   answer: 'anem',       context: 'Nosaltres ___ al mercat.' },
-  { pronoun: 'vosaltres',  verb: 'fer',
-    tense: 'present',   answer: 'feu',        context: 'Vosaltres ___ molt be.' },
-  { pronoun: 'ells/elles', verb: 'voler',
-    tense: 'present',   answer: 'volen',      context: 'Ells ___ aprendre catala.' },
-  { pronoun: 'jo',         verb: 'anar',
-    tense: 'passe',     answer: 'vaig anar',  context: 'Ahir, jo ___ a la platja.' },
-  { pronoun: 'tu',         verb: 'menjar',
-    tense: 'passe',     answer: 'vas menjar', context: 'Ahir, tu ___ pa.' },
-  { pronoun: 'ell/ella',   verb: 'fer',
-    tense: 'passe',     answer: 'va fer',     context: 'Ahir, ell ___ els deures.' },
-  { pronoun: 'nosaltres',  verb: 'parlar',
-    tense: 'passe',     answer: 'vam parlar', context: 'Ahir, nosaltres ___ molt.' },
-  { pronoun: 'jo',         verb: 'treballar',
-    tense: 'imparfait', answer: 'treballava', context: 'Abans, jo ___ a Madrid.' },
-  { pronoun: 'tu',         verb: 'ser',
-    tense: 'imparfait', answer: 'eres',       context: 'De petit, tu ___ timid.' },
-  { pronoun: 'jo',         verb: 'parlar',
-    tense: 'futur',     answer: 'parlare',    context: 'Dema, jo ___ amb ell.' },
-  { pronoun: 'tu',         verb: 'tenir',
-    tense: 'futur',     answer: 'tindras',    context: 'Dema, tu ___ temps.' },
-  { pronoun: 'ell/ella',   verb: 'fer',
-    tense: 'futur',     answer: 'fara',       context: 'Dema, ella ___ una paella.' },
+  // PRESENT — regulars
+  { pronoun: 'jo',         verb: 'parlar',    tense: 'present',   answer: 'parlo',        context: 'Jo ___ catala cada dia.' },
+  { pronoun: 'tu',         verb: 'parlar',    tense: 'present',   answer: 'parles',       context: 'Tu ___ molt be.' },
+  { pronoun: 'ell/ella',   verb: 'parlar',    tense: 'present',   answer: 'parla',        context: 'Ella ___ angles.' },
+  { pronoun: 'nosaltres',  verb: 'parlar',    tense: 'present',   answer: 'parlem',       context: 'Nosaltres ___ catala a casa.' },
+  { pronoun: 'vosaltres',  verb: 'parlar',    tense: 'present',   answer: 'parleu',       context: 'Vosaltres ___ massa rapid.' },
+  { pronoun: 'ells/elles', verb: 'parlar',    tense: 'present',   answer: 'parlen',       context: 'Ells ___ amb els veins.' },
+  { pronoun: 'jo',         verb: 'treballar', tense: 'present',   answer: 'treballo',     context: 'Jo ___ a Barcelona.' },
+  { pronoun: 'tu',         verb: 'comprar',   tense: 'present',   answer: 'compres',      context: 'Tu ___ al mercat.' },
+  { pronoun: 'ell/ella',   verb: 'estudiar',  tense: 'present',   answer: 'estudia',      context: 'Ell ___ medicina.' },
+  { pronoun: 'nosaltres',  verb: 'cantar',    tense: 'present',   answer: 'cantem',       context: 'Nosaltres ___ cada dissabte.' },
+  // PRESENT — group 2
+  { pronoun: 'jo',         verb: 'beure',     tense: 'present',   answer: 'bec',          context: 'Jo ___ cafe cada mati.' },
+  { pronoun: 'tu',         verb: 'beure',     tense: 'present',   answer: 'beus',         context: 'Tu ___ molta aigua.' },
+  { pronoun: 'ell/ella',   verb: 'beure',     tense: 'present',   answer: 'beu',          context: 'Ell ___ llet al mati.' },
+  { pronoun: 'nosaltres',  verb: 'vendre',    tense: 'present',   answer: 'venem',        context: 'Nosaltres ___ verdures.' },
+  { pronoun: 'ells/elles', verb: 'correr',    tense: 'present',   answer: 'corren',       context: 'Ells ___ cada mati.' },
+  // PRESENT — group 3 inchoative
+  { pronoun: 'jo',         verb: 'llegir',    tense: 'present',   answer: 'llegeixo',     context: 'Jo ___ un llibre.' },
+  { pronoun: 'tu',         verb: 'llegir',    tense: 'present',   answer: 'llegeixes',    context: 'Tu ___ molt.' },
+  { pronoun: 'ell/ella',   verb: 'llegir',    tense: 'present',   answer: 'llegeix',      context: 'Ella ___ el diari.' },
+  { pronoun: 'nosaltres',  verb: 'llegir',    tense: 'present',   answer: 'llegim',       context: 'Nosaltres ___ cada nit.' },
+  { pronoun: 'ells/elles', verb: 'llegir',    tense: 'present',   answer: 'llegeixen',    context: 'Ells ___ molt be.' },
+  // PRESENT — irregulars
+  { pronoun: 'jo',         verb: 'ser',       tense: 'present',   answer: 'soc',          context: 'Jo ___ de Montreal.' },
+  { pronoun: 'tu',         verb: 'ser',       tense: 'present',   answer: 'ets',          context: 'Tu ___ molt simpatica.' },
+  { pronoun: 'ell/ella',   verb: 'ser',       tense: 'present',   answer: 'es',           context: 'Ella ___ de Barcelona.' },
+  { pronoun: 'nosaltres',  verb: 'tenir',     tense: 'present',   answer: 'tenim',        context: 'Nosaltres ___ un gat.' },
+  { pronoun: 'tu',         verb: 'tenir',     tense: 'present',   answer: 'tens',         context: 'Tu ___ un cotxe.' },
+  { pronoun: 'jo',         verb: 'tenir',     tense: 'present',   answer: 'tinc',         context: 'Jo ___ vint-i-cinc anys.' },
+  { pronoun: 'nosaltres',  verb: 'anar',      tense: 'present',   answer: 'anem',         context: 'Nosaltres ___ al mercat.' },
+  { pronoun: 'vosaltres',  verb: 'fer',       tense: 'present',   answer: 'feu',          context: 'Vosaltres ___ molt be.' },
+  { pronoun: 'ells/elles', verb: 'voler',     tense: 'present',   answer: 'volen',        context: 'Ells ___ aprendre catala.' },
+  { pronoun: 'jo',         verb: 'poder',     tense: 'present',   answer: 'puc',          context: 'Jo no ___ venir dema.' },
+  { pronoun: 'tu',         verb: 'saber',     tense: 'present',   answer: 'saps',         context: 'Tu ___ cuinar molt be.' },
+  { pronoun: 'ell/ella',   verb: 'venir',     tense: 'present',   answer: 've',           context: 'Ell ___ cada divendres.' },
+  { pronoun: 'jo',         verb: 'dir',       tense: 'present',   answer: 'dic',          context: 'Jo ___ la veritat.' },
+  { pronoun: 'jo',         verb: 'estar',     tense: 'present',   answer: 'estic',        context: 'Jo ___ molt content.' },
+  { pronoun: 'tu',         verb: 'estar',     tense: 'present',   answer: 'estas',        context: 'Tu ___ cansat?' },
+  // PASSE PERIPHRASTIC
+  { pronoun: 'jo',         verb: 'anar',      tense: 'passe',     answer: 'vaig anar',    context: 'Ahir, jo ___ a la platja.' },
+  { pronoun: 'tu',         verb: 'menjar',    tense: 'passe',     answer: 'vas menjar',   context: 'Ahir, tu ___ pa.' },
+  { pronoun: 'ell/ella',   verb: 'fer',       tense: 'passe',     answer: 'va fer',       context: 'Ahir, ell ___ els deures.' },
+  { pronoun: 'nosaltres',  verb: 'parlar',    tense: 'passe',     answer: 'vam parlar',   context: 'Ahir, nosaltres ___ molt.' },
+  { pronoun: 'vosaltres',  verb: 'vendre',    tense: 'passe',     answer: 'vau vendre',   context: 'Ahir, vosaltres ___ el cotxe.' },
+  { pronoun: 'ells/elles', verb: 'arribar',   tense: 'passe',     answer: 'van arribar',  context: 'Ahir, ells ___ tard.' },
+  { pronoun: 'jo',         verb: 'comprar',   tense: 'passe',     answer: 'vaig comprar', context: 'Ahir, jo ___ pa.' },
+  { pronoun: 'tu',         verb: 'llegir',    tense: 'passe',     answer: 'vas llegir',   context: 'Ahir, tu ___ el llibre.' },
+  { pronoun: 'ell/ella',   verb: 'beure',     tense: 'passe',     answer: 'va beure',     context: 'Ahir, ella ___ un cafe.' },
+  // IMPARFAIT
+  { pronoun: 'jo',         verb: 'treballar', tense: 'imparfait', answer: 'treballava',   context: 'Abans, jo ___ a Madrid.' },
+  { pronoun: 'tu',         verb: 'ser',       tense: 'imparfait', answer: 'eres',         context: 'De petit, tu ___ timid.' },
+  { pronoun: 'ell/ella',   verb: 'viure',     tense: 'imparfait', answer: 'vivia',        context: 'Abans, ell ___ a Valencia.' },
+  { pronoun: 'nosaltres',  verb: 'parlar',    tense: 'imparfait', answer: 'parlàvem',     context: 'Abans, nosaltres ___ molt.' },
+  { pronoun: 'ells/elles', verb: 'estudiar',  tense: 'imparfait', answer: 'estudiaven',   context: 'Abans, ells ___ junts.' },
+  // FUTUR
+  { pronoun: 'jo',         verb: 'parlar',    tense: 'futur',     answer: 'parlare',      context: 'Dema, jo ___ amb ell.' },
+  { pronoun: 'tu',         verb: 'tenir',     tense: 'futur',     answer: 'tindras',      context: 'Dema, tu ___ temps.' },
+  { pronoun: 'ell/ella',   verb: 'fer',       tense: 'futur',     answer: 'fara',         context: 'Dema, ella ___ una paella.' },
+  { pronoun: 'nosaltres',  verb: 'anar',      tense: 'futur',     answer: 'anirem',       context: 'Dema, nosaltres ___ a la platja.' },
+  { pronoun: 'vosaltres',  verb: 'treballar', tense: 'futur',     answer: 'treballareu',  context: 'Dema, vosaltres ___ molt.' },
+  { pronoun: 'ells/elles', verb: 'arribar',   tense: 'futur',     answer: 'arribaran',    context: 'Dema, ells ___ a les vuit.' },
 ];
 
 function CatalanSection({ language }: { language: 'fr' | 'en' }) {
@@ -135,10 +179,16 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
   const [answer, setAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
+  const [practiceFilter, setPracticeFilter] = useState('all');
+
+  const filteredExercises = practiceFilter === 'all'
+    ? CAT_EXERCISES
+    : CAT_EXERCISES.filter(e => e.tense === practiceFilter);
+
+  const ex = filteredExercises[exIdx % Math.max(filteredExercises.length, 1)] ?? CAT_EXERCISES[0];
 
   const groups = language === 'fr' ? CAT_GROUPS_FR : CAT_GROUPS_EN;
   const group = groups[selectedGroup];
-  const ex = CAT_EXERCISES[exIdx];
 
   const tenseLabel = {
     fr: { present: 'Present', imperfect: 'Imparfait', future: 'Futur', periphrastic: 'Passe' },
@@ -151,7 +201,7 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
     setScore(p => ({ correct: p.correct + (ok ? 1 : 0), total: p.total + 1 }));
   };
   const nextEx = () => {
-    setExIdx(i => (i + 1) % CAT_EXERCISES.length);
+    setExIdx(i => (i + 1) % Math.max(filteredExercises.length, 1));
     setAnswer('');
     setShowResult(false);
   };
@@ -208,6 +258,7 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
                   color: 'white',
                   border: `1px solid ${selectedTense === t ? group.color : '#334155'}`,
                 }}>
+
                 {tenseLabel[language][t]}
               </button>
             ))}
@@ -220,9 +271,16 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
               {group.name}
             </h3>
             <p className="text-slate-300 text-sm mb-2">{group.desc}</p>
-            <div className="flex flex-wrap gap-1">
+            <div className="flex flex-col gap-1 mt-2">
               {group.examples.map((e, i) => (
-                <span key={i} className="px-2 py-0.5 bg-slate-900 rounded text-xs text-slate-300">
+                <span key={i} style={{
+                  background: '#0f172a',
+                  borderLeft: `3px solid ${group.color}`,
+                  padding: '4px 10px',
+                  borderRadius: '4px',
+                  fontSize: '13px',
+                  color: '#e2e8f0',
+                }}>
                   {e}
                 </span>
               ))}
@@ -230,24 +288,24 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
           </div>
 
           {/* Tableau conjugaison */}
-          <table className="w-full rounded-xl overflow-hidden border border-slate-700 text-sm">
+          <table style={{ width: '100%', borderCollapse: 'collapse', borderRadius: '12px', overflow: 'hidden', border: '1px solid #334155' }}>
             <thead>
               <tr style={{ background: group.color }}>
-                <th className="px-4 py-3 text-white text-left font-bold w-1/2">
+                <th style={{ padding: '12px 16px', color: '#fff', textAlign: 'left', fontWeight: 'bold', width: '45%' }}>
                   {language === 'fr' ? 'Pronom' : 'Pronoun'}
                 </th>
-                <th className="px-4 py-3 text-white text-left font-bold w-1/2">
+                <th style={{ padding: '12px 16px', color: '#fff', textAlign: 'left', fontWeight: 'bold', width: '55%' }}>
                   {group.verb} — {tenseLabel[language][selectedTense]}
                 </th>
               </tr>
             </thead>
             <tbody>
               {CAT_PRONOUNS.map((pron, i) => (
-                <tr key={i}
-                  style={{ background: i % 2 === 0 ? '#0f172a' : '#1e293b' }}>
-                  <td className="px-4 py-3 text-slate-400">{pron}</td>
-                  <td className="px-4 py-3 font-bold text-lg"
-                    style={{ color: group.color }}>
+                <tr key={i} style={{ background: i % 2 === 0 ? '#0f172a' : '#1e293b' }}>
+                  <td style={{ padding: '12px 16px', color: '#94a3b8', fontSize: '15px', whiteSpace: 'nowrap' }}>
+                    {pron}
+                  </td>
+                  <td style={{ padding: '12px 16px', fontWeight: 'bold', fontSize: '18px', color: group.color }}>
                     {group.conj[selectedTense][i]}
                   </td>
                 </tr>
@@ -268,7 +326,7 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
       )}
 
       {catMode === 'irregular' && (
-        <div className="space-y-3">
+        <div className="space-y-4">
           <div className="bg-red-950/30 border border-red-800 rounded-xl p-3">
             <p className="text-red-300 text-sm">
               {language === 'fr'
@@ -277,24 +335,43 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
             </p>
           </div>
           {CAT_IRREGULARS.map((v, i) => (
-            <div key={i} className="bg-slate-800 rounded-xl p-4 border border-slate-700">
-              <div className="flex justify-between items-center mb-2">
+            <div key={i} style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid #334155' }}>
+              {/* Header verb */}
+              <div style={{
+                background: '#1e293b',
+                padding: '10px 16px',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                borderBottom: '1px solid #334155',
+              }}>
                 <div>
-                  <span className="text-lg font-bold text-yellow-400">{v.verb}</span>
-                  <span className="text-slate-400 text-sm ml-2">
+                  <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#fbbf24' }}>
+                    {v.verb}
+                  </span>
+                  <span style={{ color: '#94a3b8', fontSize: '14px', marginLeft: '8px' }}>
                     {language === 'fr' ? v.fr : v.en}
                   </span>
                 </div>
-                <span className="text-xs text-orange-400">{v.note}</span>
+                <span style={{ fontSize: '11px', color: '#fb923c', background: '#1c0a00', padding: '2px 8px', borderRadius: '6px' }}>
+                  {v.note}
+                </span>
               </div>
-              <div className="grid grid-cols-2 gap-1">
-                {CAT_PRONOUNS.map((pron, j) => (
-                  <div key={j} className="flex justify-between p-1 bg-slate-900 rounded text-sm">
-                    <span className="text-slate-400">{pron}</span>
-                    <span className="font-mono text-yellow-300">{v.present[j]}</span>
-                  </div>
-                ))}
-              </div>
+              {/* Table */}
+              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                <tbody>
+                  {CAT_PRONOUNS.map((pron, j) => (
+                    <tr key={j} style={{ background: j % 2 === 0 ? '#0f172a' : '#1e293b' }}>
+                      <td style={{ padding: '10px 16px', color: '#94a3b8', fontSize: '14px', whiteSpace: 'nowrap', width: '45%' }}>
+                        {pron}
+                      </td>
+                      <td style={{ padding: '10px 16px', fontWeight: 'bold', fontSize: '17px', color: '#fbbf24' }}>
+                        {v.present[j]}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           ))}
         </div>
@@ -302,62 +379,139 @@ function CatalanSection({ language }: { language: 'fr' | 'en' }) {
 
       {catMode === 'practice' && (
         <div className="space-y-4">
-          <div className="bg-slate-800 rounded-xl p-3 text-center border border-slate-700">
-            <span className="text-slate-400">Score: </span>
-            <span className="text-green-400 font-bold text-xl">{score.correct}</span>
-            <span className="text-slate-500"> / {score.total}</span>
-            <span className="text-slate-500 ml-2 text-sm">
-              ({exIdx + 1}/{CAT_EXERCISES.length})
+          {/* Filtre par temps */}
+          <div className="flex gap-2 flex-wrap">
+            {[
+              { key: 'all',       label: language === 'fr' ? 'Tous' : 'All' },
+              { key: 'present',   label: language === 'fr' ? 'Présent' : 'Present' },
+              { key: 'passe',     label: language === 'fr' ? 'Passé' : 'Past' },
+              { key: 'imparfait', label: language === 'fr' ? 'Imparfait' : 'Imperfect' },
+              { key: 'futur',     label: language === 'fr' ? 'Futur' : 'Future' },
+            ].map(opt => {
+              const count = opt.key === 'all'
+                ? CAT_EXERCISES.length
+                : CAT_EXERCISES.filter(e => e.tense === opt.key).length;
+              const active = (practiceFilter === opt.key);
+              return (
+                <button key={opt.key}
+                  onClick={() => { setPracticeFilter(opt.key); setExIdx(0); setAnswer(''); setShowResult(false); }}
+                  style={{
+                    padding: '6px 12px',
+                    borderRadius: '8px',
+                    border: 'none',
+                    background: active ? '#f59e0b' : '#1e293b',
+                    color: active ? '#fff' : '#94a3b8',
+                    fontSize: '13px',
+                    fontWeight: active ? 'bold' : 'normal',
+                    cursor: 'pointer',
+                  }}>
+                  {opt.label} <span style={{ opacity: 0.7 }}>({count})</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Score */}
+          <div style={{
+            background: '#1e293b', borderRadius: '12px', padding: '12px 16px',
+            display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+            border: '1px solid #334155',
+          }}>
+            <span style={{ color: '#94a3b8', fontSize: '14px' }}>Score</span>
+            <span>
+              <span style={{ color: '#4ade80', fontWeight: 'bold', fontSize: '22px' }}>{score.correct}</span>
+              <span style={{ color: '#64748b' }}> / {score.total}</span>
+              <span style={{ color: '#64748b', fontSize: '12px', marginLeft: '8px' }}>
+                ({filteredExercises.length > 0 ? (exIdx % filteredExercises.length) + 1 : 0}/{filteredExercises.length})
+              </span>
             </span>
           </div>
-          <div className="bg-slate-800 rounded-xl p-5 border border-slate-700 space-y-4">
-            <div className="bg-yellow-950/30 border border-yellow-800 rounded-lg p-3">
-              <p className="text-white text-lg font-semibold italic">"{ex.context}"</p>
+
+          {filteredExercises.length === 0 ? (
+            <div style={{ textAlign: 'center', color: '#94a3b8', padding: '32px' }}>
+              {language === 'fr' ? 'Aucun exercice pour ce temps.' : 'No exercises for this tense.'}
             </div>
-            <div className="text-center">
-              <p className="text-slate-400 text-sm mb-1">
-                {language === 'fr' ? 'Conjugue' : 'Conjugate'}
-              </p>
-              <p className="text-3xl font-bold text-yellow-400">{ex.verb}</p>
-              <p className="text-xl text-slate-300">({ex.pronoun})</p>
-              <p className="text-xs text-slate-500 mt-1">{ex.tense}</p>
-            </div>
-            {!showResult ? (
-              <>
-                <input type="text" value={answer}
-                  onChange={e => setAnswer(e.target.value)}
-                  onKeyPress={e => e.key === 'Enter' && checkAnswer()}
-                  placeholder="..."
-                  className="w-full px-6 py-4 bg-slate-900 border border-slate-700 rounded-lg text-white text-center text-2xl focus:outline-none"
-                  autoFocus
-                />
-                <button onClick={checkAnswer} disabled={!answer.trim()}
-                  className="w-full bg-yellow-600 hover:bg-yellow-700 disabled:opacity-50 text-white font-bold py-4 rounded-lg transition text-xl">
-                  {language === 'fr' ? 'Verifier' : 'Check'}
-                </button>
-              </>
-            ) : (
-              <>
-                <div className={`p-5 rounded-lg text-center ${
-                  answer.trim().toLowerCase() === ex.answer.toLowerCase()
-                    ? 'bg-green-900/30 border-2 border-green-600'
-                    : 'bg-red-900/30 border-2 border-red-600'
-                }`}>
-                  <div className="text-2xl mb-2">
-                    {answer.trim().toLowerCase() === ex.answer.toLowerCase()
-                      ? 'Correct!' : 'Incorrect'}
+          ) : (
+            <div style={{
+              background: '#1e293b', borderRadius: '16px', padding: '20px',
+              border: '1px solid #334155', display: 'flex', flexDirection: 'column', gap: '16px',
+            }}>
+              {/* Contexte */}
+              <div style={{
+                background: '#422006', border: '1px solid #92400e',
+                borderRadius: '10px', padding: '12px 16px',
+              }}>
+                <p style={{ color: '#fcd34d', fontSize: '11px', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  {ex.tense}
+                </p>
+                <p style={{ color: '#fff', fontSize: '18px', fontStyle: 'italic' }}>
+                  "{ex.context}"
+                </p>
+              </div>
+
+              {/* Verbe à conjuguer */}
+              <div style={{ textAlign: 'center' }}>
+                <p style={{ color: '#94a3b8', fontSize: '13px', marginBottom: '4px' }}>
+                  {language === 'fr' ? 'Conjugue' : 'Conjugate'}
+                </p>
+                <p style={{ color: '#fbbf24', fontSize: '32px', fontWeight: 'bold' }}>{ex.verb}</p>
+                <p style={{ color: '#cbd5e1', fontSize: '20px' }}>({ex.pronoun})</p>
+              </div>
+
+              {/* Input */}
+              {!showResult ? (
+                <>
+                  <input type="text" value={answer}
+                    onChange={e => setAnswer(e.target.value)}
+                    onKeyPress={e => e.key === 'Enter' && checkAnswer()}
+                    placeholder="..."
+                    style={{
+                      width: '100%', padding: '14px', borderRadius: '10px',
+                      border: '2px solid #334155', background: '#0f172a',
+                      color: '#fff', fontSize: '22px', textAlign: 'center',
+                      outline: 'none', boxSizing: 'border-box',
+                    }}
+                    autoFocus
+                  />
+                  <button onClick={checkAnswer} disabled={!answer.trim()}
+                    style={{
+                      width: '100%', padding: '14px', borderRadius: '10px', border: 'none',
+                      background: answer.trim() ? '#d97706' : '#374151',
+                      color: '#fff', fontSize: '18px', fontWeight: 'bold', cursor: 'pointer',
+                    }}>
+                    {language === 'fr' ? 'Vérifier' : 'Check'}
+                  </button>
+                </>
+              ) : (
+                <>
+                  <div style={{
+                    padding: '16px', borderRadius: '10px', textAlign: 'center',
+                    background: answer.trim().toLowerCase() === ex.answer.toLowerCase() ? '#14532d' : '#450a0a',
+                    border: `2px solid ${answer.trim().toLowerCase() === ex.answer.toLowerCase() ? '#16a34a' : '#dc2626'}`,
+                  }}>
+                    <p style={{ fontSize: '22px', fontWeight: 'bold', marginBottom: '8px',
+                      color: answer.trim().toLowerCase() === ex.answer.toLowerCase() ? '#4ade80' : '#f87171' }}>
+                      {answer.trim().toLowerCase() === ex.answer.toLowerCase()
+                        ? '✓ Correct!' : '✗ Incorrect'}
+                    </p>
+                    {answer.trim().toLowerCase() !== ex.answer.toLowerCase() && (
+                      <p style={{ color: '#4ade80', fontSize: '24px', fontWeight: 'bold' }}>
+                        {ex.answer}
+                      </p>
+                    )}
                   </div>
-                  {answer.trim().toLowerCase() !== ex.answer.toLowerCase() && (
-                    <p className="text-2xl font-bold text-green-400">{ex.answer}</p>
-                  )}
-                </div>
-                <button onClick={nextEx}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition text-xl">
-                  {language === 'fr' ? 'Suivant' : 'Next'} →
-                </button>
-              </>
-            )}
-          </div>
+                  <button onClick={nextEx}
+                    style={{
+                      width: '100%', padding: '14px', borderRadius: '10px', border: 'none',
+                      background: '#1d4ed8', color: '#fff', fontSize: '18px',
+                      fontWeight: 'bold', cursor: 'pointer',
+                    }}>
+                    {language === 'fr' ? 'Suivant' : 'Next'} →
+                  </button>
+                </>
+              )}
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -474,7 +628,6 @@ const PQ5 = [...PQ5a, ...PQ5b];
 const PQ6a = ['habia escrito','habias escrito','habia escrito'];
 const PQ6b = ['habiamos escrito','habiais escrito','habian escrito'];
 const PQ6 = [...PQ6a, ...PQ6b];
-
 
 const verbsByTense: Record<string, Array<{ verb: string; conjugations: string[] }>> = {
   presente: [
