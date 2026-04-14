@@ -1,0 +1,25 @@
+{
+  "note": {
+    "fr": "TENIR — avoir et expressions essentielles\n\nTENIR = avoir (possession) :\n→ Tinc un gat. (J'ai un chat.)\n→ Tens cotxe? (Tu as une voiture?)\n\nExpressions avec TENIR (comme 'avoir' en français) :\n→ tenir gana = avoir faim\n→ tenir set = avoir soif\n→ tenir fred = avoir froid\n→ tenir calor = avoir chaud\n→ tenir son = avoir sommeil\n→ tenir por = avoir peur\n→ tenir pressa = être pressé\n→ tenir raó = avoir raison\n→ tenir mal de cap = avoir mal à la tête\n→ tenir mal de panxa = avoir mal au ventre\n→ tenir ganes de = avoir envie de\n→ tenir anys = avoir X ans\n\nConjugaison présent :\njo tinc / tu tens / ell té / nosaltres tenim / vosaltres teniu / ells tenen",
+    "en": "TENIR — to have and essential expressions\n\nTENIR = to have (possession):\n→ Tinc un gat. (I have a cat.)\n→ Tens cotxe? (Do you have a car?)\n\nExpressions with TENIR:\n→ tenir gana = to be hungry\n→ tenir set = to be thirsty\n→ tenir fred = to be cold\n→ tenir calor = to be hot\n→ tenir son = to be sleepy\n→ tenir por = to be afraid\n→ tenir pressa = to be in a hurry\n→ tenir raó = to be right\n→ tenir mal de cap = to have a headache\n→ tenir mal de panxa = to have a stomachache\n→ tenir ganes de = to feel like\n→ tenir anys = to be X years old\n\nPresent conjugation:\njo tinc / tu tens / ell té / nosaltres tenim / vosaltres teniu / ells tenen"
+  },
+  "drills": [
+    { "prompt": "Completa: Jo ___ molt de fred. (avoir froid)", "answer": "tinc", "hint": "tenir fred → jo tinc" },
+    { "prompt": "Completa: Tu ___ son? (avoir sommeil)", "answer": "tens", "hint": "tenir son → tu tens" },
+    { "prompt": "Completa: Ella ___ por dels gossos. (avoir peur)", "answer": "té", "hint": "tenir por → ell/ella té" },
+    { "prompt": "Completa: Tenim molta ___. Hem de sortir ja! (être pressé)", "answer": "pressa", "hint": "tenir pressa = être pressé" },
+    { "prompt": "Completa: Tens ___? Mengem alguna cosa. (avoir faim)", "answer": "gana", "hint": "tenir gana = avoir faim" },
+    { "prompt": "Completa: Jo ___ mal de cap. (avoir mal à la tête)", "answer": "tinc", "hint": "jo tinc mal de cap" },
+    { "prompt": "Completa: Quants anys ___? — En tinc vint-i-cinc. (avoir quel âge)", "answer": "tens", "hint": "tenir anys = avoir X ans → tu tens" },
+    { "prompt": "Completa: Ells ___ set. Porten aigua. (avoir soif)", "answer": "tenen", "hint": "tenir set → ells tenen" },
+    { "prompt": "Completa: Vosaltres ___ raó. Teniu raó! (avoir raison)", "answer": "teniu", "hint": "tenir raó → vosaltres teniu" },
+    { "prompt": "Completa: Tinc ___ de sortir avui. (avoir envie de)", "answer": "ganes", "hint": "tenir ganes de = avoir envie de" },
+    { "prompt": "Completa: El nen ___ mal de panxa. (avoir mal au ventre)", "answer": "té", "hint": "ell/ella té" },
+    { "prompt": "Completa: Jo ___ un pis al centre de Barcelona. (possession)", "answer": "tinc", "hint": "tenir = avoir → jo tinc" },
+    { "prompt": "Completa: Nosaltres ___ calor. Obrim la finestra! (avoir chaud)", "answer": "tenim", "hint": "tenir calor → nosaltres tenim" },
+    { "prompt": "Completa amb tenir: ¿___ gana? No, no ___. (tu / jo)", "answer": "Tens, tinc", "hint": "tens gana? → No, no tinc gana." },
+    { "prompt": "Completa: El pare ___ mal d'esquena. (avoir mal au dos)", "answer": "té", "hint": "ell té mal d'esquena" },
+    { "prompt": "Completa: Tinc ___ de veure't! (avoir envie de te voir)", "answer": "ganes", "hint": "tenir ganes de" },
+    { "prompt": "Completa: Vosaltres ___ molt de fred a l'hivern. (avoir froid)", "answer": "teniu", "hint": "tenir fred → vosaltres teniu" }
+  ]
+}
