@@ -1,0 +1,26 @@
+{
+  "note": {
+    "fr": "Les articles définis du catalan\n\nSINGULIER :\n- EL : masculin → el gat, el pare\n- LA : féminin → la porta, la mare\n- L' : devant voyelle ou H → l'amic, l'home, l'amiga\n\nPLURIEL :\n- ELS : masculin → els gats, els pares\n- LES : féminin → les portes, les mares\n\nCas particulier : les noms de personnes prennent l'article en catalan.\n→ en Pere (Pierre), la Maria (Marie)\n\nLes articles indéfinis :\n- UN / UNA → un gat, una porta\n- UNS / UNES → uns gats, unes portes",
+    "en": "Catalan definite articles\n\nSINGULAR:\n- EL : masculine → el gat, el pare\n- LA : feminine → la porta, la mare\n- L' : before vowel or H → l'amic, l'home, l'amiga\n\nPLURAL:\n- ELS : masculine → els gats, els pares\n- LES : feminine → les portes, les mares\n\nSpecial: people's names take the article in Catalan.\n→ en Pere (Peter), la Maria (Mary)\n\nIndefinite articles:\n- UN / UNA → un gat, una porta\n- UNS / UNES → uns gats, unes portes"
+  },
+  "drills": [
+    { "prompt": "Completa amb l'article definit: ___ gat és negre.", "answer": "El", "hint": "gat = masculí singular" },
+    { "prompt": "Completa amb l'article definit: ___ porta és gran.", "answer": "La", "hint": "porta = femení singular" },
+    { "prompt": "Completa amb l'article definit: ___ amic ha trucat.", "answer": "L'", "hint": "comença amb vocal → L'" },
+    { "prompt": "Completa amb l'article definit: ___ gats dormen.", "answer": "Els", "hint": "gats = masculí plural" },
+    { "prompt": "Completa amb l'article definit: ___ portes estan obertes.", "answer": "Les", "hint": "portes = femení plural" },
+    { "prompt": "Completa amb l'article definit: ___ home és alt.", "answer": "L'", "hint": "home comença amb vocal → L'" },
+    { "prompt": "Completa amb l'article definit: ___ cotxe és vermell.", "answer": "El", "hint": "cotxe = masculí singular" },
+    { "prompt": "Completa amb l'article definit: ___ amiga ha vingut.", "answer": "L'", "hint": "amiga comença amb vocal → L'" },
+    { "prompt": "Completa amb l'article definit: ___ nens juguen al parc.", "answer": "Els", "hint": "nens = masculí plural" },
+    { "prompt": "Completa amb l'article definit: ___ cases són boniques.", "answer": "Les", "hint": "cases = femení plural" },
+    { "prompt": "Completa amb l'article indefinit: Tinc ___ gat i ___ gossa.", "answer": "un, una", "hint": "gat = masculí, gossa = femení" },
+    { "prompt": "Completa amb l'article definit: ___ pare de la Maria treballa aquí.", "answer": "El", "hint": "pare = masculí singular" },
+    { "prompt": "Completa amb l'article definit: ___ escola és propera.", "answer": "L'", "hint": "escola comença amb vocal → L'" },
+    { "prompt": "Completa: He vist ___ películes bones. (indefinit plural)", "answer": "unes", "hint": "películes = femení plural → unes" },
+    { "prompt": "Completa: Necessito ___ bolígraf. (indefinit)", "answer": "un", "hint": "bolígraf = masculí singular → un" },
+    { "prompt": "Completa amb l'article definit: ___ ulleres estan sobre ___ taula.", "answer": "Les, la", "hint": "ulleres = femení plural; taula = femení singular" },
+    { "prompt": "Completa: He trobat ___ cotxes nous al garatge. (indefinit plural)", "answer": "uns", "hint": "cotxes = masculí plural → uns" },
+    { "prompt": "Completa amb l'article definit: ___ herba és verda.", "answer": "L'", "hint": "herba comença amb vocal → L'" }
+  ]
+}
