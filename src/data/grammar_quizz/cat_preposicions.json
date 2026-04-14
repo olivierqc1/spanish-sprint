@@ -1,0 +1,25 @@
+{
+  "note": {
+    "fr": "Les prépositions essentielles du catalan\n\nA — à, dans (destination, lieu) :\n→ Visc a Barcelona. (J'habite à Barcelone.)\n→ Vaig a casa. (Je vais à la maison.)\n→ A + EL = AL : Vaig al mercat.\n→ A + ELS = ALS : Vaig als cinemes.\n\nDE — de (origine, possession, matière) :\n→ Sóc de Montreal.\n→ El cotxe del meu pare.\n→ DE + EL = DEL / DE + ELS = DELS\n\nAMB — avec :\n→ Vinc amb tu.\n\nPER — pour (cause, motif) :\n→ Ho faig per tu.\n\nPER A — pour (destinataire) :\n→ Això és per a tu.\n\nEN — en (moyen de transport, temps) :\n→ Vaig en cotxe. / En dos minuts.\n\nFINS A — jusqu'à : Fins a les tres.\nCAP A — vers : Cap a casa.\nSENSE — sans : Sense tu.\nSEGONS — selon : Segons ell.",
+    "en": "Essential Catalan prepositions\n\nA — to, at, in (destination, location):\n→ Visc a Barcelona. (I live in Barcelona.)\n→ Vaig a casa. (I'm going home.)\n→ A + EL = AL: Vaig al mercat.\n→ A + ELS = ALS: Vaig als cinemes.\n\nDE — of, from (origin, possession, material):\n→ Sóc de Montreal.\n→ El cotxe del meu pare.\n→ DE + EL = DEL / DE + ELS = DELS\n\nAMB — with:\n→ Vinc amb tu.\n\nPER — for (cause, motive):\n→ Ho faig per tu.\n\nPER A — for (recipient):\n→ Això és per a tu.\n\nEN — in (transport, time):\n→ Vaig en cotxe. / En dos minuts.\n\nFINS A — until: Fins a les tres.\nCAP A — towards: Cap a casa.\nSENSE — without: Sense tu.\nSEGONS — according to: Segons ell."
+  },
+  "drills": [
+    { "prompt": "Completa: Visc ___ Barcelona. (j'habite à Barcelone)", "answer": "a", "hint": "lloc → a" },
+    { "prompt": "Completa: Vaig ___ mercat cada dissabte. (au marché)", "answer": "al", "hint": "a + el = al" },
+    { "prompt": "Completa: Sóc ___ Montreal. (je suis de Montréal)", "answer": "de", "hint": "origen → de" },
+    { "prompt": "Completa: El cotxe ___ meu pare és vermell. (la voiture de mon père)", "answer": "del", "hint": "de + el = del" },
+    { "prompt": "Completa: Vinc ___ tu al cinema. (je viens avec toi)", "answer": "amb", "hint": "avec → amb" },
+    { "prompt": "Completa: Ho faig ___ tu. (je le fais pour toi, cause)", "answer": "per", "hint": "cause/motif → per" },
+    { "prompt": "Completa: Vaig ___ cotxe a la feina. (j'y vais en voiture)", "answer": "en", "hint": "moyen de transport → en" },
+    { "prompt": "Completa: Arribo ___ deu minuts. (dans 10 minutes)", "answer": "en", "hint": "durée → en" },
+    { "prompt": "Completa: Fins ___ les tres de la tarda. (jusqu'à 3h)", "answer": "a", "hint": "fins a = jusqu'à" },
+    { "prompt": "Completa: Anem cap ___ casa. (vers la maison)", "answer": "a", "hint": "cap a = vers" },
+    { "prompt": "Completa: No puc viure ___ tu. (sans toi)", "answer": "sense", "hint": "sense = sans" },
+    { "prompt": "Completa: Vaig ___ cinemes del centre. (aux cinémas du centre)", "answer": "als", "hint": "a + els = als" },
+    { "prompt": "Completa: La clau és ___ la porta. (la clé est dans la porte → à)", "answer": "a", "hint": "localisation → a" },
+    { "prompt": "Completa: Venim ___ tren. (nous venons en train)", "answer": "en", "hint": "transport → en" },
+    { "prompt": "Completa: Treballo ___ les vuit fins ___ les cinc. (de 8h jusqu'à 5h)", "answer": "de, a les", "hint": "de... a les... = de... à..." },
+    { "prompt": "Completa: Busco un pis prop ___ la platja. (près de la plage)", "answer": "de", "hint": "prop de = près de" },
+    { "prompt": "Completa: ___ ell, tot va bé. (selon lui)", "answer": "Segons", "hint": "segons = selon" }
+  ]
+}
