@@ -1,0 +1,25 @@
+{
+  "note": {
+    "fr": "L'accord des adjectifs en catalan\n\nRÈGLE GÉNÉRALE : l'adjectif s'accorde en genre et en nombre.\n\nMASCULIN → FÉMININ :\n- Consonne finale → ajouter -A : bonic → bonica, petit → petita\n- Terminaison -E → remplacer par -A : lliure → lliure (invariable!)\n- Terminaison -OR → ajouter -A : treballador → treballadora\n- Irreguliers : bo → bona, mal → mala\n\nSINGULIER → PLURIEL :\n- Masculin : bonic → bonics, alt → alts\n- Féminin : bonica → boniques, alta → altes\n- Invariables (masc/fem identique) : gran → grans, jove → joves\n\nAdjectifs invariables (même forme masc/fem) : gran, jove, triste, feliç, fàcil, difícil\n\nPOSITION : l'adjectif se place APRÈS le nom.\n→ un gat negre, una casa gran\nExceptions devant le nom : bon, mal, gran (sens différent)",
+    "en": "Catalan adjective agreement\n\nGENERAL RULE: adjective agrees in gender and number.\n\nMASCULINE → FEMININE:\n- Consonant ending → add -A: bonic → bonica, petit → petita\n- Ending -E → replace with -A: libre → lliure (invariable!)\n- Ending -OR → add -A: treballador → treballadora\n- Irregular: bo → bona, mal → mala\n\nSINGULAR → PLURAL:\n- Masculine: bonic → bonics, alt → alts\n- Feminine: bonica → boniques, alta → altes\n- Invariable (same masc/fem): gran → grans, jove → joves\n\nInvariable adjectives: gran, jove, triste, feliç, fàcil, difícil\n\nPOSITION: adjective goes AFTER the noun.\n→ un gat negre, una casa gran\nExceptions before noun: bon, mal, gran (different meaning)"
+  },
+  "drills": [
+    { "prompt": "Acorda l'adjectiu: un gat ___ (negre)", "answer": "negre", "hint": "gat = masculí → negre" },
+    { "prompt": "Acorda l'adjectiu: una gata ___ (negre)", "answer": "negra", "hint": "gata = femení → negra" },
+    { "prompt": "Acorda l'adjectiu: un noi ___ (alt)", "answer": "alt", "hint": "noi = masculí singular → alt" },
+    { "prompt": "Acorda l'adjectiu: una noia ___ (alt)", "answer": "alta", "hint": "noia = femení → alta" },
+    { "prompt": "Acorda l'adjectiu: uns cotxes ___ (vermell)", "answer": "vermells", "hint": "cotxes = masculí plural → vermells" },
+    { "prompt": "Acorda l'adjectiu: unes cases ___ (bonic)", "answer": "boniques", "hint": "cases = femení plural → boniques" },
+    { "prompt": "Acorda l'adjectiu: un home ___ (treballador)", "answer": "treballador", "hint": "home = masculí → treballador" },
+    { "prompt": "Acorda l'adjectiu: una dona ___ (treballador)", "answer": "treballadora", "hint": "dona = femení → treballadora" },
+    { "prompt": "Acorda l'adjectiu: un ___ home (bo → devant le nom)", "answer": "bon", "hint": "bo devant un nom masculin → bon" },
+    { "prompt": "Acorda l'adjectiu: una ___ persona (bo → devant le nom)", "answer": "bona", "hint": "bona devant un nom féminin" },
+    { "prompt": "Acorda l'adjectiu: uns nens ___ (jove)", "answer": "joves", "hint": "jove = invariable masc/fem, pluriel → joves" },
+    { "prompt": "Acorda l'adjectiu: unes noies ___ (gran)", "answer": "grans", "hint": "gran = invariable masc/fem, pluriel → grans" },
+    { "prompt": "Acorda l'adjectiu: un problema ___ (difícil)", "answer": "difícil", "hint": "difícil = invariable" },
+    { "prompt": "Acorda l'adjectiu: unes preguntes ___ (difícil)", "answer": "difícils", "hint": "difícil → pluriel difícils" },
+    { "prompt": "Acorda l'adjectiu: una estudiant ___ (aplicat)", "answer": "aplicada", "hint": "estudiant = femení → aplicada" },
+    { "prompt": "Acorda l'adjectiu: uns exercicis ___ (fàcil)", "answer": "fàcils", "hint": "fàcil = invariable, pluriel → fàcils" },
+    { "prompt": "Acorda l'adjectiu: La seva germana és molt ___ (simpàtic)", "answer": "simpàtica", "hint": "germana = femení → simpàtica" }
+  ]
+}
