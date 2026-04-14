@@ -1,0 +1,24 @@
+{
+  "note": {
+    "fr": "Les pronoms compléments du catalan\n\nPRONOMS FAIBLES (clitiques) :\nEM = me / m' (devant voyelle)\nET = te / t' (devant voyelle)\nEL / LA / L' = le / la\nENS = nous\nUS = vous\nELS / LES = les (m/f)\n\nEN = en (partitif, quantité)\nHI = y (lieu, à ça)\n\nPLACEMENT :\n→ Avant le verbe conjugué : Em diu la veritat. (Il me dit la vérité.)\n→ Après l'infinitif ou impératif : Digues-me! (Dis-moi!)\n\nContractions courantes :\nme + el = me'l / me + la = me la\net + el = te'l / et + els = te'ls\n\nEM / ET / ENS / US = COD et COI\nEL / LA / ELS / LES = COD seulement",
+    "en": "Catalan object pronouns\n\nWEAK PRONOUNS (clitics):\nEM = me / m' (before vowel)\nET = you / t' (before vowel)\nEL / LA / L' = him / her / it\nENS = us\nUS = you (plural)\nELS / LES = them (m/f)\n\nEN = of it / some (partitive)\nHI = there / to it\n\nPLACEMENT:\n→ Before conjugated verb: Em diu la veritat. (He tells me the truth.)\n→ After infinitive or imperative: Digues-me! (Tell me!)\n\nCommon contractions:\nme + el = me'l / me + la = me la\net + el = te'l / et + els = te'ls\n\nEM / ET / ENS / US = direct and indirect object\nEL / LA / ELS / LES = direct object only"
+  },
+  "drills": [
+    { "prompt": "Completa: ___ dius la veritat? (tu me dis?) → Sí, ___ dic la veritat.", "answer": "Em, et", "hint": "em = me (COI) / et = te (COI)" },
+    { "prompt": "Completa: On és el gat? No ___ veig. (je ne le vois pas)", "answer": "el", "hint": "el = le (COD masculin)" },
+    { "prompt": "Completa: On és la Maria? No ___ veig. (je ne la vois pas)", "answer": "la", "hint": "la = la (COD féminin)" },
+    { "prompt": "Completa: Quants llibres tens? En tinc ___. (j'en ai trois)", "answer": "tres", "hint": "en + quantitat → en tinc tres" },
+    { "prompt": "Completa: Vas al mercat? Sí, ___ vaig cada dissabte. (j'y vais)", "answer": "hi", "hint": "hi = y (lieu)" },
+    { "prompt": "Completa: ___ truques demà? (tu m'appelles?)", "answer": "Em", "hint": "em = me → em truques?" },
+    { "prompt": "Completa: Els teus pares, ___ veus sovint? (tu les vois souvent?)", "answer": "els", "hint": "els = les (masculin pluriel COD)" },
+    { "prompt": "Completa: Necessito el diccionari. ___ pots deixar? (tu peux me le prêter?)", "answer": "Me'l", "hint": "me + el = me'l" },
+    { "prompt": "Completa: Vine aquí! ___-me! (viens me voir! → impératif)", "answer": "Vine", "hint": "impératif → pronom après le verbe avec tiret: Vine a veure-me" },
+    { "prompt": "Completa: La Maria ___ ha trucat. (elle m'a appelé)", "answer": "em", "hint": "em = me → em ha trucat" },
+    { "prompt": "Completa: Les teves claus? Aquí les ___. (je les ai ici)", "answer": "tinc", "hint": "les tinc = je les ai" },
+    { "prompt": "Completa: Vols pa? Sí, me'n pots donar ___ ? (tu peux m'en donner un peu?)", "answer": "una mica", "hint": "me'n + quantitat: me'n pots donar una mica?" },
+    { "prompt": "Completa: ___ agrada la música? (la musique te plaît?)", "answer": "Et", "hint": "et = te → et agrada?" },
+    { "prompt": "Completa: Hem comprat el cotxe. ___ hem comprat ahir. (nous l'avons acheté)", "answer": "El", "hint": "el = le (COD masc. sing.) → el hem comprat" },
+    { "prompt": "Completa: Hi ha llet a la nevera? Sí, ___ ha. (il y en a)", "answer": "n'hi", "hint": "n'hi ha = il y en a" },
+    { "prompt": "Completa: Dóna-___ el llibre! (donne-le-moi! → impératif)", "answer": "me'l", "hint": "me + el = me'l → Dóna-me'l!" }
+  ]
+}
