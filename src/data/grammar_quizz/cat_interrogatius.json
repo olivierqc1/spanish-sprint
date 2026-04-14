@@ -1,0 +1,25 @@
+{
+  "note": {
+    "fr": "Les mots interrogatifs du catalan\n\nQUI = qui (personne) → Qui és? (Qui est-ce?)\nQUÈ = quoi, qu'est-ce que → Què fas? (Qu'est-ce que tu fais?)\nON = où → On vius? (Où habites-tu?)\nQUAN = quand → Quan arribes? (Quand arrives-tu?)\nCOM = comment → Com estàs? (Comment vas-tu?)\nCOM ES DID = comment ça s'appelle\nQUANT/A = combien → Quant costa? / Quanta gent?\nQUANTS/ES = combien (pluriel) → Quants anys tens?\nPER QUÈ = pourquoi → Per què plores?\nPERQUÈ = parce que (réponse) → Ploro perquè estic trist.\nQUIN/A = quel/quelle → Quina hora és?\nQUINS/ES = quels/quelles → Quins colors t'agraden?\nDE ON = d'où → De on ets? (D'où es-tu?)",
+    "en": "Catalan question words\n\nQUI = who → Qui és? (Who is it?)\nQUÈ = what → Què fas? (What are you doing?)\nON = where → On vius? (Where do you live?)\nQUAN = when → Quan arribes? (When do you arrive?)\nCOM = how → Com estàs? (How are you?)\nQUANT/A = how much → Quant costa? / Quanta gent?\nQUANTS/ES = how many → Quants anys tens?\nPER QUÈ = why → Per què plores?\nPERQUÈ = because (answer) → Ploro perquè estic trist.\nQUIN/A = which/what → Quina hora és?\nQUINS/ES = which (plural) → Quins colors t'agraden?\nDE ON = from where → De on ets?"
+  },
+  "drills": [
+    { "prompt": "Pregunta: ___ ets? (comment tu t'appelles — qui es-tu?)", "answer": "Qui", "hint": "qui = qui (personne)" },
+    { "prompt": "Pregunta: ___ fas avui? (qu'est-ce que tu fais?)", "answer": "Què", "hint": "què = quoi/qu'est-ce que" },
+    { "prompt": "Pregunta: ___ vius? (où habites-tu?)", "answer": "On", "hint": "on = où" },
+    { "prompt": "Pregunta: ___ arribes? (quand arrives-tu?)", "answer": "Quan", "hint": "quan = quand" },
+    { "prompt": "Pregunta: ___ estàs? (comment vas-tu?)", "answer": "Com", "hint": "com = comment" },
+    { "prompt": "Pregunta: ___ costa aquest llibre? (combien coûte ce livre?)", "answer": "Quant", "hint": "quant = combien (singulier)" },
+    { "prompt": "Pregunta: ___ anys tens? (quel âge as-tu?)", "answer": "Quants", "hint": "quants = combien (masculin pluriel)" },
+    { "prompt": "Pregunta: ___ plores? (pourquoi tu pleures?)", "answer": "Per què", "hint": "per què = pourquoi (deux mots)" },
+    { "prompt": "Resposta: Ploro ___ estic trist. (parce que)", "answer": "perquè", "hint": "perquè = parce que (un seul mot)" },
+    { "prompt": "Pregunta: ___ hora és? (quelle heure est-il?)", "answer": "Quina", "hint": "quina = quelle (féminin)" },
+    { "prompt": "Pregunta: ___ dia és avui? (quel jour est-on?)", "answer": "Quin", "hint": "quin = quel (masculin)" },
+    { "prompt": "Pregunta: ___ colors t'agraden? (quelles couleurs tu aimes?)", "answer": "Quins", "hint": "quins = quels (masculin pluriel)" },
+    { "prompt": "Pregunta: ___ ets? (d'où es-tu?)", "answer": "De on", "hint": "de on = d'où" },
+    { "prompt": "Pregunta: ___ gent hi havia? (combien de gens y avait-il?)", "answer": "Quanta", "hint": "quanta = combien de (féminin singulier)" },
+    { "prompt": "Pregunta: ___ és la teva adreça? (quelle est ton adresse?)", "answer": "Quina", "hint": "quina = quelle (féminin, adreça = féminin)" },
+    { "prompt": "Pregunta: ___ idiomes parles? (combien de langues tu parles?)", "answer": "Quants", "hint": "quants = combien de (masculin pluriel)" },
+    { "prompt": "Pregunta: ___ es diu això en català? (comment ça se dit en catalan?)", "answer": "Com", "hint": "com = comment" }
+  ]
+}
