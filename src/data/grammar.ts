@@ -965,4 +965,118 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/se_pasivo_impersonal.json"
   },
+
+  // ─── GRAMMAIRE CATALANE ────────────────────────────────────────────────────
+  {
+    id: "cat_articles",
+    title: {
+      fr: "Catalan — Articles (el, la, els, les, l')",
+      en: "Catalan — Articles (el, la, els, les, l')"
+    },
+    level: "A1",
+    note: {
+      fr: "Articles définis et indéfinis du catalan.",
+      en: "Catalan definite and indefinite articles."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_articles.json"
+  },
+  {
+    id: "cat_ser_estar",
+    title: {
+      fr: "Catalan — SER vs ESTAR",
+      en: "Catalan — SER vs ESTAR"
+    },
+    level: "A1",
+    note: {
+      fr: "Deux façons de dire être en catalan.",
+      en: "Two ways to say to be in Catalan."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_ser_estar.json"
+  },
+  {
+    id: "cat_tenir",
+    title: {
+      fr: "Catalan — TENIR (avoir) et expressions",
+      en: "Catalan — TENIR (to have) and expressions"
+    },
+    level: "A1",
+    note: {
+      fr: "Avoir faim, soif, froid, peur... avec TENIR.",
+      en: "To be hungry, thirsty, cold, afraid... with TENIR."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_tenir.json"
+  },
+  {
+    id: "cat_adjectius",
+    title: {
+      fr: "Catalan — Accord des adjectifs",
+      en: "Catalan — Adjective agreement"
+    },
+    level: "A1",
+    note: {
+      fr: "Accord en genre et en nombre des adjectifs catalans.",
+      en: "Catalan adjective agreement in gender and number."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_adjectius.json"
+  },
+  {
+    id: "cat_negacio",
+    title: {
+      fr: "Catalan — La négation (no, mai, res, ningú...)",
+      en: "Catalan — Negation (no, mai, res, ningú...)"
+    },
+    level: "A1",
+    note: {
+      fr: "Négation simple et renforcée en catalan.",
+      en: "Simple and reinforced negation in Catalan."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_negacio.json"
+  },
+  {
+    id: "cat_interrogatius",
+    title: {
+      fr: "Catalan — Mots interrogatifs (qui, què, on, quan...)",
+      en: "Catalan — Question words (qui, què, on, quan...)"
+    },
+    level: "A1",
+    note: {
+      fr: "Les mots interrogatifs essentiels du catalan.",
+      en: "Essential Catalan question words."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_interrogatius.json"
+  },
+  {
+    id: "cat_preposicions",
+    title: {
+      fr: "Catalan — Prépositions (a, de, amb, per, en...)",
+      en: "Catalan — Prepositions (a, de, amb, per, en...)"
+    },
+    level: "A2",
+    note: {
+      fr: "Les prépositions essentielles du catalan.",
+      en: "Essential Catalan prepositions."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_preposicions.json"
+  },
+  {
+    id: "cat_pronoms",
+    title: {
+      fr: "Catalan — Pronoms compléments (em, et, el, la, hi, en...)",
+      en: "Catalan — Object pronouns (em, et, el, la, hi, en...)"
+    },
+    level: "A2",
+    note: {
+      fr: "Les pronoms faibles du catalan.",
+      en: "Catalan weak/clitic pronouns."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_pronoms.json"
+  },
 ];
