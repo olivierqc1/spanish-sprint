@@ -1,0 +1,25 @@
+{
+  "note": {
+    "fr": "La négation en catalan\n\nNÉGATION SIMPLE :\nNO + verbe → No parlo anglès. (Je ne parle pas anglais.)\n\nNÉGATIONS RENFORCÉES (double négation obligatoire) :\n→ MAI = jamais : No vaig mai al gimnàs.\n→ RES = rien : No menjo res.\n→ NINGÚ = personne : No ve ningú.\n→ CAP = aucun : No tinc cap problema.\n→ TAMPOC = non plus : Jo tampoc. / No m'agrada tampoc.\n→ NI... NI... = ni... ni... : No tinc ni gana ni set.\n\nIMPORTANT : en catalan, si le mot négatif est AVANT le verbe, NO disparaît :\n→ Mai vaig al gimnàs. (Jamais je ne vais au gym.)\n→ Ningú ve. (Personne ne vient.)\n→ Res no m'agrada. (Rien ne me plaît.)\n\nCas particulier : GENS = pas du tout (sens intensif)\n→ No m'agrada gens. (Ça ne me plaît pas du tout.)",
+    "en": "Negation in Catalan\n\nSIMPLE NEGATION:\nNO + verb → No parlo anglès. (I don't speak English.)\n\nREINFORCED NEGATION (double negation required):\n→ MAI = never: No vaig mai al gimnàs.\n→ RES = nothing: No menjo res.\n→ NINGÚ = nobody: No ve ningú.\n→ CAP = none: No tinc cap problema.\n→ TAMPOC = neither/not either: Jo tampoc. / No m'agrada tampoc.\n→ NI... NI... = neither... nor...: No tinc ni gana ni set.\n\nIMPORTANT: if the negative word comes BEFORE the verb, NO disappears:\n→ Mai vaig al gimnàs. (I never go to the gym.)\n→ Ningú ve. (Nobody comes.)\n→ Res no m'agrada. (Nothing pleases me.)\n\nSpecial: GENS = not at all (intensifier)\n→ No m'agrada gens. (I don't like it at all.)"
+  },
+  "drills": [
+    { "prompt": "Fes negativa: Parlo anglès. → ___ parlo anglès.", "answer": "No", "hint": "negació simple → No" },
+    { "prompt": "Completa: No vaig ___ al gimnàs. (jamais)", "answer": "mai", "hint": "mai = jamais" },
+    { "prompt": "Completa: No menjo ___. (rien)", "answer": "res", "hint": "res = rien" },
+    { "prompt": "Completa: No ve ___. (personne)", "answer": "ningú", "hint": "ningú = personne" },
+    { "prompt": "Completa: No tinc ___ problema. (aucun)", "answer": "cap", "hint": "cap = aucun/aucune" },
+    { "prompt": "Completa: A mi no m'agrada el futbol. A tu, ___? (moi non plus → et toi?)", "answer": "tampoc", "hint": "tampoc = non plus" },
+    { "prompt": "Completa: No tinc ___ gana ___ set. (ni faim ni soif)", "answer": "ni, ni", "hint": "ni... ni... = ni... ni..." },
+    { "prompt": "Completa: ___ vaig al gimnàs. (jamais — mot négatif devant)", "answer": "Mai", "hint": "Mai devant le verbe → pas de NO" },
+    { "prompt": "Completa: ___ ve a la festa. (personne — mot négatif devant)", "answer": "Ningú", "hint": "Ningú devant le verbe → pas de NO" },
+    { "prompt": "Completa: No m'agrada ___. (pas du tout)", "answer": "gens", "hint": "gens = pas du tout (intensif)" },
+    { "prompt": "Fes negativa: Ho sé. → No ho ___.", "answer": "sé", "hint": "No ho sé = je ne sais pas" },
+    { "prompt": "Completa: Jo no ho he vist ___. Ni tu tampoc. (non plus)", "answer": "tampoc", "hint": "tampoc = non plus" },
+    { "prompt": "Completa: No puc venir. Jo ___ puc venir. (moi non plus)", "answer": "tampoc", "hint": "Jo tampoc puc venir." },
+    { "prompt": "Completa: ___ he dit res. (je n'ai rien dit — mai devant)", "answer": "Mai", "hint": "Mai no he dit res / Mai he dit res" },
+    { "prompt": "Fes negativa: Tinc molts amics. → No tinc ___ amic. (aucun)", "answer": "cap", "hint": "cap = aucun → No tinc cap amic." },
+    { "prompt": "Completa: No hi ha ___ a casa. (personne à la maison)", "answer": "ningú", "hint": "No hi ha ningú = il n'y a personne" },
+    { "prompt": "Completa la frase negativa: Tinc gana i set. → No tinc ___ gana ___ set.", "answer": "ni, ni", "hint": "ni... ni... pour deux négations" }
+  ]
+}
