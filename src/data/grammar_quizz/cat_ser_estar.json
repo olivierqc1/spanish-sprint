@@ -1,0 +1,26 @@
+{
+  "note": {
+    "fr": "SER vs ESTAR en catalan\n\nSER — identité, origine, profession, caractéristiques permanentes :\n→ Sóc canadenc. (Je suis canadien.)\n→ La Maria és metgessa. (Marie est médecin.)\n→ Barcelona és gran. (Barcelone est grande.)\n→ Són les tres. (Il est 3h.)\n\nESTAR — état temporaire, lieu, résultat :\n→ Estic cansat. (Je suis fatigué.)\n→ On estàs? (Où es-tu?)\n→ El cotxe està brut. (La voiture est sale.)\n→ Estem a Barcelona. (Nous sommes à Barcelone.)\n\nRègle : si tu peux dire 'se trouver' → ESTAR. Sinon → SER.\nLes émotions (content, trist, nerviós) → toujours ESTAR.",
+    "en": "SER vs ESTAR in Catalan\n\nSER — identity, origin, profession, permanent characteristics:\n→ Sóc canadenc. (I am Canadian.)\n→ La Maria és metgessa. (Maria is a doctor.)\n→ Barcelona és gran. (Barcelona is big.)\n→ Són les tres. (It's 3 o'clock.)\n\nESTAR — temporary state, location, result:\n→ Estic cansat. (I am tired.)\n→ On estàs? (Where are you?)\n→ El cotxe està brut. (The car is dirty.)\n→ Estem a Barcelona. (We are in Barcelona.)\n\nRule: if you can say 'to be located' → ESTAR. Otherwise → SER.\nFeelings (content, trist, nerviós) → always ESTAR."
+  },
+  "drills": [
+    { "prompt": "SER o ESTAR? Jo ___ de Montreal. (origen)", "answer": "sóc", "hint": "origen → SER. Jo sóc = je suis" },
+    { "prompt": "SER o ESTAR? Tu ___ molt content avui.", "answer": "estàs", "hint": "emoció → ESTAR. Tu estàs = tu es" },
+    { "prompt": "SER o ESTAR? Ella ___ metgessa.", "answer": "és", "hint": "professió → SER. Ella és = elle est" },
+    { "prompt": "SER o ESTAR? Estem ___ a casa. (lloc)", "answer": "Estem", "hint": "lloc → ESTAR. Estem = nous sommes" },
+    { "prompt": "SER o ESTAR? La sopa ___ freda. (estat temporal)", "answer": "està", "hint": "estat temporal → ESTAR. Ella està = elle est" },
+    { "prompt": "SER o ESTAR? La sopa ___ bona. (qualitat)", "answer": "és", "hint": "qualitat permanent → SER. Ella és = elle est" },
+    { "prompt": "SER o ESTAR? Ell ___ molt alt. (característica física)", "answer": "és", "hint": "característica física → SER" },
+    { "prompt": "SER o ESTAR? Jo ___ molt cansat avui.", "answer": "estic", "hint": "estat temporal → ESTAR. Jo estic = je suis" },
+    { "prompt": "SER o ESTAR? Són les dotze. ← correcte o incorrecte?", "answer": "correcte", "hint": "l'hora → sempre SER" },
+    { "prompt": "SER o ESTAR? La porta ___ oberta.", "answer": "està", "hint": "resultat d'una acció → ESTAR" },
+    { "prompt": "SER o ESTAR? Nosaltres ___ catalans.", "answer": "som", "hint": "identitat → SER. Nosaltres som = nous sommes" },
+    { "prompt": "SER o ESTAR? On ___ les claus? (lloc)", "answer": "estan", "hint": "lloc → ESTAR. Elles estan = elles sont" },
+    { "prompt": "SER o ESTAR? El cel ___ blau.", "answer": "és", "hint": "característica habitual → SER" },
+    { "prompt": "SER o ESTAR? Avui el cel ___ gris. (estat temporal)", "answer": "està", "hint": "estat temporal → ESTAR" },
+    { "prompt": "SER o ESTAR? Vosaltres ___ nerviosos per l'examen.", "answer": "esteu", "hint": "emoció → ESTAR. Vosaltres esteu = vous êtes" },
+    { "prompt": "SER o ESTAR? La reunió ___ a les cinc.", "answer": "és", "hint": "hora/event → SER" },
+    { "prompt": "SER o ESTAR? El menjar ___ fred. Escalfa'l!", "answer": "està", "hint": "estat temporal → ESTAR" },
+    { "prompt": "SER o ESTAR? Ells ___ amics des de petits.", "answer": "són", "hint": "relació permanent → SER" }
+  ]
+}
