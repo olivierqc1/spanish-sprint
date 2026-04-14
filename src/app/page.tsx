@@ -63,6 +63,7 @@ export default function Home() {
       catalanModules: {
         flashcards: { title: 'Flashcards', desc: 'Vocabulaire catalan A1-B1' },
         conjugation: { title: 'Conjugaison', desc: 'Verbes catalans essentiels' },
+        grammar: { title: 'Grammaire', desc: 'Articles, ser/estar, négation...' },
         phrases: { title: 'Phrases du quotidien', desc: 'Survie à Barcelone' },
         dictee: { title: 'Dictée', desc: 'Orthographe catalane' },
       },
@@ -93,6 +94,7 @@ export default function Home() {
       catalanModules: {
         flashcards: { title: 'Flashcards', desc: 'Catalan vocabulary A1-B1' },
         conjugation: { title: 'Conjugation', desc: 'Essential Catalan verbs' },
+        grammar: { title: 'Grammar', desc: 'Articles, ser/estar, negation...' },
         phrases: { title: 'Daily Phrases', desc: 'Survive in Barcelona' },
         dictee: { title: 'Dictation', desc: 'Catalan spelling' },
       },
@@ -151,6 +153,7 @@ export default function Home() {
   const catalanModules = [
     { key: 'flashcards', icon: '🎴', route: 'flashcards', available: true, ...t.catalanModules.flashcards },
     { key: 'conjugaison', icon: '⚡', route: 'conjugaison', available: true, ...t.catalanModules.conjugation },
+    { key: 'grammaire', icon: '📚', route: 'grammaire', available: true, ...t.catalanModules.grammar },
     { key: 'dictee', icon: '✍️', route: 'dictee', available: true, ...t.catalanModules.dictee },
     { key: 'phrases', icon: '💬', route: 'conversations', available: false, ...t.catalanModules.phrases },
   ];
