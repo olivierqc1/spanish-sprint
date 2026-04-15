@@ -1,7 +1,7 @@
 // src/components/GrammarExplorer.tsx
 "use client";
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import type { GrammarPoint } from '@/data/grammar';
 import GrammarDrill from './GrammarDrill';
 
@@ -15,25 +15,35 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
   const [selectedPoint, setSelectedPoint] = useState<GrammarPoint | null>(null);
   const [quizData, setQuizData] = useState<any>(null);
   const [loading, setLoading] = useState(false);
+  const [targetLanguage, setTargetLanguage] = useState<'spanish' | 'catalan'>('spanish');
 
-  // Filtrer par niveau
+  useEffect(() => {
+    const saved = localStorage.getItem('iberian-sprint-target-language');
+    if (saved === 'catalan') setTargetLanguage('catalan');
+    else setTargetLanguage('spanish');
+  }, []);
+
+  // Filtre par niveau ET par langue cible
   const filtered = useMemo(() => {
     return points.filter(p => {
+      // Filtre langue : les points catalan commencent par "cat_"
+      const isCatalanPoint = p.id.startsWith('cat_');
+      if (targetLanguage === 'catalan' && !isCatalanPoint) return false;
+      if (targetLanguage === 'spanish' && isCatalanPoint) return false;
+
+      // Filtre niveau
       if (p.level.includes('-')) {
         const [min, max] = p.level.split('-');
         return min <= initialLevel || max >= initialLevel;
       }
       return p.level === initialLevel || p.level.includes(initialLevel);
     });
-  }, [points, initialLevel]);
+  }, [points, initialLevel, targetLanguage]);
 
-  // Charger les données du quiz avec import dynamique
   const loadQuiz = async (point: GrammarPoint) => {
     setLoading(true);
     setSelectedPoint(point);
-    
     try {
-      // Import dynamique du JSON - Webpack va les bundler automatiquement
       const data = await import(`@/data/grammar_quizz/${point.id}.json`);
       setQuizData(data.default || data);
     } catch (error) {
@@ -44,16 +54,20 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     }
   };
 
-  // Vue liste
+  const accentColor = targetLanguage === 'catalan' ? '#f59e0b' : '#3b82f6';
+
   if (!selectedPoint) {
     return (
       <div className="space-y-4">
         <div className="bg-slate-800 rounded-xl p-6 border border-slate-700">
-          <h2 className="text-2xl font-bold mb-4 text-blue-300">
-            {language === 'fr' ? '📚 Points de grammaire' : '📚 Grammar Points'}
+          <h2 className="text-2xl font-bold mb-2" style={{ color: accentColor }}>
+            {targetLanguage === 'catalan'
+              ? (language === 'fr' ? '📚 Grammaire catalane' : '📚 Catalan Grammar')
+              : (language === 'fr' ? '📚 Points de grammaire' : '📚 Grammar Points')
+            }
           </h2>
-          <p className="text-slate-400 mb-4">
-            {language === 'fr' 
+          <p className="text-slate-400">
+            {language === 'fr'
               ? `${filtered.length} points disponibles pour le niveau ${initialLevel}`
               : `${filtered.length} points available for level ${initialLevel}`
             }
@@ -76,11 +90,12 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
                     {point.note[language]}
                   </p>
                 </div>
-                <div className="flex flex-col items-end gap-1">
-                  <span className="px-2 py-1 bg-blue-600 rounded text-xs font-bold">
+                <div className="flex flex-col items-end gap-1 flex-shrink-0">
+                  <span className="px-2 py-1 rounded text-xs font-bold text-white"
+                    style={{ background: accentColor }}>
                     {point.level}
                   </span>
-                  <span className="text-blue-400 text-sm">→</span>
+                  <span className="text-sm" style={{ color: accentColor }}>→</span>
                 </div>
               </div>
             </button>
@@ -90,7 +105,6 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     );
   }
 
-  // Loading
   if (loading) {
     return (
       <div className="bg-slate-800 rounded-xl p-12 text-center border border-slate-700">
@@ -102,7 +116,6 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     );
   }
 
-  // Error
   if (!quizData) {
     return (
       <div className="bg-slate-800 rounded-xl p-12 text-center border border-slate-700">
@@ -119,7 +132,6 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     );
   }
 
-  // Quiz loaded - use GrammarDrill component
   return (
     <GrammarDrill
       title={selectedPoint.title}
