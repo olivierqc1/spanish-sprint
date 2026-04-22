@@ -136,6 +136,7 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     <GrammarDrill
       title={selectedPoint.title}
       note={quizData.note}
+      visual={quizData.visual}
       drills={quizData.drills}
       onClose={() => {
         setSelectedPoint(null);
