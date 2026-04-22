@@ -1,0 +1,108 @@
+{
+  "note": {
+    "fr": "Imparfait vs Passé simple — quand utiliser lequel?\n\nIMPARFAIT (Pretérito Imperfecto) — hablaba, comía, vivía\nUtilise l'imparfait pour :\n1. DESCRIPTION dans le passé (décor, contexte)\n   → Era una noche tranquila. (C'était une nuit calme.)\n   → Hacía frío. (Il faisait froid.)\n2. HABITUDE dans le passé (action répétée)\n   → De niño, jugaba al fútbol todos los días.\n   → Cuando era pequeño, vivía en Madrid.\n3. ACTION EN COURS interrompue par une autre\n   → Dormía cuando sonó el teléfono.\n   (Je dormais quand le téléphone a sonné.)\n4. ÉTAT MENTAL ou physique passé\n   → Estaba cansado. Tenía hambre.\n\nPASSÉ SIMPLE (Pretérito Indefinido) — hablé, comí, viví\nUtilise le passé simple pour :\n1. ACTION TERMINÉE à un moment précis\n   → Ayer fui al médico. (Hier je suis allé chez le médecin.)\n   → En 2010 me mudé a Barcelona.\n2. SÉQUENCE D'ACTIONS dans le passé\n   → Llegué, me duché y me fui a dormir.\n3. ACTION QUI INTERROMPT une autre\n   → Dormía cuando SONÓ el teléfono. (← passé simple)\n\nTRUC : imparfait = fond/contexte/habitude. Passé simple = action ponctuelle.\nMots clés IMPARFAIT : siempre, todos los días, antes, de niño, mientras, cuando (contexte)\nMots clés PASSÉ SIMPLE : ayer, el lunes, en 2010, de repente, entonces, una vez",
+    "en": "Imperfect vs Preterite — when to use which?\n\nIMPERFECT (Pretérito Imperfecto) — hablaba, comía, vivía\nUse the imperfect for:\n1. DESCRIPTION in the past (background, context)\n   → Era una noche tranquila. (It was a calm night.)\n   → Hacía frío. (It was cold.)\n2. HABIT in the past (repeated action)\n   → De niño, jugaba al fútbol todos los días.\n   → Cuando era pequeño, vivía en Madrid.\n3. ONGOING ACTION interrupted by another\n   → Dormía cuando sonó el teléfono.\n   (I was sleeping when the phone rang.)\n4. MENTAL or physical STATE in the past\n   → Estaba cansado. Tenía hambre.\n\nPRETERITE (Pretérito Indefinido) — hablé, comí, viví\nUse the preterite for:\n1. COMPLETED ACTION at a specific moment\n   → Ayer fui al médico. (Yesterday I went to the doctor.)\n   → En 2010 me mudé a Barcelona.\n2. SEQUENCE OF ACTIONS in the past\n   → Llegué, me duché y me fui a dormir.\n3. ACTION THAT INTERRUPTS another\n   → Dormía cuando SONÓ el teléfono. (← preterite)\n\nTRICK: imperfect = background/context/habit. Preterite = specific completed action.\nIMPERFECT clues: siempre, todos los días, antes, de niño, mientras, cuando (context)\nPRETERITE clues: ayer, el lunes, en 2010, de repente, entonces, una vez"
+  },
+  "drills": [
+    {
+      "prompt": "Ayer (ir/yo) ___ al supermercado y (comprar/yo) ___ pan. (actions ponctuelles)",
+      "answer": "fui, compré",
+      "hint": "ayer + action précise → passé simple : fui, compré"
+    },
+    {
+      "prompt": "Cuando era pequeño, (vivir/yo) ___ en un pueblo tranquilo. (habitude passée)",
+      "answer": "vivía",
+      "hint": "cuando era pequeño + habitude → imparfait : vivía"
+    },
+    {
+      "prompt": "(Ser) ___ las tres de la mañana cuando (llegar/él) ___. (contexte + action)",
+      "answer": "Eran, llegó",
+      "hint": "eran = contexte (imparfait) / llegó = action précise (passé simple)"
+    },
+    {
+      "prompt": "De niño, (jugar/yo) ___ al fútbol todos los días. (habitude)",
+      "answer": "jugaba",
+      "hint": "todos los días + de niño → habitude → imparfait"
+    },
+    {
+      "prompt": "El lunes pasado (llamar/ella) ___ tres veces pero no (contestar/yo) ___. (actions précises)",
+      "answer": "llamó, contesté",
+      "hint": "el lunes pasado = moment précis → passé simple"
+    },
+    {
+      "prompt": "(Leer/yo) ___ cuando de repente (apagarse) ___ la luz. (action en cours + interruption)",
+      "answer": "Leía, se apagó",
+      "hint": "leía = action en cours (imparfait) / se apagó = interruption (passé simple)"
+    },
+    {
+      "prompt": "Siempre (desayunar/nosotros) ___ juntos cuando (ser) ___ niños. (habitude)",
+      "answer": "desayunábamos, éramos",
+      "hint": "siempre + cuando éramos niños → imparfait pour les deux"
+    },
+    {
+      "prompt": "En 2015, (mudarse/ella) ___ a Barcelona y (empezar) ___ a trabajar allí. (séquence)",
+      "answer": "se mudó, empezó",
+      "hint": "en 2015 + séquence d'actions → passé simple"
+    },
+    {
+      "prompt": "(Hacer) ___ mucho frío cuando (salir/nosotros) ___ de casa. (contexte + action)",
+      "answer": "Hacía, salimos",
+      "hint": "hacía = description météo (imparfait) / salimos = action précise (passé simple)"
+    },
+    {
+      "prompt": "Antes, (trabajar/él) ___ en un banco, pero el año pasado (cambiar) ___ de trabajo.",
+      "answer": "trabajaba, cambió",
+      "hint": "antes → imparfait / el año pasado → passé simple"
+    },
+    {
+      "prompt": "¿Qué (hacer/tú) ___ ayer a las ocho de la tarde? (moment précis)",
+      "answer": "hiciste",
+      "hint": "ayer + heure précise = action ponctuelle → passé simple"
+    },
+    {
+      "prompt": "¿Qué (hacer/tú) ___ a las ocho todos los días cuando (ser) ___ estudiante? (habitude)",
+      "answer": "hacías, eras",
+      "hint": "todos los días + cuando eras = habitude → imparfait"
+    },
+    {
+      "prompt": "De repente, (entrar) ___ un hombre con sombrero. (action soudaine)",
+      "answer": "entró",
+      "hint": "de repente = soudainement → action ponctuelle → passé simple"
+    },
+    {
+      "prompt": "Mientras (hablar/ella) ___ por teléfono, (quemarse) ___ la comida. (simultané + résultat)",
+      "answer": "hablaba, se quemó",
+      "hint": "mientras → imparfait / résultat ponctuel → passé simple"
+    },
+    {
+      "prompt": "Antes (tener/yo) ___ mucho tiempo libre. Ahora no. (état passé)",
+      "answer": "tenía",
+      "hint": "antes + état habituel → imparfait"
+    },
+    {
+      "prompt": "El domingo (levantarse/yo) ___ tarde, (desayunar) ___ tranquilamente y (salir) ___ a pasear. (séquence)",
+      "answer": "me levanté, desayuné, salí",
+      "hint": "el domingo + séquence complète → passé simple pour les 3"
+    },
+    {
+      "prompt": "(Conocer/yo) ___ a mi mejor amigo cuando (tener/nosotros) ___ diez años. (moment précis + contexte âge)",
+      "answer": "Conocí, teníamos",
+      "hint": "conocí = moment précis (passé simple) / teníamos = contexte âge (imparfait)"
+    },
+    {
+      "prompt": "Todos los veranos (ir/nosotros) ___ a la playa. Una vez (quedarse) ___ dos semanas enteras.",
+      "answer": "íbamos, nos quedamos",
+      "hint": "todos los veranos = habitude (imparfait) / una vez = exception précise (passé simple)"
+    },
+    {
+      "prompt": "(Estar/yo) ___ muy nervioso porque (tener) ___ un examen importante al día siguiente.",
+      "answer": "Estaba, tenía",
+      "hint": "état émotionnel + contexte → imparfait pour les deux"
+    },
+    {
+      "prompt": "El profesor (explicar) ___ la lección cuando (sonar) ___ el timbre. (cours interrompu)",
+      "answer": "explicaba, sonó",
+      "hint": "explicaba = action en cours (imparfait) / sonó = interruption (passé simple)"
+    }
+  ]
+}
