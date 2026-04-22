@@ -179,5 +179,32 @@
       "answer": "vi, habia visto",
       "hint": "ayer vi = passe simple / depuis longtemps = plus-que-parfait"
     }
-  ]
+  ],
+  "visual": {
+    "type": "comparison",
+    "left": {
+      "title": "IMPARFAIT = fond",
+      "color": "#3b82f6",
+      "items": [
+        "hablaba / comia / vivia",
+        "era / tenia / hacia",
+        "Habitude (siempre, antes)",
+        "Description / etat",
+        "Action en cours...",
+        "Deux actions en meme temps"
+      ]
+    },
+    "right": {
+      "title": "PASSE SIMPLE = action",
+      "color": "#ef4444",
+      "items": [
+        "hable / comi / vivi",
+        "fui / tuve / hice",
+        "Moment precis (ayer, el lunes)",
+        "Action terminee",
+        "...interrompue (cuando)",
+        "Sequence (puis puis puis)"
+      ]
+    }
+  }
 }
