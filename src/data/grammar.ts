@@ -1079,4 +1079,18 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_pronoms.json"
   },
+{
+  id: "imperfecto_vs_indefinido",
+  title: {
+    fr: "Imparfait vs Passé simple — lequel choisir?",
+    en: "Imperfect vs Preterite — which one to use?"
+  },
+  level: "A2",
+  note: {
+    fr: "Différence entre l'imparfait (hablaba) et le passé simple (hablé).",
+    en: "Difference between the imperfect (hablaba) and the preterite (hablé)."
+  },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/imperfecto_vs_indefinido.json"
+},
 ];
