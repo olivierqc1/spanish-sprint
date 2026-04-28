@@ -1,0 +1,44 @@
+{
+  "id": "imperativo_negativo",
+  "title": {
+    "fr": "Impératif négatif (no + subjonctif)",
+    "en": "Negative imperative (no + subjunctive)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ L'**impératif négatif** en espagnol se forme avec **no + subjonctif présent** pour toutes les personnes.\n\n🔹 **Règle universelle :** no + subjonctif présent\n\n| Pronom | -ar (hablar) | -er (comer) | -ir (vivir) |\n|--------|-------------|-------------|-------------|\n| tú | **no hables** | **no comas** | **no vivas** |\n| usted | **no hable** | **no coma** | **no viva** |\n| nosotros | **no hablemos** | **no comamos** | **no vivamos** |\n| vosotros | **no habléis** | **no comáis** | **no viváis** |\n| ustedes | **no hablen** | **no coman** | **no vivan** |\n\n🔹 **Impératif négatif des irréguliers :**\n\n| Verbe | tú | usted | nosotros | vosotros | ustedes |\n|-------|----|-------|----------|----------|---------|\n| **hacer** | **no hagas** | **no haga** | **no hagamos** | **no hagáis** | **no hagan** |\n| **ir** | **no vayas** | **no vaya** | **no vayamos** | **no vayáis** | **no vayan** |\n| **venir** | **no vengas** | **no venga** | **no vengamos** | **no vengáis** | **no vengan** |\n| **decir** | **no digas** | **no diga** | **no digamos** | **no digáis** | **no digan** |\n| **tener** | **no tengas** | **no tenga** | **no tengamos** | **no tengáis** | **no tengan** |\n| **ser** | **no seas** | **no sea** | **no seamos** | **no seáis** | **no sean** |\n| **poner** | **no pongas** | **no ponga** | **no pongamos** | **no pongáis** | **no pongan** |\n| **salir** | **no salgas** | **no salga** | **no salgamos** | **no salgáis** | **no salgan** |\n\n⚠️ **Le piège classique — affirmatif vs négatif (tú) :**\n- ✅ Affirmatif : *habla, haz, ve, ven, di* (formes spéciales)\n- ✅ Négatif : *no hables, no hagas, no vayas, no vengas, no digas* (subjonctif)\n- ❌ Jamais : *no habla, no haz, no ve* ← FAUX\n\n💬 **Exemples :**\n➡️ *¡No hables tan rápido!* (Ne parle pas si vite !)\n➡️ *No hagas ruido.* (Ne fais pas de bruit.)\n➡️ *No vayas solo.* (Ne vas pas seul.)\n➡️ *No vengas tarde.* (Ne viens pas en retard.)\n➡️ *No digas mentiras.* (Ne dis pas de mensonges.)",
+    "en": "⚙️ The **negative imperative** in Spanish is formed with **no + present subjunctive** for all persons.\n\n🔹 **Universal rule:** no + present subjunctive\n\n| Pronoun | -ar (hablar) | -er (comer) | -ir (vivir) |\n|---------|-------------|-------------|-------------|\n| tú | **no hables** | **no comas** | **no vivas** |\n| usted | **no hable** | **no coma** | **no viva** |\n| nosotros | **no hablemos** | **no comamos** | **no vivamos** |\n| vosotros | **no habléis** | **no comáis** | **no viváis** |\n| ustedes | **no hablen** | **no coman** | **no vivan** |\n\n⚠️ **Key contrast — affirmative vs negative (tú):**\n- ✅ Affirmative: *habla, haz, ve, ven, di* (special forms)\n- ✅ Negative: *no hables, no hagas, no vayas, no vengas, no digas* (subjunctive)\n- ❌ Never: *no habla, no haz, no ve* ← WRONG"
+  },
+  "drills": [
+    { "prompt": "___ (tú) tan rápido. (no + hablar)", "answer": "No hables" },
+    { "prompt": "___ (tú) ruido. (no + hacer)", "answer": "No hagas" },
+    { "prompt": "___ (tú) solo. (no + ir)", "answer": "No vayas" },
+    { "prompt": "___ (tú) tarde. (no + venir)", "answer": "No vengas" },
+    { "prompt": "___ (tú) mentiras. (no + decir)", "answer": "No digas" },
+    { "prompt": "___ (tú) miedo. (no + tener)", "answer": "No tengas" },
+    { "prompt": "___ (tú) impaciente. (no + ser)", "answer": "No seas" },
+    { "prompt": "___ (tú) eso ahí. (no + poner)", "answer": "No pongas" },
+    { "prompt": "___ (tú) sin avisar. (no + salir)", "answer": "No salgas" },
+    { "prompt": "___ (tú) la ventana. (no + abrir)", "answer": "No abras" },
+    { "prompt": "___ (tú) tanto azúcar. (no + comer)", "answer": "No comas" },
+    { "prompt": "___ (tú) alcohol. (no + beber)", "answer": "No bebas" },
+    { "prompt": "___ (usted) aquí. (no + aparcar)", "answer": "No aparque" },
+    { "prompt": "___ (usted) el formulario con bolígrafo. (no + hacer)", "answer": "No haga" },
+    { "prompt": "___ (usted) por aquí. (no + pasar)", "answer": "No pase" },
+    { "prompt": "___ (usted) tarde. (no + venir)", "answer": "No venga" },
+    { "prompt": "___ (usted) nada sin preguntar. (no + hacer)", "answer": "No haga" },
+    { "prompt": "___ (usted) al despacho ahora. (no + ir)", "answer": "No vaya" },
+    { "prompt": "___ (usted) preocupado. (no + ser)", "answer": "No sea" },
+    { "prompt": "___ (nosotros) tan tarde. (no + ir)", "answer": "No vayamos" },
+    { "prompt": "___ (nosotros) eso ahora. (no + hacer)", "answer": "No hagamos" },
+    { "prompt": "___ (nosotros) tanto. (no + hablar)", "answer": "No hablemos" },
+    { "prompt": "___ (nosotros) tan tarde. (no + venir)", "answer": "No vengamos" },
+    { "prompt": "___ (vosotros) el móvil en clase. (no + usar → no uséis)", "answer": "No uséis" },
+    { "prompt": "___ (vosotros) nada. (no + decir)", "answer": "No digáis" },
+    { "prompt": "___ (vosotros) tan tarde. (no + llegar → no lleguéis)", "answer": "No lleguéis" },
+    { "prompt": "___ (vosotros) impacientes. (no + ser)", "answer": "No seáis" },
+    { "prompt": "___ (ustedes) fotos aquí. (no + hacer)", "answer": "No hagan" },
+    { "prompt": "___ (ustedes) tarde. (no + venir)", "answer": "No vengan" },
+    { "prompt": "___ (ustedes) al fondo de la sala. (no + ir)", "answer": "No vayan" }
+  ]
+}
