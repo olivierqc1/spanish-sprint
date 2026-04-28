@@ -1093,4 +1093,36 @@ export const grammarPoints: GrammarPoint[] = [
   country: "all",
   jsonPath: "/data/grammar_quizz/imperfecto_vs_indefinido.json"
 },
+// ─── ENTRÉES À AJOUTER DANS grammar.ts ────────────────────────────────────────
+// Coller après l'entrée "imperfecto_vs_indefinido" (dernière entrée du tableau)
+
+  {
+    id: "recordar_vs_acordarse",
+    title: {
+      fr: "RECORDAR vs ACORDARSE – Se souvenir",
+      en: "RECORDAR vs ACORDARSE – To remember"
+    },
+    level: "A2",
+    note: {
+      fr: "Différence entre RECORDAR (transitif direct) et ACORDARSE (pronominal + de).",
+      en: "Difference between RECORDAR (transitive) and ACORDARSE (reflexive + de)."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/recordar_vs_acordarse.json"
+  },
+  {
+    id: "cat_recordar_vs_recordarse",
+    title: {
+      fr: "Catalan — RECORDAR vs RECORDAR-SE – Se souvenir",
+      en: "Catalan — RECORDAR vs RECORDAR-SE – To remember"
+    },
+    level: "A1-A2",
+    note: {
+      fr: "Différence entre RECORDAR (transitif) et RECORDAR-SE DE (pronominal) en catalan.",
+      en: "Difference between RECORDAR (transitive) and RECORDAR-SE DE (reflexive) in Catalan."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_recordar_vs_recordarse.json"
+  },
+
 ];
