@@ -1,0 +1,44 @@
+{
+  "id": "acentuacion_reglas",
+  "title": {
+    "fr": "Les accents en espagnol – Agudas, Llanas, Esdrújulas",
+    "en": "Spanish accents – Agudas, Llanas, Esdrújulas"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ En espagnol, l'accent écrit (tilde) suit des règles précises selon où tombe la syllabe tonique.\n\n🔹 **Groupe 1 — AGUDAS** (accent sur la DERNIÈRE syllabe)\n- Prennent un accent écrit si le mot finit par **voyelle, -n ou -s**\n- ➡️ *ca**fé**, can**ción**, com**pás***\n- Pas d'accent si finit par une consonne autre : *re**loj**, es**pa**ñol*\n\n🔹 **Groupe 2 — LLANAS / GRAVES** (accent sur l'AVANT-DERNIÈRE syllabe)\n- Prennent un accent écrit si le mot finit par **consonne ≠ n/s**\n- ➡️ *á**r**bol, lá**piz**, **fá**cil*\n- Pas d'accent si finit par voyelle, -n ou -s : *ca**sa**, **jo**ven*\n\n🔹 **Groupe 3 — ESDRÚJULAS** (accent sur l'ANTÉPÉNULTIÈME syllabe)\n- **Toujours** un accent écrit, sans exception\n- ➡️ ***mú**sica, **mé**dico, **rá**pido, **sá**bado*\n\n💡 **Astuce :** Les esdrújulas, c'est facile — tilde obligatoire 100% du temps.\n\n⚠️ **Cas spéciaux — accent diacritique :**\n- **tú** (toi) vs *tu* (ton)\n- **él** (il) vs *el* (le)\n- **sí** (oui / si conditionnel) vs *si* (si)\n- **mí** (moi) vs *mi* (mon)\n- **sé** (je sais / sois) vs *se* (pronom)\n- **más** (plus) vs *mas* (mais littéraire)\n- **té** (thé) vs *te* (te)\n- **dé** (subj. de dar) vs *de* (de)",
+    "en": "⚙️ In Spanish, the written accent (tilde) follows precise rules depending on where the stressed syllable falls.\n\n🔹 **Group 1 — AGUDAS** (stress on LAST syllable)\n- Need a written accent if the word ends in **vowel, -n or -s**\n- ➡️ *ca**fé**, can**ción**, com**pás***\n- No accent if ends in another consonant: *re**loj**, es**pa**ñol*\n\n🔹 **Group 2 — LLANAS / GRAVES** (stress on SECOND-TO-LAST syllable)\n- Need a written accent if the word ends in a **consonant ≠ n/s**\n- ➡️ *á**r**bol, lá**piz**, **fá**cil*\n- No accent if ends in vowel, -n or -s: *ca**sa**, **jo**ven*\n\n🔹 **Group 3 — ESDRÚJULAS** (stress on THIRD-TO-LAST syllable)\n- **Always** have a written accent, no exceptions\n- ➡️ ***mú**sica, **mé**dico, **rá**pido, **sá**bado*"
+  },
+  "drills": [
+    { "prompt": "cafe → Est-ce que ce mot prend un accent ? (aguda finissant en voyelle)", "answer": "Sí → café" },
+    { "prompt": "cancion → Est-ce que ce mot prend un accent ? (aguda finissant en -n)", "answer": "Sí → canción" },
+    { "prompt": "compas → Est-ce que ce mot prend un accent ? (aguda finissant en -s)", "answer": "Sí → compás" },
+    { "prompt": "reloj → Est-ce que ce mot prend un accent ? (aguda finissant en consonne ≠ n/s)", "answer": "No → reloj" },
+    { "prompt": "español → Est-ce que ce mot prend un accent ? (aguda finissant en -l)", "answer": "No → español" },
+    { "prompt": "papel → Est-ce que ce mot prend un accent ? (aguda finissant en -l)", "answer": "No → papel" },
+    { "prompt": "arbol → Est-ce que ce mot prend un accent ? (llana finissant en -l)", "answer": "Sí → árbol" },
+    { "prompt": "lapiz → Est-ce que ce mot prend un accent ? (llana finissant en -z)", "answer": "Sí → lápiz" },
+    { "prompt": "facil → Est-ce que ce mot prend un accent ? (llana finissant en -l)", "answer": "Sí → fácil" },
+    { "prompt": "casa → Est-ce que ce mot prend un accent ? (llana finissant en voyelle)", "answer": "No → casa" },
+    { "prompt": "joven → Est-ce que ce mot prend un accent ? (llana finissant en -n)", "answer": "No → joven" },
+    { "prompt": "crisis → Est-ce que ce mot prend un accent ? (llana finissant en -s)", "answer": "No → crisis" },
+    { "prompt": "musica → Est-ce que ce mot prend un accent ? (esdrújula)", "answer": "Sí → música" },
+    { "prompt": "medico → Est-ce que ce mot prend un accent ? (esdrújula)", "answer": "Sí → médico" },
+    { "prompt": "rapido → Est-ce que ce mot prend un accent ? (esdrújula)", "answer": "Sí → rápido" },
+    { "prompt": "sabado → Est-ce que ce mot prend un accent ? (esdrújula)", "answer": "Sí → sábado" },
+    { "prompt": "matematicas → Est-ce que ce mot prend un accent ? (esdrújula)", "answer": "Sí → matemáticas" },
+    { "prompt": "ejercito → Est-ce que ce mot prend un accent ? (esdrújula)", "answer": "Sí → ejército" },
+    { "prompt": "telefono → Est-ce que ce mot prend un accent ? (esdrújula)", "answer": "Sí → teléfono" },
+    { "prompt": "publico → Est-ce que ce mot prend un accent ? (esdrújula)", "answer": "Sí → público" },
+    { "prompt": "numero → Est-ce que ce mot prend un accent ? (esdrújula)", "answer": "Sí → número" },
+    { "prompt": "Tu vs tú — ___ libro es muy interesante. (adjectif possessif)", "answer": "Tu (sans accent)" },
+    { "prompt": "Tu vs tú — ___ eres muy inteligente. (pronom sujet)", "answer": "Tú (avec accent)" },
+    { "prompt": "El vs él — ___ profesor habla rápido. (article)", "answer": "El (sans accent)" },
+    { "prompt": "El vs él — ___ no sabe la respuesta. (pronom)", "answer": "Él (avec accent)" },
+    { "prompt": "Si vs sí — ___, quiero un café. (oui)", "answer": "Sí (avec accent)" },
+    { "prompt": "Si vs sí — ___ quieres, te ayudo. (si conditionnel)", "answer": "Si (sans accent)" },
+    { "prompt": "Mi vs mí — ___ casa está cerca. (adjectif possessif)", "answer": "Mi (sans accent)" },
+    { "prompt": "Mi vs mí — Esto es para ___. (pronom tonique)", "answer": "Mí (avec accent)" },
+    { "prompt": "Mas vs más — Quiero ___ agua, por favor. (plus)", "answer": "Más (avec accent)" }
+  ]
+}
