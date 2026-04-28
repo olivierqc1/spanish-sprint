@@ -1,0 +1,44 @@
+{
+  "id": "recordar_vs_acordarse",
+  "title": {
+    "fr": "RECORDAR vs ACORDARSE – Se souvenir",
+    "en": "RECORDAR vs ACORDARSE – To remember"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ **RECORDAR** et **ACORDARSE** signifient tous les deux « se souvenir », mais leur structure est différente.\n\n🔹 **RECORDAR** — verbe transitif direct\n- Se construit **sans préposition** : *recordar + COD*\n- Peut aussi signifier **rappeler quelque chose à quelqu'un** : *te recuerdo que...*\n\n➡️ *Recuerdo tu nombre.* (Je me souviens de ton nom.)\n➡️ *¿Recuerdas la película?* (Tu te souviens du film ?)\n➡️ *Te recuerdo que tienes una cita.* (Je te rappelle que t'as un rendez-vous.)\n\n🔹 **ACORDARSE** — verbe pronominal + DE\n- C'est un verbe réfléchi : *me acuerdo, te acuerdas, se acuerda...*\n- Exige **toujours la préposition DE** : *acordarse + de + COD*\n\n➡️ *Me acuerdo de tu nombre.* (Je me souviens de ton nom.)\n➡️ *¿Te acuerdas de la película?* (Tu te souviens du film ?)\n➡️ *No me acuerdo de nada.* (Je me souviens de rien.)\n\n⚠️ **Le piège classique :** avec *acordarse*, le DE est **obligatoire** !\n❌ *Me acuerdo tu nombre.* → ✅ *Me acuerdo **de** tu nombre.*\n\n💡 **Conjugaison de ACORDARSE (présent) :**\n- yo **me acuerdo**\n- tú **te acuerdas**\n- él/ella **se acuerda**\n- nosotros **nos acordamos**\n- vosotros **os acordáis**\n- ellos **se acuerdan**\n\n🔸 **En pratique :** les deux sont interchangeables. *Recordar* est légèrement plus formel ; *acordarse* est très courant à l'oral.",
+    "en": "⚙️ **RECORDAR** and **ACORDARSE** both mean 'to remember', but their structure is different.\n\n🔹 **RECORDAR** — transitive verb\n- No preposition needed: *recordar + direct object*\n- Can also mean **to remind someone of something**: *te recuerdo que...*\n\n➡️ *Recuerdo tu nombre.* (I remember your name.)\n➡️ *¿Recuerdas la película?* (Do you remember the film?)\n➡️ *Te recuerdo que tienes una cita.* (I remind you that you have an appointment.)\n\n🔹 **ACORDARSE** — reflexive verb + DE\n- Always requires the preposition DE: *acordarse + de + object*\n\n➡️ *Me acuerdo de tu nombre.* (I remember your name.)\n➡️ *¿Te acuerdas de la película?* (Do you remember the film?)\n➡️ *No me acuerdo de nada.* (I don't remember anything.)\n\n⚠️ **Classic mistake:** with *acordarse*, DE is **mandatory**!\n❌ *Me acuerdo tu nombre.* → ✅ *Me acuerdo **de** tu nombre.*\n\n💡 **ACORDARSE conjugation (present):**\n- yo **me acuerdo**\n- tú **te acuerdas**\n- él/ella **se acuerda**\n- nosotros **nos acordamos**\n- vosotros **os acordáis**\n- ellos **se acuerdan**\n\n🔸 **In practice:** both are interchangeable. *Recordar* is slightly more formal; *acordarse* is very common in speech."
+  },
+  "drills": [
+    { "prompt": "___ (yo) tu número de teléfono. (recordar – forme correcte)", "answer": "Recuerdo" },
+    { "prompt": "Me ___ de tu número de teléfono. (acordarse – forme correcte)", "answer": "acuerdo" },
+    { "prompt": "¿___ (tú) dónde vivía antes? (recordar)", "answer": "Recuerdas" },
+    { "prompt": "¿Te ___ de dónde vivía antes? (acordarse)", "answer": "acuerdas" },
+    { "prompt": "No ___ (yo) su apellido. (recordar – négatif)", "answer": "recuerdo" },
+    { "prompt": "No me ___ de su apellido. (acordarse – négatif)", "answer": "acuerdo" },
+    { "prompt": "Ella ___ perfectamente aquel día. (recordar)", "answer": "recuerda" },
+    { "prompt": "Ella se ___ perfectamente de aquel día. (acordarse)", "answer": "acuerda" },
+    { "prompt": "Te ___ que mañana hay reunión. (recordar = rappeler)", "answer": "recuerdo" },
+    { "prompt": "Nos ___ de vosotros a menudo. (acordarse)", "answer": "acordamos" },
+    { "prompt": "¿___ (vosotros) la primera vez que nos vimos? (recordar)", "answer": "Recordáis" },
+    { "prompt": "¿Os ___ de la primera vez que nos vimos? (acordarse)", "answer": "acordáis" },
+    { "prompt": "Ellos no ___ el camino al hotel. (recordar)", "answer": "recuerdan" },
+    { "prompt": "Ellos no se ___ del camino al hotel. (acordarse)", "answer": "acuerdan" },
+    { "prompt": "___ (yo) muy bien esa canción. (recordar)", "answer": "Recuerdo" },
+    { "prompt": "Me ___ muy bien de esa canción. (acordarse)", "answer": "acuerdo" },
+    { "prompt": "¿___ (tú) haberme dicho eso? (recordar)", "answer": "Recuerdas" },
+    { "prompt": "¿Te ___ de haberme dicho eso? (acordarse)", "answer": "acuerdas" },
+    { "prompt": "Les ___ a sus alumnos las reglas cada día. (recordar = rappeler à)", "answer": "recuerda" },
+    { "prompt": "Siempre me ___ de comprar café los domingos. (acordarse)", "answer": "acuerdo" },
+    { "prompt": "No ___ (nosotros) su dirección exacta. (recordar)", "answer": "recordamos" },
+    { "prompt": "No nos ___ de su dirección exacta. (acordarse)", "answer": "acordamos" },
+    { "prompt": "Me ___ que tienes que llamar al médico. (recordar = rappeler – impératif informel)", "answer": "recuerda" },
+    { "prompt": "¿Se ___ usted de mí? (acordarse – vouvoiement)", "answer": "acuerda" },
+    { "prompt": "Siempre ___ (yo) los buenos momentos. (recordar)", "answer": "recuerdo" },
+    { "prompt": "Siempre me ___ de los buenos momentos. (acordarse)", "answer": "acuerdo" },
+    { "prompt": "___ (tú) ponerme un mensaje, por favor. (recordar = rappelle-toi de)", "answer": "Recuerda" },
+    { "prompt": "¿Os ___ de la excursión a Montserrat? (acordarse)", "answer": "acordáis" },
+    { "prompt": "Él no ___ nada de lo que pasó. (recordar)", "answer": "recuerda" },
+    { "prompt": "Él no se ___ de nada de lo que pasó. (acordarse)", "answer": "acuerda" }
+  ]
+}
