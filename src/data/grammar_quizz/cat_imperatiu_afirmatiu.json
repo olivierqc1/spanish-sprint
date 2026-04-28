@@ -1,0 +1,44 @@
+{
+  "id": "cat_imperatiu_afirmatiu",
+  "title": {
+    "fr": "Catalan — Impératif affirmatif (regular + irréguliers)",
+    "en": "Catalan — Affirmative imperative (regular + irregular)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ L'**impératif affirmatif** sert à donner des ordres, des conseils ou des instructions.\n\n🔹 **Formes régulières :**\n\n| Pronom | -ar (parlar) | -er (córrer) | -ir (obrir) |\n|--------|-------------|-------------|-------------|\n| tu | **parla** | **corre** | **obre** |\n| vostè | **parli** | **corri** | **obri** |\n| nosaltres | **parlem** | **correguem** | **obrim** |\n| vosaltres | **parleu** | **correu** | **obriu** |\n| vostès | **parlin** | **corrin** | **obrin** |\n\n🔹 **Verbes irréguliers essentiels :**\n\n| Verbe | tu | vostè | nosaltres | vosaltres | vostès |\n|-------|----|-------|-----------|-----------|--------|\n| **fer** (faire) | **fes** | **faci** | **fem** | **feu** | **facin** |\n| **anar** (aller) | **vés** | **vagi** | **anem** | **aneu** | **vagin** |\n| **venir** (venir) | **vine** | **vingui** | **vinguem** | **vingueu** | **vinguin** |\n| **dir** (dire) | **digues** | **digui** | **diguem** | **digueu** | **diguin** |\n| **tenir** (avoir) | **té** | **tingui** | **tinguem** | **tingueu** | **tinguin** |\n| **ser** (être) | **sigues** | **sigui** | **siguem** | **sigueu** | **siguin** |\n| **saber** (savoir) | **sàpigues** | **sàpiga** | **sapiguem** | **sapigueu** | **sàpiguen** |\n\n💡 **Remarques clés :**\n- La forme **tu** de l'impératif = 3e personne du présent (souvent)\n- La forme **vostè/vostès** = subjonctif présent\n- **anar → vés** (et non *anas*) — irrégulier total au singulier\n- **fer → fes** — très courant, à mémoriser absolument\n\n💬 **Exemples :**\n➡️ *Parla més a poc a poc!* (Parle plus lentement !)\n➡️ *Fes els deures!* (Fais tes devoirs !)\n➡️ *Vés a comprar pa.* (Va acheter du pain.)\n➡️ *Vine aquí!* (Viens ici !)\n➡️ *Digues la veritat.* (Dis la vérité.)",
+    "en": "⚙️ The **affirmative imperative** is used to give orders, advice or instructions.\n\n🔹 **Regular forms:**\n\n| Pronoun | -ar (parlar) | -er (córrer) | -ir (obrir) |\n|---------|-------------|-------------|-------------|\n| tu | **parla** | **corre** | **obre** |\n| vostè | **parli** | **corri** | **obri** |\n| nosaltres | **parlem** | **correguem** | **obrim** |\n| vosaltres | **parleu** | **correu** | **obriu** |\n| vostès | **parlin** | **corrin** | **obrin** |\n\n🔹 **Essential irregular verbs:**\n\n| Verb | tu | vostè | nosaltres | vosaltres | vostès |\n|------|----|-------|-----------|-----------|--------|\n| **fer** (to do) | **fes** | **faci** | **fem** | **feu** | **facin** |\n| **anar** (to go) | **vés** | **vagi** | **anem** | **aneu** | **vagin** |\n| **venir** (to come) | **vine** | **vingui** | **vinguem** | **vingueu** | **vinguin** |\n| **dir** (to say) | **digues** | **digui** | **diguem** | **digueu** | **diguin** |\n| **tenir** (to have) | **té** | **tingui** | **tinguem** | **tingueu** | **tinguin** |\n| **ser** (to be) | **sigues** | **sigui** | **siguem** | **sigueu** | **siguin** |\n| **saber** (to know) | **sàpigues** | **sàpiga** | **sapiguem** | **sapigueu** | **sàpiguen** |"
+  },
+  "drills": [
+    { "prompt": "___ (tu) més a poc a poc! (parlar)", "answer": "Parla" },
+    { "prompt": "___ (tu) els deures! (fer)", "answer": "Fes" },
+    { "prompt": "___ (tu) a comprar pa. (anar)", "answer": "Vés" },
+    { "prompt": "___ (tu) aquí! (venir)", "answer": "Vine" },
+    { "prompt": "___ (tu) la veritat. (dir)", "answer": "Digues" },
+    { "prompt": "___ (tu) paciència. (tenir)", "answer": "Té" },
+    { "prompt": "___ (tu) valent! (ser)", "answer": "Sigues" },
+    { "prompt": "___ (tu) la porta. (obrir)", "answer": "Obre" },
+    { "prompt": "___ (tu) la lletra. (escriure → escriu)", "answer": "Escriu" },
+    { "prompt": "___ (tu) el llibre. (llegir → llegeix)", "answer": "Llegeix" },
+    { "prompt": "___ (vostè) per aquí, si us plau. (passar)", "answer": "Passi" },
+    { "prompt": "___ (vostè) la documentació. (portar)", "answer": "Porti" },
+    { "prompt": "___ (vostè) un moment. (esperar)", "answer": "Esperi" },
+    { "prompt": "___ (vostè) aquí. (seure → segui)", "answer": "Segui" },
+    { "prompt": "___ (vostè) el formulari. (fer)", "answer": "Faci" },
+    { "prompt": "___ (vostè) al despatx. (anar)", "answer": "Vagi" },
+    { "prompt": "___ (vostè) demà. (venir)", "answer": "Vingui" },
+    { "prompt": "___ (nosaltres) un cafè! (prendre → prenguem)", "answer": "Prenguem" },
+    { "prompt": "___ (nosaltres) a la platja. (anar)", "answer": "Anem" },
+    { "prompt": "___ (nosaltres) més! (fer)", "answer": "Fem" },
+    { "prompt": "___ (nosaltres) junts. (menjar → mengem)", "answer": "Mengem" },
+    { "prompt": "___ (vosaltres) atenció! (tenir)", "answer": "Tingueu" },
+    { "prompt": "___ (vosaltres) les mans. (rentar)", "answer": "Renteu" },
+    { "prompt": "___ (vosaltres) a casa. (anar)", "answer": "Aneu" },
+    { "prompt": "___ (vosaltres) la veritat. (dir)", "answer": "Digueu" },
+    { "prompt": "___ (vosaltres) tranquils. (ser)", "answer": "Sigueu" },
+    { "prompt": "___ (vostès) per favor. (seure → seguin)", "answer": "Seguin" },
+    { "prompt": "___ (vostès) els documents. (portar)", "answer": "Portin" },
+    { "prompt": "___ (vostès) la reunió. (fer)", "answer": "Facin" },
+    { "prompt": "___ (vostès) quan vulguin. (venir)", "answer": "Vinguin" }
+  ]
+}
