@@ -1,0 +1,44 @@
+{
+  "id": "cat_recordar_vs_recordarse",
+  "title": {
+    "fr": "Catalan — RECORDAR vs RECORDAR-SE – Se souvenir",
+    "en": "Catalan — RECORDAR vs RECORDAR-SE – To remember"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙️ En catalan comme en espagnol, il existe deux structures pour exprimer « se souvenir ».\n\n🔹 **RECORDAR** — verbe transitif direct\n- Se construit **sans préposition** : *recordar + COD*\n- Peut aussi signifier **rappeler quelque chose à quelqu'un** : *et recordo que...*\n\n➡️ *Recordo el teu nom.* (Je me souviens de ton nom.)\n➡️ *Recordes la pel·lícula?* (Tu te souviens du film ?)\n➡️ *Et recordo que tens una cita.* (Je te rappelle que t'as un rendez-vous.)\n\n🔹 **RECORDAR-SE (DE)** — verbe pronominal + DE\n- Verbe pronominal : *em recordo, et recordes, es recorda...*\n- Prend la préposition DE (mais souvent omis à l'oral familier)\n\n➡️ *Em recordo del teu nom.* (Je me souviens de ton nom.)\n➡️ *Et recordes de la pel·lícula?* (Tu te souviens du film ?)\n➡️ *No em recordo de res.* (Je me souviens de rien.)\n\n💡 **Conjugaison de RECORDAR-SE (présent) :**\n- jo **em recordo**\n- tu **et recordes**\n- ell/ella **es recorda**\n- nosaltres **ens recordem**\n- vosaltres **us recordeu**\n- ells/elles **es recorden**\n\n🔸 **Différence clé avec l'espagnol :** en catalan, *recordar-se* est encore plus courant que *recordar* à l'oral. La préposition *de* peut être omise en registre familier.\n\n⚠️ **Attention :** Ne pas confondre avec *recordar* = rappeler (à quelqu'un), qui est transitif direct.",
+    "en": "⚙️ In Catalan, as in Spanish, there are two ways to say 'to remember'.\n\n🔹 **RECORDAR** — transitive verb\n- No preposition: *recordar + direct object*\n- Can also mean **to remind someone**: *et recordo que...*\n\n➡️ *Recordo el teu nom.* (I remember your name.)\n➡️ *Recordes la pel·lícula?* (Do you remember the film?)\n\n🔹 **RECORDAR-SE (DE)** — reflexive verb + DE\n- Takes DE (can be dropped in casual speech)\n\n➡️ *Em recordo del teu nom.* (I remember your name.)\n➡️ *No em recordo de res.* (I don't remember anything.)\n\n💡 **RECORDAR-SE conjugation (present):**\n- jo **em recordo**\n- tu **et recordes**\n- ell/ella **es recorda**\n- nosaltres **ens recordem**\n- vosaltres **us recordeu**\n- ells/elles **es recorden**"
+  },
+  "drills": [
+    { "prompt": "___ (jo) el teu número. (recordar – forme correcte)", "answer": "Recordo" },
+    { "prompt": "Em ___ del teu número. (recordar-se – forme correcte)", "answer": "recordo" },
+    { "prompt": "___ (tu) on vivies abans? (recordar)", "answer": "Recordes" },
+    { "prompt": "Et ___ d'on vivies abans? (recordar-se)", "answer": "recordes" },
+    { "prompt": "No ___ (jo) el seu cognom. (recordar – négatif)", "answer": "recordo" },
+    { "prompt": "No em ___ del seu cognom. (recordar-se – négatif)", "answer": "recordo" },
+    { "prompt": "Ella ___ perfectament aquell dia. (recordar)", "answer": "recorda" },
+    { "prompt": "Ella es ___ perfectament d'aquell dia. (recordar-se)", "answer": "recorda" },
+    { "prompt": "Et ___ que demà hi ha reunió. (recordar = rappeler)", "answer": "recordo" },
+    { "prompt": "Ens ___ de vosaltres sovint. (recordar-se)", "answer": "recordem" },
+    { "prompt": "___ (vosaltres) la primera vegada que ens vam veure? (recordar)", "answer": "Recordeu" },
+    { "prompt": "Us ___ de la primera vegada que ens vam veure? (recordar-se)", "answer": "recordeu" },
+    { "prompt": "Ells no ___ el camí a l'hotel. (recordar)", "answer": "recorden" },
+    { "prompt": "Ells no es ___ del camí a l'hotel. (recordar-se)", "answer": "recorden" },
+    { "prompt": "___ (jo) molt bé aquella cançó. (recordar)", "answer": "Recordo" },
+    { "prompt": "Em ___ molt bé d'aquella cançó. (recordar-se)", "answer": "recordo" },
+    { "prompt": "___ (tu) haver-me dit això? (recordar)", "answer": "Recordes" },
+    { "prompt": "Et ___ d'haver-me dit això? (recordar-se)", "answer": "recordes" },
+    { "prompt": "Els ___ les regles cada dia. (recordar = rappeler à)", "answer": "recorda" },
+    { "prompt": "Sempre em ___ de comprar cafè els diumenges. (recordar-se)", "answer": "recordo" },
+    { "prompt": "No ___ (nosaltres) la seva adreça exacta. (recordar)", "answer": "recordem" },
+    { "prompt": "No ens ___ de la seva adreça exacta. (recordar-se)", "answer": "recordem" },
+    { "prompt": "___ (tu) que has de trucar al metge! (recordar = rappelle-toi)", "answer": "Recorda" },
+    { "prompt": "Es ___ de mi? (recordar-se – vouvoiement formel vostè)", "answer": "recorda" },
+    { "prompt": "Sempre ___ (jo) els bons moments. (recordar)", "answer": "recordo" },
+    { "prompt": "Sempre em ___ dels bons moments. (recordar-se)", "answer": "recordo" },
+    { "prompt": "Us ___ de l'excursió a Montserrat? (recordar-se)", "answer": "recordeu" },
+    { "prompt": "Ell no ___ res del que va passar. (recordar)", "answer": "recorda" },
+    { "prompt": "Ell no es ___ de res del que va passar. (recordar-se)", "answer": "recorda" },
+    { "prompt": "Et ___ que la classe comença a les 9. (recordar = rappeler)", "answer": "recordo" }
+  ]
+}
