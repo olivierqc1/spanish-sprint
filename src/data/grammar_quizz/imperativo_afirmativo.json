@@ -1,0 +1,44 @@
+{
+  "id": "imperativo_afirmativo",
+  "title": {
+    "fr": "Impératif affirmatif (regular + irréguliers)",
+    "en": "Affirmative imperative (regular + irregular)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ L'**impératif affirmatif** sert à donner des ordres, des conseils ou des instructions.\n\n🔹 **Formes régulières :**\n\n| Pronom | -ar (hablar) | -er (comer) | -ir (vivir) |\n|--------|-------------|-------------|-------------|\n| tú | **habla** | **come** | **vive** |\n| usted | **hable** | **coma** | **viva** |\n| nosotros | **hablemos** | **comamos** | **vivamos** |\n| vosotros | **hablad** | **comed** | **vivid** |\n| ustedes | **hablen** | **coman** | **vivan** |\n\n🔹 **Verbes irréguliers essentiels (tú) :**\n\n| Verbe | tú | usted | nosotros | vosotros | ustedes |\n|-------|----|-------|----------|----------|---------|\n| **hacer** | **haz** | **haga** | **hagamos** | **haced** | **hagan** |\n| **ir** | **ve** | **vaya** | **vayamos** | **id** | **vayan** |\n| **venir** | **ven** | **venga** | **vengamos** | **venid** | **vengan** |\n| **decir** | **di** | **diga** | **digamos** | **decid** | **digan** |\n| **tener** | **ten** | **tenga** | **tengamos** | **tened** | **tengan** |\n| **ser** | **sé** | **sea** | **seamos** | **sed** | **sean** |\n| **poner** | **pon** | **ponga** | **pongamos** | **poned** | **pongan** |\n| **salir** | **sal** | **salga** | **salgamos** | **salid** | **salgan** |\n\n💡 **Astuce :** les formes **tú** irrégulières sont courtes et à mémoriser : *haz, ve, ven, di, ten, sé, pon, sal*.\n\n💬 **Exemples :**\n➡️ *¡Habla más despacio!* (Parle plus lentement !)\n➡️ *Haz los deberes.* (Fais tes devoirs.)\n➡️ *Ve al supermercado.* (Va au supermarché.)\n➡️ *Ven aquí.* (Viens ici.)\n➡️ *Sé amable.* (Sois aimable.)",
+    "en": "⚙️ The **affirmative imperative** is used to give orders, advice, or instructions.\n\n🔹 **Regular forms:**\n\n| Pronoun | -ar (hablar) | -er (comer) | -ir (vivir) |\n|---------|-------------|-------------|-------------|\n| tú | **habla** | **come** | **vive** |\n| usted | **hable** | **coma** | **viva** |\n| nosotros | **hablemos** | **comamos** | **vivamos** |\n| vosotros | **hablad** | **comed** | **vivid** |\n| ustedes | **hablen** | **coman** | **vivan** |\n\n🔹 **Essential irregular verbs (tú):**\n\n| Verb | tú | usted | nosotros | vosotros | ustedes |\n|------|----|-------|----------|----------|---------|\n| **hacer** | **haz** | **haga** | **hagamos** | **haced** | **hagan** |\n| **ir** | **ve** | **vaya** | **vayamos** | **id** | **vayan** |\n| **venir** | **ven** | **venga** | **vengamos** | **venid** | **vengan** |\n| **decir** | **di** | **diga** | **digamos** | **decid** | **digan** |\n| **tener** | **ten** | **tenga** | **tengamos** | **tened** | **tengan** |\n| **ser** | **sé** | **sea** | **seamos** | **sed** | **sean** |\n| **poner** | **pon** | **ponga** | **pongamos** | **poned** | **pongan** |\n| **salir** | **sal** | **salga** | **salgamos** | **salid** | **salgan** |"
+  },
+  "drills": [
+    { "prompt": "___ (tú) más despacio. (hablar)", "answer": "Habla" },
+    { "prompt": "___ (tú) los deberes. (hacer)", "answer": "Haz" },
+    { "prompt": "___ (tú) al supermercado. (ir)", "answer": "Ve" },
+    { "prompt": "___ (tú) aquí. (venir)", "answer": "Ven" },
+    { "prompt": "___ (tú) la verdad. (decir)", "answer": "Di" },
+    { "prompt": "___ (tú) paciencia. (tener)", "answer": "Ten" },
+    { "prompt": "___ (tú) amable. (ser)", "answer": "Sé" },
+    { "prompt": "___ (tú) la mesa. (poner)", "answer": "Pon" },
+    { "prompt": "___ (tú) a las ocho. (salir)", "answer": "Sal" },
+    { "prompt": "___ (tú) la ventana. (abrir)", "answer": "Abre" },
+    { "prompt": "___ (tú) el libro. (leer)", "answer": "Lee" },
+    { "prompt": "___ (tú) agua. (beber)", "answer": "Bebe" },
+    { "prompt": "___ (usted) por aquí, por favor. (pasar)", "answer": "Pase" },
+    { "prompt": "___ (usted) un momento. (esperar)", "answer": "Espere" },
+    { "prompt": "___ (usted) el formulario. (hacer)", "answer": "Haga" },
+    { "prompt": "___ (usted) aquí. (sentarse → siéntese)", "answer": "Siéntese" },
+    { "prompt": "___ (usted) mañana. (venir)", "answer": "Venga" },
+    { "prompt": "___ (usted) al despacho. (ir)", "answer": "Vaya" },
+    { "prompt": "___ (usted) tranquilo. (ser)", "answer": "Sea" },
+    { "prompt": "___ (nosotros) un café. (tomar)", "answer": "Tomemos" },
+    { "prompt": "___ (nosotros) a la playa. (ir)", "answer": "Vayamos" },
+    { "prompt": "___ (nosotros) juntos. (comer)", "answer": "Comamos" },
+    { "prompt": "___ (nosotros) más. (hacer)", "answer": "Hagamos" },
+    { "prompt": "___ (vosotros) atención. (tener)", "answer": "Tened" },
+    { "prompt": "___ (vosotros) las manos. (lavar)", "answer": "Lavaos" },
+    { "prompt": "___ (vosotros) a casa. (ir)", "answer": "Id" },
+    { "prompt": "___ (vosotros) la verdad. (decir)", "answer": "Decid" },
+    { "prompt": "___ (ustedes) por favor. (sentarse → siéntense)", "answer": "Siéntense" },
+    { "prompt": "___ (ustedes) los documentos. (traer → traigan)", "answer": "Traigan" },
+    { "prompt": "___ (ustedes) cuando quieran. (venir)", "answer": "Vengan" }
+  ]
+}
