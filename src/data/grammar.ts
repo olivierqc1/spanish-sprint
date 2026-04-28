@@ -1124,5 +1124,19 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_recordar_vs_recordarse.json"
   },
+{
+    id: "acentuacion_reglas",
+    title: {
+      fr: "Les accents en espagnol – Agudas, Llanas, Esdrújulas",
+      en: "Spanish accents – Agudas, Llanas, Esdrújulas"
+    },
+    level: "A2",
+    note: {
+      fr: "Règles d'accentuation : agudas (dernière syllabe), llanas (avant-dernière), esdrújulas (antépénultième).",
+      en: "Accent rules: agudas (last syllable), llanas (second-to-last), esdrújulas (third-to-last)."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/acentuacion_reglas.json"
+  },
 
 ];
