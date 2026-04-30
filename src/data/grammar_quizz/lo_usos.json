@@ -1,0 +1,44 @@
+{
+  "id": "lo_usos",
+  "title": {
+    "fr": "LO – Lo mismo, lo que, lo de, lo + adjectif",
+    "en": "LO – Lo mismo, lo que, lo de, lo + adjective"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ **LO** est un article neutre espagnol sans équivalent direct en français. Il s'utilise dans plusieurs constructions.\n\n🔹 **1. LO + adjectif = « ce qui est... », « la partie... »**\n➡️ *Lo bueno es que...* → Ce qui est bien, c'est que...\n➡️ *Lo malo del trabajo...* → Ce qu'il y a de mauvais dans le travail...\n➡️ *Lo difícil es hablar.* → Ce qui est difficile, c'est de parler.\n\n🔹 **2. LO QUE = « ce que »**\n➡️ *No entiendo lo que dices.* → Je ne comprends pas ce que tu dis.\n➡️ *Lo que me gusta es el café.* → Ce que j'aime, c'est le café.\n\n🔹 **3. LO DE = « l'affaire de », « ce truc de », « ce qui concerne »**\n➡️ *Lo de ayer fue increíble.* → Ce qui s'est passé hier était incroyable.\n➡️ *Lo de tu hermano me preocupa.* → Ce qui concerne ton frère m'inquiète.\n\n🔹 **4. LO MISMO = « la même chose »**\n➡️ *Yo quiero lo mismo.* → Je veux la même chose.\n➡️ *Hacemos lo mismo todos los días.* → On fait la même chose tous les jours.\n\n🔹 **5. LO + adverbe (intensité)**\n➡️ *¡Lo bien que canta!* → Comme il chante bien !\n➡️ *No sabes lo cansado que estoy.* → Tu ne sais pas à quel point je suis fatigué.\n\n💡 **Rappel :** LO ne s'accorde jamais — c'est toujours neutre.",
+    "en": "⚙️ **LO** is a neutral article in Spanish with no direct English equivalent. It appears in several key constructions.\n\n🔹 **1. LO + adjective = 'the... thing', 'what is...'**\n➡️ *Lo bueno es que...* → The good thing is that...\n➡️ *Lo difícil es hablar.* → The difficult thing is speaking.\n\n🔹 **2. LO QUE = 'what' (that which)**\n➡️ *No entiendo lo que dices.* → I don't understand what you're saying.\n\n🔹 **3. LO DE = 'the thing about', 'what happened with'**\n➡️ *Lo de ayer fue increíble.* → What happened yesterday was incredible.\n\n🔹 **4. LO MISMO = 'the same thing'**\n➡️ *Yo quiero lo mismo.* → I want the same thing.\n\n🔹 **5. LO + adverb (intensity)**\n➡️ *¡Lo bien que canta!* → How well he sings!\n➡️ *No sabes lo cansado que estoy.* → You don't know how tired I am."
+  },
+  "drills": [
+    { "prompt": "___ bueno de Barcelona es el clima. (ce qui est bien)", "answer": "Lo" },
+    { "prompt": "___ malo es que llueve mucho. (ce qui est mauvais)", "answer": "Lo" },
+    { "prompt": "No entiendo ___ que dices. (ce que)", "answer": "lo" },
+    { "prompt": "___ que me gusta es el café. (ce que)", "answer": "Lo" },
+    { "prompt": "___ de ayer fue increíble. (ce qui s'est passé hier)", "answer": "Lo" },
+    { "prompt": "___ de tu jefe me parece mal. (ce qui concerne)", "answer": "Lo" },
+    { "prompt": "Yo quiero ___ mismo. (la même chose)", "answer": "lo" },
+    { "prompt": "Hacemos ___ mismo cada día. (la même chose)", "answer": "lo" },
+    { "prompt": "¡___ bien que canta! (comme il chante bien)", "answer": "Lo" },
+    { "prompt": "No sabes ___ cansado que estoy. (à quel point)", "answer": "lo" },
+    { "prompt": "___ difícil es pronunciar bien. (ce qui est difficile)", "answer": "Lo" },
+    { "prompt": "___ importante es practicar. (ce qui est important)", "answer": "Lo" },
+    { "prompt": "Cuéntame ___ que pasó. (ce qui s'est passé)", "answer": "lo" },
+    { "prompt": "Haz ___ que quieras. (ce que tu veux)", "answer": "lo" },
+    { "prompt": "___ de la reunión fue un desastre. (ce qui concerne la réunion)", "answer": "Lo" },
+    { "prompt": "___ de siempre. (la même chose que d'habitude)", "answer": "Lo" },
+    { "prompt": "Para mí ___ mismo, gracias. (la même chose)", "answer": "lo" },
+    { "prompt": "¡___ rápido que conduce! (comme il conduit vite)", "answer": "Lo" },
+    { "prompt": "No me gusta ___ que has hecho. (ce que)", "answer": "lo" },
+    { "prompt": "___ peor es esperar. (ce qui est pire)", "answer": "Lo" },
+    { "prompt": "___ mejor sería salir pronto. (ce qui serait mieux)", "answer": "Lo" },
+    { "prompt": "___ de tu ex me preocupa. (ce qui concerne ton/ta ex)", "answer": "Lo" },
+    { "prompt": "No sé ___ que quiero. (ce que)", "answer": "lo" },
+    { "prompt": "¿Sabes ___ que me dijo? (ce que)", "answer": "lo" },
+    { "prompt": "Siempre pedimos ___ mismo. (la même chose)", "answer": "lo" },
+    { "prompt": "___ gracioso es que nadie lo sabía. (ce qui est drôle)", "answer": "Lo" },
+    { "prompt": "___ de ayer no fue culpa mía. (ce qui s'est passé hier)", "answer": "Lo" },
+    { "prompt": "¡___ tarde que es! (comme il est tard)", "answer": "Lo" },
+    { "prompt": "Hice ___ mismo que tú. (la même chose)", "answer": "lo" },
+    { "prompt": "___ que necesitas es descansar. (ce dont tu as besoin)", "answer": "Lo" }
+  ]
+}
