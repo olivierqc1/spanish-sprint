@@ -1138,5 +1138,64 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/acentuacion_reglas.json"
   },
+// ─── IMPÉRATIF ESPAGNOL ─────────────────────────────────────────────────────
+  {
+    id: "imperativo_afirmativo",
+    title: {
+      fr: "Impératif affirmatif (regular + irréguliers)",
+      en: "Affirmative imperative (regular + irregular)"
+    },
+    level: "A2",
+    note: {
+      fr: "Formes de l'impératif affirmatif : habla, haz, ve, ven, di, ten, sé, pon, sal...",
+      en: "Affirmative imperative forms: habla, haz, ve, ven, di, ten, sé, pon, sal..."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/imperativo_afirmativo.json"
+  },
+  {
+    id: "imperativo_negativo",
+    title: {
+      fr: "Impératif négatif (no + subjonctif)",
+      en: "Negative imperative (no + subjunctive)"
+    },
+    level: "A2",
+    note: {
+      fr: "L'impératif négatif = no + subjonctif présent (no hables, no hagas, no vayas...).",
+      en: "Negative imperative = no + present subjunctive (no hables, no hagas, no vayas...)."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/imperativo_negativo.json"
+  },
+
+  // ─── IMPÉRATIF CATALAN ──────────────────────────────────────────────────────
+  {
+    id: "cat_imperatiu_afirmatiu",
+    title: {
+      fr: "Catalan — Impératif affirmatif (regular + irréguliers)",
+      en: "Catalan — Affirmative imperative (regular + irregular)"
+    },
+    level: "A2",
+    note: {
+      fr: "Formes de l'impératif affirmatif en catalan : parla, fes, vés, vine, digues...",
+      en: "Catalan affirmative imperative forms: parla, fes, vés, vine, digues..."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_imperatiu_afirmatiu.json"
+  },
+  {
+    id: "cat_imperatiu_negatiu",
+    title: {
+      fr: "Catalan — Impératif négatif (no + subjonctif)",
+      en: "Catalan — Negative imperative (no + subjunctive)"
+    },
+    level: "A2",
+    note: {
+      fr: "L'impératif négatif en catalan = no + subjonctif présent (no parlis, no facis, no vagis...).",
+      en: "Catalan negative imperative = no + present subjunctive (no parlis, no facis, no vagis...)."
+    },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_imperatiu_negatiu.json"
+  },
 
 ];
