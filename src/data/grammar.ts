@@ -689,4 +689,20 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_imperatiu_negatiu.json"
   },
+{
+    id: "imperfecto_positivo_negativo",
+    title: { fr: "Imparfait – Affirmatif vs Négatif", en: "Imperfect – Affirmative vs Negative" },
+    level: "A2",
+    note: { fr: "Conjugaison de l'imparfait en version affirmative et négative.", en: "Imperfect conjugation in affirmative and negative form." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/imperfecto_positivo_negativo.json"
+  },
+  {
+    id: "lo_usos",
+    title: { fr: "LO – Lo mismo, lo que, lo de, lo + adjectif", en: "LO – Lo mismo, lo que, lo de, lo + adjective" },
+    level: "A2",
+    note: { fr: "Les différentes constructions avec l'article neutre LO.", en: "The different constructions with the neutral article LO." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/lo_usos.json"
+  },
 ];
