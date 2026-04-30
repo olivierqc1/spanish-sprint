@@ -16,6 +16,7 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
   const [quizData, setQuizData] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [targetLanguage, setTargetLanguage] = useState<'spanish' | 'catalan'>('spanish');
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
     const saved = localStorage.getItem('iberian-sprint-target-language');
@@ -23,22 +24,30 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     else setTargetLanguage('spanish');
   }, []);
 
-  // Filtre par niveau ET par langue cible
   const filtered = useMemo(() => {
     return points.filter(p => {
-      // Filtre langue : les points catalan commencent par "cat_"
       const isCatalanPoint = p.id.startsWith('cat_');
       if (targetLanguage === 'catalan' && !isCatalanPoint) return false;
       if (targetLanguage === 'spanish' && isCatalanPoint) return false;
 
-      // Filtre niveau
       if (p.level.includes('-')) {
         const [min, max] = p.level.split('-');
-        return min <= initialLevel || max >= initialLevel;
+        if (!(min <= initialLevel || max >= initialLevel)) return false;
+      } else {
+        if (!(p.level === initialLevel || p.level.includes(initialLevel))) return false;
       }
-      return p.level === initialLevel || p.level.includes(initialLevel);
+
+      // Filtre recherche
+      if (search.trim()) {
+        const q = search.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        const title = p.title[language].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        const note = p.note[language].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        if (!title.includes(q) && !note.includes(q)) return false;
+      }
+
+      return true;
     });
-  }, [points, initialLevel, targetLanguage]);
+  }, [points, initialLevel, targetLanguage, search, language]);
 
   const loadQuiz = async (point: GrammarPoint) => {
     setLoading(true);
@@ -66,15 +75,42 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
               : (language === 'fr' ? '📚 Points de grammaire' : '📚 Grammar Points')
             }
           </h2>
-          <p className="text-slate-400">
+          <p className="text-slate-400 mb-4">
             {language === 'fr'
               ? `${filtered.length} points disponibles pour le niveau ${initialLevel}`
               : `${filtered.length} points available for level ${initialLevel}`
             }
           </p>
+
+          {/* Barre de recherche */}
+          <div className="relative">
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">🔍</span>
+            <input
+              type="text"
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              placeholder={language === 'fr' ? 'Rechercher un point de grammaire...' : 'Search a grammar point...'}
+              className="w-full bg-slate-900 border border-slate-600 rounded-lg pl-10 pr-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm"
+              style={{ borderColor: search ? accentColor : undefined }}
+            />
+            {search && (
+              <button
+                onClick={() => setSearch('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-lg"
+              >
+                ×
+              </button>
+            )}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-3">
+          {filtered.length === 0 && (
+            <div className="text-center text-slate-400 py-10">
+              {language === 'fr' ? 'Aucun résultat pour ' : 'No results for '}
+              <span className="text-white font-semibold">"{search}"</span>
+            </div>
+          )}
           {filtered.map(point => (
             <button
               key={point.id}
