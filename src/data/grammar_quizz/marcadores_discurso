@@ -1,0 +1,41 @@
+{
+  "id": "marcadores_discurso",
+  "title": { "fr": "Marqueurs du discours – por un lado, en resumen, es decir...", "en": "Discourse markers – por un lado, en resumen, es decir..." },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Les **marqueurs du discours** permettent de structurer, reformuler ou conclure un texte oral ou écrit.\n\n🔹 **Introduire un thème :**\n- *en cuanto a* → en ce qui concerne\n- *respecto a / con respecto a* → par rapport à\n- *sobre* → sur, à propos de\n\n🔹 **Ajouter / ordonner :**\n- *además* → de plus, en outre\n- *también* → aussi\n- *por un lado... por otro (lado)* → d'un côté... de l'autre\n- *en primer lugar / en segundo lugar* → premièrement / deuxièmement\n- *por último / finalmente* → enfin, pour finir\n\n🔹 **Reformuler / expliquer :**\n- *es decir* → c'est-à-dire\n- *o sea* → c'est-à-dire, autrement dit (registre oral)\n- *en otras palabras* → en d'autres termes\n\n🔹 **Concéder / opposer :**\n- *sin embargo* → cependant\n- *no obstante* → néanmoins (soutenu)\n- *a pesar de eso* → malgré cela\n- *aunque* → bien que, même si\n\n🔹 **Conclure / résumer :**\n- *en resumen / en conclusión* → en résumé / en conclusion\n- *en definitiva* → en définitive\n- *por tanto / por lo tanto* → donc, par conséquent\n- *así que* → donc",
+    "en": "⚙️ **Discourse markers** help structure, reformulate, or conclude a text.\n\n🔹 **Topic intro:** en cuanto a, respecto a, sobre\n🔹 **Adding/ordering:** además, por un lado... por otro, en primer lugar, por último\n🔹 **Reformulating:** es decir, o sea, en otras palabras\n🔹 **Conceding:** sin embargo, no obstante, aunque\n🔹 **Concluding:** en resumen, en definitiva, por tanto, así que"
+  },
+  "drills": [
+    { "prompt": "___ a los precios, han subido mucho. (en ce qui concerne)", "answer": "En cuanto" },
+    { "prompt": "___ lado, es una buena idea; ___ otro, es muy cara. (d'un côté... de l'autre)", "answer": "por un / por otro" },
+    { "prompt": "No me gusta el frío. ___, prefiero el verano. (de plus)", "answer": "Además" },
+    { "prompt": "Es muy listo, ___ muy trabajador. (aussi)", "answer": "también" },
+    { "prompt": "___ lugar, hablaremos del presupuesto. (premièrement)", "answer": "En primer" },
+    { "prompt": "___ lugar, trataremos el tema del marketing. (deuxièmement)", "answer": "En segundo" },
+    { "prompt": "___, quiero agradecer vuestra presencia. (pour finir)", "answer": "Por último" },
+    { "prompt": "Está agotado, ___ que necesita descansar. (c'est-à-dire)", "answer": "es decir" },
+    { "prompt": "No vine, ___ estaba enfermo. (c'est-à-dire – oral)", "answer": "o sea" },
+    { "prompt": "___, el proyecto fue un éxito. (en définitive)", "answer": "En definitiva" },
+    { "prompt": "Trabajamos mucho; ___, los resultados no fueron buenos. (cependant)", "answer": "sin embargo" },
+    { "prompt": "___ a su experiencia, está muy cualificado. (par rapport à)", "answer": "Respecto" },
+    { "prompt": "___, podemos decir que el experimento funcionó. (en conclusion)", "answer": "En conclusión" },
+    { "prompt": "No estudió nada, ___ suspendió. (donc)", "answer": "por tanto" },
+    { "prompt": "El producto es bueno; ___, el precio es demasiado alto. (néanmoins)", "answer": "no obstante" },
+    { "prompt": "___, el viaje fue una experiencia increíble. (en résumé)", "answer": "En resumen" },
+    { "prompt": "Llegó tarde, ___ perdió la reunión. (donc)", "answer": "así que" },
+    { "prompt": "___ eso, decidimos cambiar de plan. (malgré cela)", "answer": "A pesar de" },
+    { "prompt": "Es muy caro; ___, vale la pena. (bien que)", "answer": "aunque" },
+    { "prompt": "___ otras palabras, no hay solución fácil. (en d'autres termes)", "answer": "En" },
+    { "prompt": "___ la calidad del servicio, hay mucho que mejorar. (en ce qui concerne)", "answer": "En cuanto a" },
+    { "prompt": "___, los datos muestran una mejora significativa. (premièrement)", "answer": "En primer lugar" },
+    { "prompt": "El problema es complejo, ___ difícil de resolver. (c'est-à-dire)", "answer": "es decir" },
+    { "prompt": "Lo intentamos mucho; ___, no conseguimos el objetivo. (cependant)", "answer": "sin embargo" },
+    { "prompt": "___, hay que tomar una decisión pronto. (en définitive)", "answer": "En definitiva" },
+    { "prompt": "Me gusta el plan, y ___ me parece muy original. (de plus)", "answer": "además" },
+    { "prompt": "___ lo que dijiste antes, no estoy de acuerdo. (par rapport à)", "answer": "Respecto a" },
+    { "prompt": "___, quiero destacar el esfuerzo del equipo. (pour finir)", "answer": "Por último" },
+    { "prompt": "No tenía experiencia; ___, le dieron el trabajo. (néanmoins)", "answer": "no obstante" },
+    { "prompt": "___, fue un año muy difícil para todos. (en résumé)", "answer": "En resumen" }
+  ]
+}
