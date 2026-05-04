@@ -801,5 +801,71 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/lo_usos.json"
   },
+  // ─── NOUVEAUX B1 ────────────────────────────────────────────────────────────
+  {
+    id: "subjuntivo_deseos_sentimientos",
+    title: { fr: "Subjonctif – Désirs et sentiments (querer que, esperar que...)", en: "Subjunctive – Wishes and feelings (querer que, esperar que...)" },
+    level: "B1",
+    note: { fr: "Subjonctif après les verbes de désir, souhait et sentiment (querer que, alegrarse de que...).", en: "Subjunctive after verbs of desire, wish, and feeling (querer que, alegrarse de que...)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/subjuntivo_deseos_sentimientos.json"
+  },
+  {
+    id: "subjuntivo_valoracion",
+    title: { fr: "Subjonctif – Valorisation (es importante que, es necesario que...)", en: "Subjunctive – Value judgements (es importante que, es necesario que...)" },
+    level: "B1",
+    note: { fr: "Subjonctif après les expressions impersonnelles de valorisation et d'obligation.", en: "Subjunctive after impersonal expressions of value and obligation." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/subjuntivo_valoracion.json"
+  },
+  {
+    id: "condicional_hipotesis",
+    title: { fr: "Conditionnel – Hypothèses irréelles (si + imparfait subj. + conditionnel)", en: "Conditional – Unreal hypotheses (si + imperfect subj. + conditional)" },
+    level: "B1",
+    note: { fr: "Hypothèse irréelle : si + imparfait du subjonctif + conditionnel simple.", en: "Unreal hypothesis: si + imperfect subjunctive + conditional." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/condicional_hipotesis.json"
+  },
+  {
+    id: "pluscuamperfecto_uso",
+    title: { fr: "Plus-que-parfait – Antériorité dans le passé", en: "Past perfect – Anteriority in the past" },
+    level: "B1",
+    note: { fr: "Había + participio pour exprimer une action antérieure à une autre dans le passé.", en: "Había + participle to express an action prior to another past action." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/pluscuamperfecto_uso.json"
+  },
+  {
+    id: "marcadores_discurso",
+    title: { fr: "Marqueurs du discours – por un lado, en resumen, es decir...", en: "Discourse markers – por un lado, en resumen, es decir..." },
+    level: "B1",
+    note: { fr: "Structurer, reformuler et conclure un discours : además, sin embargo, es decir, en resumen...", en: "Structure, reformulate and conclude a discourse: además, sin embargo, es decir, en resumen..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/marcadores_discurso.json"
+  },
+  {
+    id: "oraciones_relativas_subjuntivo",
+    title: { fr: "Relatives – Indicatif vs Subjonctif (busco a alguien que...)", en: "Relative clauses – Indicative vs Subjunctive (busco a alguien que...)" },
+    level: "B1",
+    note: { fr: "Indicatif pour un antécédent connu, subjonctif pour un antécédent inconnu ou hypothétique.", en: "Indicative for known referent, subjunctive for unknown or hypothetical referent." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/oraciones_relativas_subjuntivo.json"
+  },
+  {
+    id: "se_impersonal_pasivo",
+    title: { fr: "SE impersonnel et passif (se habla, se dice, se venden...)", en: "Impersonal and passive SE (se habla, se dice, se venden...)" },
+    level: "B1",
+    note: { fr: "SE impersonnel (on parle) et SE passif (se venden pisos) – accord du verbe avec le sujet.", en: "Impersonal SE (one speaks) and passive SE (pisos se venden) – verb agrees with subject." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/se_impersonal_pasivo.json"
+  },
+  {
+    id: "gerundio_usos",
+    title: { fr: "Le gérondif – Usages et périphrases (estar, llevar, seguir, ir...)", en: "The gerund – Uses and periphrases (estar, llevar, seguir, ir...)" },
+    level: "B1",
+    note: { fr: "Estar/llevar/seguir/ir + gérondif, et gérondif de manière ou simultanéité.", en: "Estar/llevar/seguir/ir + gerund, and gerund of manner or simultaneity." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/gerundio_usos.json"
+  },
+
 
 ];
