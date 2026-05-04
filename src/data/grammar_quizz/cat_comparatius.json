@@ -1,0 +1,41 @@
+{
+  "id": "cat_comparatius",
+  "title": { "fr": "Catalan — Comparatifs et superlatifs", "en": "Catalan — Comparatives and superlatives" },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ **Comparatifs en catalan**\n\n🔹 **Supériorité :** més + adjectif + que\n➡️ *El gat és **més gran que** el gos.* (Le chat est plus grand que le chien.)\n\n🔹 **Infériorité :** menys + adjectif + que\n➡️ *Ella és **menys alta que** ell.* (Elle est moins grande que lui.)\n\n🔹 **Égalité :** tan + adjectif + com\n➡️ *Sóc **tan alt com** tu.* (Je suis aussi grand que toi.)\n\n🔹 **Avec noms :** més/menys + nom + que\n➡️ *Tinc **més temps que** ahir.*\n\n🔹 **Avec verbes :** verbe + més/menys + que\n➡️ *Menja **més que** jo.*\n\n🔹 **Irréguliers :**\n- *bo/bona* → **millor** (meilleur)\n- *dolent/dolenta* → **pitjor** (pire)\n- *gran* → **més gran** ou **major** (plus grand / plus âgé)\n- *petit* → **més petit** ou **menor** (plus petit / plus jeune)\n\n🔹 **Superlatif relatif :** el/la/els/les + més + adjectif\n➡️ *És **la més intel·ligent** de la classe.*\n\n🔹 **Superlatif absolu :** adjectif + -íssim/a\n➡️ *molt gran → grandíssim* / *molt bo → boníssim*",
+    "en": "⚙️ **Catalan comparatives:**\n- Superiority: més + adj + que\n- Inferiority: menys + adj + que\n- Equality: tan + adj + com\n\n🔹 **Irregular:** bo→millor, dolent→pitjor, gran→major, petit→menor\n🔹 **Superlative:** el/la més + adj / adj + -íssim"
+  },
+  "drills": [
+    { "prompt": "El cotxe és ___ car ___ la moto. (plus... que)", "answer": "més / que" },
+    { "prompt": "Ella és ___ alta ___ ell. (moins... que)", "answer": "menys / que" },
+    { "prompt": "Sóc ___ ràpid ___ tu. (aussi... que)", "answer": "tan / com" },
+    { "prompt": "Tinc ___ temps ___ ahir. (plus... que)", "answer": "més / que" },
+    { "prompt": "Menja ___ ___ jo. (plus que – verbe)", "answer": "més que" },
+    { "prompt": "Aquest restaurant és ___ bo ___ l'altre. (meilleur)", "answer": "millor que" },
+    { "prompt": "La situació és ___ ___ ahir. (pire)", "answer": "pitjor que" },
+    { "prompt": "La meva germana és ___ ___ jo. (plus jeune)", "answer": "més petita que / menor que" },
+    { "prompt": "El meu germà és ___ ___ jo. (plus âgé)", "answer": "més gran que / major que" },
+    { "prompt": "És ___ intel·ligent ___ la classe. (la plus – superlatif)", "answer": "la més intel·ligent de" },
+    { "prompt": "Avui fa ___ fred ___ ahir. (plus froid que)", "answer": "més fred que" },
+    { "prompt": "Aquesta pel·lícula és ___ interessant ___ l'altra. (aussi intéressante que)", "answer": "tan interessant com" },
+    { "prompt": "Ell treballa ___ ___ nosaltres. (moins que)", "answer": "menys que" },
+    { "prompt": "És el ___ restaurant ___ la ciutat. (le meilleur de)", "answer": "millor de" },
+    { "prompt": "La classe és ___ gran ___ esperava. (plus grande que)", "answer": "més gran del que" },
+    { "prompt": "Aquesta nota és ___ bona. (très bonne – superlatif absolu)", "answer": "boníssima" },
+    { "prompt": "El temps és ___ dolent. (très mauvais – superlatif absolu)", "answer": "dolentíssim" },
+    { "prompt": "Parla ___ ràpid ___ jo. (aussi vite que)", "answer": "tan ràpid com" },
+    { "prompt": "Barcelona és ___ gran ___ Girona. (plus grande que)", "answer": "més gran que" },
+    { "prompt": "Tinc ___ diners ___ ell. (moins d'argent que)", "answer": "menys diners que" },
+    { "prompt": "El català és ___ difícil ___ l'espanyol? (plus difficile que)", "answer": "més difícil que" },
+    { "prompt": "Sóc ___ cansat ___ tu. (aussi fatigué que)", "answer": "tan cansat com" },
+    { "prompt": "És la ___ maca ___ totes. (la plus belle de)", "answer": "més maca de" },
+    { "prompt": "Avui m'he llevat ___ d'hora ___ ahir. (plus tôt que)", "answer": "més d'hora que" },
+    { "prompt": "Ell és ___ bo ___ jo al tennis. (meilleur que moi)", "answer": "millor que" },
+    { "prompt": "La situació és ___ greu ___. (gravissime – superlatif absolu)", "answer": "gravíssima" },
+    { "prompt": "El seu pis és ___ gran ___ el meu. (moins grand que)", "answer": "menys gran que" },
+    { "prompt": "Corre ___ ràpid ___ un atleta. (aussi vite qu'un athlète)", "answer": "tan ràpid com" },
+    { "prompt": "Ell és el ___ jove ___ grup. (le plus jeune du groupe)", "answer": "més jove del" },
+    { "prompt": "Aquesta solució és ___. (la pire)", "answer": "la pitjor" }
+  ]
+}
