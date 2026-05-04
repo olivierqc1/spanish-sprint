@@ -705,4 +705,45 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/lo_usos.json"
   },
+{
+    id: "estilo_indirecto_que_si",
+    title: { fr: "Discours indirect – QUE vs SI", en: "Indirect speech – QUE vs SI" },
+    level: "B1",
+    note: { fr: "Rapporter des affirmations (que) et des questions oui/non (si) au discours indirect.", en: "Reporting statements (que) and yes/no questions (si) in indirect speech." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/estilo_indirecto_que_si.json"
+  },
+  {
+    id: "interrogativos_tilde",
+    title: { fr: "Accent diacritique – cuando/qué/cómo/dónde", en: "Diacritical accent – cuando/qué/cómo/dónde" },
+    level: "A2",
+    note: { fr: "Interrogatifs avec accent (¿cuándo?, ¿qué?) vs relatifs/conjonctions sans accent (cuando, que).", en: "Interrogatives with accent vs relatives/conjunctions without accent." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/interrogativos_tilde.json"
+  },
+  {
+    id: "futuro_si_condicional",
+    title: { fr: "Futur – Si + présent + futur simple", en: "Future – Si + present + simple future" },
+    level: "B1",
+    note: { fr: "Condition réelle au futur : si + présent de l'indicatif + futur simple.", en: "Real future condition: si + present indicative + simple future." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/futuro_si_condicional.json"
+  },
+  {
+    id: "conectores_narrativos",
+    title: { fr: "Connecteurs narratifs et d'opposition", en: "Narrative and opposition connectors" },
+    level: "B1",
+    note: { fr: "Alors, de repente, al final, aunque, sin embargo, por eso, así que...", en: "entonces, de repente, al final, aunque, sin embargo, por eso, así que..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/conectores_narrativos.json"
+  },
+  {
+    id: "verbos_comunicacion",
+    title: { fr: "Verbes de communication + prépositions", en: "Communication verbs + prepositions" },
+    level: "B1",
+    note: { fr: "Despedirse de, felicitar por, invitar a, pedir que, dar las gracias por...", en: "Despedirse de, felicitar por, invitar a, pedir que, dar las gracias por..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/verbos_comunicacion.json"
+  },
+
 ];
