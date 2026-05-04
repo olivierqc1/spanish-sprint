@@ -1,0 +1,41 @@
+{
+  "id": "cat_verbs_reflexius",
+  "title": { "fr": "Catalan — Verbes réflexifs (aixecar-se, dutxar-se...)", "en": "Catalan — Reflexive verbs (aixecar-se, dutxar-se...)" },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Les **verbes réflexifs** en catalan fonctionnent comme en espagnol, avec des pronoms réflexifs.\n\n🔹 **Pronoms réflexifs :**\n- jo → **em** (me)\n- tu → **et** (te)\n- ell/ella/vostè → **es** (se)\n- nosaltres → **ens** (nos)\n- vosaltres → **us** (os)\n- ells/elles/vostès → **es** (se)\n\n🔹 **Position :** avant le verbe conjugué\n➡️ *Jo **em** llevo a les set.* (Je me lève à sept heures.)\n➡️ *Ella **es** dutxa cada matí.* (Elle se douche chaque matin.)\n\n🔹 **Verbes réflexifs courants :**\n- *aixecar-se* → se lever\n- *llevar-se* → se lever (synonyme)\n- *dutxar-se* → se doucher\n- *rentar-se* → se laver\n- *vestir-se* → s'habiller\n- *peinar-se* → se coiffer\n- *afaitar-se* → se raser\n- *adormir-se* → s'endormir\n- *despertar-se* → se réveiller\n- *asseure's* → s'asseoir\n- *moure's* → se bouger\n- *trobar-se* → se trouver / se sentir\n- *anomenar-se* → s'appeler\n\n🔹 **À l'infinitif et gérondif :** le pronom se met APRÈS\n➡️ *Vull **dutxar-me**.* / *Estic **dutxant-me**.*",
+    "en": "⚙️ Catalan reflexive verbs work like Spanish, with reflexive pronouns before the conjugated verb.\n\n🔹 **Pronouns:** em, et, es, ens, us, es\n🔹 **Position:** before conjugated verb; attached to infinitive/gerund\n➡️ *Jo em llevo a les set.*"
+  },
+  "drills": [
+    { "prompt": "Jo ___ (aixecar-se) a les set del matí.", "answer": "em llevo / m'aixeco" },
+    { "prompt": "Tu ___ (dutxar-se) cada dia.", "answer": "et dutxes" },
+    { "prompt": "Ella ___ (vestir-se) ràpidament.", "answer": "es vesteix" },
+    { "prompt": "Nosaltres ___ (rentar-se) les mans.", "answer": "ens rentem" },
+    { "prompt": "Vosaltres ___ (adormir-se) tard.", "answer": "us adormiu" },
+    { "prompt": "Ells ___ (despertar-se) d'hora.", "answer": "es desperten" },
+    { "prompt": "Jo ___ (dir-se) Olivier.", "answer": "em dic" },
+    { "prompt": "Tu ___ (asseure's) aquí.", "answer": "et seus" },
+    { "prompt": "Ell ___ (afaitar-se) cada matí.", "answer": "es rasura / s'afaita" },
+    { "prompt": "Nosaltres ___ (trobar-se) molt bé.", "answer": "ens trobem" },
+    { "prompt": "Com ___ (dir-se, tu)?", "answer": "et dius" },
+    { "prompt": "Vull ___ (dutxar-se) ara. (infinitif)", "answer": "dutxar-me" },
+    { "prompt": "Estic ___ (vestir-se). (gérondif)", "answer": "vestint-me" },
+    { "prompt": "Jo ___ (adormir-se) aviat els dies de feina.", "answer": "m'adormo" },
+    { "prompt": "Tu ___ (moure's) molt quan dorms.", "answer": "et mous" },
+    { "prompt": "On ___ (trobar-se, el supermercat)?", "answer": "es troba" },
+    { "prompt": "Nosaltres ___ (peinar-se) davant del mirall.", "answer": "ens peinam / ens pentinem" },
+    { "prompt": "Ells ___ (asseure's) a la taula.", "answer": "es seuen" },
+    { "prompt": "Jo ___ (rentar-se) les dents dues vegades al dia.", "answer": "em rento" },
+    { "prompt": "Ella ___ (despertar-se) sense despertador.", "answer": "es desperta" },
+    { "prompt": "Vosaltres ___ (aixecar-se) tard els caps de setmana.", "answer": "us aixequeu" },
+    { "prompt": "No ___ (adormir-se, jo) fins a mitjanit.", "answer": "m'adormo" },
+    { "prompt": "Necessito ___ (asseure's). (infinitif)", "answer": "asseure'm" },
+    { "prompt": "Estic ___ (dutxar-se). (gérondif)", "answer": "dutxant-me" },
+    { "prompt": "Ell ___ (dir-se) Pau.", "answer": "es diu" },
+    { "prompt": "Jo ___ (vestir-se) de pressa.", "answer": "em vesteixo" },
+    { "prompt": "Tu ___ (trobar-se) malament?", "answer": "et trobes" },
+    { "prompt": "Nosaltres ___ (despertar-se) a les vuit.", "answer": "ens despertem" },
+    { "prompt": "Van ___ (asseure's) a la terrassa. (infinitif + passé)", "answer": "asseure's" },
+    { "prompt": "Elles ___ (rentar-se) el cabell.", "answer": "es renten" }
+  ]
+}
