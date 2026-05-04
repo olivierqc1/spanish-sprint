@@ -1,0 +1,41 @@
+{
+  "id": "pluscuamperfecto_uso",
+  "title": { "fr": "Plus-que-parfait – Antériorité dans le passé", "en": "Past perfect – Anteriority in the past" },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Le **plus-que-parfait** exprime une action passée **antérieure à une autre action passée**.\n\n🔹 **Formation : había/habías/había/habíamos/habíais/habían + participio**\n\n| Pronom | había + participio |\n|--------|-------------------|\n| yo | **había hablado** |\n| tú | **habías comido** |\n| él/ella | **había vivido** |\n| nosotros | **habíamos ido** |\n| vosotros | **habíais hecho** |\n| ellos | **habían llegado** |\n\n🔹 **Participes irréguliers :**\n- *hacer → hecho, decir → dicho, ver → visto*\n- *escribir → escrito, volver → vuelto, poner → puesto*\n- *abrir → abierto, romper → roto, morir → muerto*\n\n🔹 **Contextes typiques :**\n➡️ *Cuando llegué, ella **ya se había ido**.* (elle était déjà partie)\n➡️ *No **había comido** nada antes de la reunión.* (avant la réunion)\n➡️ *Me di cuenta de que **había olvidado** las llaves.* (je me suis rendu compte que)\n\n💡 **ya / todavía no avec le plus-que-parfait :**\n- *ya había llegado* → il était déjà arrivé\n- *todavía no había llegado* → il n'était pas encore arrivé",
+    "en": "⚙️ The **past perfect** expresses an action that happened **before another past action**.\n\n🔹 **Form:** había + past participle\n🔹 **Typical contexts:**\n➡️ *Cuando llegué, ella ya se había ido.*\n➡️ *Me di cuenta de que había olvidado las llaves.*"
+  },
+  "drills": [
+    { "prompt": "Cuando llegué, ella ya ___ (irse).", "answer": "se había ido" },
+    { "prompt": "No ___ (comer, yo) nada antes de la reunión.", "answer": "había comido" },
+    { "prompt": "Me di cuenta de que ___ (olvidar, yo) las llaves.", "answer": "había olvidado" },
+    { "prompt": "Cuando llegamos al cine, la película ya ___  (empezar).", "answer": "había empezado" },
+    { "prompt": "Él dijo que nunca ___ (estar) en Barcelona.", "answer": "había estado" },
+    { "prompt": "Todavía no ___ (terminar, nosotros) cuando sonó el teléfono.", "answer": "habíamos terminado" },
+    { "prompt": "Cuando me llamó, ya ___ (hacer, yo) los deberes.", "answer": "había hecho" },
+    { "prompt": "Ella no sabía que él ___ (volver) ya.", "answer": "había vuelto" },
+    { "prompt": "Nunca ___ (ver, yo) tanta nieve antes.", "answer": "había visto" },
+    { "prompt": "Cuando abrí la nevera, alguien ya ___ (comer) mi yogur.", "answer": "había comido" },
+    { "prompt": "Me sorprendió que ___ (decir, él) eso.", "answer": "hubiera dicho" },
+    { "prompt": "Ya ___ (escribir, nosotros) el informe cuando llegó el jefe.", "answer": "habíamos escrito" },
+    { "prompt": "Todavía no ___ (abrir, ellos) el local cuando pasé.", "answer": "habían abierto" },
+    { "prompt": "Cuando llegué a casa, me di cuenta de que ___ (romper, yo) las gafas.", "answer": "había roto" },
+    { "prompt": "Ella confesó que ___ (poner, ella) el dinero en el cajón.", "answer": "había puesto" },
+    { "prompt": "Nunca ___ (probar, tú) el gazpacho antes de ese día.", "answer": "habías probado" },
+    { "prompt": "Cuando me enteré, ellos ya ___ (salir).", "answer": "habían salido" },
+    { "prompt": "Me contó que ___ (vivir, él) en París durante tres años.", "answer": "había vivido" },
+    { "prompt": "Ya ___ (hablar, nosotros) con el director antes de la reunión.", "answer": "habíamos hablado" },
+    { "prompt": "Cuando llegué al hospital, mi abuela ya ___ (morir).", "answer": "había muerto" },
+    { "prompt": "Todavía no ___ (leer, yo) el libro cuando me preguntaron.", "answer": "había leído" },
+    { "prompt": "Él no sabía que su amigo ___ (volver) de viaje.", "answer": "había vuelto" },
+    { "prompt": "Cuando me di cuenta, ya ___ (perder, yo) el tren.", "answer": "había perdido" },
+    { "prompt": "Ellos ___ (preparar) todo antes de que llegaran los invitados.", "answer": "habían preparado" },
+    { "prompt": "Nunca ___ (hacer, vosotros) senderismo antes de ese día.", "answer": "habíais hecho" },
+    { "prompt": "Cuando llamé, ella ya ___ (acostarse).", "answer": "se había acostado" },
+    { "prompt": "Me di cuenta de que ___ (decir, yo) algo inapropiado.", "answer": "había dicho" },
+    { "prompt": "Ya ___ (abrir, ellos) la tienda cuando llegamos.", "answer": "habían abierto" },
+    { "prompt": "Todavía no ___ (terminar, ella) cuando le pedimos el informe.", "answer": "había terminado" },
+    { "prompt": "Me sorprendió que nunca ___ (ver, él) esa película.", "answer": "hubiera visto" }
+  ]
+}
