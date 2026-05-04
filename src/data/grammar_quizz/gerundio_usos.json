@@ -1,0 +1,41 @@
+{
+  "id": "gerundio_usos",
+  "title": { "fr": "Le gérondif – Usages et périphrases (estar, llevar, seguir, ir...)", "en": "The gerund – Uses and periphrases (estar, llevar, seguir, ir...)" },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Le **gérondif** (forme en -ando/-iendo) s'utilise dans plusieurs contextes en espagnol.\n\n🔹 **Formation :**\n- verbes en -ar → **-ando** : hablar → *hablando*\n- verbes en -er/-ir → **-iendo** : comer → *comiendo*, vivir → *viviendo*\n- Irréguliers : *decir → diciendo, poder → pudiendo, venir → viniendo, ir → yendo, leer → leyendo*\n\n🔹 **Périphrases avec gérondif :**\n\n1️⃣ **estar + gerundio** → action en cours\n➡️ *Estoy estudiando.* (Je suis en train d'étudier.)\n\n2️⃣ **llevar + tiempo + gerundio** → durée d'une action en cours\n➡️ *Llevo dos horas esperando.* (Ça fait deux heures que j'attends.)\n\n3️⃣ **seguir + gerundio** → action qui continue\n➡️ *Sigue lloviendo.* (Il continue de pleuvoir.)\n\n4️⃣ **ir + gerundio** → progression graduelle\n➡️ *Voy aprendiendo poco a poco.* (J'apprends petit à petit.)\n\n5️⃣ **andar + gerundio** → action répétée/habituelle (oral)\n➡️ *Anda diciendo tonterías.* (Il est toujours en train de dire des bêtises.)\n\n🔹 **Gérondif = manière/simultanéité :**\n➡️ *Entró **cantando**.* (Il est entré en chantant.)\n➡️ ***Estudiando** mucho, aprobarás.* (En étudiant beaucoup, tu réussiras.)\n\n⚠️ **Gérondif ≠ infinitif :**\n- Après préposition → **infinitif** : *antes de **hablar**, después de **comer***\n- Sujet de la phrase → **infinitif** : ***Hablar** es importante.*",
+    "en": "⚙️ The **gerund** (-ando/-iendo) is used in several contexts.\n\n🔹 **Periphrases:**\n1. *estar + gerund* → ongoing action\n2. *llevar + time + gerund* → duration\n3. *seguir + gerund* → continuing action\n4. *ir + gerund* → gradual progress\n5. *andar + gerund* → repeated action (informal)\n\n🔹 **Gerund = manner/simultaneous action**\n⚠️ After preposition → use infinitive, not gerund"
+  },
+  "drills": [
+    { "prompt": "Ahora mismo ___ (estudiar, yo) para el examen. (estar + gérondif)", "answer": "estoy estudiando" },
+    { "prompt": "___ tres años ___ (vivir, yo) en Barcelona. (llevar + durée)", "answer": "Llevo / viviendo" },
+    { "prompt": "___ (llover). No para. (seguir + gérondif)", "answer": "Sigue lloviendo" },
+    { "prompt": "___ poco a poco el idioma. (ir aprendiendo – progression)", "answer": "Voy aprendiendo" },
+    { "prompt": "Entró en la sala ___ (cantar). (en chantant – simultanéité)", "answer": "cantando" },
+    { "prompt": "___ mucho, mejorarás. (estudiar – condition)", "answer": "Estudiando" },
+    { "prompt": "¿Cuánto tiempo ___ (esperar, tú)? (llevar + gérondif)", "answer": "llevas esperando" },
+    { "prompt": "___ (trabajar, él) en esa empresa. No ha cambiado. (seguir)", "answer": "Sigue trabajando" },
+    { "prompt": "Antes de ___ (hablar), piensa bien lo que vas a decir. (infinitif après préposition)", "answer": "hablar" },
+    { "prompt": "___ (hacer) ejercicio es bueno para la salud. (sujet → infinitif)", "answer": "Hacer" },
+    { "prompt": "Me llamó ___ (conducir). (mientras conducía – simultanéité)", "answer": "conduciendo" },
+    { "prompt": "___ dos horas ___ (esperar, nosotros) el autobús. (llevar)", "answer": "Llevamos / esperando" },
+    { "prompt": "___ (decir, él) tonterías todo el día. (andar + gérondif – oral)", "answer": "Anda diciendo" },
+    { "prompt": "Después de ___ (comer), salimos a dar un paseo. (infinitif)", "answer": "comer" },
+    { "prompt": "___ (aprender, yo) poco a poco el catalán. (ir + gérondif)", "answer": "Voy aprendiendo" },
+    { "prompt": "¿___ (trabajar, vosotros) todavía en el proyecto? (seguir)", "answer": "¿Seguís trabajando" },
+    { "prompt": "Escuché las noticias ___ (desayunar). (en prenant le petit-déj)", "answer": "desayunando" },
+    { "prompt": "___ cinco meses ___ (salir, ellos) juntos. (llevar)", "answer": "Llevan / saliendo" },
+    { "prompt": "___ (leer) más, ampliarás tu vocabulario. (gérondif – condition)", "answer": "Leyendo" },
+    { "prompt": "¿Qué ___ (hacer, tú) ahora mismo? (estar)", "answer": "estás haciendo" },
+    { "prompt": "___ (seguir, ella) ___ (buscar) trabajo. (seguir + gérondif)", "answer": "Sigue buscando" },
+    { "prompt": "Lo explicó ___ (usar) muchos ejemplos. (en utilisant – simultanéité)", "answer": "usando" },
+    { "prompt": "Sin ___ (estudiar) no aprobarás. (infinitif après sin)", "answer": "estudiar" },
+    { "prompt": "___ un año ___ (aprender, yo) español. (llevar)", "answer": "Llevo / aprendiendo" },
+    { "prompt": "La situación ___ (mejorar, ir) poco a poco. (ir + gérondif)", "answer": "va mejorando" },
+    { "prompt": "___ (andar, él) ___ (quejarse) de todo. (andar + gérondif)", "answer": "Anda quejándose" },
+    { "prompt": "Vi la película ___ (comer) palomitas. (en mangeant)", "answer": "comiendo" },
+    { "prompt": "___ (poder) → gérondif de poder", "answer": "pudiendo" },
+    { "prompt": "___ (venir) → gérondif de venir", "answer": "viniendo" },
+    { "prompt": "___ (decir) → gérondif de decir", "answer": "diciendo" }
+  ]
+}
