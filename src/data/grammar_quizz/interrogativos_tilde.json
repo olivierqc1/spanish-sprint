@@ -1,0 +1,44 @@
+{
+  "id": "interrogativos_tilde",
+  "title": {
+    "fr": "Accent diacritique – cuando/qué/cómo/dónde",
+    "en": "Diacritical accent – cuando/qué/cómo/dónde"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Certains mots prennent un accent écrit quand ils sont **interrogatifs ou exclamatifs**, et le perdent quand ils sont **relatifs ou conjonctions**.\n\n🔹 **Avec accent = interrogatif/exclamatif**\n- **¿cuándo?** → quand ? *¿Cuándo llegas?*\n- **¿qué?** → quoi/que ? *¿Qué quieres?*\n- **¿cómo?** → comment ? *¿Cómo estás?*\n- **¿dónde?** → où ? *¿Dónde vives?*\n- **¿quién?** → qui ? *¿Quién es?*\n- **¿cuánto?** → combien ? *¿Cuánto cuesta?*\n\n🔹 **Sans accent = relatif/conjonction**\n- **cuando** → quand (conjonction) *Llámame cuando llegues.*\n- **que** → que (relatif/conjonction) *El libro que leí era bueno.*\n- **como** → comme/comment *Lo hice como me dijiste.*\n- **donde** → où (relatif) *La ciudad donde vivo.*\n- **quien** → qui (relatif) *La persona quien llamó.*\n\n💡 **Astuce :** Si tu peux remplacer par «¿...?» ou «¡...!», il faut l'accent.",
+    "en": "⚙️ Some words take a written accent when **interrogative or exclamatory**, and lose it when used as **relatives or conjunctions**.\n\n🔹 **With accent = interrogative/exclamatory**\n- ¿cuándo?, ¿qué?, ¿cómo?, ¿dónde?, ¿quién?, ¿cuánto?\n\n🔹 **Without accent = relative/conjunction**\n- cuando, que, como, donde, quien"
+  },
+  "drills": [
+    { "prompt": "Luis pregunta _____ nos vamos de viaje. (quand – conjonction)", "answer": "cuando" },
+    { "prompt": "Luis me preguntó por ti _____ nos vemos. (quand – interrogatif indirect)", "answer": "cuándo" },
+    { "prompt": "Alba no sabe _____ Juan está enfadado. (que – conjonction)", "answer": "que" },
+    { "prompt": "Alba no sabe _____ le pasa a Juan. (quoi – interrogatif indirect)", "answer": "qué" },
+    { "prompt": "Dani siempre le pregunta _____ está su padre. (comment – interrogatif indirect)", "answer": "cómo" },
+    { "prompt": "Lo hizo _____ siempre. (comme – conjonction)", "answer": "como" },
+    { "prompt": "Cris quiere saber _____ estuvimos ayer. (où – interrogatif indirect)", "answer": "dónde" },
+    { "prompt": "El parque _____ estuvimos ayer era bonito. (où – relatif)", "answer": "donde" },
+    { "prompt": "¿_____ es tu nombre? (quel – interrogatif direct)", "answer": "Cuál" },
+    { "prompt": "No sé _____ vino. (qui – interrogatif indirect)", "answer": "quién" },
+    { "prompt": "La persona _____ llamó era mi jefa. (qui – relatif)", "answer": "quien" },
+    { "prompt": "¿_____ cuesta este libro? (combien – interrogatif direct)", "answer": "Cuánto" },
+    { "prompt": "¡_____ bien que cantas! (comme – exclamatif)", "answer": "Qué" },
+    { "prompt": "El día _____ llegué llovía mucho. (quand – relatif)", "answer": "cuando" },
+    { "prompt": "¿_____ has llegado tan tarde? (comment – interrogatif direct)", "answer": "Cómo" },
+    { "prompt": "Dime _____ pasó exactamente. (ce qui – interrogatif indirect)", "answer": "qué" },
+    { "prompt": "La ciudad _____ nació es pequeña. (où – relatif)", "answer": "donde" },
+    { "prompt": "¿_____ vas este verano? (où – interrogatif direct)", "answer": "Dónde" },
+    { "prompt": "Hazlo _____ quieras. (comme – conjonction)", "answer": "como" },
+    { "prompt": "¿_____ personas vinieron a la fiesta? (combien de – interrogatif direct)", "answer": "Cuántas" },
+    { "prompt": "No entiendo _____ dices. (ce que – interrogatif indirect)", "answer": "qué" },
+    { "prompt": "El libro _____ lei era buenísimo. (que – relatif)", "answer": "que" },
+    { "prompt": "¿_____ llegará el tren? (quand – interrogatif direct)", "answer": "Cuándo" },
+    { "prompt": "Llámame _____ llegues. (quand – conjonction)", "answer": "cuando" },
+    { "prompt": "¿_____ es ese chico? (qui – interrogatif direct)", "answer": "Quién" },
+    { "prompt": "No sé _____ explicártelo. (comment – interrogatif indirect)", "answer": "cómo" },
+    { "prompt": "Me contó _____ había pasado. (ce qui – interrogatif indirect)", "answer": "qué" },
+    { "prompt": "Trabaja _____ le han enseñado. (comme – conjonction)", "answer": "como" },
+    { "prompt": "¿_____ tiempo hace en Barcelona? (quel – interrogatif direct)", "answer": "Qué" },
+    { "prompt": "Fue _____ llegamos al hotel. (quand – relatif/conjonction)", "answer": "cuando" }
+  ]
+}
