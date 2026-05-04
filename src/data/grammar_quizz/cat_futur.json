@@ -1,0 +1,41 @@
+{
+  "id": "cat_futur",
+  "title": { "fr": "Catalan — Futur simple (parlaré, menjaré...)", "en": "Catalan — Simple future (parlaré, menjaré...)" },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Le **futur simple** en catalan se forme comme en espagnol : infinitif + terminaisons.\n\n🔹 **Terminaisons (mêmes pour tous les verbes) :**\n- jo **-é**\n- tu **-às**\n- ell/ella **-à**\n- nosaltres **-em**\n- vosaltres **-eu**\n- ells/elles **-an**\n\n🔹 **Exemples réguliers :**\n- *parlaré, parlaràs, parlarà, parlarem, parlareu, parlaran*\n- *menjaré, menjaràs, menjarà, menjarem, menjareu, menjaran*\n\n🔹 **Irréguliers (radicaux irréguliers) :**\n- **fer** → far- : *faré, faràs, farà, farem, fareu, faran*\n- **dir** → dir- : *diré, diràs, dirà, direm, direu, diran*\n- **poder** → podr- : *podré, podràs, podrà, podrem, podreu, podran*\n- **voler** → voldr- : *voldré, voldràs, voldrà, voldrem, voldreu, voldran*\n- **venir** → vindr- : *vindré, vindràs, vindrà, vindrem, vindreu, vindran*\n- **tenir** → tindr- : *tindré, tindràs, tindrà, tindrem, tindreu, tindran*\n- **sortir** → sortr- : *sortré, sortraàs, sortirà...*\n- **haver** → haur- : *hauré, hauràs...*\n\n🔹 **Futur proche : anar a + infinitiu**\n➡️ *Vaig a menjar.* (Je vais manger.)\n➡️ *Van a sortir.* (Ils vont sortir.)\n\n💡 **Marqueurs temporels :** *demà, demà passat, la setmana que ve, l'any que ve, d'aquí a + temps*",
+    "en": "⚙️ Catalan **simple future** = infinitive + endings: -é, -às, -à, -em, -eu, -an\n\n🔹 **Irregular stems:** fer→far, dir→dir, poder→podr, voler→voldr, venir→vindr, tenir→tindr\n\n🔹 **Near future:** anar a + infinitive"
+  },
+  "drills": [
+    { "prompt": "Demà ___ (jo, parlar) amb el director.", "answer": "parlaré" },
+    { "prompt": "La setmana que ve ___ (tu, anar) a París.", "answer": "aniràs" },
+    { "prompt": "Ell ___ (arribar) tard demà.", "answer": "arribarà" },
+    { "prompt": "Nosaltres ___ (sortir) el cap de setmana.", "answer": "sortirem" },
+    { "prompt": "Vosaltres ___ (menjar) a casa nostra.", "answer": "menjareu" },
+    { "prompt": "Ells ___ (treballar) molt l'any que ve.", "answer": "treballaran" },
+    { "prompt": "Jo ___ (fer) els deures demà. (irrég.)", "answer": "faré" },
+    { "prompt": "Tu ___ (dir) la veritat. (irrég.)", "answer": "diràs" },
+    { "prompt": "Ella ___ (poder) venir. (irrég.)", "answer": "podrà" },
+    { "prompt": "Nosaltres ___ (voler) descansar. (irrég.)", "answer": "voldrem" },
+    { "prompt": "Jo ___ (venir) demà. (irrég.)", "answer": "vindré" },
+    { "prompt": "Ell ___ (tenir) temps la setmana que ve. (irrég.)", "answer": "tindrà" },
+    { "prompt": "Jo vaig a ___ ara. (menjar – futur proche)", "answer": "menjar" },
+    { "prompt": "Van a ___ demà. (sortir – futur proche)", "answer": "sortir" },
+    { "prompt": "Demà ___ (ploure).", "answer": "plourà" },
+    { "prompt": "Tu ___ (estudiar) molt per l'examen.", "answer": "estudiaràs" },
+    { "prompt": "Vosaltres ___ (poder) venir demà? (irrég.)", "answer": "podreu" },
+    { "prompt": "Ells ___ (fer) una festa. (irrég.)", "answer": "faran" },
+    { "prompt": "Jo ___ (viure) a Barcelona l'any que ve.", "answer": "viuré" },
+    { "prompt": "Ella ___ (escriure) una novel·la.", "answer": "escriurà" },
+    { "prompt": "Nosaltres ___ (dir) la veritat. (irrég.)", "answer": "direm" },
+    { "prompt": "Tu ___ (tenir) molt d'èxit. (irrég.)", "answer": "tindràs" },
+    { "prompt": "Jo ___ (veure) la pel·lícula demà.", "answer": "veuré" },
+    { "prompt": "Ells ___ (voler) comprar una casa. (irrég.)", "answer": "voldran" },
+    { "prompt": "Ella ___ (venir) a la reunió. (irrég.)", "answer": "vindrà" },
+    { "prompt": "Nosaltres ___ (aprendre) molt.", "answer": "aprendrem" },
+    { "prompt": "Vosaltres ___ (dir) el vostre nom. (irrég.)", "answer": "direu" },
+    { "prompt": "Jo ___ (poder) ajudar-te. (irrég.)", "answer": "podré" },
+    { "prompt": "Ells ___ (arribar) d'aquí a una hora.", "answer": "arribaran" },
+    { "prompt": "Tu vaig a ___ ara? (descansar – futur proche)", "answer": "descansar" }
+  ]
+}
