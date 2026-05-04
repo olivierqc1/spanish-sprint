@@ -1,0 +1,41 @@
+{
+  "id": "subjuntivo_deseos_sentimientos",
+  "title": { "fr": "Subjonctif – Désirs et sentiments (querer que, esperar que...)", "en": "Subjunctive – Wishes and feelings (querer que, esperar que...)" },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ On utilise le **subjonctif présent** après les verbes exprimant un désir, un souhait, un sentiment ou une émotion, quand les deux sujets sont **différents**.\n\n🔹 **Verbes de désir/volonté + que + subjonctif :**\n- *querer que* → vouloir que\n- *desear que* → souhaiter que\n- *esperar que* → espérer que\n- *preferir que* → préférer que\n- *pedir que* → demander que\n\n🔹 **Verbes de sentiment + que + subjonctif :**\n- *alegrarse de que* → être content que\n- *tener miedo de que* → avoir peur que\n- *sorprender que* → surprendre que\n- *molestar que* → déranger que\n- *gustar que* → aimer que\n- *sentir que* → regretter que\n\n⚠️ **Même sujet → infinitif (pas de subjonctif)**\n- *Quiero **ir**.* (même sujet) ✅\n- *Quiero que **vayas**.* (sujets différents) ✅\n- ❌ *Quiero que **ir**.*\n\n💡 **Formation du subjonctif présent :**\n- Partir de la 1ère personne du présent indicatif\n- hablar → hablo → **hable, hables, hable...**\n- tener → tengo → **tenga, tengas, tenga...**\n- ir → voy → **vaya, vayas, vaya...**",
+    "en": "⚙️ Use the **present subjunctive** after verbs expressing desire, wish, feeling, or emotion when the two subjects are **different**.\n\n🔹 **Desire/will + que + subjunctive:** querer que, desear que, esperar que, preferir que\n🔹 **Feelings + que + subjunctive:** alegrarse de que, tener miedo de que, molestar que, gustar que\n\n⚠️ **Same subject → infinitive:** *Quiero ir.* / *Quiero que vayas.*"
+  },
+  "drills": [
+    { "prompt": "Quiero que ___ (venir, tú) a la fiesta.", "answer": "vengas" },
+    { "prompt": "Espero que ___ (hacer, él) buen tiempo mañana.", "answer": "haga" },
+    { "prompt": "Me alegro de que ___ (estar, vosotros) bien.", "answer": "estéis" },
+    { "prompt": "Prefiero que ___ (hablar, ella) con el jefe.", "answer": "hable" },
+    { "prompt": "Tengo miedo de que ___ (perder, nosotros) el vuelo.", "answer": "perdamos" },
+    { "prompt": "Le pido que ___ (ser, usted) más puntual.", "answer": "sea" },
+    { "prompt": "Me molesta que ___ (llegar, ellos) siempre tarde.", "answer": "lleguen" },
+    { "prompt": "Deseo que ___ (tener, tú) mucha suerte.", "answer": "tengas" },
+    { "prompt": "Me sorprende que ___ (no saber, él) la respuesta.", "answer": "no sepa" },
+    { "prompt": "Siento que ___ (no poder, tú) venir.", "answer": "no puedas" },
+    { "prompt": "Me gusta que ___ (hacer, vosotros) los deberes solos.", "answer": "hagáis" },
+    { "prompt": "Espero que ___ (aprobar, tú) el examen.", "answer": "apruebes" },
+    { "prompt": "Quiero que ___ (decir, tú) la verdad.", "answer": "digas" },
+    { "prompt": "Me alegra que ___ (volver, ella) pronto.", "answer": "vuelva" },
+    { "prompt": "Prefiero que ___ (no salir, tú) tan tarde.", "answer": "no salgas" },
+    { "prompt": "Tengo miedo de que ___ (estar, él) enfadado.", "answer": "esté" },
+    { "prompt": "Me molesta que ___ (poner, tú) la música tan alta.", "answer": "pongas" },
+    { "prompt": "Le piden que ___ (ir, ella) a la reunión.", "answer": "vaya" },
+    { "prompt": "Deseo que ___ (ser, vosotros) muy felices.", "answer": "seáis" },
+    { "prompt": "Me sorprende que ___ (querer, ellos) irse ya.", "answer": "quieran" },
+    { "prompt": "Quiero ___. (ir, yo – même sujet → infinitif)", "answer": "ir" },
+    { "prompt": "Quiero que ___ (ir, tú – sujets différents)", "answer": "vayas" },
+    { "prompt": "Espero ___ bien. (estar, yo – même sujet → infinitif)", "answer": "estar" },
+    { "prompt": "Espero que ___ bien. (estar, tú – sujets différents)", "answer": "estés" },
+    { "prompt": "Me alegro de que ___ (encontrar, tú) trabajo.", "answer": "hayas encontrado" },
+    { "prompt": "Siento que ___ (sentirse, ella) mal.", "answer": "se sienta" },
+    { "prompt": "Prefiero que ___ (venir, ellos) en tren.", "answer": "vengan" },
+    { "prompt": "Me gusta que ___ (ser, tú) tan amable.", "answer": "seas" },
+    { "prompt": "Le pido que ___ (tener, usted) paciencia.", "answer": "tenga" },
+    { "prompt": "Deseo que todo ___ (salir) bien.", "answer": "salga" }
+  ]
+}
