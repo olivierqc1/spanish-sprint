@@ -1,0 +1,41 @@
+{
+  "id": "cat_passat_perifrasic",
+  "title": { "fr": "Catalan — Passé périphrastique (vaig + infinitif) – Le passé principal", "en": "Catalan — Periphrastic past (vaig + infinitive) – The main past tense" },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Le **passé périphrastique** est le temps du passé le plus utilisé en catalan parlé et écrit. Il correspond au passé composé ou passé simple français.\n\n🔹 **Formation : anar (présent) + infinitif**\n\n| Pronom | anar | + infinitif |\n|--------|------|-------------|\n| jo | **vaig** | parlar |\n| tu | **vas** | menjar |\n| ell/ella | **va** | arribar |\n| nosaltres | **vam** | sortir |\n| vosaltres | **vau** | fer |\n| ells/elles | **van** | dir |\n\n➡️ *Ahir vaig menjar paella.* (Hier j'ai mangé de la paella.)\n➡️ *L'any passat vam anar a París.* (L'an dernier nous sommes allés à Paris.)\n➡️ *Vas trucar a la porta.* (Tu as frappé à la porte.)\n\n⚠️ **Attention :** *vaig, vas, va...* ici = auxiliaires du passé périphrastique. Ce n'est PAS le verbe *anar* (aller) conjugué au présent.\n- *Vaig al mercat.* = Je vais au marché (présent)\n- *Vaig anar al mercat.* = Je suis allé au marché (passé)\n\n💡 **Marqueurs temporels du passé :**\n- *ahir* → hier\n- *l'altre dia* → l'autre jour\n- *la setmana passada* → la semaine dernière\n- *l'any passat* → l'an dernier\n- *fa + temps* → il y a (fa dos dies = il y a deux jours)",
+    "en": "⚙️ The **periphrastic past** is the most used past tense in Catalan. It corresponds to the French passé composé or passé simple.\n\n🔹 **Form:** present of anar + infinitive\n- jo **vaig** + infinitive\n- tu **vas** + infinitive\n- ell **va** + infinitive\n- nosaltres **vam** + infinitive\n- vosaltres **vau** + infinitive\n- ells **van** + infinitive\n\n➡️ *Ahir vaig menjar paella.*"
+  },
+  "drills": [
+    { "prompt": "Ahir ___ (jo, menjar) paella.", "answer": "vaig menjar" },
+    { "prompt": "La setmana passada ___ (tu, anar) a Madrid.", "answer": "vas anar" },
+    { "prompt": "Ella ___ (arribar) tard ahir.", "answer": "va arribar" },
+    { "prompt": "Nosaltres ___ (sortir) el dissabte passat.", "answer": "vam sortir" },
+    { "prompt": "Vosaltres ___ (fer) molt soroll ahir.", "answer": "vau fer" },
+    { "prompt": "Ells ___ (dir) la veritat.", "answer": "van dir" },
+    { "prompt": "Jo ___ (veure) una pel·lícula ahir.", "answer": "vaig veure" },
+    { "prompt": "Tu ___ (escriure) una carta.", "answer": "vas escriure" },
+    { "prompt": "Ell ___ (comprar) un cotxe nou.", "answer": "va comprar" },
+    { "prompt": "Nosaltres ___ (parlar) amb el professor.", "answer": "vam parlar" },
+    { "prompt": "Vosaltres ___ (estudiar) molt la setmana passada.", "answer": "vau estudiar" },
+    { "prompt": "Elles ___ (aprendre) molt de vocabulari.", "answer": "van aprendre" },
+    { "prompt": "Jo ___ (tenir) un accident fa tres anys.", "answer": "vaig tenir" },
+    { "prompt": "Tu ___ (venir) tard ahir.", "answer": "vas venir" },
+    { "prompt": "Ella ___ (fer) una cosa molt bona.", "answer": "va fer" },
+    { "prompt": "Nosaltres ___ (viure) a Londres fa molts anys.", "answer": "vam viure" },
+    { "prompt": "Jo ___ (ser) a Barcelona l'any passat.", "answer": "vaig ser" },
+    { "prompt": "Ell ___ (poder) acabar el treball.", "answer": "va poder" },
+    { "prompt": "Vosaltres ___ (veure) el partit?", "answer": "vau veure" },
+    { "prompt": "Ells ___ (decidir) marxar.", "answer": "van decidir" },
+    { "prompt": "Jo ___ (obrir) la porta.", "answer": "vaig obrir" },
+    { "prompt": "Tu ___ (llegir) el llibre sencer.", "answer": "vas llegir" },
+    { "prompt": "Ella ___ (dormir) molt bé.", "answer": "va dormir" },
+    { "prompt": "Nosaltres ___ (trobar) la solució.", "answer": "vam trobar" },
+    { "prompt": "Ells ___ (celebrar) l'aniversari.", "answer": "van celebrar" },
+    { "prompt": "Jo ___ (voler) trucar però no vaig poder.", "answer": "vaig voler" },
+    { "prompt": "Tu ___ (saber) la resposta?", "answer": "vas saber" },
+    { "prompt": "Ella ___ (posar) les claus a la taula.", "answer": "va posar" },
+    { "prompt": "Vosaltres ___ (entendre) la lliçó?", "answer": "vau entendre" },
+    { "prompt": "Ells ___ (guanyar) el partit.", "answer": "van guanyar" }
+  ]
+}
