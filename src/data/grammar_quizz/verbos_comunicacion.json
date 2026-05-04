@@ -1,0 +1,44 @@
+{
+  "id": "verbos_comunicacion",
+  "title": {
+    "fr": "Verbes de communication + prépositions",
+    "en": "Communication verbs + prepositions"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Ces verbes servent à rapporter des actes de communication. Attention à leurs constructions !\n\n🔹 **Verbes + QUE (+ subjonctif pour ordre/conseil) :**\n- *pedir que* → demander de *Me pidió que fuera.*\n- *recomendar que* → recommander de\n- *recordar que* → rappeler que\n- *decir que* → dire que\n- *comentar que* → commenter que\n\n🔹 **Verbes + DE :**\n- *despedirse de* → dire au revoir à\n- *quejarse de* → se plaindre de\n- *hablar de* → parler de\n- *olvidarse de* → oublier de\n\n🔹 **Verbes + A :**\n- *invitar a* → inviter à\n- *animar a* → encourager à\n- *felicitar a* → féliciter\n- *saludar a* → saluer\n\n🔹 **Verbes + POR :**\n- *dar las gracias por* → remercier pour\n- *felicitar por* → féliciter pour\n- *disculparse por* → s'excuser pour\n- *protestar por* → protester contre\n\n🔹 **Sans préposition :**\n- *preguntar* → demander\n- *contestar / responder* → répondre\n- *contar* → raconter\n- *explicar* → expliquer",
+    "en": "⚙️ These verbs report communication acts. Pay attention to their constructions!\n\n- *pedir que, recomendar que, recordar que...*\n- *despedirse de, quejarse de, hablar de...*\n- *invitar a, felicitar a, animar a...*\n- *dar las gracias por, felicitar por, disculparse por...*"
+  },
+  "drills": [
+    { "prompt": "Me despedí ___ mis compañeros antes de irme.", "answer": "de" },
+    { "prompt": "Te felicito ___ tu nuevo trabajo.", "answer": "por" },
+    { "prompt": "Carlos me invitó ___ su fiesta.", "answer": "a" },
+    { "prompt": "Ellos protestaron ___ las nuevas normas.", "answer": "por" },
+    { "prompt": "Me olvidé ___ llamarle.", "answer": "de" },
+    { "prompt": "Le di las gracias ___ su ayuda.", "answer": "por" },
+    { "prompt": "Me animó ___ seguir adelante.", "answer": "a" },
+    { "prompt": "Se quejó ___ el ruido.", "answer": "de" },
+    { "prompt": "El profesor nos recomendó ___ leyéramos más. (subj)", "answer": "que" },
+    { "prompt": "Me pidió ___ no llegara tarde. (subj)", "answer": "que" },
+    { "prompt": "Me felicitaron ___ haber aprobado el examen.", "answer": "por" },
+    { "prompt": "Se disculpó ___ llegar tarde.", "answer": "por" },
+    { "prompt": "Me habló ___ sus planes para el futuro.", "answer": "de" },
+    { "prompt": "Mi madre me recordó ___ tenía que llamar al médico.", "answer": "que" },
+    { "prompt": "Le animé ___ presentarse al puesto.", "answer": "a" },
+    { "prompt": "Nos despedimos ___ los invitados a medianoche.", "answer": "de" },
+    { "prompt": "Me han dado las gracias ___ mi colaboración.", "answer": "por" },
+    { "prompt": "Le invité ___ cenar.", "answer": "a" },
+    { "prompt": "Se quejó ___ que el servicio era muy lento.", "answer": "de" },
+    { "prompt": "El jefe nos pidió ___ termináramos antes del viernes. (subj)", "answer": "que" },
+    { "prompt": "Me saludó ___ un beso. (con/de → moyen)", "answer": "con" },
+    { "prompt": "Le felicité ___ su cumpleaños.", "answer": "por" },
+    { "prompt": "Me animaron ___ participar en el concurso.", "answer": "a" },
+    { "prompt": "Me disculpé ___ el malentendido.", "answer": "por" },
+    { "prompt": "Hablamos ___ la situación política.", "answer": "de" },
+    { "prompt": "Me recordó ___ comprara pan. (subj)", "answer": "que" },
+    { "prompt": "Nos quejamos ___ el precio tan alto.", "answer": "de" },
+    { "prompt": "Le di las gracias ___ haberme escuchado.", "answer": "por" },
+    { "prompt": "Le pedí ___ me ayudara con el proyecto. (subj)", "answer": "que" },
+    { "prompt": "Nos invitaron ___ visitar su empresa.", "answer": "a" }
+  ]
+}
