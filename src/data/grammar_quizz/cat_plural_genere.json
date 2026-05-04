@@ -1,0 +1,41 @@
+{
+  "id": "cat_plural_genere",
+  "title": { "fr": "Catalan — Genre et pluriel des noms", "en": "Catalan — Gender and plural of nouns" },
+  "level": "A1",
+  "note": {
+    "fr": "⚙️ **Genre des noms en catalan**\n\n🔹 **Masculin :** généralement finissent par consonne ou -o\n- *el cotxe, el gat, el llibre, el noi*\n\n🔹 **Féminin :** généralement finissent par -a\n- *la casa, la gata, la noia, la porta*\n\n💡 **Exceptions fréquentes :**\n- *el dia, el mapa, el programa, el tema* → masculins en -a\n- *la mà, la nit, la llum* → féminins sans -a\n\n🔹 **Formation du pluriel :**\n\n| Terminaison | Singulier | Pluriel | Règle |\n|-------------|-----------|---------|-------|\n| voyelle | *casa* | *cases* | + s |\n| consonne | *gat* | *gats* | + s |\n| -s, -x, -z | *mes* | *mesos* | + os |\n| -sc, -st, -xt | *bosc* | *boscos* | + os |\n| -a féminin | *porta* | *portes* | -a → -es |\n\n💡 **Différence avec l'espagnol :**\n- ESP : *casas, gatos* → CAT : *cases, gats*\n- Le pluriel féminin en catalan = **-es** (pas -as)",
+    "en": "⚙️ **Catalan noun gender and plural**\n\n🔹 **Masculine:** usually consonant or -o ending\n🔹 **Feminine:** usually -a ending\n\n🔹 **Plural rules:**\n- vowel → +s (*casa → cases*)\n- consonant → +s (*gat → gats*)\n- -s/-x/-z → +os (*mes → mesos*)\n- feminine -a → -es (*porta → portes*)"
+  },
+  "drills": [
+    { "prompt": "casa → pluriel", "answer": "cases" },
+    { "prompt": "gat → pluriel", "answer": "gats" },
+    { "prompt": "porta → pluriel", "answer": "portes" },
+    { "prompt": "mes → pluriel", "answer": "mesos" },
+    { "prompt": "bosc → pluriel", "answer": "boscos" },
+    { "prompt": "noi → pluriel", "answer": "nois" },
+    { "prompt": "noia → pluriel", "answer": "noies" },
+    { "prompt": "cotxe → pluriel", "answer": "cotxes" },
+    { "prompt": "taula → pluriel", "answer": "taules" },
+    { "prompt": "llibre → pluriel", "answer": "llibres" },
+    { "prompt": "flor → pluriel", "answer": "flors" },
+    { "prompt": "arbre → pluriel", "answer": "arbres" },
+    { "prompt": "dit → pluriel", "answer": "dits" },
+    { "prompt": "peu → pluriel", "answer": "peus" },
+    { "prompt": "mà → pluriel (→ mans)", "answer": "mans" },
+    { "prompt": "el/la gat → féminin", "answer": "la gata" },
+    { "prompt": "el/la noi → féminin", "answer": "la noia" },
+    { "prompt": "el/la professor → féminin", "answer": "la professora" },
+    { "prompt": "el/la metge → féminin (même forme)", "answer": "la metgessa" },
+    { "prompt": "el/la estudiant → genre? (masculin)", "answer": "el/la estudiant (invariable)" },
+    { "prompt": "dia → genre? (masculin, finit en -a)", "answer": "masculí – el dia" },
+    { "prompt": "mapa → genre?", "answer": "masculí – el mapa" },
+    { "prompt": "problema → genre?", "answer": "masculí – el problema" },
+    { "prompt": "nit → genre?", "answer": "femení – la nit" },
+    { "prompt": "llum → genre?", "answer": "femení – la llum" },
+    { "prompt": "país → pluriel", "answer": "països" },
+    { "prompt": "peix → pluriel", "answer": "peixos" },
+    { "prompt": "veu → pluriel", "answer": "veus" },
+    { "prompt": "fruit → pluriel", "answer": "fruits" },
+    { "prompt": "finestra → pluriel", "answer": "finestres" }
+  ]
+}
