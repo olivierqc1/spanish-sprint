@@ -1,0 +1,41 @@
+{
+  "id": "cat_subjuntiu_present",
+  "title": { "fr": "Catalan — Subjonctif présent (parli, mengi, obri...)", "en": "Catalan — Present subjunctive (parli, mengi, obri...)" },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Le **subjonctif présent** en catalan s'utilise dans les mêmes contextes qu'en espagnol.\n\n🔹 **Formation régulière :**\n\n| | -AR (parlar) | -ER (córrer) | -IR (obrir) |\n|--|-------------|-------------|-------------|\n| jo | **parli** | **corri** | **obri** |\n| tu | **parlis** | **corris** | **obris** |\n| ell | **parli** | **corri** | **obri** |\n| nosaltres | **parlem** | **correguem** | **obrim** |\n| vosaltres | **parleu** | **correu** | **obriu** |\n| ells | **parlin** | **corrin** | **obrin** |\n\n🔹 **Irréguliers :**\n- **ser** : sigui, siguis, sigui, siguem, sigueu, siguin\n- **tenir** : tingui, tinguis, tingui, tinguem, tingueu, tinguin\n- **fer** : faci, facis, faci, fem, feu, facin\n- **anar** : vagi, vagis, vagi, anem, aneu, vagin\n- **venir** : vingui, vinguis, vingui, vinguem, vingueu, vinguin\n- **dir** : digui, diguis, digui, diguem, digueu, diguin\n- **poder** : pugui, puguis, pugui, puguem, pugueu, puguin\n- **voler** : vulgui, vulguis, vulgui, vulguem, vulgueu, vulguin\n- **saber** : sàpiga, sàpigues, sàpiga, sapiguem, sapigueu, sàpiguen\n\n🔹 **Contextes d'utilisation :**\n- Désirs : *Vull que **vinguis**.*\n- Valoration : *És important que **parlis** català.*\n- Impératif négatif : *No **parlis** tant!*\n- Conjonctions : *perquè + subjonctif = pour que*",
+    "en": "⚙️ Catalan **present subjunctive** is used in the same contexts as Spanish.\n\n🔹 **Regular:** -AR→parli, -ER→corri, -IR→obri\n🔹 **Irregular:** ser→sigui, tenir→tingui, fer→faci, anar→vagi, venir→vingui, dir→digui, poder→pugui, voler→vulgui"
+  },
+  "drills": [
+    { "prompt": "Vull que ___ (venir, tu) a la festa.", "answer": "vinguis" },
+    { "prompt": "És important que ___ (parlar, tu) català.", "answer": "parlis" },
+    { "prompt": "Espero que ___ (fer, ell) bon temps.", "answer": "faci" },
+    { "prompt": "Necessito que ___ (anar, vosaltres) al mercat.", "answer": "aneu" },
+    { "prompt": "M'alegro que ___ (estar, tu) bé.", "answer": "estiguis" },
+    { "prompt": "No vull que ___ (dir, ells) res.", "answer": "diguin" },
+    { "prompt": "És necessari que ___ (tenir, nosaltres) paciència.", "answer": "tinguem" },
+    { "prompt": "Prefereixo que ___ (ser, ella) sincera.", "answer": "sigui" },
+    { "prompt": "Em sorprèn que ___ (poder, ell) fer-ho.", "answer": "pugui" },
+    { "prompt": "Volen que ___ (voler, nosaltres) participar.", "answer": "vulguem" },
+    { "prompt": "És una llàstima que ___ (saber, ells) tan poc.", "answer": "sàpiguen" },
+    { "prompt": "Li demano que ___ (venir, ell) demà.", "answer": "vingui" },
+    { "prompt": "No ___ (parlar, tu) tant! (impératif négatif)", "answer": "No parlis" },
+    { "prompt": "No ___ (anar, vosaltres) allà! (impératif négatif)", "answer": "No aneu" },
+    { "prompt": "Ho dic perquè ___ (entendre, tu) la situació.", "answer": "entenguis" },
+    { "prompt": "Busco algú que ___ (saber) català.", "answer": "sàpiga" },
+    { "prompt": "No conec ningú que ___ (poder) ajudar-me.", "answer": "pugui" },
+    { "prompt": "Quan ___ (arribar, tu), truca'm.", "answer": "arribis" },
+    { "prompt": "Esperaré fins que ___ (venir, ell).", "answer": "vingui" },
+    { "prompt": "Diré-li perquè ___ (saber, ell) la veritat.", "answer": "sàpiga" },
+    { "prompt": "Es important que ___ (fer, vosaltres) els deures.", "answer": "feu" },
+    { "prompt": "Vull que ___ (ser, tu) feliç.", "answer": "siguis" },
+    { "prompt": "M'agrada que ___ (tenir, ell) tant d'entusiasme.", "answer": "tingui" },
+    { "prompt": "No vull que ___ (anar, tu) sol.", "answer": "vagis" },
+    { "prompt": "És millor que ___ (dir, ella) la veritat.", "answer": "digui" },
+    { "prompt": "Espero que ___ (poder, nosaltres) quedar.", "answer": "puguem" },
+    { "prompt": "Li demano que ___ (voler, ell) escoltar.", "answer": "vulgui" },
+    { "prompt": "Busco una persona que ___ (parlar) anglès.", "answer": "parli" },
+    { "prompt": "Quan ___ (tenir, nosaltres) temps, anirem.", "answer": "tinguem" },
+    { "prompt": "No ___ (fer, tu) soroll! (impératif négatif)", "answer": "No facis" }
+  ]
+}
