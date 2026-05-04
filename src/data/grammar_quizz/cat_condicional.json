@@ -1,0 +1,41 @@
+{
+  "id": "cat_condicional",
+  "title": { "fr": "Catalan — Conditionnel (parlaria, menjaria...)", "en": "Catalan — Conditional (parlaria, menjaria...)" },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Le **conditionnel** en catalan s'utilise pour les hypothèses, les conseils, la politesse.\n\n🔹 **Formation : infinitif + terminaisons**\n- jo **-ia**\n- tu **-ies**\n- ell/ella **-ia**\n- nosaltres **-íem**\n- vosaltres **-íeu**\n- ells/elles **-ien**\n\n➡️ *parlaria, parlaries, parlaria, parlaríem, parlaríeu, parlarien*\n\n🔹 **Irréguliers (mêmes radicaux que le futur) :**\n- **fer** → far- : *faria, faries, faria...*\n- **dir** → dir- : *diria, diries, diria...*\n- **poder** → podr- : *podria, podries, podria...*\n- **voler** → voldr- : *voldria, voldries, voldria...*\n- **venir** → vindr- : *vindria, vindries, vindria...*\n- **tenir** → tindr- : *tindria, tindries, tindria...*\n\n🔹 **Usages :**\n1️⃣ **Hypothèse irréelle :** Si + imperfet subj. → condicional\n➡️ *Si tingués temps, **vindria**.* (Si j'avais le temps, je viendrais.)\n\n2️⃣ **Politesse :**\n➡️ ***Podria** parlar amb el director?* (Pourrais-je parler au directeur?)\n➡️ ***Voldria** un cafè.* (Je voudrais un café.)\n\n3️⃣ **Conseil :**\n➡️ *Jo que tu, **parlaria** amb ella.*",
+    "en": "⚙️ Catalan **conditional** = infinitive + -ia, -ies, -ia, -íem, -íeu, -ien\n\n🔹 **Irregular stems (same as future):** fer→far, dir→dir, poder→podr, voler→voldr, venir→vindr, tenir→tindr\n\n🔹 **Uses:** unreal hypotheses, politeness, advice"
+  },
+  "drills": [
+    { "prompt": "Si tingués temps, ___ (jo, venir).", "answer": "vindria" },
+    { "prompt": "___ (jo, voler) un cafè, si us plau. (politesse)", "answer": "Voldria" },
+    { "prompt": "___ (poder, tu) ajudar-me? (politesse)", "answer": "Podries" },
+    { "prompt": "Jo que tu, ___ (parlar) amb el director. (conseil)", "answer": "parlaria" },
+    { "prompt": "Si fos ric, ___ (jo, fer) un viatge. (irrég.)", "answer": "faria" },
+    { "prompt": "Ell ___ (dir) la veritat si pogués. (irrég.)", "answer": "diria" },
+    { "prompt": "Nosaltres ___ (poder) ajudar-vos. (irrég.)", "answer": "podríem" },
+    { "prompt": "___ (voler, vosaltres) venir a sopar? (politesse – irrég.)", "answer": "Voldríeu" },
+    { "prompt": "Si visqués a París, ___ (aprendre) francès.", "answer": "aprendria" },
+    { "prompt": "Ella ___ (tenir) més temps si no treballés tant. (irrég.)", "answer": "tindria" },
+    { "prompt": "___ (ser, tu) tan amable d'obrir la porta? (politesse)", "answer": "Series" },
+    { "prompt": "Jo ___ (menjar) més si tingués gana.", "answer": "menjaria" },
+    { "prompt": "Si poguessin, ___ (ells, venir). (irrég.)", "answer": "vindrien" },
+    { "prompt": "___ (poder, jo) parlar amb vostè? (politesse – irrég.)", "answer": "Podria" },
+    { "prompt": "Ells ___ (fer) més exercici si tinguessin temps. (irrég.)", "answer": "farien" },
+    { "prompt": "Jo que tu, ___ (estudiar) més.", "answer": "estudiaria" },
+    { "prompt": "Nosaltres ___ (venir) si ens invitessin. (irrég.)", "answer": "vindríem" },
+    { "prompt": "___ (voldria, tu) un got d'aigua? (politesse – irrég.)", "answer": "Voldries" },
+    { "prompt": "Si treballés menys, ___ (ella, descansar) més.", "answer": "descansaria" },
+    { "prompt": "Ells ___ (dir) la veritat si saberen. (irrég.)", "answer": "dirien" },
+    { "prompt": "Jo ___ (anar) a la platja si fes sol.", "answer": "aniria" },
+    { "prompt": "___ (poder, vosaltres) parlar més baix? (politesse – irrég.)", "answer": "Podríeu" },
+    { "prompt": "Tu ___ (tenir) més diners si estalvieres. (irrég.)", "answer": "tindries" },
+    { "prompt": "Jo ___ (voler) viure a Barcelona. (irrég.)", "answer": "voldria" },
+    { "prompt": "Si ho sabés, t'ho ___ (dir, jo). (irrég.)", "answer": "diria" },
+    { "prompt": "Nosaltres ___ (fer) una festa. (irrég.)", "answer": "faríem" },
+    { "prompt": "Ells ___ (poder) solucionar-ho. (irrég.)", "answer": "podrien" },
+    { "prompt": "___ (ser, vosaltres) tan amables...? (politesse)", "answer": "Seríeu" },
+    { "prompt": "Jo ___ (parlar) amb ell si el conegués.", "answer": "parlaria" },
+    { "prompt": "Ella ___ (venir) si volgués. (irrég.)", "answer": "vindria" }
+  ]
+}
