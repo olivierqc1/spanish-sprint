@@ -1,0 +1,44 @@
+{
+  "id": "estilo_indirecto_que_si",
+  "title": {
+    "fr": "Discours indirect – QUE vs SI",
+    "en": "Indirect speech – QUE vs SI"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Au discours indirect, on rapporte ce que quelqu'un a dit ou demandé.\n\n🔹 **Affirmations et ordres → QUE**\n- *dijo que, comentó que, explicó que, pidió que, recomendó que...*\n➡️ Carlos: «Tengo hambre.» → Carlos dijo **que** tenía hambre.\n➡️ Ana: «Ven mañana.» → Ana me pidió **que** fuera al día siguiente.\n\n🔹 **Questions totales (oui/non) → SI**\n- *preguntó si, quiso saber si...*\n➡️ Luis: «¿Tienes coche?» → Luis preguntó **si** tenía coche.\n➡️ Marta: «¿Vienes a la fiesta?» → Marta quiso saber **si** iba a la fiesta.\n\n🔹 **Questions partielles (mot interrogatif) → mot interrogatif direct**\n➡️ «¿Dónde vives?» → Preguntó **dónde** vivía.\n➡️ «¿Cuándo llegas?» → Quiso saber **cuándo** llegaba.\n\n⚠️ **Changements de temps (passé) :**\n- presente → imperfecto\n- pretérito indefinido → pluscuamperfecto\n- futuro → condicional\n- imperativo → imperfecto de subjuntivo",
+    "en": "⚙️ In indirect speech, we report what someone said or asked.\n\n🔹 **Statements and orders → QUE**\n➡️ Carlos: «I'm hungry.» → Carlos said **that** he was hungry.\n\n🔹 **Yes/no questions → SI**\n➡️ Luis: «Do you have a car?» → Luis asked **if** he had a car.\n\n🔹 **Partial questions → interrogative word**\n➡️ «Where do you live?» → He asked **where** she lived."
+  },
+  "drills": [
+    { "prompt": "Juan: «Me gusta el fútbol.» → Juan dijo ___ le gustaba el fútbol.", "answer": "que" },
+    { "prompt": "Ana: «¿Tienes novia?» → Ana preguntó ___ tenía novia.", "answer": "si" },
+    { "prompt": "El profesor: «Estudiad más.» → El profesor nos pidió ___ estudiáramos más.", "answer": "que" },
+    { "prompt": "Luis: «¿Vienes mañana?» → Luis quiso saber ___ iba al día siguiente.", "answer": "si" },
+    { "prompt": "María: «Estoy cansada.» → María comentó ___ estaba cansada.", "answer": "que" },
+    { "prompt": "Pedro: «¿Has comido?» → Pedro me preguntó ___ había comido.", "answer": "si" },
+    { "prompt": "La jefa: «Llega puntual.» → La jefa me pidió ___ llegara puntual.", "answer": "que" },
+    { "prompt": "Marta: «¿Te gusta Barcelona?» → Marta me preguntó ___ me gustaba Barcelona.", "answer": "si" },
+    { "prompt": "Carlos: «Tengo que irme.» → Carlos explicó ___ tenía que irse.", "answer": "que" },
+    { "prompt": "Ella: «¿Sabes dónde está el banco?» → Ella me preguntó ___ sabía dónde estaba el banco.", "answer": "si" },
+    { "prompt": "Mi madre: «Come más verduras.» → Mi madre me dijo ___ comiera más verduras.", "answer": "que" },
+    { "prompt": "El médico: «¿Fumas?» → El médico me preguntó ___ fumaba.", "answer": "si" },
+    { "prompt": "Rosa: «No me siento bien.» → Rosa dijo ___ no se sentía bien.", "answer": "que" },
+    { "prompt": "Ellos: «¿Podéis ayudarnos?» → Nos preguntaron ___ podíamos ayudarles.", "answer": "si" },
+    { "prompt": "El recepcionista: «Rellena el formulario.» → El recepcionista me pidió ___ rellenara el formulario.", "answer": "que" },
+    { "prompt": "Laura: «¿Has estado en Japón?» → Laura me preguntó ___ había estado en Japón.", "answer": "si" },
+    { "prompt": "Mi amigo: «Ven a la fiesta.» → Mi amigo me pidió ___ fuera a la fiesta.", "answer": "que" },
+    { "prompt": "El jefe: «¿Terminaste el informe?» → El jefe preguntó ___ había terminado el informe.", "answer": "si" },
+    { "prompt": "Sara: «Me voy a vivir a Madrid.» → Sara anunció ___ se iba a vivir a Madrid.", "answer": "que" },
+    { "prompt": "Tomás: «¿Quieres un café?» → Tomás me preguntó ___ quería un café.", "answer": "si" },
+    { "prompt": "La profesora: «Haced los ejercicios.» → La profesora nos pidió ___ hiciéramos los ejercicios.", "answer": "que" },
+    { "prompt": "Él: «¿Estás enfadado?» → Me preguntó ___ estaba enfadado.", "answer": "si" },
+    { "prompt": "Mi jefa: «Llegas tarde todos los días.» → Mi jefa me dijo ___ llegaba tarde todos los días.", "answer": "que" },
+    { "prompt": "Alicia: «¿Te has casado?» → Alicia me preguntó ___ me había casado.", "answer": "si" },
+    { "prompt": "El médico: «Tienes que descansar más.» → El médico me recomendó ___ descansara más.", "answer": "que" },
+    { "prompt": "Mi vecino: «¿Puedes bajar el volumen?» → Mi vecino me preguntó ___ podía bajar el volumen.", "answer": "si" },
+    { "prompt": "Elena: «No entiendo nada.» → Elena admitió ___ no entendía nada.", "answer": "que" },
+    { "prompt": "Raúl: «¿Te han dicho algo?» → Raúl quiso saber ___ me habían dicho algo.", "answer": "si" },
+    { "prompt": "Mi padre: «No salgas tarde.» → Mi padre me pidió ___ no saliera tarde.", "answer": "que" },
+    { "prompt": "Clara: «¿Vas a volver pronto?» → Clara me preguntó ___ iba a volver pronto.", "answer": "si" }
+  ]
+}
