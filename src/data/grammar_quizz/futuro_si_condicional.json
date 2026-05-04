@@ -1,0 +1,44 @@
+{
+  "id": "futuro_si_condicional",
+  "title": {
+    "fr": "Futur – Si + présent de l'indicatif + futur simple",
+    "en": "Future – Si + present indicative + simple future"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Pour exprimer une **condition réelle dans le futur**, on utilise :\n**SI + présent de l'indicatif → futur simple**\n\n➡️ *Si estudias, aprobarás.* (Si tu étudies, tu réussiras.)\n➡️ *Si llueve, no saldremos.* (S'il pleut, on ne sortira pas.)\n\n⚠️ **Jamais** si + futuro : ❌ *Si estudiarás...*\n⚠️ **Jamais** si + condicional : ❌ *Si estudiarías...*\n\n🔹 **Marcadores temporales du futur :**\n- *mañana, pasado mañana*\n- *la semana que viene / el mes que viene*\n- *dentro de + tiempo* → *dentro de dos años*\n- *en el futuro, pronto, algún día*\n- *para + fecha* → *para el viernes*\n\n🔹 **Seguramente / probablemente + futuro**\n➡️ *Seguramente vendrá mañana.*\n➡️ *Probablemente llegaré tarde.*\n\n🔹 **Seguro que + presente o futuro**\n➡️ *Seguro que viene.* / *Seguro que vendrá.*",
+    "en": "⚙️ To express a **real future condition**:\n**SI + present indicative → simple future**\n\n➡️ *Si estudias, aprobarás.* (If you study, you'll pass.)\n\n⚠️ NEVER si + future or si + conditional.\n\n🔹 **Future time markers:** mañana, dentro de, la semana que viene...\n🔹 **Seguramente / probablemente + future**\n🔹 **Seguro que + present or future**"
+  },
+  "drills": [
+    { "prompt": "Si ___ (estudiar, tú), aprobarás el examen.", "answer": "estudias" },
+    { "prompt": "Si estudias, ___ (aprobar, tú) el examen.", "answer": "aprobarás" },
+    { "prompt": "Si ___ (llover), no saldremos.", "answer": "llueve" },
+    { "prompt": "Si llueve, no ___ (salir, nosotros).", "answer": "saldremos" },
+    { "prompt": "Si ___ (tener, tú) tiempo, llámame.", "answer": "tienes" },
+    { "prompt": "Si tienes tiempo, ___ (llamarme).", "answer": "llámame" },
+    { "prompt": "Si ___ (venir, vosotros) pronto, podremos comer juntos.", "answer": "venís" },
+    { "prompt": "Si venís pronto, ___ (poder, nosotros) comer juntos.", "answer": "podremos" },
+    { "prompt": "Si ___ (hacer, él) ejercicio, se sentirá mejor.", "answer": "hace" },
+    { "prompt": "Si hace ejercicio, ___ (sentirse, él) mejor.", "answer": "se sentirá" },
+    { "prompt": "___ viene mañana. (seguramente)", "answer": "Seguramente vendrá" },
+    { "prompt": "___ llegaremos tarde. (probablemente)", "answer": "Probablemente" },
+    { "prompt": "___ que sabe la respuesta. (seguro)", "answer": "Seguro" },
+    { "prompt": "Si ___ (encontrar, yo) trabajo, me mudaré.", "answer": "encuentro" },
+    { "prompt": "Si encuentro trabajo, ___ (mudarse, yo).", "answer": "me mudaré" },
+    { "prompt": "Si ___ (ahorrar, nosotros) suficiente, viajaremos.", "answer": "ahorramos" },
+    { "prompt": "Dentro de diez años, ___ (vivir, nosotros) en ciudades flotantes. (futur)", "answer": "viviremos" },
+    { "prompt": "Si ___ (seguir) así el tráfico, habrá más contaminación.", "answer": "sigue" },
+    { "prompt": "Probablemente ___ (haber) coches eléctricos en todas partes.", "answer": "habrá" },
+    { "prompt": "Si ___ (tú, no comer) bien, te pondrás enfermo.", "answer": "no comes" },
+    { "prompt": "Si no comes bien, ___ (ponerse, tú) enfermo.", "answer": "te pondrás" },
+    { "prompt": "Seguramente ___ (hacer) buen tiempo este fin de semana.", "answer": "hará" },
+    { "prompt": "Si ___ (ellos, terminar) tarde, no cogerán el tren.", "answer": "terminan" },
+    { "prompt": "Si terminan tarde, no ___ (coger, ellos) el tren.", "answer": "cogerán" },
+    { "prompt": "La semana que viene ___ (ir, yo) a Madrid.", "answer": "iré" },
+    { "prompt": "Si ___ (tú, querer) venir, avísame.", "answer": "quieres" },
+    { "prompt": "Probablemente ___ (ella, no venir) a la fiesta.", "answer": "vendrá" },
+    { "prompt": "Si ___ (nosotros, madrugar), llegaremos a tiempo.", "answer": "madrugamos" },
+    { "prompt": "Para el viernes ___ (terminar, yo) el proyecto.", "answer": "terminaré" },
+    { "prompt": "Seguro que ___ (ellos, llegar) tarde como siempre.", "answer": "llegan / llegarán" }
+  ]
+}
