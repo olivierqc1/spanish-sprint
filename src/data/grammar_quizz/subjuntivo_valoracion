@@ -1,0 +1,41 @@
+{
+  "id": "subjuntivo_valoracion",
+  "title": { "fr": "Subjonctif – Valorisation (es importante que, es necesario que...)", "en": "Subjunctive – Value judgements (es importante que, es necesario que...)" },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ On utilise le **subjonctif** après les expressions impersonnelles de valorisation, d'obligation ou d'opinion.\n\n🔹 **Expressions impersonnelles + que + subjonctif :**\n- *es importante que* → il est important que\n- *es necesario que* → il est nécessaire que\n- *es bueno que* → c'est bien que\n- *es malo que* → c'est mauvais que\n- *es mejor que* → il vaut mieux que\n- *es normal que* → c'est normal que\n- *es raro que* → c'est bizarre que\n- *es una lástima que* → c'est dommage que\n- *es increíble que* → c'est incroyable que\n- *está bien que* → c'est bien que\n- *está mal que* → c'est mal que\n\n🔹 **Avec un sujet implicite → infinitif**\n- *Es importante **estudiar**.* (sujet général) ✅\n- *Es importante que **estudies**.* (sujet précis) ✅\n\n💡 **Astuce :** Toutes ces expressions évaluent une situation — elles déclenchent toujours le subjonctif quand il y a un sujet précis après *que*.",
+    "en": "⚙️ Use the **subjunctive** after impersonal expressions of value, obligation, or opinion.\n\n🔹 **Impersonal + que + subjunctive:**\n- es importante que, es necesario que, es mejor que, es normal que, es raro que, es una lástima que, está bien que, está mal que..."
+  },
+  "drills": [
+    { "prompt": "Es importante que ___ (estudiar, tú) todos los días.", "answer": "estudies" },
+    { "prompt": "Es necesario que ___ (llegar, vosotros) a tiempo.", "answer": "lleguéis" },
+    { "prompt": "Es bueno que ___ (hacer, él) ejercicio.", "answer": "haga" },
+    { "prompt": "Es mejor que ___ (descansar, tú).", "answer": "descanses" },
+    { "prompt": "Es una lástima que ___ (no poder, ella) venir.", "answer": "no pueda" },
+    { "prompt": "Es normal que ___ (estar, tú) cansado después del viaje.", "answer": "estés" },
+    { "prompt": "Es raro que ___ (no saber, ellos) la respuesta.", "answer": "no sepan" },
+    { "prompt": "Está bien que ___ (ayudar, vosotros) a los demás.", "answer": "ayudéis" },
+    { "prompt": "Está mal que ___ (mentir, él) a sus amigos.", "answer": "mienta" },
+    { "prompt": "Es increíble que ___ (ganar, nosotros) el partido.", "answer": "ganemos" },
+    { "prompt": "Es necesario ___ más agua. (beber – sujet général → infinitif)", "answer": "beber" },
+    { "prompt": "Es necesario que ___ más agua. (beber, tú – sujet précis)", "answer": "bebas" },
+    { "prompt": "Es importante que ___ (ser, nosotros) respetuosos.", "answer": "seamos" },
+    { "prompt": "Es una lástima que ___ (hacer, él) tan mal tiempo.", "answer": "haga" },
+    { "prompt": "Es mejor que ___ (ir, vosotros) en metro.", "answer": "vayáis" },
+    { "prompt": "Es raro que ___ (no venir, ella) a clase.", "answer": "no venga" },
+    { "prompt": "Está bien que ___ (tener, tú) ambiciones.", "answer": "tengas" },
+    { "prompt": "Es normal que ___ (sentirse, él) nervioso antes del examen.", "answer": "se sienta" },
+    { "prompt": "Es malo que ___ (comer, ellos) tanta comida basura.", "answer": "coman" },
+    { "prompt": "Es increíble que ___ (poder, tú) hablar tres idiomas.", "answer": "puedas" },
+    { "prompt": "Es importante ___ bien. (comer – sujet général → infinitif)", "answer": "comer" },
+    { "prompt": "Es importante que ___ bien. (comer, ella – sujet précis)", "answer": "coma" },
+    { "prompt": "Está mal que ___ (no decir, tú) la verdad.", "answer": "no digas" },
+    { "prompt": "Es mejor que ___ (hablar, nosotros) con él directamente.", "answer": "hablemos" },
+    { "prompt": "Es una lástima que ___ (perder, vosotros) el tiempo así.", "answer": "perdáis" },
+    { "prompt": "Es bueno que ___ (salir, tú) a caminar cada día.", "answer": "salgas" },
+    { "prompt": "Es necesario que ___ (tener, nosotros) más cuidado.", "answer": "tengamos" },
+    { "prompt": "Es raro que ___ (querer, él) irse tan pronto.", "answer": "quiera" },
+    { "prompt": "Está bien que ___ (poder, ellos) trabajar desde casa.", "answer": "puedan" },
+    { "prompt": "Es increíble que ___ (hacer, ellos) eso.", "answer": "hagan" }
+  ]
+}
