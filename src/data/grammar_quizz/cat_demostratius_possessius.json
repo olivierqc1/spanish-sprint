@@ -1,0 +1,41 @@
+{
+  "id": "cat_demostratius_possessius",
+  "title": { "fr": "Catalan — Démonstratifs et possessifs", "en": "Catalan — Demonstratives and possessives" },
+  "level": "A1",
+  "note": {
+    "fr": "⚙️ **Démonstratifs en catalan :**\n\n| | Masc. sing. | Fém. sing. | Masc. pl. | Fém. pl. |\n|--|-------------|------------|-----------|----------|\n| Proche (ce/cet) | **aquest** | **aquesta** | **aquests** | **aquestes** |\n| Éloigné (ce...là) | **aquell** | **aquella** | **aquells** | **aquelles** |\n\n💡 Pas d'équivalent de *ese/esa* (intermédiaire) en catalan standard.\n\n🔹 **Possessifs en catalan :**\n\n| Personne | Masc. sing. | Fém. sing. | Masc. pl. | Fém. pl. |\n|----------|-------------|------------|-----------|----------|\n| el meu / la meva | **el meu** | **la meva** | **els meus** | **les meves** |\n| el teu / la teva | **el teu** | **la teva** | **els teus** | **les teves** |\n| el seu / la seva | **el seu** | **la seva** | **els seus** | **les seves** |\n| el nostre / la nostra | **el nostre** | **la nostra** | **els nostres** | **les nostres** |\n| el vostre / la vostra | **el vostre** | **la vostra** | **els vostres** | **les vostres** |\n| el seu / la seva | **el seu** | **la seva** | **els seus** | **les seves** |\n\n💡 En catalan, les possessifs s'utilisent **avec l'article** : *el meu cotxe* (ma voiture).",
+    "en": "⚙️ **Catalan demonstratives:**\n- Nearby: aquest, aquesta, aquests, aquestes\n- Far: aquell, aquella, aquells, aquelles\n\n🔹 **Catalan possessives (with article):**\n- el meu / la meva / els meus / les meves\n- el teu / la teva / els teus / les teves\n- el seu / la seva / els seus / les seves\n- el nostre / la nostra / els nostres / les nostres\n- el vostre / la vostra / els vostres / les vostres"
+  },
+  "drills": [
+    { "prompt": "___ cotxe (masc. sing. proche)", "answer": "Aquest" },
+    { "prompt": "___ casa (fém. sing. proche)", "answer": "Aquesta" },
+    { "prompt": "___ nois (masc. pl. proche)", "answer": "Aquests" },
+    { "prompt": "___ noies (fém. pl. proche)", "answer": "Aquestes" },
+    { "prompt": "___ arbre (masc. sing. éloigné)", "answer": "Aquell" },
+    { "prompt": "___ muntanya (fém. sing. éloignée)", "answer": "Aquella" },
+    { "prompt": "___ dies (masc. pl. éloigné)", "answer": "Aquells" },
+    { "prompt": "___ cases (fém. pl. éloignée)", "answer": "Aquelles" },
+    { "prompt": "___ cotxe (mon – masc. sing.)", "answer": "El meu cotxe" },
+    { "prompt": "___ casa (ma – fém. sing.)", "answer": "La meva casa" },
+    { "prompt": "___ amics (mes – masc. pl.)", "answer": "Els meus amics" },
+    { "prompt": "___ germanes (mes – fém. pl.)", "answer": "Les meves germanes" },
+    { "prompt": "___ llibre (ton – masc. sing.)", "answer": "El teu llibre" },
+    { "prompt": "___ bici (ta – fém. sing.)", "answer": "La teva bici" },
+    { "prompt": "___ fills (ses – masc. pl., il)", "answer": "Els seus fills" },
+    { "prompt": "___ feina (sa – fém. sing., elle)", "answer": "La seva feina" },
+    { "prompt": "___ apartament (notre – masc. sing.)", "answer": "El nostre apartament" },
+    { "prompt": "___ escola (notre – fém. sing.)", "answer": "La nostra escola" },
+    { "prompt": "___ professors (vos – masc. pl.)", "answer": "Els vostres professors" },
+    { "prompt": "___ notes (vos – fém. pl.)", "answer": "Les vostres notes" },
+    { "prompt": "Mira ___ edifici tan alt! (cet – proche)", "answer": "aquest" },
+    { "prompt": "Qui és ___ persona? (cette – proche)", "answer": "aquesta" },
+    { "prompt": "M'agrada ___ pel·lícula. (ce – éloigné)", "answer": "aquella" },
+    { "prompt": "Recordes ___ dies? (ces – éloignés)", "answer": "aquells" },
+    { "prompt": "On és ___ clau? (ma – fém.)", "answer": "la meva clau" },
+    { "prompt": "Com es diu ___ amic? (ton – masc.)", "answer": "el teu amic" },
+    { "prompt": "Ha trucat ___ mare. (sa – fém., elle)", "answer": "la seva mare" },
+    { "prompt": "___ pis és molt gran. (notre – masc.)", "answer": "El nostre pis" },
+    { "prompt": "On teniu ___ cotxe? (votre – masc.)", "answer": "el vostre cotxe" },
+    { "prompt": "Han venut ___ casa. (leur – fém.)", "answer": "la seva casa" }
+  ]
+}
