@@ -1,0 +1,41 @@
+{
+  "id": "cat_present_regulars",
+  "title": { "fr": "Catalan — Présent – verbes réguliers (-ar, -er, -ir/-re)", "en": "Catalan — Present tense – regular verbs (-ar, -er, -ir/-re)" },
+  "level": "A1",
+  "note": {
+    "fr": "⚙️ Le présent de l'indicatif en catalan pour les verbes réguliers.\n\n🔹 **Verbes en -AR (parlar) :**\n- jo **parlo**\n- tu **parles**\n- ell/ella **parla**\n- nosaltres **parlem**\n- vosaltres **parleu**\n- ells/elles **parlen**\n\n🔹 **Verbes en -ER (córrer) :**\n- jo **corro**\n- tu **corres**\n- ell/ella **corre**\n- nosaltres **correm**\n- vosaltres **correu**\n- ells/elles **corren**\n\n🔹 **Verbes en -IR (obrir) :**\n- jo **obro**\n- tu **obres**\n- ell/ella **obre**\n- nosaltres **obrim**\n- vosaltres **obriu**\n- ells/elles **obren**\n\n💡 **Différence avec l'espagnol :** la 1ère personne du singulier en catalan se termine souvent par une consonne (*parlo, corro, obro*) sans le -o systématique comme en espagnol.",
+    "en": "⚙️ Catalan present indicative for regular verbs.\n\n🔹 **-AR verbs (parlar):** parlo, parles, parla, parlem, parleu, parlen\n🔹 **-ER verbs (córrer):** corro, corres, corre, correm, correu, corren\n🔹 **-IR verbs (obrir):** obro, obres, obre, obrim, obriu, obren"
+  },
+  "drills": [
+    { "prompt": "Jo ___ molt. (parlar)", "answer": "parlo" },
+    { "prompt": "Tu ___ ràpid. (córrer)", "answer": "corres" },
+    { "prompt": "Ella ___ la porta. (obrir)", "answer": "obre" },
+    { "prompt": "Nosaltres ___ català. (parlar)", "answer": "parlem" },
+    { "prompt": "Vosaltres ___ al parc. (córrer)", "answer": "correu" },
+    { "prompt": "Ells ___ molt de temps. (treballar)", "answer": "treballen" },
+    { "prompt": "Jo ___ un cafè cada matí. (prendre → prenc)", "answer": "prenc" },
+    { "prompt": "Tu ___ bé l'espanyol. (parlar)", "answer": "parles" },
+    { "prompt": "Ell ___ a la universitat. (estudiar)", "answer": "estudia" },
+    { "prompt": "Nosaltres ___ a les vuit. (arribar)", "answer": "arribem" },
+    { "prompt": "Vosaltres ___ moltes coses interessants. (aprendre → apreneu)", "answer": "apreneu" },
+    { "prompt": "Elles ___ cada dia. (llegir → llegeixen)", "answer": "llegeixen" },
+    { "prompt": "Jo ___ música. (escoltar)", "answer": "escolto" },
+    { "prompt": "Tu ___ a la cuina. (menjar)", "answer": "menges" },
+    { "prompt": "Ella ___ a Barcelona. (viure → viu)", "answer": "viu" },
+    { "prompt": "Nosaltres ___ el dinar. (preparar)", "answer": "preparem" },
+    { "prompt": "Vosaltres ___ molt bé. (cantar)", "answer": "canteu" },
+    { "prompt": "Ells ___ el periòdic. (llegir → llegeixen)", "answer": "llegeixen" },
+    { "prompt": "Jo ___ molt els caps de setmana. (descansar)", "answer": "descanso" },
+    { "prompt": "Tu ___ l'exercici. (escriure → escrius)", "answer": "escrius" },
+    { "prompt": "Ell ___ la finestra. (tancar)", "answer": "tanca" },
+    { "prompt": "Nosaltres ___ junts. (treballar)", "answer": "treballem" },
+    { "prompt": "Vosaltres ___ a les classes de català. (assistir)", "answer": "assistiu" },
+    { "prompt": "Elles ___ amb el metro. (viatjar)", "answer": "viatgen" },
+    { "prompt": "Jo ___ molt bé el francès. (entendre → entenc)", "answer": "entenc" },
+    { "prompt": "Tu ___ la televisió cada nit. (mirar)", "answer": "mires" },
+    { "prompt": "Ell ___ una cervesa. (beure → beu)", "answer": "beu" },
+    { "prompt": "Nosaltres ___ el cap de setmana. (sortir → sortim)", "answer": "sortim" },
+    { "prompt": "Vosaltres ___ el menjar. (compartir)", "answer": "compartiu" },
+    { "prompt": "Ells ___ el cotxe. (vendre → venen)", "answer": "venen" }
+  ]
+}
