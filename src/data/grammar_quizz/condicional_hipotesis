@@ -1,0 +1,41 @@
+{
+  "id": "condicional_hipotesis",
+  "title": { "fr": "Conditionnel – Hypothèses irréelles (si + imparfait subj. + conditionnel)", "en": "Conditional – Unreal hypotheses (si + imperfect subj. + conditional)" },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Pour exprimer une **hypothèse irréelle ou peu probable dans le présent/futur**, on utilise :\n**SI + imparfait du subjonctif → conditionnel simple**\n\n➡️ *Si **tuviera** dinero, **viajaría** por todo el mundo.*\n(Si j'avais de l'argent, je voyagerais dans le monde entier.)\n\n🔹 **Imparfait du subjonctif (-ra) :**\nPartir du prétérit indéfini à la 3e personne du pluriel → remplacer -ron par -ra\n- *hablaron* → **hablara, hablaras, hablara, habláramos, hablarais, hablaran**\n- *comieron* → **comiera, comieras, comiera...**\n- *tuvieron* → **tuviera, tuvieras, tuviera...**\n- *fueran* → **fuera, fueras, fuera...**\n\n🔹 **Conditionnel simple :**\nInfinitif + terminaisons : -ía, -ías, -ía, -íamos, -íais, -ían\n- *hablaría, comería, viviría...*\n- Irréguliers : *tendría, pondría, vendría, diría, haría, sabría, podría, querría, saldría*\n\n⚠️ **Comparer les deux structures :**\n- Condition réelle : *Si **tengo** dinero, **viajaré**.* (futur possible)\n- Condition irréelle : *Si **tuviera** dinero, **viajaría**.* (hypothèse peu probable)",
+    "en": "⚙️ For **unreal or unlikely hypotheses** in present/future:\n**SI + imperfect subjunctive → conditional**\n\n➡️ *Si tuviera dinero, viajaría por todo el mundo.*\n\n🔹 **Imperfect subjunctive:** from 3rd person plural preterite → replace -ron with -ra\n🔹 **Conditional:** infinitive + -ía, -ías, -ía, -íamos, -íais, -ían"
+  },
+  "drills": [
+    { "prompt": "Si ___ (tener, yo) más tiempo, aprendería chino.", "answer": "tuviera" },
+    { "prompt": "Si tuviera más tiempo, ___ (aprender, yo) chino.", "answer": "aprendería" },
+    { "prompt": "Si ___ (ser, tú) más alto, podrías jugar al baloncesto.", "answer": "fueras" },
+    { "prompt": "Si fueras más alto, ___ (poder, tú) jugar al baloncesto.", "answer": "podrías" },
+    { "prompt": "Si ___ (vivir, nosotros) en el campo, tendríamos un jardín.", "answer": "viviéramos" },
+    { "prompt": "Si viviéramos en el campo, ___ (tener, nosotros) un jardín.", "answer": "tendríamos" },
+    { "prompt": "Si ___ (hablar, ella) mejor inglés, conseguiría ese trabajo.", "answer": "hablara" },
+    { "prompt": "Si hablara mejor inglés, ___ (conseguir, ella) ese trabajo.", "answer": "conseguiría" },
+    { "prompt": "Si ___ (poder, yo) volar, iría a Japón mañana.", "answer": "pudiera" },
+    { "prompt": "Si pudiera volar, ___ (ir, yo) a Japón mañana.", "answer": "iría" },
+    { "prompt": "Si ___ (ganar, tú) la lotería, ¿qué harías?", "answer": "ganaras" },
+    { "prompt": "Si ganaras la lotería, ¿qué ___ (hacer, tú)?", "answer": "harías" },
+    { "prompt": "Si ___ (ser, yo) rico, compraría una casa en la playa.", "answer": "fuera" },
+    { "prompt": "Si fuera rico, ___ (comprar, yo) una casa en la playa.", "answer": "compraría" },
+    { "prompt": "Si ___ (tener, vosotros) coche, vendríais más a menudo.", "answer": "tuvierais" },
+    { "prompt": "Si tuvierais coche, ___ (venir, vosotros) más a menudo.", "answer": "vendríais" },
+    { "prompt": "Si ___ (hacer, él) más ejercicio, se sentiría mejor.", "answer": "hiciera" },
+    { "prompt": "Si hiciera más ejercicio, ___ (sentirse, él) mejor.", "answer": "se sentiría" },
+    { "prompt": "Si ___ (saber, yo) cocinar, haría una cena especial.", "answer": "supiera" },
+    { "prompt": "Si supiera cocinar, ___ (hacer, yo) una cena especial.", "answer": "haría" },
+    { "prompt": "Si ___ (estar, tú) aquí, todo sería diferente.", "answer": "estuvieras" },
+    { "prompt": "Si estuvieras aquí, todo ___ (ser) diferente.", "answer": "sería" },
+    { "prompt": "Si ___ (poder, ellos) quedarse, lo harían.", "answer": "pudieran" },
+    { "prompt": "Si pudieran quedarse, ___ (hacerlo, ellos).", "answer": "lo harían" },
+    { "prompt": "Si ___ (salir, yo) antes del trabajo, llegaría a tiempo.", "answer": "saliera" },
+    { "prompt": "Si saliera antes, ___ (llegar, yo) a tiempo.", "answer": "llegaría" },
+    { "prompt": "Si ___ (querer, tú), podrías cambiar muchas cosas.", "answer": "quisieras" },
+    { "prompt": "Si quisieras, ___ (poder, tú) cambiar muchas cosas.", "answer": "podrías" },
+    { "prompt": "Si ___ (venir, ella) mañana, lo solucionaríamos.", "answer": "viniera" },
+    { "prompt": "Si viniera mañana, lo ___ (solucionar, nosotros).", "answer": "solucionaríamos" }
+  ]
+}
