@@ -1,0 +1,41 @@
+{
+  "id": "se_impersonal_pasivo",
+  "title": { "fr": "SE impersonnel et passif (se habla, se dice, se venden...)", "en": "Impersonal and passive SE (se habla, se dice, se venden...)" },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Le **SE impersonnel** et le **SE passif** servent à exprimer des actions sans préciser qui les fait.\n\n🔹 **SE impersonnel** (sujet indéfini = « on »)\n- Toujours avec le verbe à la **3e personne du singulier**\n- Pas de sujet nominal après le verbe\n➡️ *Se vive bien aquí.* (On vit bien ici.)\n➡️ *Se trabaja mucho en esta empresa.* (On travaille beaucoup dans cette entreprise.)\n➡️ *Aquí se habla catalán.* (Ici on parle catalan.)\n\n🔹 **SE passif** (action + objet → sujet grammatical)\n- Le verbe **s'accorde avec le nom** qui suit\n- 3e personne du **singulier ou pluriel** selon le nom\n➡️ *Se vende un piso.* (Un appartement est vendu / À vendre.)\n➡️ *Se venden pisos.* (Des appartements sont vendus / À vendre.)\n➡️ *Se hablan tres idiomas.* (Trois langues sont parlées.)\n\n⚠️ **Différence clé :**\n- SE impersonnel : *Se trabaja mucho.* (on travaille beaucoup) — pas de sujet\n- SE passif : *Se han construido muchos edificios.* (De nombreux bâtiments ont été construits.)\n\n💡 **Formules courantes :**\n- *Se busca / Se buscan* → On recherche\n- *Se alquila / Se alquilan* → À louer\n- *Se dice que...* → On dit que...\n- *Se sabe que...* → On sait que...",
+    "en": "⚙️ **Impersonal SE** and **passive SE** express actions without specifying the doer.\n\n🔹 **Impersonal SE:** always 3rd person singular\n➡️ *Se vive bien aquí.* (One lives well here.)\n\n🔹 **Passive SE:** verb agrees with the following noun\n➡️ *Se vende un piso.* / *Se venden pisos.*"
+  },
+  "drills": [
+    { "prompt": "Aquí ___ (hablar) catalán. (on parle – impersonnel)", "answer": "se habla" },
+    { "prompt": "___ (vender) piso. (à vendre – singulier)", "answer": "Se vende" },
+    { "prompt": "___ (vender) pisos. (à vendre – pluriel)", "answer": "Se venden" },
+    { "prompt": "___ (buscar) camarero con experiencia. (on cherche – singulier)", "answer": "Se busca" },
+    { "prompt": "___ (buscar) camareros con experiencia. (on cherche – pluriel)", "answer": "Se buscan" },
+    { "prompt": "En España ___ (comer) muy tarde. (on mange – impersonnel)", "answer": "se come" },
+    { "prompt": "___ (alquilar) habitación en piso compartido. (à louer – singulier)", "answer": "Se alquila" },
+    { "prompt": "___ (alquilar) habitaciones. (à louer – pluriel)", "answer": "Se alquilan" },
+    { "prompt": "___ (decir) que va a llover mañana. (on dit que)", "answer": "Se dice" },
+    { "prompt": "___ (saber) que el proyecto tiene problemas. (on sait que)", "answer": "Se sabe" },
+    { "prompt": "En esta tienda ___ (aceptar) tarjeta. (on accepte – impersonnel)", "answer": "se acepta" },
+    { "prompt": "En este país ___ (conducir) por la derecha. (on conduit – impersonnel)", "answer": "se conduce" },
+    { "prompt": "___ (necesitar) voluntarios para el evento. (on a besoin de – pluriel)", "answer": "Se necesitan" },
+    { "prompt": "___ (prohibir) fumar en los bares. (il est interdit de – infinitif)", "answer": "Se prohíbe" },
+    { "prompt": "___ (hablar) tres idiomas en esa oficina. (passif – pluriel)", "answer": "Se hablan" },
+    { "prompt": "Aquí ___ (vivir) muy bien. (on vit – impersonnel)", "answer": "se vive" },
+    { "prompt": "___ (construir) muchos edificios nuevos. (passif – pluriel)", "answer": "Se construyen" },
+    { "prompt": "___ (esperar) al candidato a las 10. (on attend – singulier)", "answer": "Se espera" },
+    { "prompt": "En esa región ___ (producir) vino excelente. (on produit – impersonnel)", "answer": "se produce" },
+    { "prompt": "___ (abrir) nuevas tiendas cada mes. (passif – pluriel)", "answer": "Se abren" },
+    { "prompt": "___ (ofrecer) trabajo a jóvenes sin experiencia. (on offre – singulier)", "answer": "Se ofrece" },
+    { "prompt": "___ (comentar) que habrá cambios. (on commente que)", "answer": "Se comenta" },
+    { "prompt": "En este restaurante ___ (comer) muy bien. (on mange – impersonnel)", "answer": "se come" },
+    { "prompt": "___ (cerrar) las tiendas los domingos. (passif – pluriel)", "answer": "Se cierran" },
+    { "prompt": "___ (pedir) currículum y carta de motivación. (on demande – pluriel)", "answer": "Se piden" },
+    { "prompt": "___ (publicar) los resultados mañana. (passif – pluriel)", "answer": "Se publican" },
+    { "prompt": "En verano ___ (trabajar) menos horas. (on travaille – impersonnel)", "answer": "se trabaja" },
+    { "prompt": "___ (tratar) bien a los clientes aquí. (on traite – impersonnel)", "answer": "se trata" },
+    { "prompt": "___ (vender) entradas para el concierto. (à vendre – pluriel)", "answer": "Se venden" },
+    { "prompt": "___ (rumorear) que la empresa cerrará. (le bruit court que)", "answer": "Se rumorea" }
+  ]
+}
