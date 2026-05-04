@@ -1,0 +1,41 @@
+{
+  "id": "cat_present_irregulars",
+  "title": { "fr": "Catalan — Présent – verbes irréguliers (ser, anar, fer, tenir, venir...)", "en": "Catalan — Present tense – irregular verbs (ser, anar, fer, tenir, venir...)" },
+  "level": "A1",
+  "note": {
+    "fr": "⚙️ Les principaux verbes irréguliers au présent en catalan.\n\n| | **ser** | **estar** | **anar** | **fer** | **tenir** |\n|--|---------|-----------|----------|---------|----------|\n| jo | **sóc** | **estic** | **vaig** | **faig** | **tinc** |\n| tu | **ets** | **estàs** | **vas** | **fas** | **tens** |\n| ell | **és** | **està** | **va** | **fa** | **té** |\n| nosaltres | **som** | **estem** | **anem** | **fem** | **tenim** |\n| vosaltres | **sou** | **esteu** | **aneu** | **feu** | **teniu** |\n| ells | **són** | **estan** | **van** | **fan** | **tenen** |\n\n| | **venir** | **dir** | **poder** | **voler** | **saber** |\n|--|-----------|---------|-----------|-----------|----------|\n| jo | **vinc** | **dic** | **puc** | **vull** | **sé** |\n| tu | **véns** | **dius** | **pots** | **vols** | **saps** |\n| ell | **ve** | **diu** | **pot** | **vol** | **sap** |\n| nosaltres | **venim** | **diem** | **podem** | **volem** | **sabem** |\n| vosaltres | **veniu** | **dieu** | **podeu** | **voleu** | **sabeu** |\n| ells | **venen** | **diuen** | **poden** | **volen** | **saben** |",
+    "en": "⚙️ Key irregular verbs in the Catalan present tense.\n\n- **ser:** sóc, ets, és, som, sou, són\n- **estar:** estic, estàs, està, estem, esteu, estan\n- **anar:** vaig, vas, va, anem, aneu, van\n- **fer:** faig, fas, fa, fem, feu, fan\n- **tenir:** tinc, tens, té, tenim, teniu, tenen\n- **venir:** vinc, véns, ve, venim, veniu, venen\n- **dir:** dic, dius, diu, diem, dieu, diuen\n- **poder:** puc, pots, pot, podem, podeu, poden\n- **voler:** vull, vols, vol, volem, voleu, volen\n- **saber:** sé, saps, sap, sabem, sabeu, saben"
+  },
+  "drills": [
+    { "prompt": "Jo ___ estudiant. (ser)", "answer": "sóc" },
+    { "prompt": "Tu ___ molt cansada. (estar)", "answer": "estàs" },
+    { "prompt": "Ell ___ al mercat. (anar)", "answer": "va" },
+    { "prompt": "Nosaltres ___ els deures. (fer)", "answer": "fem" },
+    { "prompt": "Vosaltres ___ molt. (tenir)", "answer": "teniu" },
+    { "prompt": "Ells ___ de França. (venir)", "answer": "venen" },
+    { "prompt": "Jo ___ la veritat. (dir)", "answer": "dic" },
+    { "prompt": "Tu ___ parlar anglès? (poder)", "answer": "pots" },
+    { "prompt": "Ella ___ un cafè. (voler)", "answer": "vol" },
+    { "prompt": "Jo ___ on és la biblioteca. (saber)", "answer": "sé" },
+    { "prompt": "Nosaltres ___ catalans. (ser)", "answer": "som" },
+    { "prompt": "Vosaltres ___ bé? (estar)", "answer": "esteu" },
+    { "prompt": "Ells ___ al cinema. (anar)", "answer": "van" },
+    { "prompt": "Tu ___ molt soroll. (fer)", "answer": "fas" },
+    { "prompt": "Ella ___ dos germans. (tenir)", "answer": "té" },
+    { "prompt": "Jo ___ ara. (venir)", "answer": "vinc" },
+    { "prompt": "Ell ___ molt bé. (saber)", "answer": "sap" },
+    { "prompt": "Nosaltres no ___ esperar. (poder)", "answer": "podem" },
+    { "prompt": "Vosaltres ___ marxar? (voler)", "answer": "voleu" },
+    { "prompt": "Ells ___ que sí. (dir)", "answer": "diuen" },
+    { "prompt": "Jo ___ molt content. (estar)", "answer": "estic" },
+    { "prompt": "Tu ___ professor? (ser)", "answer": "ets" },
+    { "prompt": "Ella ___ molt exercici. (fer)", "answer": "fa" },
+    { "prompt": "Nosaltres ___ al parc cada diumenge. (anar)", "answer": "anem" },
+    { "prompt": "Jo ___ fred. (tenir)", "answer": "tinc" },
+    { "prompt": "Tu ___ d'on? (venir)", "answer": "véns" },
+    { "prompt": "Ell ___ que no. (dir)", "answer": "diu" },
+    { "prompt": "Vosaltres ___ la solució? (saber)", "answer": "sabeu" },
+    { "prompt": "Elles ___ sortir. (voler)", "answer": "volen" },
+    { "prompt": "Nosaltres ___ molt ocupats. (estar)", "answer": "estem" }
+  ]
+}
