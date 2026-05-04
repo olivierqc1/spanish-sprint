@@ -1,0 +1,41 @@
+{
+  "id": "cat_perifrasies_verbals",
+  "title": { "fr": "Catalan — Périphrases verbales (estar + gerundi, acabar de, anar a...)", "en": "Catalan — Verbal periphrases (estar + gerund, acabar de, anar a...)" },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Les **périphrases verbales** en catalan fonctionnent comme en espagnol.\n\n🔹 **1. estar + gerundi** → action en cours\n➡️ *Estic menjant.* (Je suis en train de manger.)\n\n🔹 **2. anar a + infinitiu** → futur proche\n➡️ *Vaig a sortir.* (Je vais sortir.)\n\n🔹 **3. acabar de + infinitiu** → venir de faire\n➡️ *Acabo de menjar.* (Je viens de manger.)\n\n🔹 **4. deixar de + infinitiu** → arrêter de\n➡️ *Ha deixat de fumar.* (Il a arrêté de fumer.)\n\n🔹 **5. tornar a + infinitiu** → refaire\n➡️ *Torna a ploure.* (Il repleut.)\n\n🔹 **6. seguir/continuar + gerundi** → continuer à\n➡️ *Segueix treballant.* (Il continue à travailler.)\n\n🔹 **7. portar + temps + gerundi** → depuis combien de temps\n➡️ *Porto dos anys vivint aquí.* (Ça fait deux ans que je vis ici.)\n\n🔹 **8. haver de + infinitiu** → devoir (obligation)\n➡️ *He d'estudiar.* (Je dois étudier.)\n\n🔹 **9. poder + infinitiu** → pouvoir\n➡️ *Puc venir demà.* (Je peux venir demain.)\n\n🔹 **10. tenir ganes de + infinitiu** → avoir envie de\n➡️ *Tinc ganes de sortir.* (J'ai envie de sortir.)\n\n💡 **Gérondif en catalan :** -AR → -ant (*parlant*) / -ER/-IR → -ent (*corrent, obrint*)",
+    "en": "⚙️ Catalan **verbal periphrases:**\n1. estar + gerund (ongoing)\n2. anar a + inf (near future)\n3. acabar de + inf (just did)\n4. deixar de + inf (stop doing)\n5. tornar a + inf (do again)\n6. seguir + gerund (keep doing)\n7. portar + time + gerund (duration)\n8. haver de + inf (must)\n9. poder + inf (can)\n10. tenir ganes de + inf (feel like)"
+  },
+  "drills": [
+    { "prompt": "Estic ___ (menjar) ara. (action en cours)", "answer": "menjant" },
+    { "prompt": "Vaig a ___ (sortir) ara. (futur proche)", "answer": "sortir" },
+    { "prompt": "Acabo de ___ (arribar). (venir de)", "answer": "arribar" },
+    { "prompt": "Ha deixat de ___ (fumar). (arrêter de)", "answer": "fumar" },
+    { "prompt": "Torna a ___ (ploure). (repleuvoir)", "answer": "ploure" },
+    { "prompt": "Segueix ___ (treballar) molt. (continuer à)", "answer": "treballant" },
+    { "prompt": "Porto tres anys ___ (viure) a Barcelona. (depuis 3 ans)", "answer": "vivint" },
+    { "prompt": "He de ___ (estudiar) per l'examen. (devoir)", "answer": "estudiar" },
+    { "prompt": "Puc ___ (venir) demà? (pouvoir)", "answer": "venir" },
+    { "prompt": "Tinc ganes de ___ (descansar). (avoir envie de)", "answer": "descansar" },
+    { "prompt": "___ (ell, estar) llegint quan vaig trucar.", "answer": "Estava llegint" },
+    { "prompt": "___ (jo, anar a) trucar-li ara.", "answer": "Vaig a trucar-li" },
+    { "prompt": "___ (ella, acabar de) menjar.", "answer": "Acaba de menjar" },
+    { "prompt": "___ (ell, deixar de) beure alcohol.", "answer": "Ha deixat de beure" },
+    { "prompt": "___ (ella, tornar a) equivocar-se.", "answer": "Torna a equivocar-se" },
+    { "prompt": "___ (nosaltres, seguir) buscant solucions.", "answer": "Seguim buscant" },
+    { "prompt": "Porto una hora ___ (esperar). (depuis une heure)", "answer": "esperant" },
+    { "prompt": "___ (jo, haver de) anar al metge.", "answer": "He d'anar" },
+    { "prompt": "No ___ (ells, poder) venir ahir.", "answer": "van poder venir" },
+    { "prompt": "Tens ganes de ___ (sortir) avui? (avoir envie de)", "answer": "sortir" },
+    { "prompt": "gérondif de *parlar*", "answer": "parlant" },
+    { "prompt": "gérondif de *córrer*", "answer": "corrent" },
+    { "prompt": "gérondif de *obrir*", "answer": "obrint" },
+    { "prompt": "gérondif de *fer*", "answer": "fent" },
+    { "prompt": "gérondif de *dir*", "answer": "dient" },
+    { "prompt": "gérondif de *venir*", "answer": "venint" },
+    { "prompt": "gérondif de *ser*", "answer": "sent" },
+    { "prompt": "___ (tu, continuar) estudiant?", "answer": "Continues estudiant" },
+    { "prompt": "Porto mesos ___ (aprendre) català.", "answer": "aprenent" },
+    { "prompt": "Acabem de ___ (descobrir) una cosa increïble.", "answer": "descobrir" }
+  ]
+}
