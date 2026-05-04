@@ -1,0 +1,44 @@
+{
+  "id": "conectores_narrativos",
+  "title": {
+    "fr": "Connecteurs narratifs et d'opposition",
+    "en": "Narrative and opposition connectors"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Les **connecteurs** servent à enchaîner les idées et à structurer un récit.\n\n🔹 **Connecteurs narratifs (séquence/chronologie) :**\n- **(y) entonces** → (et) alors, à ce moment-là\n- **al final** → finalement, à la fin\n- **de repente / de pronto** → tout à coup, soudain\n- **al principio** → au début\n- **después / luego** → après, ensuite\n- **por fin** → enfin (soulagement)\n\n🔹 **Connecteurs d'opposition :**\n- **pero** → mais (opposition simple)\n- **aunque** → bien que, même si (+ indicatif ou subjonctif)\n- **sin embargo** → cependant, néanmoins\n- **a pesar de (que)** → malgré (le fait que)\n- **no obstante** → néanmoins (registre soutenu)\n\n🔹 **Connecteurs de cause/conséquence :**\n- **porque** → parce que (cause réelle)\n- **como** → comme (cause en tête de phrase)\n- **por eso** → c'est pourquoi\n- **así que** → donc, alors\n\n💡 **aunque vs pero :**\n- *Está lloviendo, **pero** salimos.* (simple opposition)\n- *Salimos **aunque** está lloviendo.* (concession — on sort malgré la pluie)",
+    "en": "⚙️ **Connectors** link ideas and structure a narrative.\n\n🔹 **Narrative (sequence):** entonces, al final, de repente, de pronto, al principio, luego, por fin\n🔹 **Opposition:** pero, aunque, sin embargo, a pesar de (que)\n🔹 **Cause/result:** porque, como, por eso, así que"
+  },
+  "drills": [
+    { "prompt": "Estaba durmiendo y ___ sonó el teléfono. (tout à coup)", "answer": "de repente" },
+    { "prompt": "Intentamos llegar a tiempo pero ___ perdimos el tren. (finalement)", "answer": "al final" },
+    { "prompt": "Estaba nervioso, ___ respiré profundo y me calmé. (alors)", "answer": "entonces" },
+    { "prompt": "___ llegué tarde, no me dejaron entrar. (comme – cause en tête)", "answer": "Como" },
+    { "prompt": "No tenía dinero, ___ no pude comprar el libro. (c'est pourquoi)", "answer": "por eso" },
+    { "prompt": "Hace frío ___ voy a salir sin abrigo. (bien que)", "answer": "aunque" },
+    { "prompt": "Me gusta el plan, ___ prefiero esperar. (cependant)", "answer": "sin embargo" },
+    { "prompt": "No dormí nada ___ estaba muy cansado. (parce que)", "answer": "porque" },
+    { "prompt": "___ llegaron al hotel, se ducharon y salieron. (una vez allí – narratif)", "answer": "Al final" },
+    { "prompt": "___ todo el mundo creía que perdería, ganó el partido. (bien que – résultat inattendu)", "answer": "Aunque" },
+    { "prompt": "Llovía mucho, ___ salimos con paraguas. (alors)", "answer": "así que" },
+    { "prompt": "La película era larga ___ muy interesante. (mais)", "answer": "pero" },
+    { "prompt": "___ no le gusta la pasta, la comió por educación. (bien que)", "answer": "Aunque" },
+    { "prompt": "Llevábamos horas esperando y ___ llegó el médico. (enfin)", "answer": "por fin" },
+    { "prompt": "___ de la obra de teatro, no entendí nada. (au début)", "answer": "Al principio" },
+    { "prompt": "Estudié mucho; ___, suspendí. (néanmoins)", "answer": "sin embargo" },
+    { "prompt": "Fui al médico ___ me encontraba muy mal. (parce que)", "answer": "porque" },
+    { "prompt": "___ los resultados no fueron buenos, el equipo siguió adelante. (malgré que)", "answer": "A pesar de que" },
+    { "prompt": "Primero fuimos al museo, ___ comimos en un restaurante. (ensuite)", "answer": "después / luego" },
+    { "prompt": "Todo iba bien y ___, sin avisar, empezó a llover. (soudain)", "answer": "de pronto" },
+    { "prompt": "No me gusta madrugar, ___ tengo que hacerlo para ir al trabajo. (mais)", "answer": "pero" },
+    { "prompt": "___ no tenía experiencia, le dieron el trabajo. (bien que)", "answer": "Aunque" },
+    { "prompt": "Hizo mucho calor; ___, disfrutamos de la excursión. (néanmoins)", "answer": "sin embargo" },
+    { "prompt": "___ llegué tarde, no había nadie todavía. (comme)", "answer": "Como" },
+    { "prompt": "No estudié, ___ no aprobé. (c'est pourquoi)", "answer": "por eso" },
+    { "prompt": "___ de todo, fue un viaje increíble. (malgré)", "answer": "A pesar" },
+    { "prompt": "Estábamos muy cansados, ___ decidimos continuar. (mais)", "answer": "pero" },
+    { "prompt": "___ llegamos al destino, buscamos un hotel. (une fois arrivés – narratif)", "answer": "Al final" },
+    { "prompt": "Habló mucho, ___ no dijo nada importante. (cependant)", "answer": "sin embargo" },
+    { "prompt": "El partido estaba empatado y ___, en el último minuto, marcaron un gol. (tout à coup)", "answer": "de repente" }
+  ]
+}
