@@ -1,0 +1,41 @@
+{
+  "id": "cat_connectors_discurs",
+  "title": { "fr": "Catalan — Connecteurs du discours (però, tot i que, per tant...)", "en": "Catalan — Discourse connectors (però, tot i que, per tant...)" },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Les **connecteurs** en catalan pour structurer le discours.\n\n🔹 **Addition :**\n- *a més (a més)* → de plus, en outre\n- *també* → aussi\n- *fins i tot* → même, voire\n\n🔹 **Opposition :**\n- *però* → mais\n- *tot i que / tot i això* → bien que, malgré cela\n- *malgrat (que)* → malgré (que)\n- *tanmateix* → néanmoins (soutenu)\n- *no obstant això* → néanmoins (très soutenu)\n\n🔹 **Cause :**\n- *perquè* → parce que\n- *ja que / com que* → puisque, étant donné que\n- *a causa de* → à cause de\n\n🔹 **Conséquence :**\n- *per tant* → donc, par conséquent\n- *així doncs* → ainsi donc\n- *per això* → c'est pourquoi\n- *de manera que* → de sorte que\n\n🔹 **Temporels :**\n- *primer... després* → d'abord... ensuite\n- *finalment* → finalement\n- *tot d'una / de sobte* → tout à coup\n- *mentre* → pendant que\n\n🔹 **Reformulation/conclusion :**\n- *és a dir* → c'est-à-dire\n- *en resum* → en résumé\n- *en definitiva* → en définitive\n- *per exemple* → par exemple",
+    "en": "⚙️ Catalan **discourse connectors:**\n- Addition: a més, també, fins i tot\n- Opposition: però, tot i que, malgrat, tanmateix\n- Cause: perquè, ja que, com que\n- Consequence: per tant, per això, de manera que\n- Summary: és a dir, en resum, en definitiva"
+  },
+  "drills": [
+    { "prompt": "M'agrada el pla, ___ prefereixo esperar. (mais)", "answer": "però" },
+    { "prompt": "Fa fred, ___ sortim. (bien que – malgré tout)", "answer": "tot i això / però" },
+    { "prompt": "___ no tenia experiència, li van donar la feina. (bien que)", "answer": "Tot i que" },
+    { "prompt": "No vaig dormir, ___ estic molt cansat. (c'est pourquoi)", "answer": "per això" },
+    { "prompt": "Parla tres idiomes, ___ fa classes de ioga. (de plus)", "answer": "a més" },
+    { "prompt": "___ la pluja, van sortir. (malgré)", "answer": "Malgrat" },
+    { "prompt": "No vaig venir ___ estava malalt. (parce que)", "answer": "perquè" },
+    { "prompt": "___ no tinc diners, no puc anar de vacances. (puisque)", "answer": "Com que / Ja que" },
+    { "prompt": "Va estudiar molt; ___, va suspendre. (néanmoins)", "answer": "tanmateix" },
+    { "prompt": "No ho entenc; ___, m'equivoco sovint. (c'est pourquoi)", "answer": "per tant" },
+    { "prompt": "___ va trucar la porta i tot va canviar. (tout à coup)", "answer": "Tot d'una" },
+    { "prompt": "___ vam visitar el museu, ___ vam dinar. (d'abord... ensuite)", "answer": "Primer / després" },
+    { "prompt": "Estava cansada; ___, es va quedar a casa. (donc)", "answer": "per tant / així doncs" },
+    { "prompt": "M'agrada la muntanya, ___ el mar. (même)", "answer": "fins i tot" },
+    { "prompt": "___, va ser un viatge increïble. (en résumé)", "answer": "En resum" },
+    { "prompt": "És molt intel·ligent, ___ és a dir, el millor de la classe.", "answer": "és a dir" },
+    { "prompt": "Va arribar tard ___ hi havia molt de trànsit. (parce que)", "answer": "perquè" },
+    { "prompt": "___ fa sol, sortirem. (pendant que – si le temps le permet)", "answer": "Com que / Si" },
+    { "prompt": "No m'agrada el fred; ___ visc al sud. (c'est pourquoi)", "answer": "per això" },
+    { "prompt": "___ totes les dificultats, van aconseguir l'objectiu. (malgré)", "answer": "Malgrat" },
+    { "prompt": "Va estudiar molt ___ va aprovar. (de sorte que)", "answer": "de manera que" },
+    { "prompt": "___ tens raó en part. (néanmoins – tu as raison en partie)", "answer": "Tanmateix" },
+    { "prompt": "Hem treballat molt; ___, el resultat és excel·lent. (par conséquent)", "answer": "per tant" },
+    { "prompt": "Et parlo d'açò ___ entenguis la situació. (pour que → subj)", "answer": "perquè" },
+    { "prompt": "___ tenia por, va continuar. (bien que)", "answer": "Tot i que" },
+    { "prompt": "M'agrada molt la música, ___ el jazz. (surtout/voire)", "answer": "fins i tot" },
+    { "prompt": "___, va resultar que tothom tenia raó. (finalement)", "answer": "Finalment" },
+    { "prompt": "No puc venir ___ estic treballant. (parce que)", "answer": "perquè / ja que" },
+    { "prompt": "___, podem dir que el projecte ha estat un èxit. (en définitive)", "answer": "En definitiva" },
+    { "prompt": "Menjava ___ llegia. (pendant que)", "answer": "mentre" }
+  ]
+}
