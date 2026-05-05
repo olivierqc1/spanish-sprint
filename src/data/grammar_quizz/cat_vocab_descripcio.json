@@ -1,0 +1,41 @@
+{
+  "id": "cat_vocab_descripcio",
+  "title": { "fr": "Catalan — Vocabulaire – Description physique et caractère", "en": "Catalan — Vocabulary – Physical description and character" },
+  "level": "A1",
+  "note": {
+    "fr": "⚙️ **Descripció física i caràcter**\n\n🔹 **Taille / Corpulence :**\n- *alt/a* → grand(e)\n- *petit/a* → petit(e)\n- *gras/grassa* → gros/grosse\n- *prim/a* → mince\n- *jove* → jeune\n- *gran* → grand(e) / vieux (âge)\n\n🔹 **Cheveux :**\n- *els cabells* → les cheveux\n- *llargs* → longs\n- *curts* → courts\n- *clars* → clairs\n- *foscos* → foncés\n\n🔹 **Corps :**\n- *el cos* → le corps\n- *els ulls* → les yeux\n- *el nas* → le nez\n- *el dit* → le doigt\n- *la mà* → la main\n- *l'orella* → l'oreille\n\n🔹 **Couleurs :**\n- *vermell/a* → rouge\n- *blau/blava* → bleu(e)\n- *groc/groga* → jaune\n- *taronja* → orange\n- *marró* → marron\n- *verd/a* → vert(e)\n- *blanc/a* → blanc(he)\n- *negre/a* → noir(e)\n\n🔹 **Caractère :**\n- *simpàtic/a* → sympathique\n- *amable* → aimable\n- *seriós/osa* → sérieux/sérieuse\n- *divertit/ida* → amusant(e)\n- *tímid/a* → timide\n- *nerviós/osa* → nerveux/nerveuse\n- *llest/a* → intelligent(e) / prêt(e)\n- *presumit/da* → vaniteux/vaniteuse\n- *desagradable* → désagréable",
+    "en": "⚙️ **Physical description and character in Catalan**\n\n- alt/a → tall, petit/a → small, gras/grassa → fat, prim/a → thin\n- cabells → hair, ulls → eyes, nas → nose, mà → hand, orella → ear\n- vermell → red, blau → blue, groc → yellow, taronja → orange, marró → brown\n- simpàtic/a → nice, amable → kind, seriós/osa → serious, divertit/ida → fun"
+  },
+  "drills": [
+    { "prompt": "alt/a → français", "answer": "grand(e)" },
+    { "prompt": "petit/a → français", "answer": "petit(e)" },
+    { "prompt": "gras/grassa → français", "answer": "gros/grosse" },
+    { "prompt": "prim/a → français", "answer": "mince" },
+    { "prompt": "jove → français", "answer": "jeune" },
+    { "prompt": "els cabells → français", "answer": "les cheveux" },
+    { "prompt": "curts → français", "answer": "courts" },
+    { "prompt": "clars → français", "answer": "clairs" },
+    { "prompt": "el cos → français", "answer": "le corps" },
+    { "prompt": "els ulls → français", "answer": "les yeux" },
+    { "prompt": "el nas → français", "answer": "le nez" },
+    { "prompt": "el dit → français", "answer": "le doigt" },
+    { "prompt": "la mà → français", "answer": "la main" },
+    { "prompt": "l'orella → français", "answer": "l'oreille" },
+    { "prompt": "vermell/a → français", "answer": "rouge" },
+    { "prompt": "blau/blava → français", "answer": "bleu(e)" },
+    { "prompt": "groc/groga → français", "answer": "jaune" },
+    { "prompt": "taronja → français", "answer": "orange" },
+    { "prompt": "marró → français", "answer": "marron" },
+    { "prompt": "simpàtic/a → français", "answer": "sympathique" },
+    { "prompt": "amable → français", "answer": "aimable" },
+    { "prompt": "seriós/osa → français", "answer": "sérieux/sérieuse" },
+    { "prompt": "divertit/ida → français", "answer": "amusant(e)" },
+    { "prompt": "tímid/a → français", "answer": "timide" },
+    { "prompt": "nerviós/osa → français", "answer": "nerveux/nerveuse" },
+    { "prompt": "llest/a → français", "answer": "intelligent(e) / prêt(e)" },
+    { "prompt": "presumit/da → français", "answer": "vaniteux/vaniteuse" },
+    { "prompt": "mince → catalan", "answer": "prim/a" },
+    { "prompt": "sympathique → catalan", "answer": "simpàtic/a" },
+    { "prompt": "les cheveux → catalan", "answer": "els cabells" }
+  ]
+}
