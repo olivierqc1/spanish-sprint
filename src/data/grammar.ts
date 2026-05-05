@@ -975,6 +975,115 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_perifrasies_verbals.json"
   },
+// ─── CATALAN A1 ───────────────────────────────────────────────────────────
+  {
+    id: "cat_present_regulars",
+    title: { fr: "Catalan — Présent – verbes réguliers (-ar, -er, -ir/-re)", en: "Catalan — Present tense – regular verbs (-ar, -er, -ir/-re)" },
+    level: "A1",
+    note: { fr: "Conjugaison des verbes réguliers au présent en catalan : parlar, córrer, obrir.", en: "Conjugation of regular verbs in the Catalan present: parlar, córrer, obrir." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_present_regulars.json"
+  },
+  {
+    id: "cat_present_irregulars",
+    title: { fr: "Catalan — Présent – verbes irréguliers (ser, anar, fer, tenir, venir...)", en: "Catalan — Present tense – irregular verbs (ser, anar, fer, tenir, venir...)" },
+    level: "A1",
+    note: { fr: "Les principaux verbes irréguliers au présent en catalan.", en: "Key irregular verbs in the Catalan present." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_present_irregulars.json"
+  },
+  {
+    id: "cat_plural_genere",
+    title: { fr: "Catalan — Genre et pluriel des noms", en: "Catalan — Gender and plural of nouns" },
+    level: "A1",
+    note: { fr: "Genre (masculin/féminin) et formation du pluriel en catalan (-s, -es, -os).", en: "Gender and plural formation in Catalan (-s, -es, -os)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_plural_genere.json"
+  },
+  {
+    id: "cat_demostratius_possessius",
+    title: { fr: "Catalan — Démonstratifs et possessifs", en: "Catalan — Demonstratives and possessives" },
+    level: "A1",
+    note: { fr: "Démonstratifs (aquest, aquell) et possessifs (el meu, la teva...) en catalan.", en: "Catalan demonstratives (aquest, aquell) and possessives (el meu, la teva...)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_demostratius_possessius.json"
+  },
+
+  // ─── CATALAN A2 ───────────────────────────────────────────────────────────
+  {
+    id: "cat_passat_perifrasic",
+    title: { fr: "Catalan — Passé périphrastique (vaig + infinitif)", en: "Catalan — Periphrastic past (vaig + infinitive)" },
+    level: "A2",
+    note: { fr: "Le temps du passé principal en catalan : vaig/vas/va/vam/vau/van + infinitif.", en: "The main past tense in Catalan: vaig/vas/va/vam/vau/van + infinitive." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_passat_perifrasic.json"
+  },
+  {
+    id: "cat_imperfet",
+    title: { fr: "Catalan — Imparfait (parlava, menjava...)", en: "Catalan — Imperfect tense (parlava, menjava...)" },
+    level: "A2",
+    note: { fr: "L'imparfait catalan pour les habitudes passées et descriptions.", en: "Catalan imperfect for past habits and descriptions." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_imperfet.json"
+  },
+  {
+    id: "cat_futur",
+    title: { fr: "Catalan — Futur simple (parlaré, menjaré...)", en: "Catalan — Simple future (parlaré, menjaré...)" },
+    level: "A2",
+    note: { fr: "Le futur simple en catalan : infinitif + terminaisons -é, -às, -à, -em, -eu, -an.", en: "Catalan simple future: infinitive + endings -é, -às, -à, -em, -eu, -an." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_futur.json"
+  },
+  {
+    id: "cat_comparatius",
+    title: { fr: "Catalan — Comparatifs et superlatifs", en: "Catalan — Comparatives and superlatives" },
+    level: "A2",
+    note: { fr: "més...que, menys...que, tan...com, millor, pitjor, superlatif en -íssim.", en: "més...que, menys...que, tan...com, millor, pitjor, superlative in -íssim." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_comparatius.json"
+  },
+  {
+    id: "cat_verbs_reflexius",
+    title: { fr: "Catalan — Verbes réflexifs (aixecar-se, dutxar-se...)", en: "Catalan — Reflexive verbs (aixecar-se, dutxar-se...)" },
+    level: "A2",
+    note: { fr: "Verbes réflexifs et pronoms : em, et, es, ens, us, es.", en: "Reflexive verbs and pronouns: em, et, es, ens, us, es." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_verbs_reflexius.json"
+  },
+
+  // ─── CATALAN B1 ───────────────────────────────────────────────────────────
+  {
+    id: "cat_subjuntiu_present",
+    title: { fr: "Catalan — Subjonctif présent (parli, mengi, obri...)", en: "Catalan — Present subjunctive (parli, mengi, obri...)" },
+    level: "B1",
+    note: { fr: "Formation et usages du subjonctif présent catalan.", en: "Formation and uses of the Catalan present subjunctive." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_subjuntiu_present.json"
+  },
+  {
+    id: "cat_condicional",
+    title: { fr: "Catalan — Conditionnel (parlaria, menjaria...)", en: "Catalan — Conditional (parlaria, menjaria...)" },
+    level: "B1",
+    note: { fr: "Conditionnel catalan pour les hypothèses, la politesse et les conseils.", en: "Catalan conditional for hypotheses, politeness, and advice." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_condicional.json"
+  },
+  {
+    id: "cat_connectors_discurs",
+    title: { fr: "Catalan — Connecteurs du discours (però, tot i que, per tant...)", en: "Catalan — Discourse connectors (però, tot i que, per tant...)" },
+    level: "B1",
+    note: { fr: "Connecteurs catalans pour structurer le discours : opposition, cause, conséquence.", en: "Catalan connectors for discourse structure: opposition, cause, consequence." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_connectors_discurs.json"
+  },
+  {
+    id: "cat_perifrasies_verbals",
+    title: { fr: "Catalan — Périphrases verbales (estar + gerundi, acabar de, anar a...)", en: "Catalan — Verbal periphrases (estar + gerund, acabar de, anar a...)" },
+    level: "B1",
+    note: { fr: "Les périphrases verbales catalanes : estar+gerundi, anar a, acabar de, deixar de, haver de...", en: "Catalan verbal periphrases: estar+gerund, anar a, acabar de, deixar de, haver de..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_perifrasies_verbals.json"
+  },
 
 
 
