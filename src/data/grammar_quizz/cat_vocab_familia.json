@@ -1,0 +1,41 @@
+{
+  "id": "cat_vocab_familia",
+  "title": { "fr": "Catalan — Vocabulaire – La famille", "en": "Catalan — Vocabulary – The family" },
+  "level": "A1",
+  "note": {
+    "fr": "⚙️ **La família en catalan**\n\n🔹 **Membres de la famille :**\n- *l'avi / l'àvia* → le grand-père / la grand-mère\n- *el pare / la mare* → le père / la mère\n- *el fill / la filla* → le fils / la fille\n- *el germà / la germana* → le frère / la sœur\n- *l'oncle / la tia* → l'oncle / la tante\n- *el cosí / la cosina* → le cousin / la cousine\n- *el nebot / la neboda* → le neveu / la nièce\n- *el net / la néta* → le petit-fils / la petite-fille\n- *el sogre / la sogra* → le beau-père / la belle-mère\n- *el cunyat / la cunyada* → le beau-frère / la belle-sœur\n- *la nora* → la belle-fille\n- *el gendre* → le gendre\n- *el marit / la muller* → le mari / la femme (épouse)\n- *l'home / la dona* → l'homme / la femme\n\n🔹 **État civil :**\n- *solter/a* → célibataire\n- *casat/da* → marié(e)\n- *divorciat/da* → divorcé(e)\n- *vidu/vídua* → veuf/veuve",
+    "en": "⚙️ **Catalan family vocabulary**\n\n- avi/àvia → grandfather/grandmother\n- pare/mare → father/mother\n- fill/filla → son/daughter\n- germà/germana → brother/sister\n- oncle/tia → uncle/aunt\n- cosí/cosina → cousin\n- nebot/neboda → nephew/niece\n- sogre/sogra → father/mother-in-law\n- cunyat/cunyada → brother/sister-in-law\n- marit/muller → husband/wife"
+  },
+  "drills": [
+    { "prompt": "avi → français", "answer": "grand-père" },
+    { "prompt": "àvia → français", "answer": "grand-mère" },
+    { "prompt": "pare → français", "answer": "père" },
+    { "prompt": "mare → français", "answer": "mère" },
+    { "prompt": "fill → français", "answer": "fils" },
+    { "prompt": "filla → français", "answer": "fille" },
+    { "prompt": "germà → français", "answer": "frère" },
+    { "prompt": "germana → français", "answer": "sœur" },
+    { "prompt": "oncle → français", "answer": "oncle" },
+    { "prompt": "tia → français", "answer": "tante" },
+    { "prompt": "cosí → français", "answer": "cousin" },
+    { "prompt": "cosina → français", "answer": "cousine" },
+    { "prompt": "nebot → français", "answer": "neveu" },
+    { "prompt": "neboda → français", "answer": "nièce" },
+    { "prompt": "net → français", "answer": "petit-fils" },
+    { "prompt": "néta → français", "answer": "petite-fille" },
+    { "prompt": "sogre → français", "answer": "beau-père" },
+    { "prompt": "sogra → français", "answer": "belle-mère" },
+    { "prompt": "cunyat → français", "answer": "beau-frère" },
+    { "prompt": "cunyada → français", "answer": "belle-sœur" },
+    { "prompt": "nora → français", "answer": "belle-fille" },
+    { "prompt": "marit → français", "answer": "mari" },
+    { "prompt": "muller → français", "answer": "femme (épouse)" },
+    { "prompt": "home → français", "answer": "homme" },
+    { "prompt": "dona → français", "answer": "femme" },
+    { "prompt": "solter/a → français", "answer": "célibataire" },
+    { "prompt": "grand-père → catalan", "answer": "avi" },
+    { "prompt": "frère → catalan", "answer": "germà" },
+    { "prompt": "neveu → catalan", "answer": "nebot" },
+    { "prompt": "belle-mère → catalan", "answer": "sogra" }
+  ]
+}
