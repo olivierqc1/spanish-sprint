@@ -243,4 +243,123 @@ export const wordsA1 = [
   { id: "238", front: "pobre", back: "pauvre", backEn: "poor", level: "A1", country: "ALL", category: "adjectif" },
   { id: "239", front: "por desgracia", back: "malheureusement", backEn: "unfortunately", level: "A1", country: "ALL", category: "autre" },
   { id: "240", front: "andar", back: "marcher / aller", backEn: "to walk", level: "A1", country: "ALL", category: "verbe" },
+// ─── AJOUTS À COLLER À LA FIN DU TABLEAU catalanWordsA1 (avant le ]; final) ───
+
+  // ─── COS HUMÀ ────────────────────────────────────────────────────────────
+  { id: 'cat-a1-151', front: 'els cabells',   back: 'les cheveux',  backEn: 'hair',         level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-152', front: 'els ulls',      back: 'les yeux',     backEn: 'eyes',         level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-153', front: 'el nas',        back: 'le nez',       backEn: 'nose',         level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-154', front: 'la boca',       back: 'la bouche',    backEn: 'mouth',        level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-155', front: "l'orella",      back: "l'oreille",    backEn: 'ear',          level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-156', front: 'el dit',        back: 'le doigt',     backEn: 'finger',       level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-157', front: 'la mà',         back: 'la main',      backEn: 'hand',         level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-158', front: 'el cos',        back: 'le corps',     backEn: 'body',         level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-159', front: 'el cap',        back: 'la tête',      backEn: 'head',         level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-160', front: 'el peu',        back: 'le pied',      backEn: 'foot',         level: 'A1', country: 'catalonia', category: 'cos' },
+
+  // ─── DESCRIPCIÓ FÍSICA ───────────────────────────────────────────────────
+  { id: 'cat-a1-161', front: 'alt / alta',        back: 'grand(e)',     backEn: 'tall',   level: 'A1', country: 'catalonia', category: 'descripció' },
+  { id: 'cat-a1-162', front: 'prim / prima',       back: 'mince',        backEn: 'thin',   level: 'A1', country: 'catalonia', category: 'descripció' },
+  { id: 'cat-a1-163', front: 'gras / grassa',      back: 'gros(se)',     backEn: 'fat',    level: 'A1', country: 'catalonia', category: 'descripció' },
+  { id: 'cat-a1-164', front: 'jove',               back: 'jeune',        backEn: 'young',  level: 'A1', country: 'catalonia', category: 'descripció' },
+  { id: 'cat-a1-165', front: 'llarg / llarga',     back: 'long(ue)',     backEn: 'long',   level: 'A1', country: 'catalonia', category: 'descripció' },
+  { id: 'cat-a1-166', front: 'curt / curta',       back: 'court(e)',     backEn: 'short',  level: 'A1', country: 'catalonia', category: 'descripció' },
+  { id: 'cat-a1-167', front: 'clar / clara',       back: 'clair(e)',     backEn: 'light',  level: 'A1', country: 'catalonia', category: 'descripció' },
+  { id: 'cat-a1-168', front: 'fosc / fosca',       back: 'foncé(e)',     backEn: 'dark',   level: 'A1', country: 'catalonia', category: 'descripció' },
+
+  // ─── CARÀCTER ────────────────────────────────────────────────────────────
+  { id: 'cat-a1-169', front: 'amable',               back: 'aimable',              backEn: 'kind',          level: 'A1', country: 'catalonia', category: 'caràcter' },
+  { id: 'cat-a1-170', front: 'seriós / seriosa',     back: 'sérieux/sérieuse',     backEn: 'serious',       level: 'A1', country: 'catalonia', category: 'caràcter' },
+  { id: 'cat-a1-171', front: 'divertit / divertida', back: 'amusant(e)',           backEn: 'fun',           level: 'A1', country: 'catalonia', category: 'caràcter' },
+  { id: 'cat-a1-172', front: 'tímid / tímida',       back: 'timide',               backEn: 'shy',           level: 'A1', country: 'catalonia', category: 'caràcter' },
+  { id: 'cat-a1-173', front: 'nerviós / nerviosa',   back: 'nerveux/nerveuse',     backEn: 'nervous',       level: 'A1', country: 'catalonia', category: 'caràcter' },
+  { id: 'cat-a1-174', front: 'llest / llesta',       back: 'intelligent(e)',       backEn: 'smart',         level: 'A1', country: 'catalonia', category: 'caràcter' },
+  { id: 'cat-a1-175', front: 'presumit / presumida', back: 'vaniteux/vaniteuse',   backEn: 'vain',          level: 'A1', country: 'catalonia', category: 'caràcter' },
+  { id: 'cat-a1-176', front: 'desagradable',         back: 'désagréable',          backEn: 'unpleasant',    level: 'A1', country: 'catalonia', category: 'caràcter' },
+
+  // ─── FAMÍLIA (complementari) ─────────────────────────────────────────────
+  { id: 'cat-a1-177', front: "l'oncle",       back: "l'oncle",         backEn: 'uncle',              level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-178', front: 'la tia',        back: 'la tante',        backEn: 'aunt',               level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-179', front: 'el cosí',       back: 'le cousin',       backEn: 'cousin (m)',         level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-180', front: 'la cosina',     back: 'la cousine',      backEn: 'cousin (f)',         level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-181', front: 'el nebot',      back: 'le neveu',        backEn: 'nephew',             level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-182', front: 'la neboda',     back: 'la nièce',        backEn: 'niece',              level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-183', front: 'el sogre',      back: 'le beau-père',    backEn: 'father-in-law',      level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-184', front: 'la sogra',      back: 'la belle-mère',   backEn: 'mother-in-law',      level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-185', front: 'el cunyat',     back: 'le beau-frère',   backEn: 'brother-in-law',     level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-186', front: 'la cunyada',    back: 'la belle-sœur',   backEn: 'sister-in-law',      level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-187', front: 'la nora',       back: 'la belle-fille',  backEn: 'daughter-in-law',    level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-188', front: 'el marit',      back: 'le mari',         backEn: 'husband',            level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-189', front: 'la muller',     back: "la femme (épouse)", backEn: 'wife',             level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-190', front: "l'home",        back: "l'homme",         backEn: 'man',                level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-191', front: 'la dona',       back: 'la femme',        backEn: 'woman',              level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-192', front: 'solter / soltera', back: 'célibataire',  backEn: 'single',             level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-193', front: 'el net',        back: 'le petit-fils',   backEn: 'grandson',           level: 'A1', country: 'catalonia', category: 'familia' },
+  { id: 'cat-a1-194', front: 'la néta',       back: 'la petite-fille', backEn: 'granddaughter',      level: 'A1', country: 'catalonia', category: 'familia' },
+
+  // ─── PRESENTACIÓ ─────────────────────────────────────────────────────────
+  { id: 'cat-a1-195', front: 'el nom',          back: 'le prénom',             backEn: 'first name',    level: 'A1', country: 'catalonia', category: 'presentació' },
+  { id: 'cat-a1-196', front: 'el cognom',       back: 'le nom de famille',     backEn: 'surname',       level: 'A1', country: 'catalonia', category: 'presentació' },
+  { id: 'cat-a1-197', front: "l'edat",          back: "l'âge",                 backEn: 'age',           level: 'A1', country: 'catalonia', category: 'presentació' },
+  { id: 'cat-a1-198', front: 'la professió',    back: 'la profession',         backEn: 'profession',    level: 'A1', country: 'catalonia', category: 'presentació' },
+  { id: 'cat-a1-199', front: 'la procedència',  back: "l'origine / provenance", backEn: 'origin',       level: 'A1', country: 'catalonia', category: 'presentació' },
+  { id: 'cat-a1-200', front: 'el telèfon',      back: 'le téléphone',          backEn: 'phone number',  level: 'A1', country: 'catalonia', category: 'presentació' },
+  { id: 'cat-a1-201', front: 'Com et dius?',    back: 'Comment tu t\'appelles ?', backEn: 'What is your name?', level: 'A1', country: 'catalonia', category: 'presentació' },
+  { id: 'cat-a1-202', front: 'Com va això?',    back: 'Comment ça va ?',       backEn: 'How is it going?', level: 'A1', country: 'catalonia', category: 'presentació' },
+
+  // ─── ROBA ────────────────────────────────────────────────────────────────
+  { id: 'cat-a1-203', front: 'el jersei',      back: 'le pull',         backEn: 'sweater',   level: 'A1', country: 'catalonia', category: 'roba' },
+  { id: 'cat-a1-204', front: 'la camiseta',    back: 'le t-shirt',      backEn: 't-shirt',   level: 'A1', country: 'catalonia', category: 'roba' },
+  { id: 'cat-a1-205', front: 'la camisa',      back: 'la chemise',      backEn: 'shirt',     level: 'A1', country: 'catalonia', category: 'roba' },
+  { id: 'cat-a1-206', front: 'la faldilla',    back: 'la jupe',         backEn: 'skirt',     level: 'A1', country: 'catalonia', category: 'roba' },
+  { id: 'cat-a1-207', front: 'els pantalons',  back: 'le pantalon',     backEn: 'trousers',  level: 'A1', country: 'catalonia', category: 'roba' },
+  { id: 'cat-a1-208', front: 'la sabata',      back: 'la chaussure',    backEn: 'shoe',      level: 'A1', country: 'catalonia', category: 'roba' },
+  { id: 'cat-a1-209', front: 'la jaqueta',     back: 'la veste',        backEn: 'jacket',    level: 'A1', country: 'catalonia', category: 'roba' },
+  { id: 'cat-a1-210', front: 'la gorra',       back: 'la casquette',    backEn: 'cap / hat', level: 'A1', country: 'catalonia', category: 'roba' },
+
+  // ─── OBJECTES ────────────────────────────────────────────────────────────
+  { id: 'cat-a1-211', front: 'el llapis',      back: 'le crayon',       backEn: 'pencil',    level: 'A1', country: 'catalonia', category: 'objecte' },
+  { id: 'cat-a1-212', front: 'el retolador',   back: 'le marqueur',     backEn: 'marker',    level: 'A1', country: 'catalonia', category: 'objecte' },
+  { id: 'cat-a1-213', front: 'el full',        back: 'la feuille',      backEn: 'sheet of paper', level: 'A1', country: 'catalonia', category: 'objecte' },
+  { id: 'cat-a1-214', front: "l'ampolla",      back: 'la bouteille',    backEn: 'bottle',    level: 'A1', country: 'catalonia', category: 'objecte' },
+  { id: 'cat-a1-215', front: 'la cassola',     back: 'la casserole',    backEn: 'pot / pan', level: 'A1', country: 'catalonia', category: 'objecte' },
+  { id: 'cat-a1-216', front: "l'anell",        back: 'la bague',        backEn: 'ring',      level: 'A1', country: 'catalonia', category: 'objecte' },
+
+  // ─── ALIMENTS (complementari) ────────────────────────────────────────────
+  { id: 'cat-a1-217', front: 'la poma',   back: 'la pomme',    backEn: 'apple',     level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-218', front: 'la pera',   back: 'la poire',    backEn: 'pear',      level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-219', front: 'la pinya',  back: "l'ananas",    backEn: 'pineapple', level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-220', front: 'la ceba',   back: "l'oignon",    backEn: 'onion',     level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-221', front: "l'all",     back: "l'ail",       backEn: 'garlic',    level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-222', front: "l'ou",      back: "l'œuf",       backEn: 'egg',       level: 'A1', country: 'catalonia', category: 'menjar' },
+  { id: 'cat-a1-223', front: 'el glaçó',  back: 'le glaçon',   backEn: 'ice cube',  level: 'A1', country: 'catalonia', category: 'menjar' },
+
+  // ─── ANIMALS ─────────────────────────────────────────────────────────────
+  { id: 'cat-a1-224', front: 'el gos / la gossa', back: 'le chien / la chienne', backEn: 'dog',  level: 'A1', country: 'catalonia', category: 'animal' },
+  { id: 'cat-a1-225', front: 'el gat / la gata',  back: 'le chat / la chatte',   backEn: 'cat',  level: 'A1', country: 'catalonia', category: 'animal' },
+  { id: 'cat-a1-226', front: "l'os",               back: "l'ours",                backEn: 'bear', level: 'A1', country: 'catalonia', category: 'animal' },
+  { id: 'cat-a1-227', front: 'la rata',            back: 'le rat',                backEn: 'rat',  level: 'A1', country: 'catalonia', category: 'animal' },
+
+  // ─── NOMBRES 21–100 ──────────────────────────────────────────────────────
+  { id: 'cat-a1-228', front: 'vint-i-un / vint-i-una', back: 'vingt et un/une', backEn: 'twenty-one',  level: 'A1', country: 'catalonia', category: 'nombre' },
+  { id: 'cat-a1-229', front: 'vint-i-dos',              back: 'vingt-deux',      backEn: 'twenty-two',  level: 'A1', country: 'catalonia', category: 'nombre' },
+  { id: 'cat-a1-230', front: 'trenta',                  back: 'trente',          backEn: 'thirty',      level: 'A1', country: 'catalonia', category: 'nombre' },
+  { id: 'cat-a1-231', front: 'quaranta',                back: 'quarante',        backEn: 'forty',       level: 'A1', country: 'catalonia', category: 'nombre' },
+  { id: 'cat-a1-232', front: 'cinquanta',               back: 'cinquante',       backEn: 'fifty',       level: 'A1', country: 'catalonia', category: 'nombre' },
+  { id: 'cat-a1-233', front: 'seixanta',                back: 'soixante',        backEn: 'sixty',       level: 'A1', country: 'catalonia', category: 'nombre' },
+  { id: 'cat-a1-234', front: 'setanta',                 back: 'soixante-dix',    backEn: 'seventy',     level: 'A1', country: 'catalonia', category: 'nombre' },
+  { id: 'cat-a1-235', front: 'vuitanta',                back: 'quatre-vingts',   backEn: 'eighty',      level: 'A1', country: 'catalonia', category: 'nombre' },
+  { id: 'cat-a1-236', front: 'noranta',                 back: 'quatre-vingt-dix', backEn: 'ninety',     level: 'A1', country: 'catalonia', category: 'nombre' },
+
+  // ─── DIVERS ──────────────────────────────────────────────────────────────
+  { id: 'cat-a1-237', front: 'el col·legi',  back: "l'école",          backEn: 'school',           level: 'A1', country: 'catalonia', category: 'lloc' },
+  { id: 'cat-a1-238', front: 'la veritat',   back: 'la vérité',        backEn: 'truth',             level: 'A1', country: 'catalonia', category: 'expressió' },
+  { id: 'cat-a1-239', front: 'abans',        back: 'avant',            backEn: 'before',            level: 'A1', country: 'catalonia', category: 'temps' },
+  { id: 'cat-a1-240', front: 'propera',      back: 'prochaine',        backEn: 'next',              level: 'A1', country: 'catalonia', category: 'temps' },
+  { id: 'cat-a1-241', front: "l'avió",       back: "l'avion",          backEn: 'airplane',          level: 'A1', country: 'catalonia', category: 'transport' },
+  { id: 'cat-a1-242', front: 'abandonar',    back: 'abandonner',       backEn: 'to abandon',        level: 'A1', country: 'catalonia', category: 'verb' },
+  { id: 'cat-a1-243', front: 'començar',     back: 'commencer',        backEn: 'to start',          level: 'A1', country: 'catalonia', category: 'verb' },
+  { id: 'cat-a1-244', front: 'així',         back: 'ainsi / comme ça', backEn: 'like this / so',    level: 'A1', country: 'catalonia', category: 'expressió' },
+  { id: 'cat-a1-245', front: 'per això',     back: "c'est pourquoi",   backEn: "that's why",        level: 'A1', country: 'catalonia', category: 'expressió' },
+
 ];
