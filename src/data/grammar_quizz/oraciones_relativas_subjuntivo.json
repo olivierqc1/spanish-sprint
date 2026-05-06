@@ -1,0 +1,41 @@
+{
+  "id": "oraciones_relativas_subjuntivo",
+  "title": { "fr": "Relatives – Indicatif vs Subjonctif (busco a alguien que...)", "en": "Relative clauses – Indicative vs Subjunctive (busco a alguien que...)" },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Dans les propositions relatives, le choix entre **indicatif** et **subjonctif** dépend de si l'antécédent est **connu/existant** ou **inconnu/hypothétique**.\n\n🔹 **Antécédent connu → INDICATIF**\nOn sait que la chose/personne existe :\n➡️ *Busco al chico **que habla** chino.* (je sais qu'il existe)\n➡️ *Tengo un amigo **que vive** en París.*\n➡️ *Conozco un restaurante **que sirve** comida catalana.*\n\n🔹 **Antécédent inconnu/hypothétique → SUBJONCTIF**\nOn cherche quelque chose/quelqu'un qu'on ne connaît pas encore :\n➡️ *Busco un chico **que hable** chino.* (je cherche, je ne sais pas s'il existe)\n➡️ *Necesito alguien **que sepa** conducir.*\n➡️ *¿Conoces a alguien **que pueda** ayudarme?*\n\n🔹 **Après une négation → SUBJONCTIF**\n➡️ *No hay nadie **que sepa** la respuesta.*\n➡️ *No conozco a nadie **que hable** ruso.*\n\n💡 **Astuce :** Indicatif = je l'ai déjà / Subjonctif = je le cherche encore",
+    "en": "⚙️ In relative clauses, use **indicative** for known/existing referents and **subjunctive** for unknown/hypothetical ones.\n\n🔹 **Known → indicative:** *Busco al chico que habla chino.* (specific person)\n🔹 **Unknown → subjunctive:** *Busco un chico que hable chino.* (anyone who speaks Chinese)\n🔹 **After negation → subjunctive:** *No hay nadie que sepa la respuesta.*"
+  },
+  "drills": [
+    { "prompt": "Busco a alguien que ___ (hablar) chino. (inconnu)", "answer": "hable" },
+    { "prompt": "Conozco a alguien que ___ (hablar) chino. (connu)", "answer": "habla" },
+    { "prompt": "Necesito un piso que ___ (tener) terraza. (inconnu)", "answer": "tenga" },
+    { "prompt": "Tengo un piso que ___ (tener) terraza. (connu)", "answer": "tiene" },
+    { "prompt": "¿Conoces a alguien que ___ (poder) ayudarme? (inconnu)", "answer": "pueda" },
+    { "prompt": "Sé de alguien que ___ (poder) ayudarte. (connu)", "answer": "puede" },
+    { "prompt": "No hay nadie que ___ (saber) la respuesta. (négation)", "answer": "sepa" },
+    { "prompt": "Hay alguien que ___ (saber) la respuesta. (connu)", "answer": "sabe" },
+    { "prompt": "Busco un trabajo que ___ (pagar) bien. (inconnu)", "answer": "pague" },
+    { "prompt": "Tengo un trabajo que ___ (pagar) bien. (connu)", "answer": "paga" },
+    { "prompt": "No conozco a nadie que ___ (vivir) en Tokio. (négation)", "answer": "viva" },
+    { "prompt": "Conozco a alguien que ___ (vivir) en Tokio. (connu)", "answer": "vive" },
+    { "prompt": "Quiero encontrar un restaurante que ___ (servir) comida vegana. (inconnu)", "answer": "sirva" },
+    { "prompt": "Conozco un restaurante que ___ (servir) comida vegana. (connu)", "answer": "sirve" },
+    { "prompt": "Necesito un mecánico que ___ (entender) de coches eléctricos. (inconnu)", "answer": "entienda" },
+    { "prompt": "Tengo un mecánico que ___ (entender) de coches eléctricos. (connu)", "answer": "entiende" },
+    { "prompt": "¿Hay alguien que ___ (saber) tocar la guitarra? (inconnu)", "answer": "sepa" },
+    { "prompt": "No hay ningún hotel que ___ (aceptar) mascotas aquí. (négation)", "answer": "acepte" },
+    { "prompt": "Busco un compañero de piso que ___ (ser) ordenado. (inconnu)", "answer": "sea" },
+    { "prompt": "Tengo un compañero que ___ (ser) muy ordenado. (connu)", "answer": "es" },
+    { "prompt": "Necesito a alguien que me ___ (ayudar) con la mudanza. (inconnu)", "answer": "ayude" },
+    { "prompt": "Tengo a alguien que me ___ (ayudar) con la mudanza. (connu)", "answer": "ayuda" },
+    { "prompt": "No hay nada que ___ (poder, yo) hacer. (négation)", "answer": "pueda" },
+    { "prompt": "Hay algo que ___ (poder, tú) hacer. (connu)", "answer": "puedes" },
+    { "prompt": "Busco una película que ___ (tener) subtítulos en español. (inconnu)", "answer": "tenga" },
+    { "prompt": "Vi una película que ___ (tener) subtítulos en español. (connu)", "answer": "tenía" },
+    { "prompt": "¿Conoces un lugar que ___ (estar) tranquilo para estudiar? (inconnu)", "answer": "esté" },
+    { "prompt": "Conozco un lugar que ___ (estar) muy tranquilo. (connu)", "answer": "está" },
+    { "prompt": "No conozco a nadie que ___ (hacer) eso. (négation)", "answer": "haga" },
+    { "prompt": "Quiero un jefe que ___ (respetar) el trabajo de su equipo. (inconnu)", "answer": "respete" }
+  ]
+}
