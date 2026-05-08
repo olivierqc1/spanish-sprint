@@ -1,0 +1,44 @@
+{
+  "id": "subjuntivo_perfecto",
+  "title": {
+    "fr": "Subjonctif passé – Haya + participio",
+    "en": "Perfect subjunctive – Haya + participle"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Le **subjonctif passé** (subjonctif présent parfait) exprime une action passée dans les contextes qui exigent le subjonctif.\n\n🔹 **Formation : haya/hayas/haya/hayamos/hayáis/hayan + participio passé**\n\n| Pronom | haber (subj.) | + participio |\n|--------|---------------|-------------|\n| yo | **haya** | hablado / comido / vivido |\n| tú | **hayas** | llegado / hecho / dicho |\n| él/ella | **haya** | visto / vuelto / sido |\n| nosotros | **hayamos** | tenido / puesto / ido |\n| vosotros | **hayáis** | salido / venido / dado |\n| ellos | **hayan** | escrito / roto / abierto |\n\n🔹 **Participes irréguliers clés :**\n- hacer → **hecho**\n- decir → **dicho**\n- ver → **visto**\n- escribir → **escrito**\n- volver → **vuelto**\n- poner → **puesto**\n- abrir → **abierto**\n- romper → **roto**\n- morir → **muerto**\n\n🔹 **Usages :**\n\n1️⃣ **Émotion/valorisation sur une action passée :**\n➡️ *Me alegra que **hayas venido**.* (Je suis content que tu sois venu.)\n➡️ *Es una lástima que no **haya llegado** a tiempo.*\n\n2️⃣ **Doute sur une action passée :**\n➡️ *No creo que **haya dicho** eso.*\n\n3️⃣ **Après cuando (action passée → futur) :**\n➡️ *Cuando **hayas terminado**, dímelo.*\n\n4️⃣ **Avec ojalá :**\n➡️ *Ojalá **haya llegado** bien.*",
+    "en": "⚙️ The **perfect subjunctive** expresses a past action in subjunctive contexts.\n\n🔹 **Form:** haya + past participle\n\n🔹 **Uses:**\n1. Emotion/value about past action: *Me alegra que hayas venido.*\n2. Doubt about past action: *No creo que haya dicho eso.*\n3. After cuando (completed action): *Cuando hayas terminado, dímelo.*\n4. With ojalá: *Ojalá haya llegado bien.*"
+  },
+  "drills": [
+    { "prompt": "Me alegra que ___ (venir, tú) a la fiesta.", "answer": "hayas venido" },
+    { "prompt": "No creo que ___ (decir, él) eso.", "answer": "haya dicho" },
+    { "prompt": "Cuando ___ (terminar, tú), dímelo.", "answer": "hayas terminado" },
+    { "prompt": "Ojalá ___ (llegar, ella) bien a casa.", "answer": "haya llegado" },
+    { "prompt": "Es una lástima que no ___ (poder, vosotros) venir.", "answer": "hayáis podido" },
+    { "prompt": "Me sorprende que ___ (hacer, él) eso.", "answer": "haya hecho" },
+    { "prompt": "Espero que ___ (ver, tú) la película que te recomendé.", "answer": "hayas visto" },
+    { "prompt": "No es posible que ___ (escribir, ella) todo eso en una hora.", "answer": "haya escrito" },
+    { "prompt": "Cuando ___ (leer, vosotros) el informe, llamadme.", "answer": "hayáis leído" },
+    { "prompt": "Es bueno que ___ (volver, ellos) sanos y salvos.", "answer": "hayan vuelto" },
+    { "prompt": "Me alegro de que ___ (conseguir, tú) el trabajo.", "answer": "hayas conseguido" },
+    { "prompt": "No creo que ___ (poner, él) las llaves ahí.", "answer": "haya puesto" },
+    { "prompt": "Ojalá ___ (abrir, ellos) ya el restaurante.", "answer": "hayan abierto" },
+    { "prompt": "Es raro que ___ (romper, ella) con él.", "answer": "haya roto" },
+    { "prompt": "Cuando ___ (acabar, tú) de comer, friegaplatos.", "answer": "hayas acabado" },
+    { "prompt": "Me molesta que ___ (decir, ellos) esas cosas.", "answer": "hayan dicho" },
+    { "prompt": "No es verdad que ___ (morir, él).", "answer": "haya muerto" },
+    { "prompt": "Espero que ___ (salir, todo) bien.", "answer": "haya salido" },
+    { "prompt": "Es una pena que no ___ (ver, vosotros) esa exposición.", "answer": "hayáis visto" },
+    { "prompt": "Cuando ___ (hacer, nosotros) los deberes, saldremos.", "answer": "hayamos hecho" },
+    { "prompt": "Me alegra que ___ (estar, tú) mejor.", "answer": "hayas estado" },
+    { "prompt": "Dudo que ___ (ir, ella) sola.", "answer": "haya ido" },
+    { "prompt": "Es importante que ___ (dar, tú) las gracias.", "answer": "hayas dado" },
+    { "prompt": "Ojalá ___ (ser, todo) un malentendido.", "answer": "haya sido" },
+    { "prompt": "No creo que ___ (volver, ellos) ya.", "answer": "hayan vuelto" },
+    { "prompt": "Cuando ___ (ver, tú) los resultados, entenderás.", "answer": "hayas visto" },
+    { "prompt": "Es posible que ___ (romper, él) el contrato.", "answer": "haya roto" },
+    { "prompt": "Me sorprende que ya ___ (abrir, ellos) la tienda.", "answer": "hayan abierto" },
+    { "prompt": "Espero que no ___ (olvidar, tú) la cita.", "answer": "hayas olvidado" },
+    { "prompt": "Cuando ___ (escribir, ella) la carta, envíala.", "answer": "haya escrito" }
+  ]
+}
