@@ -1,0 +1,44 @@
+{
+  "id": "futuro_simple_completo",
+  "title": {
+    "fr": "Futur simple – Réguliers + Irréguliers (complet)",
+    "en": "Simple future – Regular + Irregular (complete)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Le **futur simple** se forme avec l'infinitif + les terminaisons suivantes :\n**-é, -ás, -á, -emos, -éis, -án**\n\n🔹 **Verbes réguliers :**\n\n| | hablar | comer | vivir |\n|--|--------|-------|-------|\n| yo | **hablaré** | **comeré** | **viviré** |\n| tú | **hablarás** | **comerás** | **vivirás** |\n| él | **hablará** | **comerá** | **vivirá** |\n| nosotros | **hablaremos** | **comeremos** | **viviremos** |\n| vosotros | **hablaréis** | **comeréis** | **viviréis** |\n| ellos | **hablarán** | **comerán** | **vivirán** |\n\n🔹 **Radicaux irréguliers (mêmes terminaisons) :**\n\n| Infinitif | Radical | Yo |\n|-----------|---------|----|\n| **haber** | habr- | **habré** |\n| **poder** | podr- | **podré** |\n| **querer** | querr- | **querré** |\n| **saber** | sabr- | **sabré** |\n| **caber** | cabr- | **cabré** |\n| **poner** | pondr- | **pondré** |\n| **tener** | tendr- | **tendré** |\n| **valer** | valdr- | **valdré** |\n| **salir** | saldr- | **saldré** |\n| **venir** | vendr- | **vendré** |\n| **hacer** | har- | **haré** |\n| **decir** | dir- | **diré** |\n\n🔹 **Usages :**\n- **Prédiction future :** *Mañana **lloverá**.*\n- **Promesse :** *Te **llamaré** esta noche.*\n- **Hypothèse sur le présent :** *¿Dónde estará? → Il est peut-être quelque part...*\n- **Avec marqueurs :** *mañana, la semana que viene, dentro de, el año que viene, pronto, algún día*",
+    "en": "⚙️ The **simple future** = infinitive + -é, -ás, -á, -emos, -éis, -án\n\n🔹 **Irregular stems:** haber→habr, poder→podr, querer→querr, saber→sabr, poner→pondr, tener→tendr, salir→saldr, venir→vendr, hacer→har, decir→dir\n\n🔹 **Uses:** future predictions, promises, hypotheses about the present"
+  },
+  "drills": [
+    { "prompt": "Mañana ___ (yo, hablar) con el director.", "answer": "hablaré" },
+    { "prompt": "El año que viene ___ (nosotros, vivir) en Barcelona.", "answer": "viviremos" },
+    { "prompt": "¿___ (tú, venir) a la fiesta el sábado?", "answer": "Vendrás" },
+    { "prompt": "Ella ___ (hacer) los deberes esta tarde.", "answer": "hará" },
+    { "prompt": "Vosotros ___ (tener) más tiempo la semana que viene.", "answer": "tendréis" },
+    { "prompt": "Ellos ___ (salir) de viaje mañana por la mañana.", "answer": "saldrán" },
+    { "prompt": "Yo ___ (poder) ayudarte mañana.", "answer": "podré" },
+    { "prompt": "¿___ (él, saber) la respuesta?", "answer": "Sabrá" },
+    { "prompt": "Nosotros ___ (comer) juntos el domingo.", "answer": "comeremos" },
+    { "prompt": "Tú ___ (decir) la verdad, ¿verdad?", "answer": "dirás" },
+    { "prompt": "Yo ___ (poner) la mesa ahora mismo.", "answer": "pondré" },
+    { "prompt": "Ellas ___ (querer) venir también.", "answer": "querrán" },
+    { "prompt": "¿Cuándo ___ (volver, tú)?", "answer": "volverás" },
+    { "prompt": "El tren ___ (llegar) a las 8.", "answer": "llegará" },
+    { "prompt": "Dentro de dos años ___ (yo, terminar) la carrera.", "answer": "terminaré" },
+    { "prompt": "Vosotros ___ (poder) descansar este fin de semana.", "answer": "podréis" },
+    { "prompt": "Mañana ___ (hacer) sol.", "answer": "hará" },
+    { "prompt": "Algún día ___ (nosotros, viajar) por todo el mundo.", "answer": "viajaremos" },
+    { "prompt": "¿Dónde ___ (estar, él)? No contesta. (hypothèse présent)", "answer": "estará" },
+    { "prompt": "Ellos no ___ (venir) si llueve.", "answer": "vendrán" },
+    { "prompt": "Yo te ___ (llamar) esta noche, lo prometo.", "answer": "llamaré" },
+    { "prompt": "¿___ (tener, vosotros) tiempo mañana?", "answer": "Tendréis" },
+    { "prompt": "La reunión ___ (empezar) a las 10.", "answer": "empezará" },
+    { "prompt": "Pronto ___ (saber, nosotros) los resultados.", "answer": "sabremos" },
+    { "prompt": "¿___ (poder, tú) venir antes?", "answer": "Podrás" },
+    { "prompt": "Ellos ___ (hacer) todo lo posible.", "answer": "harán" },
+    { "prompt": "Tú ___ (salir) a las 8, ¿no?", "answer": "saldrás" },
+    { "prompt": "Yo no ___ (decir) nada a nadie.", "answer": "diré" },
+    { "prompt": "¿Cuánto ___ (valer) este piso el año que viene?", "answer": "valdrá" },
+    { "prompt": "Nosotros ___ (venir) en cuanto podamos.", "answer": "vendremos" }
+  ]
+}
