@@ -1,0 +1,44 @@
+{
+  "id": "subjuntivo_imperfecto",
+  "title": {
+    "fr": "Subjonctif imparfait – Formation et usages (hablara, comiera...)",
+    "en": "Imperfect subjunctive – Formation and uses (hablara, comiera...)"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Le **subjonctif imparfait** s'utilise dans les mêmes contextes que le subjonctif présent, mais dans un contexte passé ou pour les hypothèses irréelles.\n\n🔹 **Formation :**\nPartir de la 3ème personne du pluriel du **pretérito indefinido** → enlever **-ron** → ajouter les terminaisons :\n**-ra, -ras, -ra, -ramos, -rais, -ran**\n\n| Infinitif | Indéf. 3pl | Subj. imparfait (yo) |\n|-----------|------------|----------------------|\n| hablar | hablaron | **hablara** |\n| comer | comieron | **comiera** |\n| vivir | vivieron | **viviera** |\n| tener | tuvieron | **tuviera** |\n| ser/ir | fueron | **fuera** |\n| hacer | hicieron | **hiciera** |\n| venir | vinieron | **viniera** |\n| poder | pudieron | **pudiera** |\n| saber | supieron | **supiera** |\n| decir | dijeron | **dijera** |\n| estar | estuvieron | **estuviera** |\n| querer | quisieron | **quisiera** |\n| poner | pusieron | **pusiera** |\n\n🔹 **Principaux usages :**\n\n1️⃣ **Hypothèse irréelle (si + subj. imparfait + conditionnel) :**\n➡️ *Si **tuviera** dinero, viajaría.* (Si j'avais de l'argent...)\n\n2️⃣ **Discours indirect au passé :**\n➡️ *Me pidió que **fuera**.* (Il m'a demandé d'y aller.)\n➡️ *Dijo que **vinieras**.* (Il a dit que tu viennes.)\n\n3️⃣ **Désirs/souhaits dans le passé :**\n➡️ *Quería que **estudiara** más.*\n\n4️⃣ **Politesse avec querer :**\n➡️ ***Quisiera** un café.* (Je voudrais un café.)",
+    "en": "⚙️ The **imperfect subjunctive** is used in past contexts or for unreal hypotheses.\n\n🔹 **Formation:** 3rd person plural preterite → remove -ron → add -ra, -ras, -ra, -ramos, -rais, -ran\n\n🔹 **Main uses:**\n1. Unreal hypotheses: *Si tuviera dinero, viajaría.*\n2. Indirect speech in past: *Me pidió que fuera.*\n3. Past wishes: *Quería que estudiara.*\n4. Polite requests: *Quisiera un café.*"
+  },
+  "drills": [
+    { "prompt": "Si ___ (tener, yo) más tiempo, aprendería catalán.", "answer": "tuviera" },
+    { "prompt": "Me pidió que ___ (ir, yo) al médico.", "answer": "fuera" },
+    { "prompt": "Quería que ___ (estudiar, tú) más.", "answer": "estudiaras" },
+    { "prompt": "___ (querer, yo) un café con leche, por favor. (politesse)", "answer": "Quisiera" },
+    { "prompt": "Si ___ (ser, él) más amable, tendría más amigos.", "answer": "fuera" },
+    { "prompt": "Le dije que ___ (venir, ella) mañana.", "answer": "viniera" },
+    { "prompt": "Si ___ (poder, nosotros), os ayudaríamos.", "answer": "pudiéramos" },
+    { "prompt": "Me sorprendió que ___ (hacer, ellos) eso.", "answer": "hicieran" },
+    { "prompt": "Si ___ (saber, tú) la verdad, te sorprenderías.", "answer": "supieras" },
+    { "prompt": "Le pedí que ___ (decir, él) la verdad.", "answer": "dijera" },
+    { "prompt": "Si ___ (estar, ella) aquí, todo sería diferente.", "answer": "estuviera" },
+    { "prompt": "No había nadie que ___ (querer) ayudar.", "answer": "quisiera" },
+    { "prompt": "Me pidieron que ___ (poner, yo) la mesa.", "answer": "pusiera" },
+    { "prompt": "Si ___ (venir, vosotros) antes, habríamos comido juntos.", "answer": "vinierais" },
+    { "prompt": "Le aconsejé que ___ (hablar) con el director.", "answer": "hablara" },
+    { "prompt": "Si ___ (hacer, él) ejercicio, se sentiría mejor.", "answer": "hiciera" },
+    { "prompt": "Buscaba a alguien que ___ (saber) ruso.", "answer": "supiera" },
+    { "prompt": "Esperaban que ___ (llegar, nosotros) antes.", "answer": "llegáramos" },
+    { "prompt": "Si ___ (poder, yo) volar, iría a Japón.", "answer": "pudiera" },
+    { "prompt": "Le dije que no ___ (decir, él) nada.", "answer": "dijera" },
+    { "prompt": "Si ___ (querer, tú), podrías cambiar muchas cosas.", "answer": "quisieras" },
+    { "prompt": "Me pidió que ___ (tener, yo) paciencia.", "answer": "tuviera" },
+    { "prompt": "Si ___ (ser, yo) rico, compraría una casa en la playa.", "answer": "fuera" },
+    { "prompt": "No encontré a nadie que ___ (poder) ayudarme.", "answer": "pudiera" },
+    { "prompt": "Le sugerí que ___ (hablar) con sus padres.", "answer": "hablara" },
+    { "prompt": "___ (querer, yo) reservar una mesa. (politesse)", "answer": "Quisiera" },
+    { "prompt": "Si ___ (vivir, nosotros) en el campo, tendríamos jardín.", "answer": "viviéramos" },
+    { "prompt": "Me sorprendió que no ___ (venir, ella).", "answer": "viniera" },
+    { "prompt": "Quería que todo ___ (salir) bien.", "answer": "saliera" },
+    { "prompt": "Si ___ (estar, vosotros) aquí, lo solucionaríamos.", "answer": "estuvierais" }
+  ]
+}
