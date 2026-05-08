@@ -1084,6 +1084,29 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_perifrasies_verbals.json"
   },
+{
+    id: "subjuntivo_imperfecto",
+    title: { fr: "Subjonctif imparfait – Formation et usages (hablara, comiera...)", en: "Imperfect subjunctive – Formation and uses (hablara, comiera...)" },
+    level: "B1",
+    note: { fr: "Formation (3e pl. indéfini - ron + ra) et usages : si + subj. imp., discours indirect passé, désirs.", en: "Formation and uses: si + imperfect subj., indirect speech, past wishes." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/subjuntivo_imperfecto.json"
+  },
+  {
+    id: "subjuntivo_perfecto",
+    title: { fr: "Subjonctif passé – Haya + participio", en: "Perfect subjunctive – Haya + participle" },
+    level: "B1",
+    note: { fr: "Subjonctif passé : haya + participio pour une action passée dans un contexte subjonctif.", en: "Perfect subjunctive: haya + participle for past actions in subjunctive contexts." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/subjuntivo_perfecto.json"
+  },{
+    id: "futuro_simple_completo",
+    title: { fr: "Futur simple – Réguliers + Irréguliers (complet)", en: "Simple future – Regular + Irregular (complete)" },
+    level: "A2",
+    note: { fr: "Futur simple réguliers + tous les irréguliers : haré, diré, pondré, tendré, vendré, saldré...", en: "Simple future regular + all irregulars: haré, diré, pondré, tendré, vendré, saldré..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/futuro_simple_completo.json"
+  },
 
 
 
