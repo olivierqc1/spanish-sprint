@@ -1,0 +1,44 @@
+{
+  "id": "subjuntivo_presente",
+  "title": {
+    "fr": "Subjonctif présent – Formation et usages",
+    "en": "Present subjunctive – Formation and uses"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Le **subjonctif présent** exprime le souhait, le doute, l'émotion ou la valorisation.\n\n🔹 **Formation régulière :**\nPartir de la 1ère personne du présent indicatif (yo), enlever le -o et ajouter les terminaisons inversées :\n- Verbes en **-AR** → terminaisons **-e, -es, -e, -emos, -éis, -en**\n- Verbes en **-ER/-IR** → terminaisons **-a, -as, -a, -amos, -áis, -an**\n\n| | hablar | comer | vivir |\n|--|--------|-------|-------|\n| yo | **hable** | **coma** | **viva** |\n| tú | **hables** | **comas** | **vivas** |\n| él | **hable** | **coma** | **viva** |\n| nosotros | **hablemos** | **comamos** | **vivamos** |\n| vosotros | **habléis** | **comáis** | **viváis** |\n| ellos | **hablen** | **coman** | **vivan** |\n\n🔹 **Irréguliers fréquents :**\n- **ser** → sea, seas, sea, seamos, seáis, sean\n- **estar** → esté, estés, esté, estemos, estéis, estén\n- **ir** → vaya, vayas, vaya, vayamos, vayáis, vayan\n- **tener** → tenga, tengas, tenga, tengamos, tengáis, tengan\n- **hacer** → haga, hagas, haga, hagamos, hagáis, hagan\n- **venir** → venga, vengas, venga, vengamos, vengáis, vengan\n- **decir** → diga, digas, diga, digamos, digáis, digan\n- **poder** → pueda, puedas, pueda, podamos, podáis, puedan\n- **saber** → sepa, sepas, sepa, sepamos, sepáis, sepan\n- **dar** → dé, des, dé, demos, deis, den\n- **haber** → haya, hayas, haya, hayamos, hayáis, hayan\n\n🔹 **Principaux contextes d'utilisation :**\n1️⃣ **Désirs et volonté :** *Quiero que **vengas**.*\n2️⃣ **Valorisation impersonnelle :** *Es importante que **estudies**.*\n3️⃣ **Sentiments :** *Me alegra que **estés** bien.*\n4️⃣ **Doute/incertitude :** *No creo que **sea** verdad.*\n5️⃣ **Impératif négatif :** *No **hagas** eso.*\n6️⃣ **Conjonctions temporelles (futur) :** *Cuando **llegues**, llámame.*\n7️⃣ **Relatives hypothétiques :** *Busco a alguien que **hable** chino.*",
+    "en": "⚙️ The **present subjunctive** expresses wish, doubt, emotion or value judgement.\n\n🔹 **Regular formation:** take yo present, remove -o, add reversed endings\n- -AR verbs → -e, -es, -e, -emos, -éis, -en\n- -ER/-IR verbs → -a, -as, -a, -amos, -áis, -an\n\n🔹 **Key irregular:** ser→sea, estar→esté, ir→vaya, tener→tenga, hacer→haga, venir→venga, poder→pueda, saber→sepa"
+  },
+  "drills": [
+    { "prompt": "Quiero que tú ___ (venir) a la fiesta.", "answer": "vengas" },
+    { "prompt": "Es importante que ___ (estudiar, tú) todos los días.", "answer": "estudies" },
+    { "prompt": "Me alegra que ___ (estar, vosotros) bien.", "answer": "estéis" },
+    { "prompt": "No creo que ___ (ser) verdad.", "answer": "sea" },
+    { "prompt": "Cuando ___ (llegar, tú), llámame.", "answer": "llegues" },
+    { "prompt": "Espero que ___ (hacer, él) buen tiempo.", "answer": "haga" },
+    { "prompt": "Es necesario que ___ (tener, nosotros) paciencia.", "answer": "tengamos" },
+    { "prompt": "No ___ (hacer, tú) eso. (impératif négatif)", "answer": "hagas" },
+    { "prompt": "Busco a alguien que ___ (hablar) chino. (relatif)", "answer": "hable" },
+    { "prompt": "Hasta que ___ (volver, él), no saldremos.", "answer": "vuelva" },
+    { "prompt": "Prefiero que ___ (ir, ella) en metro.", "answer": "vaya" },
+    { "prompt": "Dile que ___ (venir, él) mañana.", "answer": "venga" },
+    { "prompt": "No ___ (decir, vosotros) nada. (impératif négatif)", "answer": "digáis" },
+    { "prompt": "Es una lástima que no ___ (poder, tú) venir.", "answer": "puedas" },
+    { "prompt": "Cuando ___ (saber, tú) la respuesta, dímela.", "answer": "sepas" },
+    { "prompt": "Me molesta que siempre ___ (llegar, ellos) tarde.", "answer": "lleguen" },
+    { "prompt": "Es bueno que ___ (comer, vosotros) bien.", "answer": "comáis" },
+    { "prompt": "No hay nadie que ___ (saber) la respuesta.", "answer": "sepa" },
+    { "prompt": "Quiero que ___ (ser, tú) feliz.", "answer": "seas" },
+    { "prompt": "Para que ___ (entender, ellos) mejor, explícalo despacio.", "answer": "entiendan" },
+    { "prompt": "Es raro que no ___ (haber) nadie aquí.", "answer": "haya" },
+    { "prompt": "Espero que me ___ (dar, tú) una respuesta pronto.", "answer": "des" },
+    { "prompt": "Cuando ___ (tener, nosotros) tiempo, lo haremos.", "answer": "tengamos" },
+    { "prompt": "No ___ (ir, tú) solo. (impératif négatif)", "answer": "vayas" },
+    { "prompt": "Me sorprende que ___ (poder, él) hacer eso.", "answer": "pueda" },
+    { "prompt": "Es importante que ___ (ser, vosotros) puntuales.", "answer": "seáis" },
+    { "prompt": "Busca a alguien que le ___ (ayudar). (relatif)", "answer": "ayude" },
+    { "prompt": "Ojalá ___ (venir, ellos) mañana.", "answer": "vengan" },
+    { "prompt": "Antes de que ___ (llegar, ella), prepara la mesa.", "answer": "llegue" },
+    { "prompt": "No ___ (estar, tú) triste. (impératif négatif)", "answer": "estés" }
+  ]
+}
