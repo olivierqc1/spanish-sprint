@@ -1155,6 +1155,14 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/aunque_y_eso_que.json"
   },
+{
+    id: "cat_presentacio_practica",
+    title: { fr: "Catalan — Pratiquer sa présentation personnelle", en: "Catalan — Practising your personal introduction" },
+    level: "A1",
+    note: { fr: "Em dic, Sóc de, Tinc anys, Visc a... des de fa, Treballo en, M'agrada, La meva llengua materna és...", en: "Em dic, Sóc de, Tinc anys, Visc a... des de fa, Treballo en, M'agrada, La meva llengua materna és..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_presentacio_practica.json"
+  },
 
 
 
