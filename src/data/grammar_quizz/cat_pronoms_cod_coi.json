@@ -1,0 +1,44 @@
+{
+  "id": "cat_pronoms_cod_coi",
+  "title": {
+    "fr": "Catalan — Pronoms COD et COI (em, et, el, la, li, ens, us, els, les...)",
+    "en": "Catalan — Direct and indirect object pronouns"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ En catalan, les pronoms compléments se placent AVANT le verbe conjugué.\n\n🔹 **COD — Complément d'Objet Direct** (remplace 'qui' ou 'quoi') :\n\n| Pronom | Forme pleine | Devant voyelle | Après voyelle |\n|--------|-------------|----------------|---------------|\n| jo | **em** | **m'** | **'m** |\n| tu | **et** | **t'** | **'t** |\n| ell | **el** | **l'** | **'l** |\n| ella | **la** | **l'** | **-la** |\n| cosa neutre | **ho** | **ho** | **-ho** |\n| nosaltres | **ens** | **ens** | **'ns** |\n| vosaltres | **us** | **us** | **-us** |\n| ells | **els** | **els** | **'ls** |\n| elles | **les** | **les** | **-les** |\n\n➡️ *El veig.* → Je le vois.\n➡️ *La crido.* → Je l'appelle.\n➡️ *Els conec.* → Je les connais.\n➡️ *Ho sé.* → Je le sais. (chose neutre)\n\n🔹 **COI — Complément d'Objet Indirect** (remplace 'à qui') :\n\n| Pronom | Forme |\n|--------|-------|\n| jo | **em / m'** |\n| tu | **et / t'** |\n| ell/ella | **li** |\n| nosaltres | **ens** |\n| vosaltres | **us** |\n| ells/elles | **els / hi** |\n\n➡️ *Li dic la veritat.* → Je lui dis la vérité.\n➡️ *Els dono un regal.* → Je leur donne un cadeau.\n➡️ *Em parla.* → Il me parle.\n\n🔹 **HI et EN :**\n- **hi** → y (lieu ou COI impersonnel) : *Hi vaig.* → J'y vais.\n- **en** → en (partitif) : *En vull dos.* → J'en veux deux.\n\n⚠️ **COD + COI ensemble :** COI avant COD\n➡️ *Me'l dona.* → Il me le donne. (me + el → me'l)\n➡️ *Te la porto.* → Je te l'apporte.",
+    "en": "⚙️ Catalan object pronouns are placed BEFORE the conjugated verb.\n\n🔹 **Direct object (COD):** em/m', et/t', el/l', la/l', ho, ens, us, els, les\n🔹 **Indirect object (COI):** em/m', et/t', li, ens, us, els/hi\n🔹 **hi** = there/y · **en** = some/en (partitive)\n🔹 **COD + COI together:** COI before COD → *Me'l dona.*"
+  },
+  "drills": [
+    { "prompt": "Je le vois. (ell) → català (COD)", "answer": "El veig." },
+    { "prompt": "Je la vois. (ella) → català (COD)", "answer": "La veig." },
+    { "prompt": "Je les vois. (ells) → català (COD)", "answer": "Els veig." },
+    { "prompt": "Je les vois. (elles) → català (COD)", "answer": "Les veig." },
+    { "prompt": "Il me voit. → català (COD)", "answer": "Em veu." },
+    { "prompt": "Il te voit. → català (COD)", "answer": "Et veu." },
+    { "prompt": "Je le sais. (chose neutre) → català (ho)", "answer": "Ho sé." },
+    { "prompt": "Je lui dis la vérité. (à ell) → català (COI)", "answer": "Li dic la veritat." },
+    { "prompt": "Il me parle. → català (COI)", "answer": "Em parla." },
+    { "prompt": "Il te parle. → català (COI)", "answer": "Et parla." },
+    { "prompt": "Je leur donne un cadeau. (ells) → català (COI)", "answer": "Els dono un regal." },
+    { "prompt": "J'y vais. → català (hi)", "answer": "Hi vaig." },
+    { "prompt": "J'en veux deux. → català (en)", "answer": "En vull dos." },
+    { "prompt": "Il me le donne. (me + el) → català", "answer": "Me'l dona." },
+    { "prompt": "Je te l'apporte. (te + la) → català", "answer": "Te la porto." },
+    { "prompt": "Je l'appelle. (ella) → català (COD)", "answer": "La crido." },
+    { "prompt": "Je les connais. (ells) → català (COD)", "answer": "Els conec." },
+    { "prompt": "pronom COD de 'ell' → ?", "answer": "el (l' devant voyelle)" },
+    { "prompt": "pronom COD de 'ella' → ?", "answer": "la (l' devant voyelle)" },
+    { "prompt": "pronom COI de 'ell/ella' → ?", "answer": "li" },
+    { "prompt": "pronom COI de 'ells/elles' → ?", "answer": "els / hi" },
+    { "prompt": "chose neutre (COD) → ?", "answer": "ho" },
+    { "prompt": "lieu / y → ?", "answer": "hi" },
+    { "prompt": "partitif / en → ?", "answer": "en" },
+    { "prompt": "Il te la donne. (te + la) → català", "answer": "Te la dona." },
+    { "prompt": "Il me le dit. (me + el) → català", "answer": "Me'l diu." },
+    { "prompt": "Tu nous appelles. → català (COD)", "answer": "Ens truques." },
+    { "prompt": "Il nous parle. → català (COI)", "answer": "Ens parla." },
+    { "prompt": "Différence COD / COI → exemple avec 'veure' vs 'parlar a'", "answer": "COD: El veig (je le vois) / COI: Li parlo (je lui parle)" },
+    { "prompt": "Je l'achète. (el producte, masc.) → català", "answer": "El compro." }
+  ]
+}
