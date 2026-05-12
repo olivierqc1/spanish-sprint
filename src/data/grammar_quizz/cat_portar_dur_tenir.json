@@ -1,0 +1,44 @@
+{
+  "id": "cat_portar_dur_tenir",
+  "title": {
+    "fr": "Catalan — Portar, dur, tenir, aguantar – Porter, tenir, apporter...",
+    "en": "Catalan — Portar, dur, tenir, aguantar – To carry, hold, bring..."
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙️ Ces verbes se traduisent tous par 'porter' ou 'tenir' en français, mais ils ont des usages distincts.\n\n🔹 **PORTAR** → porter (sur soi), apporter, emmener\n- *Porto un abric.* → Je porte un manteau.\n- *Porta el pa.* → Apporte le pain.\n- *Porta els nens a l'escola.* → Emmène les enfants à l'école.\n- *Portava ulleres.* → Il portait des lunettes.\n\n🔹 **DUR** → porter (synonyme de portar, plus oral/dialectal)\n- *Duc una bossa.* → Je porte un sac.\n- *Duu els cabells llargs.* → Elle a les cheveux longs. (porte les cheveux longs)\n- *Du una camisa vermella.* → Il porte une chemise rouge.\n\n🔹 **TENIR** → tenir (dans les mains), avoir, posséder\n- *Tinc el llibre a la mà.* → Je tiens le livre dans la main.\n- *Tens temps?* → Tu as du temps ?\n- *Té dos fills.* → Il a deux enfants.\n- *Agafa i té!* → Prends et tiens !\n\n🔹 **AGUANTAR** → tenir (dans le sens de maintenir, supporter)\n- *Aguanta la porta!* → Tiens la porte !\n- *No aguanto el fred.* → Je ne supporte pas le froid.\n- *Aguanta un moment.* → Tiens (attends) un moment.\n\n🔹 **AGAFAR** → prendre, attraper, saisir\n- *Agafa el paraigua.* → Prends le parapluie.\n- *Agafa'm la mà.* → Tiens-moi la main.\n\n🔹 **SOSTENIR** → soutenir, tenir debout\n- *Sostén el quadre mentre el penjo.* → Tiens le tableau pendant que je l'accroche.\n\n⚠️ **Résumé :**\n- *Porter (vêtement/objet sur soi)* → **portar / dur**\n- *Tenir dans la main* → **tenir / aguantar / agafar**\n- *Apporter* → **portar / dur**\n- *Supporter* → **aguantar**\n- *Soutenir* → **sostenir**",
+    "en": "⚙️ These verbs all translate to 'to carry', 'to hold' or 'to bring' but have distinct uses.\n\n- **portar** → to carry (on oneself), to bring, to take\n- **dur** → to carry/wear (oral synonym of portar)\n- **tenir** → to hold, to have, to possess\n- **aguantar** → to hold (maintain), to bear, to support\n- **agafar** → to take, to grab, to catch\n- **sostenir** → to hold up, to support"
+  },
+  "drills": [
+    { "prompt": "Je porte un manteau. → català (portar)", "answer": "Porto un abric." },
+    { "prompt": "Il porte une chemise rouge. → català (dur)", "answer": "Du una camisa vermella." },
+    { "prompt": "Apporte le pain! → català (portar, impératif)", "answer": "Porta el pa!" },
+    { "prompt": "Je tiens le livre dans la main. → català (tenir)", "answer": "Tinc el llibre a la mà." },
+    { "prompt": "Tiens la porte! → català (aguantar, impératif)", "answer": "Aguanta la porta!" },
+    { "prompt": "Prends le parapluie. → català (agafar)", "answer": "Agafa el paraigua." },
+    { "prompt": "Elle porte les cheveux longs. → català (dur)", "answer": "Duu els cabells llargs." },
+    { "prompt": "Emmène les enfants à l'école. → català (portar)", "answer": "Porta els nens a l'escola." },
+    { "prompt": "Je ne supporte pas le froid. → català (aguantar)", "answer": "No aguanto el fred." },
+    { "prompt": "Tiens-moi la main. → català (agafar)", "answer": "Agafa'm la mà." },
+    { "prompt": "Il portait des lunettes. (imparfait) → català", "answer": "Portava ulleres." },
+    { "prompt": "Tu as du temps? → català (tenir)", "answer": "Tens temps?" },
+    { "prompt": "Attends un moment! → català (aguantar)", "answer": "Aguanta un moment!" },
+    { "prompt": "Je porte un sac. → català (dur)", "answer": "Duc una bossa." },
+    { "prompt": "Il a deux enfants. → català (tenir)", "answer": "Té dos fills." },
+    { "prompt": "portar → signifie...", "answer": "porter / apporter / emmener" },
+    { "prompt": "dur → signifie...", "answer": "porter / avoir (sur soi) – synonyme oral de portar" },
+    { "prompt": "tenir → signifie...", "answer": "tenir / avoir / posséder" },
+    { "prompt": "aguantar → signifie...", "answer": "tenir (maintenir) / supporter / résister" },
+    { "prompt": "agafar → signifie...", "answer": "prendre / attraper / saisir" },
+    { "prompt": "sostenir → signifie...", "answer": "soutenir / tenir debout" },
+    { "prompt": "Je porte (vêtement) → quel verbe catalan ?", "answer": "portar / dur" },
+    { "prompt": "Tenir (dans la main) → quel verbe catalan ?", "answer": "tenir / aguantar / agafar" },
+    { "prompt": "Apporter → quel verbe catalan ?", "answer": "portar / dur" },
+    { "prompt": "Supporter (tolérer) → quel verbe catalan ?", "answer": "aguantar" },
+    { "prompt": "Elle porte une jupe. → català (portar)", "answer": "Porta una faldilla." },
+    { "prompt": "Prends ton manteau! → català (agafar)", "answer": "Agafa l'abric!" },
+    { "prompt": "Je tiens la bouteille. → català (aguantar/tenir)", "answer": "Aguanto / Tinc l'ampolla." },
+    { "prompt": "Nous apportons le vin. → català (portar)", "answer": "Portem el vi." },
+    { "prompt": "Il ne supporte pas le bruit. → català", "answer": "No aguanta el soroll." }
+  ]
+}
