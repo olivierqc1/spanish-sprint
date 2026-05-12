@@ -1,0 +1,44 @@
+{
+  "id": "cat_presentacio_practica",
+  "title": {
+    "fr": "Catalan — Pratiquer sa présentation personnelle",
+    "en": "Catalan — Practising your personal introduction"
+  },
+  "level": "A1",
+  "note": {
+    "fr": "⚙️ **Structures clés pour se présenter en catalan :**\n\n🔹 **Identité :**\n- *Em dic...* → Je m'appelle...\n- *Sóc de...* → Je suis de...\n- *Sóc canadenc/a, francès/francesa...* → Je suis canadien/français...\n- *Tinc ... anys* → J'ai ... ans\n\n🔹 **Lieu de vie :**\n- *Visc a...* → J'habite à...\n- *Visc a Barcelona des de fa dos anys.* → J'habite à Barcelone depuis deux ans.\n- *des de fa + temps* → depuis + durée\n\n🔹 **Feina / Estudis :**\n- *Treballo en/de...* → Je travaille en/comme...\n- *Estic aprenent...* → Je suis en train d'apprendre...\n- *He estudiat...* → J'ai étudié...\n\n🔹 **Aficions :**\n- *M'agrada (molt) + infinitiu* → J'aime (beaucoup) + verbe\n- *M'interessa...* → Je m'intéresse à...\n- *Faig + activitat* → Je fais + activité\n\n🔹 **Llengues :**\n- *La meva llengua materna és el francès.*\n- *També parlo anglès i espanyol.*\n- *Estic aprenent el català.*\n\n🔹 **Per acabar :**\n- *Estic molt content/a de ser aquí.* → Je suis très content d'être ici.\n- *Tinc moltes ganes d'aprendre català.* → J'ai très envie d'apprendre le catalan.",
+    "en": "⚙️ **Key structures for introducing yourself in Catalan:**\n\n- Em dic... → My name is...\n- Sóc de... / Sóc canadenc/a → I'm from... / I'm Canadian\n- Tinc ... anys → I'm ... years old\n- Visc a... des de fa... → I've lived in... for...\n- Treballo en/de... → I work in/as...\n- M'agrada + infinitive → I like...\n- La meva llengua materna és... → My mother tongue is..."
+  },
+  "drills": [
+    { "prompt": "Je m'appelle Olivier. → català", "answer": "Em dic Olivier." },
+    { "prompt": "Je suis canadien. → català", "answer": "Sóc canadenc." },
+    { "prompt": "Je suis de Montréal. → català", "answer": "Sóc de Mont-real." },
+    { "prompt": "J'ai trente et un ans. → català", "answer": "Tinc trenta-un anys." },
+    { "prompt": "J'habite à Barcelone. → català", "answer": "Visc a Barcelona." },
+    { "prompt": "Je vis à Barcelone depuis deux ans. → català", "answer": "Visc a Barcelona des de fa dos anys." },
+    { "prompt": "Je travaille en finance. → català", "answer": "Treballo en finances." },
+    { "prompt": "J'apprends le catalan. → català", "answer": "Estic aprenent el català." },
+    { "prompt": "J'apprends le catalan au CPNL. → català", "answer": "Estic aprenent el català al CPNL." },
+    { "prompt": "Ma langue maternelle est le français. → català", "answer": "La meva llengua materna és el francès." },
+    { "prompt": "Je parle aussi anglais et espagnol. → català", "answer": "També parlo anglès i espanyol." },
+    { "prompt": "J'aime beaucoup courir en montagne. → català", "answer": "M'agrada molt córrer per la muntanya." },
+    { "prompt": "Je fais du trail running. → català", "answer": "Faig trail running." },
+    { "prompt": "Je m'intéresse à l'histoire. → català", "answer": "M'interessa la història." },
+    { "prompt": "J'écoute du rock progressif. → català", "answer": "Escolto rock progressiu." },
+    { "prompt": "J'aime explorer Barcelone. → català", "answer": "M'agrada explorar Barcelona." },
+    { "prompt": "J'ai une partenaire espagnole. → català", "answer": "Tinc una parella espanyola." },
+    { "prompt": "Je suis très content d'être ici. → català", "answer": "Estic molt content de ser aquí." },
+    { "prompt": "J'ai très envie d'apprendre le catalan. → català", "answer": "Tinc moltes ganes d'aprendre el català." },
+    { "prompt": "Je trouve que Barcelone est une ville très dynamique. → català", "answer": "Trobo que Barcelona és una ciutat molt dinàmica." },
+    { "prompt": "J'apprends le catalan parce que j'aime la culture catalane. → català", "answer": "Estic aprenent el català perquè m'agrada la cultura catalana." },
+    { "prompt": "des de fa → signifie...", "answer": "depuis (+ durée)" },
+    { "prompt": "Em dic → signifie...", "answer": "Je m'appelle" },
+    { "prompt": "Sóc canadenc → signifie...", "answer": "Je suis canadien" },
+    { "prompt": "M'agrada molt → signifie...", "answer": "J'aime beaucoup" },
+    { "prompt": "Tinc ganes de → signifie...", "answer": "J'ai envie de" },
+    { "prompt": "Treballo en → signifie...", "answer": "Je travaille en / dans" },
+    { "prompt": "Comment dit-on 'depuis deux ans' en catalan ?", "answer": "des de fa dos anys" },
+    { "prompt": "Comment dit-on 'ma langue maternelle' en catalan ?", "answer": "la meva llengua materna" },
+    { "prompt": "Complète : Visc a Barcelona ___ ___ dos anys.", "answer": "des de fa" }
+  ]
+}
