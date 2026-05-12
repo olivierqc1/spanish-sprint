@@ -46,7 +46,7 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
   const displayNote = getText(note);
 
   const normalizeAnswer = (text: string) =>
-    text.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    text.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[.,!?;:¿¡]/g, "");
 
   const checkAnswer = () => {
     const correct = normalizeAnswer(userAnswer) === normalizeAnswer(currentDrill.answer);
