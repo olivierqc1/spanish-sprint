@@ -1,0 +1,44 @@
+{
+  "id": "superlativos_exclamativas",
+  "title": {
+    "fr": "Superlatifs en -ísimo et phrases exclamatives (¡qué...! ¡tan...! ¡más...!)",
+    "en": "Superlatives in -ísimo and exclamatory sentences"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ **Superlatifs absolus en -ísimo/a/os/as :**\nS'ajoutent à la racine de l'adjectif (sans la voyelle finale) :\n- *grande → grand**ísimo***\n- *fácil → facil**ísimo***\n- *bueno → bon**ísimo*** (ou *buenísimo*)\n- *rico → riqu**ísimo*** (c→qu devant i)\n- *largo → larg**uísimo*** (g→gu)\n- *feliz → felic**ísimo*** (z→c)\n\n🔹 **Phrases exclamatives :**\n- **¡Qué + adjectif/nom!** → *¡Qué bonito!* (Comme c'est beau !)\n- **¡Qué + nom + más/tan + adjectif!** → *¡Qué piso más caro!* (Quel appartement cher !)\n- **¡Qué + verbe!** → *¡Qué bien canta!*\n\n🔹 **Dégrés intermédiaires :**\n- *muy* → très\n- *bastante* → assez / plutôt\n- *un poco* → un peu\n- *demasiado* → trop\n- *increíblemente* → incroyablement",
+    "en": "⚙️ **Absolute superlatives in -ísimo/a/os/as:**\nAdd to adjective stem (remove final vowel): grande→grandísimo, fácil→facilísimo\n\n🔹 **Exclamatory sentences:**\n- ¡Qué + adjective! → *¡Qué bonito!*\n- ¡Qué + noun + más/tan + adjective! → *¡Qué piso más caro!*"
+  },
+  "drills": [
+    { "prompt": "grande → superlatif absolu", "answer": "grandísimo/a" },
+    { "prompt": "fácil → superlatif absolu", "answer": "facilísimo/a" },
+    { "prompt": "rico → superlatif absolu (c→qu)", "answer": "riquísimo/a" },
+    { "prompt": "largo → superlatif absolu (g→gu)", "answer": "larguísimo/a" },
+    { "prompt": "feliz → superlatif absolu (z→c)", "answer": "felicísimo/a" },
+    { "prompt": "bueno → superlatif absolu", "answer": "bonísimo/a" },
+    { "prompt": "cansado → superlatif absolu", "answer": "cansadísimo/a" },
+    { "prompt": "interesante → superlatif absolu", "answer": "interesantísimo/a" },
+    { "prompt": "difícil → superlatif absolu", "answer": "dificilísimo/a" },
+    { "prompt": "rápido → superlatif absolu", "answer": "rapidísimo/a" },
+    { "prompt": "¡___ bonito ese vestido! (Comme c'est beau – exclamation simple)", "answer": "Qué" },
+    { "prompt": "¡Qué piso ___ caro! (exclamation avec más)", "answer": "más" },
+    { "prompt": "¡Qué libro ___ interesante! (exclamation avec tan)", "answer": "tan" },
+    { "prompt": "¡___ bien hablas español! (Comme tu parles bien)", "answer": "Qué" },
+    { "prompt": "¡Qué película ___ aburrida! (avec más)", "answer": "más" },
+    { "prompt": "Este restaurante es ___. Está buenísimo. (très bon → superlatif)", "answer": "buenísimo" },
+    { "prompt": "La maleta es ___. Pesa muchísimo. (très lourde)", "answer": "pesadísima" },
+    { "prompt": "¡Qué chico ___ simpático! (tan/más)", "answer": "más / tan" },
+    { "prompt": "Estoy ___. No puedo más. (cansadísimo/a)", "answer": "cansadísimo/a" },
+    { "prompt": "La conferencia fue ___. Duró tres horas. (aburridísima)", "answer": "aburridísima" },
+    { "prompt": "¡Qué ___ hace hoy! No salgo. (frío → exclamation)", "answer": "frío" },
+    { "prompt": "Esta sopa está ___. ¡Riquísima! (muy rica → superlatif)", "answer": "riquísima" },
+    { "prompt": "¡Qué apartamento ___ pequeño! (tan/más)", "answer": "tan / más" },
+    { "prompt": "El examen fue ___. No pude terminarlo. (dificilísimo)", "answer": "dificilísimo" },
+    { "prompt": "¡___ tarde llegas! (Comme tu arrives tard – exclamation)", "answer": "Qué" },
+    { "prompt": "El precio es ___. No me lo puedo creer. (carísimo)", "answer": "carísimo" },
+    { "prompt": "¡Qué niño ___ listo! (tan/más)", "answer": "más / tan" },
+    { "prompt": "feo → superlatif absolu", "answer": "feísimo/a" },
+    { "prompt": "cerca → superlatif absolu", "answer": "cerquísimo" },
+    { "prompt": "¡___ de gente hay aquí! (Que de monde – exclamation)", "answer": "Cuánta" }
+  ]
+}
