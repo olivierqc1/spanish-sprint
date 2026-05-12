@@ -1,0 +1,44 @@
+{
+  "id": "verbos_emociones_subj",
+  "title": {
+    "fr": "Émotions + que + subjonctif (me fascina, me encanta, odio, no aguanto...)",
+    "en": "Emotions + que + subjunctive (me fascina, me encanta, odio, no aguanto...)"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Pour exprimer ce qu'on aime ou déteste **en particulier**, on utilise ces structures :\n\n🔹 **Structure 1 : verbe + sustantivo/infinitivo** (sujet général)\n- *Me fascina **el jazz**.* → Le jazz me fascine.\n- *Odio **esperar**.* → Je déteste attendre.\n- *No aguanto **el calor**.* → Je ne supporte pas la chaleur.\n\n🔹 **Structure 2 : verbe + que + subjonctif** (avec sujet différent)\n- *Me encanta que **vengas**.* → J'adore que tu viennes.\n- *Me fascina que **hable** tres idiomas.* → Ça me fascine qu'il parle 3 langues.\n- *Odio que **llegues** tarde.* → Je déteste que tu arrives tard.\n- *No aguanto que **hablen** en voz alta.* → Je ne supporte pas qu'ils parlent fort.\n\n🔹 **Verbes d'émotion :**\n- *me fascina/n* → me fascine/nt\n- *me encanta/n* → j'adore\n- *me gusta/n* → j'aime\n- *me molesta/n* → ça m'énerve\n- *odio* → je déteste\n- *no aguanto* → je ne supporte pas\n- *me sorprende/n* → me surprend/ent\n- *me pone nervioso/a* → ça me rend nerveux\n\n⚠️ Le verbe s'accorde avec le sujet :\n- *Me encanta el café.* / *Me encantan los cafés.*",
+    "en": "⚙️ To express what you love or hate in particular:\n\n🔹 **verb + noun/infinitive** (general): *Me fascina el jazz. / Odio esperar.*\n🔹 **verb + que + subjunctive** (different subject): *Me encanta que vengas. / Odio que llegues tarde.*\n\nKey verbs: me fascina/n, me encanta/n, me gusta/n, me molesta/n, odio, no aguanto, me sorprende/n"
+  },
+  "drills": [
+    { "prompt": "Me encanta que ___ (venir, tú) a visitarme.", "answer": "vengas" },
+    { "prompt": "Odio que siempre ___ (llegar, él) tarde.", "answer": "llegue" },
+    { "prompt": "No aguanto que ___ (hablar, ellos) en voz alta.", "answer": "hablen" },
+    { "prompt": "Me fascina que ___ (poder, ella) hablar cinco idiomas.", "answer": "pueda" },
+    { "prompt": "Me molesta que ___ (no avisar, vosotros) antes.", "answer": "no aviséis" },
+    { "prompt": "Me sorprende que ___ (saber, él) tantas cosas.", "answer": "sepa" },
+    { "prompt": "Odio ___. (esperar – infinitif, sujet unique)", "answer": "esperar" },
+    { "prompt": "Me encanta ___ jazz. (sustantivo → accord)", "answer": "el / Me encanta el jazz" },
+    { "prompt": "No aguanto ___ (el calor – sustantivo)", "answer": "el calor" },
+    { "prompt": "Me fascinan ___ (las películas antiguas – sustantivo)", "answer": "las películas antiguas" },
+    { "prompt": "Me pone nervioso que ___ (conducir, tú) tan rápido.", "answer": "conduzcas" },
+    { "prompt": "Me encanta que ___ (hacer, vosotros) los deberes solos.", "answer": "hagáis" },
+    { "prompt": "No aguanto que ___ (mentir, él).", "answer": "mienta" },
+    { "prompt": "Me molesta ___ (el ruido – sustantivo)", "answer": "el ruido" },
+    { "prompt": "Me sorprende que ___ (querer, ellos) irse tan pronto.", "answer": "quieran" },
+    { "prompt": "Odio que ___ (hacer, tú) eso.", "answer": "hagas" },
+    { "prompt": "Me fascina ___ (viajar – infinitif)", "answer": "viajar" },
+    { "prompt": "Me encanta que ___ (ser, tú) tan amable.", "answer": "seas" },
+    { "prompt": "No aguanto que ___ (poner, ella) la música tan alta.", "answer": "ponga" },
+    { "prompt": "Me gusta que ___ (estar, nosotros) juntos.", "answer": "estemos" },
+    { "prompt": "Me molesta que ___ (no decir, vosotros) la verdad.", "answer": "no digáis" },
+    { "prompt": "Odio ___ (levantarse – infinitif, mismo sujeto)", "answer": "levantarme" },
+    { "prompt": "Me encanta ___ paella. (sustantivo – accord)", "answer": "la paella" },
+    { "prompt": "Me sorprende que ___ (venir, tú) tan pronto.", "answer": "vengas" },
+    { "prompt": "No aguanto ___ (las reuniones largas – sustantivo)", "answer": "las reuniones largas" },
+    { "prompt": "Me fascinan ___ (los castellers – sustantivo, accord pl.)", "answer": "los castellers" },
+    { "prompt": "Me pone nervioso ___ (conducir de noche – infinitif)", "answer": "conducir de noche" },
+    { "prompt": "Me encanta que ___ (haber) tanto sol en Barcelona.", "answer": "haya" },
+    { "prompt": "Odio que ___ (hacer, él) tanto frío en invierno.", "answer": "haga" },
+    { "prompt": "Me molesta que ___ (llegar, ellos) sin avisar.", "answer": "lleguen" }
+  ]
+}
