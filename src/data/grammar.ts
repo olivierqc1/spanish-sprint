@@ -1107,6 +1107,54 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/futuro_simple_completo.json"
   },
+{
+    id: "superlativos_exclamativas",
+    title: { fr: "Superlatifs en -ísimo et phrases exclamatives (¡qué...! ¡tan...!)", en: "Superlatives in -ísimo and exclamatory sentences" },
+    level: "B1",
+    note: { fr: "Superlatifs absolus (-ísimo/a) + exclamatives ¡Qué bonito! / ¡Qué piso más caro!", en: "Absolute superlatives (-ísimo/a) + exclamatives ¡Qué bonito! / ¡Qué piso más caro!" },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/superlativos_exclamativas.json"
+  },
+  {
+    id: "verbos_emociones_subj",
+    title: { fr: "Émotions + que + subjonctif (me fascina, me encanta, odio, no aguanto...)", en: "Emotions + que + subjunctive (me fascina, me encanta, odio, no aguanto...)" },
+    level: "B1",
+    note: { fr: "me fascina/encanta/odio/no aguanto + sustantivo/infinitivo ou + que + subjonctif.", en: "me fascina/encanta/odio/no aguanto + noun/infinitive or + que + subjunctive." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/verbos_emociones_subj.json"
+  },
+  {
+    id: "verbos_cambio",
+    title: { fr: "Verbes de changement (hacerse, ponerse, quedarse, volverse, sentirse...)", en: "Verbs of change (hacerse, ponerse, quedarse, volverse, sentirse...)" },
+    level: "B1",
+    note: { fr: "ponerse (état temporaire), quedarse (résultat inattendu), hacerse (progressif), volverse (caractère), sentirse, convertirse en.", en: "ponerse, quedarse, hacerse, volverse, sentirse, convertirse en — each with distinct nuance." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/verbos_cambio.json"
+  },
+  {
+    id: "futuro_compuesto",
+    title: { fr: "Futur antérieur – Habré + participio", en: "Future perfect – Habré + participle" },
+    level: "B1",
+    note: { fr: "Habré + participio : action accomplie avant un moment futur, ou hypothèse sur le passé récent.", en: "Habré + participle: action completed before a future moment, or hypothesis about recent past." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/futuro_compuesto.json"
+  },
+  {
+    id: "es_injusto_valoracion",
+    title: { fr: "Valorisation – Es injusto/una vergüenza/está bien/mal + inf/que + subjonctif", en: "Value judgements – Es injusto/una vergüenza/está bien/mal + inf/que + subjunctive" },
+    level: "B1",
+    note: { fr: "es injusto/una vergüenza/inaceptable/está bien/mal/me parece + infinitif ou + que + subjonctif.", en: "es injusto/una vergüenza/está bien/mal/me parece + infinitive or + que + subjunctive." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/es_injusto_valoracion.json"
+  },
+  {
+    id: "aunque_y_eso_que",
+    title: { fr: "Aunque, y eso que, aun así – Concession et contraste", en: "Aunque, y eso que, aun así – Concession and contrast" },
+    level: "B1",
+    note: { fr: "aunque + indicatif (réel) vs subjonctif (hypothétique), y eso que, aun así, a pesar de (que), sin embargo.", en: "aunque + indicative (real) vs subjunctive (hypothetical), y eso que, aun así, a pesar de (que)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/aunque_y_eso_que.json"
+  },
 
 
 
