@@ -1,0 +1,44 @@
+{
+  "id": "verbos_cambio",
+  "title": {
+    "fr": "Verbes de changement (hacerse, ponerse, quedarse, volverse, sentirse...)",
+    "en": "Verbs of change (hacerse, ponerse, quedarse, volverse, sentirse...)"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Ces verbes expriment un **changement d'état**. Chacun a une nuance différente.\n\n🔹 **PONERSE + adjectif** → changement d'état temporaire (émotion, état physique)\n➡️ *Se puso nervioso.* (Il est devenu nerveux.)\n➡️ *Me pongo rojo cuando me hablan en público.*\n- *ponerse rojo/a, triste, nervioso/a, enfadado/a, contento/a, malo/a...*\n\n🔹 **QUEDARSE + adjectif** → résultat inattendu, souvent négatif\n➡️ *Se quedó sin trabajo.* (Il s'est retrouvé sans travail.)\n➡️ *Me quedé dormido en el sofá.*\n- *quedarse solo/a, ciego/a, mudo/a, sordo/a, dormido/a, sin dinero...*\n\n🔹 **HACERSE + nom/adjectif** → changement progressif, volontaire, identité\n➡️ *Se hizo médico.* (Il est devenu médecin.)\n➡️ *Se hizo rico poco a poco.*\n- *hacerse mayor, rico/a, famoso/a + professions*\n\n🔹 **VOLVERSE + adjectif** → changement de caractère, souvent permanente\n➡️ *Se volvió muy serio después del accidente.*\n- *volverse loco/a, serio/a, agresivo/a, diferente...*\n\n🔹 **SENTIRSE + adjectif/adverbe** → perception subjective d'état\n➡️ *Me siento cansado hoy.*\n- *sentirse bien/mal, solo/a, feliz, capaz...*\n\n🔹 **CONVERTIRSE EN + nom** → transformation radicale\n➡️ *El agua se convirtió en hielo.*\n➡️ *Se convirtió en el mejor jugador del mundo.*",
+    "en": "⚙️ Verbs of change — each with its own nuance:\n- **ponerse** + adj → temporary state change: *Se puso nervioso.*\n- **quedarse** + adj → unexpected result: *Se quedó sin trabajo.*\n- **hacerse** + noun/adj → gradual/voluntary change: *Se hizo médico.*\n- **volverse** + adj → character change: *Se volvió muy serio.*\n- **sentirse** + adj → subjective feeling: *Me siento bien.*\n- **convertirse en** + noun → radical transformation: *Se convirtió en campeón.*"
+  },
+  "drills": [
+    { "prompt": "Cuando me hablan en público, me ___ rojo. (ponerse)", "answer": "pongo" },
+    { "prompt": "Se ___ sin trabajo después de la crisis. (quedarse)", "answer": "quedó" },
+    { "prompt": "Estudió mucho y se ___ médico. (hacerse)", "answer": "hizo" },
+    { "prompt": "Después del accidente se ___ muy serio. (volverse)", "answer": "volvió" },
+    { "prompt": "Me ___ muy cansado después del entreno. (sentirse)", "answer": "siento" },
+    { "prompt": "El agua se ___ en hielo a 0 grados. (convertirse en)", "answer": "convierte" },
+    { "prompt": "Al escuchar las malas noticias, se ___ pálida. (ponerse)", "answer": "puso" },
+    { "prompt": "Se ___ dormido viendo la película. (quedarse)", "answer": "quedó" },
+    { "prompt": "Con el tiempo se ___ una persona muy conocida. (hacerse)", "answer": "hizo" },
+    { "prompt": "Desde que vive solo se ___ más independiente. (volverse)", "answer": "ha vuelto" },
+    { "prompt": "¿Cómo te ___ hoy? (sentirse)", "answer": "sientes" },
+    { "prompt": "La empresa pequeña se ___ en una multinacional. (convertirse en)", "answer": "convirtió" },
+    { "prompt": "Me ___ nervioso cuando tengo exámenes. (ponerse)", "answer": "pongo" },
+    { "prompt": "Se ___ sorda después de la explosión. (quedarse)", "answer": "quedó" },
+    { "prompt": "Quiere ___ famoso algún día. (hacerse)", "answer": "hacerse" },
+    { "prompt": "Se ___ loco de tanto trabajar. (volverse)", "answer": "volvió" },
+    { "prompt": "Me ___ muy bien en Barcelona. (sentirse)", "answer": "siento" },
+    { "prompt": "El príncipe se ___ en rana. (convertirse en)", "answer": "convirtió" },
+    { "prompt": "Cuando le dieron la noticia se ___ muy contenta. (ponerse)", "answer": "puso" },
+    { "prompt": "Se ___ sin palabras al verlo. (quedarse)", "answer": "quedó" },
+    { "prompt": "Se ___ rico gracias a su trabajo. (hacerse)", "answer": "hizo" },
+    { "prompt": "El niño se ___ muy tímido con los años. (volverse)", "answer": "volvió" },
+    { "prompt": "No me ___ capaz de hacerlo. (sentirse)", "answer": "siento" },
+    { "prompt": "Barcelona se ___ en la capital del diseño. (convertirse en)", "answer": "ha convertido" },
+    { "prompt": "Al ver el accidente me ___ muy asustado. (ponerse)", "answer": "puse" },
+    { "prompt": "Se ___ ciego después de la enfermedad. (quedarse)", "answer": "quedó" },
+    { "prompt": "Con el tiempo se ___ mayor y más sabio. (hacerse)", "answer": "hizo" },
+    { "prompt": "Se ___ muy agresivo cuando pierde. (volverse)", "answer": "vuelve" },
+    { "prompt": "¿Te ___ solo a veces? (sentirse)", "answer": "sientes" },
+    { "prompt": "El agua se ___ en vapor a 100 grados. (convertirse en)", "answer": "convierte" }
+  ]
+}
