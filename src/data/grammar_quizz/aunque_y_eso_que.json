@@ -1,0 +1,44 @@
+{
+  "id": "aunque_y_eso_que",
+  "title": {
+    "fr": "Aunque, y eso que, aun así – Concession et contraste",
+    "en": "Aunque, y eso que, aun así – Concession and contrast"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Ces connecteurs expriment une **concession** — une opposition entre deux faits.\n\n🔹 **AUNQUE + indicatif** → fait réel, connu\n➡️ *Salimos **aunque** llovía.* (On est sortis même s'il pleuvait — c'est un fait.)\n\n🔹 **AUNQUE + subjonctif** → fait hypothétique ou secondaire\n➡️ *Saldré **aunque llueva**.* (Je sortirai même s'il pleut — hypothétique.)\n\n🔹 **Y ESO QUE** → souligne l'aspect paradoxal (registre oral)\nToujours suivi de l'indicatif :\n➡️ *Llegó tarde, **y eso que** vive cerca.* (Il est arrivé en retard, alors qu'il habite près.)\n➡️ *Está cansado, **y eso que** ha dormido 10 horas.*\n\n🔹 **AUN ASÍ** → malgré ça (en tête de phrase)\n➡️ *Hacía frío. **Aun así**, salimos a correr.*\n\n🔹 **A PESAR DE (QUE)** → malgré (le fait que)\n➡️ ***A pesar de** la lluvia, salimos.*\n➡️ ***A pesar de que** llovía, salimos.*\n\n🔹 **SIN EMBARGO** → cependant, néanmoins\n➡️ *Estudió mucho. **Sin embargo**, suspendió.*",
+    "en": "⚙️ Concession connectors:\n\n- **aunque + indicative** → real known fact: *Salimos aunque llovía.*\n- **aunque + subjunctive** → hypothetical: *Saldré aunque llueva.*\n- **y eso que** → paradoxical (oral, + indicative): *Llegó tarde, y eso que vive cerca.*\n- **aun así** → even so: *Hacía frío. Aun así, salimos.*\n- **a pesar de (que)** → despite: *A pesar de la lluvia, salimos.*\n- **sin embargo** → however: *Estudió mucho. Sin embargo, suspendió.*"
+  },
+  "drills": [
+    { "prompt": "Salimos ___ llovía. (aunque – fait réel)", "answer": "aunque" },
+    { "prompt": "Saldré ___ llueva. (aunque – hypothétique)", "answer": "aunque" },
+    { "prompt": "Llegó tarde, ___ vive muy cerca. (y eso que)", "answer": "y eso que" },
+    { "prompt": "Hacía frío. ___, salimos a correr. (aun así)", "answer": "Aun así" },
+    { "prompt": "___ la lluvia, hicieron el partido. (a pesar de)", "answer": "A pesar de" },
+    { "prompt": "Estudió mucho. ___, suspendió. (sin embargo)", "answer": "Sin embargo" },
+    { "prompt": "Está cansadísimo, ___ ha dormido 10 horas. (y eso que)", "answer": "y eso que" },
+    { "prompt": "___ que llovía, salimos. (a pesar de que)", "answer": "A pesar de" },
+    { "prompt": "No me gusta el frío. ___, esquío cada invierno. (aun así)", "answer": "Aun así" },
+    { "prompt": "Aunque ___ (llover), saldré a correr. (hypothétique – subj.)", "answer": "llueva" },
+    { "prompt": "Aunque ___ (llover), salimos. (fait réel – indic.)", "answer": "llovía / llovió" },
+    { "prompt": "No tiene dinero. ___, siempre invita a todos. (sin embargo)", "answer": "Sin embargo" },
+    { "prompt": "Llegó primero, ___ salió el último. (y eso que)", "answer": "y eso que" },
+    { "prompt": "___ que no le gustaba, lo comió todo. (a pesar de que)", "answer": "A pesar de" },
+    { "prompt": "Aunque ___ (estar, tú) cansado, debes terminarlo. (hypothétique)", "answer": "estés" },
+    { "prompt": "Es muy inteligente. ___, saca malas notas. (sin embargo)", "answer": "Sin embargo" },
+    { "prompt": "Habla muy bien el español, ___ lleva solo seis meses estudiándolo. (y eso que)", "answer": "y eso que" },
+    { "prompt": "Aunque ___ (ser) difícil, lo intentaré. (hypothétique)", "answer": "sea" },
+    { "prompt": "___ todo, fue una experiencia increíble. (a pesar de)", "answer": "A pesar de" },
+    { "prompt": "No tenía ganas. ___, fue a la reunión. (aun así)", "answer": "Aun así" },
+    { "prompt": "Aunque ___ (saber, él) la verdad, no dijo nada. (fait réel)", "answer": "sabía" },
+    { "prompt": "Hace calor. ___, voy con abrigo. (aun así)", "answer": "Aun así" },
+    { "prompt": "Lo hizo bien, ___ no tenía experiencia. (y eso que)", "answer": "y eso que" },
+    { "prompt": "___ sus problemas, siempre está sonriendo. (a pesar de)", "answer": "A pesar de" },
+    { "prompt": "Aunque ___ (tener, yo) tiempo, no sé si iré. (hypothétique)", "answer": "tenga" },
+    { "prompt": "Llegó tarde. ___, la reunión no había empezado. (sin embargo)", "answer": "Sin embargo" },
+    { "prompt": "Le cuesta mucho, ___ lleva años practicando. (y eso que)", "answer": "y eso que" },
+    { "prompt": "___ que no le gusta madrugar, se levanta a las 6. (a pesar de que)", "answer": "A pesar de" },
+    { "prompt": "Aunque ___ (poder, él), no nos ayudó. (fait réel)", "answer": "podía" },
+    { "prompt": "No es fácil. ___, hay que intentarlo. (aun así)", "answer": "Aun así" }
+  ]
+}
