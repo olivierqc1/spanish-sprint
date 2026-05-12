@@ -1171,7 +1171,23 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_portar_dur_tenir.json"
   },
+{
+    id: "cat_pronoms_cod_coi",
+    title: { fr: "Catalan — Pronoms COD et COI (em, et, el, la, li, ens, us, els, les...)", en: "Catalan — Direct and indirect object pronouns" },
+    level: "A2",
+    note: { fr: "COD : el/la/els/les/ho/em/et/ens/us. COI : li (ell/ella), els (ells). hi=y, en=en.", en: "COD: el/la/els/les/ho/em/et/ens/us. COI: li (ell/ella), els (ells). hi=there, en=some." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_pronoms_cod_coi.json"
+  },
 
+{
+    id: "cat_dir_se_reflexius",
+    title: { fr: "Catalan — Dir-se et verbes réflexifs (em, et, es, ens, us, es)", en: "Catalan — Dir-se and reflexive verbs (em, et, es, ens, us, es)" },
+    level: "A1",
+    note: { fr: "Dir-se (s'appeler) + pronoms réfléchis : em dic, et dius, es diu, ens diem, us dieu, es diuen.", en: "Dir-se (to be called) + reflexive pronouns: em dic, et dius, es diu, ens diem, us dieu, es diuen." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_dir_se_reflexius.json"
+  },
 
 
 ];
