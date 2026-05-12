@@ -1,0 +1,44 @@
+{
+  "id": "cat_dir_se_reflexius",
+  "title": {
+    "fr": "Catalan — Dir-se et verbes réflexifs (em, et, es, ens, us, es)",
+    "en": "Catalan — Dir-se and reflexive verbs (em, et, es, ens, us, es)"
+  },
+  "level": "A1",
+  "note": {
+    "fr": "⚙️ Les **verbes réflexifs** en catalan utilisent des pronoms réfléchis placés AVANT le verbe.\n\n🔹 **Pronoms réfléchis :**\n| Pronom | Réfléchi |\n|--------|----------|\n| jo | **em** (m' devant voyelle) |\n| tu | **et** (t' devant voyelle) |\n| ell/ella | **es** (s' devant voyelle) |\n| nosaltres | **ens** |\n| vosaltres | **us** |\n| ells/elles | **es** (s' devant voyelle) |\n\n🔹 **DIR-SE** → s'appeler\n- *Em dic Olivier.* → Je m'appelle Olivier.\n- *Et dius Laura?* → Tu t'appelles Laura?\n- *Es diu Pau.* → Il s'appelle Pau.\n- *Es diuen Marc i Anna.* → Ils s'appellent Marc et Anna.\n- *Com et dius?* → Comment tu t'appelles?\n- *Com es diu això?* → Comment ça s'appelle?\n\n🔹 **Autres verbes réflexifs courants :**\n- *llevar-se / aixecar-se* → se lever\n- *dutxar-se* → se doucher\n- *vestir-se* → s'habiller\n- *adormir-se* → s'endormir\n- *despertar-se* → se réveiller\n- *asseure's* → s'asseoir\n- *trobar-se* → se trouver / se sentir\n- *rentar-se* → se laver\n\n⚠️ **Devant voyelle :** em → m' / et → t' / es → s'\n➡️ *M'aixeco* (et non *em aixeco*)\n➡️ *S'anomena* (et non *es anomena*)",
+    "en": "⚙️ Catalan **reflexive verbs** use reflexive pronouns placed BEFORE the verb.\n\n🔹 **Reflexive pronouns:** em, et, es, ens, us, es\n🔹 **DIR-SE** (to be called): Em dic, et dius, es diu, ens diem, us dieu, es diuen\n🔹 **Before vowel:** em→m', et→t', es→s'"
+  },
+  "drills": [
+    { "prompt": "Je m'appelle Olivier. → català (dir-se)", "answer": "Em dic Olivier." },
+    { "prompt": "Comment tu t'appelles? → català", "answer": "Com et dius?" },
+    { "prompt": "Il s'appelle Pau. → català", "answer": "Es diu Pau." },
+    { "prompt": "Elle s'appelle Laura. → català", "answer": "Es diu Laura." },
+    { "prompt": "Ils s'appellent Marc et Pau. → català", "answer": "Es diuen Marc i Pau." },
+    { "prompt": "Comment ça s'appelle en catalan? → català", "answer": "Com es diu això en català?" },
+    { "prompt": "Nous nous appelons Anna et Jordi. → català", "answer": "Ens diem Anna i Jordi." },
+    { "prompt": "Vous vous appelez comment? → català", "answer": "Com us dieu?" },
+    { "prompt": "Je me lève à 7h. → català (llevar-se)", "answer": "Em llevo a les set." },
+    { "prompt": "Tu te douches chaque matin. → català (dutxar-se)", "answer": "Et dutxes cada matí." },
+    { "prompt": "Il se lève tôt. → català (aixecar-se)", "answer": "S'aixeca d'hora." },
+    { "prompt": "Elle s'habille rapidement. → català (vestir-se)", "answer": "Es vesteix ràpidament." },
+    { "prompt": "Nous nous réveillons à 8h. → català (despertar-se)", "answer": "Ens despertem a les vuit." },
+    { "prompt": "Vous vous asseyez ici. → català (asseure's)", "answer": "Us seieu aquí." },
+    { "prompt": "Ils s'endorment tôt. → català (adormir-se)", "answer": "S'adormen aviat." },
+    { "prompt": "Je me sens bien. → català (trobar-se)", "answer": "Em trobo bé." },
+    { "prompt": "Je me lave les mains. → català (rentar-se)", "answer": "Em rento les mans." },
+    { "prompt": "Comment il s'appelle? → català", "answer": "Com es diu?" },
+    { "prompt": "pronom réfléchi de 'jo' → ?", "answer": "em (m' devant voyelle)" },
+    { "prompt": "pronom réfléchi de 'tu' → ?", "answer": "et (t' devant voyelle)" },
+    { "prompt": "pronom réfléchi de 'ell/ella' → ?", "answer": "es (s' devant voyelle)" },
+    { "prompt": "pronom réfléchi de 'nosaltres' → ?", "answer": "ens" },
+    { "prompt": "pronom réfléchi de 'vosaltres' → ?", "answer": "us" },
+    { "prompt": "pronom réfléchi de 'ells/elles' → ?", "answer": "es (s' devant voyelle)" },
+    { "prompt": "Em dic → signifie...", "answer": "Je m'appelle" },
+    { "prompt": "Et dius → signifie...", "answer": "Tu t'appelles" },
+    { "prompt": "Es diu → signifie...", "answer": "Il/Elle s'appelle" },
+    { "prompt": "Es diuen → signifie...", "answer": "Ils/Elles s'appellent" },
+    { "prompt": "Je m'appelle (devant voyelle) → m'___ ou em ___?", "answer": "Em dic (dic commence par d, pas de contraction)" },
+    { "prompt": "Il se lève (aixecar-se, devant voyelle) → es ou s'?", "answer": "S'aixeca" }
+  ]
+}
