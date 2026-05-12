@@ -1163,6 +1163,14 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_presentacio_practica.json"
   },
+{
+    id: "cat_portar_dur_tenir",
+    title: { fr: "Catalan — Portar, dur, tenir, aguantar – Porter, tenir, apporter...", en: "Catalan — Portar, dur, tenir, aguantar – To carry, hold, bring..." },
+    level: "A1-A2",
+    note: { fr: "portar/dur (porter/apporter), tenir (avoir/tenir dans la main), aguantar (tenir/supporter), agafar (prendre), sostenir (soutenir).", en: "portar/dur (carry/bring), tenir (have/hold), aguantar (hold/bear), agafar (grab), sostenir (support)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_portar_dur_tenir.json"
+  },
 
 
 
