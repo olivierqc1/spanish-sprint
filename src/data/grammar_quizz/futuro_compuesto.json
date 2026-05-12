@@ -1,0 +1,44 @@
+{
+  "id": "futuro_compuesto",
+  "title": {
+    "fr": "Futur antérieur – Habré + participio",
+    "en": "Future perfect – Habré + participle"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Le **futur antérieur** exprime une action qui sera accomplie avant un moment futur, ou une hypothèse sur le passé récent.\n\n🔹 **Formation : habré/habrás/habrá/habremos/habréis/habrán + participio**\n\n| Pronom | haber (futur) |\n|--------|---------------|\n| yo | **habré** |\n| tú | **habrás** |\n| él/ella | **habrá** |\n| nosotros | **habremos** |\n| vosotros | **habréis** |\n| ellos | **habrán** |\n\n🔹 **Usages :**\n\n1️⃣ **Action accomplie avant un moment futur :**\n➡️ *Cuando llegues, ya **habré terminado**.* (Quand tu arriveras, j'aurai déjà fini.)\n➡️ *Para el viernes **habremos entregado** el informe.*\n\n2️⃣ **Hypothèse sur le passé récent :**\n➡️ *No contesta... **habrá salido**.* (Il ne répond pas... il sera sorti.)\n➡️ *¿Dónde estará? **Se habrá perdido**.*\n\n3️⃣ **Avec seguramente, probablemente, quizás :**\n➡️ *Seguramente ya **habrá llegado**.*",
+    "en": "⚙️ The **future perfect** expresses an action that will be completed before a future moment, or a hypothesis about the recent past.\n\n🔹 **Form:** habré/habrás/habrá/habremos/habréis/habrán + past participle\n\n🔹 **Uses:**\n1. Action completed before a future moment: *Cuando llegues, ya habré terminado.*\n2. Hypothesis about recent past: *No contesta... habrá salido.*"
+  },
+  "drills": [
+    { "prompt": "Cuando llegues, ya ___ (yo, terminar) el informe.", "answer": "habré terminado" },
+    { "prompt": "Para el viernes ___ (nosotros, entregar) el proyecto.", "answer": "habremos entregado" },
+    { "prompt": "No contesta. ___ (salir, él). (hypothèse passé récent)", "answer": "Habrá salido" },
+    { "prompt": "Para las 8 ___ (yo, hacer) los deberes.", "answer": "habré hecho" },
+    { "prompt": "¿Dónde estará? ___ (perderse, él).", "answer": "Se habrá perdido" },
+    { "prompt": "Cuando ___ (nosotros, ver) la película, ya ___ (tú, leer) el libro.", "answer": "veamos / habrás leído" },
+    { "prompt": "Seguramente ya ___ (llegar, ella) a casa.", "answer": "habrá llegado" },
+    { "prompt": "Para el año que viene ___ (yo, aprender) el catalán.", "answer": "habré aprendido" },
+    { "prompt": "No está en la oficina. ___ (irse, él).", "answer": "Se habrá ido" },
+    { "prompt": "Para cuando lleguen los invitados, ___ (nosotros, preparar) todo.", "answer": "habremos preparado" },
+    { "prompt": "Probablemente ___ (olvidarse, tú) de la cita.", "answer": "te habrás olvidado" },
+    { "prompt": "Para el lunes ___ (ella, escribir) el informe completo.", "answer": "habrá escrito" },
+    { "prompt": "No me responde. ___ (ver, ella) el mensaje pero no querer contestar.", "answer": "Habrá visto" },
+    { "prompt": "Para las 10 ___ (vosotros, terminar) la reunión.", "answer": "habréis terminado" },
+    { "prompt": "Cuando ___ (yo, acabar) el máster, ___ (vivir, yo) en otro país.", "answer": "acabe / habré vivido" },
+    { "prompt": "No está en casa. ___ (salir, ella) a comprar.", "answer": "Habrá salido" },
+    { "prompt": "Para el verano ___ (ellos, ahorrar) suficiente dinero.", "answer": "habrán ahorrado" },
+    { "prompt": "Seguramente ___ (equivocarse, él) de número.", "answer": "se habrá equivocado" },
+    { "prompt": "Cuando te ___ (despertar, tú), yo ya ___ (salir).", "answer": "despiertes / habré salido" },
+    { "prompt": "Para mañana ___ (yo, ver) los resultados.", "answer": "habré visto" },
+    { "prompt": "No enciende el teléfono. ___ (quedarse sin batería).", "answer": "Se habrá quedado sin batería" },
+    { "prompt": "Para el 2030 ___ (cambiar, el mundo) mucho.", "answer": "habrá cambiado" },
+    { "prompt": "Quizás ___ (perderse, ellos) por el camino.", "answer": "se habrán perdido" },
+    { "prompt": "Para cuando ___ (llegar, el avión), ___ (nosotros, esperar) dos horas.", "answer": "llegue / habremos esperado" },
+    { "prompt": "No me ha escrito. ___ (olvidarse) de mí.", "answer": "Se habrá olvidado" },
+    { "prompt": "Para el fin de semana ___ (terminar, nosotros) de pintarla casa.", "answer": "habremos terminado" },
+    { "prompt": "Seguramente ___ (ver, él) tu mensaje pero no ___ (querer) contestar.", "answer": "habrá visto / habrá querido" },
+    { "prompt": "Para cuando ___ (venir, ella), ___ (yo, hacer) la cena.", "answer": "venga / habré hecho" },
+    { "prompt": "___ (dormir, él). No me coge el teléfono. (hypothèse)", "answer": "Habrá dormido / Se habrá dormido" },
+    { "prompt": "Para el próximo año ___ (yo, terminar) el proyecto.", "answer": "habré terminado" }
+  ]
+}
