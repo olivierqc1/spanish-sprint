@@ -1,0 +1,44 @@
+{
+  "id": "es_injusto_valoracion",
+  "title": {
+    "fr": "Valorisation – Es injusto/una vergüenza/está bien/mal + infinitif/que + subjonctif",
+    "en": "Value judgements – Es injusto/una vergüenza/está bien/mal + inf/que + subjunctive"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Pour exprimer un jugement de valeur sur une situation, on utilise :\n\n🔹 **Expressions + infinitif** (sujet général/non précisé) :\n- *Es injusto **pagar** tanto.* (C'est injuste de payer autant.)\n- *Es una vergüenza **no hacer** nada.*\n- *Está bien **ayudar** a los demás.*\n- *Está mal **mentir**.*\n- *Me parece bien **hacerlo**.*\n\n🔹 **Expressions + que + subjonctif** (sujet précis) :\n- *Es injusto que **paguen** tanto.* (C'est injuste qu'ils paient autant.)\n- *Es una vergüenza que **no hagan** nada.*\n- *Está bien que **ayudes** a los demás.*\n- *Me parece mal que **llegues** tarde.*\n\n🔹 **Expressions courantes :**\n- *es injusto* → c'est injuste\n- *es una vergüenza* → c'est une honte\n- *es inaceptable* → c'est inacceptable\n- *está bien / mal* → c'est bien / mal\n- *me parece bien / mal / fatal* → je trouve ça bien / mal / terrible\n- *es normal* → c'est normal\n- *es lógico* → c'est logique\n- *debería / habría que* → il faudrait\n\n🔹 **esto/eso/lo + de (que) + sustantivo/verbo :**\n➡️ *Lo de llegar tarde me molesta mucho.*\n➡️ *Eso de que no paguen es inaceptable.*",
+    "en": "⚙️ Value judgements:\n- **+ infinitive** (general subject): *Es injusto pagar tanto.*\n- **+ que + subjunctive** (specific subject): *Es injusto que paguen tanto.*\n\nKey expressions: es injusto, es una vergüenza, es inaceptable, está bien/mal, me parece bien/mal/fatal, debería, habría que"
+  },
+  "drills": [
+    { "prompt": "Es injusto que ___ (cobrar, ellos) tan poco.", "answer": "cobren" },
+    { "prompt": "Es una vergüenza ___ (no reciclar – infinitif général)", "answer": "no reciclar" },
+    { "prompt": "Está bien que ___ (ayudar, tú) a tus compañeros.", "answer": "ayudes" },
+    { "prompt": "Me parece mal que ___ (llegar, vosotros) siempre tarde.", "answer": "lleguéis" },
+    { "prompt": "Es injusto ___ (discriminar a las mujeres – infinitif)", "answer": "discriminar a las mujeres" },
+    { "prompt": "Es una vergüenza que ___ (haber) tanta pobreza.", "answer": "haya" },
+    { "prompt": "Está mal que ___ (no decir, él) la verdad.", "answer": "no diga" },
+    { "prompt": "Me parece bien ___ (expresar la opinión – infinitif)", "answer": "expresar la opinión" },
+    { "prompt": "Es inaceptable que ___ (no pagar, ellos) sus impuestos.", "answer": "no paguen" },
+    { "prompt": "Es normal ___ (sentirse cansado – infinitif)", "answer": "sentirse cansado" },
+    { "prompt": "Es lógico que ___ (querer, ella) cambiar de trabajo.", "answer": "quiera" },
+    { "prompt": "___ que hacer algo para mejorar la situación. (habría)", "answer": "Habría que" },
+    { "prompt": "Todo el mundo ___ respetar las normas. (debería)", "answer": "debería" },
+    { "prompt": "___ de llegar tarde me molesta. (lo de)", "answer": "Lo" },
+    { "prompt": "Eso de que no ___ (pagar, ellos) es inaceptable.", "answer": "paguen" },
+    { "prompt": "Me parece fatal que ___ (tratar, ellos) así a los empleados.", "answer": "traten" },
+    { "prompt": "Es injusto que las mujeres no ___ (ganar) lo mismo.", "answer": "ganen" },
+    { "prompt": "Está bien ___ (reciclar – infinitif)", "answer": "reciclar" },
+    { "prompt": "Es una vergüenza que ___ (haber) tanto desempleo.", "answer": "haya" },
+    { "prompt": "Me parece mal ___ (contaminar el medio ambiente – infinitif)", "answer": "contaminar el medio ambiente" },
+    { "prompt": "Es inaceptable ___ (maltratar a los animales – infinitif)", "answer": "maltratar a los animales" },
+    { "prompt": "Lo de ___ (subir, ellos) los precios es una vergüenza.", "answer": "subir / que suban" },
+    { "prompt": "___ que los políticos den ejemplo. (debería)", "answer": "Deberían" },
+    { "prompt": "___ invertir más en educación. (habría que)", "answer": "Habría que" },
+    { "prompt": "Es normal que ___ (estar, tú) cansado después de trabajar tanto.", "answer": "estés" },
+    { "prompt": "Me parece bien que ___ (poder, vosotros) descansar.", "answer": "podáis" },
+    { "prompt": "Es injusto que ___ (no tener, nosotros) las mismas oportunidades.", "answer": "no tengamos" },
+    { "prompt": "Es una vergüenza que ___ (no hacer, el gobierno) nada.", "answer": "no haga" },
+    { "prompt": "Está bien ___ (pedir ayuda cuando la necesitas – infinitif)", "answer": "pedir ayuda" },
+    { "prompt": "Lo de ___ (no avisar, él) me parece muy mal.", "answer": "no avisar / que no avise" }
+  ]
+}
