@@ -1,0 +1,94 @@
+{
+  "id": "verbos_cambio",
+  "title": {
+    "fr": "Verbes de changement (hacerse, ponerse, quedarse, volverse, sentirse...)",
+    "en": "Verbs of change (hacerse, ponerse, quedarse, volverse, sentirse...)"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ En espagnol, « devenir » ne se traduit pas par un seul verbe. Chaque verbe de changement exprime une nuance différente.\n\n🔹 **PONERSE + adjectif** — changement **temporaire**, souvent émotionnel ou physique\n- Involontaire, brusque, réversible\n- ➡️ *Se puso enfermo* (il est tombé malade) / *Se puso nervioso* (il est devenu nerveux)\n- Typique pour : émotions, états physiques passagers (triste, contento, rojo, pálido)\n\n🔹 **QUEDARSE + adjectif** — changement **subi et durable**, souvent non désiré\n- Résultat inattendu, perte de quelque chose\n- ➡️ *Se quedó calvo* (il est devenu chauve) / *Se quedó sin trabajo* (il s'est retrouvé sans travail)\n- Typique pour : ciego, sordo, viudo, embarazada, sin dinero\n\n🔹 **HACERSE + nom/adjectif** — changement **volontaire et progressif**\n- Choix conscient, évolution dans le temps\n- ➡️ *Se hizo budista* (il est devenu bouddhiste) / *Se ha hecho actor* (il est devenu acteur)\n- Typique pour : professions, religions, idéologies, rico/famoso\n\n🔹 **VOLVERSE + adjectif** — transformation **profonde du caractère**\n- Souvent négatif ou surprenant, changement de personnalité\n- ➡️ *Se volvió loco* (il est devenu fou) / *Se volvió muy agresivo*\n- Typique pour : loco, serio, antipático, arrogante, diferente\n\n🔹 **SENTIRSE + adjectif/adverbe** — exprimer comment on **se sent**\n- Subjectif, état ressenti\n- ➡️ *Se siente solo* (il se sent seul) / *Me siento mejor hoy*\n\n🔹 **CONVERTIRSE EN + nom** — transformation **complète en quelque chose de nouveau**\n- ➡️ *Se convirtió en una estrella* (il est devenu une star)\n\n💡 **Astuce mémo :**\n- **PO**nerse → état **PO**nctuel et passager\n- **QUE**darse → **QUE**lque chose lui est arrivé (subi)\n- **HA**cerse → il l'**A** choisi (volontaire)\n- **VO**lverse → **VO**là un autre être (transformation profonde)",
+    "en": "⚙️ In Spanish, 'to become' is expressed by several different verbs, each with a distinct nuance.\n\n🔹 **PONERSE + adjective** — **temporary** change, often emotional or physical\n- Involuntary, sudden, reversible\n- ➡️ *Se puso enfermo* (he got sick) / *Se puso nervioso* (he became nervous)\n\n🔹 **QUEDARSE + adjective** — **lasting, unwanted** change, a loss or result\n- ➡️ *Se quedó calvo* (he went bald) / *Se quedó sin trabajo* (he ended up jobless)\n\n🔹 **HACERSE + noun/adjective** — **voluntary, progressive** change\n- ➡️ *Se hizo budista* (he became Buddhist) / *Se ha hecho actor* (he became an actor)\n\n🔹 **VOLVERSE + adjective** — **deep character transformation**, often negative\n- ➡️ *Se volvió loco* (he went crazy) / *Se volvió muy serio*\n\n🔹 **SENTIRSE + adjective** — how one **feels**\n- ➡️ *Se siente solo* (he feels lonely)\n\n🔹 **CONVERTIRSE EN + noun** — full transformation **into something new**\n- ➡️ *Se convirtió en una estrella* (he became a star)"
+  },
+  "drills": [
+    {
+      "prompt": "Ayer comí algo malo y ___ (me puse / me quedé) muy enfermo toda la noche.",
+      "answer": "me puse (temporaire, physique)"
+    },
+    {
+      "prompt": "Después del accidente, ___ (se puso / se quedó) sordo del oído derecho.",
+      "answer": "se quedó (perte durable, non désirée)"
+    },
+    {
+      "prompt": "Estudió mucho y con el tiempo ___ (se hizo / se volvió) médico.",
+      "answer": "se hizo (choix volontaire et progressif)"
+    },
+    {
+      "prompt": "Desde que le dejó su novia, ___ (se ha hecho / se ha vuelto) muy callado y triste.",
+      "answer": "se ha vuelto (transformation de caractère)"
+    },
+    {
+      "prompt": "Cuando le dieron la noticia, ___ (se puso / se quedó) muy contenta.",
+      "answer": "se puso (émotion momentanée)"
+    },
+    {
+      "prompt": "Lleva meses meditando y poco a poco ___ (se está haciendo / se está poniendo) budista.",
+      "answer": "se está haciendo (évolution volontaire)"
+    },
+    {
+      "prompt": "¿Cómo ___ (te pones / te sientes) hoy después de descansar?",
+      "answer": "te sientes (comment on se sent, subjectif)"
+    },
+    {
+      "prompt": "El político ___ (se volvió / se quedó) muy arrogante después de ganar las elecciones.",
+      "answer": "se volvió (transformation de personnalité)"
+    },
+    {
+      "prompt": "Con los años, ese pequeño negocio ___ (se hizo / se convirtió en) una empresa enorme.",
+      "answer": "se convirtió en (transformation complète en quelque chose de nouveau)"
+    },
+    {
+      "prompt": "Al ver el accidente, todos ___ (se pusieron / se quedaron) pálidos.",
+      "answer": "se pusieron (réaction physique/émotionnelle instantanée)"
+    },
+    {
+      "prompt": "Después de la operación, ___ (se quedó / se volvió) paralizado de las piernas.",
+      "answer": "se quedó (état subi, permanent)"
+    },
+    {
+      "prompt": "___ (Me hago / Me siento) solo cuando viajo sin mis amigos.",
+      "answer": "Me siento (ressenti subjectif)"
+    },
+    {
+      "prompt": "Era muy simpático, pero desde que tiene dinero ___ (se ha puesto / se ha vuelto) insoportable.",
+      "answer": "se ha vuelto (changement de caractère profond)"
+    },
+    {
+      "prompt": "Cuando anunciaron los resultados, ella ___ (se puso / se quedó) roja de vergüenza.",
+      "answer": "se puso (réaction physique temporaire)"
+    },
+    {
+      "prompt": "Tras años de práctica, ___ (se hizo / se quedó) un pianista reconocido.",
+      "answer": "se hizo (résultat d'un parcours volontaire)"
+    },
+    {
+      "prompt": "Mi abuelo ___ (se puso / se quedó) viudo el año pasado.",
+      "answer": "se quedó (perte, état subi)"
+    },
+    {
+      "prompt": "El niño ___ (se pone / se vuelve) loco cada vez que ve un helado.",
+      "answer": "se pone (réaction temporaire et intense)"
+    },
+    {
+      "prompt": "Elige el verbe : hacerse rico → changement ___",
+      "answer": "volontaire et progressif (hacerse)"
+    },
+    {
+      "prompt": "Elige el verbe : quedarse sin dinero → changement ___",
+      "answer": "subi, non désiré (quedarse)"
+    },
+    {
+      "prompt": "Elige el verbe : ponerse nervioso → changement ___",
+      "answer": "temporaire, émotionnel (ponerse)"
+    }
+  ]
+}
