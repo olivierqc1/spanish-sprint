@@ -302,6 +302,76 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-243', front: 'començar',     back: 'commencer',        backEn: 'to start',          level: 'A1', country: 'catalonia', category: 'verb' },
   { id: 'cat-a1-244', front: 'així',         back: 'ainsi / comme ça', backEn: 'like this / so',    level: 'A1', country: 'catalonia', category: 'expressió' },
   { id: 'cat-a1-245', front: 'per això',     back: "c'est pourquoi",   backEn: "that's why",        level: 'A1', country: 'catalonia', category: 'expressió' },
+// ═══════════════════════════════════════════════════════════════════════════
+// AJOUTS POUR src/data/words/catalan/A1.ts
+// Colle ces entrées AVANT le ]; final du tableau catalanWordsA1
+// ═══════════════════════════════════════════════════════════════════════════
+
+  // ─── L'HORA (L'HEURE) ────────────────────────────────────────────────────
+  { id: 'cat-a1-246', front: 'Quina hora és?',     back: 'Quelle heure est-il ?',      backEn: 'What time is it?',      level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-247', front: 'A quina hora...?',   back: 'À quelle heure... ?',        backEn: 'At what time...?',      level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-248', front: 'És la una',           back: "Il est une heure",           backEn: 'It is one o\'clock',    level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-249', front: 'Són les dues',        back: "Il est deux heures",         backEn: 'It is two o\'clock',    level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-250', front: 'i quart',             back: 'et quart',                   backEn: 'quarter past',          level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-251', front: 'i mitja',             back: 'et demie',                   backEn: 'half past',             level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-252', front: 'menys quart',         back: 'moins le quart',             backEn: 'quarter to',            level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-253', front: 'en punt',             back: 'pile / juste',               backEn: 'exactly / on the dot', level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-254', front: 'del matí',            back: 'du matin',                   backEn: 'in the morning',        level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-255', front: 'de la tarda',         back: "de l'après-midi",            backEn: 'in the afternoon',      level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-256', front: 'del vespre',          back: 'du soir (début)',            backEn: 'in the evening',        level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-257', front: 'de la nit',           back: 'de la nuit',                 backEn: 'at night',              level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-258', front: 'És migdia',           back: "Il est midi",                backEn: 'It is noon',            level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-259', front: 'És mitjanit',         back: "Il est minuit",              backEn: 'It is midnight',        level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-260', front: 'tard',                back: 'tard / en retard',           backEn: 'late',                  level: 'A1', country: 'catalonia', category: 'hora' },
+  { id: 'cat-a1-261', front: "d'hora",              back: 'tôt / de bonne heure',       backEn: 'early',                 level: 'A1', country: 'catalonia', category: 'hora' },
+
+  // ─── DIRECCIONS (DIRECTIONS) ─────────────────────────────────────────────
+  { id: 'cat-a1-262', front: "a l'esquerra de",     back: 'à gauche de',                backEn: 'to the left of',        level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-263', front: 'a la dreta de',       back: 'à droite de',                backEn: 'to the right of',       level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-264', front: 'davant de',           back: 'devant',                     backEn: 'in front of',           level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-265', front: 'darrere de',          back: 'derrière',                   backEn: 'behind',                level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-266', front: 'al costat de',        back: 'à côté de',                  backEn: 'next to',               level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-267', front: 'entre',               back: 'entre',                      backEn: 'between',               level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-268', front: 'Gira a l\'esquerra',  back: 'Tourne à gauche',            backEn: 'Turn left',             level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-269', front: 'Gira a la dreta',     back: 'Tourne à droite',            backEn: 'Turn right',            level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-270', front: 'Continua recte',      back: 'Continue tout droit',        backEn: 'Go straight',           level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-271', front: 'Creua',               back: 'Traverse',                   backEn: 'Cross',                 level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-272', front: 'A la cantonada',      back: 'Au coin de la rue',          backEn: 'At the corner',         level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-273', front: 'Al final del carrer', back: 'Au bout de la rue',          backEn: 'At the end of the street', level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-274', front: 'davall de / a sota de', back: 'sous / en dessous de',     backEn: 'under / below',         level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-275', front: 'damunt de / a sobre de', back: 'sur / au-dessus de',      backEn: 'on top of / above',     level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-276', front: 'dins de',             back: 'dans / à l\'intérieur de',  backEn: 'inside',                level: 'A1', country: 'catalonia', category: 'direcció' },
+  { id: 'cat-a1-277', front: 'fora de',             back: 'dehors / à l\'extérieur de', backEn: 'outside',              level: 'A1', country: 'catalonia', category: 'direcció' },
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+// AJOUTS POUR src/data/words/catalan/A2.ts
+// Colle ces entrées AVANT le ]; final du tableau catalanWordsA2
+// ═══════════════════════════════════════════════════════════════════════════
+
+  // ─── TEMPS VERBALS — VOCABULAIRE ─────────────────────────────────────────
+  { id: 'cat-a2-075', front: 'el passat perifràstic', back: 'le passé périphrastique (vaig + inf)', backEn: 'periphrastic past',   level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-076', front: 'el passat compost',     back: 'le passé composé (he + participi)',    backEn: 'present perfect',     level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-077', front: "l'imperfet",            back: "l'imparfait (parlava)",                backEn: 'imperfect',           level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-078', front: 'el futur simple',       back: 'le futur simple (parlaré)',            backEn: 'simple future',       level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-079', front: 'el futur perifràstic',  back: 'le futur périphrastique (vaig a + inf)', backEn: 'periphrastic future', level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-080', front: 'el participi',          back: 'le participe passé',                   backEn: 'past participle',     level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-081', front: 'el gerundi',            back: 'le gérondif (parlant)',                backEn: 'gerund',              level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-082', front: "l'infinitiu",           back: "l'infinitif",                          backEn: 'infinitive',          level: 'A2', country: 'catalonia', category: 'gramàtica' },
+
+  // ─── PARTICIPES IMPORTANTS ────────────────────────────────────────────────
+  { id: 'cat-a2-083', front: 'parlat',   back: 'parlé (participe de parlar)',   backEn: 'spoken',   level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-084', front: 'menjat',   back: 'mangé (participe de menjar)',   backEn: 'eaten',    level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-085', front: 'fet',      back: 'fait (participe de fer)',       backEn: 'done',     level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-086', front: 'dit',      back: 'dit (participe de dir)',        backEn: 'said',     level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-087', front: 'vist',     back: 'vu (participe de veure)',       backEn: 'seen',     level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-088', front: 'vingut',   back: 'venu (participe de venir)',     backEn: 'come',     level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-089', front: 'anat',     back: 'allé (participe de anar)',      backEn: 'gone',     level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-090', front: 'tingut',   back: 'eu (participe de tenir)',       backEn: 'had',      level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-091', front: 'pogut',    back: 'pu (participe de poder)',       backEn: 'been able', level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-092', front: 'obert',    back: 'ouvert (participe de obrir)',   backEn: 'opened',   level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-093', front: 'escrit',   back: 'écrit (participe de escriure)', backEn: 'written',  level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-094', front: 'dormit',   back: 'dormi (participe de dormir)',   backEn: 'slept',    level: 'A2', country: 'catalonia', category: 'participi' },
 
 ];
 
