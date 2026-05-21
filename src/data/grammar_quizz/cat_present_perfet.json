@@ -1,0 +1,36 @@
+{
+  "id": "cat_present_perfet",
+  "title": {
+    "fr": "Catalan — Passé composé (he, has, ha, hem, heu, han + participi)",
+    "en": "Catalan — Present perfect (he, has, ha, hem, heu, han + participi)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Le passé composé catalan = auxiliaire **HAVER** au présent + participe passé.\n\n🔹 **AUXILIAIRE HAVER (présent)**\n| Personne | Forme |\n|---|---|\n| jo | **he** |\n| tu | **has** |\n| ell/ella | **ha** |\n| nosaltres | **hem** |\n| vosaltres | **heu** |\n| ells/elles | **han** |\n\n🔹 **FORMATION DU PARTICIPE PASSÉ**\n| Terminaison | Participe | Exemple |\n|---|---|---|\n| -ar | → **-at** | parlar → **parlat** |\n| -er / -re | → **-ut** | córrer → **corregut**, beure → **begut** |\n| -ir | → **-it** | dormir → **dormit** |\n\n🔹 **PARTICIPES IRRÉGULIERS ESSENTIELS**\n| Infinitif | Participe |\n|---|---|\n| fer | **fet** |\n| dir | **dit** |\n| venir | **vingut** |\n| anar | **anat** |\n| ser | **sigut / estat** |\n| tenir | **tingut** |\n| poder | **pogut** |\n| saber | **sabut** |\n| veure | **vist** |\n| obrir | **obert** |\n| escriure | **escrit** |\n| posar | **posat** |\n| rompre | **romput / trencat** |\n\n🔹 **QUAND L'UTILISER ?**\n- Action passée avec lien au présent\n- Ce matin, cette semaine, aujourd'hui\n- *He menjat pasta avui* → J'ai mangé des pâtes aujourd'hui\n- *Hem acabat la feina* → Nous avons fini le travail\n\n⚠️ **Différence avec le passé périphrastique :**\n- **Passé composé** (*he menjat*) → lien au présent, récent\n- **Passé périphrastique** (*vaig menjar*) → action passée, terminée, plus distante\n\n💡 En pratique à Barcelone, les deux s'utilisent — le passé périphrastique est plus fréquent à l'oral.",
+    "en": "⚙️ Catalan present perfect = HAVER (present) + past participle.\n\n🔹 **HAVER (present)**\njo he / tu has / ell ha / nosaltres hem / vosaltres heu / ells han\n\n🔹 **PAST PARTICIPLE**\n- -ar → -at (parlat)\n- -er/-re → -ut (corregut, begut)\n- -ir → -it (dormit)\n\n🔹 **KEY IRREGULARS**\nfer → fet, dir → dit, venir → vingut, veure → vist, obrir → obert, escriure → escrit\n\n🔹 **WHEN TO USE**\nRecent past with present relevance: *He menjat* (I have eaten today)"
+  },
+  "drills": [
+    { "prompt": "Conjugue HAVER à la 1ère personne du singulier → jo ___", "answer": "he" },
+    { "prompt": "Conjugue HAVER à la 3ème personne du singulier → ell/ella ___", "answer": "ha" },
+    { "prompt": "Conjugue HAVER à la 1ère personne du pluriel → nosaltres ___", "answer": "hem" },
+    { "prompt": "Conjugue HAVER à la 3ème personne du pluriel → ells ___", "answer": "han" },
+    { "prompt": "Participe passé de PARLAR (-ar) →", "answer": "parlat" },
+    { "prompt": "Participe passé de MENJAR (-ar) →", "answer": "menjat" },
+    { "prompt": "Participe passé de DORMIR (-ir) →", "answer": "dormit" },
+    { "prompt": "Participe passé de SORTIR (-ir) →", "answer": "sortit" },
+    { "prompt": "Participe passé de BEURE (irrégulier) →", "answer": "begut" },
+    { "prompt": "Participe passé de FER (irrégulier) →", "answer": "fet" },
+    { "prompt": "Participe passé de DIR (irrégulier) →", "answer": "dit" },
+    { "prompt": "Participe passé de VENIR (irrégulier) →", "answer": "vingut" },
+    { "prompt": "Participe passé de VEURE (irrégulier) →", "answer": "vist" },
+    { "prompt": "Participe passé de OBRIR (irrégulier) →", "answer": "obert" },
+    { "prompt": "Participe passé de ESCRIURE (irrégulier) →", "answer": "escrit" },
+    { "prompt": "J'ai mangé des pâtes aujourd'hui → ___ menjat pasta avui.", "answer": "He" },
+    { "prompt": "Il a fait ses devoirs → ___ fet els deures.", "answer": "Ha" },
+    { "prompt": "Nous avons fini le travail → ___ acabat la feina.", "answer": "Hem" },
+    { "prompt": "Ils ont dit la vérité → ___ dit la veritat.", "answer": "Han" },
+    { "prompt": "Tu as vu ce film ? → ___ vist aquesta pel·lícula?", "answer": "Has" },
+    { "prompt": "Vous avez compris ? → ___ entès?", "answer": "Heu" },
+    { "prompt": "Quelle est la différence : 'he menjat' vs 'vaig menjar' ?", "answer": "he menjat = passé composé (lien au présent) / vaig menjar = passé périphrastique (action passée, distante)" }
+  ]
+}
