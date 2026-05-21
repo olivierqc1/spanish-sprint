@@ -1,0 +1,29 @@
+{
+  "id": "cat_plusquamperfet",
+  "title": {
+    "fr": "Catalan — Plus-que-parfait (havia + participi) et futur périphrastique (anar a + inf)",
+    "en": "Catalan — Pluperfect (havia + participi) and periphrastic future (anar a + inf)"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Deux temps importants : le plus-que-parfait et le futur périphrastique.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔹 **PLUS-QUE-PARFAIT : havia + participi**\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**Auxiliaire HAVER à l'imparfait :**\n| Personne | Forme |\n|---|---|\n| jo | **havia** |\n| tu | **havies** |\n| ell/ella | **havia** |\n| nosaltres | **havíem** |\n| vosaltres | **havíeu** |\n| ells/elles | **havien** |\n\n**Quand l'utiliser ?**\nAction passée *antérieure* à une autre action passée — comme en français.\n- *Quan vaig arribar, ja havien menjat* → Quand je suis arrivé, ils avaient déjà mangé\n- *No havia vist mai tanta neu* → Je n'avais jamais vu autant de neige\n- *Havia estudiat molt, però va suspendre* → Il avait beaucoup étudié, mais il a échoué\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔹 **FUTUR PÉRIPHRASTIQUE : ANAR A + infinitif**\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**Conjugaison de ANAR au présent :**\n| Personne | Forme |\n|---|---|\n| jo | **vaig** |\n| tu | **vas** |\n| ell/ella | **va** |\n| nosaltres | **anem** |\n| vosaltres | **aneu** |\n| ells/elles | **van** |\n\n⚠️ *Attention :* la même forme (*vaig, vas, va...*) sert aussi de passé périphrastique — le contexte (+ infinitif présent vs passé) fait la différence !\n\n**Quand l'utiliser ?**\nFutur immédiat ou prévu — équivalent de \"aller + infinitif\" en français.\n- *Vaig a menjar* → Je vais manger\n- *Va a ploure* → Il va pleuvoir\n- *Anem a estudiar* → Nous allons étudier\n\n💡 **Futur simple vs périphrastique :**\n- *Parlaré* (futur simple) → futur plus lointain, formel\n- *Vaig a parlar* (périphrastique) → futur immédiat, oral",
+    "en": "⚙️ Two important tenses: pluperfect and periphrastic future.\n\n🔹 **PLUPERFECT: havia + participi**\njo havia / tu havies / ell havia / nosaltres havíem / vosaltres havíeu / ells havien\nUse: past action prior to another past action.\n*Quan vaig arribar, ja havien menjat* = When I arrived, they had already eaten.\n\n🔹 **PERIPHRASTIC FUTURE: ANAR A + infinitive**\njo vaig / tu vas / ell va / nosaltres anem / vosaltres aneu / ells van + infinitive\nUse: immediate/planned future.\n*Vaig a menjar* = I'm going to eat\n⚠️ Same forms as periphrastic past — context determines meaning!"
+  },
+  "drills": [
+    { "prompt": "HAVER à l'imparfait, 1ère pers. sing. → jo ___", "answer": "havia" },
+    { "prompt": "HAVER à l'imparfait, 1ère pers. pl. → nosaltres ___", "answer": "havíem" },
+    { "prompt": "HAVER à l'imparfait, 3ème pers. pl. → ells ___", "answer": "havien" },
+    { "prompt": "Ils avaient déjà mangé → ja ___ menjat.", "answer": "havien" },
+    { "prompt": "Elle n'avait jamais vu ça → No ___ vist mai això.", "answer": "havia" },
+    { "prompt": "Nous avions fini avant toi → ___ acabat abans que tu.", "answer": "Havíem" },
+    { "prompt": "Quand il est arrivé, j'avais déjà parti → Quan va arribar, jo ja ___ marxat.", "answer": "havia" },
+    { "prompt": "Futur périph. — je vais manger → ___ a menjar.", "answer": "Vaig" },
+    { "prompt": "Futur périph. — il va pleuvoir → ___ a ploure.", "answer": "Va" },
+    { "prompt": "Futur périph. — nous allons étudier → ___ a estudiar.", "answer": "Anem" },
+    { "prompt": "Futur périph. — ils vont partir → ___ a marxar.", "answer": "Van" },
+    { "prompt": "Futur périph. — tu vas parler → ___ a parlar.", "answer": "Vas" },
+    { "prompt": "Comment distingue-t-on 'vaig a menjar' (futur) de 'vaig menjar' (passé) ?", "answer": "futur = vaig A + infinitif / passé périphrastique = vaig + infinitif (sans 'a')" },
+    { "prompt": "Traduis : J'avais étudié mais j'ai échoué → ___ estudiat però vaig suspendre.", "answer": "Havia" },
+    { "prompt": "Traduis : Ils vont venir demain → ___ a venir demà.", "answer": "Van" }
+  ]
+}
