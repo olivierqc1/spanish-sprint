@@ -1,0 +1,102 @@
+{
+  "id": "cat_hora",
+  "title": {
+    "fr": "Catalan — L'heure (Quina hora és?)",
+    "en": "Catalan — Telling time (Quina hora és?)"
+  },
+  "level": "A1",
+  "note": {
+    "fr": "⚙️ Comment demander et dire l'heure en catalan.\n\n🔹 **DEMANDER L'HEURE**\n- *Quina hora és?* → Quelle heure est-il ?\n- *A quina hora...?* → À quelle heure... ?\n\n🔹 **RÉPONDRE — La structure**\n- **1h** → *És la una* (singulier — seul cas !)\n- **Toutes les autres** → *Són les dues / tres / quatre...*\n\n🔹 **LES MINUTES**\n| Catalan | Français |\n|---|---|\n| i cinc | et cinq |\n| i quart | et quart |\n| i vint | et vingt |\n| i vint-i-cinc | et vingt-cinq |\n| i mitja | et demie |\n| menys vint-i-cinc | moins vingt-cinq |\n| menys vint | moins vingt |\n| menys quart | moins le quart |\n| menys deu | moins dix |\n| menys cinc | moins cinq |\n| en punt | pile / juste |\n\n🔹 **EXEMPLES COMPLETS**\n- 1h00 → *És la una en punt*\n- 2h15 → *Són les dues i quart*\n- 3h30 → *Són les tres i mitja*\n- 4h45 → *Són les cinc menys quart*\n- 7h20 → *Són les set i vint*\n- 9h55 → *Són les deu menys cinc*\n- 12h00 → *Són les dotze en punt* / *És migdia*\n- 0h00 → *És mitjanit*\n\n🔹 **PARTIES DE LA JOURNÉE**\n| Catalan | Français |\n|---|---|\n| del matí | du matin |\n| del migdia | de midi |\n| de la tarda | de l'après-midi |\n| del vespre | du soir (début de soirée) |\n| de la nit | de la nuit |\n\n- *Són les tres de la tarda* → Il est 15h\n- *Són les deu del vespre* → Il est 22h\n\n🔹 **LES NOMBRES UTILES**\n| Nombre | Catalan |\n|---|---|\n| 1 | una |\n| 2 | dues |\n| 3 | tres |\n| 4 | quatre |\n| 5 | cinc |\n| 6 | sis |\n| 7 | set |\n| 8 | vuit |\n| 9 | nou |\n| 10 | deu |\n| 11 | onze |\n| 12 | dotze |\n\n💡 **Attention :** *la una* (féminin) mais *el migdia*, *el vespre*. Et seul **1h** utilise *és* — toutes les autres heures utilisent *són*.",
+    "en": "⚙️ How to ask and tell the time in Catalan.\n\n🔹 **ASKING**\n- *Quina hora és?* → What time is it?\n- *A quina hora...?* → At what time...?\n\n🔹 **STRUCTURE**\n- 1h → *És la una* (singular)\n- All others → *Són les dues / tres / quatre...*\n\n🔹 **MINUTES**\n- i quart = quarter past\n- i mitja = half past\n- menys quart = quarter to\n- en punt = exactly / on the dot\n\n🔹 **EXAMPLES**\n- 2:15 → Són les dues i quart\n- 3:30 → Són les tres i mitja\n- 4:45 → Són les cinc menys quart\n- 12:00 → És migdia\n- 0:00 → És mitjanit"
+  },
+  "drills": [
+    {
+      "prompt": "Comment dit-on 'Quelle heure est-il ?' en catalan ?",
+      "answer": "Quina hora és?"
+    },
+    {
+      "prompt": "Il est 1h pile → ___ la una en punt.",
+      "answer": "És"
+    },
+    {
+      "prompt": "Il est 3h pile → ___ les tres en punt.",
+      "answer": "Són"
+    },
+    {
+      "prompt": "Pourquoi 1h utilise 'és' et pas 'són' ?",
+      "answer": "Parce que 'una' est singulier — c'est le seul cas"
+    },
+    {
+      "prompt": "Il est 2h15 → Són les dues ___.",
+      "answer": "i quart"
+    },
+    {
+      "prompt": "Il est 5h30 → Són les cinc ___.",
+      "answer": "i mitja"
+    },
+    {
+      "prompt": "Il est 7h45 (= 8h moins le quart) → Són les vuit ___.",
+      "answer": "menys quart"
+    },
+    {
+      "prompt": "Il est 9h20 → Són les nou ___.",
+      "answer": "i vint"
+    },
+    {
+      "prompt": "Il est 11h55 (= 12h moins cinq) → Són les dotze ___.",
+      "answer": "menys cinc"
+    },
+    {
+      "prompt": "Il est midi → És ___.",
+      "answer": "migdia"
+    },
+    {
+      "prompt": "Il est minuit → És ___.",
+      "answer": "mitjanit"
+    },
+    {
+      "prompt": "Il est 6h du matin → Són les sis ___.",
+      "answer": "del matí"
+    },
+    {
+      "prompt": "Il est 15h (3h de l'après-midi) → Són les tres ___.",
+      "answer": "de la tarda"
+    },
+    {
+      "prompt": "Il est 22h (10h du soir) → Són les deu ___.",
+      "answer": "del vespre"
+    },
+    {
+      "prompt": "À quelle heure commence le cours ? → ___ hora comença la classe?",
+      "answer": "A quina"
+    },
+    {
+      "prompt": "Il est 8h25 → Són les vuit ___.",
+      "answer": "i vint-i-cinc"
+    },
+    {
+      "prompt": "Il est 4h35 (= 5h moins vingt-cinq) → Són les cinc ___.",
+      "answer": "menys vint-i-cinc"
+    },
+    {
+      "prompt": "Il est 1h30 → És la una ___.",
+      "answer": "i mitja"
+    },
+    {
+      "prompt": "Traduis : 'Le film commence à 9h moins le quart' → La pel·lícula comença a les ___ menys quart.",
+      "answer": "nou"
+    },
+    {
+      "prompt": "Traduis : 'Le train part à 7h pile' → El tren surt a les ___ en punt.",
+      "answer": "set"
+    },
+    {
+      "prompt": "Comment dit-on 11 en catalan ? (pour l'heure)",
+      "answer": "onze"
+    },
+    {
+      "prompt": "Comment dit-on 8 en catalan ? (pour l'heure)",
+      "answer": "vuit"
+    }
+  ]
+}
