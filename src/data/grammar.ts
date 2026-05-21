@@ -1188,6 +1188,70 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_dir_se_reflexius.json"
   },
+// ═══════════════════════════════════════════════════════════════════════════
+// AJOUTS À COLLER dans src/data/grammar.ts
+// Colle ce bloc AVANT le ]; final du tableau grammarPoints
+// ═══════════════════════════════════════════════════════════════════════════
 
+  // ─── NOUVEAUX FICHIERS SESSION DU JOUR ────────────────────────────────────
+
+  // Espagnol B1
+  {
+    id: "verbos_cambios",
+    title: { fr: "Verbes de changement (hacerse, ponerse, quedarse, volverse, sentirse...)", en: "Verbs of change (hacerse, ponerse, quedarse, volverse, sentirse...)" },
+    level: "B1",
+    note: { fr: "ponerse (état temporaire), quedarse (résultat subi), hacerse (progressif), volverse (caractère), sentirse, convertirse en.", en: "ponerse, quedarse, hacerse, volverse, sentirse, convertirse en — each with distinct nuance." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/verbos_cambios.json"
+  },
+
+  // Catalan A1
+  {
+    id: "cat_hora",
+    title: { fr: "Catalan — L'heure (Quina hora és?)", en: "Catalan — Telling time (Quina hora és?)" },
+    level: "A1",
+    note: { fr: "Demander et dire l'heure en catalan. És la una / Són les dues / i quart / i mitja / menys quart / en punt.", en: "Asking and telling the time in Catalan." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_hora.json"
+  },
+
+  // Catalan A1-A2
+  {
+    id: "cat_direccions_lloc",
+    title: { fr: "Catalan — Prépositions de lieu et directions (a l'esquerra, a la dreta...)", en: "Catalan — Prepositions of place and directions" },
+    level: "A1-A2",
+    note: { fr: "Prépositions spatiales et vocabulaire pour donner des directions en catalan.", en: "Spatial prepositions and directions in Catalan." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_direccions_lloc.json"
+  },
+
+  // Catalan A2
+  {
+    id: "cat_present_perfet",
+    title: { fr: "Catalan — Passé composé (he, has, ha... + participi)", en: "Catalan — Present perfect (he, has, ha... + participi)" },
+    level: "A2",
+    note: { fr: "Formation du passé composé catalan avec HAVER + participe. Participes réguliers et irréguliers (fet, dit, vist, vingut...).", en: "Catalan present perfect with HAVER + participle. Regular and irregular past participles." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_present_perfet.json"
+  },
+
+  // Catalan B1
+  {
+    id: "cat_plusquamperfet",
+    title: { fr: "Catalan — Plus-que-parfait (havia + participi) et futur périphrastique (anar a + inf)", en: "Catalan — Pluperfect (havia + participi) and periphrastic future (anar a + inf)" },
+    level: "B1",
+    note: { fr: "Havia + participi pour l'antériorité dans le passé. Anar a + infinitif pour le futur immédiat.", en: "Havia + participi for past anteriority. Anar a + infinitive for immediate future." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_plusquamperfet.json"
+  },
+
+{
+  id: "cat_hora",
+  title: { fr: "Catalan — L'heure (Quina hora és?)", en: "Catalan — Telling time (Quina hora és?)" },
+  level: "A1",
+  note: { fr: "Demander et dire l'heure en catalan.", en: "Asking and telling the time in Catalan." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_hora.json"
+},
 
 ];
