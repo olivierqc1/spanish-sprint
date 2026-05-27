@@ -1,0 +1,39 @@
+{
+  "id": "haber_vs_tener",
+  "title": {
+    "fr": "HABER vs TENER – Auxiliaire et possession",
+    "en": "HABER vs TENER – Auxiliary and possession"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ En espagnol, le verbe français **avoir** se traduit de deux façons selon le contexte.\n\n🔹 **TENER** → posséder / avoir quelque chose (suivi d'un **nom**)\n- *Tengo hambre* — J'ai faim\n- *Tendré tiempo* — J'aurai du temps\n- *Tenía razón* — J'avais raison\n\n🔹 **HABER** → auxiliaire uniquement (suivi d'un **participe passé** en -ado/-ido)\n- *He comido* — J'ai mangé\n- *Habré llegado* — Je serai arrivé / J'aurai arrivé\n- *Había dormido* — J'avais dormi\n\n⚠️ **Pièges classiques :** Les expressions *avoir faim, peur, froid, raison, X ans* utilisent toutes **TENER** en espagnol :\n*tener hambre / miedo / frío / razón / X años*\n\n💡 **Test rapide :** Si tu peux remplacer « avoir » par « posséder » → **tener**. Si tu as un verbe conjugué derrière → **haber**.",
+    "en": "⚙️ In Spanish, the French verb **avoir** (to have) translates two different ways.\n\n🔹 **TENER** → to possess / to have something (followed by a **noun**)\n- *Tengo hambre* — I'm hungry\n- *Tendré tiempo* — I'll have time\n- *Tenía razón* — I was right\n\n🔹 **HABER** → auxiliary verb only (followed by a **past participle** in -ado/-ido)\n- *He comido* — I have eaten\n- *Habré llegado* — I will have arrived\n- *Había dormido* — I had slept\n\n⚠️ **Classic traps:** Expressions like *to be hungry, afraid, cold, right, X years old* all use **TENER** in Spanish:\n*tener hambre / miedo / frío / razón / X años*\n\n💡 **Quick test:** If 'have' means 'possess' → **tener**. If a past participle follows → **haber**."
+  },
+  "drills": [
+    { "prompt": "___ comido antes de salir. (J'ai mangé avant de partir)", "answer": "He" },
+    { "prompt": "___ mucho trabajo mañana. (J'aurai beaucoup de travail demain)", "answer": "Tendré" },
+    { "prompt": "Cuando llegues, ya ___ terminado. (Quand tu arriveras, j'aurai déjà fini)", "answer": "habré" },
+    { "prompt": "___ miedo de la oscuridad. (Elle avait peur du noir)", "answer": "Tenía" },
+    { "prompt": "___ viajado mucho este año. (Ils ont beaucoup voyagé cette année)", "answer": "Han" },
+    { "prompt": "___ esperanza de ganar. (Il a de l'espoir de gagner)", "answer": "Tiene" },
+    { "prompt": "___ hablado con ella. (Tu as parlé avec elle)", "answer": "Has" },
+    { "prompt": "___ frío esta mañana. (Nous avions froid ce matin)", "answer": "Teníamos" },
+    { "prompt": "___ razón, como siempre. (Tu as raison, comme toujours)", "answer": "Tienes" },
+    { "prompt": "___ dormido bien esta noche. (J'ai bien dormi cette nuit)", "answer": "He" },
+    { "prompt": "___ ganas de verte. (J'ai envie de te voir)", "answer": "Tengo" },
+    { "prompt": "___ llegado tarde. (Vous êtes arrivés en retard)", "answer": "Habéis" },
+    { "prompt": "___ hambre después del partido. (Ils ont faim après le match)", "answer": "Tienen" },
+    { "prompt": "___ acabado el libro. (Elle a fini le livre)", "answer": "Ha" },
+    { "prompt": "Para mañana, ya ___ enviado el correo. (Demain, j'aurai déjà envoyé l'e-mail)", "answer": "habré" },
+    { "prompt": "___ suerte en la vida. (Il a de la chance dans la vie)", "answer": "Tiene" },
+    { "prompt": "___ visto esa película. (Nous avons vu ce film)", "answer": "Hemos" },
+    { "prompt": "___ sed después de correr. (J'ai soif après avoir couru)", "answer": "Tengo" },
+    { "prompt": "___ dormido cuando llegaste. (Il avait dormi quand tu es arrivé)", "answer": "Había" },
+    { "prompt": "___ paciencia con los estudiantes. (Elle a de la patience avec les élèves)", "answer": "Tiene" },
+    { "prompt": "___ vivido en Barcelona tres años. (Il a vécu à Barcelone trois ans)", "answer": "Ha" },
+    { "prompt": "___ veinte años. (Tu as vingt ans)", "answer": "Tienes" },
+    { "prompt": "___ comido todo el pastel. (Ils avaient mangé tout le gâteau)", "answer": "Habían" },
+    { "prompt": "___ tiempo para hablar ahora. (Vous avez du temps pour parler maintenant)", "answer": "Tenéis" },
+    { "prompt": "___ perdido las llaves. (J'ai perdu mes clés)", "answer": "He" }
+  ]
+}
