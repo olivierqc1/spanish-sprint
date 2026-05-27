@@ -1253,5 +1253,13 @@ export const grammarPoints: GrammarPoint[] = [
   country: "all",
   jsonPath: "/data/grammar_quizz/cat_hora.json"
 },
+{
+    id: "haber_vs_tener",
+    title: { fr: "HABER vs TENER – Auxiliaire et possession", en: "HABER vs TENER – Auxiliary and possession" },
+    level: "A2",
+    note: { fr: "Différence entre HABER (auxiliaire) et TENER (avoir/posséder).", en: "Difference between HABER (auxiliary verb) and TENER (to have/possess)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/haber_vs_tener.json"
+  },
 
 ];
