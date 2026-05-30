@@ -1261,5 +1261,12 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/haber_vs_tener.json"
   },
-
+{
+  id: "relativas_indicativo_subjuntivo_vida",
+  title: { fr: "Relatives – Indicatif vs Subjonctif dans la vie quotidienne", en: "Relative clauses – Indicative vs Subjunctive in everyday life" },
+  level: "B1",
+  note: { fr: "Automatiser le choix indicatif/subjonctif dans des situations réelles.", en: "Automating the indicative/subjunctive choice in real-life situations." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/relativas_indicativo_subjuntivo_vida.json"
+},
 ];
