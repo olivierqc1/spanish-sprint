@@ -1,0 +1,44 @@
+{
+  "id": "relativas_indicativo_subjuntivo_vida",
+  "title": {
+    "fr": "Relatives – Indicatif vs Subjonctif dans la vie quotidienne",
+    "en": "Relative clauses – Indicative vs Subjunctive in everyday life"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Une seule question à te poser avant chaque phrase :\n\n❓ **Est-ce que ça existe déjà dans ta tête ?**\n\n✅ **OUI → Indicatif** (tu le connais, tu le possèdes, ça existe)\n- *Tengo un piso que **tiene** terraza.* → il est là, je l'ai\n- *Conozco a alguien que **habla** ruso.* → je le connais\n\n❌ **NON → Subjonctif** (tu cherches, tu veux, c'est hypothétique)\n- *Busco un piso que **tenga** terraza.* → je cherche encore\n- *Busco a alguien que **hable** ruso.* → je ne sais pas si ça existe\n\n🔑 **Mots déclencheurs du subjonctif :**\n*buscar, querer, necesitar, no hay nadie que, no existe nada que, ¿hay alguien que...?*\n\n🔑 **Mots déclencheurs de l'indicatif :**\n*tener, conocer, hay uno que, encontré a alguien que, existe un...*\n\n💡 **Astuce visuelle :** Indicatif = je pointe du doigt quelque chose de réel. Subjonctif = je tends la main vers quelque chose que je cherche.",
+    "en": "⚙️ Ask yourself one question before each sentence:\n\n❓ **Does it already exist in your mind?**\n\n✅ **YES → Indicative** (you know it, you have it, it exists)\n- *Tengo un piso que **tiene** terraza.* → it's there, I have it\n- *Conozco a alguien que **habla** ruso.* → I know this person\n\n❌ **NO → Subjunctive** (you're searching, wanting, it's hypothetical)\n- *Busco un piso que **tenga** terraza.* → still searching\n- *Busco a alguien que **hable** ruso.* → don't know if such a person exists\n\n🔑 **Subjunctive triggers:** buscar, querer, necesitar, no hay nadie que, no existe nada que, ¿hay alguien que...?\n🔑 **Indicative triggers:** tener, conocer, hay uno que, encontré, existe un..."
+  },
+  "drills": [
+    { "prompt": "Busco un piso que ___ cerca del metro. (estar) → je cherche encore", "answer": "esté" },
+    { "prompt": "Tengo un piso que ___ cerca del metro. (estar) → je l'ai déjà", "answer": "está" },
+    { "prompt": "Necesito un trabajo que ___ bien. (pagar) → hypothétique", "answer": "pague" },
+    { "prompt": "Encontré un trabajo que ___ bien. (pagar) → trouvé !", "answer": "paga" },
+    { "prompt": "¿Conoces a alguien que ___ catalán? (hablar) → tu cherches", "answer": "hable" },
+    { "prompt": "Conozco a alguien que ___ catalán. (hablar) → je le connais", "answer": "habla" },
+    { "prompt": "Busco un restaurante que ___ menú de mediodía. (tener) → je cherche", "answer": "tenga" },
+    { "prompt": "Hay un restaurante aquí que ___ menú de mediodía. (tener) → ça existe", "answer": "tiene" },
+    { "prompt": "No hay nadie que ___ hacer eso mejor que tú. (poder) → personne", "answer": "pueda" },
+    { "prompt": "Hay alguien que ___ hacer eso mejor. (poder) → quelqu'un existe", "answer": "puede" },
+    { "prompt": "Quiero un jefe que me ___ escuchar. (saber) → idéal hypothétique", "answer": "sepa" },
+    { "prompt": "Tengo un jefe que me ___. (escuchar) → il le fait vraiment", "answer": "escucha" },
+    { "prompt": "Busco una app que ___ bien en móvil. (funcionar) → je développe encore", "answer": "funcione" },
+    { "prompt": "Creé una app que ___ bien en móvil. (funcionar) → elle existe", "answer": "funciona" },
+    { "prompt": "Necesito un médico que ___ inglés. (hablar) → je cherche", "answer": "hable" },
+    { "prompt": "Mi médico ___ inglés perfectamente. (hablar) → le mien, je le connais", "answer": "habla" },
+    { "prompt": "¿Hay algún bar que ___ antes de las 10? (abrir) → je demande si ça existe", "answer": "abra" },
+    { "prompt": "Hay un bar que ___ a las 8. (abrir) → je sais lequel", "answer": "abre" },
+    { "prompt": "Busco un máster que ___ prácticas incluidas. (tener) → je postule encore", "answer": "tenga" },
+    { "prompt": "Encontré un máster que ___ prácticas incluidas. (tener) → trouvé", "answer": "tiene" },
+    { "prompt": "No conozco a nadie que ___ en Andorra. (vivir) → personne dans mon entourage", "answer": "viva" },
+    { "prompt": "Conozco a alguien que ___ en Andorra. (vivir) → je la connais", "answer": "vive" },
+    { "prompt": "Quiero vivir en un barrio que ___ animado. (ser) → idéal", "answer": "sea" },
+    { "prompt": "Vivo en un barrio que ___ muy animado. (ser) → c'est mon quartier", "answer": "es" },
+    { "prompt": "Busco un compañero de piso que ___ ordenado. (ser) → je cherche", "answer": "sea" },
+    { "prompt": "Mi compañero de piso ___ muy ordenado. (ser) → je le connais", "answer": "es" },
+    { "prompt": "Necesito un banco que no ___ comisiones. (cobrar) → hypothétique", "answer": "cobre" },
+    { "prompt": "Encontré un banco que no ___ comisiones. (cobrar) → trouvé", "answer": "cobra" },
+    { "prompt": "Dame algo que me ___ bien para el examen. (ir) → tu cherches un conseil", "answer": "vaya" },
+    { "prompt": "Usa el método que te ___ mejor a ti. (ir) → un méthode réelle, connue", "answer": "vaya" }
+  ]
+}
