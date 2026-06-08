@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vérificateur de quizz – Grammaire</title>
+<style>
+  :root { --ok:#16a34a; --bad:#dc2626; --warn:#d97706; --bg:#f8fafc; --card:#fff; --line:#e2e8f0; --ink:#0f172a; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, system-ui, sans-serif; margin: 0; padding: 16px; background: var(--bg); color: var(--ink); }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  p.sub { margin: 0 0 16px; color: #64748b; font-size: .9rem; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+  label { font-weight: 600; font-size: .85rem; display: block; margin-bottom: 6px; }
+  textarea { width: 100%; min-height: 110px; font-family: ui-monospace, monospace; font-size: .8rem; border: 1px solid var(--line); border-radius: 8px; padding: 8px; resize: vertical; }
+  button { background: #2563eb; color: #fff; border: 0; border-radius: 8px; padding: 11px 16px; font-size: .95rem; font-weight: 600; cursor: pointer; width: 100%; margin-top: 8px; }
+  button.ghost { background: #e2e8f0; color: var(--ink); }
+  .summary { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .pill { flex: 1; min-width: 90px; text-align: center; padding: 10px; border-radius: 10px; font-weight: 700; }
+  .pill.ok { background: #dcfce7; color: var(--ok); }
+  .pill.bad { background: #fee2e2; color: var(--bad); }
+  .pill.warn { background: #fef3c7; color: var(--warn); }
+  .row { display: flex; align-items: center; gap: 10px; padding: 9px 6px; border-bottom: 1px solid var(--line); font-size: .82rem; }
+  .row:last-child { border-bottom: 0; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .dot.ok { background: var(--ok); } .dot.bad { background: var(--bad); } .dot.warn { background: var(--warn); }
+  .path { font-family: ui-monospace, monospace; word-break: break-all; flex: 1; }
+  .tag { font-size: .7rem; color: #64748b; }
+  .hidden { display: none; }
+  .filter { display:flex; gap:6px; margin-bottom:10px; }
+  .filter button { width:auto; flex:1; margin:0; padding:7px; font-size:.8rem; background:#e2e8f0; color:var(--ink); }
+  .filter button.active { background:#2563eb; color:#fff; }
+</style>
+</head>
+<body>
+  <h1>🔍 Vérificateur de quizz</h1>
+  <p class="sub">Ouvre ce fichier <strong>sur ton site déployé</strong> (ex. <code>ton-site.vercel.app/grammar-checker.html</code>) pour éviter les soucis de CORS.</p>
+
+  <div class="panel">
+    <label>Coller ton <code>grammar.ts</code> ici (optionnel) pour ré-extraire les chemins automatiquement</label>
+    <textarea id="tsInput" placeholder="Colle le contenu de src/data/grammar.ts..."></textarea>
+    <button class="ghost" onclick="extractFromTs()">Extraire les chemins du grammar.ts</button>
+  </div>
+
+  <div class="panel">
+    <label>Chemins à vérifier (un par ligne)</label>
+    <textarea id="paths"></textarea>
+    <button onclick="run()">▶️ Vérifier tous les fichiers</button>
+  </div>
+
+  <div id="out"></div>
+
+<script>
+// Liste pré-remplie extraite de ton grammar.ts (dédupliquée).
+// Tu peux la régénérer en collant ton grammar.ts ci-dessus.
+const DEFAULT_PATHS = [
+"presente_regulares","presente_irregulares","ser_estar","hay_estar","gustar",
+"articulos_definidos","articulos_indefinidos","genero_sustantivos","plural","acuerdo_adjetivos",
+"demostrativos","posesivos","pronombres_posesivos","pronombres","pronombres_complemento",
+"pronombres_relativos","preposiciones_a_en_de","preposicion_de","preposiciones_lugar","por_vs_para",
+"muy_vs_mucho","negacion","interrogatives","cual_vs_que","comparativos","superlativos","numeros",
+"numeros_ordinales","la_hora","weather","verbos_reflexivos","presente_progresivo",
+"preterito_indefinido_regulares","preterito_indefinido_irregulares","preterito_irregulares_bilingual",
+"imperfecto","pasados_comparacion","imperfecto_vs_indefinido","futuro_simple_regulares",
+"futuro_simple_irregulares","cuesta_costar","ser_vs_sentirse","adverbios_frecuencia","direcciones",
+"cotidiano_basics","participios_como_adjetivos","desde_vs_desde_hace","parecer_vs_parecerse_a",
+"llevar_usos","caer_usos","chocar_usos","seguir_gerundio","ya_todavia","perifrasas_introduccion",
+"llevar_gerundio","acabar_de","dejar_de","empezar_a","volver_a","terminar_de","perifrasas_mixtas",
+"imperativo_afirmativo","imperativo_negativo","recordar_vs_acordarse","acentuacion_reglas",
+"subjuntivo_presente","condicional","futuro_perfecto","pluscuamperfecto","oraciones_condicionales",
+"estilo_indirecto","voz_pasiva","se_pasivo_impersonal","cat_articles","cat_ser_estar","cat_tenir",
+"cat_adjectius","cat_negacio","cat_interrogatius","cat_preposicions","cat_pronoms",
+"cat_recordar_vs_recordarse","cat_imperatiu_afirmatiu","cat_imperatiu_negatiu",
+"imperfecto_positivo_negativo","lo_usos","estilo_indirecto_que_si","interrogativos_tilde",
+"futuro_si_condicional","conectores_narrativos","verbos_comunicacion","subjuntivo_deseos_sentimientos",
+"subjuntivo_valoracion","condicional_hipotesis","pluscuamperfecto_uso","marcadores_discurso",
+"oraciones_relativas_subjuntivo","se_impersonal_pasivo","gerundio_usos","cat_present_regulars",
+"cat_present_irregulars","cat_plural_genere","cat_demostratius_possessius","cat_passat_perifrasic",
+"cat_imperfet","cat_futur","cat_comparatius","cat_verbs_reflexius","cat_subjuntiu_present",
+"cat_condicional","cat_connectors_discurs","cat_perifrasies_verbals","subjuntivo_imperfecto",
+"subjuntivo_perfecto","futuro_simple_completo","superlativos_exclamativas","verbos_emociones_subj",
+"verbos_cambio","futuro_compuesto","es_injusto_valoracion","aunque_y_eso_que","cat_presentacio_practica",
+"cat_portar_dur_tenir","cat_pronoms_cod_coi","cat_dir_se_reflexius","verbos_cambios","cat_hora",
+"cat_direccions_lloc","cat_present_perfet","cat_plusquamperfet","haber_vs_tener",
+"relativas_indicativo_subjuntivo_vida"
+].map(id => "/data/grammar_quizz/" + id + ".json");
+
+document.getElementById('paths').value = DEFAULT_PATHS.join("\n");
+
+let results = [];
+let activeFilter = 'all';
+
+function extractFromTs() {
+  const ts = document.getElementById('tsInput').value;
+  const re = /jsonPath:\s*["'`]([^"'`]+)["'`]/g;
+  const found = new Set();
+  let m;
+  while ((m = re.exec(ts)) !== null) found.add(m[1]);
+  if (found.size === 0) { alert("Aucun jsonPath trouvé. Vérifie que t'as collé le bon fichier."); return; }
+  document.getElementById('paths').value = [...found].join("\n");
+  alert(found.size + " chemins extraits (dédupliqués).");
+}
+
+async function checkOne(path) {
+  try {
+    const res = await fetch(path, { cache: "no-store" });
+    if (!res.ok) return { path, status: "bad", detail: "HTTP " + res.status + " (fichier manquant)" };
+    const text = await res.text();
+    if (text.trim().startsWith("<")) return { path, status: "bad", detail: "Renvoie du HTML (fichier absent → fallback)" };
+    try { JSON.parse(text); }
+    catch (e) { return { path, status: "warn", detail: "JSON invalide : " + e.message }; }
+    return { path, status: "ok", detail: "OK" };
+  } catch (e) {
+    return { path, status: "bad", detail: "Échec réseau : " + e.message };
+  }
+}
+
+async function run() {
+  const paths = document.getElementById('paths').value.split("\n").map(s => s.trim()).filter(Boolean);
+  const out = document.getElementById('out');
+  out.innerHTML = '<div class="panel">⏳ Vérification de ' + paths.length + ' fichiers...</div>';
+  results = [];
+  for (let i = 0; i < paths.length; i += 6) {
+    const batch = paths.slice(i, i + 6);
+    const r = await Promise.all(batch.map(checkOne));
+    results.push(...r);
+    render();
+  }
+}
+
+function render() {
+  const ok = results.filter(r => r.status === "ok").length;
+  const bad = results.filter(r => r.status === "bad").length;
+  const warn = results.filter(r => r.status === "warn").length;
+  const shown = results.filter(r => activeFilter === 'all' || r.status === activeFilter
+                                 || (activeFilter === 'problems' && r.status !== 'ok'));
+  const rows = shown.map(r => `
+    <div class="row">
+      <span class="dot ${r.status}"></span>
+      <span class="path">${r.path}</span>
+      <span class="tag">${r.detail}</span>
+    </div>`).join("");
+  document.getElementById('out').innerHTML = `
+    <div class="summary">
+      <div class="pill ok">✅ ${ok}<br><span class="tag">OK</span></div>
+      <div class="pill bad">❌ ${bad}<br><span class="tag">Manquants</span></div>
+      <div class="pill warn">⚠️ ${warn}<br><span class="tag">JSON cassé</span></div>
+    </div>
+    <div class="filter">
+      <button class="${activeFilter==='problems'?'active':''}" onclick="setFilter('problems')">Problèmes</button>
+      <button class="${activeFilter==='all'?'active':''}" onclick="setFilter('all')">Tout</button>
+      <button class="${activeFilter==='ok'?'active':''}" onclick="setFilter('ok')">OK</button>
+    </div>
+    <div class="panel">${rows || "Rien à afficher"}</div>`;
+}
+
+function setFilter(f) { activeFilter = f; render(); }
+</script>
+</body>
+</html>
