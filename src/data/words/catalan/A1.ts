@@ -12,7 +12,6 @@ export interface CatalanCard {
 
 export const catalanWordsA1: CatalanCard[] = [
 
-  // ─── SALUTACIONS ─────────────────────────────────────────────────────────
   { id: 'cat-a1-001', front: 'Bon dia',                  back: 'Bonjour (matin)',            backEn: 'Good morning',           level: 'A1', country: 'catalonia', category: 'salutació' },
   { id: 'cat-a1-002', front: 'Bona tarda',               back: 'Bon après-midi',             backEn: 'Good afternoon',         level: 'A1', country: 'catalonia', category: 'salutació' },
   { id: 'cat-a1-003', front: 'Bona nit',                 back: 'Bonne nuit / Bonsoir',       backEn: 'Good night / evening',   level: 'A1', country: 'catalonia', category: 'salutació' },
@@ -23,8 +22,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-008', front: 'Com estàs?',               back: 'Comment tu vas ?',           backEn: 'How are you?',           level: 'A1', country: 'catalonia', category: 'salutació' },
   { id: 'cat-a1-009', front: 'Molt bé, gràcies',         back: 'Très bien, merci',           backEn: 'Very well, thank you',   level: 'A1', country: 'catalonia', category: 'salutació' },
   { id: 'cat-a1-010', front: 'I tu?',                    back: 'Et toi ?',                   backEn: 'And you?',               level: 'A1', country: 'catalonia', category: 'salutació' },
-
-  // ─── EXPRESSIONS ESSENCIALS ───────────────────────────────────────────────
   { id: 'cat-a1-011', front: 'Gràcies',                  back: 'Merci',                      backEn: 'Thank you',              level: 'A1', country: 'catalonia', category: 'expressió' },
   { id: 'cat-a1-012', front: 'Moltes gràcies',           back: 'Merci beaucoup',             backEn: 'Thank you very much',    level: 'A1', country: 'catalonia', category: 'expressió' },
   { id: 'cat-a1-013', front: 'De res',                   back: 'De rien',                    backEn: "You're welcome",         level: 'A1', country: 'catalonia', category: 'expressió' },
@@ -39,8 +36,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-022', front: 'Parlo una mica de català', back: 'Je parle un peu catalan',    backEn: 'I speak a little Catalan', level: 'A1', country: 'catalonia', category: 'expressió' },
   { id: 'cat-a1-023', front: 'On és...?',                back: 'Où est... ?',                backEn: 'Where is...?',           level: 'A1', country: 'catalonia', category: 'expressió' },
   { id: 'cat-a1-024', front: 'Quant costa?',             back: 'Combien ça coûte ?',         backEn: 'How much does it cost?', level: 'A1', country: 'catalonia', category: 'expressió' },
-
-  // ─── VERBS ────────────────────────────────────────────────────────────────
   { id: 'cat-a1-025', front: 'ser',        back: 'être (identité/origine)',  backEn: 'to be (identity)',       level: 'A1', country: 'catalonia', category: 'verb' },
   { id: 'cat-a1-026', front: 'estar',      back: 'être (état/lieu)',         backEn: 'to be (state/location)', level: 'A1', country: 'catalonia', category: 'verb' },
   { id: 'cat-a1-027', front: 'tenir',      back: 'avoir',                    backEn: 'to have',                level: 'A1', country: 'catalonia', category: 'verb' },
@@ -61,8 +56,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-042', front: 'agafar',     back: 'prendre / attraper',       backEn: 'to take / catch',        level: 'A1', country: 'catalonia', category: 'verb' },
   { id: 'cat-a1-043', front: 'saber',      back: 'savoir',                   backEn: 'to know (facts)',        level: 'A1', country: 'catalonia', category: 'verb' },
   { id: 'cat-a1-044', front: 'conèixer',   back: 'connaître',                backEn: 'to know (people)',       level: 'A1', country: 'catalonia', category: 'verb' },
-
-  // ─── NOMBRES ─────────────────────────────────────────────────────────────
   { id: 'cat-a1-045', front: 'zero',       back: 'zéro',        backEn: 'zero',         level: 'A1', country: 'catalonia', category: 'nombre' },
   { id: 'cat-a1-046', front: 'un / una',   back: 'un / une',    backEn: 'one',          level: 'A1', country: 'catalonia', category: 'nombre' },
   { id: 'cat-a1-047', front: 'dos / dues', back: 'deux',        backEn: 'two',          level: 'A1', country: 'catalonia', category: 'nombre' },
@@ -79,8 +72,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-058', front: 'vint',       back: 'vingt',       backEn: 'twenty',       level: 'A1', country: 'catalonia', category: 'nombre' },
   { id: 'cat-a1-059', front: 'cent',       back: 'cent',        backEn: 'one hundred',  level: 'A1', country: 'catalonia', category: 'nombre' },
   { id: 'cat-a1-060', front: 'mil',        back: 'mille',       backEn: 'one thousand', level: 'A1', country: 'catalonia', category: 'nombre' },
-
-  // ─── COLORS ──────────────────────────────────────────────────────────────
   { id: 'cat-a1-061', front: 'vermell / vermella', back: 'rouge',         backEn: 'red',    level: 'A1', country: 'catalonia', category: 'color' },
   { id: 'cat-a1-062', front: 'blau / blava',       back: 'bleu(e)',       backEn: 'blue',   level: 'A1', country: 'catalonia', category: 'color' },
   { id: 'cat-a1-063', front: 'groc / groga',       back: 'jaune',         backEn: 'yellow', level: 'A1', country: 'catalonia', category: 'color' },
@@ -91,8 +82,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-068', front: 'rosa',               back: 'rose',          backEn: 'pink',   level: 'A1', country: 'catalonia', category: 'color' },
   { id: 'cat-a1-069', front: 'gris / grisa',       back: 'gris(e)',       backEn: 'grey',   level: 'A1', country: 'catalonia', category: 'color' },
   { id: 'cat-a1-070', front: 'marró',              back: 'marron / brun', backEn: 'brown',  level: 'A1', country: 'catalonia', category: 'color' },
-
-  // ─── MENJAR I BEGUDA ─────────────────────────────────────────────────────
   { id: 'cat-a1-071', front: 'el pa',              back: 'le pain',         backEn: 'bread',     level: 'A1', country: 'catalonia', category: 'menjar' },
   { id: 'cat-a1-072', front: "l'aigua",            back: "l'eau",           backEn: 'water',     level: 'A1', country: 'catalonia', category: 'menjar' },
   { id: 'cat-a1-073', front: 'el cafè',            back: 'le café',         backEn: 'coffee',    level: 'A1', country: 'catalonia', category: 'menjar' },
@@ -107,10 +96,7 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-082', front: "l'oli d'oliva",      back: "l'huile d'olive", backEn: 'olive oil', level: 'A1', country: 'catalonia', category: 'menjar' },
   { id: 'cat-a1-083', front: 'el pa amb tomàquet', back: 'pain frotté à la tomate', backEn: 'bread with tomato', level: 'A1', country: 'catalonia', category: 'menjar' },
   { id: 'cat-a1-084', front: 'la crema catalana',  back: 'crème brûlée catalane',   backEn: 'Catalan cream',    level: 'A1', country: 'catalonia', category: 'menjar' },
-  { id: 'cat-a1-085', front: 'els escalivats',     back: 'légumes grillés (poivrons, aubergines)', backEn: 'roasted vegetables', level: 'A1', country: 'catalonia', category: 'menjar' },
-
-
-  // ─── FAMILIA ─────────────────────────────────────────────────────────────
+  { id: 'cat-a1-085', front: 'els escalivats',     back: 'légumes grillés',         backEn: 'roasted vegetables', level: 'A1', country: 'catalonia', category: 'menjar' },
   { id: 'cat-a1-086', front: 'el pare',    back: 'le père',       backEn: 'father',      level: 'A1', country: 'catalonia', category: 'familia' },
   { id: 'cat-a1-087', front: 'la mare',    back: 'la mère',       backEn: 'mother',      level: 'A1', country: 'catalonia', category: 'familia' },
   { id: 'cat-a1-088', front: 'el germà',   back: 'le frère',      backEn: 'brother',     level: 'A1', country: 'catalonia', category: 'familia' },
@@ -122,8 +108,7 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-094', front: "l'amic",     back: "l'ami",         backEn: 'friend (m)',  level: 'A1', country: 'catalonia', category: 'familia' },
   { id: 'cat-a1-095', front: "l'amiga",    back: "l'amie",        backEn: 'friend (f)',  level: 'A1', country: 'catalonia', category: 'familia' },
 
-  // ─── TEMPS ───────────────────────────────────────────────────────────────
-  { id: 'cat-a1-096', front: 'avui',      back: "aujourd'hui",  backEn: 'today',      level: 'A1', country: 'catalonia', category: 'temps' },
+{ id: 'cat-a1-096', front: 'avui',      back: "aujourd'hui",  backEn: 'today',      level: 'A1', country: 'catalonia', category: 'temps' },
   { id: 'cat-a1-097', front: 'ahir',      back: 'hier',         backEn: 'yesterday',  level: 'A1', country: 'catalonia', category: 'temps' },
   { id: 'cat-a1-098', front: 'demà',      back: 'demain',       backEn: 'tomorrow',   level: 'A1', country: 'catalonia', category: 'temps' },
   { id: 'cat-a1-099', front: 'ara',       back: 'maintenant',   backEn: 'now',        level: 'A1', country: 'catalonia', category: 'temps' },
@@ -139,8 +124,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-109', front: 'divendres', back: 'vendredi',     backEn: 'Friday',     level: 'A1', country: 'catalonia', category: 'temps' },
   { id: 'cat-a1-110', front: 'dissabte',  back: 'samedi',       backEn: 'Saturday',   level: 'A1', country: 'catalonia', category: 'temps' },
   { id: 'cat-a1-111', front: 'diumenge',  back: 'dimanche',     backEn: 'Sunday',     level: 'A1', country: 'catalonia', category: 'temps' },
-
-  // ─── LLOC ────────────────────────────────────────────────────────────────
   { id: 'cat-a1-112', front: 'aquí',               back: 'ici',                 backEn: 'here',           level: 'A1', country: 'catalonia', category: 'lloc' },
   { id: 'cat-a1-113', front: 'allà',               back: 'là-bas',              backEn: 'there',          level: 'A1', country: 'catalonia', category: 'lloc' },
   { id: 'cat-a1-114', front: 'a la dreta',         back: 'à droite',            backEn: 'to the right',   level: 'A1', country: 'catalonia', category: 'lloc' },
@@ -156,22 +139,18 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-124', front: 'el supermercat',     back: 'le supermarché',      backEn: 'supermarket',    level: 'A1', country: 'catalonia', category: 'lloc' },
   { id: 'cat-a1-125', front: 'la platja',          back: 'la plage',            backEn: 'beach',          level: 'A1', country: 'catalonia', category: 'lloc' },
   { id: 'cat-a1-126', front: "l'aeroport",         back: "l'aéroport",          backEn: 'airport',        level: 'A1', country: 'catalonia', category: 'lloc' },
-
-  // ─── ADJECTIUS ───────────────────────────────────────────────────────────
   { id: 'cat-a1-127', front: 'gran',              back: 'grand(e)',           backEn: 'big',       level: 'A1', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a1-128', front: 'petit / petita',   back: 'petit(e)',           backEn: 'small',     level: 'A1', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a1-129', front: 'bo / bona',        back: 'bon(ne)',            backEn: 'good',      level: 'A1', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a1-130', front: 'dolent / dolenta', back: 'mauvais(e)',         backEn: 'bad',       level: 'A1', country: 'catalonia', category: 'adjectiu' },
-  { id: 'cat-a1-131', front: 'bonic / bonica',   back: 'beau / belle',      backEn: 'beautiful', level: 'A1', country: 'catalonia', category: 'adjectiu' },
+  { id: 'cat-a1-131', front: 'bonic / bonica',   back: 'beau / belle',       backEn: 'beautiful', level: 'A1', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a1-132', front: 'lleig / lletja',   back: 'laid(e)',            backEn: 'ugly',      level: 'A1', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a1-133', front: 'nou / nova',        back: 'nouveau / nouvelle', backEn: 'new',       level: 'A1', country: 'catalonia', category: 'adjectiu' },
-  { id: 'cat-a1-134', front: 'vell / vella',      back: 'vieux / vieille',   backEn: 'old',       level: 'A1', country: 'catalonia', category: 'adjectiu' },
+  { id: 'cat-a1-134', front: 'vell / vella',      back: 'vieux / vieille',    backEn: 'old',       level: 'A1', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a1-135', front: 'car / cara',         back: 'cher / chère',      backEn: 'expensive', level: 'A1', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a1-136', front: 'barat / barata',    back: 'pas cher',           backEn: 'cheap',     level: 'A1', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a1-137', front: 'calent / calenta',  back: 'chaud(e)',           backEn: 'hot',       level: 'A1', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a1-138', front: 'fred / freda',      back: 'froid(e)',           backEn: 'cold',      level: 'A1', country: 'catalonia', category: 'adjectiu' },
-
-  // ─── FRASES DEL QUOTIDIÀ ─────────────────────────────────────────────────
   { id: 'cat-a1-139', front: 'Un cafè, si us plau',      back: "Un café, s'il vous plaît",  backEn: 'A coffee, please',     level: 'A1', country: 'catalonia', category: 'frase' },
   { id: 'cat-a1-140', front: 'Puc pagar amb targeta?',   back: 'Je peux payer par carte ?', backEn: 'Can I pay by card?',   level: 'A1', country: 'catalonia', category: 'frase' },
   { id: 'cat-a1-141', front: 'Quin preu té?',            back: 'Quel est le prix ?',         backEn: 'What is the price?',   level: 'A1', country: 'catalonia', category: 'frase' },
@@ -184,21 +163,16 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-148', front: 'Tinc... anys',             back: "J'ai... ans",               backEn: 'I am ... years old',   level: 'A1', country: 'catalonia', category: 'frase' },
   { id: 'cat-a1-149', front: 'Tinc gana',                back: "J'ai faim",                 backEn: 'I am hungry',          level: 'A1', country: 'catalonia', category: 'frase' },
   { id: 'cat-a1-150', front: 'Tinc set',                 back: "J'ai soif",                 backEn: 'I am thirsty',         level: 'A1', country: 'catalonia', category: 'frase' },
-// ─── AJOUTS À COLLER À LA FIN DU TABLEAU catalanWordsA1 (avant le ]; final) ───
-
-  // ─── COS HUMÀ ────────────────────────────────────────────────────────────
-  { id: 'cat-a1-151', front: 'els cabells',   back: 'les cheveux',  backEn: 'hair',         level: 'A1', country: 'catalonia', category: 'cos' },
-  { id: 'cat-a1-152', front: 'els ulls',      back: 'les yeux',     backEn: 'eyes',         level: 'A1', country: 'catalonia', category: 'cos' },
-  { id: 'cat-a1-153', front: 'el nas',        back: 'le nez',       backEn: 'nose',         level: 'A1', country: 'catalonia', category: 'cos' },
-  { id: 'cat-a1-154', front: 'la boca',       back: 'la bouche',    backEn: 'mouth',        level: 'A1', country: 'catalonia', category: 'cos' },
-  { id: 'cat-a1-155', front: "l'orella",      back: "l'oreille",    backEn: 'ear',          level: 'A1', country: 'catalonia', category: 'cos' },
-  { id: 'cat-a1-156', front: 'el dit',        back: 'le doigt',     backEn: 'finger',       level: 'A1', country: 'catalonia', category: 'cos' },
-  { id: 'cat-a1-157', front: 'la mà',         back: 'la main',      backEn: 'hand',         level: 'A1', country: 'catalonia', category: 'cos' },
-  { id: 'cat-a1-158', front: 'el cos',        back: 'le corps',     backEn: 'body',         level: 'A1', country: 'catalonia', category: 'cos' },
-  { id: 'cat-a1-159', front: 'el cap',        back: 'la tête',      backEn: 'head',         level: 'A1', country: 'catalonia', category: 'cos' },
-  { id: 'cat-a1-160', front: 'el peu',        back: 'le pied',      backEn: 'foot',         level: 'A1', country: 'catalonia', category: 'cos' },
-
-  // ─── DESCRIPCIÓ FÍSICA ───────────────────────────────────────────────────
+  { id: 'cat-a1-151', front: 'els cabells',   back: 'les cheveux',  backEn: 'hair',     level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-152', front: 'els ulls',      back: 'les yeux',     backEn: 'eyes',     level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-153', front: 'el nas',        back: 'le nez',       backEn: 'nose',     level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-154', front: 'la boca',       back: 'la bouche',    backEn: 'mouth',    level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-155', front: "l'orella",      back: "l'oreille",    backEn: 'ear',      level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-156', front: 'el dit',        back: 'le doigt',     backEn: 'finger',   level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-157', front: 'la mà',         back: 'la main',      backEn: 'hand',     level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-158', front: 'el cos',        back: 'le corps',     backEn: 'body',     level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-159', front: 'el cap',        back: 'la tête',      backEn: 'head',     level: 'A1', country: 'catalonia', category: 'cos' },
+  { id: 'cat-a1-160', front: 'el peu',        back: 'le pied',      backEn: 'foot',     level: 'A1', country: 'catalonia', category: 'cos' },
   { id: 'cat-a1-161', front: 'alt / alta',        back: 'grand(e)',     backEn: 'tall',   level: 'A1', country: 'catalonia', category: 'descripció' },
   { id: 'cat-a1-162', front: 'prim / prima',       back: 'mince',        backEn: 'thin',   level: 'A1', country: 'catalonia', category: 'descripció' },
   { id: 'cat-a1-163', front: 'gras / grassa',      back: 'gros(se)',     backEn: 'fat',    level: 'A1', country: 'catalonia', category: 'descripció' },
@@ -207,8 +181,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-166', front: 'curt / curta',       back: 'court(e)',     backEn: 'short',  level: 'A1', country: 'catalonia', category: 'descripció' },
   { id: 'cat-a1-167', front: 'clar / clara',       back: 'clair(e)',     backEn: 'light',  level: 'A1', country: 'catalonia', category: 'descripció' },
   { id: 'cat-a1-168', front: 'fosc / fosca',       back: 'foncé(e)',     backEn: 'dark',   level: 'A1', country: 'catalonia', category: 'descripció' },
-
-  // ─── CARÀCTER ────────────────────────────────────────────────────────────
   { id: 'cat-a1-169', front: 'amable',               back: 'aimable',              backEn: 'kind',          level: 'A1', country: 'catalonia', category: 'caràcter' },
   { id: 'cat-a1-170', front: 'seriós / seriosa',     back: 'sérieux/sérieuse',     backEn: 'serious',       level: 'A1', country: 'catalonia', category: 'caràcter' },
   { id: 'cat-a1-171', front: 'divertit / divertida', back: 'amusant(e)',           backEn: 'fun',           level: 'A1', country: 'catalonia', category: 'caràcter' },
@@ -217,8 +189,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-174', front: 'llest / llesta',       back: 'intelligent(e)',       backEn: 'smart',         level: 'A1', country: 'catalonia', category: 'caràcter' },
   { id: 'cat-a1-175', front: 'presumit / presumida', back: 'vaniteux/vaniteuse',   backEn: 'vain',          level: 'A1', country: 'catalonia', category: 'caràcter' },
   { id: 'cat-a1-176', front: 'desagradable',         back: 'désagréable',          backEn: 'unpleasant',    level: 'A1', country: 'catalonia', category: 'caràcter' },
-
-  // ─── FAMÍLIA (complementari) ─────────────────────────────────────────────
   { id: 'cat-a1-177', front: "l'oncle",       back: "l'oncle",         backEn: 'uncle',              level: 'A1', country: 'catalonia', category: 'familia' },
   { id: 'cat-a1-178', front: 'la tia',        back: 'la tante',        backEn: 'aunt',               level: 'A1', country: 'catalonia', category: 'familia' },
   { id: 'cat-a1-179', front: 'el cosí',       back: 'le cousin',       backEn: 'cousin (m)',         level: 'A1', country: 'catalonia', category: 'familia' },
@@ -238,8 +208,7 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-193', front: 'el net',        back: 'le petit-fils',   backEn: 'grandson',           level: 'A1', country: 'catalonia', category: 'familia' },
   { id: 'cat-a1-194', front: 'la néta',       back: 'la petite-fille', backEn: 'granddaughter',      level: 'A1', country: 'catalonia', category: 'familia' },
 
-  // ─── PRESENTACIÓ ─────────────────────────────────────────────────────────
-  { id: 'cat-a1-195', front: 'el nom',          back: 'le prénom',             backEn: 'first name',    level: 'A1', country: 'catalonia', category: 'presentació' },
+{ id: 'cat-a1-195', front: 'el nom',          back: 'le prénom',             backEn: 'first name',    level: 'A1', country: 'catalonia', category: 'presentació' },
   { id: 'cat-a1-196', front: 'el cognom',       back: 'le nom de famille',     backEn: 'surname',       level: 'A1', country: 'catalonia', category: 'presentació' },
   { id: 'cat-a1-197', front: "l'edat",          back: "l'âge",                 backEn: 'age',           level: 'A1', country: 'catalonia', category: 'presentació' },
   { id: 'cat-a1-198', front: 'la professió',    back: 'la profession',         backEn: 'profession',    level: 'A1', country: 'catalonia', category: 'presentació' },
@@ -247,8 +216,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-200', front: 'el telèfon',      back: 'le téléphone',          backEn: 'phone number',  level: 'A1', country: 'catalonia', category: 'presentació' },
   { id: 'cat-a1-201', front: 'Com et dius?',    back: 'Comment tu t\'appelles ?', backEn: 'What is your name?', level: 'A1', country: 'catalonia', category: 'presentació' },
   { id: 'cat-a1-202', front: 'Com va això?',    back: 'Comment ça va ?',       backEn: 'How is it going?', level: 'A1', country: 'catalonia', category: 'presentació' },
-
-  // ─── ROBA ────────────────────────────────────────────────────────────────
   { id: 'cat-a1-203', front: 'el jersei',      back: 'le pull',         backEn: 'sweater',   level: 'A1', country: 'catalonia', category: 'roba' },
   { id: 'cat-a1-204', front: 'la camiseta',    back: 'le t-shirt',      backEn: 't-shirt',   level: 'A1', country: 'catalonia', category: 'roba' },
   { id: 'cat-a1-205', front: 'la camisa',      back: 'la chemise',      backEn: 'shirt',     level: 'A1', country: 'catalonia', category: 'roba' },
@@ -257,16 +224,12 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-208', front: 'la sabata',      back: 'la chaussure',    backEn: 'shoe',      level: 'A1', country: 'catalonia', category: 'roba' },
   { id: 'cat-a1-209', front: 'la jaqueta',     back: 'la veste',        backEn: 'jacket',    level: 'A1', country: 'catalonia', category: 'roba' },
   { id: 'cat-a1-210', front: 'la gorra',       back: 'la casquette',    backEn: 'cap / hat', level: 'A1', country: 'catalonia', category: 'roba' },
-
-  // ─── OBJECTES ────────────────────────────────────────────────────────────
   { id: 'cat-a1-211', front: 'el llapis',      back: 'le crayon',       backEn: 'pencil',    level: 'A1', country: 'catalonia', category: 'objecte' },
   { id: 'cat-a1-212', front: 'el retolador',   back: 'le marqueur',     backEn: 'marker',    level: 'A1', country: 'catalonia', category: 'objecte' },
   { id: 'cat-a1-213', front: 'el full',        back: 'la feuille',      backEn: 'sheet of paper', level: 'A1', country: 'catalonia', category: 'objecte' },
   { id: 'cat-a1-214', front: "l'ampolla",      back: 'la bouteille',    backEn: 'bottle',    level: 'A1', country: 'catalonia', category: 'objecte' },
   { id: 'cat-a1-215', front: 'la cassola',     back: 'la casserole',    backEn: 'pot / pan', level: 'A1', country: 'catalonia', category: 'objecte' },
   { id: 'cat-a1-216', front: "l'anell",        back: 'la bague',        backEn: 'ring',      level: 'A1', country: 'catalonia', category: 'objecte' },
-
-  // ─── ALIMENTS (complementari) ────────────────────────────────────────────
   { id: 'cat-a1-217', front: 'la poma',   back: 'la pomme',    backEn: 'apple',     level: 'A1', country: 'catalonia', category: 'menjar' },
   { id: 'cat-a1-218', front: 'la pera',   back: 'la poire',    backEn: 'pear',      level: 'A1', country: 'catalonia', category: 'menjar' },
   { id: 'cat-a1-219', front: 'la pinya',  back: "l'ananas",    backEn: 'pineapple', level: 'A1', country: 'catalonia', category: 'menjar' },
@@ -274,14 +237,10 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-221', front: "l'all",     back: "l'ail",       backEn: 'garlic',    level: 'A1', country: 'catalonia', category: 'menjar' },
   { id: 'cat-a1-222', front: "l'ou",      back: "l'œuf",       backEn: 'egg',       level: 'A1', country: 'catalonia', category: 'menjar' },
   { id: 'cat-a1-223', front: 'el glaçó',  back: 'le glaçon',   backEn: 'ice cube',  level: 'A1', country: 'catalonia', category: 'menjar' },
-
-  // ─── ANIMALS ─────────────────────────────────────────────────────────────
   { id: 'cat-a1-224', front: 'el gos / la gossa', back: 'le chien / la chienne', backEn: 'dog',  level: 'A1', country: 'catalonia', category: 'animal' },
   { id: 'cat-a1-225', front: 'el gat / la gata',  back: 'le chat / la chatte',   backEn: 'cat',  level: 'A1', country: 'catalonia', category: 'animal' },
   { id: 'cat-a1-226', front: "l'os",               back: "l'ours",                backEn: 'bear', level: 'A1', country: 'catalonia', category: 'animal' },
   { id: 'cat-a1-227', front: 'la rata',            back: 'le rat',                backEn: 'rat',  level: 'A1', country: 'catalonia', category: 'animal' },
-
-  // ─── NOMBRES 21–100 ──────────────────────────────────────────────────────
   { id: 'cat-a1-228', front: 'vint-i-un / vint-i-una', back: 'vingt et un/une', backEn: 'twenty-one',  level: 'A1', country: 'catalonia', category: 'nombre' },
   { id: 'cat-a1-229', front: 'vint-i-dos',              back: 'vingt-deux',      backEn: 'twenty-two',  level: 'A1', country: 'catalonia', category: 'nombre' },
   { id: 'cat-a1-230', front: 'trenta',                  back: 'trente',          backEn: 'thirty',      level: 'A1', country: 'catalonia', category: 'nombre' },
@@ -291,8 +250,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-234', front: 'setanta',                 back: 'soixante-dix',    backEn: 'seventy',     level: 'A1', country: 'catalonia', category: 'nombre' },
   { id: 'cat-a1-235', front: 'vuitanta',                back: 'quatre-vingts',   backEn: 'eighty',      level: 'A1', country: 'catalonia', category: 'nombre' },
   { id: 'cat-a1-236', front: 'noranta',                 back: 'quatre-vingt-dix', backEn: 'ninety',     level: 'A1', country: 'catalonia', category: 'nombre' },
-
-  // ─── DIVERS ──────────────────────────────────────────────────────────────
   { id: 'cat-a1-237', front: 'el col·legi',  back: "l'école",          backEn: 'school',           level: 'A1', country: 'catalonia', category: 'lloc' },
   { id: 'cat-a1-238', front: 'la veritat',   back: 'la vérité',        backEn: 'truth',             level: 'A1', country: 'catalonia', category: 'expressió' },
   { id: 'cat-a1-239', front: 'abans',        back: 'avant',            backEn: 'before',            level: 'A1', country: 'catalonia', category: 'temps' },
@@ -302,12 +259,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-243', front: 'començar',     back: 'commencer',        backEn: 'to start',          level: 'A1', country: 'catalonia', category: 'verb' },
   { id: 'cat-a1-244', front: 'així',         back: 'ainsi / comme ça', backEn: 'like this / so',    level: 'A1', country: 'catalonia', category: 'expressió' },
   { id: 'cat-a1-245', front: 'per això',     back: "c'est pourquoi",   backEn: "that's why",        level: 'A1', country: 'catalonia', category: 'expressió' },
-// ═══════════════════════════════════════════════════════════════════════════
-// AJOUTS POUR src/data/words/catalan/A1.ts
-// Colle ces entrées AVANT le ]; final du tableau catalanWordsA1
-// ═══════════════════════════════════════════════════════════════════════════
-
-  // ─── L'HORA (L'HEURE) ────────────────────────────────────────────────────
   { id: 'cat-a1-246', front: 'Quina hora és?',     back: 'Quelle heure est-il ?',      backEn: 'What time is it?',      level: 'A1', country: 'catalonia', category: 'hora' },
   { id: 'cat-a1-247', front: 'A quina hora...?',   back: 'À quelle heure... ?',        backEn: 'At what time...?',      level: 'A1', country: 'catalonia', category: 'hora' },
   { id: 'cat-a1-248', front: 'És la una',           back: "Il est une heure",           backEn: 'It is one o\'clock',    level: 'A1', country: 'catalonia', category: 'hora' },
@@ -324,8 +275,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-259', front: 'És mitjanit',         back: "Il est minuit",              backEn: 'It is midnight',        level: 'A1', country: 'catalonia', category: 'hora' },
   { id: 'cat-a1-260', front: 'tard',                back: 'tard / en retard',           backEn: 'late',                  level: 'A1', country: 'catalonia', category: 'hora' },
   { id: 'cat-a1-261', front: "d'hora",              back: 'tôt / de bonne heure',       backEn: 'early',                 level: 'A1', country: 'catalonia', category: 'hora' },
-
-  // ─── DIRECCIONS (DIRECTIONS) ─────────────────────────────────────────────
   { id: 'cat-a1-262', front: "a l'esquerra de",     back: 'à gauche de',                backEn: 'to the left of',        level: 'A1', country: 'catalonia', category: 'direcció' },
   { id: 'cat-a1-263', front: 'a la dreta de',       back: 'à droite de',                backEn: 'to the right of',       level: 'A1', country: 'catalonia', category: 'direcció' },
   { id: 'cat-a1-264', front: 'davant de',           back: 'devant',                     backEn: 'in front of',           level: 'A1', country: 'catalonia', category: 'direcció' },
@@ -342,36 +291,6 @@ export const catalanWordsA1: CatalanCard[] = [
   { id: 'cat-a1-275', front: 'damunt de / a sobre de', back: 'sur / au-dessus de',      backEn: 'on top of / above',     level: 'A1', country: 'catalonia', category: 'direcció' },
   { id: 'cat-a1-276', front: 'dins de',             back: 'dans / à l\'intérieur de',  backEn: 'inside',                level: 'A1', country: 'catalonia', category: 'direcció' },
   { id: 'cat-a1-277', front: 'fora de',             back: 'dehors / à l\'extérieur de', backEn: 'outside',              level: 'A1', country: 'catalonia', category: 'direcció' },
-
-
-// ═══════════════════════════════════════════════════════════════════════════
-// AJOUTS POUR src/data/words/catalan/A2.ts
-// Colle ces entrées AVANT le ]; final du tableau catalanWordsA2
-// ═══════════════════════════════════════════════════════════════════════════
-
-  // ─── TEMPS VERBALS — VOCABULAIRE ─────────────────────────────────────────
-  { id: 'cat-a2-075', front: 'el passat perifràstic', back: 'le passé périphrastique (vaig + inf)', backEn: 'periphrastic past',   level: 'A2', country: 'catalonia', category: 'gramàtica' },
-  { id: 'cat-a2-076', front: 'el passat compost',     back: 'le passé composé (he + participi)',    backEn: 'present perfect',     level: 'A2', country: 'catalonia', category: 'gramàtica' },
-  { id: 'cat-a2-077', front: "l'imperfet",            back: "l'imparfait (parlava)",                backEn: 'imperfect',           level: 'A2', country: 'catalonia', category: 'gramàtica' },
-  { id: 'cat-a2-078', front: 'el futur simple',       back: 'le futur simple (parlaré)',            backEn: 'simple future',       level: 'A2', country: 'catalonia', category: 'gramàtica' },
-  { id: 'cat-a2-079', front: 'el futur perifràstic',  back: 'le futur périphrastique (vaig a + inf)', backEn: 'periphrastic future', level: 'A2', country: 'catalonia', category: 'gramàtica' },
-  { id: 'cat-a2-080', front: 'el participi',          back: 'le participe passé',                   backEn: 'past participle',     level: 'A2', country: 'catalonia', category: 'gramàtica' },
-  { id: 'cat-a2-081', front: 'el gerundi',            back: 'le gérondif (parlant)',                backEn: 'gerund',              level: 'A2', country: 'catalonia', category: 'gramàtica' },
-  { id: 'cat-a2-082', front: "l'infinitiu",           back: "l'infinitif",                          backEn: 'infinitive',          level: 'A2', country: 'catalonia', category: 'gramàtica' },
-
-  // ─── PARTICIPES IMPORTANTS ────────────────────────────────────────────────
-  { id: 'cat-a2-083', front: 'parlat',   back: 'parlé (participe de parlar)',   backEn: 'spoken',   level: 'A2', country: 'catalonia', category: 'participi' },
-  { id: 'cat-a2-084', front: 'menjat',   back: 'mangé (participe de menjar)',   backEn: 'eaten',    level: 'A2', country: 'catalonia', category: 'participi' },
-  { id: 'cat-a2-085', front: 'fet',      back: 'fait (participe de fer)',       backEn: 'done',     level: 'A2', country: 'catalonia', category: 'participi' },
-  { id: 'cat-a2-086', front: 'dit',      back: 'dit (participe de dir)',        backEn: 'said',     level: 'A2', country: 'catalonia', category: 'participi' },
-  { id: 'cat-a2-087', front: 'vist',     back: 'vu (participe de veure)',       backEn: 'seen',     level: 'A2', country: 'catalonia', category: 'participi' },
-  { id: 'cat-a2-088', front: 'vingut',   back: 'venu (participe de venir)',     backEn: 'come',     level: 'A2', country: 'catalonia', category: 'participi' },
-  { id: 'cat-a2-089', front: 'anat',     back: 'allé (participe de anar)',      backEn: 'gone',     level: 'A2', country: 'catalonia', category: 'participi' },
-  { id: 'cat-a2-090', front: 'tingut',   back: 'eu (participe de tenir)',       backEn: 'had',      level: 'A2', country: 'catalonia', category: 'participi' },
-  { id: 'cat-a2-091', front: 'pogut',    back: 'pu (participe de poder)',       backEn: 'been able', level: 'A2', country: 'catalonia', category: 'participi' },
-  { id: 'cat-a2-092', front: 'obert',    back: 'ouvert (participe de obrir)',   backEn: 'opened',   level: 'A2', country: 'catalonia', category: 'participi' },
-  { id: 'cat-a2-093', front: 'escrit',   back: 'écrit (participe de escriure)', backEn: 'written',  level: 'A2', country: 'catalonia', category: 'participi' },
-  { id: 'cat-a2-094', front: 'dormit',   back: 'dormi (participe de dormir)',   backEn: 'slept',    level: 'A2', country: 'catalonia', category: 'participi' },
 
 ];
 
