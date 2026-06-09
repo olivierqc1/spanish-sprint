@@ -12,7 +12,6 @@ export interface CatalanCardA2 {
 
 export const catalanWordsA2: CatalanCardA2[] = [
 
-  // ─── CONNECTORS ──────────────────────────────────────────────────────────
   { id: 'cat-a2-001', front: 'però',      back: 'mais',           backEn: 'but',           level: 'A2', country: 'catalonia', category: 'connector' },
   { id: 'cat-a2-002', front: 'perquè',    back: 'parce que',      backEn: 'because',       level: 'A2', country: 'catalonia', category: 'connector' },
   { id: 'cat-a2-003', front: 'i',         back: 'et',             backEn: 'and',           level: 'A2', country: 'catalonia', category: 'connector' },
@@ -23,8 +22,6 @@ export const catalanWordsA2: CatalanCardA2[] = [
   { id: 'cat-a2-008', front: 'tampoc',    back: 'non plus',       backEn: 'neither / nor', level: 'A2', country: 'catalonia', category: 'connector' },
   { id: 'cat-a2-009', front: 'doncs',     back: 'donc / alors',   backEn: 'so / then',     level: 'A2', country: 'catalonia', category: 'connector' },
   { id: 'cat-a2-010', front: 'per això',  back: "c'est pourquoi", backEn: "that's why",    level: 'A2', country: 'catalonia', category: 'connector' },
-
-  // ─── VERBS ────────────────────────────────────────────────────────────────
   { id: 'cat-a2-011', front: 'arribar',   back: 'arriver',                    backEn: 'to arrive',          level: 'A2', country: 'catalonia', category: 'verb' },
   { id: 'cat-a2-012', front: 'sortir',    back: 'sortir',                     backEn: 'to go out / leave',  level: 'A2', country: 'catalonia', category: 'verb' },
   { id: 'cat-a2-013', front: 'dormir',    back: 'dormir',                     backEn: 'to sleep',           level: 'A2', country: 'catalonia', category: 'verb' },
@@ -45,8 +42,6 @@ export const catalanWordsA2: CatalanCardA2[] = [
   { id: 'cat-a2-028', front: 'pensar',    back: 'penser',                     backEn: 'to think',           level: 'A2', country: 'catalonia', category: 'verb' },
   { id: 'cat-a2-029', front: 'creure',    back: 'croire',                     backEn: 'to believe / think', level: 'A2', country: 'catalonia', category: 'verb' },
   { id: 'cat-a2-030', front: 'passar',    back: 'passer / se passer',         backEn: 'to pass / happen',   level: 'A2', country: 'catalonia', category: 'verb' },
-
-  // ─── ADJECTIUS ───────────────────────────────────────────────────────────
   { id: 'cat-a2-031', front: 'difícil',              back: 'difficile',            backEn: 'difficult',   level: 'A2', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a2-032', front: 'fàcil',                back: 'facile',               backEn: 'easy',        level: 'A2', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a2-033', front: 'interessant',           back: 'intéressant(e)',       backEn: 'interesting', level: 'A2', country: 'catalonia', category: 'adjectiu' },
@@ -60,8 +55,7 @@ export const catalanWordsA2: CatalanCardA2[] = [
   { id: 'cat-a2-041', front: 'ràpid / ràpida',        back: 'rapide',               backEn: 'fast',        level: 'A2', country: 'catalonia', category: 'adjectiu' },
   { id: 'cat-a2-042', front: 'lent / lenta',          back: 'lent(e)',              backEn: 'slow',        level: 'A2', country: 'catalonia', category: 'adjectiu' },
 
-  // ─── MESOS ───────────────────────────────────────────────────────────────
-  { id: 'cat-a2-043', front: 'gener',    back: 'janvier',   backEn: 'January',   level: 'A2', country: 'catalonia', category: 'mes' },
+{ id: 'cat-a2-043', front: 'gener',    back: 'janvier',   backEn: 'January',   level: 'A2', country: 'catalonia', category: 'mes' },
   { id: 'cat-a2-044', front: 'febrer',   back: 'février',   backEn: 'February',  level: 'A2', country: 'catalonia', category: 'mes' },
   { id: 'cat-a2-045', front: 'març',     back: 'mars',      backEn: 'March',     level: 'A2', country: 'catalonia', category: 'mes' },
   { id: 'cat-a2-046', front: 'abril',    back: 'avril',     backEn: 'April',     level: 'A2', country: 'catalonia', category: 'mes' },
@@ -73,8 +67,6 @@ export const catalanWordsA2: CatalanCardA2[] = [
   { id: 'cat-a2-052', front: 'octubre',  back: 'octobre',   backEn: 'October',   level: 'A2', country: 'catalonia', category: 'mes' },
   { id: 'cat-a2-053', front: 'novembre', back: 'novembre',  backEn: 'November',  level: 'A2', country: 'catalonia', category: 'mes' },
   { id: 'cat-a2-054', front: 'desembre', back: 'décembre',  backEn: 'December',  level: 'A2', country: 'catalonia', category: 'mes' },
-
-  // ─── METEOROLOGIA ────────────────────────────────────────────────────────
   { id: 'cat-a2-055', front: 'fa sol',       back: 'il fait soleil',     backEn: "it's sunny",   level: 'A2', country: 'catalonia', category: 'meteorologia' },
   { id: 'cat-a2-056', front: 'plou',         back: 'il pleut',           backEn: "it's raining", level: 'A2', country: 'catalonia', category: 'meteorologia' },
   { id: 'cat-a2-057', front: 'neva',         back: 'il neige',           backEn: "it's snowing", level: 'A2', country: 'catalonia', category: 'meteorologia' },
@@ -82,15 +74,11 @@ export const catalanWordsA2: CatalanCardA2[] = [
   { id: 'cat-a2-059', front: 'fa calor',     back: 'il fait chaud',      backEn: "it's hot",     level: 'A2', country: 'catalonia', category: 'meteorologia' },
   { id: 'cat-a2-060', front: 'fa fred',      back: 'il fait froid',      backEn: "it's cold",    level: 'A2', country: 'catalonia', category: 'meteorologia' },
   { id: 'cat-a2-061', front: 'hi ha núvols', back: "il y a des nuages",  backEn: "it's cloudy",  level: 'A2', country: 'catalonia', category: 'meteorologia' },
-
-  // ─── RESTAURANT / COMERÇ ─────────────────────────────────────────────────
   { id: 'cat-a2-062', front: "M'agradaria...",         back: "Je voudrais...",              backEn: 'I would like...',      level: 'A2', country: 'catalonia', category: 'restaurant' },
   { id: 'cat-a2-063', front: 'Podem veure la carta?',  back: 'On peut voir le menu ?',     backEn: 'Can we see the menu?', level: 'A2', country: 'catalonia', category: 'restaurant' },
   { id: 'cat-a2-064', front: 'El compte, si us plau',  back: "L'addition, s'il vous plaît", backEn: 'The bill, please',    level: 'A2', country: 'catalonia', category: 'restaurant' },
   { id: 'cat-a2-065', front: "Està inclòs el servei?", back: 'Le service est inclus ?',    backEn: 'Is service included?', level: 'A2', country: 'catalonia', category: 'restaurant' },
   { id: 'cat-a2-066', front: 'per emportar',           back: 'à emporter',                 backEn: 'to take away',         level: 'A2', country: 'catalonia', category: 'restaurant' },
-
-  // ─── TRANSPORT ───────────────────────────────────────────────────────────
   { id: 'cat-a2-067', front: 'el metro',      back: 'le métro',             backEn: 'metro / subway',    level: 'A2', country: 'catalonia', category: 'transport' },
   { id: 'cat-a2-068', front: "l'autobús",     back: "l'autobus / le bus",   backEn: 'bus',               level: 'A2', country: 'catalonia', category: 'transport' },
   { id: 'cat-a2-069', front: 'el tren',       back: 'le train',             backEn: 'train',             level: 'A2', country: 'catalonia', category: 'transport' },
@@ -99,6 +87,27 @@ export const catalanWordsA2: CatalanCardA2[] = [
   { id: 'cat-a2-072', front: 'anar a peu',    back: 'aller à pied',         backEn: 'to walk / on foot', level: 'A2', country: 'catalonia', category: 'transport' },
   { id: 'cat-a2-073', front: 'el bitllet',    back: 'le ticket / billet',   backEn: 'ticket',            level: 'A2', country: 'catalonia', category: 'transport' },
   { id: 'cat-a2-074', front: 'la parada',     back: "l'arrêt",              backEn: 'stop',              level: 'A2', country: 'catalonia', category: 'transport' },
+
+{ id: 'cat-a2-075', front: 'el passat perifràstic', back: 'le passé périphrastique (vaig + inf)', backEn: 'periphrastic past',   level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-076', front: 'el passat compost',     back: 'le passé composé (he + participi)',    backEn: 'present perfect',     level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-077', front: "l'imperfet",            back: "l'imparfait (parlava)",                backEn: 'imperfect',           level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-078', front: 'el futur simple',       back: 'le futur simple (parlaré)',            backEn: 'simple future',       level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-079', front: 'el futur perifràstic',  back: 'le futur périphrastique (vaig a + inf)', backEn: 'periphrastic future', level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-080', front: 'el participi',          back: 'le participe passé',                   backEn: 'past participle',     level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-081', front: 'el gerundi',            back: 'le gérondif (parlant)',                backEn: 'gerund',              level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-082', front: "l'infinitiu",           back: "l'infinitif",                          backEn: 'infinitive',          level: 'A2', country: 'catalonia', category: 'gramàtica' },
+  { id: 'cat-a2-083', front: 'parlat',   back: 'parlé (participe de parlar)',   backEn: 'spoken',   level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-084', front: 'menjat',   back: 'mangé (participe de menjar)',   backEn: 'eaten',    level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-085', front: 'fet',      back: 'fait (participe de fer)',       backEn: 'done',     level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-086', front: 'dit',      back: 'dit (participe de dir)',        backEn: 'said',     level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-087', front: 'vist',     back: 'vu (participe de veure)',       backEn: 'seen',     level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-088', front: 'vingut',   back: 'venu (participe de venir)',     backEn: 'come',     level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-089', front: 'anat',     back: 'allé (participe de anar)',      backEn: 'gone',     level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-090', front: 'tingut',   back: 'eu (participe de tenir)',       backEn: 'had',      level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-091', front: 'pogut',    back: 'pu (participe de poder)',       backEn: 'been able', level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-092', front: 'obert',    back: 'ouvert (participe de obrir)',   backEn: 'opened',   level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-093', front: 'escrit',   back: 'écrit (participe de escriure)', backEn: 'written',  level: 'A2', country: 'catalonia', category: 'participi' },
+  { id: 'cat-a2-094', front: 'dormit',   back: 'dormi (participe de dormir)',   backEn: 'slept',    level: 'A2', country: 'catalonia', category: 'participi' },
 ];
 
 export default catalanWordsA2;
