@@ -1,0 +1,40 @@
+{
+  "id": "cat_present_reflexius",
+  "title": {
+    "fr": "Catalan — Verbes réflexifs au présent (conjugaison complète)",
+    "en": "Catalan — Reflexive verbs in the present (full conjugation)"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "🔁 Les verbes pronominaux (-se) se conjuguent avec un pronom réfléchi DEVANT le verbe.\n\n🔹 **Les pronoms réfléchis**\n- Jo → **em** / Tu → **et** / Ell·a → **es**\n- Nosaltres → **ens** / Vosaltres → **us** / Ells·es → **es**\n\n🔹 **Llevar-se** (se lever, comme cantar)\n- em llevo · et lleves · es lleva · ens llevem · us lleveu · es lleven\n\n🔹 **Dutxar-se** (se doucher, comme cantar)\n- em dutxo · et dutxes · es dutxa · ens dutxem · us dutxeu · es dutxen\n\n🔹 **Vestir-se** (s'habiller, comme servir → incoatiu -eix)\n- em vest**eixo** · et vest**eixes** · es vest**eix** · ens vest**im** · us vest**iu** · es vest**eixen**\n- ⚠️ Attention : *nosaltres/vosaltres* perdent le -eix → **vestim / vestiu**\n\n💡 **Élision :** devant une voyelle, em/et/es → **m'/t'/s'**\n- afaitar-se → **m'**afaito, **t'**afaites, **s'**afaita",
+    "en": "🔁 Reflexive (-se) verbs take a reflexive pronoun BEFORE the verb.\n\n🔹 Pronouns: Jo→em, Tu→et, Ell·a→es, Nosaltres→ens, Vosaltres→us, Ells·es→es\n\n🔹 Llevar-se: em llevo, et lleves, es lleva, ens llevem, us lleveu, es lleven\n🔹 Dutxar-se: em dutxo, et dutxes, es dutxa, ens dutxem, us dutxeu, es dutxen\n🔹 Vestir-se (like servir): em vesteixo, et vesteixes, es vesteix, ens vestim, us vestiu, es vesteixen\n\n💡 Elision before a vowel: em/et/es → m'/t'/s' (m'afaito)"
+  },
+  "drills": [
+    { "prompt": "Llevar-se → JO: ___", "answer": "em llevo" },
+    { "prompt": "Llevar-se → TU: ___", "answer": "et lleves" },
+    { "prompt": "Llevar-se → ELL/ELLA: ___", "answer": "es lleva" },
+    { "prompt": "Llevar-se → NOSALTRES: ___", "answer": "ens llevem" },
+    { "prompt": "Llevar-se → VOSALTRES: ___", "answer": "us lleveu" },
+    { "prompt": "Llevar-se → ELLS/ELLES: ___", "answer": "es lleven" },
+    { "prompt": "Dutxar-se → JO: ___", "answer": "em dutxo" },
+    { "prompt": "Dutxar-se → TU: ___", "answer": "et dutxes" },
+    { "prompt": "Dutxar-se → ELL/ELLA: ___", "answer": "es dutxa" },
+    { "prompt": "Dutxar-se → NOSALTRES: ___", "answer": "ens dutxem" },
+    { "prompt": "Dutxar-se → VOSALTRES: ___", "answer": "us dutxeu" },
+    { "prompt": "Dutxar-se → ELLS/ELLES: ___", "answer": "es dutxen" },
+    { "prompt": "Vestir-se → JO (incoatiu -eix): ___", "answer": "em vesteixo" },
+    { "prompt": "Vestir-se → TU: ___", "answer": "et vesteixes" },
+    { "prompt": "Vestir-se → ELL/ELLA: ___", "answer": "es vesteix" },
+    { "prompt": "Vestir-se → NOSALTRES (sans -eix!): ___", "answer": "ens vestim" },
+    { "prompt": "Vestir-se → VOSALTRES (sans -eix!): ___", "answer": "us vestiu" },
+    { "prompt": "Vestir-se → ELLS/ELLES: ___", "answer": "es vesteixen" },
+    { "prompt": "Despertar-se (régulier -ar) → JO: ___", "answer": "em desperto" },
+    { "prompt": "Despertar-se → NOSALTRES: ___", "answer": "ens despertem" },
+    { "prompt": "Pentinar-se (se coiffer) → TU: ___", "answer": "et pentines" },
+    { "prompt": "Pentinar-se → ELLS/ELLES: ___", "answer": "es pentinen" },
+    { "prompt": "Rentar-se (se laver) → ELL/ELLA: ___", "answer": "es renta" },
+    { "prompt": "Afaitar-se (se raser) → JO (élision devant voyelle!): ___", "answer": "m'afaito" },
+    { "prompt": "Afaitar-se → TU (élision!): ___", "answer": "t'afaites" },
+    { "prompt": "Afaitar-se → ELL/ELLA (élision!): ___", "answer": "s'afaita" }
+  ]
+}
