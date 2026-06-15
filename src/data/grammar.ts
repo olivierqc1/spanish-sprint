@@ -1269,4 +1269,12 @@ export const grammarPoints: GrammarPoint[] = [
   country: "all",
   jsonPath: "/data/grammar_quizz/relativas_indicativo_subjuntivo_vida.json"
 },
+{
+    id: "cat_accions_quotidianes",
+    title: { fr: "Catalan — Les actions quotidiennes (la routine au présent)", en: "Catalan — Daily actions (daily routine in the present)" },
+    level: "A1-A2",
+    note: { fr: "Vocabulaire de la routine quotidienne en catalan, conjugué au présent : es lleva, es dutxa, esmorza, fa la migdiada, surt a córrer, llegeix...", en: "Daily routine vocabulary in Catalan, conjugated in the present: es lleva, es dutxa, esmorza, fa la migdiada, surt a córrer, llegeix..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_accions_quotidianes.json"
+  },
 ];
