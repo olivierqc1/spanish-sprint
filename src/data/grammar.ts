@@ -1277,4 +1277,20 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_accions_quotidianes.json"
   },
+{
+    id: "cat_present_reflexius",
+    title: { fr: "Catalan — Verbes réflexifs au présent (conjugaison complète)", en: "Catalan — Reflexive verbs in the present (full conjugation)" },
+    level: "A1-A2",
+    note: { fr: "Conjuguer les verbes pronominaux aux 6 personnes : em llevo, et lleves, es lleva, ens llevem, us lleveu, es lleven. Inclut vestir-se (incoatiu) et l'élision m'/t'/s'.", en: "Conjugating reflexive verbs across all 6 persons, including vestir-se (inchoative) and m'/t'/s' elision." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_present_reflexius.json"
+  },
+  {
+    id: "cat_rutines_diaries",
+    title: { fr: "Catalan — Routines quotidiennes II (saisons, météo, AMB, fréquence)", en: "Catalan — Daily routines II (seasons, weather, AMB, frequency)" },
+    level: "A2",
+    note: { fr: "Mois et saisons, météo (fa fred, neva, plou), préposition AMB (companyia/manera/instrument), adverbes de fréquence et l'horari.", en: "Months and seasons, weather, the preposition AMB, frequency adverbs, and schedules." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_rutines_diaries.json"
+  },
 ];
