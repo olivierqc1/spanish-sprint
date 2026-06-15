@@ -1,0 +1,41 @@
+{
+  "id": "cat_rutines_diaries",
+  "title": {
+    "fr": "Catalan — Routines quotidiennes II (saisons, météo, AMB, fréquence)",
+    "en": "Catalan — Daily routines II (seasons, weather, AMB, frequency)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "📅 **Mois et saisons**\n- L'hivern : desembre, gener, febrer → *fa fred i neva*\n- La primavera : març, abril, maig → *plou i fa fresca*\n- L'estiu : juny, juliol, agost → *fa calor*\n- La tardor : setembre, octubre, novembre → *plou i fa vent*\n\n🤝 **Préposition AMB** (= avec)\n- **Companyia** (Amb qui?) : Vaig a passejar **amb** el meu marit\n- **Manera** (Com?) : Vaig a treballar **amb** presses\n- **Instrument** (Amb què?) : Escric **amb** un bolígraf\n\n🔁 **La fréquence**\n- *cada dia/setmana/mes* (chaque)\n- *sempre* (toujours) / *mai* (jamais)\n- *sovint* (souvent) / *de vegades* (parfois)\n- *de tant en tant* (de temps en temps)\n- *una vegada a la setmana* (une fois par semaine)\n\n🕐 **L'horari**\n- *de... a...* (de... à...) : és **de** les nou **a** la una\n- *obrir* → obre · *començar* → comença/comencen · *acabar* → acaba/acaben",
+    "en": "📅 Months & seasons: hivern (desembre-febrer, fa fred i neva), primavera (març-maig, plou i fa fresca), estiu (juny-agost, fa calor), tardor (setembre-novembre, plou i fa vent).\n\n🤝 AMB (with): companyia (Amb qui?), manera (Com?), instrument (Amb què?).\n\n🔁 Frequency: cada dia, sempre, mai, sovint, de vegades, de tant en tant, una vegada a la setmana.\n\n🕐 Schedule: de...a..., obrir→obre, començar→comença/comencen, acabar→acaba/acaben."
+  },
+  "drills": [
+    { "prompt": "Desembre, gener, febrer → quina estació és?", "answer": "L'hivern" },
+    { "prompt": "Quin temps fa a l'hivern?", "answer": "Fa fred i neva" },
+    { "prompt": "Març, abril, maig → quina estació és?", "answer": "La primavera" },
+    { "prompt": "Quin temps fa a la primavera?", "answer": "Plou i fa fresca" },
+    { "prompt": "Juny, juliol, agost → quina estació és?", "answer": "L'estiu" },
+    { "prompt": "Quin temps fa a l'estiu?", "answer": "Fa calor" },
+    { "prompt": "Setembre, octubre, novembre → quina estació és?", "answer": "La tardor" },
+    { "prompt": "Quin temps fa a la tardor?", "answer": "Plou i fa vent" },
+    { "prompt": "AMB → Vaig a passejar ___ el meu marit. (companyie)", "answer": "amb" },
+    { "prompt": "Quelle question pose-t-on pour la companyia?", "answer": "Amb qui?" },
+    { "prompt": "AMB → Escric la redacció ___ un bolígraf. (instrument)", "answer": "amb" },
+    { "prompt": "Quelle question pose-t-on pour l'instrument?", "answer": "Amb què?" },
+    { "prompt": "AMB → Avui vaig a treballar ___ presses. (manera)", "answer": "amb" },
+    { "prompt": "Quelle question pose-t-on pour la manera?", "answer": "Com?" },
+    { "prompt": "Fréquence → '___ dia em llevo a les vuit.' (chaque)", "answer": "Cada" },
+    { "prompt": "Fréquence → comment dit-on 'toujours'?", "answer": "Sempre" },
+    { "prompt": "Fréquence → comment dit-on 'jamais'?", "answer": "Mai" },
+    { "prompt": "Fréquence → comment dit-on 'souvent'?", "answer": "Sovint" },
+    { "prompt": "Fréquence → comment dit-on 'parfois'?", "answer": "De vegades" },
+    { "prompt": "Fréquence → comment dit-on 'de temps en temps'?", "answer": "De tant en tant" },
+    { "prompt": "Fréquence → comment dit-on 'une fois par semaine'?", "answer": "Una vegada a la setmana" },
+    { "prompt": "Fréquence → '___ em dutxo als matins, sempre em dutxo a la nit.' (jamais)", "answer": "Mai" },
+    { "prompt": "Horari → 'Les classes ___ a dos quarts de deu.' (començar, ells)", "answer": "comencen" },
+    { "prompt": "Horari → '...i ___ a dos quarts de dotze.' (acabar, ells)", "answer": "acaben" },
+    { "prompt": "Horari → 'L'obra de teatre ___ a les vuit.' (començar, ell)", "answer": "comença" },
+    { "prompt": "Horari → 'L'Ajuntament ___ de nou a una.' (obrir, ell)", "answer": "obre" },
+    { "prompt": "Horari → 'L'horari és ___ les nou ___ la una.' (de... à...)", "answer": "de ... a" }
+  ]
+}
