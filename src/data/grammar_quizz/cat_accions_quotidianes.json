@@ -1,0 +1,40 @@
+{
+  "id": "cat_accions_quotidianes",
+  "title": {
+    "fr": "Catalan — Les actions quotidiennes (la routine au présent)",
+    "en": "Catalan — Daily actions (daily routine in the present)"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "📅 Le lexique de la routine quotidienne en catalan, conjugué au présent (3e personne du singulier, comme on décrit la journée de la Júlia).\n\n🔹 **Verbes réguliers en -ar** → terminaison **-a**\n- *esmorzar → esmorz**a***, *comprar → compr**a***, *dinar → din**a***, *estudiar → estudi**a***, *sopar → sop**a***\n\n🔹 **Verbes réflexifs** (es + verbe)\n- *llevar-se → **es** lleva* (se lever)\n- *dutxar-se → **es** dutxa* (se doucher)\n- *vestir-se → **es** vesteix* (s'habiller)\n- *preparar-se → **es** prepara*\n\n🔹 **Verbes irréguliers fréquents**\n- *anar → **va*** (va al cinema, va a dormir)\n- *fer → **fa*** (fa la migdiada, fa teatre)\n- *tenir → **té*** (té una estona d'esbarjo)\n- *sortir → **surt*** (surt a córrer)\n- *anar-se'n → **se'n va*** (s'en aller)\n\n🔹 **Verbes incoatifs en -eix** (3e groupe)\n- *vestir-se → es vest**eix***\n- *llegir → lleg**eix***\n\n💡 **Astuce :** la grosse majorité de la routine, c'est des -ar tout simples (compra, dina, sopa, neteja, treballa). Les pièges, c'est *va* / *fa* / *té* / *surt* et les -eix.",
+    "en": "📅 The daily routine lexicon in Catalan, conjugated in the present (3rd person singular, describing Júlia's day).\n\n🔹 **Regular -ar verbs** → ending **-a** (esmorza, compra, dina, estudia, sopa)\n\n🔹 **Reflexive verbs** (es + verb): es lleva, es dutxa, es vesteix, es prepara\n\n🔹 **Common irregulars**: anar → va, fer → fa, tenir → té, sortir → surt, anar-se'n → se'n va\n\n🔹 **Inchoative -eix verbs**: vestir-se → es vesteix, llegir → llegeix"
+  },
+  "drills": [
+    { "prompt": "Llevar-se (se lever) → present, 3a pers.: La Júlia ___", "answer": "es lleva" },
+    { "prompt": "Dutxar-se (se doucher) → present: La Júlia ___", "answer": "es dutxa" },
+    { "prompt": "Vestir-se (s'habiller) → present (incoatiu -eix): La Júlia ___", "answer": "es vesteix" },
+    { "prompt": "Esmorzar (déjeuner) → present: La Júlia ___", "answer": "esmorza" },
+    { "prompt": "Anar-se'n a classe (partir en classe) → present: La Júlia ___ a classe", "answer": "se'n va" },
+    { "prompt": "Tenir una estona d'esbarjo (avoir un moment de pause) → present: La Júlia ___ una estona d'esbarjo", "answer": "té" },
+    { "prompt": "Anar a la cafeteria → present: La Júlia ___ a la cafeteria", "answer": "va" },
+    { "prompt": "Comprar (acheter) → present: La Júlia ___", "answer": "compra" },
+    { "prompt": "Tornar a classe (retourner en classe) → present: La Júlia ___ a classe", "answer": "torna" },
+    { "prompt": "Arribar de la universitat (arriver de l'université) → present: La Júlia ___ a la universitat", "answer": "arriba" },
+    { "prompt": "Preparar-se el dinar (se préparer le dîner) → present: La Júlia ___ el dinar", "answer": "es prepara" },
+    { "prompt": "Dinar (dîner/manger le midi) → present: La Júlia ___", "answer": "dina" },
+    { "prompt": "Fer la migdiada (faire la sieste) → present: La Júlia ___ la migdiada", "answer": "fa" },
+    { "prompt": "Estudiar (étudier) → present: La Júlia ___", "answer": "estudia" },
+    { "prompt": "Sortir a córrer (sortir courir) → present: La Júlia ___ a córrer", "answer": "surt" },
+    { "prompt": "Fer teatre (faire du théâtre) → present: La Júlia ___ teatre", "answer": "fa" },
+    { "prompt": "Anar al cinema → present: La Júlia ___ al cinema", "answer": "va" },
+    { "prompt": "Anar al supermercat → present: La Júlia ___ al supermercat", "answer": "va" },
+    { "prompt": "Netejar (nettoyer) → present: La Júlia ___", "answer": "neteja" },
+    { "prompt": "Quedar amb els amics (voir ses amis) → present: La Júlia ___ amb els amics", "answer": "queda" },
+    { "prompt": "Sopar (souper) → present: La Júlia ___", "answer": "sopa" },
+    { "prompt": "Rentar els plats (laver la vaisselle) → present: La Júlia ___ els plats", "answer": "renta" },
+    { "prompt": "Llegir (lire) → present (incoatiu -eix): La Júlia ___", "answer": "llegeix" },
+    { "prompt": "Anar a dormir → present: La Júlia ___ a dormir", "answer": "va" },
+    { "prompt": "Treballar (travailler) → present: La Júlia ___", "answer": "treballa" },
+    { "prompt": "Jugar a cartes (jouer aux cartes) → present: La Júlia ___ a cartes", "answer": "juga" }
+  ]
+}
