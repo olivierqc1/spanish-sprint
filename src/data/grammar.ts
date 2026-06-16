@@ -1293,4 +1293,44 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_rutines_diaries.json"
   },
+{
+    id: "cat_pronom_en",
+    title: { fr: "Catalan — Le pronom EN / N' (la quantité)", en: "Catalan — The pronoun EN / N' (quantity)" },
+    level: "A2",
+    note: { fr: "Le pronom EN pour remplacer une quantité (En tinc 25), avec apostrophe devant voyelle ou h muet (N'hi ha dues).", en: "The pronoun EN to replace a quantity, with apostrophe before vowels (N'hi ha dues)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_pronom_en.json"
+  },
+  {
+    id: "cat_adreca_en_a",
+    title: { fr: "Catalan — L'adresse : préposition EN vs A", en: "Catalan — The address: preposition EN vs A" },
+    level: "A2",
+    note: { fr: "Choisir EN (en un carrer, rue inconnue) ou A (al carrer Major, rue connue) pour dire où on habite.", en: "Choosing EN (unknown street) or A (known street) to say where you live." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_adreca_en_a.json"
+  },
+  {
+    id: "cat_nombres_100_1000",
+    title: { fr: "Catalan — Les nombres de 100 à 1000", en: "Catalan — Numbers from 100 to 1000" },
+    level: "A1",
+    note: { fr: "Les centaines (cent, dos-cents, tres-cents...) et leur combinaison (cent quaranta-tres, dos-cents noranta-u).", en: "Hundreds (cent, dos-cents...) and how to combine them." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_nombres_100_1000.json"
+  },
+  {
+    id: "cat_parts_casa",
+    title: { fr: "Catalan — Les parties de la maison et les objets", en: "Catalan — Parts of the house and objects" },
+    level: "A1",
+    note: { fr: "Vocabulaire des pièces (la cuina, el dormitori, el menjador...) et des objets de la maison (el llit, la nevera...).", en: "Vocabulary for rooms and household objects." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_parts_casa.json"
+  },
+  {
+    id: "cat_habitatge",
+    title: { fr: "Catalan — Le logement (types, lieu, caractéristiques)", en: "Catalan — Housing (types, location, characteristics)" },
+    level: "A2",
+    note: { fr: "Types de logement (de lloguer, pis compartit), localisation (als afores, al centre) et caractéristiques (gran/petit, moblat/buit, amb ascensor).", en: "Housing types, location, and characteristics vocabulary." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_habitatge.json"
+  },
 ];
