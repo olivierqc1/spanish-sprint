@@ -1,0 +1,30 @@
+{
+  "id": "cat_nombres_100_1000",
+  "title": {
+    "fr": "Catalan — Les nombres de 100 à 1000",
+    "en": "Catalan — Numbers from 100 to 1000"
+  },
+  "level": "A1",
+  "note": {
+    "fr": "🔢 LES CENTAINES\n- 100 cent\n- 200 dos-cents\n- 300 tres-cents\n- 400 quatre-cents\n- 500 cinc-cents\n- 600 sis-cents\n- 700 set-cents\n- 800 vuit-cents\n- 900 nou-cents\n- 1000 mil\n\nCOMMENT COMBINER :\n- 143 → cent quaranta-tres\n- 322 → tres-cents vint-i-dos\n- 567 → cinc-cents seixanta-set\n- 291 → dos-cents noranta-u\n\n💡 Note : à partir de 200, 'cents' prend un -s (dos-cents, tres-cents...). Les dizaines 21-29 s'écrivent avec 'vint-i-' (vint-i-dos = 22). 'u' est la forme du 1 dans les nombres composés (noranta-u = 91).",
+    "en": "🔢 THE HUNDREDS\n- 100 cent, 200 dos-cents, 300 tres-cents, 400 quatre-cents, 500 cinc-cents, 600 sis-cents, 700 set-cents, 800 vuit-cents, 900 nou-cents, 1000 mil\n\nCOMBINING:\n- 143 → cent quaranta-tres\n- 322 → tres-cents vint-i-dos\n- 567 → cinc-cents seixanta-set\n- 291 → dos-cents noranta-u\n\n💡 From 200, 'cents' takes an -s. Tens 21-29 use 'vint-i-' (vint-i-dos = 22). 'u' is the form of 1 in compounds (noranta-u = 91)."
+  },
+  "drills": [
+    { "prompt": "Écris en catalan : 100", "answer": "cent" },
+    { "prompt": "Écris en catalan : 200", "answer": "dos-cents" },
+    { "prompt": "Écris en catalan : 300", "answer": "tres-cents" },
+    { "prompt": "Écris en catalan : 400", "answer": "quatre-cents" },
+    { "prompt": "Écris en catalan : 500", "answer": "cinc-cents" },
+    { "prompt": "Écris en catalan : 600", "answer": "sis-cents" },
+    { "prompt": "Écris en catalan : 700", "answer": "set-cents" },
+    { "prompt": "Écris en catalan : 800", "answer": "vuit-cents" },
+    { "prompt": "Écris en catalan : 900", "answer": "nou-cents" },
+    { "prompt": "Écris en catalan : 1000", "answer": "mil" },
+    { "prompt": "Écris en catalan : 143", "answer": "cent quaranta-tres" },
+    { "prompt": "Écris en catalan : 322", "answer": "tres-cents vint-i-dos" },
+    { "prompt": "Écris en catalan : 567", "answer": "cinc-cents seixanta-set" },
+    { "prompt": "Écris en catalan : 291", "answer": "dos-cents noranta-u" },
+    { "prompt": "À partir de quel nombre 'cent' prend un -s ? (cent → cents)", "answer": "À partir de 200 (dos-cents)" },
+    { "prompt": "Comment dit-on '22' dans un nombre ? (vint + i + ...)", "answer": "vint-i-dos" }
+  ]
+}
