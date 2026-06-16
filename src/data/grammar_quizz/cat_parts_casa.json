@@ -1,0 +1,36 @@
+{
+  "id": "cat_parts_casa",
+  "title": {
+    "fr": "Catalan — Les parties de la maison et les objets",
+    "en": "Catalan — Parts of the house and objects"
+  },
+  "level": "A1",
+  "note": {
+    "fr": "🏠 LES PIÈCES DE LA MAISON\n- el rebedor (l'entrée / le vestibule)\n- el passadís (le couloir)\n- la cuina (la cuisine)\n- el bany / el lavabo (la salle de bain)\n- el dormitori / l'habitació (la chambre)\n- l'estudi (le bureau)\n- el safareig (la buanderie)\n- la sala d'estar (le salon)\n- el menjador (la salle à manger)\n- el rebost (le garde-manger)\n- el balcó (le balcon)\n- la terrassa (la terrasse)\n\n🛋️ LES OBJETS DE LA MAISON\n- el llit (le lit)\n- la nevera (le frigo)\n- la rentadora (la machine à laver)\n- la prestatgeria (l'étagère)\n- el llum (la lampe)\n- la butaca (le fauteuil)\n- el sofà (le canapé)\n- la dutxa (la douche)\n\n💡 Pour décrire : On és? (Où est-ce?) / Què hi ha? (Qu'y a-t-il?)\n- Entrant hi ha el menjador (En entrant, il y a la salle à manger)\n- El bany és al final del passadís (La salle de bain est au bout du couloir)",
+    "en": "🏠 ROOMS OF THE HOUSE\n- el rebedor (entrance hall), el passadís (hallway), la cuina (kitchen), el bany/lavabo (bathroom), el dormitori/l'habitació (bedroom), l'estudi (study/office), el safareig (laundry room), la sala d'estar (living room), el menjador (dining room), el rebost (pantry), el balcó (balcony), la terrassa (terrace)\n\n🛋️ HOUSEHOLD OBJECTS\n- el llit (bed), la nevera (fridge), la rentadora (washing machine), la prestatgeria (bookshelf), el llum (lamp), la butaca (armchair), el sofà (sofa), la dutxa (shower)\n\n💡 On és? (Where is it?) / Què hi ha? (What is there?)"
+  },
+  "drills": [
+    { "prompt": "« la cuisine » → en catalan", "answer": "la cuina" },
+    { "prompt": "« la chambre » → en catalan (2 mots possibles)", "answer": "el dormitori / l'habitació" },
+    { "prompt": "« la salle de bain » → en catalan", "answer": "el bany / el lavabo" },
+    { "prompt": "« le salon » → en catalan", "answer": "la sala d'estar" },
+    { "prompt": "« la salle à manger » → en catalan", "answer": "el menjador" },
+    { "prompt": "« le couloir » → en catalan", "answer": "el passadís" },
+    { "prompt": "« l'entrée / le vestibule » → en catalan", "answer": "el rebedor" },
+    { "prompt": "« le bureau » → en catalan", "answer": "l'estudi" },
+    { "prompt": "« la buanderie » → en catalan", "answer": "el safareig" },
+    { "prompt": "« le garde-manger » → en catalan", "answer": "el rebost" },
+    { "prompt": "« le balcon » → en catalan", "answer": "el balcó" },
+    { "prompt": "« la terrasse » → en catalan", "answer": "la terrassa" },
+    { "prompt": "« le lit » → en catalan", "answer": "el llit" },
+    { "prompt": "« le frigo » → en catalan", "answer": "la nevera" },
+    { "prompt": "« la machine à laver » → en catalan", "answer": "la rentadora" },
+    { "prompt": "« l'étagère » → en catalan", "answer": "la prestatgeria" },
+    { "prompt": "« le canapé » → en catalan", "answer": "el sofà" },
+    { "prompt": "« le fauteuil » → en catalan", "answer": "la butaca" },
+    { "prompt": "« la douche » → en catalan", "answer": "la dutxa" },
+    { "prompt": "« la lampe » → en catalan", "answer": "el llum" },
+    { "prompt": "« En entrant, il y a la salle à manger » → ___ hi ha el menjador", "answer": "Entrant" },
+    { "prompt": "« La salle de bain est au bout du couloir » → El bany és ___ del passadís", "answer": "al final" }
+  ]
+}
