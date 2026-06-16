@@ -1,0 +1,34 @@
+{
+  "id": "cat_habitatge",
+  "title": {
+    "fr": "Catalan — Le logement (types, lieu, caractéristiques)",
+    "en": "Catalan — Housing (types, location, characteristics)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "🏘️ TYPES DE LOGEMENT (tipus d'habitatge)\n- de lloguer (en location)\n- de propietat (en propriété)\n- pis compartit (appartement partagé)\n\n📍 OÙ EST-CE ? (On és?)\n- als afores (en périphérie / banlieue)\n- al centre (au centre)\n- a la ciutat (en ville)\n- en un poble (dans un village)\n- a la muntanya (à la montagne)\n- a la platja (à la plage)\n\n✨ CARACTÉRISTIQUES (en paires)\n- gran / petit (grand / petit)\n- vell / nou (vieux / neuf)\n- assolellat / fosc (ensoleillé / sombre)\n- moblat / buit (meublé / vide)\n- exterior / interior (extérieur / intérieur)\n- amb ascensor / sense ascensor (avec / sans ascenseur)\n\n💡 Vocabulaire des annonces (els anuncis) : el lloguer (la location), la fiança (la caution/le dépôt), el mes (le mois), les zones comunes (les parties communes), a prop del metro (proche du métro).",
+    "en": "🏘️ HOUSING TYPES\n- de lloguer (rented), de propietat (owned), pis compartit (shared flat)\n\n📍 WHERE IS IT? (On és?)\n- als afores (on the outskirts), al centre (downtown), a la ciutat (in the city), en un poble (in a village), a la muntanya (in the mountains), a la platja (at the beach)\n\n✨ CHARACTERISTICS (pairs)\n- gran/petit (big/small), vell/nou (old/new), assolellat/fosc (sunny/dark), moblat/buit (furnished/empty), exterior/interior, amb ascensor/sense ascensor (with/without lift)\n\n💡 Listing vocab: el lloguer (rent), la fiança (deposit), les zones comunes (common areas), a prop del metro (near the metro)."
+  },
+  "drills": [
+    { "prompt": "« en location » → en catalan", "answer": "de lloguer" },
+    { "prompt": "« en propriété » → en catalan", "answer": "de propietat" },
+    { "prompt": "« appartement partagé » → en catalan", "answer": "pis compartit" },
+    { "prompt": "« en périphérie / banlieue » → en catalan", "answer": "als afores" },
+    { "prompt": "« au centre » → en catalan", "answer": "al centre" },
+    { "prompt": "« dans un village » → en catalan", "answer": "en un poble" },
+    { "prompt": "« à la montagne » → en catalan", "answer": "a la muntanya" },
+    { "prompt": "« à la plage » → en catalan", "answer": "a la platja" },
+    { "prompt": "« grand » → en catalan (puis son contraire)", "answer": "gran (≠ petit)" },
+    { "prompt": "« neuf » → en catalan (puis son contraire)", "answer": "nou (≠ vell)" },
+    { "prompt": "« ensoleillé » → en catalan (puis son contraire)", "answer": "assolellat (≠ fosc)" },
+    { "prompt": "« meublé » → en catalan (puis son contraire)", "answer": "moblat (≠ buit)" },
+    { "prompt": "« avec ascenseur » → en catalan", "answer": "amb ascensor" },
+    { "prompt": "« sans ascenseur » → en catalan", "answer": "sense ascensor" },
+    { "prompt": "« extérieur » → en catalan (puis son contraire)", "answer": "exterior (≠ interior)" },
+    { "prompt": "« la caution / le dépôt » → en catalan", "answer": "la fiança" },
+    { "prompt": "« la location (le loyer) » → en catalan", "answer": "el lloguer" },
+    { "prompt": "« les parties communes » → en catalan", "answer": "les zones comunes" },
+    { "prompt": "« proche du métro » → en catalan", "answer": "a prop del metro" },
+    { "prompt": "« sombre » → en catalan", "answer": "fosc" }
+  ]
+}
