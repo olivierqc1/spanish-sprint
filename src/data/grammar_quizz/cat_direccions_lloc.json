@@ -1,0 +1,28 @@
+{
+  "id": "cat_direccions_lloc",
+  "title": {
+    "fr": "Catalan — Prépositions de lieu et directions",
+    "en": "Catalan — Prepositions of place and directions"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "📍 POSITION (On és? = Où est-ce?)\n- davant (devant) / darrere (derrière)\n- a la dreta = a mà dreta = al costat dret (à droite)\n- a l'esquerra = a mà esquerra = al costat esquerre (à gauche)\n- entrant (en entrant) / sortint (en sortant)\n- al final de (au bout de) / al costat de (à côté de)\n\n🗣️ POUR DÉCRIRE (Què hi ha? = Qu'y a-t-il?)\n- Entrant hi ha el menjador (En entrant, il y a la salle à manger)\n- Al costat de la sala d'estar hi ha la cuina (À côté du salon, il y a la cuisine)\n- L'habitació és a mà esquerra, davant de la cuina (La chambre est à gauche, devant la cuisine)\n- El bany és al final del passadís (La salle de bain est au bout du couloir)\n\n💡 hi ha = il y a (pour la présence). és = est (pour la position précise).",
+    "en": "📍 POSITION (On és? = Where is it?)\n- davant (in front) / darrere (behind)\n- a la dreta = a mà dreta = al costat dret (on the right)\n- a l'esquerra = a mà esquerra = al costat esquerre (on the left)\n- entrant (entering) / sortint (exiting)\n- al final de (at the end of) / al costat de (next to)\n\n🗣️ TO DESCRIBE (Què hi ha? = What is there?)\n- Entrant hi ha el menjador\n- Al costat de la sala d'estar hi ha la cuina\n- El bany és al final del passadís\n\n💡 hi ha = there is/are. és = is (precise location)."
+  },
+  "drills": [
+    { "prompt": "« devant » → en catalan", "answer": "davant" },
+    { "prompt": "« derrière » → en catalan", "answer": "darrere" },
+    { "prompt": "« à droite » → en catalan (3 façons)", "answer": "a la dreta / a mà dreta / al costat dret" },
+    { "prompt": "« à gauche » → en catalan (3 façons)", "answer": "a l'esquerra / a mà esquerra / al costat esquerre" },
+    { "prompt": "« en entrant » → en catalan", "answer": "entrant" },
+    { "prompt": "« en sortant » → en catalan", "answer": "sortint" },
+    { "prompt": "« au bout de » → en catalan", "answer": "al final de" },
+    { "prompt": "« à côté de » → en catalan", "answer": "al costat de" },
+    { "prompt": "« En entrant, il y a la salle à manger » → ___ hi ha el menjador", "answer": "Entrant" },
+    { "prompt": "« À côté du salon, il y a la cuisine » → Al costat de la sala d'estar ___ la cuina", "answer": "hi ha" },
+    { "prompt": "« La salle de bain est au bout du couloir » → El bany ___ al final del passadís (verbe)", "answer": "és" },
+    { "prompt": "« La chambre est à gauche » → L'habitació és ___ (à gauche)", "answer": "a mà esquerra" },
+    { "prompt": "hi ha ou és ? Pour dire qu'une pièce EXISTE quelque part →", "answer": "hi ha" },
+    { "prompt": "hi ha ou és ? Pour la position précise d'une pièce →", "answer": "és" }
+  ]
+}
