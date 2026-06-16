@@ -1,0 +1,26 @@
+{
+  "id": "cat_pronom_en",
+  "title": {
+    "fr": "Catalan — Le pronom EN / N' (la quantité)",
+    "en": "Catalan — The pronoun EN / N' (quantity)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "🔢 Le pronom EN remplace une quantité (comme 'en' en français : j'EN ai deux).\n\nUSAGE : on l'utilise quand on indique une quantité, pour ne pas répéter le nom.\n- Quants anys tens? (Quel âge as-tu?) → En tinc 25 (J'en ai 25)\n- Quantes germanes tens? (Combien de sœurs?) → En tinc dues (J'en ai deux)\n- Quants diners tens? (Combien d'argent?) → No en tinc gaire (Je n'en ai pas beaucoup)\n\n⚠️ APOSTROPHE : devant une voyelle ou un h muet, en → n'\n- Quants anys tens? → En tinc 29 (consonne après → en)\n- Quantes cadires hi ha? → N'hi ha dues (devant 'hi' → n')\n\nAVEC HI HA (il y a) :\n- Hi ha tres cadires → N'hi ha tres (il y en a trois)\n- Hi ha cinc calaixos → N'hi ha cinc (il y en a cinq)\n\n💡 Retiens : en + hi → n'hi. Tout seul devant un verbe en consonne → en tinc.",
+    "en": "🔢 The pronoun EN replaces a quantity (like English 'I have two of them').\n\nUSAGE: used when stating a quantity, to avoid repeating the noun.\n- Quants anys tens? → En tinc 25 (I have 25)\n- Quantes germanes tens? → En tinc dues (I have two)\n- Quants diners tens? → No en tinc gaire (I don't have much)\n\n⚠️ APOSTROPHE: before a vowel or mute h, en → n'\n- Quantes cadires hi ha? → N'hi ha dues\n\nWITH HI HA (there is/are):\n- Hi ha tres cadires → N'hi ha tres (there are three of them)\n\n💡 en + hi → n'hi. Alone before a consonant verb → en tinc."
+  },
+  "drills": [
+    { "prompt": "« J'en ai 25 (ans) » → ___ 25 (verbe tenir)", "answer": "En tinc" },
+    { "prompt": "« J'en ai 29 (ans) » → ___ 29", "answer": "En tinc" },
+    { "prompt": "« J'en ai deux (sœurs) » → ___ dues", "answer": "En tinc" },
+    { "prompt": "« Je n'en ai pas beaucoup (argent) » → No ___ gaire", "answer": "en tinc" },
+    { "prompt": "« Il y en a trois (chaises) » → ___ ha tres", "answer": "N'hi" },
+    { "prompt": "« Il y en a cinq (tiroirs) » → ___ ha cinc", "answer": "N'hi" },
+    { "prompt": "« Il y en a deux » → ___ ha dues", "answer": "N'hi" },
+    { "prompt": "EN ou N' devant 'hi' ? → ___ hi ha tres", "answer": "N'" },
+    { "prompt": "EN ou N' devant 'tinc' (consonne) ? → ___ tinc 25", "answer": "En" },
+    { "prompt": "« Combien d'années as-tu ? » → en catalan", "answer": "Quants anys tens?" },
+    { "prompt": "« Combien de chaises y a-t-il ? » → en catalan", "answer": "Quantes cadires hi ha?" },
+    { "prompt": "« J'en ai deux (frères) » → phrase complète en catalan (germans)", "answer": "En tinc dos" }
+  ]
+}
