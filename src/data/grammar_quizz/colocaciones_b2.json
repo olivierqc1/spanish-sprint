@@ -1,0 +1,134 @@
+{
+  "id": "colocaciones_b2",
+  "title": {
+    "fr": "Collocations B2 (verbe + nom)",
+    "en": "B2 collocations (verb + noun)"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Au B2, on parle naturel quand on connaît les BLOCS de mots, pas les mots isolés. Voici les collocations verbe + nom les plus utiles.\n\n🎯 Logique : en espagnol le verbe qui accompagne un nom n'est pas toujours le calque du français.\n→ tomar una decisión (prendre une décision), pas \"prendre\"\n→ hacer hincapié (insister / mettre l'accent)\n→ prestar atención (prêter attention)\n→ correr un riesgo (courir un risque)\n→ dar por hecho (tenir pour acquis)\n\n💡 Apprends-les comme un seul mot. Quand tu écris au B2, place-en deux ou trois : ça fait tout de suite plus idiomatique.",
+    "en": "⚙ At B2 you sound natural when you know word CHUNKS, not isolated words. Here are the most useful verb + noun collocations.\n\n🎯 Logic: the verb paired with a noun isn't always the literal calque from English.\n→ tomar una decisión (to make a decision), not \"take\"\n→ hacer hincapié (to stress / emphasize)\n→ prestar atención (to pay attention)\n→ correr un riesgo (to run a risk)\n→ dar por hecho (to take for granted)\n\n💡 Learn them as single units. In B2 writing, dropping two or three makes you sound instantly more idiomatic."
+  },
+  "drills": [
+    {
+      "prompt": "___ una decisión importante. (prendre une décision)",
+      "answer": "tomar"
+    },
+    {
+      "prompt": "El profesor ___ hincapié en la gramática. (mettre l'accent / insister)",
+      "answer": "hace"
+    },
+    {
+      "prompt": "Hay que ___ atención a los detalles. (prêter attention)",
+      "answer": "prestar"
+    },
+    {
+      "prompt": "No quiero ___ ningún riesgo. (courir un risque)",
+      "answer": "correr"
+    },
+    {
+      "prompt": "Lo ___ por hecho sin preguntar. (tenir pour acquis)",
+      "answer": "doy"
+    },
+    {
+      "prompt": "Vamos a ___ a cabo el proyecto. (mener à bien)",
+      "answer": "llevar"
+    },
+    {
+      "prompt": "Tienes que ___ en cuenta el presupuesto. (tenir compte de)",
+      "answer": "tener"
+    },
+    {
+      "prompt": "El equipo ___ un objetivo ambicioso. (fixer un objectif)",
+      "answer": "se fija"
+    },
+    {
+      "prompt": "El gobierno ___ en marcha un nuevo plan. (mettre en route)",
+      "answer": "puso"
+    },
+    {
+      "prompt": "De estos datos podemos ___ conclusiones. (tirer des conclusions)",
+      "answer": "sacar"
+    },
+    {
+      "prompt": "El medicamento tardó en ___ efecto. (faire effet)",
+      "answer": "surtir"
+    },
+    {
+      "prompt": "Quiero ___ una pregunta al ponente. (poser une question)",
+      "answer": "hacer"
+    },
+    {
+      "prompt": "El tema empezó a ___ importancia. (prendre de l'importance)",
+      "answer": "cobrar"
+    },
+    {
+      "prompt": "Debes ___ la responsabilidad de tus actos. (assumer la responsabilité)",
+      "answer": "asumir"
+    },
+    {
+      "prompt": "No le ___ caso a los rumores. (ne pas faire attention / ignorer)",
+      "answer": "hago"
+    },
+    {
+      "prompt": "Poco a poco tomé ___ de la situación. (prendre conscience)",
+      "answer": "conciencia"
+    },
+    {
+      "prompt": "El atleta ___ un récord mundial. (battre un record)",
+      "answer": "batió"
+    },
+    {
+      "prompt": "Es hora de ___ cara al problema. (faire face)",
+      "answer": "hacer"
+    },
+    {
+      "prompt": "El nuevo dato ___ luz sobre el caso. (faire la lumière)",
+      "answer": "arroja"
+    },
+    {
+      "prompt": "Quiero ___ un papel más activo en el equipo. (jouer un rôle)",
+      "answer": "desempeñar"
+    },
+    {
+      "prompt": "No ___ las cosas por sentado. (tenir pour acquis)",
+      "answer": "des"
+    },
+    {
+      "prompt": "El informe ___ a la luz varios errores. (mettre au jour)",
+      "answer": "saca"
+    },
+    {
+      "prompt": "Hay que ___ medidas urgentes. (prendre des mesures)",
+      "answer": "tomar"
+    },
+    {
+      "prompt": "La empresa ___ pérdidas este año. (subir / essuyer des pertes)",
+      "answer": "sufrió"
+    },
+    {
+      "prompt": "Voy a ___ una cita con el médico. (prendre rendez-vous)",
+      "answer": "pedir"
+    },
+    {
+      "prompt": "Su discurso ___ polémica. (susciter la polémique)",
+      "answer": "levantó"
+    },
+    {
+      "prompt": "Tienes que ___ un esfuerzo. (faire un effort)",
+      "answer": "hacer"
+    },
+    {
+      "prompt": "El proyecto ___ frutos al cabo de un año. (porter ses fruits)",
+      "answer": "dio"
+    },
+    {
+      "prompt": "Quiero ___ provecho de esta oportunidad. (tirer profit)",
+      "answer": "sacar"
+    },
+    {
+      "prompt": "Debemos ___ un compromiso. (prendre un engagement)",
+      "answer": "asumir"
+    }
+  ]
+}
