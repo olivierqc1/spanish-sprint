@@ -102,3 +102,4 @@ export function totalMistakes(): number {
 export function clearErrorLog(): void {
   save({});
 }
+ 
