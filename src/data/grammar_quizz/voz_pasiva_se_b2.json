@@ -1,0 +1,126 @@
+{
+  "id": "voz_pasiva_se_b2",
+  "title": {
+    "fr": "Voix passive et SE (passif / impersonnel) — B2.1",
+    "en": "Passive voice and SE (passive / impersonal) — B2.1"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Trois façons d'effacer ou de reculer l'agent. Le B2 sait choisir.\n\n─────────────────────────────\n🎯 PASSIVE avec SER + participe (formelle, écrite)\nOn nomme souvent l'agent avec POR. Le participe s'accorde.\n→ El puente fue construido en 1920. (Le pont fut construit en 1920)\n→ Las leyes fueron aprobadas por el Parlamento. (Les lois ont été votées par le Parlement)\n\n─────────────────────────────\n🎯 PASSIVE REFLÉCHIE avec SE (la plus courante)\nSE + verbe à la 3e personne, accordé avec le sujet. Pas d'agent.\n→ Se vende este piso. (Cet appartement est à vendre)\n→ Se necesitan camareros. (On cherche des serveurs / des serveurs sont recherchés)\n\n─────────────────────────────\n🎯 SE IMPERSONNEL (sujet = on, les gens)\nSE + verbe TOUJOURS au singulier. Pas de sujet grammatical.\n→ En España se cena tarde. (En Espagne on dîne tard)\n→ Aquí se vive muy bien. (Ici on vit très bien)\n\n⚡ Piège classique : avec un nom pluriel, c'est la passive réfléchie qui s'accorde (se venden pisos), pas l'impersonnel.\n\n💡 ESTAR + participe = résultat, pas action : La puerta está cerrada (état) vs La puerta fue cerrada por el guardia (action passive).",
+    "en": "⚙ Three ways to remove or background the agent. A B2 learner picks the right one.\n\n─────────────────────────────\n🎯 PASSIVE with SER + participle (formal, written)\nThe agent is often named with POR. The participle agrees.\n→ El puente fue construido en 1920. (The bridge was built in 1920)\n→ Las leyes fueron aprobadas por el Parlamento. (The laws were passed by Parliament)\n\n─────────────────────────────\n🎯 REFLEXIVE PASSIVE with SE (most common)\nSE + 3rd person verb, agreeing with the subject. No agent.\n→ Se vende este piso. (This flat is for sale)\n→ Se necesitan camareros. (Waiters are needed)\n\n─────────────────────────────\n🎯 IMPERSONAL SE (subject = one, people)\nSE + verb ALWAYS singular. No grammatical subject.\n→ En España se cena tarde. (In Spain people dine late)\n→ Aquí se vive muy bien. (Here one lives very well)\n\n⚡ Classic trap: with a plural noun it's the reflexive passive that agrees (se venden pisos), not the impersonal.\n\n💡 ESTAR + participle = result, not action: La puerta está cerrada (state) vs La puerta fue cerrada por el guardia (passive action)."
+  },
+  "drills": [
+    {
+      "prompt": "El puente ___ (construir) en 1920. (passive avec ser)",
+      "answer": "fue construido"
+    },
+    {
+      "prompt": "En este edificio ___ (vender) pisos. (passive réfléchie, pl)",
+      "answer": "se venden"
+    },
+    {
+      "prompt": "En esta tienda ___ (hablar) francés. (passive réfléchie, sg)",
+      "answer": "se habla"
+    },
+    {
+      "prompt": "En España ___ (cenar) muy tarde. (se impersonnel)",
+      "answer": "se cena"
+    },
+    {
+      "prompt": "Las entradas ___ (agotar) en una hora. (passive réfléchie, passé)",
+      "answer": "se agotaron"
+    },
+    {
+      "prompt": "El acuerdo ___ (firmar) ayer por los dos presidentes. (passive avec ser)",
+      "answer": "fue firmado"
+    },
+    {
+      "prompt": "Aquí no ___ (poder) fumar. (se impersonnel)",
+      "answer": "se puede"
+    },
+    {
+      "prompt": "___ (necesitar) camareros con experiencia. (passive réfléchie, pl)",
+      "answer": "Se necesitan"
+    },
+    {
+      "prompt": "La novela ___ (traducir) a diez idiomas. (passive avec ser)",
+      "answer": "fue traducida"
+    },
+    {
+      "prompt": "En Cataluña ___ (vivir) muy bien. (se impersonnel)",
+      "answer": "se vive"
+    },
+    {
+      "prompt": "Las casas antiguas ___ (restaurar) el año pasado. (passive avec ser, pl)",
+      "answer": "fueron restauradas"
+    },
+    {
+      "prompt": "___ (buscar) piso en el centro. (passive réfléchie, sg)",
+      "answer": "Se busca"
+    },
+    {
+      "prompt": "En este restaurante ___ (comer) muy bien. (se impersonnel)",
+      "answer": "se come"
+    },
+    {
+      "prompt": "Los resultados ___ (publicar) mañana. (passive réfléchie, pl, futur)",
+      "answer": "se publicarán"
+    },
+    {
+      "prompt": "El cuadro ___ (pintar) por un artista catalán. (passive avec ser)",
+      "answer": "fue pintado"
+    },
+    {
+      "prompt": "Aquí ___ (trabajar) mucho y ___ ... no. Aquí ___ (trabajar) demasiado. (se impersonnel)",
+      "answer": "se trabaja"
+    },
+    {
+      "prompt": "___ (alquilar) habitaciones a estudiantes. (passive réfléchie, pl)",
+      "answer": "Se alquilan"
+    },
+    {
+      "prompt": "La reunión ___ (cancelar) por falta de tiempo. (passive avec ser)",
+      "answer": "fue cancelada"
+    },
+    {
+      "prompt": "En verano ___ (dormir) con las ventanas abiertas. (se impersonnel)",
+      "answer": "se duerme"
+    },
+    {
+      "prompt": "Los documentos ya ___ (enviar) a la oficina. (passive réfléchie, pl, passé)",
+      "answer": "se enviaron"
+    },
+    {
+      "prompt": "El premio ___ (entregar) por el alcalde. (passive avec ser)",
+      "answer": "fue entregado"
+    },
+    {
+      "prompt": "No ___ (saber) cuándo llegará el tren. (se impersonnel)",
+      "answer": "se sabe"
+    },
+    {
+      "prompt": "En esta zona ___ (construir) muchos edificios nuevos. (passive réfléchie, pl, présent)",
+      "answer": "se construyen"
+    },
+    {
+      "prompt": "La ley ___ (aprobar) tras un largo debate. (passive avec ser)",
+      "answer": "fue aprobada"
+    },
+    {
+      "prompt": "Desde aquí ___ (ver) toda la ciudad. (se impersonnel)",
+      "answer": "se ve"
+    },
+    {
+      "prompt": "Las fotos ___ (tomar) durante el viaje. (passive avec ser, pl)",
+      "answer": "fueron tomadas"
+    },
+    {
+      "prompt": "___ (prohibir) la entrada a menores. (passive réfléchie, sg)",
+      "answer": "Se prohíbe"
+    },
+    {
+      "prompt": "En este pueblo ___ (hablar) catalán y castellano. (passive réfléchie, pl)",
+      "answer": "se hablan"
+    }
+  ]
+}
