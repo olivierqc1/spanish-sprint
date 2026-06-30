@@ -20,9 +20,10 @@ type Props = {
   drills: Drill[];
   onClose: () => void;
   language?: 'fr' | 'en';
+  onAnswer?: (correct: boolean, drill: Drill) => void;
 };
 
-export default function GrammarDrill({ title, note, visual, drills, onClose, language = 'fr' }: Props) {
+export default function GrammarDrill({ title, note, visual, drills, onClose, language = 'fr', onAnswer }: Props) {
   const [showExplanationPanel, setShowExplanationPanel] = useState(true);
   const [hasStarted, setHasStarted] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -52,6 +53,7 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
     const correct = normalizeAnswer(userAnswer) === normalizeAnswer(currentDrill.answer);
     setFeedback(correct ? "correct" : "incorrect");
     if (correct) setScore(score + 1);
+    onAnswer?.(correct, currentDrill);
   };
 
   const nextDrill = () => {
