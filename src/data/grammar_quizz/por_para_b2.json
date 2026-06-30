@@ -1,0 +1,110 @@
+{
+  "id": "por_para_b2",
+  "title": {
+    "fr": "Por et para — B2.1",
+    "en": "Por and para — B2.1"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ La distinction la plus persistante. Question clé : cause/parcours (POR) ou but/destination (PARA) ?\n\n🎯 POR : cause, motif, moyen, échange, durée, lieu de passage, « par » de la passive.\n→ Lo hice por ti. (Je l'ai fait pour toi = à cause de / pour ton bien)\n→ Pasé por el centro. (Je suis passé par le centre)\n→ Gracias por venir. (Merci d'être venu = motif)\n→ 50 euros por la entrada. (50 euros pour le billet = échange)\n\n🎯 PARA : but, finalité, destinataire, échéance, direction, opinion.\n→ Estudio para aprobar. (J'étudie pour réussir)\n→ Esto es para ti. (C'est pour toi = destinataire)\n→ Lo necesito para el lunes. (Pour lundi = échéance)\n→ Salgo para Madrid. (Je pars pour Madrid = direction)\n\n💡 Truc : POR = pourquoi / par où (regard en arrière) ; PARA = pour quoi faire / vers où (regard en avant).",
+    "en": "⚙ The most persistent distinction. Key question: cause/path (POR) or goal/destination (PARA)?\n\n🎯 POR: cause, reason, means, exchange, duration, place passed through, passive \"by\".\n→ Lo hice por ti. (I did it for you = for your sake)\n→ Pasé por el centro. (I went through the centre)\n→ Gracias por venir. (Thanks for coming = reason)\n→ 50 euros por la entrada. (50 euros for the ticket = exchange)\n\n🎯 PARA: goal, purpose, recipient, deadline, direction, opinion.\n→ Estudio para aprobar. (I study to pass)\n→ Esto es para ti. (This is for you = recipient)\n→ Lo necesito para el lunes. (For Monday = deadline)\n→ Salgo para Madrid. (I'm leaving for Madrid = direction)\n\n💡 Tip: POR = why / through where (looking back); PARA = what for / towards where (looking forward)."
+  },
+  "drills": [
+    {
+      "prompt": "Estudio mucho ___ aprobar el examen. (but)",
+      "answer": "para"
+    },
+    {
+      "prompt": "Gracias ___ tu ayuda. (motif)",
+      "answer": "por"
+    },
+    {
+      "prompt": "Este regalo es ___ ti. (destinataire)",
+      "answer": "para"
+    },
+    {
+      "prompt": "Pagué veinte euros ___ el libro. (échange)",
+      "answer": "por"
+    },
+    {
+      "prompt": "Salimos ___ Barcelona mañana. (direction)",
+      "answer": "para"
+    },
+    {
+      "prompt": "Caminamos ___ el parque. (lieu de passage)",
+      "answer": "por"
+    },
+    {
+      "prompt": "Necesito el informe ___ el viernes. (échéance)",
+      "answer": "para"
+    },
+    {
+      "prompt": "Lo hice ___ ayudarte. (but)",
+      "answer": "para"
+    },
+    {
+      "prompt": "No pude dormir ___ el ruido. (cause)",
+      "answer": "por"
+    },
+    {
+      "prompt": "La novela fue escrita ___ García Márquez. (agent passif)",
+      "answer": "por"
+    },
+    {
+      "prompt": "Trabajo ___ una empresa francesa. (pour = au service de)",
+      "answer": "para"
+    },
+    {
+      "prompt": "Estuvimos en Madrid ___ tres días. (durée)",
+      "answer": "por"
+    },
+    {
+      "prompt": "___ mí, esta es la mejor opción. (opinion)",
+      "answer": "Para"
+    },
+    {
+      "prompt": "Te llamo ___ teléfono esta tarde. (moyen)",
+      "answer": "por"
+    },
+    {
+      "prompt": "Estudia ___ médico. (but = devenir)",
+      "answer": "para"
+    },
+    {
+      "prompt": "Cambié mi coche ___ uno más pequeño. (échange)",
+      "answer": "por"
+    },
+    {
+      "prompt": "Esto es muy difícil ___ un principiante. (point de vue)",
+      "answer": "para"
+    },
+    {
+      "prompt": "Lo felicitaron ___ su trabajo. (motif)",
+      "answer": "por"
+    },
+    {
+      "prompt": "Vengo ___ recoger un paquete. (but)",
+      "answer": "para"
+    },
+    {
+      "prompt": "Pasamos ___ tu casa de camino. (lieu de passage)",
+      "answer": "por"
+    },
+    {
+      "prompt": "El tren ___ Valencia sale a las ocho. (destination)",
+      "answer": "para"
+    },
+    {
+      "prompt": "Te doy las gracias ___ haber venido. (motif)",
+      "answer": "por"
+    },
+    {
+      "prompt": "Necesito gafas ___ leer. (but)",
+      "answer": "para"
+    },
+    {
+      "prompt": "Lo vendió ___ cien euros. (échange)",
+      "answer": "por"
+    }
+  ]
+}
