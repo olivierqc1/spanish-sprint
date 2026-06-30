@@ -1,0 +1,110 @@
+{
+  "id": "condicionales_b2",
+  "title": {
+    "fr": "Phrases conditionnelles — B2.1",
+    "en": "Conditional sentences — B2.1"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Trois degrés de condition, plus les connecteurs au-delà de « si ».\n\n🎯 CONDITION RÉELLE (probable) : si + indicatif présent + présent/futur/impératif.\n→ Si tienes tiempo, ven. (Si tu as le temps, viens)\n→ Si estudias, aprobarás. (Si tu études, tu réussiras)\n\n🎯 CONDITION IRRÉELLE du présent : si + subjonctif imparfait + conditionnel.\n→ Si tuviera dinero, viajaría. (Si j'avais de l'argent, je voyagerais)\n\n🎯 AUTRES CONNECTEURS + SUBJONCTIF :\nsiempre que / siempre y cuando (à condition que), a no ser que (à moins que), con tal de que (pourvu que), en caso de que (au cas où).\n→ Iré siempre que no llueva. (J'irai à condition qu'il ne pleuve pas)\n\n⚡ SOLO SI + indicatif (solo si quieres). Mais a no ser que, con tal de que... → toujours subjonctif.",
+    "en": "⚙ Three degrees of condition, plus connectors beyond \"si\".\n\n🎯 REAL (likely) condition: si + present indicative + present/future/imperative.\n→ Si tienes tiempo, ven. (If you have time, come)\n→ Si estudias, aprobarás. (If you study, you'll pass)\n\n🎯 UNREAL present condition: si + imperfect subjunctive + conditional.\n→ Si tuviera dinero, viajaría. (If I had money, I'd travel)\n\n🎯 OTHER CONNECTORS + SUBJUNCTIVE:\nsiempre que / siempre y cuando (provided that), a no ser que (unless), con tal de que (as long as), en caso de que (in case).\n→ Iré siempre que no llueva. (I'll go provided it doesn't rain)\n\n⚡ SOLO SI + indicative (solo si quieres). But a no ser que, con tal de que... → always subjunctive."
+  },
+  "drills": [
+    {
+      "prompt": "Si ___ (tener, tú) tiempo, llámame. (réelle)",
+      "answer": "tienes"
+    },
+    {
+      "prompt": "Si ___ (tener, yo) dinero, me compraría un coche. (irréelle)",
+      "answer": "tuviera"
+    },
+    {
+      "prompt": "Si estudias, ___ (aprobar, tú). (réelle, futur)",
+      "answer": "aprobarás"
+    },
+    {
+      "prompt": "Iré a la fiesta siempre que ___ (venir, tú) también. (siempre que + subj)",
+      "answer": "vengas"
+    },
+    {
+      "prompt": "No saldremos a no ser que ___ (parar) de llover. (a no ser que + subj)",
+      "answer": "pare"
+    },
+    {
+      "prompt": "Si ___ (poder, yo), te ayudaría ahora mismo. (irréelle)",
+      "answer": "pudiera"
+    },
+    {
+      "prompt": "Te presto el coche con tal de que ___ (conducir, tú) con cuidado. (con tal de que + subj)",
+      "answer": "conduzcas"
+    },
+    {
+      "prompt": "En caso de que ___ (haber) problemas, llámanos. (en caso de que + subj)",
+      "answer": "haya"
+    },
+    {
+      "prompt": "Si ___ (hacer) buen tiempo mañana, iremos a la playa. (réelle)",
+      "answer": "hace"
+    },
+    {
+      "prompt": "Si ___ (ser, yo) tú, no lo haría. (irréelle)",
+      "answer": "fuera"
+    },
+    {
+      "prompt": "Lo haré solo si me lo ___ (pedir, tú) tú. (solo si + indic)",
+      "answer": "pides"
+    },
+    {
+      "prompt": "Si ___ (saber, yo) la respuesta, te la diría. (irréelle)",
+      "answer": "supiera"
+    },
+    {
+      "prompt": "Puedes quedarte siempre y cuando ___ (respetar, tú) las normas. (+ subj)",
+      "answer": "respetes"
+    },
+    {
+      "prompt": "Si ___ (llover), cogeremos un taxi. (réelle)",
+      "answer": "llueve"
+    },
+    {
+      "prompt": "No iré a no ser que tú ___ (acompañar) me. (a no ser que + subj)",
+      "answer": "acompañes"
+    },
+    {
+      "prompt": "Si ___ (vivir, nosotros) cerca, nos veríamos más. (irréelle)",
+      "answer": "viviéramos"
+    },
+    {
+      "prompt": "Te llamaré en caso de que ___ (cambiar) los planes. (+ subj)",
+      "answer": "cambien"
+    },
+    {
+      "prompt": "Si me ___ (escribir, tú), te contesto enseguida. (réelle)",
+      "answer": "escribes"
+    },
+    {
+      "prompt": "Con tal de que ___ (estar) cómodo, me da igual el sitio. (+ subj)",
+      "answer": "esté"
+    },
+    {
+      "prompt": "Si ___ (tener, ellos) más experiencia, los contrataríamos. (irréelle)",
+      "answer": "tuvieran"
+    },
+    {
+      "prompt": "Saldré solo si ___ (terminar, yo) el trabajo. (solo si + indic)",
+      "answer": "termino"
+    },
+    {
+      "prompt": "Siempre que ___ (poder, yo), voy a correr por la mañana. (habitude, + subj)",
+      "answer": "pueda"
+    },
+    {
+      "prompt": "Si ___ (estudiar, tú) más, habrías aprobado. → en présent : si estudiaras más, aprobarías. (irréelle)",
+      "answer": "estudiaras"
+    },
+    {
+      "prompt": "En caso de que no ___ (llegar, yo) a tiempo, empezad sin mí. (+ subj)",
+      "answer": "llegue"
+    }
+  ]
+}
