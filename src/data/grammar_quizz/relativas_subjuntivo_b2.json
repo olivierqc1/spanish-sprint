@@ -1,0 +1,110 @@
+{
+  "id": "relativas_subjuntivo_b2",
+  "title": {
+    "fr": "Relatives et subjonctif — B2.1",
+    "en": "Relative clauses and subjunctive — B2.1"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Le choix indicatif/subjonctif dans la relative dépend de l'antécédent : connu ou non.\n\n🎯 ANTÉCÉDENT CONNU / EXISTANT → INDICATIF.\n→ Tengo un amigo que habla ruso. (J'ai un ami qui parle russe — il existe)\n\n🎯 ANTÉCÉDENT INCONNU, RECHERCHÉ ou INEXISTANT → SUBJONCTIF.\n→ Busco un amigo que hable ruso. (Je cherche un ami qui parle russe — pas encore trouvé)\n→ No hay nadie que sepa la respuesta. (Personne ne sait — inexistant)\n\n🎯 LES PRONOMS RELATIFS :\nque (le plus courant), quien/quienes (personnes, après préposition), cuyo/a/os/as (dont, possession, s'accorde avec le nom suivant).\n→ El chico con quien hablé. (Le garçon avec qui j'ai parlé)\n→ Una empresa cuyos empleados... (Une entreprise dont les employés...)\n\n💡 Test rapide : si tu peux pointer la chose/personne du doigt → indicatif. Si elle est hypothétique ou cherchée → subjonctif.",
+    "en": "⚙ The indicative/subjunctive choice in a relative clause depends on the antecedent: known or not.\n\n🎯 KNOWN / EXISTING antecedent → INDICATIVE.\n→ Tengo un amigo que habla ruso. (I have a friend who speaks Russian — he exists)\n\n🎯 UNKNOWN, SOUGHT or NON-EXISTENT antecedent → SUBJUNCTIVE.\n→ Busco un amigo que hable ruso. (I'm looking for a friend who speaks Russian)\n→ No hay nadie que sepa la respuesta. (There's no one who knows)\n\n🎯 RELATIVE PRONOUNS:\nque (most common), quien/quienes (people, after prepositions), cuyo/a/os/as (whose, agrees with the following noun).\n→ El chico con quien hablé. (The boy I spoke with)\n→ Una empresa cuyos empleados... (A company whose employees...)\n\n💡 Quick test: if you can point at the thing/person → indicative. If it's hypothetical or sought → subjunctive."
+  },
+  "drills": [
+    {
+      "prompt": "Tengo un coche que ___ (ser) muy rápido. (antécédent réel)",
+      "answer": "es"
+    },
+    {
+      "prompt": "Busco un piso que ___ (tener) balcón. (recherché)",
+      "answer": "tenga"
+    },
+    {
+      "prompt": "Conozco a alguien que ___ (hablar) cinco idiomas. (réel)",
+      "answer": "habla"
+    },
+    {
+      "prompt": "No hay nadie que ___ (saber) la solución. (inexistant)",
+      "answer": "sepa"
+    },
+    {
+      "prompt": "Necesito una persona que ___ (poder) empezar ya. (recherché)",
+      "answer": "pueda"
+    },
+    {
+      "prompt": "Esta es la casa donde ___ (vivir, yo) de niño. (réel)",
+      "answer": "vivía"
+    },
+    {
+      "prompt": "Quiero un trabajo que me ___ (gustar) de verdad. (recherché)",
+      "answer": "guste"
+    },
+    {
+      "prompt": "Tengo amigos que ___ (vivir) en Madrid. (réel)",
+      "answer": "viven"
+    },
+    {
+      "prompt": "¿Hay alguien aquí que ___ (entender) catalán? (incertain)",
+      "answer": "entienda"
+    },
+    {
+      "prompt": "El médico con ___ hablé es muy bueno. (préposition + personne)",
+      "answer": "quien"
+    },
+    {
+      "prompt": "Es una empresa ___ productos se venden en todo el mundo. (dont + nom)",
+      "answer": "cuyos"
+    },
+    {
+      "prompt": "No conozco ningún restaurante que ___ (abrir) los lunes. (inexistant)",
+      "answer": "abra"
+    },
+    {
+      "prompt": "Compré el libro que me ___ (recomendar) tú. (réel, passé)",
+      "answer": "recomendaste"
+    },
+    {
+      "prompt": "Buscamos voluntarios que ___ (querer) ayudar. (recherché)",
+      "answer": "quieran"
+    },
+    {
+      "prompt": "Tengo una vecina ___ hijo es médico. (dont + nom sg)",
+      "answer": "cuyo"
+    },
+    {
+      "prompt": "Los estudiantes que ___ (aprobar) recibirán el diploma. (réel, futur logique→présent)",
+      "answer": "aprueben"
+    },
+    {
+      "prompt": "Hay un parque cerca que ___ (ser) precioso. (réel)",
+      "answer": "es"
+    },
+    {
+      "prompt": "Quiero comprar algo que ___ (durar) muchos años. (recherché)",
+      "answer": "dure"
+    },
+    {
+      "prompt": "Esa es la profesora de ___ te hablé. (préposition + personne)",
+      "answer": "quien"
+    },
+    {
+      "prompt": "No encuentro las llaves que ___ (dejar, yo) aquí. (réel, passé)",
+      "answer": "dejé"
+    },
+    {
+      "prompt": "Necesitamos a alguien que ___ (tener) experiencia. (recherché)",
+      "answer": "tenga"
+    },
+    {
+      "prompt": "Tengo un amigo que ___ (trabajar) en un banco. (réel)",
+      "answer": "trabaja"
+    },
+    {
+      "prompt": "¿Conoces a alguien que ___ (poder) traducirlo? (incertain)",
+      "answer": "pueda"
+    },
+    {
+      "prompt": "Es un autor ___ novelas me encantan. (dont + nom pl)",
+      "answer": "cuyas"
+    }
+  ]
+}
