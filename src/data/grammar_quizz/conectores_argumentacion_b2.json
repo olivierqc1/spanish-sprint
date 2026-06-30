@@ -1,0 +1,126 @@
+{
+  "id": "conectores_argumentacion_b2",
+  "title": {
+    "fr": "Connecteurs et argumentation — B2.1",
+    "en": "Connectors and argumentation — B2.1"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Les connecteurs structurent un texte argumentatif. Choisis selon la relation logique.\n\n─────────────────────────────\n🎯 OPPOSITION / CONCESSION\nsin embargo (cependant), no obstante (néanmoins, formel), en cambio (en revanche), a pesar de + nom (malgré), aunque + subj/ind (bien que).\n→ Es caro; sin embargo, lo compré. (C'est cher ; cependant je l'ai acheté)\n→ A pesar de la lluvia, salimos. (Malgré la pluie, on est sortis)\n\n─────────────────────────────\n🎯 CAUSE et CONSÉQUENCE\npor lo tanto / por consiguiente (par conséquent), así que (du coup), dado que / ya que (puisque, étant donné que), debido a (à cause de).\n→ Estudié mucho; por lo tanto, aprobé. (J'ai beaucoup étudié, par conséquent j'ai réussi)\n→ Dado que es tarde, terminamos. (Étant donné qu'il est tard, on arrête)\n\n─────────────────────────────\n🎯 AJOUT et ORGANISATION\nademás (de plus), por un lado... por otro (d'une part... d'autre part), en cuanto a (quant à), en resumen (en résumé), de hecho (en fait).\n→ En cuanto al precio, es razonable. (Quant au prix, il est raisonnable)\n\n⚡ AUNQUE : indicatif si le fait est réel/connu (aunque llueve, salgo), subjonctif si hypothétique (aunque llueva, saldré).\n\n💡 À l'écrit B2, varier les connecteurs vaut des points : remplace \"pero\" par sin embargo / no obstante selon le registre.",
+    "en": "⚙ Connectors structure an argumentative text. Choose by the logical relation.\n\n─────────────────────────────\n🎯 OPPOSITION / CONCESSION\nsin embargo (however), no obstante (nevertheless, formal), en cambio (on the other hand), a pesar de + noun (despite), aunque + subj/ind (although).\n→ Es caro; sin embargo, lo compré. (It's expensive; however I bought it)\n→ A pesar de la lluvia, salimos. (Despite the rain, we went out)\n\n─────────────────────────────\n🎯 CAUSE and CONSEQUENCE\npor lo tanto / por consiguiente (therefore), así que (so), dado que / ya que (given that, since), debido a (due to).\n→ Estudié mucho; por lo tanto, aprobé. (I studied a lot; therefore I passed)\n→ Dado que es tarde, terminamos. (Since it's late, we'll stop)\n\n─────────────────────────────\n🎯 ADDITION and ORGANIZATION\nademás (besides), por un lado... por otro (on one hand... on the other), en cuanto a (as for), en resumen (in short), de hecho (in fact).\n→ En cuanto al precio, es razonable. (As for the price, it's reasonable)\n\n⚡ AUNQUE: indicative if the fact is real/known (aunque llueve, salgo), subjunctive if hypothetical (aunque llueva, saldré).\n\n💡 In B2 writing, varying connectors earns points: swap \"pero\" for sin embargo / no obstante depending on register."
+  },
+  "drills": [
+    {
+      "prompt": "Estudié mucho; ___ , aprobé el examen. (par conséquent)",
+      "answer": "por lo tanto"
+    },
+    {
+      "prompt": "Es caro; ___ , decidí comprarlo. (cependant)",
+      "answer": "sin embargo"
+    },
+    {
+      "prompt": "___ que llueva mañana, iremos de excursión. (bien que + hypothèse)",
+      "answer": "Aunque"
+    },
+    {
+      "prompt": "Está agotado; ___ , sigue trabajando. (néanmoins, formel)",
+      "answer": "no obstante"
+    },
+    {
+      "prompt": "A mí me gusta el mar; ___ , ella prefiere la montaña. (en revanche)",
+      "answer": "en cambio"
+    },
+    {
+      "prompt": "___ la lluvia, hicimos la caminata. (malgré + nom)",
+      "answer": "A pesar de"
+    },
+    {
+      "prompt": "No tengo tiempo, ___ no puedo ir. (du coup)",
+      "answer": "así que"
+    },
+    {
+      "prompt": "___ al precio, me parece razonable. (quant à)",
+      "answer": "En cuanto"
+    },
+    {
+      "prompt": "___ que ya es muy tarde, lo dejamos aquí. (étant donné que)",
+      "answer": "Dado"
+    },
+    {
+      "prompt": "El plan es bueno; ___ , tiene algún riesgo. (de plus / en outre)",
+      "answer": "además"
+    },
+    {
+      "prompt": "Por un lado es cómodo; ___ , es caro. (d'autre part)",
+      "answer": "por otro"
+    },
+    {
+      "prompt": "Llegó tarde ___ a un problema en el metro. (à cause de)",
+      "answer": "debido"
+    },
+    {
+      "prompt": "___ , la propuesta es viable y rentable. (en résumé)",
+      "answer": "En resumen"
+    },
+    {
+      "prompt": "Dice que no le importa; ___ , sí le afecta. (en fait / en réalité)",
+      "answer": "de hecho"
+    },
+    {
+      "prompt": "Trabaja mucho; ___ , gana poco. (pourtant / cependant)",
+      "answer": "sin embargo"
+    },
+    {
+      "prompt": "___ estaba cansado, terminó la maratón. (bien que + fait réel)",
+      "answer": "Aunque"
+    },
+    {
+      "prompt": "No estudió; ___ , suspendió. (par conséquent, formel)",
+      "answer": "por consiguiente"
+    },
+    {
+      "prompt": "Madrid es grande; ___ , Barcelona es más turística. (en revanche)",
+      "answer": "en cambio"
+    },
+    {
+      "prompt": "___ del frío, la gente salió a la calle. (malgré + nom)",
+      "answer": "A pesar"
+    },
+    {
+      "prompt": "Ya hemos decidido, ___ no hay nada más que hablar. (du coup)",
+      "answer": "así que"
+    },
+    {
+      "prompt": "El producto es bueno; ___ , es barato. (de plus)",
+      "answer": "además"
+    },
+    {
+      "prompt": "___ a la fecha, todavía no está confirmada. (quant à)",
+      "answer": "En cuanto"
+    },
+    {
+      "prompt": "Hizo todo lo posible; ___ , no lo consiguió. (néanmoins)",
+      "answer": "no obstante"
+    },
+    {
+      "prompt": "___ que tú lo dices, te creo. (puisque)",
+      "answer": "Ya"
+    },
+    {
+      "prompt": "Llovía mucho; ___ , decidimos quedarnos. (par conséquent)",
+      "answer": "por lo tanto"
+    },
+    {
+      "prompt": "No me llamó; ___ , me enteré por otra persona. (en fait)",
+      "answer": "de hecho"
+    },
+    {
+      "prompt": "___ no tengamos dinero, encontraremos una solución. (bien que + hypothèse)",
+      "answer": "Aunque"
+    },
+    {
+      "prompt": "Es tarde; ___ , aún podemos llegar. (cependant)",
+      "answer": "sin embargo"
+    }
+  ]
+}
