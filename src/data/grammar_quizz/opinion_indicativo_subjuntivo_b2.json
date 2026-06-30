@@ -1,0 +1,126 @@
+{
+  "id": "opinion_indicativo_subjuntivo_b2",
+  "title": {
+    "fr": "Opinion : indicatif ou subjonctif — B2.1",
+    "en": "Opinion: indicative or subjunctive — B2.1"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ La règle d'or de l'opinion : AFFIRMER → indicatif ; NIER, DOUTER ou VALORISER → subjonctif.\n\n─────────────────────────────\n🎯 AFFIRMATION → INDICATIF\ncreo que, pienso que, me parece que, está claro que, es evidente/verdad que.\n→ Creo que tiene razón. (Je crois qu'il a raison)\n→ Está claro que necesitamos ayuda. (C'est clair qu'on a besoin d'aide)\n\n─────────────────────────────\n🎯 NÉGATION de l'opinion → SUBJONCTIF\nno creo que, no pienso que, no me parece que, no es verdad/cierto que.\n→ No creo que tenga razón. (Je ne crois pas qu'il ait raison)\n→ No es verdad que sea fácil. (Ce n'est pas vrai que ce soit facile)\n\n─────────────────────────────\n🎯 VALORISATION / DOUTE → SUBJONCTIF\nes importante/necesario/lógico/normal que, es una pena que, dudo que, no estoy seguro de que.\n→ Es importante que estudies más. (Il est important que tu étudies plus)\n→ Dudo que vengan. (Je doute qu'ils viennent)\n\n⚡ Attention : la valorisation reste au subjonctif même affirmative (es lógico que + subj), contrairement à l'opinion qui bascule seulement à la négation.\n\n💡 Question : ¿Crees que viene/venga? Les deux existent — indicatif si tu penses que oui, subjonctif si tu doutes.",
+    "en": "⚙ The golden rule of opinion: ASSERT → indicative; DENY, DOUBT or EVALUATE → subjunctive.\n\n─────────────────────────────\n🎯 ASSERTION → INDICATIVE\ncreo que, pienso que, me parece que, está claro que, es evidente/verdad que.\n→ Creo que tiene razón. (I think he's right)\n→ Está claro que necesitamos ayuda. (It's clear we need help)\n\n─────────────────────────────\n🎯 NEGATED opinion → SUBJUNCTIVE\nno creo que, no pienso que, no me parece que, no es verdad/cierto que.\n→ No creo que tenga razón. (I don't think he's right)\n→ No es verdad que sea fácil. (It's not true that it's easy)\n\n─────────────────────────────\n🎯 EVALUATION / DOUBT → SUBJUNCTIVE\nes importante/necesario/lógico/normal que, es una pena que, dudo que, no estoy seguro de que.\n→ Es importante que estudies más. (It's important that you study more)\n→ Dudo que vengan. (I doubt they'll come)\n\n⚡ Note: evaluation stays subjunctive even when affirmative (es lógico que + subj), unlike opinion which only flips when negated.\n\n💡 Question: ¿Crees que viene/venga? Both exist — indicative if you lean yes, subjunctive if you doubt."
+  },
+  "drills": [
+    {
+      "prompt": "Creo que él ___ (tener) razón.",
+      "answer": "tiene"
+    },
+    {
+      "prompt": "No creo que él ___ (tener) razón.",
+      "answer": "tenga"
+    },
+    {
+      "prompt": "Es evidente que ___ (estar, nosotros) cansados.",
+      "answer": "estamos"
+    },
+    {
+      "prompt": "No es verdad que ___ (ser) tan fácil.",
+      "answer": "sea"
+    },
+    {
+      "prompt": "Es importante que ___ (estudiar, tú) más.",
+      "answer": "estudies"
+    },
+    {
+      "prompt": "Me parece que ___ (ir) a llover.",
+      "answer": "va"
+    },
+    {
+      "prompt": "No me parece que ___ (valer) la pena.",
+      "answer": "valga"
+    },
+    {
+      "prompt": "Está claro que ___ (necesitar, nosotros) más tiempo.",
+      "answer": "necesitamos"
+    },
+    {
+      "prompt": "Dudo que ___ (venir, ellos) a la fiesta.",
+      "answer": "vengan"
+    },
+    {
+      "prompt": "Pienso que el plan ___ (funcionar).",
+      "answer": "funciona"
+    },
+    {
+      "prompt": "No pienso que esto ___ (resolver) el problema.",
+      "answer": "resuelva"
+    },
+    {
+      "prompt": "Es una pena que no ___ (poder, tú) venir.",
+      "answer": "puedas"
+    },
+    {
+      "prompt": "Es lógico que ___ (estar, ella) preocupada.",
+      "answer": "esté"
+    },
+    {
+      "prompt": "Estoy seguro de que ___ (aprobar, tú) el examen.",
+      "answer": "apruebas"
+    },
+    {
+      "prompt": "No estoy seguro de que ___ (ser) buena idea.",
+      "answer": "sea"
+    },
+    {
+      "prompt": "Creo que ya ___ (saber, ellos) la noticia.",
+      "answer": "saben"
+    },
+    {
+      "prompt": "Es necesario que ___ (firmar, usted) aquí.",
+      "answer": "firme"
+    },
+    {
+      "prompt": "No es cierto que ___ (vivir, ellos) en Madrid.",
+      "answer": "vivan"
+    },
+    {
+      "prompt": "Me parece que ___ (hacer) frío hoy.",
+      "answer": "hace"
+    },
+    {
+      "prompt": "Es normal que ___ (sentirse, tú) cansado.",
+      "answer": "te sientas"
+    },
+    {
+      "prompt": "Está demostrado que el deporte ___ (ayudar).",
+      "answer": "ayuda"
+    },
+    {
+      "prompt": "Dudo que el tren ___ (llegar) a tiempo.",
+      "answer": "llegue"
+    },
+    {
+      "prompt": "Pienso que ___ (deber, nosotros) esperar.",
+      "answer": "debemos"
+    },
+    {
+      "prompt": "No creo que ___ (haber) entradas todavía.",
+      "answer": "haya"
+    },
+    {
+      "prompt": "Es evidente que ___ (querer, ella) ayudarte.",
+      "answer": "quiere"
+    },
+    {
+      "prompt": "Es importante que todos ___ (participar).",
+      "answer": "participen"
+    },
+    {
+      "prompt": "No me parece que la idea ___ (tener) sentido.",
+      "answer": "tenga"
+    },
+    {
+      "prompt": "Creo que ___ (ser) la mejor opción.",
+      "answer": "es"
+    }
+  ]
+}
