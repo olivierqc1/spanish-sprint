@@ -1,0 +1,134 @@
+{
+  "id": "pasados_narracion_b2",
+  "title": {
+    "fr": "Contraste des passés en récit (B2.1)",
+    "en": "Past tense contrast in narration (B2.1)"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Au B2.1, le défi n'est plus de conjuguer les passés mais de CHOISIR le bon dans un récit. Voici la logique.\n\n─────────────────────────────\n🎯 INDEFINIDO — l'action, le fait accompli\nFaits ponctuels, terminés, qui FONT avancer l'histoire.\nMarqueurs : ayer, anoche, el lunes pasado, en 2018, de repente, ese día, hace dos años.\n→ Ayer terminé el informe. (Hier j'ai fini le rapport)\n→ De repente se apagaron las luces. (Soudain les lumières se sont éteintes)\n→ En 2018 nos mudamos a Barcelona. (En 2018 on a déménagé)\n\n─────────────────────────────\n🎯 IMPERFECTO — le décor, l'habitude, l'action en cours\nDescription, contexte, habitudes passées, action de fond.\nMarqueurs : antes, siempre, todos los días, de niño, mientras, normalmente.\n→ De niño pasaba los veranos en Laval. (Enfant, je passais les étés à Laval)\n→ La casa era grande y hacía frío. (La maison était grande et il faisait froid)\n→ Mientras cocinaba, escuchaba música. (Pendant que je cuisinais, j'écoutais de la musique)\n\n─────────────────────────────\n🎯 PLUSCUAMPERFECTO — le passé du passé\nUne action déjà finie AVANT un autre moment passé. Structure : había + participe.\nMarqueurs : ya, todavía no, cuando + indefinido... ya había...\n→ Cuando llegué, el tren ya había salido. (Quand je suis arrivé, le train était déjà parti)\n→ No comí porque ya había cenado. (Je n'ai pas mangé car j'avais déjà dîné)\n\n─────────────────────────────\n🎯 LES TROIS ENSEMBLE (le récit B2)\n→ Aquella mañana hacía frío (décor). De repente sonó el teléfono (action). Era mi madre: el avión ya había aterrizado (passé du passé).\n\n⚡ Piège : MIENTRAS + imperfecto (deux actions en parallèle) ; CUANDO + indefinido coupe souvent une scène à l'imparfait.\n\n💡 Verbes qui changent de sens : CONOCER à l'indefinido = faire connaissance (conocí a Laura = j'ai rencontré Laura), à l'imparfait = connaître déjà. Idem SABER (j'ai appris vs je savais), PODER, QUERER.",
+    "en": "⚙ At B2.1 the challenge is no longer conjugating past tenses but CHOOSING the right one in a narrative. Here's the logic.\n\n─────────────────────────────\n🎯 INDEFINIDO — the action, the completed fact\nPunctual, finished events that MOVE the story forward.\nMarkers: ayer, anoche, el lunes pasado, en 2018, de repente, ese día, hace dos años.\n→ Ayer terminé el informe. (Yesterday I finished the report)\n→ De repente se apagaron las luces. (Suddenly the lights went out)\n→ En 2018 nos mudamos a Barcelona. (In 2018 we moved)\n\n─────────────────────────────\n🎯 IMPERFECTO — the backdrop, habit, ongoing action\nDescription, context, past habits, background action.\nMarkers: antes, siempre, todos los días, de niño, mientras, normalmente.\n→ De niño pasaba los veranos en Laval. (As a child I spent summers in Laval)\n→ La casa era grande y hacía frío. (The house was big and it was cold)\n→ Mientras cocinaba, escuchaba música. (While I cooked, I listened to music)\n\n─────────────────────────────\n🎯 PLUSCUAMPERFECTO — the past before the past\nAn action already finished BEFORE another past moment. Structure: había + participle.\nMarkers: ya, todavía no, cuando + indefinido... ya había...\n→ Cuando llegué, el tren ya había salido. (When I arrived, the train had already left)\n→ No comí porque ya había cenado. (I didn't eat because I had already had dinner)\n\n─────────────────────────────\n🎯 ALL THREE TOGETHER (B2 narration)\n→ Aquella mañana hacía frío (backdrop). De repente sonó el teléfono (action). Era mi madre: el avión ya había aterrizado (past before past).\n\n⚡ Watch out: MIENTRAS + imperfecto (two parallel actions); CUANDO + indefinido often cuts into an imperfect scene.\n\n💡 Verbs that shift meaning: CONOCER in indefinido = to meet (conocí a Laura = I met Laura), in imperfecto = to already know. Same with SABER (found out vs knew), PODER, QUERER."
+  },
+  "drills": [
+    {
+      "prompt": "Ayer ___ (terminar, yo) el informe muy tarde.",
+      "answer": "terminé"
+    },
+    {
+      "prompt": "De niño ___ (pasar, yo) los veranos en Laval.",
+      "answer": "pasaba"
+    },
+    {
+      "prompt": "Cuando sonó el despertador, todavía ___ (dormir, yo).",
+      "answer": "dormía"
+    },
+    {
+      "prompt": "El año pasado ___ (correr, nosotros) la maratón de Barcelona.",
+      "answer": "corrimos"
+    },
+    {
+      "prompt": "Cuando llegué a la estación, el tren ya ___ (salir).",
+      "answer": "había salido"
+    },
+    {
+      "prompt": "Antes ___ (fumar, ella) un paquete al día, pero lo dejó.",
+      "answer": "fumaba"
+    },
+    {
+      "prompt": "De repente ___ (apagarse) las luces.",
+      "answer": "se apagaron"
+    },
+    {
+      "prompt": "Mientras yo ___ (preparar) la cena, los niños veían la tele.",
+      "answer": "preparaba"
+    },
+    {
+      "prompt": "En 2018 ___ (mudarse, nosotros) a Barcelona.",
+      "answer": "nos mudamos"
+    },
+    {
+      "prompt": "No quise comer porque ya ___ (cenar, yo).",
+      "answer": "había cenado"
+    },
+    {
+      "prompt": "Todos los domingos ___ (visitar, nosotros) a los abuelos.",
+      "answer": "visitábamos"
+    },
+    {
+      "prompt": "Anoche ___ (ver, yo) una película buenísima.",
+      "answer": "vi"
+    },
+    {
+      "prompt": "La casa donde crecí ___ (ser) muy grande.",
+      "answer": "era"
+    },
+    {
+      "prompt": "Cuando entré en la sala, todos ya ___ (sentarse).",
+      "answer": "se habían sentado"
+    },
+    {
+      "prompt": "El lunes pasado ___ (tener, yo) una entrevista importante.",
+      "answer": "tuve"
+    },
+    {
+      "prompt": "Mientras estudiaba en Bath, ___ (vivir, yo) en una residencia.",
+      "answer": "vivía"
+    },
+    {
+      "prompt": "Aquella mañana ___ (hacer) mucho frío y el cielo estaba gris.",
+      "answer": "hacía"
+    },
+    {
+      "prompt": "De repente alguien ___ (llamar) a la puerta.",
+      "answer": "llamó"
+    },
+    {
+      "prompt": "No había probado ese vino hasta que lo ___ (probar, yo) en el Priorat.",
+      "answer": "probé"
+    },
+    {
+      "prompt": "Cuando era estudiante, ___ (trabajar, yo) en un bar los fines de semana.",
+      "answer": "trabajaba"
+    },
+    {
+      "prompt": "Cuando me llamaron, ya ___ (enviar, yo) todos los documentos.",
+      "answer": "había enviado"
+    },
+    {
+      "prompt": "Ese día ella ___ (decidir) cambiar de trabajo.",
+      "answer": "decidió"
+    },
+    {
+      "prompt": "Siempre que llovía, ___ (quedarse, nosotros) en casa.",
+      "answer": "nos quedábamos"
+    },
+    {
+      "prompt": "La fiesta ___ (empezar) a las diez y terminó a las tres.",
+      "answer": "empezó"
+    },
+    {
+      "prompt": "No reconocí la ciudad porque ___ (cambiar) muchísimo.",
+      "answer": "había cambiado"
+    },
+    {
+      "prompt": "Cada verano mis padres me ___ (llevar) a la playa.",
+      "answer": "llevaban"
+    },
+    {
+      "prompt": "Anteayer ___ (perder, yo) el autobús y llegué tarde.",
+      "answer": "perdí"
+    },
+    {
+      "prompt": "Cuando éramos jóvenes ___ (soler, nosotros) salir cada noche.",
+      "answer": "solíamos"
+    },
+    {
+      "prompt": "El examen fue fácil porque ___ (estudiar, yo) mucho antes.",
+      "answer": "había estudiado"
+    },
+    {
+      "prompt": "Aquel verano ___ (conocer, yo) a Laura.",
+      "answer": "conocí"
+    }
+  ]
+}
