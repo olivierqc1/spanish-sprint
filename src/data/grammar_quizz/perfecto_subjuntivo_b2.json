@@ -1,0 +1,110 @@
+{
+  "id": "perfecto_subjuntivo_b2",
+  "title": {
+    "fr": "Passé composé du subjonctif et infinitif composé — B2.1",
+    "en": "Present perfect subjunctive and compound infinitive — B2.1"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Pour parler d'une action achevée dans une zone subjonctive ou infinitive.\n\n🎯 PASSÉ COMPOSÉ DU SUBJONCTIF : haya + participe.\nAction terminée, dans un contexte qui exige le subjonctif (doute, émotion, antériorité future).\n→ No creo que haya llegado. (Je ne crois pas qu'il soit arrivé)\n→ Espero que hayas dormido bien. (J'espère que tu as bien dormi)\n→ Cuando hayas terminado, avísame. (Quand tu auras fini, préviens-moi)\n\n🎯 INFINITIF COMPOSÉ : haber + participe.\nAction antérieure, même sujet, après préposition.\n→ Después de haber comido, salimos. (Après avoir mangé, on est sortis)\n→ Gracias por haber venido. (Merci d'être venu)\n→ Por haber llegado tarde, perdió el tren. (Pour être arrivé en retard...)\n\n💡 haya/hayas/haya/hayamos/hayáis/hayan + participe. L'infinitif composé est invariable : haber + participe.",
+    "en": "⚙ For a completed action inside a subjunctive or infinitive context.\n\n🎯 PRESENT PERFECT SUBJUNCTIVE: haya + participle.\nFinished action in a context requiring the subjunctive (doubt, emotion, future anteriority).\n→ No creo que haya llegado. (I don't think he has arrived)\n→ Espero que hayas dormido bien. (I hope you slept well)\n→ Cuando hayas terminado, avísame. (When you've finished, let me know)\n\n🎯 COMPOUND INFINITIVE: haber + participle.\nPrior action, same subject, after a preposition.\n→ Después de haber comido, salimos. (After eating, we left)\n→ Gracias por haber venido. (Thanks for coming)\n→ Por haber llegado tarde, perdió el tren. (For arriving late...)\n\n💡 haya/hayas/haya/hayamos/hayáis/hayan + participle. The compound infinitive is invariable: haber + participle."
+  },
+  "drills": [
+    {
+      "prompt": "No creo que ___ (llegar, él) todavía. (haya + participe)",
+      "answer": "haya llegado"
+    },
+    {
+      "prompt": "Espero que ___ (dormir, tú) bien. (haya + participe)",
+      "answer": "hayas dormido"
+    },
+    {
+      "prompt": "Cuando ___ (terminar, tú), avísame. (antériorité future)",
+      "answer": "hayas terminado"
+    },
+    {
+      "prompt": "Me alegro de que ___ (venir, vosotros). (haya + participe)",
+      "answer": "hayáis venido"
+    },
+    {
+      "prompt": "Después de ___ (comer), fuimos a pasear. (infinitif composé)",
+      "answer": "haber comido"
+    },
+    {
+      "prompt": "Gracias por ___ (ayudar) me tanto. (infinitif composé)",
+      "answer": "haberme ayudado"
+    },
+    {
+      "prompt": "Es posible que ya ___ (salir, ellos). (haya + participe)",
+      "answer": "hayan salido"
+    },
+    {
+      "prompt": "Dudo que ___ (entender, ella) el problema. (haya + participe)",
+      "answer": "haya entendido"
+    },
+    {
+      "prompt": "Por ___ (llegar) tarde, perdió el avión. (infinitif composé)",
+      "answer": "haber llegado"
+    },
+    {
+      "prompt": "Ojalá ___ (aprobar, yo) el examen. (haya + participe)",
+      "answer": "haya aprobado"
+    },
+    {
+      "prompt": "En cuanto ___ (recibir, nosotros) la respuesta, te aviso. (antériorité future)",
+      "answer": "hayamos recibido"
+    },
+    {
+      "prompt": "No está seguro de ___ (cerrar) la puerta. (infinitif composé, même sujet)",
+      "answer": "haber cerrado"
+    },
+    {
+      "prompt": "Es una pena que no ___ (poder, tú) venir. (haya + participe)",
+      "answer": "hayas podido"
+    },
+    {
+      "prompt": "Antes de ___ (firmar), léelo bien. (infinitif composé)",
+      "answer": "haber firmado"
+    },
+    {
+      "prompt": "Me sorprende que ___ (decir, él) eso. (haya + participe)",
+      "answer": "haya dicho"
+    },
+    {
+      "prompt": "Tras ___ (estudiar) tanto, merece aprobar. (infinitif composé)",
+      "answer": "haber estudiado"
+    },
+    {
+      "prompt": "No creo que ___ (ver, ellos) la película. (haya + participe)",
+      "answer": "hayan visto"
+    },
+    {
+      "prompt": "Cuando ___ (acabar, yo) el curso, buscaré trabajo. (antériorité future)",
+      "answer": "haya acabado"
+    },
+    {
+      "prompt": "Lamento ___ (causar) tantas molestias. (infinitif composé)",
+      "answer": "haber causado"
+    },
+    {
+      "prompt": "Espero que todo ___ (salir) bien. (haya + participe)",
+      "answer": "haya salido"
+    },
+    {
+      "prompt": "Por ___ (no, estudiar) → por no haber estudiado, suspendió. (infinitif composé négatif)",
+      "answer": "no haber estudiado"
+    },
+    {
+      "prompt": "Es increíble que ___ (cambiar) tanto en un año. (haya + participe)",
+      "answer": "haya cambiado"
+    },
+    {
+      "prompt": "Después de ___ (hablar) con ella, me sentí mejor. (infinitif composé)",
+      "answer": "haber hablado"
+    },
+    {
+      "prompt": "Dudo que ___ (recibir, tú) mi mensaje. (haya + participe)",
+      "answer": "hayas recibido"
+    }
+  ]
+}
