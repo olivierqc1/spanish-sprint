@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import FraseDelDia from '@/components/FraseDelDia';
 
 type UILanguage = 'fr' | 'en';
 type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
