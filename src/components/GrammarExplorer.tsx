@@ -4,6 +4,7 @@
 import { useState, useMemo, useEffect } from 'react';
 import type { GrammarPoint } from '@/data/grammar';
 import GrammarDrill from './GrammarDrill';
+import { logMistake } from '@/data/errorLog';
 
 type Props = {
   points: GrammarPoint[];
@@ -179,6 +180,7 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
         setQuizData(null);
       }}
       language={language}
+      onAnswer={(correct, d) => { if (!correct) logMistake(d, selectedPoint.title[language]); }}
     />
   );
 }
