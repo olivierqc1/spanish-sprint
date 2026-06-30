@@ -1,0 +1,126 @@
+{
+  "id": "perifrasis_verbales_b2",
+  "title": {
+    "fr": "Périphrases verbales — B2.1",
+    "en": "Verb periphrases — B2.1"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Verbe auxiliaire + infinitif/gérondif/participe pour nuancer une action. Très fréquent à l'oral B2.\n\n─────────────────────────────\n🎯 AVEC INFINITIF\nir a (futur proche), acabar de (venir de), volver a (refaire), dejar de (arrêter de), ponerse a (se mettre à), estar a punto de (être sur le point de), soler (avoir l'habitude).\n→ Acabo de llegar. (Je viens d'arriver)\n→ Vuelve a llamar más tarde. (Rappelle plus tard)\n→ El tren está a punto de salir. (Le train est sur le point de partir)\n\n─────────────────────────────\n🎯 AVEC GÉRONDIF\nllevar + gér. (durée), seguir + gér. (continuer), andar + gér. (être en train de, sens diffus), ir + gér. (progression).\n→ Llevo dos horas estudiando. (Ça fait deux heures que j'étudie)\n→ Sigo viviendo en el centro. (Je continue d'habiter au centre)\n\n─────────────────────────────\n🎯 AVEC PARTICIPE\nllevar + part. (cumul), dejar + part. (laisser fait), tener + part. (résultat accumulé).\n→ Llevo leídas cien páginas. (J'ai déjà lu cent pages)\n\n⚡ DEJAR DE + inf = arrêter (dejé de fumar), à ne pas confondre avec DEJAR + inf = laisser/permettre (déjame pasar).\n\n💡 SOLER n'existe qu'au présent et à l'imparfait : suelo correr / solía correr. Pas de futur ni de passé simple.",
+    "en": "⚙ Auxiliary verb + infinitive/gerund/participle to nuance an action. Very frequent in spoken B2.\n\n─────────────────────────────\n🎯 WITH INFINITIVE\nir a (near future), acabar de (to have just), volver a (to do again), dejar de (to stop), ponerse a (to start), estar a punto de (to be about to), soler (to usually).\n→ Acabo de llegar. (I've just arrived)\n→ Vuelve a llamar más tarde. (Call again later)\n→ El tren está a punto de salir. (The train is about to leave)\n\n─────────────────────────────\n🎯 WITH GERUND\nllevar + ger. (duration), seguir + ger. (to keep), andar + ger. (to be busy doing), ir + ger. (gradual progress).\n→ Llevo dos horas estudiando. (I've been studying for two hours)\n→ Sigo viviendo en el centro. (I still live downtown)\n\n─────────────────────────────\n🎯 WITH PARTICIPLE\nllevar + part. (cumulative), dejar + part. (to leave done), tener + part. (accumulated result).\n→ Llevo leídas cien páginas. (I've read a hundred pages so far)\n\n⚡ DEJAR DE + inf = to stop (dejé de fumar), not to be confused with DEJAR + inf = to let/allow (déjame pasar).\n\n💡 SOLER only exists in present and imperfect: suelo correr / solía correr. No future or preterite."
+  },
+  "drills": [
+    {
+      "prompt": "Mañana ___ (ir, nosotros) a visitar el museo. (futur proche)",
+      "answer": "vamos"
+    },
+    {
+      "prompt": "___ (acabar, yo) de llegar, estoy agotado. (venir de)",
+      "answer": "Acabo"
+    },
+    {
+      "prompt": "Si no contesta, ___ (volver, yo) a llamar luego. (refaire)",
+      "answer": "vuelvo"
+    },
+    {
+      "prompt": "Quiero ___ (dejar) de fumar este año. (arrêter de)",
+      "answer": "dejar"
+    },
+    {
+      "prompt": "___ (soler, yo) correr por la mañana. (avoir l'habitude)",
+      "answer": "Suelo"
+    },
+    {
+      "prompt": "___ (llevar, yo) dos horas estudiando. (durée)",
+      "answer": "Llevo"
+    },
+    {
+      "prompt": "___ (seguir, ellos) viviendo en Madrid. (continuer)",
+      "answer": "Siguen"
+    },
+    {
+      "prompt": "De repente ella ___ (ponerse) a llorar. (se mettre à, passé)",
+      "answer": "se puso"
+    },
+    {
+      "prompt": "El tren ___ (estar) a punto de salir. (sur le point de)",
+      "answer": "está"
+    },
+    {
+      "prompt": "Cuando era joven ___ (soler, yo) salir mucho. (avoir l'habitude, passé)",
+      "answer": "solía"
+    },
+    {
+      "prompt": "___ (acabar, nosotros) de comer cuando llamaron. (venir de, passé)",
+      "answer": "Acabábamos"
+    },
+    {
+      "prompt": "Después del accidente, ___ (volver, él) a caminar. (refaire, passé)",
+      "answer": "volvió"
+    },
+    {
+      "prompt": "Por fin ___ (dejar, ella) de quejarse. (arrêter de, passé)",
+      "answer": "dejó"
+    },
+    {
+      "prompt": "___ (llevar, nosotros) cinco años viviendo aquí. (durée)",
+      "answer": "Llevamos"
+    },
+    {
+      "prompt": "A pesar del frío, ___ (seguir, nosotros) corriendo. (continuer, passé)",
+      "answer": "seguimos"
+    },
+    {
+      "prompt": "Los niños ___ (ponerse) a jugar enseguida. (se mettre à, présent)",
+      "answer": "se ponen"
+    },
+    {
+      "prompt": "Creo que ___ (ir) a llover esta tarde. (futur proche)",
+      "answer": "va"
+    },
+    {
+      "prompt": "___ (andar, él) diciendo que se va a mudar. (être en train de, diffus)",
+      "answer": "Anda"
+    },
+    {
+      "prompt": "Poco a poco ___ (ir, yo) entendiendo el catalán. (progression)",
+      "answer": "voy"
+    },
+    {
+      "prompt": "___ (acabar, ellos) de salir hace un momento. (venir de)",
+      "answer": "Acaban"
+    },
+    {
+      "prompt": "No ___ (dejar, tú) de sorprenderme. (arrêter de)",
+      "answer": "dejas"
+    },
+    {
+      "prompt": "El proyecto ___ (estar) a punto de terminarse. (sur le point de)",
+      "answer": "está"
+    },
+    {
+      "prompt": "___ (llevar, yo) leídas cien páginas del libro. (cumul + participe)",
+      "answer": "Llevo"
+    },
+    {
+      "prompt": "¿Cuánto tiempo ___ (llevar, tú) esperando? (durée)",
+      "answer": "llevas"
+    },
+    {
+      "prompt": "Después de descansar, ___ (volver, nosotros) a intentarlo. (refaire, passé)",
+      "answer": "volvimos"
+    },
+    {
+      "prompt": "Mi abuela ___ (soler) contarnos historias. (avoir l'habitude, passé)",
+      "answer": "solía"
+    },
+    {
+      "prompt": "En cuanto llegó, ___ (ponerse, él) a trabajar. (se mettre à, passé)",
+      "answer": "se puso"
+    },
+    {
+      "prompt": "Aunque es difícil, ___ (seguir, yo) intentándolo. (continuer)",
+      "answer": "sigo"
+    }
+  ]
+}
