@@ -12,6 +12,14 @@ type Props = {
   language: 'fr' | 'en';
 };
 
+// Couleur par niveau = vraie information (difficulté croissante), pas décoration.
+const levelColor = (level: string) => {
+  if (level.includes('B2')) return '#fb7185'; // rose
+  if (level.includes('B1')) return '#a78bfa'; // violet
+  if (level.includes('A2')) return '#38bdf8'; // ciel
+  return '#34d399';                            // A1 émeraude
+};
+
 export default function GrammarExplorer({ points, initialLevel, language }: Props) {
   const [selectedPoint, setSelectedPoint] = useState<GrammarPoint | null>(null);
   const [quizData, setQuizData] = useState<any>(null);
@@ -21,8 +29,7 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
 
   useEffect(() => {
     const saved = localStorage.getItem('iberian-sprint-target-language');
-    if (saved === 'catalan') setTargetLanguage('catalan');
-    else setTargetLanguage('spanish');
+    setTargetLanguage(saved === 'catalan' ? 'catalan' : 'spanish');
   }, []);
 
   const filtered = useMemo(() => {
@@ -38,14 +45,11 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
         if (!(p.level === initialLevel || p.level.includes(initialLevel))) return false;
       }
 
-      // Filtre recherche
       if (search.trim()) {
-        const q = search.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        const title = p.title[language].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        const note = p.note[language].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        if (!title.includes(q) && !note.includes(q)) return false;
+        const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        const q = norm(search);
+        if (!norm(p.title[language]).includes(q) && !norm(p.note[language]).includes(q)) return false;
       }
-
       return true;
     });
   }, [points, initialLevel, targetLanguage, search, language]);
@@ -64,106 +68,140 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     }
   };
 
-  const accentColor = targetLanguage === 'catalan' ? '#f59e0b' : '#3b82f6';
+  const accent = targetLanguage === 'catalan' ? '#f59e0b' : '#3b82f6';
+
+  const t = {
+    fr: {
+      eyebrow: targetLanguage === 'catalan' ? 'GRAMÀTICA CATALANA' : 'GRAMMAIRE',
+      heading: targetLanguage === 'catalan' ? 'Catalan' : 'Espagnol',
+      sub: (n: number) => `${n} point${n > 1 ? 's' : ''} · niveau ${initialLevel}`,
+      placeholder: 'Rechercher un point…',
+      noResult: 'Rien ne correspond à',
+      loading: 'Chargement…',
+      errTitle: 'Impossible de charger cet exercice',
+      errBack: '← Retour à la liste',
+    },
+    en: {
+      eyebrow: targetLanguage === 'catalan' ? 'CATALAN GRAMMAR' : 'GRAMMAR',
+      heading: targetLanguage === 'catalan' ? 'Catalan' : 'Spanish',
+      sub: (n: number) => `${n} point${n > 1 ? 's' : ''} · level ${initialLevel}`,
+      placeholder: 'Search a point…',
+      noResult: 'Nothing matches',
+      loading: 'Loading…',
+      errTitle: "Couldn't load this exercise",
+      errBack: '← Back to list',
+    },
+  }[language];
 
   if (!selectedPoint) {
     return (
-      <div className="space-y-4">
-        <div className="bg-slate-800 rounded-xl p-6 border border-slate-700">
-          <h2 className="text-2xl font-bold mb-2" style={{ color: accentColor }}>
-            {targetLanguage === 'catalan'
-              ? (language === 'fr' ? '📚 Grammaire catalane' : '📚 Catalan Grammar')
-              : (language === 'fr' ? '📚 Points de grammaire' : '📚 Grammar Points')
-            }
-          </h2>
-          <p className="text-slate-400 mb-4">
-            {language === 'fr'
-              ? `${filtered.length} points disponibles pour le niveau ${initialLevel}`
-              : `${filtered.length} points available for level ${initialLevel}`
-            }
+      <div className="space-y-5">
+        {/* En-tête */}
+        <header className="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 p-6">
+          <div
+            className="absolute inset-x-0 top-0 h-1"
+            style={{ background: `linear-gradient(90deg, ${accent}, transparent)` }}
+          />
+          <p className="text-xs font-bold tracking-[0.2em] mb-1" style={{ color: accent }}>
+            {t.eyebrow}
           </p>
+          <h2 className="text-3xl font-black text-white leading-tight">{t.heading}</h2>
+          <p className="text-slate-400 text-sm mt-1">{t.sub(filtered.length)}</p>
 
-          {/* Barre de recherche */}
-          <div className="relative">
-            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">🔍</span>
+          {/* Recherche */}
+          <div className="relative mt-5">
+            <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500">🔍</span>
             <input
               type="text"
               value={search}
               onChange={e => setSearch(e.target.value)}
-              placeholder={language === 'fr' ? 'Rechercher un point de grammaire...' : 'Search a grammar point...'}
-              className="w-full bg-slate-900 border border-slate-600 rounded-lg pl-10 pr-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm"
-              style={{ borderColor: search ? accentColor : undefined }}
+              placeholder={t.placeholder}
+              className="w-full bg-slate-950/60 border border-slate-700 rounded-xl pl-10 pr-9 py-2.5 text-white placeholder-slate-500 text-sm transition focus:outline-none focus:ring-2"
+              style={{ ['--tw-ring-color' as any]: accent }}
             />
             {search && (
               <button
                 onClick={() => setSearch('')}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-lg"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white text-lg leading-none"
+                aria-label="clear"
               >
                 ×
               </button>
             )}
           </div>
-        </div>
+        </header>
 
-        <div className="grid grid-cols-1 gap-3">
-          {filtered.length === 0 && (
-            <div className="text-center text-slate-400 py-10">
-              {language === 'fr' ? 'Aucun résultat pour ' : 'No results for '}
-              <span className="text-white font-semibold">"{search}"</span>
-            </div>
-          )}
-          {filtered.map(point => (
-            <button
-              key={point.id}
-              onClick={() => loadQuiz(point)}
-              className="bg-slate-800 hover:bg-slate-700 rounded-xl p-4 border border-slate-700 text-left transition-all hover:scale-[1.02]"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold text-white mb-1">
-                    {point.title[language]}
-                  </h3>
-                  <p className="text-sm text-slate-400">
-                    {point.note[language]}
-                  </p>
-                </div>
-                <div className="flex flex-col items-end gap-1 flex-shrink-0">
-                  <span className="px-2 py-1 rounded text-xs font-bold text-white"
-                    style={{ background: accentColor }}>
-                    {point.level}
-                  </span>
-                  <span className="text-sm" style={{ color: accentColor }}>→</span>
-                </div>
-              </div>
-            </button>
-          ))}
-        </div>
+        {/* Liste */}
+        {filtered.length === 0 ? (
+          <div className="text-center text-slate-400 py-14 border border-dashed border-slate-800 rounded-2xl">
+            <div className="text-3xl mb-2">🤔</div>
+            {t.noResult} <span className="text-white font-semibold">“{search}”</span>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 gap-3">
+            {filtered.map(point => {
+              const lc = levelColor(point.level);
+              return (
+                <button
+                  key={point.id}
+                  onClick={() => loadQuiz(point)}
+                  className="group relative flex items-stretch gap-4 rounded-2xl border border-slate-800 bg-slate-900 p-4 pl-5 text-left transition-all duration-200 hover:-translate-y-0.5 hover:border-slate-600 hover:bg-slate-800"
+                >
+                  {/* Liseré de niveau */}
+                  <span
+                    className="absolute left-0 top-3 bottom-3 w-1 rounded-full"
+                    style={{ background: lc }}
+                  />
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span
+                        className="px-2 py-0.5 rounded-md text-[11px] font-bold"
+                        style={{ background: `${lc}22`, color: lc }}
+                      >
+                        {point.level}
+                      </span>
+                    </div>
+                    <h3 className="text-base font-bold text-white leading-snug">
+                      {point.title[language]}
+                    </h3>
+                    <p className="text-sm text-slate-400 mt-0.5 line-clamp-2">
+                      {point.note[language]}
+                    </p>
+                  </div>
+                  {/* Flèche */}
+                  <div className="self-center flex-shrink-0">
+                    <span className="grid place-items-center w-9 h-9 rounded-full border border-slate-700 text-slate-400 transition-all group-hover:text-white group-hover:border-slate-500">
+                      →
+                    </span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
     );
   }
 
   if (loading) {
     return (
-      <div className="bg-slate-800 rounded-xl p-12 text-center border border-slate-700">
-        <div className="text-4xl mb-4">⏳</div>
-        <p className="text-slate-400">
-          {language === 'fr' ? 'Chargement...' : 'Loading...'}
-        </p>
+      <div className="rounded-2xl border border-slate-800 bg-slate-900 p-14 text-center">
+        <div className="text-4xl mb-3 animate-pulse">⏳</div>
+        <p className="text-slate-400">{t.loading}</p>
       </div>
     );
   }
 
   if (!quizData) {
     return (
-      <div className="bg-slate-800 rounded-xl p-12 text-center border border-slate-700">
-        <p className="text-red-400 mb-4">
-          {language === 'fr' ? 'Erreur de chargement' : 'Loading error'}
-        </p>
+      <div className="rounded-2xl border border-slate-800 bg-slate-900 p-12 text-center">
+        <div className="text-3xl mb-3">⚠️</div>
+        <p className="text-rose-400 mb-5">{t.errTitle}</p>
         <button
           onClick={() => setSelectedPoint(null)}
-          className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg transition"
+          className="bg-slate-700 hover:bg-slate-600 px-6 py-2.5 rounded-xl font-semibold transition"
         >
-          {language === 'fr' ? '← Retour' : '← Back'}
+          {t.errBack}
         </button>
       </div>
     );
