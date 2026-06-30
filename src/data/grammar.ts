@@ -1341,4 +1341,44 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/verbos_usos_inesperados.json"
   },
+{
+    id: "voz_pasiva_se_b2",
+    title: { fr: "Voix passive et SE (passif / impersonnel) — B2.1", en: "Passive voice and SE (passive / impersonal) — B2.1" },
+    level: "B2",
+    note: { fr: "Passive avec ser, passive réfléchie (se venden) et se impersonnel.", en: "Passive with ser, reflexive passive (se venden) and impersonal se." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/voz_pasiva_se_b2.json"
+  },
+  {
+    id: "opinion_indicativo_subjuntivo_b2",
+    title: { fr: "Opinion : indicatif ou subjonctif — B2.1", en: "Opinion: indicative or subjunctive — B2.1" },
+    level: "B2",
+    note: { fr: "Affirmer (indicatif) vs nier / valoriser / douter (subjonctif).", en: "Asserting (indicative) vs denying / evaluating / doubting (subjunctive)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/opinion_indicativo_subjuntivo_b2.json"
+  },
+  {
+    id: "estilo_indirecto_pasado_b2",
+    title: { fr: "Discours rapporté et subjonctif imparfait — B2.1", en: "Reported speech and imperfect subjunctive — B2.1" },
+    level: "B2",
+    note: { fr: "Recul des temps et subjonctif imparfait (pidió que viniera, si tuviera...).", en: "Tense backshift and imperfect subjunctive (pidió que viniera, si tuviera...)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/estilo_indirecto_pasado_b2.json"
+  },
+  {
+    id: "conectores_argumentacion_b2",
+    title: { fr: "Connecteurs et argumentation — B2.1", en: "Connectors and argumentation — B2.1" },
+    level: "B2",
+    note: { fr: "Opposition, cause/conséquence, ajout : sin embargo, por lo tanto, aunque...", en: "Opposition, cause/effect, addition: sin embargo, por lo tanto, aunque..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/conectores_argumentacion_b2.json"
+  },
+  {
+    id: "perifrasis_verbales_b2",
+    title: { fr: "Périphrases verbales — B2.1", en: "Verb periphrases — B2.1" },
+    level: "B2",
+    note: { fr: "ir a, acabar de, volver a, dejar de, llevar/seguir + gérondif...", en: "ir a, acabar de, volver a, dejar de, llevar/seguir + gerund..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/perifrasis_verbales_b2.json"
+  },
 ];
