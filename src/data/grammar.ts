@@ -1333,4 +1333,12 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_habitatge.json"
   },
+{
+    id: "verbos_usos_inesperados",
+    title: { fr: "Verbes au sens inattendu (tocar, tomar, quedar...)", en: "Verbs with unexpected meanings (tocar, tomar, quedar...)" },
+    level: "A2-B1",
+    note: { fr: "Verbes courants dont le sens surprend un francophone (tocar = jouer, tomar = boire, quedar = avoir rendez-vous...).", en: "Common verbs with surprising meanings (tocar = to play, tomar = to drink, quedar = to arrange to meet...)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/verbos_usos_inesperados.json"
+  },
 ];
