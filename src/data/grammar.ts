@@ -1381,4 +1381,20 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/perifrasis_verbales_b2.json"
   },
+{
+    id: "examen_b2_repaso",
+    title: { fr: "Examen blanc B2.1 — révision transversale", en: "B2.1 mock exam — mixed review" },
+    level: "B2",
+    note: { fr: "Révision mélangée des 6 thèmes B2.1, format examen.", en: "Mixed review of the 6 B2.1 topics, exam format." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/examen_b2_repaso.json"
+  },
+  {
+    id: "colocaciones_b2",
+    title: { fr: "Collocations B2 (verbe + nom)", en: "B2 collocations (verb + noun)" },
+    level: "B2",
+    note: { fr: "Blocs verbe + nom idiomatiques : tomar una decisión, hacer hincapié...", en: "Idiomatic verb + noun chunks: tomar una decisión, hacer hincapié..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/colocaciones_b2.json"
+  },
 ];
