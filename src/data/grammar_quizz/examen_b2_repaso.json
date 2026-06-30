@@ -1,0 +1,142 @@
+{
+  "id": "examen_b2_repaso",
+  "title": {
+    "fr": "Examen blanc B2.1 — révision transversale",
+    "en": "B2.1 mock exam — mixed review"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Révision mélangée des 6 thèmes B2.1. Chaque phrase teste une structure différente — l'indice entre parenthèses te dit laquelle.\n\n🎯 Au programme : passés en récit, voix passive / SE, opinion indicatif vs subjonctif, discours rapporté, connecteurs, périphrases verbales.\n\n💡 Conseil : fais-le chrono, sans relire tes notes, comme un vrai examen. Note ton score puis retourne sur le thème le plus faible.",
+    "en": "⚙ Mixed review of the 6 B2.1 topics. Each sentence tests a different structure — the hint in parentheses tells you which.\n\n🎯 Covered: narrative pasts, passive / SE, opinion indicative vs subjunctive, reported speech, connectors, verb periphrases.\n\n💡 Tip: do it timed, no notes, like a real exam. Track your score then revisit your weakest topic."
+  },
+  "drills": [
+    {
+      "prompt": "Cuando llegué a casa, mis padres ya ___ (cenar). (passé du passé)",
+      "answer": "habían cenado"
+    },
+    {
+      "prompt": "El informe ___ (entregar) ayer por el equipo. (voix passive avec ser)",
+      "answer": "fue entregado"
+    },
+    {
+      "prompt": "No creo que ___ (ser) buena idea. (opinion niée → subj)",
+      "answer": "sea"
+    },
+    {
+      "prompt": "Me pidió que ___ (esperar, yo) un momento. (influence passé → subj imparfait)",
+      "answer": "esperara"
+    },
+    {
+      "prompt": "Es caro; ___ , lo compré igualmente. (cependant)",
+      "answer": "sin embargo"
+    },
+    {
+      "prompt": "___ (acabar, yo) de llegar de Andorra. (venir de)",
+      "answer": "Acabo"
+    },
+    {
+      "prompt": "De niño ___ (jugar, yo) al hockey cada invierno. (habitude → imparfait)",
+      "answer": "jugaba"
+    },
+    {
+      "prompt": "En este barrio ___ (vender) muchos pisos. (passive réfléchie, pl)",
+      "answer": "se venden"
+    },
+    {
+      "prompt": "Está claro que ___ (necesitar, nosotros) más datos. (affirmation → indic)",
+      "answer": "necesitamos"
+    },
+    {
+      "prompt": "Dijo que ___ (venir, él) al día siguiente. (discours rapporté → conditionnel)",
+      "answer": "vendría"
+    },
+    {
+      "prompt": "___ que llueva, haremos la excursión. (bien que + hypothèse)",
+      "answer": "Aunque"
+    },
+    {
+      "prompt": "___ (llevar, nosotros) tres años viviendo aquí. (durée → llevar)",
+      "answer": "Llevamos"
+    },
+    {
+      "prompt": "Anoche ___ (perder, yo) el último metro. (fait ponctuel → indefinido)",
+      "answer": "perdí"
+    },
+    {
+      "prompt": "En España ___ (cenar) muy tarde. (se impersonnel)",
+      "answer": "se cena"
+    },
+    {
+      "prompt": "Dudo que ___ (haber) entradas todavía. (doute → subj)",
+      "answer": "haya"
+    },
+    {
+      "prompt": "Si ___ (tener, yo) más tiempo, estudiaría catalán. (hypothèse → subj imparfait)",
+      "answer": "tuviera"
+    },
+    {
+      "prompt": "Estudié mucho; ___ , aprobé. (par conséquent)",
+      "answer": "por lo tanto"
+    },
+    {
+      "prompt": "El tren ___ (estar) a punto de salir. (sur le point de)",
+      "answer": "está"
+    },
+    {
+      "prompt": "Mientras yo ___ (cocinar), sonó el teléfono. (action de fond → imparfait)",
+      "answer": "cocinaba"
+    },
+    {
+      "prompt": "Las casas ___ (restaurar) el año pasado. (passive avec ser, pl)",
+      "answer": "fueron restauradas"
+    },
+    {
+      "prompt": "Es importante que ___ (descansar, tú) antes de la carrera. (valorisation → subj)",
+      "answer": "descanses"
+    },
+    {
+      "prompt": "No sabía que ___ (hablar, tú) tan bien catalán. (info ignorée → indic imparfait)",
+      "answer": "hablabas"
+    },
+    {
+      "prompt": "A pesar ___ frío, salimos a correr. (malgré + nom)",
+      "answer": "del"
+    },
+    {
+      "prompt": "Después de la lesión, ___ (volver, él) a entrenar. (refaire, passé)",
+      "answer": "volvió"
+    },
+    {
+      "prompt": "Aquel verano ___ (conocer, yo) a Laura. (rencontrer → indefinido)",
+      "answer": "conocí"
+    },
+    {
+      "prompt": "Aquí no ___ (poder) aparcar. (se impersonnel)",
+      "answer": "se puede"
+    },
+    {
+      "prompt": "Me parece que ___ (ir) a hacer buen tiempo. (affirmation → indic)",
+      "answer": "va"
+    },
+    {
+      "prompt": "Ojalá ___ (poder, yo) ir contigo. (souhait → subj imparfait)",
+      "answer": "pudiera"
+    },
+    {
+      "prompt": "No tengo dinero, ___ no puedo ir. (du coup)",
+      "answer": "así que"
+    },
+    {
+      "prompt": "___ (soler, yo) correr por Collserola los domingos. (habitude → soler présent)",
+      "answer": "Suelo"
+    },
+    {
+      "prompt": "El acuerdo ___ (firmar) tras meses de negociación. (passive avec ser)",
+      "answer": "fue firmado"
+    },
+    {
+      "prompt": "Es evidente que ___ (estar, ella) preparada. (affirmation → indic)",
+      "answer": "está"
+    }
+  ]
+}
