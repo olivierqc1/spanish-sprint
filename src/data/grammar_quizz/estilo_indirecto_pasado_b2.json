@@ -1,0 +1,126 @@
+{
+  "id": "estilo_indirecto_pasado_b2",
+  "title": {
+    "fr": "Discours rapporté et subjonctif imparfait — B2.1",
+    "en": "Reported speech and imperfect subjunctive — B2.1"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Quand le verbe principal est au passé, les temps reculent et l'influence passe au subjonctif imparfait.\n\n─────────────────────────────\n🎯 DISCOURS RAPPORTÉ : recul des temps\nprésent → imparfait ; futur → conditionnel ; passé composé → plus-que-parfait.\n→ Dijo que estaba cansado. (Il a dit qu'il était fatigué)\n→ Dijo que vendría mañana. (Il a dit qu'il viendrait demain)\n→ Dijo que ya había terminado. (Il a dit qu'il avait déjà fini)\n\n─────────────────────────────\n🎯 INFLUENCE / VOLONTÉ au passé → SUBJONCTIF IMPARFAIT\nme pidió que, quería que, esperaba que, nos recomendó que, fue necesario que.\n→ Me pidió que le ayudara. (Il m'a demandé de l'aider)\n→ Quería que viniéramos antes. (Il voulait qu'on vienne plus tôt)\n\n─────────────────────────────\n🎯 HYPOTHÈSE et SOUHAIT → SUBJONCTIF IMPARFAIT\nSi + subj imparfait + conditionnel ; ojalá + subj imparfait.\n→ Si tuviera tiempo, viajaría más. (Si j'avais le temps, je voyagerais plus)\n→ Ojalá pudiera ir contigo. (Si seulement je pouvais venir avec toi)\n\n⚡ NO SABÍA QUE + indicatif (info qu'on ignorait), pas subjonctif : No sabía que vivías aquí.\n\n💡 Formation du subj imparfait : 3e pers. pluriel du prétérit moins -ron + -ra (vinieron → viniera, tuvieron → tuviera, fueron → fuera).",
+    "en": "⚙ When the main verb is in the past, tenses shift back and influence moves to the imperfect subjunctive.\n\n─────────────────────────────\n🎯 REPORTED SPEECH: backshift\npresent → imperfect ; future → conditional ; present perfect → pluperfect.\n→ Dijo que estaba cansado. (He said he was tired)\n→ Dijo que vendría mañana. (He said he would come tomorrow)\n→ Dijo que ya había terminado. (He said he had already finished)\n\n─────────────────────────────\n🎯 INFLUENCE / WILL in the past → IMPERFECT SUBJUNCTIVE\nme pidió que, quería que, esperaba que, nos recomendó que, fue necesario que.\n→ Me pidió que le ayudara. (He asked me to help him)\n→ Quería que viniéramos antes. (He wanted us to come earlier)\n\n─────────────────────────────\n🎯 HYPOTHESIS and WISH → IMPERFECT SUBJUNCTIVE\nSi + imperf subj + conditional ; ojalá + imperf subj.\n→ Si tuviera tiempo, viajaría más. (If I had time, I'd travel more)\n→ Ojalá pudiera ir contigo. (I wish I could go with you)\n\n⚡ NO SABÍA QUE + indicative (info you didn't know), not subjunctive: No sabía que vivías aquí.\n\n💡 Forming the imperfect subjunctive: 3rd person plural preterite minus -ron + -ra (vinieron → viniera, tuvieron → tuviera, fueron → fuera)."
+  },
+  "drills": [
+    {
+      "prompt": "No sabía que ___ (vivir, tú) en Barcelona. (info ignorée)",
+      "answer": "vivías"
+    },
+    {
+      "prompt": "Me pidió que le ___ (ayudar, yo) con la mudanza.",
+      "answer": "ayudara"
+    },
+    {
+      "prompt": "Quería que ___ (venir, nosotros) antes.",
+      "answer": "viniéramos"
+    },
+    {
+      "prompt": "Dijo que ___ (llegar, él) tarde. (discours rapporté, futur)",
+      "answer": "llegaría"
+    },
+    {
+      "prompt": "Me dijo que ___ (estar, ella) muy cansada. (discours rapporté, présent)",
+      "answer": "estaba"
+    },
+    {
+      "prompt": "Si ___ (tener, yo) más tiempo, viajaría más.",
+      "answer": "tuviera"
+    },
+    {
+      "prompt": "Ojalá ___ (poder, yo) ir contigo.",
+      "answer": "pudiera"
+    },
+    {
+      "prompt": "Esperaba que la entrevista ___ (ser) más fácil.",
+      "answer": "fuera"
+    },
+    {
+      "prompt": "Nos recomendó que ___ (reservar, nosotros) con antelación.",
+      "answer": "reserváramos"
+    },
+    {
+      "prompt": "No creía que ___ (ser) tan caro.",
+      "answer": "fuera"
+    },
+    {
+      "prompt": "Comentó que ya ___ (terminar, él) el proyecto. (discours rapporté, antérieur)",
+      "answer": "había terminado"
+    },
+    {
+      "prompt": "Te dije que ___ (deber, tú) descansar más.",
+      "answer": "debías"
+    },
+    {
+      "prompt": "Si yo ___ (ser) tú, aceptaría la oferta.",
+      "answer": "fuera"
+    },
+    {
+      "prompt": "El profesor pidió que ___ (entregar, nosotros) el trabajo el lunes.",
+      "answer": "entregáramos"
+    },
+    {
+      "prompt": "No sabía que ___ (hablar, tú) catalán. (info ignorée)",
+      "answer": "hablabas"
+    },
+    {
+      "prompt": "Me prometió que me ___ (llamar) esa noche. (discours rapporté, futur)",
+      "answer": "llamaría"
+    },
+    {
+      "prompt": "Quería que todo ___ (salir) bien.",
+      "answer": "saliera"
+    },
+    {
+      "prompt": "Ojalá ___ (saber, yo) la respuesta.",
+      "answer": "supiera"
+    },
+    {
+      "prompt": "Si ___ (hacer) buen tiempo, iríamos a la montaña.",
+      "answer": "hiciera"
+    },
+    {
+      "prompt": "Nos dijeron que el museo ___ (cerrar) a las seis. (discours rapporté, présent)",
+      "answer": "cerraba"
+    },
+    {
+      "prompt": "Fue necesario que ___ (firmar, ellos) otra vez.",
+      "answer": "firmaran"
+    },
+    {
+      "prompt": "Esperaba que ___ (haber) entradas todavía.",
+      "answer": "hubiera"
+    },
+    {
+      "prompt": "Le pedí que no ___ (decir) nada a nadie.",
+      "answer": "dijera"
+    },
+    {
+      "prompt": "No sabía que ya ___ (conocer, vosotros) a Laura. (info ignorée)",
+      "answer": "conocíais"
+    },
+    {
+      "prompt": "Si ___ (poder, nosotros), nos quedaríamos más tiempo.",
+      "answer": "pudiéramos"
+    },
+    {
+      "prompt": "Mi jefe quería que ___ (viajar, yo) a Madrid.",
+      "answer": "viajara"
+    },
+    {
+      "prompt": "Dijo que el examen ___ (haber) sido difícil. (discours rapporté, antérieur)",
+      "answer": "había"
+    },
+    {
+      "prompt": "Ojalá ___ (venir, ellos) a la cena.",
+      "answer": "vinieran"
+    }
+  ]
+}
