@@ -1,0 +1,94 @@
+{
+  "id": "cat_passat_perifrastic",
+  "title": {
+    "fr": "Catalan : le passé périphrastique",
+    "en": "Catalan: periphrastic past"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ En catalan, le passé courant n'est PAS comme l'espagnol : on utilise « anar » + infinitif.\n\n🎯 STRUCTURE : vaig / vas / va / vam / vau / van + infinitif.\nAttention : ce n'est pas « aller », c'est le passé simple !\n→ Ahir vaig menjar paella. (Hier j'ai mangé de la paella)\n→ Va arribar tard. (Il est arrivé en retard)\n→ Vam visitar Girona. (Nous avons visité Gérone)\n\n🎯 LES FORMES :\njo vaig · tu vas · ell/ella va · nosaltres vam · vosaltres vau · ells/elles van + infinitif.\n\n💡 Équivalence : le catalan « vaig cantar » = l'espagnol « canté » = « j'ai chanté ». C'est LE passé du récit catalan.",
+    "en": "⚙ In Catalan the everyday past is NOT like Spanish: you use « anar » + infinitive.\n\n🎯 STRUCTURE: vaig / vas / va / vam / vau / van + infinitive.\nCareful: this isn't \"to go\", it's the simple past!\n→ Ahir vaig menjar paella. (Yesterday I ate paella)\n→ Va arribar tard. (He arrived late)\n→ Vam visitar Girona. (We visited Girona)\n\n🎯 THE FORMS:\njo vaig · tu vas · ell/ella va · nosaltres vam · vosaltres vau · ells/elles van + infinitive.\n\n💡 Equivalence: Catalan « vaig cantar » = Spanish « canté » = \"I sang\"."
+  },
+  "drills": [
+    {
+      "prompt": "Ahir jo ___ (menjar) paella. → vaig menjar (j'ai mangé)",
+      "answer": "vaig menjar"
+    },
+    {
+      "prompt": "Ell ___ (arribar) tard. → va arribar (il est arrivé)",
+      "answer": "va arribar"
+    },
+    {
+      "prompt": "Nosaltres ___ (visitar) Girona. → vam visitar (nous avons visité)",
+      "answer": "vam visitar"
+    },
+    {
+      "prompt": "Tu ___ (comprar) el pa? → vas comprar (as-tu acheté)",
+      "answer": "vas comprar"
+    },
+    {
+      "prompt": "Ells ___ (sortir) a les vuit. → van sortir (ils sont sortis)",
+      "answer": "van sortir"
+    },
+    {
+      "prompt": "Jo ___ (veure) una pel·lícula. → vaig veure (j'ai vu)",
+      "answer": "vaig veure"
+    },
+    {
+      "prompt": "Ella ___ (escriure) una carta. → va escriure (elle a écrit)",
+      "answer": "va escriure"
+    },
+    {
+      "prompt": "Vosaltres ___ (fer) els deures? → vau fer (avez-vous fait)",
+      "answer": "vau fer"
+    },
+    {
+      "prompt": "El cap de setmana passat ___ (anar, jo) a Barcelona. → vaig anar (je suis allé)",
+      "answer": "vaig anar"
+    },
+    {
+      "prompt": "Nosaltres ___ (dinar) a un restaurant. → vam dinar (nous avons déjeuné)",
+      "answer": "vam dinar"
+    },
+    {
+      "prompt": "Tu ___ (dormir) bé? → vas dormir (as-tu dormi)",
+      "answer": "vas dormir"
+    },
+    {
+      "prompt": "Ells ___ (perdre) el tren. → van perdre (ils ont raté)",
+      "answer": "van perdre"
+    },
+    {
+      "prompt": "Jo ___ (beure) un cafè. → vaig beure (j'ai bu)",
+      "answer": "vaig beure"
+    },
+    {
+      "prompt": "Ella ___ (estudiar) tota la nit. → va estudiar (elle a étudié)",
+      "answer": "va estudiar"
+    },
+    {
+      "prompt": "Nosaltres ___ (parlar) amb el professor. → vam parlar (nous avons parlé)",
+      "answer": "vam parlar"
+    },
+    {
+      "prompt": "Vosaltres ___ (venir) a la festa? → vau venir (êtes-vous venus)",
+      "answer": "vau venir"
+    },
+    {
+      "prompt": "Ell ___ (llegir) el diari. → va llegir (il a lu)",
+      "answer": "va llegir"
+    },
+    {
+      "prompt": "Jo ___ (conèixer) la Laura fa un any. → vaig conèixer (j'ai rencontré)",
+      "answer": "vaig conèixer"
+    },
+    {
+      "prompt": "Ells ___ (comprar) una casa. → van comprar (ils ont acheté)",
+      "answer": "van comprar"
+    },
+    {
+      "prompt": "Tu ___ (agafar) el bus? → vas agafar (as-tu pris)",
+      "answer": "vas agafar"
+    }
+  ]
+}
