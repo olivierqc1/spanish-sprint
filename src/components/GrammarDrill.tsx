@@ -23,6 +23,8 @@ type Props = {
   onAnswer?: (correct: boolean, drill: Drill) => void;
 };
 
+const ACCENTS = ['á', 'é', 'í', 'ó', 'ú', 'ñ', 'ü', '¿', '¡'];
+
 export default function GrammarDrill({ title, note, visual, drills, onClose, language = 'fr', onAnswer }: Props) {
   const [showExplanationPanel, setShowExplanationPanel] = useState(true);
   const [hasStarted, setHasStarted] = useState(false);
@@ -253,7 +255,6 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
         )}
 
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex-1 flex flex-col min-w-0 shadow-xl">
-          {/* Barre de progression tout en haut */}
           <div className="bg-slate-800 rounded-full h-1.5 overflow-hidden mb-4 flex-shrink-0">
             <div className="h-full transition-all duration-500 rounded-full"
               style={{ width: `${pctBar}%`, background: 'linear-gradient(90deg,#3b82f6,#60a5fa)' }} />
@@ -292,6 +293,18 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
             autoFocus
             className="w-full bg-slate-950 border-2 border-slate-700 rounded-2xl px-4 py-3.5 text-lg text-white focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 disabled:opacity-60 flex-shrink-0 transition"
           />
+
+          {/* Barre d'accents (mobile) */}
+          {feedback === null && (
+            <div className="mt-2 flex flex-wrap gap-1.5 flex-shrink-0">
+              {ACCENTS.map(ch => (
+                <button key={ch} type="button" onClick={() => setUserAnswer(userAnswer + ch)}
+                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white text-base font-medium transition active:scale-95">
+                  {ch}
+                </button>
+              ))}
+            </div>
+          )}
 
           {currentDrill.hint && feedback === null && (
             <div className="mt-3 flex-shrink-0">
