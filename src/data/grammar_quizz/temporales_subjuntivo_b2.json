@@ -1,0 +1,110 @@
+{
+  "id": "temporales_subjuntivo_b2",
+  "title": {
+    "fr": "Subordonnées temporelles + subjonctif — B2.2",
+    "en": "Temporal clauses + subjunctive — B2.2"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Après cuando, en cuanto, hasta que, mientras... le mode dépend du temps de l'action.\n\n🎯 ACTION FUTURE (pas encore arrivée) → SUBJONCTIF.\n→ Cuando llegues, llámame. (Quand tu arriveras, appelle)\n→ En cuanto termine, te aviso. (Dès que j'aurai fini)\n→ Hasta que no pagues, no te lo doy. (Tant que tu ne paieras pas)\n\n🎯 ACTION HABITUELLE ou PASSÉE (réelle) → INDICATIF.\n→ Cuando era pequeño, vivía aquí. (Quand j'étais petit — passé)\n→ Siempre que viene, trae algo. (Chaque fois qu'il vient — habitude)\n\n⚡ ANTES DE QUE → TOUJOURS subjonctif (antes de que se vayan). ANTES DE + infinitif si même sujet (antes de salir).\n\n💡 Résumé : futur = subjonctif, réel/habituel = indicatif. Le français « quand + futur » devient toujours subjonctif en espagnol.",
+    "en": "⚙ After cuando, en cuanto, hasta que, mientras... the mood depends on the timing of the action.\n\n🎯 FUTURE action (not yet happened) → SUBJUNCTIVE.\n→ Cuando llegues, llámame. (When you arrive, call me)\n→ En cuanto termine, te aviso. (As soon as I finish)\n→ Hasta que no pagues, no te lo doy. (Until you pay)\n\n🎯 HABITUAL or PAST (real) action → INDICATIVE.\n→ Cuando era pequeño, vivía aquí. (When I was little — past)\n→ Siempre que viene, trae algo. (Whenever he comes — habit)\n\n⚡ ANTES DE QUE → ALWAYS subjunctive (antes de que se vayan). ANTES DE + infinitive if same subject (antes de salir).\n\n💡 Rule: future = subjunctive, real/habitual = indicative."
+  },
+  "drills": [
+    {
+      "prompt": "Cuando ___ (llegar, tú) a casa, avísame. (futur)",
+      "answer": "llegues"
+    },
+    {
+      "prompt": "Cuando ___ (ser, yo) niño, jugaba en la calle. (passé)",
+      "answer": "era"
+    },
+    {
+      "prompt": "En cuanto ___ (terminar, yo) el trabajo, salgo. (futur)",
+      "answer": "termine"
+    },
+    {
+      "prompt": "Siempre que ___ (venir, él), trae vino. (habitude)",
+      "answer": "viene"
+    },
+    {
+      "prompt": "Antes de que ___ (irse, ellos), quiero hablar con ellos. (antes de que)",
+      "answer": "se vayan"
+    },
+    {
+      "prompt": "Después de que ___ (terminar) la reunión ayer, nos fuimos. (passé)",
+      "answer": "terminó"
+    },
+    {
+      "prompt": "No saldrás hasta que ___ (acabar, tú) los deberes. (futur)",
+      "answer": "acabes"
+    },
+    {
+      "prompt": "Mientras ___ (vivir, tú) aquí, respetarás las normas. (futur/condition)",
+      "answer": "vivas"
+    },
+    {
+      "prompt": "Cuando ___ (jubilarse, yo), viajaré por el mundo. (futur)",
+      "answer": "me jubile"
+    },
+    {
+      "prompt": "Todos los días, cuando ___ (llegar, yo) del trabajo, ceno. (habitude)",
+      "answer": "llego"
+    },
+    {
+      "prompt": "En cuanto ___ (saber, nosotros) algo, os llamamos. (futur)",
+      "answer": "sepamos"
+    },
+    {
+      "prompt": "Ayer, en cuanto ___ (ver, ella) el mensaje, respondió. (passé)",
+      "answer": "vio"
+    },
+    {
+      "prompt": "Espérame aquí hasta que ___ (volver, yo). (futur)",
+      "answer": "vuelva"
+    },
+    {
+      "prompt": "Antes de que se ___ (hacer) tarde, deberíamos irnos. (antes de que)",
+      "answer": "haga"
+    },
+    {
+      "prompt": "Cuando ___ (poder, tú), pásate por casa. (futur)",
+      "answer": "puedas"
+    },
+    {
+      "prompt": "Mientras ___ (estudiar, yo) en Bath, viví en una residencia. (passé)",
+      "answer": "estudiaba"
+    },
+    {
+      "prompt": "Cuando ___ (tener, nosotros) tiempo, iremos a verte. (futur)",
+      "answer": "tengamos"
+    },
+    {
+      "prompt": "Cada vez que ___ (llover), se inunda la calle. (habitude)",
+      "answer": "llueve"
+    },
+    {
+      "prompt": "Te lo explicaré cuando nos ___ (ver). (futur)",
+      "answer": "veamos"
+    },
+    {
+      "prompt": "Después de que ___ (nacer) el bebé, todo cambió. (passé)",
+      "answer": "nació"
+    },
+    {
+      "prompt": "No compres nada hasta que ___ (comparar, tú) precios. (futur)",
+      "answer": "compares"
+    },
+    {
+      "prompt": "En cuanto ___ (poder, ella), te devolverá el dinero. (futur)",
+      "answer": "pueda"
+    },
+    {
+      "prompt": "Cuando ___ (ir, nosotros) a España, siempre comíamos tarde. (passé habituel)",
+      "answer": "íbamos"
+    },
+    {
+      "prompt": "Llámame en cuanto ___ (aterrizar) el avión. (futur)",
+      "answer": "aterrice"
+    }
+  ]
+}
