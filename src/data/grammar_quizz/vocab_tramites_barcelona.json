@@ -1,0 +1,94 @@
+{
+  "id": "vocab_tramites_barcelona",
+  "title": {
+    "fr": "Vocabulaire : démarches administratives (Espagne)",
+    "en": "Vocabulary: admin procedures (Spain)"
+  },
+  "level": "A2-B1",
+  "note": {
+    "fr": "⚙ Le vocabulaire réel des démarches en Espagne (immigration, santé, mairie). Remplis le mot manquant.\n\n🎯 Les incontournables :\n→ NIE = número de identidad de extranjero (numéro d'identité d'étranger)\n→ cita previa = rendez-vous à demander en ligne\n→ empadronamiento / padrón = inscription à la mairie (domiciliation)\n→ extranjería = bureau des étrangers\n→ tarjeta sanitaria = carte de santé (accès au médecin public)\n\n💡 Vocab directement utile pour ta vie à Barcelone. Chaque mot manquant a un indice en français.",
+    "en": "⚙ The real vocabulary of Spanish admin (immigration, health, town hall). Fill the missing word.\n\n🎯 The essentials:\n→ NIE = foreigner ID number\n→ cita previa = appointment to book online\n→ empadronamiento / padrón = town-hall registration\n→ extranjería = immigration office\n→ tarjeta sanitaria = health card\n\n💡 Vocabulary directly useful for life in Barcelona. Each blank has a French hint."
+  },
+  "drills": [
+    {
+      "prompt": "El ___ es tu número de identidad de extranjero. (le numéro d'étranger)",
+      "answer": "NIE"
+    },
+    {
+      "prompt": "Antes de ir a la oficina, hay que pedir ___ por internet. (un rendez-vous)",
+      "answer": "cita previa"
+    },
+    {
+      "prompt": "El ___ es registrarte en el ayuntamiento de tu ciudad. (domiciliation)",
+      "answer": "empadronamiento"
+    },
+    {
+      "prompt": "La oficina de ___ gestiona los permisos de residencia. (les étrangers)",
+      "answer": "extranjería"
+    },
+    {
+      "prompt": "Necesitas la ___ sanitaria para ir al médico público. (carte)",
+      "answer": "tarjeta"
+    },
+    {
+      "prompt": "El certificado de ___ prueba tu dirección. (recensement/domiciliation)",
+      "answer": "empadronamiento"
+    },
+    {
+      "prompt": "Para estudiar necesitas la ___ por estudios. (autorisation de séjour)",
+      "answer": "estancia"
+    },
+    {
+      "prompt": "Tienes que ___ los documentos originales y las copias. (apporter)",
+      "answer": "llevar"
+    },
+    {
+      "prompt": "El ___ es una tasa que se paga en el banco. (l'impôt/la taxe)",
+      "answer": "impuesto"
+    },
+    {
+      "prompt": "Debes ___ el formulario antes de la cita. (remplir)",
+      "answer": "rellenar"
+    },
+    {
+      "prompt": "El permiso de ___ te deja quedarte legalmente. (séjour)",
+      "answer": "residencia"
+    },
+    {
+      "prompt": "La ___ de huellas es cuando toman tus huellas dactilares. (prise)",
+      "answer": "toma"
+    },
+    {
+      "prompt": "Si pierdes el pasaporte, debes poner una ___ en la policía. (déclaration/plainte)",
+      "answer": "denuncia"
+    },
+    {
+      "prompt": "El ___ es el documento que certifica tus estudios. (certificat/diplôme)",
+      "answer": "certificado"
+    },
+    {
+      "prompt": "Para trabajar necesitas un ___ de trabajo. (permis)",
+      "answer": "permiso"
+    },
+    {
+      "prompt": "Hay que ___ la solicitud antes del plazo. (soumettre/présenter)",
+      "answer": "presentar"
+    },
+    {
+      "prompt": "El ___ es el plazo máximo para hacer un trámite. (délai)",
+      "answer": "plazo"
+    },
+    {
+      "prompt": "La ___ es el documento que recibes al empadronarte. (attestation/justificatif)",
+      "answer": "volante"
+    },
+    {
+      "prompt": "Debes ___ una cuenta bancaria para domiciliar los pagos. (ouvrir)",
+      "answer": "abrir"
+    },
+    {
+      "prompt": "El ___ consular certifica documentos canadienses en España. (le sceau/l'apostille)",
+      "answer": "apostille"
+    }
+  ]
+}
