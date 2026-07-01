@@ -1,0 +1,94 @@
+{
+  "id": "cat_pronoms_febles_en_hi",
+  "title": {
+    "fr": "Catalan : les pronoms EN et HI",
+    "en": "Catalan: the pronouns EN and HI"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ Deux petits pronoms catalans essentiels, sans vrai équivalent espagnol — mais identiques au français « en » et « y ».\n\n🎯 EN = « en » (une quantité, une partie, de qqch).\nRemplace un complément introduit par « de » ou une quantité.\n→ Tens pa? Sí, en tinc. (Tu as du pain ? Oui, j'en ai)\n→ Quants en vols? (Combien en veux-tu ?)\n\n🎯 HI = « y » (un lieu, ou « il y a »).\nRemplace un lieu, ou forme « hi ha » = il y a.\n→ Vas a Barcelona? Sí, hi vaig. (Tu vas à Barcelone ? Oui, j'y vais)\n→ Hi ha molta gent. (Il y a beaucoup de monde)\n\n💡 Astuce francophone : EN catalan = « en » français, HI catalan = « y » français. Presque un calque direct.",
+    "en": "⚙ Two essential little Catalan pronouns, with no real Spanish equivalent — but identical to French « en » and « y ».\n\n🎯 EN = \"some / of it\" (a quantity, a part).\nReplaces a complement with « de » or a quantity.\n→ Tens pa? Sí, en tinc. (Do you have bread? Yes, I have some)\n→ Quants en vols? (How many do you want?)\n\n🎯 HI = \"there\" (a place, or \"there is\").\nReplaces a place, or forms « hi ha » = there is.\n→ Vas a Barcelona? Sí, hi vaig. (Are you going to Barcelona? Yes, I'm going)\n→ Hi ha molta gent. (There are many people)\n\n💡 For French speakers: Catalan EN = French « en », Catalan HI = French « y »."
+  },
+  "drills": [
+    {
+      "prompt": "Tens pa? Sí, ___ tinc. (j'en ai → en)",
+      "answer": "en"
+    },
+    {
+      "prompt": "Vas a Girona? Sí, ___ vaig. (j'y vais → hi)",
+      "answer": "hi"
+    },
+    {
+      "prompt": "___ ha molta gent al carrer. (il y a → hi)",
+      "answer": "hi"
+    },
+    {
+      "prompt": "Vols cafè? No, no ___ vull. (je n'en veux pas → en)",
+      "answer": "en"
+    },
+    {
+      "prompt": "Coneixes Barcelona? Sí, ___ he estat. (j'y ai été → hi)",
+      "answer": "hi"
+    },
+    {
+      "prompt": "Quantes pomes vols? ___ vull tres. (j'en veux → en)",
+      "answer": "En"
+    },
+    {
+      "prompt": "Al calaix ___ ha molts papers. (il y a → hi)",
+      "answer": "hi"
+    },
+    {
+      "prompt": "Parles de la feina? Sí, ___ parlo sovint. (j'en parle → en)",
+      "answer": "en"
+    },
+    {
+      "prompt": "Vius a Barcelona? Sí, ___ visc des de fa dos anys. (j'y vis → hi)",
+      "answer": "hi"
+    },
+    {
+      "prompt": "Tens diners? No, no ___ tinc. (je n'en ai pas → en)",
+      "answer": "en"
+    },
+    {
+      "prompt": "Vas al gimnàs? Sí, ___ vaig cada dia. (j'y vais → hi)",
+      "answer": "hi"
+    },
+    {
+      "prompt": "Vols més sopa? No, ja ___ tinc prou. (j'en ai assez → en)",
+      "answer": "en"
+    },
+    {
+      "prompt": "___ havia molta neu a la muntanya. (il y avait → hi)",
+      "answer": "Hi"
+    },
+    {
+      "prompt": "Necessites sucre? Sí, ___ necessito. (j'en ai besoin → en)",
+      "answer": "en"
+    },
+    {
+      "prompt": "Aniràs a la festa? Sí, ___ aniré. (j'y irai → hi)",
+      "answer": "hi"
+    },
+    {
+      "prompt": "Menges carn? No, no ___ menjo mai. (je n'en mange pas → en)",
+      "answer": "en"
+    },
+    {
+      "prompt": "___ ha algú a casa? (y a-t-il → hi)",
+      "answer": "Hi"
+    },
+    {
+      "prompt": "Vens del mercat? Sí, ___ vinc ara. (j'en viens → en)",
+      "answer": "en"
+    },
+    {
+      "prompt": "Poso el got a la taula? Sí, posa'___ . (mets-l'y → hi)",
+      "answer": "hi"
+    },
+    {
+      "prompt": "Té fills? Sí, ___ té tres. (il en a → en)",
+      "answer": "en"
+    }
+  ]
+}
