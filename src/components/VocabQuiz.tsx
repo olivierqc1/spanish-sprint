@@ -393,6 +393,8 @@ export default function VocabQuiz({
     if (selectedOption === null || !current) return;
     setShowAnswer(true);
     const isCorrect = selectedOption === current.correct;
+    recordAnswer(isCorrect);
+    if (!isCorrect) logMistake({ prompt: current.question, answer: current.options[current.correct] }, "Vocabulaire");
     setScore(s => ({
       correct: s.correct + (isCorrect ? 1 : 0),
       total: s.total + 1,
