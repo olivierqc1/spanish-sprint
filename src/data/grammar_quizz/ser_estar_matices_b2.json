@@ -1,0 +1,110 @@
+{
+  "id": "ser_estar_matices_b2",
+  "title": {
+    "fr": "Ser ou estar : nuances qui changent le sens — B2.2",
+    "en": "Ser vs estar: meaning-changing nuances — B2.2"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Au B2, certains adjectifs changent carrément de sens selon ser ou estar.\n\n🎯 SER = caractéristique, définition, trait permanent.\n🎯 ESTAR = état, condition, résultat, moment.\n\nAdjectifs pièges :\n→ ser listo (être malin) / estar listo (être prêt)\n→ ser rico (être riche) / estar rico (être délicieux)\n→ ser aburrido (être ennuyeux) / estar aburrido (s'ennuyer)\n→ ser malo (être mauvais/méchant) / estar malo (être malade/avarié)\n→ ser bueno (être bon/gentil) / estar bueno (être bon au goût / en forme)\n→ ser guapo (être beau, trait) / estar guapo (être beau ce moment)\n\n💡 Question test : est-ce QUI/QUOI c'est (ser) ou COMMENT ça va/est là maintenant (estar) ?",
+    "en": "⚙ At B2, some adjectives change meaning entirely with ser or estar.\n\n🎯 SER = characteristic, definition, permanent trait.\n🎯 ESTAR = state, condition, result, moment.\n\nTricky adjectives:\n→ ser listo (to be clever) / estar listo (to be ready)\n→ ser rico (to be rich) / estar rico (to be delicious)\n→ ser aburrido (to be boring) / estar aburrido (to be bored)\n→ ser malo (to be bad/evil) / estar malo (to be ill/spoiled)\n→ ser bueno (to be good/kind) / estar bueno (to taste good / be fit)\n→ ser guapo (to be handsome, trait) / estar guapo (to look handsome now)\n\n💡 Test question: is it WHO/WHAT it is (ser) or HOW it is right now (estar)?"
+  },
+  "drills": [
+    {
+      "prompt": "Tu hermano ___ muy listo, siempre saca dieces. (malin → ser)",
+      "answer": "es"
+    },
+    {
+      "prompt": "¿Ya ___ listos para salir? (prêts → estar)",
+      "answer": "estáis"
+    },
+    {
+      "prompt": "Esta paella ___ riquísima. (délicieuse → estar)",
+      "answer": "está"
+    },
+    {
+      "prompt": "Ellos ___ muy ricos, tienen tres casas. (riches → ser)",
+      "answer": "son"
+    },
+    {
+      "prompt": "Esa película ___ muy aburrida, me dormí. (ennuyeuse → ser)",
+      "answer": "es"
+    },
+    {
+      "prompt": "___ aburrido, no hay nada que hacer. (je m'ennuie → estar)",
+      "answer": "Estoy"
+    },
+    {
+      "prompt": "El pescado ___ malo, huele fatal. (avarié → estar)",
+      "answer": "está"
+    },
+    {
+      "prompt": "Fumar ___ malo para la salud. (mauvais, général → ser)",
+      "answer": "es"
+    },
+    {
+      "prompt": "Ana ___ muy guapa hoy con ese vestido. (belle aujourd'hui → estar)",
+      "answer": "está"
+    },
+    {
+      "prompt": "Ana siempre ___ guapa, lo lleva de nacimiento. (belle, trait → ser)",
+      "answer": "es"
+    },
+    {
+      "prompt": "Mi abuela ___ mala, tiene fiebre. (malade → estar)",
+      "answer": "está"
+    },
+    {
+      "prompt": "Ese hombre ___ malo, engaña a todos. (méchant → ser)",
+      "answer": "es"
+    },
+    {
+      "prompt": "Este café ___ muy bueno, ¿de dónde es? (bon au goût → estar)",
+      "answer": "está"
+    },
+    {
+      "prompt": "Mi vecino ___ muy bueno, siempre ayuda. (gentil → ser)",
+      "answer": "es"
+    },
+    {
+      "prompt": "El niño ___ muy despierto para su edad. (éveillé/vif → ser)",
+      "answer": "es"
+    },
+    {
+      "prompt": "¿___ despierto? Te llamo desde hace rato. (réveillé → estar)",
+      "answer": "Estás"
+    },
+    {
+      "prompt": "La reunión ___ a las tres. (avoir lieu → ser)",
+      "answer": "es"
+    },
+    {
+      "prompt": "El profe ___ de mal humor hoy. (état passager → estar)",
+      "answer": "está"
+    },
+    {
+      "prompt": "Madrid ___ en el centro de España. (localisation → estar)",
+      "answer": "está"
+    },
+    {
+      "prompt": "Este bar ___ de mis amigos. (appartenance → ser)",
+      "answer": "es"
+    },
+    {
+      "prompt": "La sopa ya ___ fría, caliéntala. (état → estar)",
+      "answer": "está"
+    },
+    {
+      "prompt": "En invierno los días ___ cortos. (caractéristique → ser)",
+      "answer": "son"
+    },
+    {
+      "prompt": "¡Qué alto ___ tu hijo! Ha crecido mucho. (changement → estar)",
+      "answer": "está"
+    },
+    {
+      "prompt": "Mi hijo ___ alto, como su padre. (trait → ser)",
+      "answer": "es"
+    }
+  ]
+}
