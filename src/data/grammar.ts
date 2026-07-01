@@ -1397,4 +1397,116 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/colocaciones_b2.json"
   },
+{
+    id: "verbos_usos_inesperados",
+    title: { fr: "Verbes au sens inattendu (tocar, tomar, quedar...)", en: "Verbs with unexpected meanings (tocar, tomar, quedar...)" },
+    level: "A2-B1",
+    note: { fr: "Verbes courants dont le sens surprend un francophone (tocar = jouer, tomar = boire, quedar = avoir rendez-vous...).", en: "Common verbs with surprising meanings (tocar = to play, tomar = to drink, quedar = to arrange to meet...)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/verbos_usos_inesperados.json"
+  },
+  {
+    id: "pasados_narracion_b2",
+    title: { fr: "Contraste des passés en récit (B2.1)", en: "Past tense contrast in narration (B2.1)" },
+    level: "B2",
+    note: { fr: "Choisir entre indefinido, imperfecto et pluscuamperfecto dans un récit.", en: "Choosing between indefinido, imperfecto and pluscuamperfecto in a narrative." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/pasados_narracion_b2.json"
+  },
+  {
+    id: "voz_pasiva_se_b2",
+    title: { fr: "Voix passive et SE (passif / impersonnel) — B2.1", en: "Passive voice and SE (passive / impersonal) — B2.1" },
+    level: "B2",
+    note: { fr: "Passive avec ser, passive réfléchie (se venden) et se impersonnel.", en: "Passive with ser, reflexive passive (se venden) and impersonal se." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/voz_pasiva_se_b2.json"
+  },
+  {
+    id: "opinion_indicativo_subjuntivo_b2",
+    title: { fr: "Opinion : indicatif ou subjonctif — B2.1", en: "Opinion: indicative or subjunctive — B2.1" },
+    level: "B2",
+    note: { fr: "Affirmer (indicatif) vs nier / valoriser / douter (subjonctif).", en: "Asserting (indicative) vs denying / evaluating / doubting (subjunctive)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/opinion_indicativo_subjuntivo_b2.json"
+  },
+  {
+    id: "estilo_indirecto_pasado_b2",
+    title: { fr: "Discours rapporté et subjonctif imparfait — B2.1", en: "Reported speech and imperfect subjunctive — B2.1" },
+    level: "B2",
+    note: { fr: "Recul des temps et subjonctif imparfait (pidió que viniera, si tuviera...).", en: "Tense backshift and imperfect subjunctive (pidió que viniera, si tuviera...)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/estilo_indirecto_pasado_b2.json"
+  },
+  {
+    id: "conectores_argumentacion_b2",
+    title: { fr: "Connecteurs et argumentation — B2.1", en: "Connectors and argumentation — B2.1" },
+    level: "B2",
+    note: { fr: "Opposition, cause/conséquence, ajout : sin embargo, por lo tanto, aunque...", en: "Opposition, cause/effect, addition: sin embargo, por lo tanto, aunque..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/conectores_argumentacion_b2.json"
+  },
+  {
+    id: "perifrasis_verbales_b2",
+    title: { fr: "Périphrases verbales — B2.1", en: "Verb periphrases — B2.1" },
+    level: "B2",
+    note: { fr: "ir a, acabar de, volver a, dejar de, llevar/seguir + gérondif...", en: "ir a, acabar de, volver a, dejar de, llevar/seguir + gerund..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/perifrasis_verbales_b2.json"
+  },
+  {
+    id: "examen_b2_repaso",
+    title: { fr: "Examen blanc B2.1 — révision transversale", en: "B2.1 mock exam — mixed review" },
+    level: "B2",
+    note: { fr: "Révision mélangée des 6 thèmes B2.1, format examen.", en: "Mixed review of the 6 B2.1 topics, exam format." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/examen_b2_repaso.json"
+  },
+  {
+    id: "colocaciones_b2",
+    title: { fr: "Collocations B2 (verbe + nom)", en: "B2 collocations (verb + noun)" },
+    level: "B2",
+    note: { fr: "Blocs verbe + nom idiomatiques : tomar una decisión, hacer hincapié...", en: "Idiomatic verb + noun chunks: tomar una decisión, hacer hincapié..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/colocaciones_b2.json"
+  },
+  {
+    id: "condicional_usos_b2",
+    title: { fr: "Usages du conditionnel — B2.1", en: "Uses of the conditional — B2.1" },
+    level: "B2",
+    note: { fr: "Politesse, conseil, probabilité dans le passé, situations imaginaires.", en: "Politeness, advice, past probability, imaginary situations." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/condicional_usos_b2.json"
+  },
+  {
+    id: "condicionales_b2",
+    title: { fr: "Phrases conditionnelles — B2.1", en: "Conditional sentences — B2.1" },
+    level: "B2",
+    note: { fr: "Conditions réelles et irréelles : si + indicatif/subjonctif, a no ser que, siempre que...", en: "Real and unreal conditions: si + indicative/subjunctive, a no ser que, siempre que..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/condicionales_b2.json"
+  },
+  {
+    id: "relativas_subjuntivo_b2",
+    title: { fr: "Relatives et subjonctif — B2.1", en: "Relative clauses and subjunctive — B2.1" },
+    level: "B2",
+    note: { fr: "Indicatif vs subjonctif selon l'antécédent ; que, quien, cuyo.", en: "Indicative vs subjunctive depending on the antecedent; que, quien, cuyo." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/relativas_subjuntivo_b2.json"
+  },
+  {
+    id: "por_para_b2",
+    title: { fr: "Por et para — B2.1", en: "Por and para — B2.1" },
+    level: "B2",
+    note: { fr: "Cause, moyen, échange (por) vs but, destinataire, échéance (para).", en: "Cause, means, exchange (por) vs goal, recipient, deadline (para)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/por_para_b2.json"
+  },
+  {
+    id: "perfecto_subjuntivo_b2",
+    title: { fr: "Passé composé du subjonctif et infinitif composé — B2.1", en: "Present perfect subjunctive and compound infinitive — B2.1" },
+    level: "B2",
+    note: { fr: "haya + participe (no creo que haya llegado) et haber + participe (después de haber comido).", en: "haya + participle (no creo que haya llegado) and haber + participle (después de haber comido)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/perfecto_subjuntivo_b2.json"
+  },
 ];
