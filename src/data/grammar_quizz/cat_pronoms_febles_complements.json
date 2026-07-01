@@ -1,0 +1,94 @@
+{
+  "id": "cat_pronoms_febles_complements",
+  "title": {
+    "fr": "Catalan : pronoms compléments (el/la/li)",
+    "en": "Catalan: object pronouns (el/la/li)"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ Remplacer un complément par un pronom feble, comme en français.\n\n🎯 COD (objet direct) : el / la / els / les.\n→ Veus la Maria? Sí, la veig. (Tu vois Maria ? Oui, je la vois)\n→ Tens els llibres? Sí, els tinc. (Oui, je les ai)\n\n🎯 COI (objet indirect, à qqn) : li (singulier), els (pluriel).\n→ Dónes el regal a la Maria? Sí, li dono el regal. (Oui, je lui donne)\n→ Truques als teus pares? Sí, els truco. (Oui, je les appelle / je leur téléphone)\n\n💡 Comme en français : la voir → la veig ; lui donner → li dono. Le pronom se place AVANT le verbe conjugué.",
+    "en": "⚙ Replacing a complement with a weak pronoun, like in French.\n\n🎯 DIRECT OBJECT: el / la / els / les.\n→ Veus la Maria? Sí, la veig. (Do you see Maria? Yes, I see her)\n→ Tens els llibres? Sí, els tinc. (Yes, I have them)\n\n🎯 INDIRECT OBJECT (to someone): li (singular), els (plural).\n→ Dónes el regal a la Maria? Sí, li dono el regal.\n→ Truques als teus pares? Sí, els truco.\n\n💡 The pronoun goes BEFORE the conjugated verb."
+  },
+  "drills": [
+    {
+      "prompt": "Veus la Maria? Sí, ___ veig. (la voir → COD fém)",
+      "answer": "la"
+    },
+    {
+      "prompt": "Tens els llibres? Sí, ___ tinc. (les avoir → COD masc pl)",
+      "answer": "els"
+    },
+    {
+      "prompt": "Compres el pa? Sí, ___ compro. (l'acheter → COD masc)",
+      "answer": "el"
+    },
+    {
+      "prompt": "Escrius les cartes? Sí, ___ escric. (les écrire → COD fém pl)",
+      "answer": "les"
+    },
+    {
+      "prompt": "Dónes el regal a la Maria? Sí, ___ dono el regal. (lui donner → COI sg)",
+      "answer": "li"
+    },
+    {
+      "prompt": "Truques als teus pares? Sí, ___ truco. (les appeler → COI pl)",
+      "answer": "els"
+    },
+    {
+      "prompt": "Coneixes el Joan? Sí, ___ conec. (le connaître → COD masc)",
+      "answer": "el"
+    },
+    {
+      "prompt": "Portes la maleta? Sí, ___ porto. (la porter → COD fém)",
+      "answer": "la"
+    },
+    {
+      "prompt": "Expliques la història als nens? Sí, ___ explico. (leur → COI pl)",
+      "answer": "els"
+    },
+    {
+      "prompt": "Tens les claus? No, no ___ tinc. (les avoir → COD fém pl)",
+      "answer": "les"
+    },
+    {
+      "prompt": "Ajudes la teva germana? Sí, ___ ajudo. (l'aider → COD fém)",
+      "answer": "la"
+    },
+    {
+      "prompt": "Dius la veritat al professor? Sí, ___ dic la veritat. (lui → COI sg)",
+      "answer": "li"
+    },
+    {
+      "prompt": "Vols els pastissos? Sí, ___ vull. (les vouloir → COD masc pl)",
+      "answer": "els"
+    },
+    {
+      "prompt": "Escoltes la ràdio? Sí, ___ escolto. (l'écouter → COD fém)",
+      "answer": "la"
+    },
+    {
+      "prompt": "Regales flors a la teva mare? Sí, ___ regalo flors. (lui → COI sg)",
+      "answer": "li"
+    },
+    {
+      "prompt": "Beus el cafè? Sí, ___ bec. (le boire → COD masc)",
+      "answer": "el"
+    },
+    {
+      "prompt": "Estimes els teus amics? Sí, ___ estimo. (les aimer → COD masc pl)",
+      "answer": "els"
+    },
+    {
+      "prompt": "Envies el correu a la Laura? Sí, ___ envio el correu. (lui → COI sg)",
+      "answer": "li"
+    },
+    {
+      "prompt": "Fas les tasques? Sí, ___ faig. (les faire → COD fém pl)",
+      "answer": "les"
+    },
+    {
+      "prompt": "Convides els veïns? Sí, ___ convido. (les inviter → COD masc pl)",
+      "answer": "els"
+    }
+  ]
+}
