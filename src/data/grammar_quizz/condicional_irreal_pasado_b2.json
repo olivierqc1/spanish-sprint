@@ -1,0 +1,110 @@
+{
+  "id": "condicional_irreal_pasado_b2",
+  "title": {
+    "fr": "Conditionnel irréel du passé — B2.2",
+    "en": "Third conditional (past unreal) — B2.2"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Pour un regret ou une hypothèse sur le passé : « si les choses avaient été autrement... ».\n\n🎯 STRUCTURE : Si + plus-que-parfait du subjonctif (hubiera + participe) + conditionnel passé (habría + participe).\n→ Si hubiera sabido, habría venido. (Si j'avais su, je serais venu)\n→ Si me lo hubieras dicho, te habría ayudado. (Si tu me l'avais dit...)\n\n🎯 LES DEUX MOITIÉS :\nCondition (si...) → hubiera/hubieras/hubiéramos... + participe.\nRésultat → habría/habrías/habríamos... + participe.\n→ No habríamos perdido el tren si hubiéramos salido antes.\n\n💡 hubiera = hubiese (les deux formes existent, interchangeables). C'est LE temps du regret : « j'aurais dû », « ça se serait passé autrement si... ».",
+    "en": "⚙ For a regret or hypothesis about the past: \"if things had been different...\".\n\n🎯 STRUCTURE: Si + pluperfect subjunctive (hubiera + participle) + conditional perfect (habría + participle).\n→ Si hubiera sabido, habría venido. (If I had known, I would have come)\n→ Si me lo hubieras dicho, te habría ayudado. (If you had told me...)\n\n🎯 THE TWO HALVES:\nCondition (si...) → hubiera/hubieras/hubiéramos... + participle.\nResult → habría/habrías/habríamos... + participle.\n→ No habríamos perdido el tren si hubiéramos salido antes.\n\n💡 hubiera = hubiese (both forms valid, interchangeable)."
+  },
+  "drills": [
+    {
+      "prompt": "Si lo ___ (saber, yo), habría actuado distinto. (condition)",
+      "answer": "hubiera sabido"
+    },
+    {
+      "prompt": "Si me lo ___ (decir, tú), te habría ayudado. (condition)",
+      "answer": "hubieras dicho"
+    },
+    {
+      "prompt": "Yo no ___ (hacer) eso en tu lugar. (résultat)",
+      "answer": "habría hecho"
+    },
+    {
+      "prompt": "Si no ___ (llover), habríamos ido a la playa. (condition)",
+      "answer": "hubiera llovido"
+    },
+    {
+      "prompt": "Habrían llegado a tiempo si ___ (salir, ellos) antes. (condition)",
+      "answer": "hubieran salido"
+    },
+    {
+      "prompt": "Si ___ (estudiar, tú) más, habrías aprobado. (condition)",
+      "answer": "hubieras estudiado"
+    },
+    {
+      "prompt": "Te ___ (llamar, yo) si hubiera tenido tu número. (résultat)",
+      "answer": "habría llamado"
+    },
+    {
+      "prompt": "Si hubiéramos reservado, no ___ (esperar, nosotros) tanto. (résultat)",
+      "answer": "habríamos esperado"
+    },
+    {
+      "prompt": "Si ella ___ (querer), habría venido. (condition)",
+      "answer": "hubiera querido"
+    },
+    {
+      "prompt": "¿Qué ___ (hacer, tú) si te hubiera tocado la lotería? (résultat)",
+      "answer": "habrías hecho"
+    },
+    {
+      "prompt": "Si no ___ (perder, yo) el vuelo, ya estaría allí. (condition)",
+      "answer": "hubiera perdido"
+    },
+    {
+      "prompt": "Nos ___ (encantar) verte si hubieras venido. (résultat)",
+      "answer": "habría encantado"
+    },
+    {
+      "prompt": "Si ___ (haber) sitio, os habríais quedado. (condition)",
+      "answer": "hubiera habido"
+    },
+    {
+      "prompt": "Ellos ___ (ganar) si hubieran jugado mejor. (résultat)",
+      "answer": "habrían ganado"
+    },
+    {
+      "prompt": "Si me ___ (avisar, vosotros), habría ido con vosotros. (condition)",
+      "answer": "hubierais avisado"
+    },
+    {
+      "prompt": "No ___ (pasar) nada si hubieras tenido cuidado. (résultat)",
+      "answer": "habría pasado"
+    },
+    {
+      "prompt": "Si ___ (poder, nosotros), te habríamos ayudado. (condition)",
+      "answer": "hubiéramos podido"
+    },
+    {
+      "prompt": "Ella ___ (venir) si la hubieras invitado. (résultat)",
+      "answer": "habría venido"
+    },
+    {
+      "prompt": "Si el tren no ___ (retrasarse), no habría llegado tarde. (condition)",
+      "answer": "se hubiera retrasado"
+    },
+    {
+      "prompt": "Yo ___ (decir) la verdad si me la hubieran preguntado. (résultat)",
+      "answer": "habría dicho"
+    },
+    {
+      "prompt": "Si ___ (nacer, yo) en otra época, todo sería distinto. (condition, mixte)",
+      "answer": "hubiera nacido"
+    },
+    {
+      "prompt": "¿Me lo ___ (contar, tú) si te lo hubiera pedido? (résultat)",
+      "answer": "habrías contado"
+    },
+    {
+      "prompt": "Si hubierais llegado antes, ___ (ver) el principio. (résultat)",
+      "answer": "habríais visto"
+    },
+    {
+      "prompt": "No lo ___ (creer, yo) si no lo hubiera visto. (résultat)",
+      "answer": "habría creído"
+    }
+  ]
+}
