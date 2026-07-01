@@ -1,0 +1,102 @@
+{
+  "id": "estilo_indirecto_ordenes_b2",
+  "title": {
+    "fr": "Discours rapporté : ordres et questions — B2.2",
+    "en": "Reported speech: orders and questions — B2.2"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙ Rapporter au passé un ordre ou une question demande deux mécanismes différents.\n\n🎯 ORDRE / DEMANDE → que + SUBJONCTIF IMPARFAIT.\nAprès pedir, decir (ordre), recomendar, aconsejar au passé.\n→ Me dijo que viniera. (Il m'a dit de venir)\n→ Nos pidió que esperáramos. (Il nous a demandé d'attendre)\n\n🎯 QUESTION rapportée → recul des temps, PAS de subjonctif.\nQuestion fermée : preguntó SI + indicatif. Question ouverte : garde le mot interrogatif.\n→ Me preguntó si tenía tiempo. (Il m'a demandé si j'avais le temps)\n→ Preguntó qué hora era / dónde vivía. (…quelle heure il était / où je vivais)\n\n⚡ « decir que » a deux sens : information (indicatif : dijo que estaba cansado) vs ordre (subjonctif : dijo que viniera).\n\n💡 Le mot interrogatif (qué, dónde, cuándo, por qué) reste ; seul le temps recule (presente → imperfecto).",
+    "en": "⚙ Reporting an order vs a question in the past uses two different mechanisms.\n\n🎯 ORDER / REQUEST → que + IMPERFECT SUBJUNCTIVE.\n→ Me dijo que viniera. (He told me to come)\n→ Nos pidió que esperáramos. (He asked us to wait)\n\n🎯 REPORTED QUESTION → tense backshift, NO subjunctive.\nYes/no: preguntó SI + indicative. Open: keep the question word.\n→ Me preguntó si tenía tiempo. (He asked if I had time)\n→ Preguntó qué hora era / dónde vivía.\n\n⚡ « decir que » has two senses: information (indicative) vs order (subjunctive).\n\n💡 The question word stays; only the tense shifts back (present → imperfect)."
+  },
+  "drills": [
+    {
+      "prompt": "Me dijo que ___ (venir, yo) pronto. (ordre → subj imparfait)",
+      "answer": "viniera"
+    },
+    {
+      "prompt": "Me preguntó si ___ (tener, yo) tiempo. (question → indic imparfait)",
+      "answer": "tenía"
+    },
+    {
+      "prompt": "Nos pidió que ___ (esperar) un momento. (ordre → subj)",
+      "answer": "esperáramos"
+    },
+    {
+      "prompt": "Preguntó qué hora ___ (ser). (question → indic)",
+      "answer": "era"
+    },
+    {
+      "prompt": "El médico me recomendó que ___ (descansar). (ordre → subj)",
+      "answer": "descansara"
+    },
+    {
+      "prompt": "Quería saber dónde ___ (vivir, yo). (question → indic)",
+      "answer": "vivía"
+    },
+    {
+      "prompt": "Le ordenó que ___ (salir) de inmediato. (ordre → subj)",
+      "answer": "saliera"
+    },
+    {
+      "prompt": "Me preguntó si ___ (poder, yo) ayudarle. (question → indic)",
+      "answer": "podía"
+    },
+    {
+      "prompt": "Nos aconsejó que ___ (reservar) con antelación. (ordre → subj)",
+      "answer": "reserváramos"
+    },
+    {
+      "prompt": "Preguntó por qué no ___ (haber, nosotros) llamado. (question → antériorité)",
+      "answer": "habíamos"
+    },
+    {
+      "prompt": "Le dije que ___ (tener, él) cuidado. (ordre → subj)",
+      "answer": "tuviera"
+    },
+    {
+      "prompt": "Me preguntó cuándo ___ (volver, yo). (question → indic/futur du passé)",
+      "answer": "volvía"
+    },
+    {
+      "prompt": "El profe pidió que ___ (entregar, nosotros) el trabajo el lunes. (ordre → subj)",
+      "answer": "entregáramos"
+    },
+    {
+      "prompt": "Nos preguntó si ___ (querer) café. (question → indic)",
+      "answer": "queríamos"
+    },
+    {
+      "prompt": "Me suplicó que no ___ (decir) nada. (ordre → subj)",
+      "answer": "dijera"
+    },
+    {
+      "prompt": "Preguntó qué ___ (hacer, nosotros) el fin de semana. (question → indic)",
+      "answer": "hacíamos"
+    },
+    {
+      "prompt": "La jefa me dijo que ___ (llegar, yo) antes. (ordre → subj)",
+      "answer": "llegara"
+    },
+    {
+      "prompt": "Me preguntó si ya ___ (terminar, yo) el informe. (question → antériorité)",
+      "answer": "había terminado"
+    },
+    {
+      "prompt": "Insistió en que ___ (probar, nosotros) el postre. (ordre → subj)",
+      "answer": "probáramos"
+    },
+    {
+      "prompt": "Quería saber cómo ___ (estar, yo). (question → indic)",
+      "answer": "estaba"
+    },
+    {
+      "prompt": "Nos rogó que ___ (tener) paciencia. (ordre → subj)",
+      "answer": "tuviéramos"
+    },
+    {
+      "prompt": "Me preguntó dónde ___ (comprar, yo) las entradas. (question → indic)",
+      "answer": "compré"
+    }
+  ]
+}
