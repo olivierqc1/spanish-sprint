@@ -1,6 +1,8 @@
 "use client";
 import { useMemo, useState } from "react";
 import type { Level } from "./LevelPicker";
+import { recordAnswer } from "@/data/progress";
+import { logMistake } from "@/data/errorLog";
 
 type VocabQuestion = {
   id: string;
