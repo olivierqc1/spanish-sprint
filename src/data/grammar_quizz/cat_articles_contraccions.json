@@ -1,0 +1,94 @@
+{
+  "id": "cat_articles_contraccions",
+  "title": {
+    "fr": "Catalan : articles et contractions",
+    "en": "Catalan: articles and contractions"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ L'article catalan et ses contractions avec les prépositions.\n\n🎯 ARTICLES : el / la / els / les. Devant voyelle ou h : l' (l'home, l'aigua).\n→ el llibre (le livre), la taula (la table), els nens (les enfants), l'amic (l'ami)\n\n🎯 CONTRACTIONS (obligatoires) :\na + el = al · de + el = del · per + el = pel\na + els = als · de + els = dels · per + els = pels\n→ Vaig al mercat. (Je vais au marché)\n→ La porta del cotxe. (La porte de la voiture)\n→ Passo pel carrer. (Je passe par la rue)\n\n💡 Comme en français « à le → au », « de le → du ». Pas de contraction avec la / les / l'.",
+    "en": "⚙ The Catalan article and its contractions with prepositions.\n\n🎯 ARTICLES: el / la / els / les. Before a vowel or h: l' (l'home, l'aigua).\n→ el llibre (the book), la taula (the table), els nens (the children), l'amic (the friend)\n\n🎯 CONTRACTIONS (mandatory):\na + el = al · de + el = del · per + el = pel\na + els = als · de + els = dels · per + els = pels\n→ Vaig al mercat. (I go to the market)\n→ La porta del cotxe. (The car door)\n→ Passo pel carrer. (I go through the street)\n\n💡 Like \"to the / of the\". No contraction with la / les / l'."
+  },
+  "drills": [
+    {
+      "prompt": "Vaig ___ mercat. (a + el → au)",
+      "answer": "al"
+    },
+    {
+      "prompt": "La porta ___ cotxe. (de + el → du)",
+      "answer": "del"
+    },
+    {
+      "prompt": "Passo ___ carrer major. (per + el → par le)",
+      "answer": "pel"
+    },
+    {
+      "prompt": "Dono menjar ___ gats. (a + els → aux)",
+      "answer": "als"
+    },
+    {
+      "prompt": "El color ___ ulls. (de + els → des)",
+      "answer": "dels"
+    },
+    {
+      "prompt": "___ home que ve. (article devant voyelle → l')",
+      "answer": "l'"
+    },
+    {
+      "prompt": "___ aigua és freda. (article devant voyelle → l')",
+      "answer": "l'"
+    },
+    {
+      "prompt": "Vaig ___ cinema aquesta nit. (a + el → au)",
+      "answer": "al"
+    },
+    {
+      "prompt": "Els llibres ___ nens. (de + els → des)",
+      "answer": "dels"
+    },
+    {
+      "prompt": "Camino ___ parc cada matí. (per + el → par le)",
+      "answer": "pel"
+    },
+    {
+      "prompt": "___ taula és de fusta. (article féminin → la)",
+      "answer": "la"
+    },
+    {
+      "prompt": "Truco ___ metge. (a + el → au)",
+      "answer": "al"
+    },
+    {
+      "prompt": "La casa ___ meus avis. (de + els → de mes)",
+      "answer": "dels"
+    },
+    {
+      "prompt": "___ nens juguen al pati. (article pluriel masc → els)",
+      "answer": "els"
+    },
+    {
+      "prompt": "Vaig ___ escola a peu. (a + l' → à l')",
+      "answer": "a l'"
+    },
+    {
+      "prompt": "El preu ___ bitllet. (de + el → du)",
+      "answer": "del"
+    },
+    {
+      "prompt": "Passem ___ pont. (per + el → par le)",
+      "answer": "pel"
+    },
+    {
+      "prompt": "___ amiga de la Laura. (article devant voyelle → l')",
+      "answer": "l'"
+    },
+    {
+      "prompt": "Dono les gràcies ___ professor. (a + el → au)",
+      "answer": "al"
+    },
+    {
+      "prompt": "Les fotos ___ viatge. (de + el → du)",
+      "answer": "del"
+    }
+  ]
+}
