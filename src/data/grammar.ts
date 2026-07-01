@@ -1509,4 +1509,28 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/perfecto_subjuntivo_b2.json"
   },
+{
+    id: "temporales_subjuntivo_b2",
+    title: { fr: "Subordonnées temporelles + subjonctif — B2.2", en: "Temporal clauses + subjunctive — B2.2" },
+    level: "B2",
+    note: { fr: "cuando, en cuanto, hasta que... + subjonctif (futur) ou indicatif (habituel/passé).", en: "cuando, en cuanto, hasta que... + subjunctive (future) or indicative (habitual/past)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/temporales_subjuntivo_b2.json"
+  },
+  {
+    id: "condicional_irreal_pasado_b2",
+    title: { fr: "Conditionnel irréel du passé — B2.2", en: "Third conditional (past unreal) — B2.2" },
+    level: "B2",
+    note: { fr: "Si hubiera sabido, habría venido : regret et hypothèse sur le passé.", en: "Si hubiera sabido, habría venido: regret and hypothesis about the past." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/condicional_irreal_pasado_b2.json"
+  },
+  {
+    id: "ser_estar_matices_b2",
+    title: { fr: "Ser ou estar : nuances qui changent le sens — B2.2", en: "Ser vs estar: meaning-changing nuances — B2.2" },
+    level: "B2",
+    note: { fr: "ser listo/estar listo, ser rico/estar rico, ser aburrido/estar aburrido...", en: "ser listo/estar listo, ser rico/estar rico, ser aburrido/estar aburrido..." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/ser_estar_matices_b2.json"
+  },
 ];
