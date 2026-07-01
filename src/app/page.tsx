@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import FraseDelDia from '@/components/FraseDelDia';
+import Dashboard from '@/components/Dashboard';
+import { texts, countryLabels } from './homeTexts';
 
 type UILanguage = 'fr' | 'en';
 type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
@@ -39,96 +40,6 @@ export default function Home() {
     }
   };
 
-  const texts = {
-    fr: {
-      subtitle: 'Espagnol & Catalan — vivez Barcelone pleinement',
-      targetLang: 'Je veux apprendre',
-      from: 'J\'apprends depuis le',
-      selectLevel: 'Ton niveau',
-      selectCountry: 'Variante régionale',
-      allCountries: '🌍 Toutes les variantes',
-      currentSetup: 'Configuration actuelle',
-      spanish: '🇪🇸 Espagnol',
-      catalan: '🟡 Catalan',
-      catalanBadge: 'Nouveau',
-      modules: {
-        flashcards: { title: 'Flashcards', desc: 'Vocabulaire par pays et niveau' },
-        audio: { title: 'Audio', desc: 'Écoute et répète' },
-        grammar: { title: 'Grammaire', desc: 'Exercices de grammaire' },
-        conjugation: { title: 'Conjugaison', desc: 'Entraîne-toi aux verbes' },
-        conversations: { title: 'Conversations', desc: 'Pratique avec l\'IA' },
-        audioPro: { title: 'Audio Pro', desc: 'Génère des audios TTS' },
-        reading: { title: 'Lecture', desc: 'Textes authentiques' },
-        dictee: { title: 'Dictée', desc: 'Écris ce que tu entends' },
-      },
-      catalanModules: {
-        flashcards: { title: 'Flashcards', desc: 'Vocabulaire catalan A1-B1' },
-        conjugation: { title: 'Conjugaison', desc: 'Verbes catalans essentiels' },
-        grammar: { title: 'Grammaire', desc: 'Articles, ser/estar, négation...' },
-        phrases: { title: 'Phrases du quotidien', desc: 'Survie à Barcelone' },
-        dictee: { title: 'Dictée', desc: 'Orthographe catalane' },
-      },
-      comingSoon: 'Bientôt disponible',
-      available: 'Disponible',
-    },
-    en: {
-      subtitle: 'Spanish & Catalan — live Barcelona fully',
-      targetLang: 'I want to learn',
-      from: 'Learning from',
-      selectLevel: 'Your level',
-      selectCountry: 'Regional variant',
-      allCountries: '🌍 All variants',
-      currentSetup: 'Current setup',
-      spanish: '🇪🇸 Spanish',
-      catalan: '🟡 Catalan',
-      catalanBadge: 'New',
-      modules: {
-        flashcards: { title: 'Flashcards', desc: 'Vocabulary by country & level' },
-        audio: { title: 'Audio', desc: 'Listen and repeat' },
-        grammar: { title: 'Grammar', desc: 'Grammar exercises' },
-        conjugation: { title: 'Conjugation', desc: 'Practice verbs' },
-        conversations: { title: 'Conversations', desc: 'Practice with AI' },
-        audioPro: { title: 'Audio Pro', desc: 'Generate TTS audio' },
-        reading: { title: 'Reading', desc: 'Authentic texts' },
-        dictee: { title: 'Dictation', desc: 'Write what you hear' },
-      },
-      catalanModules: {
-        flashcards: { title: 'Flashcards', desc: 'Catalan vocabulary A1-B1' },
-        conjugation: { title: 'Conjugation', desc: 'Essential Catalan verbs' },
-        grammar: { title: 'Grammar', desc: 'Articles, ser/estar, negation...' },
-        phrases: { title: 'Daily Phrases', desc: 'Survive in Barcelona' },
-        dictee: { title: 'Dictation', desc: 'Catalan spelling' },
-      },
-      comingSoon: 'Coming soon',
-      available: 'Available',
-    },
-  };
-
-  const countryLabels = {
-    fr: {
-      ALL: '🌍 Toutes les variantes',
-      spain: '🇪🇸 Espagne (castillan)',
-      mexico: '🇲🇽 Mexique',
-      argentina: '🇦🇷 Argentine',
-      colombia: '🇨🇴 Colombie',
-      peru: '🇵🇪 Pérou',
-      chile: '🇨🇱 Chili',
-      cuba: '🇨🇺 Cuba',
-      venezuela: '🇻🇪 Venezuela',
-    },
-    en: {
-      ALL: '🌍 All variants',
-      spain: '🇪🇸 Spain (castilian)',
-      mexico: '🇲🇽 Mexico',
-      argentina: '🇦🇷 Argentina',
-      colombia: '🇨🇴 Colombia',
-      peru: '🇵🇪 Peru',
-      chile: '🇨🇱 Chile',
-      cuba: '🇨🇺 Cuba',
-      venezuela: '🇻🇪 Venezuela',
-    },
-  };
-
   const t = texts[uiLanguage];
 
   const handleModuleClick = (module: string) => (e: React.MouseEvent) => {
@@ -147,8 +58,6 @@ export default function Home() {
     { key: 'audio', icon: '🎧', route: 'audio', available: true, ...t.modules.audio },
     { key: 'grammaire', icon: '📚', route: 'grammaire', available: true, ...t.modules.grammar },
     { key: 'conjugaison', icon: '⚡', route: 'conjugaison', available: true, ...t.modules.conjugation },
-    { key: 'conversations', icon: '💬', route: 'conversations', available: true, ...t.modules.conversations },
-    { key: 'audioPro', icon: '🎙️', route: 'audio-pro', available: true, ...t.modules.audioPro },
   ];
 
   const catalanModules = [
@@ -186,6 +95,15 @@ export default function Home() {
       </div>
 
       <div className="max-w-6xl mx-auto px-6 pb-16">
+        {/* ── DASHBOARD ── */}
+        <div className="mb-10">
+          <Dashboard
+            language={uiLanguage}
+            onReview={() => router.push('/grammaire')}
+            onPractice={() => router.push('/grammaire')}
+          />
+        </div>
+
         {/* ── HERO ── */}
         <div className="text-center mb-10">
           <div className="inline-flex items-center gap-3 mb-4">
