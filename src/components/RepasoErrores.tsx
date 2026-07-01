@@ -10,6 +10,7 @@ import {
   clearErrorLog,
   type LoggedMistake,
 } from '@/data/errorLog';
+import { recordAnswer } from '@/data/progress';
 
 export default function RepasoErrores({ language = 'fr' }: { language?: 'fr' | 'en' }) {
   const [due, setDue] = useState<LoggedMistake[]>([]);
@@ -54,7 +55,10 @@ export default function RepasoErrores({ language = 'fr' }: { language?: 'fr' | '
         note={t.note}
         drills={drills}
         language={language}
-        onAnswer={(correct, d) => recordReview(d.prompt, d.answer, correct)}
+        onAnswer={(correct, d) => {
+          recordAnswer(correct);
+          recordReview(d.prompt, d.answer, correct);
+        }}
         onClose={() => {
           setRunning(false);
           refresh();
