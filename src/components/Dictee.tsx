@@ -1,6 +1,7 @@
 "use client";
 import { useMemo, useState, useEffect } from "react";
 import type { Level, Country } from "./LevelPicker";
+import { recordAnswer } from "@/data/progress";
 
 type WordItem = {
   id: string;
@@ -202,6 +203,7 @@ export default function Dictee({
 
   const checkAnswer = () => {
     setShowResult(true);
+    if (currentExercise) recordAnswer(calculateScore(userText, currentExercise.text) >= 80);
   };
 
   const nextExercise = () => {
