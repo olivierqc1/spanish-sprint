@@ -1533,4 +1533,28 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/ser_estar_matices_b2.json"
   },
+{
+    id: "cat_passat_perifrastic",
+    title: { fr: "Catalan : le passé périphrastique", en: "Catalan: periphrastic past" },
+    level: "A1-A2",
+    note: { fr: "Le passé catalan : vaig/vas/va + infinitif (vaig menjar = j'ai mangé).", en: "Catalan past: vaig/vas/va + infinitive (vaig menjar = I ate)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_passat_perifrastic.json"
+  },
+  {
+    id: "cat_articles_contraccions",
+    title: { fr: "Catalan : articles et contractions", en: "Catalan: articles and contractions" },
+    level: "A1-A2",
+    note: { fr: "el/la/l'/els/les et les contractions al, del, pel.", en: "el/la/l'/els/les and the contractions al, del, pel." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_articles_contraccions.json"
+  },
+  {
+    id: "cat_pronoms_febles_en_hi",
+    title: { fr: "Catalan : les pronoms EN et HI", en: "Catalan: the pronouns EN and HI" },
+    level: "A1-A2",
+    note: { fr: "EN (= en français) et HI (= y français) : en tinc, hi vaig, hi ha.", en: "EN and HI: en tinc, hi vaig, hi ha." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_pronoms_febles_en_hi.json"
+  },
 ];
