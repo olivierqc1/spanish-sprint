@@ -1557,4 +1557,28 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_pronoms_febles_en_hi.json"
   },
+{
+    id: "estilo_indirecto_ordenes_b2",
+    title: { fr: "Discours rapporté : ordres et questions — B2.2", en: "Reported speech: orders and questions — B2.2" },
+    level: "B2",
+    note: { fr: "Rapporter un ordre (que + subj imparfait) vs une question (si/qué + indicatif reculé).", en: "Reporting an order (que + imperfect subj) vs a question (si/qué + backshifted indicative)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/estilo_indirecto_ordenes_b2.json"
+  },
+  {
+    id: "cat_pronoms_febles_complements",
+    title: { fr: "Catalan : pronoms compléments (el/la/li)", en: "Catalan: object pronouns (el/la/li)" },
+    level: "A1-A2",
+    note: { fr: "COD el/la/els/les et COI li/els : la veig, els tinc, li dono.", en: "Direct el/la/els/les and indirect li/els: la veig, els tinc, li dono." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_pronoms_febles_complements.json"
+  },
+  {
+    id: "vocab_tramites_barcelona",
+    title: { fr: "Vocabulaire : démarches administratives (Espagne)", en: "Vocabulary: admin procedures (Spain)" },
+    level: "A2-B1",
+    note: { fr: "NIE, cita previa, empadronamiento, extranjería, estancia... le vocab réel de ta vie ici.", en: "NIE, cita previa, empadronamiento, extranjería... real admin vocabulary." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/vocab_tramites_barcelona.json"
+  },
 ];
