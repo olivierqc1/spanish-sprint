@@ -1,6 +1,5 @@
 // src/data/progress.ts
-// Suivi de progression (série de jours, drills faits, précision) en localStorage.
-// Aucune dépendance externe.
+// Suivi de progression (série, drills, précision) + objectif quotidien, en localStorage.
 
 export type Stats = {
   totalAnswered: number;
@@ -12,6 +11,8 @@ export type Stats = {
 };
 
 const KEY = 'ss_progress_v1';
+const GOAL_KEY = 'ss_daily_goal_v1';
+const DEFAULT_GOAL = 20;
 
 type Store = {
   totalAnswered: number;
@@ -47,7 +48,6 @@ function save(s: Store): void {
   }
 }
 
-// À appeler à chaque réponse (bonne ou mauvaise).
 export function recordAnswer(correct: boolean): void {
   const s = load();
   s.totalAnswered += 1;
@@ -60,7 +60,6 @@ export function recordAnswer(correct: boolean): void {
 function computeStreak(days: Record<string, number>): number {
   const has = (d: Date) => !!days[dayKey(d)];
   const cursor = new Date();
-  // La série tient si tu as pratiqué aujourd'hui ; sinon on regarde à partir d'hier.
   if (!has(cursor)) {
     cursor.setDate(cursor.getDate() - 1);
     if (!has(cursor)) return 0;
@@ -83,6 +82,23 @@ export function getStats(): Stats {
     todayCount: s.days[dayKey()] || 0,
     daysActive: Object.keys(s.days).length,
   };
+}
+
+// ----- Objectif quotidien -----
+export function getDailyGoal(): number {
+  if (typeof window === 'undefined') return DEFAULT_GOAL;
+  const v = Number(localStorage.getItem(GOAL_KEY));
+  return v > 0 ? v : DEFAULT_GOAL;
+}
+
+export function setDailyGoal(n: number): void {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(GOAL_KEY, String(n));
+    window.dispatchEvent(new Event('ss-progress-updated'));
+  } catch {
+    /* ignore */
+  }
 }
 
 export function resetProgress(): void {
