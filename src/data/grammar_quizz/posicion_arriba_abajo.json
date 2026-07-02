@@ -1,0 +1,110 @@
+{
+  "id": "posicion_arriba_abajo",
+  "title": {
+    "fr": "En haut / en bas : arriba, abajo, encima, debajo",
+    "en": "Up / down: arriba, abajo, encima, debajo"
+  },
+  "level": "A2-B1",
+  "note": {
+    "fr": "⚙ Le point qui coince : l'espagnol distingue la position GÉNÉRALE et la position PAR RAPPORT à un objet.\n\n🎯 ARRIBA / ABAJO = en haut / en bas (tout seuls, sans complément).\nPosition ou direction générale.\n→ Estoy abajo. (Je suis en bas)\n→ Te espero arriba. (Je t'attends en haut)\n→ El vecino de arriba / de abajo. (Le voisin du dessus / du dessous)\n\n🎯 ENCIMA DE / DEBAJO DE = au-dessus de / en dessous de (par rapport à qqch).\nToujours suivi de « de + objet ».\n→ El libro está encima de la mesa. (…sur / au-dessus de la table)\n→ El gato está debajo de la cama. (…sous le lit)\n\n🎯 MÁS ARRIBA / MÁS ABAJO = plus haut / plus bas (déplacement).\n→ Ponlo un poco más arriba. (Mets-le un peu plus haut)\n→ Está calle abajo. (C'est plus bas dans la rue)\n\n🎯 SUBIR / BAJAR = monter / descendre (les verbes).\n→ Sube las escaleras. (Monte les escaliers) · Baja la persiana. (Baisse le store)\n\n💡 Règle simple : si tu peux ajouter « de + objet » → encima/debajo. Sinon (position générale) → arriba/abajo.",
+    "en": "⚙ The sticking point: Spanish separates GENERAL position from position RELATIVE to an object.\n\n🎯 ARRIBA / ABAJO = up / down (on their own, no complement).\n→ Estoy abajo. (I'm downstairs)\n→ Te espero arriba. (I'll wait for you upstairs)\n→ El vecino de arriba / de abajo. (The upstairs / downstairs neighbour)\n\n🎯 ENCIMA DE / DEBAJO DE = on top of / underneath (relative to something).\nAlways followed by « de + object ».\n→ El libro está encima de la mesa. (…on the table)\n→ El gato está debajo de la cama. (…under the bed)\n\n🎯 MÁS ARRIBA / MÁS ABAJO = higher / lower (movement).\n→ Ponlo un poco más arriba. (Put it a bit higher)\n\n🎯 SUBIR / BAJAR = to go up / go down (the verbs).\n→ Sube las escaleras. · Baja la persiana.\n\n💡 Simple rule: if you can add « de + object » → encima/debajo. Otherwise (general position) → arriba/abajo."
+  },
+  "drills": [
+    {
+      "prompt": "Estoy ___, en la planta baja. (en bas)",
+      "answer": "abajo"
+    },
+    {
+      "prompt": "Te espero ___, en la terraza. (en haut)",
+      "answer": "arriba"
+    },
+    {
+      "prompt": "El libro está ___ de la mesa. (au-dessus de / sur)",
+      "answer": "encima"
+    },
+    {
+      "prompt": "El gato duerme ___ de la cama. (en dessous de)",
+      "answer": "debajo"
+    },
+    {
+      "prompt": "Ponlo un poco más ___. (plus haut)",
+      "answer": "arriba"
+    },
+    {
+      "prompt": "Está muy alto, ponlo más ___. (plus bas)",
+      "answer": "abajo"
+    },
+    {
+      "prompt": "El vecino de ___ hace mucho ruido por la noche. (du dessus)",
+      "answer": "arriba"
+    },
+    {
+      "prompt": "La tienda está en el piso de ___. (du dessous)",
+      "answer": "abajo"
+    },
+    {
+      "prompt": "Las llaves están ___ de la mesa. (sur / au-dessus de)",
+      "answer": "encima"
+    },
+    {
+      "prompt": "Hay una caja ___ del armario, no la veo. (sous / en dessous de)",
+      "answer": "debajo"
+    },
+    {
+      "prompt": "El mando está en el estante de ___. (du haut)",
+      "answer": "arriba"
+    },
+    {
+      "prompt": "El garaje está ___, en el sótano. (en bas)",
+      "answer": "abajo"
+    },
+    {
+      "prompt": "Mira ___, en el cielo, hay un arcoíris. (en haut / là-haut)",
+      "answer": "arriba"
+    },
+    {
+      "prompt": "El restaurante está calle ___, a dos minutos andando. (plus bas dans la rue)",
+      "answer": "abajo"
+    },
+    {
+      "prompt": "Pon el cuadro un poco más ___, está demasiado alto. (plus bas)",
+      "answer": "abajo"
+    },
+    {
+      "prompt": "El perro se escondió ___ de la mesa. (sous)",
+      "answer": "debajo"
+    },
+    {
+      "prompt": "Para ir al tejado tienes que ___ las escaleras. (monter)",
+      "answer": "subir"
+    },
+    {
+      "prompt": "Hay demasiada luz, ___ la persiana. (baisse / descends)",
+      "answer": "baja"
+    },
+    {
+      "prompt": "El ascensor no funciona, hay que ___ a pie. (monter)",
+      "answer": "subir"
+    },
+    {
+      "prompt": "Espérame ___, ahora bajo. (en haut)",
+      "answer": "arriba"
+    },
+    {
+      "prompt": "Los platos están en el armario de ___, no llego. (du haut)",
+      "answer": "arriba"
+    },
+    {
+      "prompt": "Deja las maletas ___, junto a la puerta. (en bas)",
+      "answer": "abajo"
+    },
+    {
+      "prompt": "El pájaro voló hacia ___. (vers le haut)",
+      "answer": "arriba"
+    },
+    {
+      "prompt": "Puse una alfombra ___ de la mesa del comedor. (sous)",
+      "answer": "debajo"
+    }
+  ]
+}
