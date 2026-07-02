@@ -5,6 +5,8 @@ import Link from 'next/link';
 import BackupProgress from '@/components/BackupProgress';
 import SesionPuntosDebiles from '@/components/SesionPuntosDebiles';
 import RepasoErrores from '@/components/RepasoErrores';
+import DictadoAudio from '@/components/DictadoAudio';
+
 
 export default function ExtrasPage() {
   const language: 'fr' | 'en' = 'fr';
