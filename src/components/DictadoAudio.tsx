@@ -1,12 +1,11 @@
 // src/components/DictadoAudio.tsx
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { recordAnswer } from '@/data/progress';
 
 type Frase = { es: string; fr: string };
 
-// Phrases B2 originales, pensées pour l'oreille (chiffres, dates, subjonctif, liaisons).
 const FRASES: Frase[] = [
   { es: 'Ayer quedé con Laura para tomar un café en Gràcia.', fr: "Hier j'ai retrouvé Laura pour prendre un café à Gràcia." },
   { es: 'El tren hacia Girona sale a las nueve y cuarto.', fr: 'Le train pour Gérone part à neuf heures et quart.' },
@@ -38,25 +37,51 @@ export default function DictadoAudio({ language = 'fr' }: { language?: 'fr' | 'e
   const [result, setResult] = useState<{ pct: number } | null>(null);
   const [slow, setSlow] = useState(false);
   const [speaking, setSpeaking] = useState(false);
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const [voiceState, setVoiceState] = useState<'loading' | 'ok' | 'none' | 'unsupported'>('loading');
+  const voiceRef = useRef<SpeechSynthesisVoice | null>(null);
 
   const frase = FRASES[i];
 
+  // Charge les voix (asynchrone sur mobile) et repère une voix espagnole.
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.speechSynthesis) {
+      setVoiceState('unsupported');
+      return;
+    }
+    const pick = () => {
+      const voices = window.speechSynthesis.getVoices();
+      if (!voices.length) return false;
+      const es = voices.find((v) => v.lang && v.lang.toLowerCase().startsWith('es'));
+      voiceRef.current = es || null;
+      setVoiceState(es ? 'ok' : 'none');
+      return true;
+    };
+    if (!pick()) {
+      window.speechSynthesis.onvoiceschanged = () => pick();
+      // filet de sécurité : retente après un court délai
+      setTimeout(pick, 700);
+    }
+    return () => { window.speechSynthesis.onvoiceschanged = null; };
+  }, []);
+
   const t = language === 'fr'
-    ? { title: 'Dictée audio', desc: 'Écoute la phrase et écris ce que tu entends.', listen: 'Écouter', stop: 'Arrêter', slow: 'Lent', check: 'Vérifier', next: 'Suivante →', placeholder: 'Écris ce que tu entends…', correct: 'Phrase correcte', unavailable: 'Voix espagnole indisponible sur cet appareil.' }
-    : { title: 'Audio dictation', desc: 'Listen and type what you hear.', listen: 'Listen', stop: 'Stop', slow: 'Slow', check: 'Check', next: 'Next →', placeholder: 'Type what you hear…', correct: 'Correct sentence', unavailable: 'Spanish voice unavailable on this device.' };
+    ? { title: 'Dictée audio', desc: 'Écoute la phrase et écris ce que tu entends.', listen: 'Écouter', stop: 'Arrêter', slow: 'Lent', check: 'Vérifier', next: 'Suivante →', placeholder: 'Écris ce que tu entends…', correct: 'Phrase correcte', loading: 'Chargement de la voix…', none: '⚠️ Aucune voix espagnole sur cet appareil. Va dans Réglages → Langues → Synthèse vocale et installe l’espagnol (es-ES).', unsupported: '⚠️ Ce navigateur ne supporte pas la synthèse vocale.' }
+    : { title: 'Audio dictation', desc: 'Listen and type what you hear.', listen: 'Listen', stop: 'Stop', slow: 'Slow', check: 'Check', next: 'Next →', placeholder: 'Type what you hear…', correct: 'Correct sentence', loading: 'Loading voice…', none: '⚠️ No Spanish voice on this device. Go to Settings → Languages → Text-to-speech and install Spanish (es-ES).', unsupported: '⚠️ This browser does not support speech synthesis.' };
 
   const speak = () => {
-    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+    if (voiceState === 'unsupported' || voiceState === 'none') return;
     window.speechSynthesis.cancel();
     if (speaking) { setSpeaking(false); return; }
     const u = new SpeechSynthesisUtterance(frase.es);
     u.lang = 'es-ES';
+    if (voiceRef.current) u.voice = voiceRef.current;
     u.rate = slow ? 0.7 : 0.95;
     u.onend = () => setSpeaking(false);
-    utterRef.current = u;
+    u.onerror = () => setSpeaking(false);
     setSpeaking(true);
     window.speechSynthesis.speak(u);
+    // correctif Android : relance si le moteur se met en pause
+    setTimeout(() => { try { window.speechSynthesis.resume(); } catch {} }, 250);
   };
 
   const check = () => {
@@ -78,6 +103,7 @@ export default function DictadoAudio({ language = 'fr' }: { language?: 'fr' | 'e
   };
 
   const pctColor = (p: number) => (p >= 80 ? '#34d399' : p >= 50 ? '#fbbf24' : '#fb7185');
+  const audioBlocked = voiceState === 'none' || voiceState === 'unsupported';
 
   return (
     <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5 max-w-2xl mx-auto">
@@ -87,12 +113,19 @@ export default function DictadoAudio({ language = 'fr' }: { language?: 'fr' | 'e
       </div>
       <p className="text-sm text-slate-400 mb-4">{t.desc}</p>
 
+      {audioBlocked && (
+        <div className="mb-4 p-3 rounded-xl bg-amber-500/10 border border-amber-500/40 text-amber-300 text-sm">
+          {voiceState === 'unsupported' ? t.unsupported : t.none}
+        </div>
+      )}
+
       <div className="flex items-center gap-2 mb-4">
-        <button onClick={speak} className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-5 py-2.5 rounded-xl font-bold transition">
-          {speaking ? `⏸ ${t.stop}` : `▶️ ${t.listen}`}
+        <button onClick={speak} disabled={audioBlocked || voiceState === 'loading'}
+          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 disabled:bg-slate-800 disabled:text-slate-600 px-5 py-2.5 rounded-xl font-bold transition">
+          {voiceState === 'loading' ? t.loading : speaking ? `⏸ ${t.stop}` : `▶️ ${t.listen}`}
         </button>
-        <button onClick={() => setSlow(!slow)}
-          className={`px-3 py-2.5 rounded-xl text-sm font-semibold transition border ${slow ? 'bg-blue-600/20 border-blue-600 text-blue-300' : 'bg-slate-800 border-slate-700 text-slate-300'}`}>
+        <button onClick={() => setSlow(!slow)} disabled={audioBlocked}
+          className={`px-3 py-2.5 rounded-xl text-sm font-semibold transition border disabled:opacity-40 ${slow ? 'bg-blue-600/20 border-blue-600 text-blue-300' : 'bg-slate-800 border-slate-700 text-slate-300'}`}>
           🐢 {t.slow}
         </button>
       </div>
