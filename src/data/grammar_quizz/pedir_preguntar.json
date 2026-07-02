@@ -1,0 +1,110 @@
+{
+  "id": "pedir_preguntar",
+  "title": {
+    "fr": "Pedir ou preguntar : les deux « demander »",
+    "en": "Pedir vs preguntar: two ways to \"ask\""
+  },
+  "level": "A2-B1",
+  "note": {
+    "fr": "⚙ En français « demander » couvre tout. En espagnol, deux verbes bien distincts.\n\n🎯 PEDIR = demander UNE CHOSE, un service ; commander.\nOn demande quelque chose (un objet, un favor, un plat).\n→ Pedir un favor. (Demander un service)\n→ Pedir la cuenta. (Demander l'addition)\n→ En el bar pedí una caña. (…j'ai commandé une bière)\n\n🎯 PREGUNTAR = poser une QUESTION, se renseigner.\nOn demande une information.\n→ Preguntar la hora. (Demander l'heure)\n→ Me preguntó si venía. (Il m'a demandé si je venais)\n→ Preguntar por alguien. (Demander après qqn / prendre des nouvelles)\n\n⚡ Piège : « demander l'heure » = PREGUNTAR (c'est une info), mais « demander un café » = PEDIR (c'est une chose). Le français ne fait pas la différence, l'espagnol si.\n\n💡 Test : si la réponse est une information → preguntar. Si c'est un objet/service qu'on te donne → pedir.",
+    "en": "⚙ In French \"demander\" covers everything. Spanish has two distinct verbs.\n\n🎯 PEDIR = to ask FOR something, a favour; to order.\n→ Pedir un favor. · Pedir la cuenta. · En el bar pedí una caña.\n\n🎯 PREGUNTAR = to ask a QUESTION, to inquire.\n→ Preguntar la hora. · Me preguntó si venía. · Preguntar por alguien.\n\n⚡ Trap: \"ask the time\" = PREGUNTAR (info), but \"ask for a coffee\" = PEDIR (a thing).\n\n💡 Test: if the answer is information → preguntar. If it's an object/service given to you → pedir."
+  },
+  "drills": [
+    {
+      "prompt": "Voy a ___ la cuenta al camarero. (demander l'addition)",
+      "answer": "pedir"
+    },
+    {
+      "prompt": "Le ___ (yo) la hora a un desconocido. (demander l'heure)",
+      "answer": "pregunté"
+    },
+    {
+      "prompt": "¿Te puedo ___ un favor? (demander un service)",
+      "answer": "pedir"
+    },
+    {
+      "prompt": "Me ___ (ella) si quería café. (demander si → question)",
+      "answer": "preguntó"
+    },
+    {
+      "prompt": "En el restaurante ___ (nosotros) paella. (commander)",
+      "answer": "pedimos"
+    },
+    {
+      "prompt": "___ (yo) por ti a tu hermana. (prendre des nouvelles)",
+      "answer": "Pregunté"
+    },
+    {
+      "prompt": "Los niños ___ dinero a sus padres. (demander de l'argent)",
+      "answer": "piden"
+    },
+    {
+      "prompt": "El profesor nos ___ la respuesta. (poser une question)",
+      "answer": "preguntó"
+    },
+    {
+      "prompt": "¿Puedo ___ te un vaso de agua? (demander une chose)",
+      "answer": "pedir"
+    },
+    {
+      "prompt": "Me ___ (ellos) cómo llegar al centro. (demander le chemin → question)",
+      "answer": "preguntaron"
+    },
+    {
+      "prompt": "Voy a ___ ayuda a un compañero. (demander de l'aide)",
+      "answer": "pedir"
+    },
+    {
+      "prompt": "Ella siempre ___ muchas preguntas en clase. (poser)",
+      "answer": "pregunta"
+    },
+    {
+      "prompt": "En la cafetería ___ (yo) un cortado. (commander)",
+      "answer": "pedí"
+    },
+    {
+      "prompt": "Te quería ___ una cosa: ¿tienes tiempo? (poser une question)",
+      "answer": "preguntar"
+    },
+    {
+      "prompt": "Han ___ una pizza para cenar. (commander)",
+      "answer": "pedido"
+    },
+    {
+      "prompt": "No sé la dirección, voy a ___ le a alguien. (demander l'info)",
+      "answer": "preguntar"
+    },
+    {
+      "prompt": "El cliente ___ hablar con el gerente. (demander/réclamer)",
+      "answer": "pide"
+    },
+    {
+      "prompt": "Me ___ (tú) si podías venir, y te dije que sí. (demander si)",
+      "answer": "preguntaste"
+    },
+    {
+      "prompt": "Vamos a ___ dos cafés y un té. (commander)",
+      "answer": "pedir"
+    },
+    {
+      "prompt": "¿Por qué no le ___ (tú) directamente qué quiere? (poser la question)",
+      "answer": "preguntas"
+    },
+    {
+      "prompt": "Han ___ silencio en la biblioteca. (réclamer/demander)",
+      "answer": "pedido"
+    },
+    {
+      "prompt": "La policía nos ___ la documentación. (demander → un document, chose)",
+      "answer": "pidió"
+    },
+    {
+      "prompt": "Le ___ (yo) a mi jefe un aumento. (demander une augmentation)",
+      "answer": "pedí"
+    },
+    {
+      "prompt": "El turista ___ dónde estaba el museo. (demander → question)",
+      "answer": "preguntó"
+    }
+  ]
+}
