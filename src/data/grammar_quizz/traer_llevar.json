@@ -1,0 +1,110 @@
+{
+  "id": "traer_llevar",
+  "title": {
+    "fr": "Traer ou llevar : apporter ici / emporter là-bas",
+    "en": "Traer vs llevar: bring here / take there"
+  },
+  "level": "A2-B1",
+  "note": {
+    "fr": "⚙ La différence dépend d'OÙ TU ES. C'est de la déixis, comme venir/aller.\n\n🎯 TRAER = apporter/amener VERS ICI (là où est celui qui parle).\nMouvement vers moi/nous.\n→ ¿Me traes un vaso de agua? (Tu m'apportes un verre ? — vers moi)\n→ El camarero nos trae la comida. (…nous apporte à manger)\n→ ¿Qué has traído? (Qu'as-tu apporté ? — ici)\n\n🎯 LLEVAR = emporter/emmener VERS LÀ-BAS (loin d'ici).\nMouvement loin de moi. Aussi = porter (vêtements), emmener qqn.\n→ Mañana llevo el paraguas al trabajo. (…j'emporte le parapluie)\n→ Voy a llevar a los niños al colegio. (…emmener les enfants)\n→ Hoy lleva un vestido rojo. (Elle porte une robe rouge)\n\n⚡ Même repas : « apporte-moi ça » (vers moi) = TRÁEME. « emporte ça » (loin) = LLÉVATE eso.\n\n💡 Test : ça vient vers celui qui parle → traer. Ça part ailleurs → llevar. Comme venir (venir) vs aller (ir).",
+    "en": "⚙ The difference depends on WHERE YOU ARE. It's deixis, like come/go.\n\n🎯 TRAER = to bring TOWARD HERE (where the speaker is).\n→ ¿Me traes un vaso de agua? · El camarero nos trae la comida. · ¿Qué has traído?\n\n🎯 LLEVAR = to take/carry AWAY (there). Also = to wear, to take someone.\n→ Mañana llevo el paraguas al trabajo. · Voy a llevar a los niños al colegio. · Hoy lleva un vestido rojo.\n\n⚡ \"bring me that\" (toward me) = TRÁEME. \"take that away\" = LLÉVATE eso.\n\n💡 Test: coming toward the speaker → traer. Going elsewhere → llevar. Like come (venir) vs go (ir)."
+  },
+  "drills": [
+    {
+      "prompt": "Camarero, ¿me ___ la carta, por favor? (apporter → ici)",
+      "answer": "trae"
+    },
+    {
+      "prompt": "Mañana ___ (yo) el paraguas al trabajo. (emporter → là-bas)",
+      "answer": "llevo"
+    },
+    {
+      "prompt": "¿Puedes ___ me un vaso de agua? (m'apporter → ici)",
+      "answer": "traer"
+    },
+    {
+      "prompt": "Voy a ___ a los niños al colegio. (emmener → là-bas)",
+      "answer": "llevar"
+    },
+    {
+      "prompt": "Cuando vengas a casa, ___ el postre. (apporte → ici)",
+      "answer": "trae"
+    },
+    {
+      "prompt": "Cuando vayas a la fiesta, ___ una botella. (emporte → là-bas)",
+      "answer": "lleva"
+    },
+    {
+      "prompt": "El cartero nos ___ una carta esta mañana. (apporter → ici)",
+      "answer": "trajo"
+    },
+    {
+      "prompt": "Hoy ella ___ un vestido rojo precioso. (porter un vêtement)",
+      "answer": "lleva"
+    },
+    {
+      "prompt": "¿Qué has ___ para la cena? (apporter → ici)",
+      "answer": "traído"
+    },
+    {
+      "prompt": "Tengo que ___ el coche al taller. (emmener → là-bas)",
+      "answer": "llevar"
+    },
+    {
+      "prompt": "Si vienes, ___ me tus apuntes. (apporte-moi → ici)",
+      "answer": "trae"
+    },
+    {
+      "prompt": "Me ___ (yo) el ordenador de vacaciones. (emporter → là-bas)",
+      "answer": "llevo"
+    },
+    {
+      "prompt": "El repartidor va a ___ el paquete a casa. (apporter → chez moi)",
+      "answer": "traer"
+    },
+    {
+      "prompt": "¿___ (tú) las llaves cuando salgas? (emporter → là-bas)",
+      "answer": "Llevas"
+    },
+    {
+      "prompt": "Los invitados ___ vino y postre. (apporter → ici)",
+      "answer": "trajeron"
+    },
+    {
+      "prompt": "Voy a ___ este regalo a la oficina. (emporter → là-bas)",
+      "answer": "llevar"
+    },
+    {
+      "prompt": "¿Me ___ (tú) un café cuando vengas? (m'apporter → ici)",
+      "answer": "traes"
+    },
+    {
+      "prompt": "Siempre ___ (él) gafas de sol. (porter)",
+      "answer": "lleva"
+    },
+    {
+      "prompt": "El niño ___ su juguete favorito a la escuela. (emporter → là-bas)",
+      "answer": "llevó"
+    },
+    {
+      "prompt": "¿Nos ___ (tú) algo de tu viaje? (rapporter → ici)",
+      "answer": "traes"
+    },
+    {
+      "prompt": "Por favor, ___ estos documentos al despacho de arriba. (emporter → là-bas)",
+      "answer": "lleva"
+    },
+    {
+      "prompt": "La abuela nos ___ dulces cada vez que viene. (apporter → ici)",
+      "answer": "trae"
+    },
+    {
+      "prompt": "Vamos a ___ a tu madre al aeropuerto. (emmener → là-bas)",
+      "answer": "llevar"
+    },
+    {
+      "prompt": "¿Puedes ___ me el libro que te presté? (me rapporter → ici)",
+      "answer": "traer"
+    }
+  ]
+}
