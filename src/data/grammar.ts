@@ -1581,4 +1581,28 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/vocab_tramites_barcelona.json"
   },
+{
+    id: "posicion_arriba_abajo",
+    title: { fr: "En haut / en bas : arriba, abajo, encima, debajo", en: "Up / down: arriba, abajo, encima, debajo" },
+    level: "A2-B1",
+    note: { fr: "arriba/abajo (position générale) vs encima de/debajo de (par rapport à un objet).", en: "arriba/abajo (general position) vs encima de/debajo de (relative to an object)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/posicion_arriba_abajo.json"
+  },
+{
+    id: "pedir_preguntar",
+    title: { fr: "Pedir ou preguntar : les deux « demander »", en: "Pedir vs preguntar: two ways to \"ask\"" },
+    level: "A2-B1",
+    note: { fr: "pedir = demander une chose / commander ; preguntar = poser une question.", en: "pedir = ask for something / order; preguntar = ask a question." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/pedir_preguntar.json"
+  },
+  {
+    id: "traer_llevar",
+    title: { fr: "Traer ou llevar : apporter ici / emporter là-bas", en: "Traer vs llevar: bring here / take there" },
+    level: "A2-B1",
+    note: { fr: "traer = vers celui qui parle (apporter) ; llevar = loin d'ici (emporter/porter).", en: "traer = toward the speaker (bring); llevar = away (take/carry/wear)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/traer_llevar.json"
+  },
 ];
