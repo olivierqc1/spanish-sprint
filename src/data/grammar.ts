@@ -9,6 +9,54 @@ export type GrammarPoint = {
 };
 
 export const grammarPoints: GrammarPoint[] = [
+{
+    id: "cat_imperatiu",
+    title: { fr: "Catalan : l'impératif", en: "Catalan: the imperative" },
+    level: "A1-A2",
+    note: { fr: "Ordres et conseils : parla, menja, fes, vine, digues, ves.", en: "Orders and advice: parla, menja, fes, vine, digues, ves." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_imperatiu.json"
+  },
+  {
+    id: "cat_present_perfet",
+    title: { fr: "Catalan : le passé composé (present perfet)", en: "Catalan: present perfect" },
+    level: "A1-A2",
+    note: { fr: "haver + participe : he parlat, has fet, ha vist. Le passé du jour.", en: "haver + participle: he parlat, has fet, ha vist." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_present_perfet.json"
+  },
+  {
+    id: "cat_preposicions",
+    title: { fr: "Catalan : les prépositions", en: "Catalan: prepositions" },
+    level: "A1-A2",
+    note: { fr: "a, de, amb, per, cap a, sense, fins a : emplois et pièges.", en: "a, de, amb, per, cap a, sense, fins a." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_preposicions.json"
+  },
+  {
+    id: "cat_adverbis_lloc",
+    title: { fr: "Catalan : adverbes de lieu", en: "Catalan: place adverbs" },
+    level: "A1-A2",
+    note: { fr: "aquí, allà, a dalt, a baix, sota, sobre, a prop : situer dans l'espace.", en: "aquí, allà, a dalt, a baix, sota, sobre, a prop." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_adverbis_lloc.json"
+  },
+  {
+    id: "cat_ser_estar_haverhi",
+    title: { fr: "Catalan : ser, estar et haver-hi", en: "Catalan: ser, estar and haver-hi" },
+    level: "A1-A2",
+    note: { fr: "ser (identité + lieu), estar (état), hi ha (il y a). Diffère de l'espagnol.", en: "ser (identity + place), estar (state), hi ha (there is). Differs from Spanish." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_ser_estar_haverhi.json"
+  },
+  {
+    id: "cat_numeros_hores",
+    title: { fr: "Catalan : nombres et heure", en: "Catalan: numbers and time" },
+    level: "A1-A2",
+    note: { fr: "Écrire les nombres (dotze, setze, vint-i-u) et dire l'heure.", en: "Writing numbers and telling time." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_numeros_hores.json"
+  },
   {
     id: "presente_regulares",
     title: { fr: "Présent – verbes réguliers (-ar, -er, -ir)", en: "Present tense – regular verbs (-ar, -er, -ir)" },
