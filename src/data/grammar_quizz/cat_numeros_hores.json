@@ -1,0 +1,94 @@
+{
+  "id": "cat_numeros_hores",
+  "title": {
+    "fr": "Catalan : nombres et heure",
+    "en": "Catalan: numbers and time"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ Écrire les nombres et dire l'heure en catalan.\n\n🎯 NOMBRES :\n→ 1 u/un · 2 dos · 3 tres · 11 onze · 12 dotze · 15 quinze · 16 setze · 17 disset · 18 divuit · 19 dinou · 20 vint · 21 vint-i-u · 30 trenta · 40 quaranta · 100 cent · 1000 mil\n\n🎯 HEURE (forme simple) :\n→ És la una. (Il est une heure) · Són les dues. (Il est deux heures)\n→ Són les tres i quart / i mitja / menys quart.\n\n💡 Le catalan traditionnel compte aussi par quarts « vers » l'heure suivante (un quart de cinc = 4h15), mais la forme « i quart / i mitja » est plus simple et acceptée.",
+    "en": "⚙ Writing numbers and telling time in Catalan.\n\n🎯 NUMBERS: 1 u/un · 2 dos · 11 onze · 12 dotze · 16 setze · 17 disset · 18 divuit · 19 dinou · 20 vint · 21 vint-i-u · 40 quaranta · 100 cent · 1000 mil\n\n🎯 TIME: És la una. · Són les dues. · Són les tres i quart / i mitja / menys quart."
+  },
+  "drills": [
+    {
+      "prompt": "Escriu en lletres : 2 → dos",
+      "answer": "dos"
+    },
+    {
+      "prompt": "Escriu en lletres : 12 → dotze",
+      "answer": "dotze"
+    },
+    {
+      "prompt": "Escriu en lletres : 16 → setze",
+      "answer": "setze"
+    },
+    {
+      "prompt": "Escriu en lletres : 17 → disset",
+      "answer": "disset"
+    },
+    {
+      "prompt": "Escriu en lletres : 18 → divuit",
+      "answer": "divuit"
+    },
+    {
+      "prompt": "Escriu en lletres : 20 → vint",
+      "answer": "vint"
+    },
+    {
+      "prompt": "Escriu en lletres : 21 → vint-i-u",
+      "answer": "vint-i-u"
+    },
+    {
+      "prompt": "Escriu en lletres : 30 → trenta",
+      "answer": "trenta"
+    },
+    {
+      "prompt": "Escriu en lletres : 40 → quaranta",
+      "answer": "quaranta"
+    },
+    {
+      "prompt": "Escriu en lletres : 100 → cent",
+      "answer": "cent"
+    },
+    {
+      "prompt": "Escriu en lletres : 15 → quinze",
+      "answer": "quinze"
+    },
+    {
+      "prompt": "Escriu en lletres : 11 → onze",
+      "answer": "onze"
+    },
+    {
+      "prompt": "Escriu en lletres : 19 → dinou",
+      "answer": "dinou"
+    },
+    {
+      "prompt": "Escriu en lletres : 50 → cinquanta",
+      "answer": "cinquanta"
+    },
+    {
+      "prompt": "1h : És ___ una. (l'article → la)",
+      "answer": "la"
+    },
+    {
+      "prompt": "2h : ___ les dues. (verbe → són)",
+      "answer": "Són"
+    },
+    {
+      "prompt": "3h : Són les tres. 4h : Són ___ quatre. (article pl → les)",
+      "answer": "les"
+    },
+    {
+      "prompt": "7h30 : Són les set ___ mitja. (et demie → i)",
+      "answer": "i"
+    },
+    {
+      "prompt": "5h15 : Són les cinc ___ quart. (et quart → i)",
+      "answer": "i"
+    },
+    {
+      "prompt": "9h45 : Són les deu ___ quart. (moins le quart → menys)",
+      "answer": "menys"
+    }
+  ]
+}
