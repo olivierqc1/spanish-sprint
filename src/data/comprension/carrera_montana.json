@@ -1,0 +1,37 @@
+{
+  "title": "Una carrera de montaña",
+  "text": "Óscar se prepara desde hace meses para una carrera de montaña de cuarenta kilómetros en los Pirineos. Entrena cinco días por semana, sobre todo por senderos con mucho desnivel. Su mayor reto no es la distancia, sino la subida acumulada, más de dos mil metros. El día de la carrera piensa llevar bastones, agua y algo de comida para recuperar fuerzas. Si el tiempo acompaña, espera terminar en menos de seis horas.",
+  "fr": "Óscar se prépare depuis des mois pour une course de montagne de quarante kilomètres dans les Pyrénées. Il s'entraîne cinq jours par semaine, surtout sur des sentiers très accidentés. Son plus grand défi n'est pas la distance, mais le dénivelé positif, plus de deux mille mètres. Le jour de la course, il compte emporter des bâtons, de l'eau et de quoi manger pour récupérer. Si le temps le permet, il espère finir en moins de six heures.",
+  "questions": [
+    {
+      "q": "¿De cuántos kilómetros es la carrera?",
+      "options": [
+        "Veinte",
+        "Treinta",
+        "Cuarenta",
+        "Cincuenta"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "¿Cuál es su mayor reto?",
+      "options": [
+        "La distancia",
+        "La subida acumulada",
+        "El calor",
+        "Los otros corredores"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "¿En cuánto tiempo espera terminar?",
+      "options": [
+        "Menos de cuatro horas",
+        "Menos de seis horas",
+        "Más de ocho horas",
+        "No lo sabe"
+      ],
+      "correct": 1
+    }
+  ]
+}
