@@ -1,0 +1,37 @@
+{
+  "title": "El empadronamiento",
+  "text": "Cuando llegas a vivir a España, uno de los primeros trámites es el empadronamiento. Consiste en registrarte en el ayuntamiento de tu ciudad para demostrar que vives allí. Para hacerlo, normalmente necesitas tu pasaporte y un contrato de alquiler. Es gratuito, pero a veces hay que pedir cita previa por internet. Una vez empadronado, recibes un certificado que sirve para muchos otros trámites.",
+  "fr": "Quand tu viens vivre en Espagne, l'une des premières démarches est l'empadronamiento. Il s'agit de t'inscrire à la mairie de ta ville pour prouver que tu y habites. Pour le faire, tu as normalement besoin de ton passeport et d'un contrat de location. C'est gratuit, mais il faut parfois prendre rendez-vous en ligne. Une fois inscrit, tu reçois un certificat qui sert pour beaucoup d'autres démarches.",
+  "questions": [
+    {
+      "q": "¿Dónde se hace el empadronamiento?",
+      "options": [
+        "En la policía",
+        "En el banco",
+        "En el ayuntamiento",
+        "En extranjería"
+      ],
+      "correct": 2
+    },
+    {
+      "q": "¿Cuánto cuesta?",
+      "options": [
+        "Diez euros",
+        "Es gratuito",
+        "Cincuenta euros",
+        "Depende de la ciudad"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "¿Qué necesitas normalmente?",
+      "options": [
+        "Solo el pasaporte",
+        "Pasaporte y contrato de alquiler",
+        "Una foto",
+        "El carné de conducir"
+      ],
+      "correct": 1
+    }
+  ]
+}
