@@ -1,0 +1,94 @@
+{
+  "id": "cat_ser_estar_haverhi",
+  "title": {
+    "fr": "Catalan : ser, estar et haver-hi",
+    "en": "Catalan: ser, estar and haver-hi"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ En catalan, la répartition diffère de l'espagnol — attention.\n\n🎯 SER (ésser) = identité, description, heure, ET localisation.\n→ Ella és metgessa. (Elle est médecin)\n→ El bany és al fons. (Les toilettes sont au fond — localisation !)\n→ Són les tres. (Il est trois heures)\n\n🎯 ESTAR = état, condition passagère.\n→ Estic cansat. (Je suis fatigué) · Estem contents. (Nous sommes contents)\n\n🎯 HAVER-HI = « il y a » (existence). Forme : hi ha.\n→ Hi ha molta gent. (Il y a beaucoup de monde)\n\n⚡ Différence clé avec l'espagnol : pour situer un lieu, le catalan préfère SER (El museu és al centre), là où l'espagnol met estar.",
+    "en": "⚙ In Catalan the split differs from Spanish — watch out.\n\n🎯 SER (ésser) = identity, description, time, AND location.\n→ Ella és metgessa. · El bany és al fons. · Són les tres.\n\n🎯 ESTAR = temporary state/condition.\n→ Estic cansat. · Estem contents.\n\n🎯 HAVER-HI = \"there is/are\". Form: hi ha.\n→ Hi ha molta gent.\n\n⚡ Key difference from Spanish: to locate a place, Catalan prefers SER, where Spanish uses estar."
+  },
+  "drills": [
+    {
+      "prompt": "___ (jo) molt cansat avui. (état → estar)",
+      "answer": "Estic"
+    },
+    {
+      "prompt": "El museu ___ al centre. (situé → ser)",
+      "answer": "és"
+    },
+    {
+      "prompt": "___ molta gent a la plaça. (il y a → haver-hi)",
+      "answer": "Hi ha"
+    },
+    {
+      "prompt": "Ella ___ de Girona. (origine → ser)",
+      "answer": "és"
+    },
+    {
+      "prompt": "Nosaltres ___ contents. (état → estar)",
+      "answer": "estem"
+    },
+    {
+      "prompt": "___ pa a la nevera? (y a-t-il → haver-hi)",
+      "answer": "Hi ha"
+    },
+    {
+      "prompt": "La reunió ___ a les tres. (horaire → ser)",
+      "answer": "és"
+    },
+    {
+      "prompt": "___ (tu) segur d'això? (état → estar)",
+      "answer": "Estàs"
+    },
+    {
+      "prompt": "Barcelona ___ a Catalunya. (situé → ser)",
+      "answer": "és"
+    },
+    {
+      "prompt": "No ___ ningú a casa. (il n'y a → haver-hi)",
+      "answer": "hi ha"
+    },
+    {
+      "prompt": "En Joan ___ professor. (identité → ser)",
+      "answer": "és"
+    },
+    {
+      "prompt": "___ (nosaltres) preocupats. (état → estar)",
+      "answer": "Estem"
+    },
+    {
+      "prompt": "El teu llibre ___ sobre la taula. (situé → ser)",
+      "answer": "és"
+    },
+    {
+      "prompt": "___ tres cadires a la sala. (il y a → haver-hi)",
+      "answer": "Hi ha"
+    },
+    {
+      "prompt": "Avui ___ (ella) malalta. (état → estar)",
+      "answer": "està"
+    },
+    {
+      "prompt": "Aquest cotxe ___ del meu pare. (possession → ser)",
+      "answer": "és"
+    },
+    {
+      "prompt": "¿On ___ (tu)? (localisation personne → ser)",
+      "answer": "ets"
+    },
+    {
+      "prompt": "___ un problema amb el wifi. (il y a → haver-hi)",
+      "answer": "Hi ha"
+    },
+    {
+      "prompt": "Els nens ___ a l'escola. (situés → ser)",
+      "answer": "són"
+    },
+    {
+      "prompt": "___ (jo) content de veure't. (état → estar)",
+      "answer": "Estic"
+    }
+  ]
+}
