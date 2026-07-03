@@ -1,0 +1,37 @@
+{
+  "title": "Un fin de semana en el Priorat",
+  "text": "El fin de semana pasado, Marc y Laura fueron al Priorat, una región de vino al sur de Cataluña. Salieron de Barcelona el sábado por la mañana y tardaron unas dos horas en llegar. Visitaron dos bodegas y probaron varios vinos tintos, que allí son especialmente intensos. Por la tarde dieron un paseo entre los viñedos antes de cenar en un pequeño restaurante del pueblo. Volvieron a casa el domingo, cansados pero encantados con el viaje.",
+  "fr": "Le week-end dernier, Marc et Laura sont allés au Priorat, une région viticole au sud de la Catalogne. Ils sont partis de Barcelone samedi matin et ont mis environ deux heures à arriver. Ils ont visité deux caves et goûté plusieurs vins rouges, particulièrement intenses là-bas. L'après-midi, ils se sont promenés dans les vignes avant de dîner dans un petit restaurant du village. Ils sont rentrés dimanche, fatigués mais ravis du voyage.",
+  "questions": [
+    {
+      "q": "¿Cuándo salieron de Barcelona?",
+      "options": [
+        "El viernes por la noche",
+        "El sábado por la mañana",
+        "El domingo",
+        "El sábado por la tarde"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "¿Cuántas bodegas visitaron?",
+      "options": [
+        "Una",
+        "Dos",
+        "Tres",
+        "Ninguna"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "¿Cómo son los vinos del Priorat según el texto?",
+      "options": [
+        "Suaves",
+        "Dulces",
+        "Intensos",
+        "Ligeros"
+      ],
+      "correct": 2
+    }
+  ]
+}
