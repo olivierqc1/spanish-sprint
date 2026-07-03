@@ -1605,4 +1605,44 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/traer_llevar.json"
   },
+{
+    id: "cat_present_verbs",
+    title: { fr: "Catalan : le présent des verbes", en: "Catalan: present tense" },
+    level: "A1-A2",
+    note: { fr: "Présent régulier (parlo, perdo, dormo) + irréguliers clés (sóc, tinc, vaig, faig).", en: "Regular present + key irregulars (sóc, tinc, vaig, faig)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_present_verbs.json"
+  },
+  {
+    id: "cat_imperfet",
+    title: { fr: "Catalan : l'imparfait", en: "Catalan: the imperfect" },
+    level: "A1-A2",
+    note: { fr: "Actions habituelles et descriptions au passé (parlava, era, feia).", en: "Past habits and descriptions (parlava, era, feia)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_imperfet.json"
+  },
+  {
+    id: "cat_futur",
+    title: { fr: "Catalan : le futur", en: "Catalan: the future" },
+    level: "A1-A2",
+    note: { fr: "Futur régulier (parlaré) et irréguliers (seré, tindré, faré, aniré).", en: "Regular future + irregulars (seré, tindré, faré, aniré)." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_futur.json"
+  },
+  {
+    id: "cat_possessius",
+    title: { fr: "Catalan : les possessifs", en: "Catalan: possessives" },
+    level: "A1-A2",
+    note: { fr: "el meu / la meva / els meus / les meves : le possessif avec article, accordé.", en: "el meu / la meva...: the possessive with article, agreeing." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_possessius.json"
+  },
+  {
+    id: "cat_interrogatius",
+    title: { fr: "Catalan : les mots interrogatifs", en: "Catalan: question words" },
+    level: "A1-A2",
+    note: { fr: "qui, què, on, quan, com, per què, quant, quin/quina.", en: "qui, què, on, quan, com, per què, quant, quin/quina." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_interrogatius.json"
+  },
 ];
