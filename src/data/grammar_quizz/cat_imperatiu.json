@@ -1,0 +1,94 @@
+{
+  "id": "cat_imperatiu",
+  "title": {
+    "fr": "Catalan : l'impératif",
+    "en": "Catalan: the imperative"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ Donner un ordre ou un conseil. Formes « tu » et « vosaltres ».\n\n🎯 RÉGULIERS (tu) :\n→ parlar → parla · menjar → menja · obrir → obre · beure → beu\n\n🎯 IRRÉGULIERS (tu) :\n→ fer → fes · anar → ves · venir → vine · dir → digues · seure → seu · tenir → té\n\n🎯 VOSALTRES = radical + -eu :\n→ parleu · mengeu · veniu · feu\n\n⚡ NÉGATIF → subjonctif : No parlis! (Ne parle pas !) No facis això!\n\n💡 « fes, ves, vine, digues » sont les impératifs irréguliers les plus courants — à mémoriser.",
+    "en": "⚙ Giving an order or advice. \"tu\" and \"vosaltres\" forms.\n\n🎯 REGULAR (tu): parlar → parla · menjar → menja · obrir → obre · beure → beu\n🎯 IRREGULAR (tu): fer → fes · anar → ves · venir → vine · dir → digues · seure → seu\n🎯 VOSALTRES = stem + -eu: parleu · mengeu · veniu · feu\n⚡ NEGATIVE → subjunctive: No parlis! No facis això!"
+  },
+  "drills": [
+    {
+      "prompt": "___ (parlar, tu) més a poc a poc. → Parla (parle)",
+      "answer": "Parla"
+    },
+    {
+      "prompt": "___ (menjar, tu) la fruita. → Menja (mange)",
+      "answer": "Menja"
+    },
+    {
+      "prompt": "___ (obrir, tu) la finestra. → Obre (ouvre)",
+      "answer": "Obre"
+    },
+    {
+      "prompt": "___ (fer, tu) els deures ara. → Fes (fais)",
+      "answer": "Fes"
+    },
+    {
+      "prompt": "___ (venir, tu) aquí, si us plau. → Vine (viens)",
+      "answer": "Vine"
+    },
+    {
+      "prompt": "___ (dir, tu) la veritat. → Digues (dis)",
+      "answer": "Digues"
+    },
+    {
+      "prompt": "___ (anar, tu) a comprar pa. → Ves (va)",
+      "answer": "Ves"
+    },
+    {
+      "prompt": "___ (seure, tu) aquí. → Seu (assieds-toi)",
+      "answer": "Seu"
+    },
+    {
+      "prompt": "___ (escoltar, vosaltres) bé. → Escolteu (écoutez)",
+      "answer": "Escolteu"
+    },
+    {
+      "prompt": "___ (venir, vosaltres) amb nosaltres. → Veniu (venez)",
+      "answer": "Veniu"
+    },
+    {
+      "prompt": "No ___ (parlar, tu) tan alt. → parlis (ne parle pas)",
+      "answer": "parlis"
+    },
+    {
+      "prompt": "___ (beure, tu) més aigua. → Beu (bois)",
+      "answer": "Beu"
+    },
+    {
+      "prompt": "___ (esperar, tu) un moment. → Espera (attends)",
+      "answer": "Espera"
+    },
+    {
+      "prompt": "___ (fer, vosaltres) silenci. → Feu (faites)",
+      "answer": "Feu"
+    },
+    {
+      "prompt": "No ___ (fer, tu) soroll. → facis (ne fais pas)",
+      "answer": "facis"
+    },
+    {
+      "prompt": "___ (tancar, tu) la porta. → Tanca (ferme)",
+      "answer": "Tanca"
+    },
+    {
+      "prompt": "___ (mirar, tu) això. → Mira (regarde)",
+      "answer": "Mira"
+    },
+    {
+      "prompt": "___ (menjar, vosaltres) tranquils. → Mengeu (mangez)",
+      "answer": "Mengeu"
+    },
+    {
+      "prompt": "___ (agafar, tu) el paraigua. → Agafa (prends)",
+      "answer": "Agafa"
+    },
+    {
+      "prompt": "No ___ (venir, tu) tard. → vinguis (ne viens pas)",
+      "answer": "vinguis"
+    }
+  ]
+}
