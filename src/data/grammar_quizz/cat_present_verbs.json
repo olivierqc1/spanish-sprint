@@ -1,0 +1,94 @@
+{
+  "id": "cat_present_verbs",
+  "title": {
+    "fr": "Catalan : le présent des verbes",
+    "en": "Catalan: present tense"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ Présent catalan : réguliers + irréguliers essentiels.\n\n🎯 RÉGULIERS :\n→ parlar : parlo, parles, parla, parlem, parleu, parlen\n→ perdre : perdo, perds, perd, perdem, perdeu, perden\n→ dormir : dormo, dorms, dorm, dormim, dormiu, dormen\n\n🎯 IRRÉGULIERS :\n→ ser : sóc, ets, és, som, sou, són\n→ estar : estic, estàs, està, estem, esteu, estan\n→ tenir : tinc, tens, té, tenim, teniu, tenen\n→ anar : vaig, vas, va, anem, aneu, van\n→ fer : faig, fas, fa, fem, feu, fan\n→ viure : visc, vius, viu, vivim, viviu, viuen\n\n💡 Beaucoup de « je » irréguliers finissent en -c : tinc, vinc, visc, puc.",
+    "en": "⚙ Catalan present: regular + essential irregulars.\n→ parlar: parlo/parles/parla/parlem/parleu/parlen\n→ ser: sóc, ets, és, som, sou, són · estar: estic, estàs, està...\n→ tenir: tinc, tens, té... · anar: vaig, vas, va... · fer: faig, fas, fa..."
+  },
+  "drills": [
+    {
+      "prompt": "Jo ___ (parlar) català. (je parle)",
+      "answer": "parlo"
+    },
+    {
+      "prompt": "Ella ___ (ser) de Girona. (elle est)",
+      "answer": "és"
+    },
+    {
+      "prompt": "Nosaltres ___ (tenir) dos fills. (nous avons)",
+      "answer": "tenim"
+    },
+    {
+      "prompt": "Tu ___ (anar) a la feina en bici. (tu vas)",
+      "answer": "vas"
+    },
+    {
+      "prompt": "Jo ___ (fer) esport cada dia. (je fais)",
+      "answer": "faig"
+    },
+    {
+      "prompt": "Ells ___ (viure) a Barcelona. (ils vivent)",
+      "answer": "viuen"
+    },
+    {
+      "prompt": "Jo ___ (tenir) gana. (j'ai faim)",
+      "answer": "tinc"
+    },
+    {
+      "prompt": "Vosaltres ___ (parlar) molt de pressa. (vous parlez)",
+      "answer": "parleu"
+    },
+    {
+      "prompt": "Ell ___ (estar) cansat avui. (il est / état)",
+      "answer": "està"
+    },
+    {
+      "prompt": "Nosaltres ___ (anar) al cinema. (nous allons)",
+      "answer": "anem"
+    },
+    {
+      "prompt": "Jo ___ (estar) content. (je suis / état)",
+      "answer": "estic"
+    },
+    {
+      "prompt": "Tu ___ (ser) molt amable. (tu es)",
+      "answer": "ets"
+    },
+    {
+      "prompt": "Ells ___ (fer) els deures. (ils font)",
+      "answer": "fan"
+    },
+    {
+      "prompt": "Jo ___ (anar) a comprar pa. (je vais)",
+      "answer": "vaig"
+    },
+    {
+      "prompt": "Ella ___ (dormir) vuit hores. (elle dort)",
+      "answer": "dorm"
+    },
+    {
+      "prompt": "Nosaltres ___ (ser) de Catalunya. (nous sommes)",
+      "answer": "som"
+    },
+    {
+      "prompt": "Vosaltres ___ (tenir) raó. (vous avez raison)",
+      "answer": "teniu"
+    },
+    {
+      "prompt": "Jo ___ (viure) prop del mar. (je vis)",
+      "answer": "visc"
+    },
+    {
+      "prompt": "Tu ___ (fer) un cafè? (tu fais)",
+      "answer": "fas"
+    },
+    {
+      "prompt": "Ells ___ (estar) a casa. (ils sont / lieu-état)",
+      "answer": "estan"
+    }
+  ]
+}
