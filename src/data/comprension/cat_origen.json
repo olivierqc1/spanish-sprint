@@ -1,0 +1,38 @@
+{
+  "lang": "ca-ES",
+  "title": "D'on ve el català",
+  "text": "El català és una llengua romànica, és a dir que ve del llatí, com el castellà, el francès o l'italià. Va néixer fa més de mil anys, a l'edat mitjana, als territoris del nord-est de la península. Durant molts segles va ser una llengua important de cultura i de comerç a la Mediterrània. Està molt relacionada amb l'occità, que es parla al sud de França. Avui el parlen milions de persones a Catalunya, el País Valencià, les Illes Balears i altres zones.",
+  "fr": "Le catalan est une langue romane, c'est-à-dire qu'il vient du latin, comme le castillan, le français ou l'italien. Il est né il y a plus de mille ans, au Moyen Âge, dans les territoires du nord-est de la péninsule. Pendant de nombreux siècles, il a été une langue importante de culture et de commerce en Méditerranée. Il est très proche de l'occitan, parlé dans le sud de la France. Aujourd'hui, des millions de personnes le parlent en Catalogne, au Pays valencien, aux Îles Baléares et dans d'autres zones.",
+  "questions": [
+    {
+      "q": "De quina llengua ve el català?",
+      "options": [
+        "De l'àrab",
+        "Del llatí",
+        "De l'anglès",
+        "Del grec"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quan va néixer?",
+      "options": [
+        "Fa cent anys",
+        "A l'edat mitjana",
+        "Al segle XX",
+        "Abans de Crist"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Amb quina llengua està molt relacionat?",
+      "options": [
+        "L'alemany",
+        "L'occità",
+        "El rus",
+        "El portuguès"
+      ],
+      "correct": 1
+    }
+  ]
+}
