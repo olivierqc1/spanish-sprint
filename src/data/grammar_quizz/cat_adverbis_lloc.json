@@ -6,88 +6,88 @@
   },
   "level": "A1-A2",
   "note": {
-    "fr": "⚙ Situer dans l'espace — l'équivalent catalan de arriba/abajo, encima/debajo.\n\n🎯 POSITION GÉNÉRALE :\n→ aquí (ici) · allà / allí (là-bas) · a dalt (en haut) · a baix (en bas)\n→ a prop (près) · lluny (loin) · dins (dedans) · fora (dehors)\n\n🎯 PAR RAPPORT À UN OBJET (souvent + de) :\n→ sobre / damunt (sur) · sota (sous) · davant (devant) · darrere (derrière)\n→ al costat de (à côté de) · entre (entre)\n\n→ El gat és sota la taula. (Le chat est sous la table)\n→ Visc a prop de la platja. (J'habite près de la plage)\n\n💡 Même logique qu'en espagnol : position générale (a dalt/a baix) vs par rapport à qqch (sobre/sota + de).",
-    "en": "⚙ Locating in space — the Catalan counterpart of arriba/abajo.\n\n🎯 GENERAL: aquí (here) · allà (there) · a dalt (up) · a baix (down) · a prop (near) · lluny (far) · dins (inside) · fora (outside)\n🎯 RELATIVE: sobre/damunt (on) · sota (under) · davant (in front) · darrere (behind) · al costat de (next to)\n\n→ El gat és sota la taula. · Visc a prop de la platja."
+    "fr": "⚙ Situer dans l'espace.\n\n🎯 POSITION GÉNÉRALE :\n→ aquí (ici) · allà (là-bas) · a dalt (en haut) · a baix (en bas)\n→ a prop (près) · lluny (loin) · dins (dedans) · fora (dehors)\n\n🎯 PAR RAPPORT À UN OBJET (souvent + de) :\n→ sobre / damunt (sur) · sota (sous) · davant (devant) · darrere (derrière)\n→ al costat de (à côté de) · entre (entre)\n\n💡 Même logique qu'en espagnol : a dalt/a baix (général) vs sobre/sota + de (par rapport à qqch).",
+    "en": "⚙ Locating in space.\n→ aquí (here) · allà (there) · a dalt (up) · a baix (down) · a prop (near) · lluny (far)\n→ sobre (on) · sota (under) · davant (front) · darrere (behind) · al costat (next to)"
   },
   "drills": [
     {
-      "prompt": "El gat dorm ___ la taula. (sous → sota)",
+      "prompt": "El gat dorm ___ la taula. (sous)",
       "answer": "sota"
     },
     {
-      "prompt": "Visc ___ de la platja. (près → a prop)",
+      "prompt": "Visc ___ de la platja. (près)",
       "answer": "a prop"
     },
     {
-      "prompt": "Puja ___, al terrat. (en haut → a dalt)",
+      "prompt": "Puja ___, al terrat. (en haut)",
       "answer": "a dalt"
     },
     {
-      "prompt": "El garatge és ___. (en bas → a baix)",
+      "prompt": "El garatge és ___. (en bas)",
       "answer": "a baix"
     },
     {
-      "prompt": "Vine ___, al meu costat. (ici → aquí)",
+      "prompt": "Vine ___, al meu costat. (ici)",
       "answer": "aquí"
     },
     {
-      "prompt": "La botiga és ___, al final del carrer. (là-bas → allà)",
+      "prompt": "La botiga és ___, al final del carrer. (là-bas)",
       "answer": "allà"
     },
     {
-      "prompt": "El llibre és ___ la taula. (sur → sobre)",
+      "prompt": "El llibre és ___ la taula. (sur)",
       "answer": "sobre"
     },
     {
-      "prompt": "Hi ha un cotxe ___ de casa. (devant → davant)",
+      "prompt": "Hi ha un cotxe ___ de casa. (devant)",
       "answer": "davant"
     },
     {
-      "prompt": "El jardí és ___ de la casa. (derrière → darrere)",
+      "prompt": "El jardí és ___ de la casa. (derrière)",
       "answer": "darrere"
     },
     {
-      "prompt": "Viuen molt ___ d'aquí. (loin → lluny)",
+      "prompt": "Viuen molt ___ d'aquí. (loin)",
       "answer": "lluny"
     },
     {
-      "prompt": "Les claus són ___ el calaix. (dedans → dins)",
+      "prompt": "Les claus són ___ el calaix. (dedans)",
       "answer": "dins"
     },
     {
-      "prompt": "Els nens juguen ___, al pati. (dehors → fora)",
+      "prompt": "Els nens juguen ___, al pati. (dehors)",
       "answer": "fora"
     },
     {
-      "prompt": "El banc és ___ de la farmàcia. (à côté → al costat)",
+      "prompt": "El banc és ___ de la farmàcia. (à côté)",
       "answer": "al costat"
     },
     {
-      "prompt": "La pilota és ___ el sofà. (sous → sota)",
+      "prompt": "La pilota és ___ el sofà. (sous)",
       "answer": "sota"
     },
     {
-      "prompt": "L'estació és ___, a cinc minuts. (près → a prop)",
+      "prompt": "L'estació és ___, a cinc minuts. (près)",
       "answer": "a prop"
     },
     {
-      "prompt": "Deixa-ho ___, a la lleixa de dalt. (là-bas → allà)",
+      "prompt": "Deixa-ho ___, a la lleixa de dalt. (là-bas)",
       "answer": "allà"
     },
     {
-      "prompt": "El quadre és ___ el sofà. (sur/au-dessus → sobre)",
+      "prompt": "El quadre és ___ el sofà. (au-dessus / sur)",
       "answer": "sobre"
     },
     {
-      "prompt": "Espera'm ___. (ici → aquí)",
+      "prompt": "Espera'm ___. (ici)",
       "answer": "aquí"
     },
     {
-      "prompt": "El pàrquing és ___. (en bas → a baix)",
+      "prompt": "El pàrquing és ___. (en bas)",
       "answer": "a baix"
     },
     {
-      "prompt": "Hi ha un arbre ___ de la finestra. (devant → davant)",
+      "prompt": "Hi ha un arbre ___ de la finestra. (devant)",
       "answer": "davant"
     }
   ]
