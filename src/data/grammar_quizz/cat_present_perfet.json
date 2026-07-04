@@ -1,36 +1,94 @@
 {
   "id": "cat_present_perfet",
   "title": {
-    "fr": "Catalan — Passé composé (he, has, ha, hem, heu, han + participi)",
-    "en": "Catalan — Present perfect (he, has, ha, hem, heu, han + participi)"
+    "fr": "Catalan : le passé composé (present perfet)",
+    "en": "Catalan: present perfect"
   },
-  "level": "A2",
+  "level": "A1-A2",
   "note": {
-    "fr": "⚙️ Le passé composé catalan = auxiliaire **HAVER** au présent + participe passé.\n\n🔹 **AUXILIAIRE HAVER (présent)**\n| Personne | Forme |\n|---|---|\n| jo | **he** |\n| tu | **has** |\n| ell/ella | **ha** |\n| nosaltres | **hem** |\n| vosaltres | **heu** |\n| ells/elles | **han** |\n\n🔹 **FORMATION DU PARTICIPE PASSÉ**\n| Terminaison | Participe | Exemple |\n|---|---|---|\n| -ar | → **-at** | parlar → **parlat** |\n| -er / -re | → **-ut** | córrer → **corregut**, beure → **begut** |\n| -ir | → **-it** | dormir → **dormit** |\n\n🔹 **PARTICIPES IRRÉGULIERS ESSENTIELS**\n| Infinitif | Participe |\n|---|---|\n| fer | **fet** |\n| dir | **dit** |\n| venir | **vingut** |\n| anar | **anat** |\n| ser | **sigut / estat** |\n| tenir | **tingut** |\n| poder | **pogut** |\n| saber | **sabut** |\n| veure | **vist** |\n| obrir | **obert** |\n| escriure | **escrit** |\n| posar | **posat** |\n| rompre | **romput / trencat** |\n\n🔹 **QUAND L'UTILISER ?**\n- Action passée avec lien au présent\n- Ce matin, cette semaine, aujourd'hui\n- *He menjat pasta avui* → J'ai mangé des pâtes aujourd'hui\n- *Hem acabat la feina* → Nous avons fini le travail\n\n⚠️ **Différence avec le passé périphrastique :**\n- **Passé composé** (*he menjat*) → lien au présent, récent\n- **Passé périphrastique** (*vaig menjar*) → action passée, terminée, plus distante\n\n💡 En pratique à Barcelone, les deux s'utilisent — le passé périphrastique est plus fréquent à l'oral.",
-    "en": "⚙️ Catalan present perfect = HAVER (present) + past participle.\n\n🔹 **HAVER (present)**\njo he / tu has / ell ha / nosaltres hem / vosaltres heu / ells han\n\n🔹 **PAST PARTICIPLE**\n- -ar → -at (parlat)\n- -er/-re → -ut (corregut, begut)\n- -ir → -it (dormit)\n\n🔹 **KEY IRREGULARS**\nfer → fet, dir → dit, venir → vingut, veure → vist, obrir → obert, escriure → escrit\n\n🔹 **WHEN TO USE**\nRecent past with present relevance: *He menjat* (I have eaten today)"
+    "fr": "⚙ Action du passé proche / du jour. Structure : haver + participe.\n\n🎯 HAVER : he, has, ha, hem, heu, han + participe.\n\n🎯 PARTICIPES IRRÉGULIERS :\n→ fer → fet · dir → dit · veure → vist · beure → begut · escriure → escrit\n→ obrir → obert · ser/estar → estat · anar → anat · tenir → tingut · poder → pogut\n→ venir → vingut · perdre → perdut\n\n💡 Avec « avui, aquest matí, ja, encara no ». Le passé du jour.",
+    "en": "⚙ Recent/same-day past. haver + participle.\n→ he, has, ha, hem, heu, han + participle\n→ fer→fet · dir→dit · veure→vist · obrir→obert · anar→anat · tenir→tingut"
   },
   "drills": [
-    { "prompt": "Conjugue HAVER à la 1ère personne du singulier → jo ___", "answer": "he" },
-    { "prompt": "Conjugue HAVER à la 3ème personne du singulier → ell/ella ___", "answer": "ha" },
-    { "prompt": "Conjugue HAVER à la 1ère personne du pluriel → nosaltres ___", "answer": "hem" },
-    { "prompt": "Conjugue HAVER à la 3ème personne du pluriel → ells ___", "answer": "han" },
-    { "prompt": "Participe passé de PARLAR (-ar) →", "answer": "parlat" },
-    { "prompt": "Participe passé de MENJAR (-ar) →", "answer": "menjat" },
-    { "prompt": "Participe passé de DORMIR (-ir) →", "answer": "dormit" },
-    { "prompt": "Participe passé de SORTIR (-ir) →", "answer": "sortit" },
-    { "prompt": "Participe passé de BEURE (irrégulier) →", "answer": "begut" },
-    { "prompt": "Participe passé de FER (irrégulier) →", "answer": "fet" },
-    { "prompt": "Participe passé de DIR (irrégulier) →", "answer": "dit" },
-    { "prompt": "Participe passé de VENIR (irrégulier) →", "answer": "vingut" },
-    { "prompt": "Participe passé de VEURE (irrégulier) →", "answer": "vist" },
-    { "prompt": "Participe passé de OBRIR (irrégulier) →", "answer": "obert" },
-    { "prompt": "Participe passé de ESCRIURE (irrégulier) →", "answer": "escrit" },
-    { "prompt": "J'ai mangé des pâtes aujourd'hui → ___ menjat pasta avui.", "answer": "He" },
-    { "prompt": "Il a fait ses devoirs → ___ fet els deures.", "answer": "Ha" },
-    { "prompt": "Nous avons fini le travail → ___ acabat la feina.", "answer": "Hem" },
-    { "prompt": "Ils ont dit la vérité → ___ dit la veritat.", "answer": "Han" },
-    { "prompt": "Tu as vu ce film ? → ___ vist aquesta pel·lícula?", "answer": "Has" },
-    { "prompt": "Vous avez compris ? → ___ entès?", "answer": "Heu" },
-    { "prompt": "Quelle est la différence : 'he menjat' vs 'vaig menjar' ?", "answer": "he menjat = passé composé (lien au présent) / vaig menjar = passé périphrastique (action passée, distante)" }
+    {
+      "prompt": "Avui ___ (parlar, jo) amb el cap. (j'ai parlé)",
+      "answer": "he parlat"
+    },
+    {
+      "prompt": "___ (fer, tu) els deures? (as-tu fait)",
+      "answer": "Has fet"
+    },
+    {
+      "prompt": "Ella ___ (veure) la pel·lícula. (elle a vu)",
+      "answer": "ha vist"
+    },
+    {
+      "prompt": "Nosaltres ___ (anar) al mercat. (nous sommes allés)",
+      "answer": "hem anat"
+    },
+    {
+      "prompt": "Ells ___ (dir) que sí. (ils ont dit)",
+      "answer": "han dit"
+    },
+    {
+      "prompt": "___ (menjar, vosaltres) ja? (avez-vous mangé)",
+      "answer": "Heu menjat"
+    },
+    {
+      "prompt": "Aquest matí ___ (beure, jo) un cafè. (j'ai bu)",
+      "answer": "he begut"
+    },
+    {
+      "prompt": "___ (obrir, tu) la finestra? (as-tu ouvert)",
+      "answer": "Has obert"
+    },
+    {
+      "prompt": "Encara no ___ (tenir, jo) temps. (je n'ai pas eu)",
+      "answer": "he tingut"
+    },
+    {
+      "prompt": "Ella ___ (escriure) un correu. (elle a écrit)",
+      "answer": "ha escrit"
+    },
+    {
+      "prompt": "Avui ___ (fer, nosaltres) molta feina. (nous avons fait)",
+      "answer": "hem fet"
+    },
+    {
+      "prompt": "___ (estar, ells) a casa tot el dia. (ils ont été)",
+      "answer": "Han estat"
+    },
+    {
+      "prompt": "Ja ___ (comprar, jo) el pa. (j'ai acheté)",
+      "answer": "he comprat"
+    },
+    {
+      "prompt": "___ (veure, tu) en Marc avui? (as-tu vu)",
+      "answer": "Has vist"
+    },
+    {
+      "prompt": "Aquesta setmana ___ (treballar, jo) molt. (j'ai travaillé)",
+      "answer": "he treballat"
+    },
+    {
+      "prompt": "Ells ___ (arribar) fa poc. (ils sont arrivés)",
+      "answer": "han arribat"
+    },
+    {
+      "prompt": "___ (poder, vosaltres) descansar? (avez-vous pu)",
+      "answer": "Heu pogut"
+    },
+    {
+      "prompt": "Ella no ___ (venir) avui. (elle n'est pas venue)",
+      "answer": "ha vingut"
+    },
+    {
+      "prompt": "Nosaltres ___ (dir) la veritat. (nous avons dit)",
+      "answer": "hem dit"
+    },
+    {
+      "prompt": "___ (perdre, jo) les claus. (j'ai perdu)",
+      "answer": "He perdut"
+    }
   ]
 }
