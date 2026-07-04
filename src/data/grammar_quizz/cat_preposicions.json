@@ -1,25 +1,94 @@
 {
+  "id": "cat_preposicions",
+  "title": {
+    "fr": "Catalan : les prépositions",
+    "en": "Catalan: prepositions"
+  },
+  "level": "A1-A2",
   "note": {
-    "fr": "Les prépositions essentielles du catalan\n\nA — à, dans (destination, lieu) :\n→ Visc a Barcelona. (J'habite à Barcelone.)\n→ Vaig a casa. (Je vais à la maison.)\n→ A + EL = AL : Vaig al mercat.\n→ A + ELS = ALS : Vaig als cinemes.\n\nDE — de (origine, possession, matière) :\n→ Sóc de Montreal.\n→ El cotxe del meu pare.\n→ DE + EL = DEL / DE + ELS = DELS\n\nAMB — avec :\n→ Vinc amb tu.\n\nPER — pour (cause, motif) :\n→ Ho faig per tu.\n\nPER A — pour (destinataire) :\n→ Això és per a tu.\n\nEN — en (moyen de transport, temps) :\n→ Vaig en cotxe. / En dos minuts.\n\nFINS A — jusqu'à : Fins a les tres.\nCAP A — vers : Cap a casa.\nSENSE — sans : Sense tu.\nSEGONS — selon : Segons ell.",
-    "en": "Essential Catalan prepositions\n\nA — to, at, in (destination, location):\n→ Visc a Barcelona. (I live in Barcelona.)\n→ Vaig a casa. (I'm going home.)\n→ A + EL = AL: Vaig al mercat.\n→ A + ELS = ALS: Vaig als cinemes.\n\nDE — of, from (origin, possession, material):\n→ Sóc de Montreal.\n→ El cotxe del meu pare.\n→ DE + EL = DEL / DE + ELS = DELS\n\nAMB — with:\n→ Vinc amb tu.\n\nPER — for (cause, motive):\n→ Ho faig per tu.\n\nPER A — for (recipient):\n→ Això és per a tu.\n\nEN — in (transport, time):\n→ Vaig en cotxe. / En dos minuts.\n\nFINS A — until: Fins a les tres.\nCAP A — towards: Cap a casa.\nSENSE — without: Sense tu.\nSEGONS — according to: Segons ell."
+    "fr": "⚙ Les prépositions qui piègent.\n\n🎯 LES PRINCIPALES :\n→ a = à (lieu, ville) : Vaig a Barcelona.\n→ de = de (origine, possession) : Sóc de Quebec.\n→ amb = avec : Vinc amb tu.\n→ per = pour / par (cause, moyen) : Ho faig per tu.\n→ cap a = vers · sense = sans · fins a = jusqu'à · sobre = sur\n\n💡 « amb » (avec) se prononce « am » — piège à l'écrit.",
+    "en": "⚙ Tricky prepositions.\n→ a = to/at · de = of/from · amb = with · per = for/by · cap a = towards · sense = without · fins a = until · sobre = on"
   },
   "drills": [
-    { "prompt": "Completa: Visc ___ Barcelona. (j'habite à Barcelone)", "answer": "a", "hint": "lloc → a" },
-    { "prompt": "Completa: Vaig ___ mercat cada dissabte. (au marché)", "answer": "al", "hint": "a + el = al" },
-    { "prompt": "Completa: Sóc ___ Montreal. (je suis de Montréal)", "answer": "de", "hint": "origen → de" },
-    { "prompt": "Completa: El cotxe ___ meu pare és vermell. (la voiture de mon père)", "answer": "del", "hint": "de + el = del" },
-    { "prompt": "Completa: Vinc ___ tu al cinema. (je viens avec toi)", "answer": "amb", "hint": "avec → amb" },
-    { "prompt": "Completa: Ho faig ___ tu. (je le fais pour toi, cause)", "answer": "per", "hint": "cause/motif → per" },
-    { "prompt": "Completa: Vaig ___ cotxe a la feina. (j'y vais en voiture)", "answer": "en", "hint": "moyen de transport → en" },
-    { "prompt": "Completa: Arribo ___ deu minuts. (dans 10 minutes)", "answer": "en", "hint": "durée → en" },
-    { "prompt": "Completa: Fins ___ les tres de la tarda. (jusqu'à 3h)", "answer": "a", "hint": "fins a = jusqu'à" },
-    { "prompt": "Completa: Anem cap ___ casa. (vers la maison)", "answer": "a", "hint": "cap a = vers" },
-    { "prompt": "Completa: No puc viure ___ tu. (sans toi)", "answer": "sense", "hint": "sense = sans" },
-    { "prompt": "Completa: Vaig ___ cinemes del centre. (aux cinémas du centre)", "answer": "als", "hint": "a + els = als" },
-    { "prompt": "Completa: La clau és ___ la porta. (la clé est dans la porte → à)", "answer": "a", "hint": "localisation → a" },
-    { "prompt": "Completa: Venim ___ tren. (nous venons en train)", "answer": "en", "hint": "transport → en" },
-    { "prompt": "Completa: Treballo ___ les vuit fins ___ les cinc. (de 8h jusqu'à 5h)", "answer": "de, a les", "hint": "de... a les... = de... à..." },
-    { "prompt": "Completa: Busco un pis prop ___ la platja. (près de la plage)", "answer": "de", "hint": "prop de = près de" },
-    { "prompt": "Completa: ___ ell, tot va bé. (selon lui)", "answer": "Segons", "hint": "segons = selon" }
+    {
+      "prompt": "Vaig ___ Barcelona demà. (à une ville)",
+      "answer": "a"
+    },
+    {
+      "prompt": "Sóc ___ Quebec. (origine)",
+      "answer": "de"
+    },
+    {
+      "prompt": "Vull un cafè ___ llet. (avec)",
+      "answer": "amb"
+    },
+    {
+      "prompt": "Ho he fet ___ tu. (pour)",
+      "answer": "per"
+    },
+    {
+      "prompt": "Anem ___ la muntanya. (vers)",
+      "answer": "cap a"
+    },
+    {
+      "prompt": "No puc viure ___ tu. (sans)",
+      "answer": "sense"
+    },
+    {
+      "prompt": "Estudio ___ ser advocat. (pour / but)",
+      "answer": "per"
+    },
+    {
+      "prompt": "Visc ___ Girona des de fa un any. (à / lieu)",
+      "answer": "a"
+    },
+    {
+      "prompt": "La casa ___ la meva àvia. (de / possession)",
+      "answer": "de"
+    },
+    {
+      "prompt": "Vinc ___ els meus amics. (avec)",
+      "answer": "amb"
+    },
+    {
+      "prompt": "Camino ___ casa cada dia. (à / vers)",
+      "answer": "a"
+    },
+    {
+      "prompt": "Gràcies ___ tot. (pour)",
+      "answer": "per"
+    },
+    {
+      "prompt": "Ens quedem ___ diumenge. (jusqu'à)",
+      "answer": "fins a"
+    },
+    {
+      "prompt": "El llibre és ___ la taula. (sur)",
+      "answer": "sobre"
+    },
+    {
+      "prompt": "Parlo ___ tu més tard. (avec)",
+      "answer": "amb"
+    },
+    {
+      "prompt": "Aquest tren va ___ València. (vers)",
+      "answer": "cap a"
+    },
+    {
+      "prompt": "Ve ___ Madrid. (de / provenance)",
+      "answer": "de"
+    },
+    {
+      "prompt": "Ho vaig fer ___ error. (par)",
+      "answer": "per"
+    },
+    {
+      "prompt": "Vaig ___ l'escola a peu. (à)",
+      "answer": "a"
+    },
+    {
+      "prompt": "Un regal ___ tu. (pour)",
+      "answer": "per"
+    }
   ]
 }
