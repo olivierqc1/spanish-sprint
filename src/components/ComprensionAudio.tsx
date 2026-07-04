@@ -6,7 +6,7 @@ import { recordAnswer } from '@/data/progress';
 import { comprensionTexts } from '@/data/comprension';
 
 type Question = { q: string; options: string[]; correct: number };
-type Passage = { title: string; text: string; fr: string; questions: Question[] };
+type Passage = { title: string; text: string; fr: string; lang?: string; questions: Question[] };
 
 export default function ComprensionAudio({ language = 'fr' }: { language?: 'fr' | 'en' }) {
   const [openId, setOpenId] = useState<string | null>(null);
@@ -18,56 +18,51 @@ export default function ComprensionAudio({ language = 'fr' }: { language?: 'fr' 
   const [showText, setShowText] = useState(false);
   const [slow, setSlow] = useState(false);
   const [speaking, setSpeaking] = useState(false);
-  const [noVoice, setNoVoice] = useState(false);
-  const voiceRef = useRef<SpeechSynthesisVoice | null>(null);
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
+  const supported = useRef(true);
 
-  // Charge une voix espagnole (asynchrone sur mobile).
+  // Charge toutes les voix (asynchrone sur mobile).
   useEffect(() => {
-    if (typeof window === 'undefined' || !window.speechSynthesis) { setNoVoice(true); return; }
-    const pick = () => {
-      const v = window.speechSynthesis.getVoices();
-      if (!v.length) return false;
-      const es = v.find((x) => x.lang && x.lang.toLowerCase().startsWith('es'));
-      voiceRef.current = es || null;
-      setNoVoice(!es);
-      return true;
-    };
-    if (!pick()) { window.speechSynthesis.onvoiceschanged = () => pick(); setTimeout(pick, 700); }
+    if (typeof window === 'undefined' || !window.speechSynthesis) { supported.current = false; return; }
+    const load = () => { const v = window.speechSynthesis.getVoices(); if (v.length) setVoices(v); return !!v.length; };
+    if (!load()) { window.speechSynthesis.onvoiceschanged = load; setTimeout(load, 700); }
     return () => { if (window.speechSynthesis) window.speechSynthesis.onvoiceschanged = null; };
   }, []);
 
+  const voiceFor = (lang: string) => {
+    const pref = lang.slice(0, 2).toLowerCase();
+    return voices.find((v) => v.lang && v.lang.toLowerCase().startsWith(pref)) || null;
+  };
+
   const t = language === 'fr'
-    ? { heading: 'Compréhension orale', sub: (n: number) => `${n} texte${n > 1 ? 's' : ''}`, listen: 'Écouter le texto', stop: 'Arrêter', slow: 'Lent', check: 'Vérifier', back: '← Retour', showText: 'Voir le texte', hideText: 'Masquer', score: 'Score', loading: 'Chargement…', novoice: '⚠️ Aucune voix espagnole sur cet appareil (Réglages → Synthèse vocale → installer l’espagnol).' }
-    : { heading: 'Listening comprehension', sub: (n: number) => `${n} text${n > 1 ? 's' : ''}`, listen: 'Play text', stop: 'Stop', slow: 'Slow', check: 'Check', back: '← Back', showText: 'Show text', hideText: 'Hide', score: 'Score', loading: 'Loading…', novoice: '⚠️ No Spanish voice on this device.' };
+    ? { heading: 'Compréhension', sub: (n: number) => `${n} texte${n > 1 ? 's' : ''}`, listen: 'Écouter le texto', stop: 'Arrêter', slow: 'Lent', check: 'Vérifier', back: '← Retour', showText: 'Voir le texte', hideText: 'Masquer', score: 'Score', loading: 'Chargement…', novoice: (l: string) => `⚠️ Aucune voix ${l} sur cet appareil (Réglages → Synthèse vocale). Tu peux quand même lire le texte.` }
+    : { heading: 'Comprehension', sub: (n: number) => `${n} text${n > 1 ? 's' : ''}`, listen: 'Play text', stop: 'Stop', slow: 'Slow', check: 'Check', back: '← Back', showText: 'Show text', hideText: 'Hide', score: 'Score', loading: 'Loading…', novoice: (l: string) => `⚠️ No ${l} voice on this device. You can still read the text.` };
 
   const open = async (id: string) => {
-    setLoading(true);
-    setOpenId(id);
+    setLoading(true); setOpenId(id);
     setSelected({}); setSubmitted(false); setShowText(false);
     try {
       const mod = await import(`@/data/comprension/${id}.json`);
       setPassage((mod.default || mod) as Passage);
-    } catch {
-      setPassage(null);
-    } finally {
-      setLoading(false);
-    }
+    } catch { setPassage(null); }
+    finally { setLoading(false); }
   };
 
   const back = () => {
     window.speechSynthesis?.cancel();
-    setSpeaking(false);
-    setOpenId(null);
-    setPassage(null);
+    setSpeaking(false); setOpenId(null); setPassage(null);
   };
 
   const speak = () => {
-    if (noVoice || !passage || !window.speechSynthesis) return;
+    if (!passage || !supported.current || !window.speechSynthesis) return;
+    const lang = passage.lang || 'es-ES';
+    const voice = voiceFor(lang);
+    if (!voice) return;
     window.speechSynthesis.cancel();
     if (speaking) { setSpeaking(false); return; }
     const u = new SpeechSynthesisUtterance(passage.text);
-    u.lang = 'es-ES';
-    if (voiceRef.current) u.voice = voiceRef.current;
+    u.lang = lang;
+    u.voice = voice;
     u.rate = slow ? 0.7 : 0.92;
     u.onend = () => setSpeaking(false);
     u.onerror = () => setSpeaking(false);
@@ -100,7 +95,6 @@ export default function ComprensionAudio({ language = 'fr' }: { language?: 'fr' 
     );
   }
 
-  // ----- Vue exercice -----
   if (loading || !passage) {
     return (
       <div className="rounded-2xl border border-slate-800 bg-slate-900 p-8 text-center max-w-2xl mx-auto">
@@ -110,12 +104,17 @@ export default function ComprensionAudio({ language = 'fr' }: { language?: 'fr' 
     );
   }
 
+  const lang = passage.lang || 'es-ES';
+  const isCatalan = lang.toLowerCase().startsWith('ca');
+  const voiceReady = voices.length > 0;
+  const hasVoice = !!voiceFor(lang);
+  const showNoVoice = voiceReady && !hasVoice;
+
   const allAnswered = passage.questions.every((_, qi) => selected[qi] !== undefined);
   const score = passage.questions.reduce((n, q, qi) => n + (selected[qi] === q.correct ? 1 : 0), 0);
 
   const check = () => {
-    setSubmitted(true);
-    setShowText(true);
+    setSubmitted(true); setShowText(true);
     passage.questions.forEach((q, qi) => recordAnswer(selected[qi] === q.correct));
   };
 
@@ -123,19 +122,24 @@ export default function ComprensionAudio({ language = 'fr' }: { language?: 'fr' 
     <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5 max-w-2xl mx-auto">
       <div className="flex items-center justify-between mb-3">
         <button onClick={back} className="text-sm text-blue-400 hover:text-blue-300">{t.back}</button>
+        <span className="px-2 py-0.5 rounded-md text-[11px] font-bold bg-slate-800 text-slate-300">
+          {isCatalan ? 'CA' : 'ES'}
+        </span>
       </div>
       <h3 className="text-lg font-bold text-white mb-3">{passage.title}</h3>
 
-      {noVoice && (
-        <div className="mb-3 p-3 rounded-xl bg-amber-500/10 border border-amber-500/40 text-amber-300 text-sm">{t.novoice}</div>
+      {showNoVoice && (
+        <div className="mb-3 p-3 rounded-xl bg-amber-500/10 border border-amber-500/40 text-amber-300 text-sm">
+          {t.novoice(isCatalan ? 'catalane' : 'espagnole')}
+        </div>
       )}
 
       <div className="flex items-center gap-2 mb-4">
-        <button onClick={speak} disabled={noVoice}
+        <button onClick={speak} disabled={showNoVoice || !voiceReady}
           className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 disabled:bg-slate-800 disabled:text-slate-600 px-4 py-2.5 rounded-xl font-bold transition">
           {speaking ? `⏸ ${t.stop}` : `▶️ ${t.listen}`}
         </button>
-        <button onClick={() => setSlow(!slow)} disabled={noVoice}
+        <button onClick={() => setSlow(!slow)} disabled={showNoVoice}
           className={`px-3 py-2.5 rounded-xl text-sm font-semibold transition border disabled:opacity-40 ${slow ? 'bg-blue-600/20 border-blue-600 text-blue-300' : 'bg-slate-800 border-slate-700 text-slate-300'}`}>
           🐢 {t.slow}
         </button>
