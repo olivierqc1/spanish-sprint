@@ -1,0 +1,38 @@
+{
+  "lang": "ca-ES",
+  "title": "El català a diferents territoris",
+  "text": "El català no es parla només a Catalunya. També es parla al País Valencià, on molta gent l'anomena valencià, a les Illes Balears i fins i tot a la ciutat de l'Alguer, a Itàlia. Encara que hi ha petites diferències de pronúncia i de vocabulari entre aquestes zones, es tracta de la mateixa llengua i els parlants s'entenen sense problemes. Cada territori té les seves pròpies lleis sobre l'ús de la llengua a l'escola i a l'administració. Aquesta diversitat fa que el català sigui una llengua rica i variada.",
+  "fr": "Le catalan ne se parle pas seulement en Catalogne. Il se parle aussi au Pays valencien, où beaucoup l'appellent valencien, aux Îles Baléares et même dans la ville de l'Alguer, en Italie. Bien qu'il y ait de petites différences de prononciation et de vocabulaire entre ces zones, il s'agit de la même langue et les locuteurs se comprennent sans problème. Chaque territoire a ses propres lois sur l'usage de la langue à l'école et dans l'administration. Cette diversité fait du catalan une langue riche et variée.",
+  "questions": [
+    {
+      "q": "On més es parla català, a part de Catalunya?",
+      "options": [
+        "Només a França",
+        "Al País Valencià i les Balears",
+        "A tot Espanya igual",
+        "A Portugal"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Com anomenen sovint el català al País Valencià?",
+      "options": [
+        "Balear",
+        "Valencià",
+        "Occità",
+        "Aragonès"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Els parlants de les diferents zones...",
+      "options": [
+        "No s'entenen",
+        "S'entenen sense problemes",
+        "Parlen llengües diferents",
+        "Necessiten traductor"
+      ],
+      "correct": 1
+    }
+  ]
+}
