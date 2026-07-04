@@ -11,4 +11,7 @@ export const comprensionTexts: ComprensionMeta[] = [
 { id: "buscar_piso", title: "Buscar piso en Barcelona", level: "B2" },
   { id: "la_boqueria", title: "El mercado de La Boquería", level: "B2" },
   { id: "entrevista_trabajo", title: "Una entrevista de trabajo", level: "B2" },
+{ id: "cat_origen", title: "D'on ve el català", level: "A2" },
+  { id: "cat_pompeu_fabra", title: "Pompeu Fabra i el català modern", level: "B1" },
+  { id: "cat_territoris", title: "El català a diferents territoris", level: "A2" },
 ];
