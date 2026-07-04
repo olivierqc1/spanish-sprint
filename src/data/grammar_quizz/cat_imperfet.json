@@ -1,41 +1,94 @@
 {
   "id": "cat_imperfet",
-  "title": { "fr": "Catalan — Imparfait (parlava, menjava...)", "en": "Catalan — Imperfect tense (parlava, menjava...)" },
-  "level": "A2",
+  "title": {
+    "fr": "Catalan : l'imparfait",
+    "en": "Catalan: the imperfect"
+  },
+  "level": "A1-A2",
   "note": {
-    "fr": "⚙️ L'**imparfait** en catalan exprime les mêmes contextes qu'en espagnol : habitudes passées, descriptions, actions en cours interrompues.\n\n🔹 **Conjugaison régulière :**\n\n| | -AR (parlar) | -ER (córrer) | -IR (obrir) |\n|--|-------------|-------------|-------------|\n| jo | **parlava** | **corria** | **obria** |\n| tu | **parlaves** | **corries** | **obries** |\n| ell | **parlava** | **corria** | **obria** |\n| nosaltres | **parlàvem** | **corríem** | **obríem** |\n| vosaltres | **parlàveu** | **corríeu** | **obríeu** |\n| ells | **parlaven** | **corrien** | **obrien** |\n\n🔹 **Irréguliers :**\n- **ser** : era, eres, era, érem, éreu, eren\n- **tenir** : tenia, tenies, tenia, teníem, teníeu, tenien\n- **fer** : feia, feies, feia, fèiem, fèieu, feien\n- **anar** : anava, anaves, anava, anàvem, anàveu, anaven\n\n💡 **Passé périphrastique vs Imparfait :**\n- *Vaig menjar paella.* → J'ai mangé de la paella. (action ponctuelle)\n- *Menjava paella cada diumenge.* → Je mangeais de la paella chaque dimanche. (habitude)",
-    "en": "⚙️ The Catalan **imperfect** expresses habitual past actions, descriptions, and interrupted ongoing actions.\n\n🔹 **Regular conjugation:**\n- -AR: parlava, parlaves, parlava, parlàvem, parlàveu, parlaven\n- -ER: corria, corries, corria, corríem, corríeu, corrien\n- -IR: obria, obries, obria, obríem, obríeu, obrien\n\n🔹 **Irregular:** ser (era), tenir (tenia), fer (feia), anar (anava)"
+    "fr": "⚙ Imparfait catalan = habitudes ou descriptions au passé.\n\n🎯 RÉGULIER :\n→ parlar : parlava, parlaves, parlava, parlàvem, parlàveu, parlaven\n→ perdre / dormir : perdia... / dormia...\n\n🎯 IRRÉGULIERS :\n→ ser : era, eres, era, érem, éreu, eren\n→ fer : feia, feies, feia, fèiem, féieu, feien\n→ veure : veia, veies, veia...\n\n💡 Le décor, l'habitude. Va avec le passat perifràstic pour raconter.",
+    "en": "⚙ Catalan imperfect = past habits/descriptions.\n→ parlar: parlava/parlaves/parlava/parlàvem/parlàveu/parlaven\n→ ser: era, eres, era, érem, éreu, eren · fer: feia, feies, feia..."
   },
   "drills": [
-    { "prompt": "Quan era petit, ___ (jo, parlar) molt.", "answer": "parlava" },
-    { "prompt": "Cada matí, ___ (tu, córrer) per la platja.", "answer": "corries" },
-    { "prompt": "La porta ___ (obrir-se) sola.", "answer": "s'obria" },
-    { "prompt": "Nosaltres ___ (viure) a Girona.", "answer": "vivíem" },
-    { "prompt": "Vosaltres ___ (menjar) junts cada dia.", "answer": "menjàveu" },
-    { "prompt": "Ells ___ (estudiar) molt quan eren joves.", "answer": "estudiaven" },
-    { "prompt": "Ella ___ (ser) molt simpàtica.", "answer": "era" },
-    { "prompt": "Jo ___ (tenir) un gat quan era petit.", "answer": "tenia" },
-    { "prompt": "Ell ___ (fer) esport cada tarda.", "answer": "feia" },
-    { "prompt": "Nosaltres ___ (anar) al mercat els dissabtes.", "answer": "anàvem" },
-    { "prompt": "Tu ___ (ser) molt alt de petit.", "answer": "eres" },
-    { "prompt": "Jo ___ (llegir) molt quan tenia temps.", "answer": "llegia" },
-    { "prompt": "Ella ___ (treballar) en una empresa gran.", "answer": "treballava" },
-    { "prompt": "Vosaltres ___ (tenir) molts amics.", "answer": "teníeu" },
-    { "prompt": "Ells ___ (fer) molt de soroll.", "answer": "feien" },
-    { "prompt": "___ (ploure) quan vaig sortir. (it was raining)", "answer": "Plovia" },
-    { "prompt": "Jo ___ (dormir) quan va trucar.", "answer": "dormia" },
-    { "prompt": "Tu ___ (escriure) una carta.", "answer": "escrivies" },
-    { "prompt": "Ell ___ (saber) on era.", "answer": "sabia" },
-    { "prompt": "Nosaltres ___ (voler) sortir però no podíem.", "answer": "volíem" },
-    { "prompt": "Jo ___ (anar) al parc cada diumenge.", "answer": "anava" },
-    { "prompt": "Quan ___ (ella, ser) jove, ballava molt.", "answer": "era" },
-    { "prompt": "El restaurant ___ (tenir) una terrassa molt maca.", "answer": "tenia" },
-    { "prompt": "Vosaltres ___ (parlar) amb accent estranger.", "answer": "parlàveu" },
-    { "prompt": "Ells ___ (beure) molt de cafè.", "answer": "bevien" },
-    { "prompt": "___ (fer) molt de fred aquell hivern.", "answer": "Feia" },
-    { "prompt": "Jo ___ (poder) córrer molt ràpid.", "answer": "podia" },
-    { "prompt": "Tu ___ (viure) sol?", "answer": "vivies" },
-    { "prompt": "Ella ___ (parlar) català perfectament.", "answer": "parlava" },
-    { "prompt": "Nosaltres ___ (fer) els deures junts.", "answer": "fèiem" }
+    {
+      "prompt": "Quan ___ (ser, jo) petit, vivia a Lleida. (j'étais)",
+      "answer": "era"
+    },
+    {
+      "prompt": "Cada estiu ___ (anar, nosaltres) a la platja. (nous allions)",
+      "answer": "anàvem"
+    },
+    {
+      "prompt": "Ella ___ (tenir) el cabell llarg. (elle avait)",
+      "answer": "tenia"
+    },
+    {
+      "prompt": "Els diumenges ___ (fer, jo) una passejada. (je faisais)",
+      "answer": "feia"
+    },
+    {
+      "prompt": "Tu sempre ___ (parlar) molt. (tu parlais)",
+      "answer": "parlaves"
+    },
+    {
+      "prompt": "Ells ___ (viure) al camp. (ils vivaient)",
+      "answer": "vivien"
+    },
+    {
+      "prompt": "Nosaltres ___ (ser) molt amics. (nous étions)",
+      "answer": "érem"
+    },
+    {
+      "prompt": "Jo ___ (dormir) amb la finestra oberta. (je dormais)",
+      "answer": "dormia"
+    },
+    {
+      "prompt": "Cada matí ella ___ (fer) el mateix camí. (elle faisait)",
+      "answer": "feia"
+    },
+    {
+      "prompt": "Vosaltres ___ (jugar) a futbol. (vous jouiez)",
+      "answer": "jugàveu"
+    },
+    {
+      "prompt": "De petit, jo ___ (veure) molts dibuixos. (je regardais)",
+      "answer": "veia"
+    },
+    {
+      "prompt": "El poble ___ (ser) molt tranquil. (était)",
+      "answer": "era"
+    },
+    {
+      "prompt": "Abans ___ (tenir, nosaltres) un gos. (nous avions)",
+      "answer": "teníem"
+    },
+    {
+      "prompt": "Tu ___ (anar) a escola a peu. (tu allais)",
+      "answer": "anaves"
+    },
+    {
+      "prompt": "Ells ___ (parlar) català a casa. (ils parlaient)",
+      "answer": "parlaven"
+    },
+    {
+      "prompt": "Jo ___ (estudiar) cada tarda. (j'étudiais)",
+      "answer": "estudiava"
+    },
+    {
+      "prompt": "Feia fred i ___ (ploure). (il pleuvait)",
+      "answer": "plovia"
+    },
+    {
+      "prompt": "Nosaltres ___ (fer) excursions els caps de setmana. (nous faisions)",
+      "answer": "fèiem"
+    },
+    {
+      "prompt": "Ella ___ (ser) professora. (elle était)",
+      "answer": "era"
+    },
+    {
+      "prompt": "Quan ___ (ser, tu) jove, viatjaves molt. (tu étais)",
+      "answer": "eres"
+    }
   ]
 }
