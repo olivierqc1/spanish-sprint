@@ -1,0 +1,38 @@
+{
+  "lang": "ca-ES",
+  "title": "Pompeu Fabra i el català modern",
+  "text": "A començaments del segle XX, el català no tenia unes regles d'ortografia úniques i cadascú escrivia una mica a la seva manera. Un lingüista, Pompeu Fabra, va treballar per ordenar i fixar la gramàtica i l'ortografia de la llengua. Amb l'ajuda de l'Institut d'Estudis Catalans, va publicar unes normes que encara fem servir avui. Gràcies a aquesta feina, el català va tenir una forma escrita clara i moderna. Per això molta gent el considera el pare del català actual.",
+  "fr": "Au début du XXe siècle, le catalan n'avait pas de règles d'orthographe uniques et chacun écrivait un peu à sa manière. Un linguiste, Pompeu Fabra, a travaillé pour organiser et fixer la grammaire et l'orthographe de la langue. Avec l'aide de l'Institut d'Estudis Catalans, il a publié des normes que l'on utilise encore aujourd'hui. Grâce à ce travail, le catalan a eu une forme écrite claire et moderne. C'est pourquoi beaucoup le considèrent comme le père du catalan actuel.",
+  "questions": [
+    {
+      "q": "Què li faltava al català a començaments del segle XX?",
+      "options": [
+        "Parlants",
+        "Unes regles d'ortografia úniques",
+        "Vocabulari",
+        "No li faltava res"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Qui va fixar la gramàtica?",
+      "options": [
+        "Un rei",
+        "Pompeu Fabra",
+        "Un escriptor francès",
+        "Ningú"
+      ],
+      "correct": 1
+    },
+    {
+      "q": "Quina institució el va ajudar?",
+      "options": [
+        "L'Institut d'Estudis Catalans",
+        "La universitat de Madrid",
+        "L'Acadèmia francesa",
+        "El govern"
+      ],
+      "correct": 0
+    }
+  ]
+}
