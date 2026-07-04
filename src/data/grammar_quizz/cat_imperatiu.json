@@ -1,94 +1,102 @@
 {
   "id": "cat_imperatiu",
   "title": {
-    "fr": "Catalan : l'impératif",
-    "en": "Catalan: the imperative"
+    "fr": "Catalan : l'impératif (5 formes)",
+    "en": "Catalan: the imperative (5 forms)"
   },
   "level": "A1-A2",
   "note": {
-    "fr": "⚙ Donner un ordre ou un conseil. Formes « tu » et « vosaltres ».\n\n🎯 RÉGULIERS (tu) :\n→ parlar → parla · menjar → menja · obrir → obre · beure → beu\n\n🎯 IRRÉGULIERS (tu) :\n→ fer → fes · anar → ves · venir → vine · dir → digues · seure → seu · tenir → té\n\n🎯 VOSALTRES = radical + -eu :\n→ parleu · mengeu · veniu · feu\n\n⚡ NÉGATIF → subjonctif : No parlis! (Ne parle pas !) No facis això!\n\n💡 « fes, ves, vine, digues » sont les impératifs irréguliers les plus courants — à mémoriser.",
-    "en": "⚙ Giving an order or advice. \"tu\" and \"vosaltres\" forms.\n\n🎯 REGULAR (tu): parlar → parla · menjar → menja · obrir → obre · beure → beu\n🎯 IRREGULAR (tu): fer → fes · anar → ves · venir → vine · dir → digues · seure → seu\n🎯 VOSALTRES = stem + -eu: parleu · mengeu · veniu · feu\n⚡ NEGATIVE → subjunctive: No parlis! No facis això!"
+    "fr": "⚙ Donner un ordre ou un conseil. Le catalan a 5 formes.\n\n🎯 TU et VOSALTRES = vraies formes d'impératif :\n→ parlar : parla (tu) / parleu (vosaltres)\n→ fer → fes · anar → ves · venir → vine · dir → digues · seure → seu\n\n🎯 VOSTÈ / NOSALTRES / VOSTÈS = empruntées au SUBJONCTIF :\n→ parlar : parli (vostè) / parlem (nosaltres) / parlin (vostès)\n→ fer : faci / fem / facin\n\n⚡ NÉGATIF = toujours subjonctif, même pour tu/vosaltres :\n→ No parlis! · No parleu! · No facis això!\n\n💡 Le vouvoiement (vostè : parli, esperi, digui) est très courant dans les commerces.",
+    "en": "⚙ Catalan has 5 imperative forms.\n🎯 TU / VOSALTRES = true imperative: parla / parleu · fes · ves · vine · digues · seu\n🎯 VOSTÈ / NOSALTRES / VOSTÈS = from subjunctive: parli / parlem / parlin\n⚡ NEGATIVE = always subjunctive: No parlis! No facis!"
   },
   "drills": [
     {
-      "prompt": "___ (parlar, tu) més a poc a poc. → Parla (parle)",
+      "prompt": "___ (parlar, tu) més a poc a poc. (parle)",
       "answer": "Parla"
     },
     {
-      "prompt": "___ (menjar, tu) la fruita. → Menja (mange)",
+      "prompt": "___ (parlar, vostè) més a poc a poc. (parlez, vouvoiement sg)",
+      "answer": "Parli"
+    },
+    {
+      "prompt": "___ (menjar, tu) la fruita. (mange)",
       "answer": "Menja"
     },
     {
-      "prompt": "___ (obrir, tu) la finestra. → Obre (ouvre)",
-      "answer": "Obre"
-    },
-    {
-      "prompt": "___ (fer, tu) els deures ara. → Fes (fais)",
+      "prompt": "___ (fer, tu) els deures ara. (fais)",
       "answer": "Fes"
     },
     {
-      "prompt": "___ (venir, tu) aquí, si us plau. → Vine (viens)",
+      "prompt": "___ (fer, vostè) el favor d'esperar. (faites, vouvoiement)",
+      "answer": "Faci"
+    },
+    {
+      "prompt": "___ (venir, tu) aquí. (viens)",
       "answer": "Vine"
     },
     {
-      "prompt": "___ (dir, tu) la veritat. → Digues (dis)",
+      "prompt": "___ (dir, tu) la veritat. (dis)",
       "answer": "Digues"
     },
     {
-      "prompt": "___ (anar, tu) a comprar pa. → Ves (va)",
+      "prompt": "___ (dir, vostè) me el seu nom. (dites-moi, vouvoiement)",
+      "answer": "Digui"
+    },
+    {
+      "prompt": "___ (anar, tu) a comprar pa. (va)",
       "answer": "Ves"
     },
     {
-      "prompt": "___ (seure, tu) aquí. → Seu (assieds-toi)",
-      "answer": "Seu"
+      "prompt": "___ (esperar, vostè) un moment, si us plau. (attendez, vouvoiement)",
+      "answer": "Esperi"
     },
     {
-      "prompt": "___ (escoltar, vosaltres) bé. → Escolteu (écoutez)",
+      "prompt": "___ (escoltar, vosaltres) bé. (écoutez, pl)",
       "answer": "Escolteu"
     },
     {
-      "prompt": "___ (venir, vosaltres) amb nosaltres. → Veniu (venez)",
+      "prompt": "___ (venir, vosaltres) amb nosaltres. (venez, pl)",
       "answer": "Veniu"
     },
     {
-      "prompt": "No ___ (parlar, tu) tan alt. → parlis (ne parle pas)",
+      "prompt": "___ (marxar, nosaltres) ja! (partons)",
+      "answer": "Marxem"
+    },
+    {
+      "prompt": "No ___ (parlar, tu) tan alt. (ne parle pas)",
       "answer": "parlis"
     },
     {
-      "prompt": "___ (beure, tu) més aigua. → Beu (bois)",
-      "answer": "Beu"
-    },
-    {
-      "prompt": "___ (esperar, tu) un moment. → Espera (attends)",
-      "answer": "Espera"
-    },
-    {
-      "prompt": "___ (fer, vosaltres) silenci. → Feu (faites)",
-      "answer": "Feu"
-    },
-    {
-      "prompt": "No ___ (fer, tu) soroll. → facis (ne fais pas)",
+      "prompt": "No ___ (fer, tu) soroll. (ne fais pas)",
       "answer": "facis"
     },
     {
-      "prompt": "___ (tancar, tu) la porta. → Tanca (ferme)",
+      "prompt": "No ___ (venir, tu) tard. (ne viens pas)",
+      "answer": "vinguis"
+    },
+    {
+      "prompt": "___ (seure, tu) aquí. (assieds-toi)",
+      "answer": "Seu"
+    },
+    {
+      "prompt": "___ (passar, vostè). (passez, vouvoiement)",
+      "answer": "Passi"
+    },
+    {
+      "prompt": "No ___ (preocupar, tu) te. (ne t'inquiète pas → forme : no et preocupis)",
+      "answer": "preocupis"
+    },
+    {
+      "prompt": "___ (tancar, tu) la porta. (ferme)",
       "answer": "Tanca"
     },
     {
-      "prompt": "___ (mirar, tu) això. → Mira (regarde)",
-      "answer": "Mira"
+      "prompt": "___ (mirar, vostès) cap aquí. (regardez, vouvoiement pl)",
+      "answer": "Mirin"
     },
     {
-      "prompt": "___ (menjar, vosaltres) tranquils. → Mengeu (mangez)",
-      "answer": "Mengeu"
-    },
-    {
-      "prompt": "___ (agafar, tu) el paraigua. → Agafa (prends)",
-      "answer": "Agafa"
-    },
-    {
-      "prompt": "No ___ (venir, tu) tard. → vinguis (ne viens pas)",
-      "answer": "vinguis"
+      "prompt": "___ (beure, tu) més aigua. (bois)",
+      "answer": "Beu"
     }
   ]
 }
