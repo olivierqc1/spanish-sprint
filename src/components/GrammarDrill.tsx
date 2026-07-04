@@ -23,11 +23,11 @@ type Props = {
   onAnswer?: (correct: boolean, drill: Drill) => void;
 };
 
-const ACCENTS = ['á', 'é', 'í', 'ó', 'ú', 'ñ', 'ü', '¿', '¡'];
+const ACCENTS = ['á', 'é', 'í', 'ó', 'ú', 'à', 'è', 'ò', 'ç', 'ï', 'ü', 'ñ', 'l·l', '¿', '¡'];
 
 export default function GrammarDrill({ title, note, visual, drills, onClose, language = 'fr', onAnswer }: Props) {
-  const [showExplanationPanel, setShowExplanationPanel] = useState(true);
   const [hasStarted, setHasStarted] = useState(false);
+  const [showRules, setShowRules] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswer, setUserAnswer] = useState("");
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
@@ -79,21 +79,19 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
   const texts = {
     fr: {
       startButton: "Commencer les exercices", backButton: "Retour",
-      score: "Score", verify: "Verifier", next: "Suivant",
-      finish: "Terminer", finished: "Termine!", correctAnswers: "bonnes reponses",
+      verify: "Verifier", next: "Suivant",
+      finish: "Terminer", correctAnswers: "bonnes reponses",
       backToList: "Retour a la liste", placeholder: "Tape ta reponse ici...",
       correct: "Correct!", incorrect: "Incorrect", correctAnswer: "Bonne reponse",
-      exercise: "Exercice", showExplanation: "Voir l'explication",
-      hideExplanation: "Masquer", showHint: "Indice", hideHint: "Cacher",
+      exercise: "Exercice", rules: "Règles", showHint: "Indice", hideHint: "Cacher",
     },
     en: {
       startButton: "Start exercises", backButton: "Back",
-      score: "Score", verify: "Check", next: "Next",
-      finish: "Finish", finished: "Finished!", correctAnswers: "correct answers",
+      verify: "Check", next: "Next",
+      finish: "Finish", correctAnswers: "correct answers",
       backToList: "Back to list", placeholder: "Type your answer here...",
       correct: "Correct!", incorrect: "Incorrect", correctAnswer: "Correct answer",
-      exercise: "Exercise", showExplanation: "Show explanation",
-      hideExplanation: "Hide", showHint: "Hint", hideHint: "Hide",
+      exercise: "Exercise", rules: "Rules", showHint: "Hint", hideHint: "Hide",
     },
   };
 
@@ -119,7 +117,7 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
   const formatNote = (text: string, compact = false) => {
     const lines = text.split('\n');
     const els: JSX.Element[] = [];
-    const fs = compact ? '12px' : '14px';
+    const fs = compact ? '13px' : '14px';
 
     lines.forEach((line, i) => {
       const tr = line.trim();
@@ -133,7 +131,7 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
           : tr.startsWith('📽') ? '#fb923c'
           : '#a78bfa';
         els.push(
-          <div key={i} style={{ fontWeight: 'bold', fontSize: compact ? '13px' : '16px', color, marginTop: '14px', marginBottom: '4px' }}>
+          <div key={i} style={{ fontWeight: 'bold', fontSize: compact ? '14px' : '16px', color, marginTop: '14px', marginBottom: '4px' }}>
             {tr}
           </div>
         );
@@ -144,20 +142,8 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
             <span style={{ color: '#e2e8f0', fontSize: fs }}>{tr.slice(1).trim()}</span>
           </div>
         );
-      } else if (tr.match(/^\d+\./)) {
-        els.push(
-          <div key={i} style={{ fontWeight: 'bold', color: '#fbbf24', fontSize: fs, marginTop: '8px', marginBottom: '2px' }}>
-            {tr}
-          </div>
-        );
-      } else if (tr.toLowerCase().startsWith('mots cl') || tr.toLowerCase().startsWith('key word')) {
-        els.push(
-          <div key={i} style={{ background: '#1e3a5f', borderRadius: '6px', padding: '3px 8px', fontSize: compact ? '11px' : '13px', color: '#93c5fd', margin: '3px 0' }}>
-            {tr}
-          </div>
-        );
       } else if (!tr) {
-        els.push(<div key={i} style={{ height: compact ? '4px' : '8px' }} />);
+        els.push(<div key={i} style={{ height: '8px' }} />);
       } else {
         els.push(
           <p key={i} style={{ color: '#cbd5e1', fontSize: fs, lineHeight: '1.55', margin: '2px 0' }}>
@@ -240,27 +226,16 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
   const pctBar = ((currentIndex + 1) / drills.length) * 100;
 
   return (
-    <div className="fixed inset-0 bg-slate-950/95 backdrop-blur-sm z-50 p-3 overflow-hidden">
-      <div className="h-full max-w-7xl mx-auto flex gap-3">
+    <div className="fixed inset-0 bg-slate-950/95 backdrop-blur-sm z-50 p-3 overflow-y-auto">
+      <div className="max-w-2xl mx-auto">
+        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl">
 
-        {showExplanationPanel && hasContent && (
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 w-72 flex-shrink-0 overflow-y-auto hidden md:block">
-            <div className="flex justify-between items-center mb-3">
-              <h3 className="text-sm font-bold text-white">{displayTitle}</h3>
-              <button onClick={() => setShowExplanationPanel(false)} className="text-slate-500 hover:text-white">✕</button>
-            </div>
-            {visual && renderVisual(visual)}
-            {displayNote && formatNote(displayNote, true)}
-          </div>
-        )}
-
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex-1 flex flex-col min-w-0 shadow-xl">
-          <div className="bg-slate-800 rounded-full h-1.5 overflow-hidden mb-4 flex-shrink-0">
+          <div className="bg-slate-800 rounded-full h-1.5 overflow-hidden mb-4">
             <div className="h-full transition-all duration-500 rounded-full"
               style={{ width: `${pctBar}%`, background: 'linear-gradient(90deg,#3b82f6,#60a5fa)' }} />
           </div>
 
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex justify-between items-center mb-3">
             <div className="flex-1 min-w-0">
               <h2 className="text-lg font-bold truncate text-white">{displayTitle}</h2>
               <p className="text-xs text-slate-500 uppercase tracking-wide">{t.exercise} {progress}</p>
@@ -274,14 +249,22 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
             </div>
           </div>
 
-          {hasContent && !showExplanationPanel && (
-            <button onClick={() => setShowExplanationPanel(true)}
-              className="self-start mb-3 px-3 py-1.5 bg-blue-600/20 border border-blue-600/40 text-blue-300 hover:bg-blue-600/30 rounded-lg text-xs font-semibold transition">
-              {t.showExplanation}
+          {/* Bouton Règles — visible pendant tout l'exercice, sur tous les écrans */}
+          {hasContent && (
+            <button onClick={() => setShowRules(!showRules)}
+              className={`mb-3 px-3 py-1.5 rounded-lg text-sm font-semibold transition border ${showRules ? 'bg-purple-600/20 border-purple-500 text-purple-200' : 'bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700'}`}>
+              📖 {t.rules} {showRules ? '▲' : '▼'}
             </button>
           )}
 
-          <div className="bg-slate-950 border border-slate-800 rounded-2xl p-6 mb-4 flex-shrink-0">
+          {showRules && hasContent && (
+            <div className="mb-4 rounded-xl bg-slate-950 border border-slate-800 p-4" style={{ maxHeight: '40vh', overflowY: 'auto' }}>
+              {visual && renderVisual(visual)}
+              {displayNote && formatNote(displayNote)}
+            </div>
+          )}
+
+          <div className="bg-slate-950 border border-slate-800 rounded-2xl p-6 mb-4">
             <p className="text-xl leading-relaxed text-white" dangerouslySetInnerHTML={{ __html: currentDrill.prompt }} />
           </div>
 
@@ -291,15 +274,15 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
             placeholder={t.placeholder}
             disabled={feedback !== null}
             autoFocus
-            className="w-full bg-slate-950 border-2 border-slate-700 rounded-2xl px-4 py-3.5 text-lg text-white focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 disabled:opacity-60 flex-shrink-0 transition"
+            className="w-full bg-slate-950 border-2 border-slate-700 rounded-2xl px-4 py-3.5 text-lg text-white focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 disabled:opacity-60 transition"
           />
 
-          {/* Barre d'accents (mobile) */}
+          {/* Barre d'accents (espagnol + catalan) */}
           {feedback === null && (
-            <div className="mt-2 flex flex-wrap gap-1.5 flex-shrink-0">
+            <div className="mt-2 flex flex-wrap gap-1.5">
               {ACCENTS.map(ch => (
                 <button key={ch} type="button" onClick={() => setUserAnswer(userAnswer + ch)}
-                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white text-base font-medium transition active:scale-95">
+                  className="min-w-9 h-9 px-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white text-base font-medium transition active:scale-95">
                   {ch}
                 </button>
               ))}
@@ -307,7 +290,7 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
           )}
 
           {currentDrill.hint && feedback === null && (
-            <div className="mt-3 flex-shrink-0">
+            <div className="mt-3">
               <button onClick={() => setShowHint(!showHint)} className="text-sm text-blue-400 hover:text-blue-300 transition">
                 💡 {showHint ? t.hideHint : t.showHint}
               </button>
@@ -320,7 +303,7 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
           )}
 
           {feedback && (
-            <div className={`mt-3 p-4 rounded-2xl flex-shrink-0 border ${feedback === "correct" ? "bg-emerald-500/10 border-emerald-500/40" : "bg-rose-500/10 border-rose-500/40"}`}>
+            <div className={`mt-3 p-4 rounded-2xl border ${feedback === "correct" ? "bg-emerald-500/10 border-emerald-500/40" : "bg-rose-500/10 border-rose-500/40"}`}>
               {feedback === "correct" ? (
                 <p className="text-emerald-400 font-bold text-lg">✓ {t.correct}</p>
               ) : (
@@ -332,7 +315,7 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
             </div>
           )}
 
-          <div className="mt-auto pt-4 flex-shrink-0">
+          <div className="pt-4">
             {feedback === null ? (
               <button onClick={checkAnswer} disabled={!userAnswer.trim()}
                 className="w-full bg-blue-600 hover:bg-blue-500 disabled:bg-slate-800 disabled:text-slate-600 disabled:cursor-not-allowed px-6 py-3.5 rounded-2xl font-bold transition text-lg shadow-lg shadow-blue-600/20 disabled:shadow-none">
