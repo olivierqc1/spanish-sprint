@@ -8,7 +8,20 @@ export type GrammarPoint = {
   jsonPath: string;
 };
 
-export const grammarPoints: GrammarPoint[] = [
+export const grammarPoints: GrammarPoint[] = [{
+  id: "catala_casa_meva_llocs",
+  title: {
+    fr: "Catalan – 'a casa', 'casa meva' et lieux sans article",
+    en: "Catalan – 'a casa', 'casa meva' and article-less places"
+  },
+  level: "A2",
+  note: {
+    fr: "Pourquoi on dit 'a casa' et pas 'la meva casa'.",
+    en: "Why Catalan says 'a casa', not 'la meva casa'."
+  },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/catala_casa_meva_llocs.json"
+},
 {
     id: "cat_imperatiu",
     title: { fr: "Catalan : l'impératif", en: "Catalan: the imperative" },
