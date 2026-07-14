@@ -63,6 +63,7 @@ export default function Home() {
   const catalanModules = [
     { key: 'flashcards', icon: '🎴', route: 'flashcards', available: true, ...t.catalanModules.flashcards },
     { key: 'conjugaison', icon: '⚡', route: 'conjugaison', available: true, ...t.catalanModules.conjugation },
+    { key: 'pronunciacio', icon: '🎤', route: 'pronunciacio', available: true, ...t.catalanModules.pronunciation },
     { key: 'grammaire', icon: '📚', route: 'grammaire', available: true, ...t.catalanModules.grammar },
     { key: 'dictee', icon: '✍️', route: 'dictee', available: true, ...t.catalanModules.dictee },
     { key: 'phrases', icon: '💬', route: 'conversations', available: false, ...t.catalanModules.phrases },
