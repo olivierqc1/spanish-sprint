@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Listening from '@/components/Listening';
 import type { Level, Country } from '@/components/LevelPicker';
 
@@ -95,9 +96,9 @@ export default function AudioPage() {
     <div className="min-h-screen p-8 bg-gray-900 text-white">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between items-center mb-6">
-          <a href="/" className="text-blue-400 hover:text-blue-300">
+          <Link href="/" className="text-blue-400 hover:text-blue-300">
             {t.back}
-          </a>
+          </Link>
           
           <div className="flex gap-1 bg-gray-900 rounded-lg p-1">
             <button
