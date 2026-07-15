@@ -8,7 +8,22 @@ export type GrammarPoint = {
   jsonPath: string;
 };
 
-export const grammarPoints: GrammarPoint[] = [{
+export const grammarPoints: GrammarPoint[] = [
+{
+  id: "catala_preterit_perfet",
+  title: {
+    fr: "Catalan – Le pretèrit perfet (he pintat)",
+    en: "Catalan – The pretèrit perfet (he pintat)"
+  },
+  level: "A2",
+  note: {
+    fr: "he/has/ha + participe : quand et comment.",
+    en: "he/has/ha + participle: when and how."
+  },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/catala_preterit_perfet.json"
+},
+{
   id: "catala_casa_meva_llocs",
   title: {
     fr: "Catalan – 'a casa', 'casa meva' et lieux sans article",
