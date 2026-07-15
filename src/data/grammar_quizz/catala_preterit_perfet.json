@@ -1,0 +1,177 @@
+{
+  "id": "catala_preterit_perfet",
+  "title": {
+    "fr": "Catalan – Le pretèrit perfet (he pintat)",
+    "en": "Catalan – The pretèrit perfet (he pintat)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "**Formation :** haver au présent + participe. **he, has, ha, hem, heu, han** + pintat. **Participes réguliers :** -ar → **-at** (pintat), -er/-re → **-ut** (perdut, rebut), -ir → **-it** (sortit, dormit). Le participe s'accorde en genre/nombre quand il y a un pronom : at/ada/ats/ades. **Usage :** pour un passé lié à AUJOURD'HUI (avui, aquest matí, aquesta setmana) → perfet. Pour HIER ou avant (ahir, la setmana passada) → passat perifràstic (vaig pintar). **Irréguliers fréquents :** obrir → obert, fer → fet, veure → vist, escriure → escrit, dir → dit, morir → mort, posar → post/posat.",
+    "en": "**Form:** present of haver + participle: **he, has, ha, hem, heu, han** + pintat. **Regular participles:** -ar → -at, -er/-re → -ut, -ir → -it. **Use:** past connected to TODAY (avui, aquest matí) → perfet; yesterday or earlier → passat perifràstic (vaig pintar). **Common irregulars:** obrir → obert, fer → fet, veure → vist, escriure → escrit, dir → dit."
+  },
+  "country": "catalonia",
+  "drills": [
+    {
+      "id": "perf-1",
+      "type": "fill",
+      "question": "Complète avec haver (jo)",
+      "prompt": "Avui ___ pintat la cuina.",
+      "answer": "he",
+      "options": ["he", "has", "ha", "hem"],
+      "explanation": "Jo → he : « He pintat » = j'ai peint."
+    },
+    {
+      "id": "perf-2",
+      "type": "fill",
+      "question": "Complète avec haver (nosaltres)",
+      "prompt": "Aquest matí ___ esmorzat molt tard.",
+      "answer": "hem",
+      "options": ["hem", "heu", "han", "he"],
+      "explanation": "Nosaltres → hem. Heu = vosaltres, han = ells."
+    },
+    {
+      "id": "perf-3",
+      "type": "fill",
+      "question": "Complète avec haver (vosaltres)",
+      "prompt": "___ sopat ja?",
+      "answer": "Heu",
+      "options": ["Heu", "Hem", "Han", "Has"],
+      "explanation": "Vosaltres → heu : « Heu sopat ja? » = vous avez déjà soupé?"
+    },
+    {
+      "id": "perf-4",
+      "type": "fill",
+      "question": "Participe du groupe -AR",
+      "prompt": "Ella ha ___ (parlar) amb el veí.",
+      "answer": "parlat",
+      "options": ["parlat", "parlut", "parlit", "parlada"],
+      "explanation": "-ar → -at : parlar → parlat. Pas d'accord ici (pas de pronom)."
+    },
+    {
+      "id": "perf-5",
+      "type": "fill",
+      "question": "Participe du groupe -RE",
+      "prompt": "He ___ (perdre) les claus.",
+      "answer": "perdut",
+      "options": ["perdut", "perdat", "perdit", "perdrut"],
+      "explanation": "-re → -ut : perdre → perdut, rebre → rebut, beure → begut."
+    },
+    {
+      "id": "perf-6",
+      "type": "fill",
+      "question": "Participe du groupe -IR",
+      "prompt": "Hem ___ (dormir) fins a les deu.",
+      "answer": "dormit",
+      "options": ["dormit", "dormat", "dormut", "dormert"],
+      "explanation": "-ir → -it : dormir → dormit, sortir → sortit."
+    },
+    {
+      "id": "perf-7",
+      "type": "fill",
+      "question": "⚠️ Participe IRRÉGULIER",
+      "prompt": "Qui ha ___ (obrir) la finestra?",
+      "answer": "obert",
+      "options": ["obert", "obrit", "obrat", "obrut"],
+      "explanation": "Obrir est irrégulier : obert (pas obrit!). Comme « ouvert » en français."
+    },
+    {
+      "id": "perf-8",
+      "type": "fill",
+      "question": "⚠️ Participe IRRÉGULIER",
+      "prompt": "Avui no he ___ (fer) res.",
+      "answer": "fet",
+      "options": ["fet", "fat", "fut", "feit"],
+      "explanation": "Fer → fet : « No he fet res » = je n'ai rien fait."
+    },
+    {
+      "id": "perf-9",
+      "type": "fill",
+      "question": "⚠️ Participe IRRÉGULIER",
+      "prompt": "Has ___ (veure) el partit?",
+      "answer": "vist",
+      "options": ["vist", "veut", "veurit", "vegut"],
+      "explanation": "Veure → vist : « Has vist? » = as-tu vu? Comme l'espagnol visto."
+    },
+    {
+      "id": "perf-10",
+      "type": "fill",
+      "question": "⚠️ Participe IRRÉGULIER",
+      "prompt": "Ella ha ___ (escriure) tres correus aquest matí.",
+      "answer": "escrit",
+      "options": ["escrit", "escriut", "escrivit", "escriurat"],
+      "explanation": "Escriure → escrit."
+    },
+    {
+      "id": "perf-11",
+      "type": "fill",
+      "question": "Verbe réflexif (comme dans tes notes : m'he llevat)",
+      "prompt": "Aquest matí ___ llevat a les sis.",
+      "answer": "m'he",
+      "options": ["m'he", "he'm", "em he", "m'ha"],
+      "explanation": "Le pronom se colle devant haver : m'he llevat, t'has llevat, s'ha llevat."
+    },
+    {
+      "id": "perf-12",
+      "type": "fill",
+      "question": "Réflexif, 3e personne",
+      "prompt": "En Jordi ___ dutxat abans de sortir.",
+      "answer": "s'ha",
+      "options": ["s'ha", "se ha", "s'he", "ha's"],
+      "explanation": "Ell → s'ha dutxat. Le pronom es s'apostrophe devant ha."
+    },
+    {
+      "id": "perf-13",
+      "type": "fill",
+      "question": "PERFET ou PERIFRÀSTIC? Choisis selon le marqueur de temps",
+      "prompt": "AVUI ___ molt (treballar, jo).",
+      "answer": "he treballat",
+      "options": ["he treballat", "vaig treballar", "treballava", "treballo"],
+      "explanation": "Avui = lié à aujourd'hui → perfet. « Ahir vaig treballar », mais « Avui he treballat »."
+    },
+    {
+      "id": "perf-14",
+      "type": "fill",
+      "question": "PERFET ou PERIFRÀSTIC?",
+      "prompt": "AHIR ___ al cinema (anar, nosaltres).",
+      "answer": "vam anar",
+      "options": ["vam anar", "hem anat", "anàvem", "anem"],
+      "explanation": "Ahir = coupé d'aujourd'hui → passat perifràstic : vam anar. « Hem anat » exigerait avui/aquesta setmana."
+    },
+    {
+      "id": "perf-15",
+      "type": "fill",
+      "question": "Accord du participe avec le pronom LA",
+      "prompt": "La porta? Sí, l'he ___ (tancar).",
+      "answer": "tancada",
+      "options": ["tancada", "tancat", "tancades", "tancats"],
+      "explanation": "Avec le pronom féminin la devant, le participe s'accorde : l'he tancada. C'est le fameux ada de ton tableau!"
+    },
+    {
+      "id": "perf-16",
+      "type": "fill",
+      "question": "Accord du participe avec LES",
+      "prompt": "Les fotos? Les he ___ (pujar) al núvol.",
+      "answer": "pujades",
+      "options": ["pujades", "pujat", "pujada", "pujats"],
+      "explanation": "Les (fém. pluriel) → pujades. at/ada/ats/ades selon le pronom qui précède."
+    },
+    {
+      "id": "perf-17",
+      "type": "fill",
+      "question": "Question typique du quotidien",
+      "prompt": "___ mai calçots? (menjar, tu)",
+      "answer": "Has menjat",
+      "options": ["Has menjat", "Vas menjar", "Menges", "Menjaves"],
+      "explanation": "« Has menjat mai...? » = as-tu déjà mangé...? Expérience de vie → perfet."
+    },
+    {
+      "id": "perf-18",
+      "type": "fill",
+      "question": "Participe en -UT",
+      "prompt": "Encara no he ___ (rebre) el paquet.",
+      "answer": "rebut",
+      "options": ["rebut", "rebit", "rebat", "recebut"],
+      "explanation": "Rebre → rebut, comme dans ton tableau. « Encara no he rebut » = je n'ai pas encore reçu."
+    }
+  ]
+}
