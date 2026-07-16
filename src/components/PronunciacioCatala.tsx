@@ -5,6 +5,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { catalanNotebookCards, CatalanCard } from '../data/words/catalan/A2_notebook';
+import { catalanPhraseCards } from '../data/words/catalan/A2_phrases';
 
 // ─── Utils de comparaison ────────────────────────────────────────────
 function normalize(s: string): string {
@@ -55,6 +56,7 @@ function speakableTarget(front: string): string {
 type Feedback = { score: number; heard: string } | null;
 
 export default function PronunciacioCatala() {
+  const [mode, setMode] = useState<'mots' | 'frases'>('mots');
   const [category, setCategory] = useState<string>('totes');
   const [index, setIndex] = useState(0);
   const [listening, setListening] = useState(false);
@@ -66,10 +68,11 @@ export default function PronunciacioCatala() {
   const [heardOnce, setHeardOnce] = useState(false);
   const recognitionRef = useRef<any>(null);
 
-  const categories = ['totes', ...Array.from(new Set(catalanNotebookCards.map(c => c.category)))];
+  const sourceCards: CatalanCard[] = mode === 'mots' ? catalanNotebookCards : catalanPhraseCards;
+  const categories = ['totes', ...Array.from(new Set(sourceCards.map(c => c.category)))];
   const cards: CatalanCard[] = category === 'totes'
-    ? catalanNotebookCards
-    : catalanNotebookCards.filter(c => c.category === category);
+    ? sourceCards
+    : sourceCards.filter(c => c.category === category);
   const card = cards[index % cards.length];
 
   // ─── Vérifie le support navigateur ─────────────────────────────────
@@ -101,7 +104,7 @@ export default function PronunciacioCatala() {
     }, 350);
     return () => clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [index, category]);
+  }, [index, category, mode]);
 
   // ─── Écouter le mot (TTS) ──────────────────────────────────────────
   const speak = useCallback((slow = false) => {
@@ -215,6 +218,26 @@ export default function PronunciacioCatala() {
         </p>
       )}
 
+      {/* Bascule Mots / Phrases */}
+      <div className="flex gap-2 mb-4">
+        <button
+          onClick={() => { setMode('mots'); setCategory('totes'); setIndex(0); }}
+          className={`flex-1 py-2 rounded-xl font-semibold text-sm ${
+            mode === 'mots' ? 'bg-blue-600 text-white' : 'bg-slate-100 dark:bg-slate-700 text-slate-500'
+          }`}
+        >
+          📇 Mots
+        </button>
+        <button
+          onClick={() => { setMode('frases'); setCategory('totes'); setIndex(0); }}
+          className={`flex-1 py-2 rounded-xl font-semibold text-sm ${
+            mode === 'frases' ? 'bg-blue-600 text-white' : 'bg-slate-100 dark:bg-slate-700 text-slate-500'
+          }`}
+        >
+          💬 Phrases
+        </button>
+      </div>
+
       {/* Filtre catégories */}
       <div className="flex gap-2 overflow-x-auto pb-2 mb-4">
         {categories.map(cat => (
@@ -237,8 +260,8 @@ export default function PronunciacioCatala() {
         <p className="text-xs text-slate-400 mb-2">
           {index % cards.length + 1} / {cards.length} · {card.category}
         </p>
-        <p className="text-xs uppercase tracking-wide text-slate-400 mb-1">Mot català</p>
-        <p className="text-4xl font-bold mb-1 text-blue-600 dark:text-blue-300">{card.front}</p>
+        <p className="text-xs uppercase tracking-wide text-slate-400 mb-1">{mode === 'mots' ? 'Mot català' : 'Frase catalana'}</p>
+        <p className={`font-bold mb-1 text-blue-600 dark:text-blue-300 ${mode === 'mots' ? 'text-4xl' : 'text-2xl leading-snug'}`}>{card.front}</p>
         <p className="text-slate-500 mb-4">{card.back}</p>
         {!heardOnce && (
           <p className="text-xs text-amber-500 mb-3 animate-pulse">
