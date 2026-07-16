@@ -63,6 +63,7 @@ export default function PronunciacioCatala() {
   const [supported, setSupported] = useState(true);
   const [hasCatalanVoice, setHasCatalanVoice] = useState(true);
   const [stats, setStats] = useState({ tries: 0, good: 0 });
+  const [heardOnce, setHeardOnce] = useState(false);
   const recognitionRef = useRef<any>(null);
 
   const categories = ['totes', ...Array.from(new Set(catalanNotebookCards.map(c => c.category)))];
@@ -84,8 +85,27 @@ export default function PronunciacioCatala() {
     return () => window.speechSynthesis?.removeEventListener?.('voiceschanged', checkVoices);
   }, []);
 
+  // ─── Jouer le mot automatiquement à chaque nouvelle carte ──────────
+  useEffect(() => {
+    setHeardOnce(false);
+    const t = setTimeout(() => {
+      if (window.speechSynthesis && card) {
+        const u = new SpeechSynthesisUtterance(speakableTarget(card.front));
+        u.lang = 'ca-ES';
+        u.rate = 0.85;
+        const v = window.speechSynthesis.getVoices().find(x => x.lang.toLowerCase().startsWith('ca'));
+        if (v) u.voice = v;
+        u.onend = () => setHeardOnce(true);
+        window.speechSynthesis.speak(u);
+      }
+    }, 350);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index, category]);
+
   // ─── Écouter le mot (TTS) ──────────────────────────────────────────
   const speak = useCallback((slow = false) => {
+    setHeardOnce(true);
     if (!window.speechSynthesis || !card) return;
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(speakableTarget(card.front));
@@ -217,8 +237,14 @@ export default function PronunciacioCatala() {
         <p className="text-xs text-slate-400 mb-2">
           {index % cards.length + 1} / {cards.length} · {card.category}
         </p>
-        <p className="text-3xl font-bold mb-1">{card.front}</p>
-        <p className="text-slate-500 mb-5">{card.back}</p>
+        <p className="text-xs uppercase tracking-wide text-slate-400 mb-1">Mot català</p>
+        <p className="text-4xl font-bold mb-1 text-blue-600 dark:text-blue-300">{card.front}</p>
+        <p className="text-slate-500 mb-4">{card.back}</p>
+        {!heardOnce && (
+          <p className="text-xs text-amber-500 mb-3 animate-pulse">
+            👂 Écoute d'abord, puis répète
+          </p>
+        )}
 
         <div className="flex justify-center gap-3 flex-wrap">
           <button
