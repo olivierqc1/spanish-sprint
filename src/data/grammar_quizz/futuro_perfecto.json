@@ -1,0 +1,62 @@
+{
+  "id": "futuro_perfecto",
+  "title": {
+    "fr": "Futur antérieur",
+    "en": "Future perfect"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ **HABRÉ + participe** : habré, habrás, habrá, habremos, habréis, habrán + hablado/comido/vivido.\n\n🎯 **Usages** :\n1️⃣ Action terminée avant un moment futur : *A las diez ya habré terminado.* → À dix heures j'aurai déjà fini.\n2️⃣ Hypothèse sur le passé : *¿Dónde está Juan? — Habrá perdido el tren.* → Il aura raté le train (probablement).\n\n🎯 Participes irréguliers : hecho, dicho, visto, escrito, puesto, vuelto, abierto, roto, muerto.",
+    "en": "⚙️ **HABRÉ + participle**: habré, habrás, habrá, habremos, habréis, habrán.\nUses: action completed before a future moment (*A las diez ya habré terminado*) and probability about the past (*Habrá perdido el tren*)."
+  },
+  "drills": [
+    {
+      "prompt": "A las nueve ya ___ (terminar, yo) el informe.",
+      "answer": "habré terminado"
+    },
+    {
+      "prompt": "Para junio, ellos ___ (acabar) las obras.",
+      "answer": "habrán acabado"
+    },
+    {
+      "prompt": "¿No contesta? ___ (salir, él) ya.",
+      "answer": "habrá salido"
+    },
+    {
+      "prompt": "Cuando llegues, nosotros ya ___ (comer).",
+      "answer": "habremos comido"
+    },
+    {
+      "prompt": "Para el lunes, tú ___ (leer) el libro.",
+      "answer": "habrás leído"
+    },
+    {
+      "prompt": "En 2030, yo ___ (volver) a Quebec.",
+      "answer": "habré vuelto"
+    },
+    {
+      "prompt": "Llaman a la puerta. ___ (ser) el cartero.",
+      "answer": "habrá sido"
+    },
+    {
+      "prompt": "Vosotros ___ (hacer) los deberes antes de cenar.",
+      "answer": "habréis hecho"
+    },
+    {
+      "prompt": "No encuentro las llaves. Las ___ (dejar, yo) en casa.",
+      "answer": "habré dejado"
+    },
+    {
+      "prompt": "Para entonces, ella ___ (escribir) la tesis.",
+      "answer": "habrá escrito"
+    },
+    {
+      "prompt": "Ellos ___ (ver) ya la película.",
+      "answer": "habrán visto"
+    },
+    {
+      "prompt": "A final de mes, ___ (ahorrar, nosotros) bastante.",
+      "answer": "habremos ahorrado"
+    }
+  ]
+}
