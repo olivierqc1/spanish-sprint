@@ -1,0 +1,70 @@
+{
+  "id": "interrogativos",
+  "title": {
+    "fr": "Les mots interrogatifs",
+    "en": "Question words"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙️ Les interrogatifs portent **toujours un accent** :\n\n🎯 **¿Qué?** (que/quoi) · **¿Quién/Quiénes?** (qui) · **¿Dónde?** (où) · **¿Adónde?** (vers où) · **¿Cuándo?** (quand) · **¿Cómo?** (comment) · **¿Cuánto/a/os/as?** (combien) · **¿Cuál/Cuáles?** (lequel) · **¿Por qué?** (pourquoi)\n\n⚠️ **¿Qué? vs ¿Cuál?** : qué + nom (*¿Qué libro?*), cuál + verbe pour choisir (*¿Cuál prefieres?*).\n\n💡 Avec préposition : *¿De dónde eres? ¿Con quién vives? ¿Para qué sirve?*",
+    "en": "⚙️ Question words always carry an accent: qué, quién, dónde, cuándo, cómo, cuánto, cuál, por qué.\n⚠️ qué + noun (*¿Qué libro?*), cuál + verb for choice (*¿Cuál prefieres?*).\nWith prepositions: *¿De dónde eres? ¿Con quién vives?*"
+  },
+  "drills": [
+    {
+      "prompt": "¿___ te llamas? (comment)",
+      "answer": "cómo"
+    },
+    {
+      "prompt": "¿___ vives? (où)",
+      "answer": "dónde"
+    },
+    {
+      "prompt": "¿___ es tu cumpleaños? (quand)",
+      "answer": "cuándo"
+    },
+    {
+      "prompt": "¿___ es esa chica? (qui)",
+      "answer": "quién"
+    },
+    {
+      "prompt": "¿___ cuesta este libro? (combien)",
+      "answer": "cuánto"
+    },
+    {
+      "prompt": "¿___ estudias español? (pourquoi)",
+      "answer": "por qué"
+    },
+    {
+      "prompt": "¿___ hora es? (quelle)",
+      "answer": "qué"
+    },
+    {
+      "prompt": "¿___ prefieres, el rojo o el azul? (lequel)",
+      "answer": "cuál"
+    },
+    {
+      "prompt": "¿De ___ eres? (d'où)",
+      "answer": "dónde"
+    },
+    {
+      "prompt": "¿Con ___ vas al cine? (avec qui)",
+      "answer": "quién"
+    },
+    {
+      "prompt": "¿___ hermanos tienes? (combien de)",
+      "answer": "cuántos"
+    },
+    {
+      "prompt": "¿___ vas de vacaciones, a la playa o a la montaña? (vers où)",
+      "answer": "adónde"
+    },
+    {
+      "prompt": "¿___ personas vienen a la cena? (combien de, fém.)",
+      "answer": "cuántas"
+    },
+    {
+      "prompt": "¿___ es tu número de teléfono? (quel)",
+      "answer": "cuál"
+    }
+  ]
+}
