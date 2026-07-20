@@ -1,0 +1,62 @@
+{
+  "id": "oraciones_condicionales",
+  "title": {
+    "fr": "Phrases conditionnelles (si + indicatif/subjonctif)",
+    "en": "Conditional sentences"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ **Trois types** :\n\n1️⃣ **Réel** (probable) : SI + présent → présent/futur/impératif.\n*Si llueve, no salimos. / Si estudias, aprobarás.*\n\n2️⃣ **Irréel présent/futur** (peu probable) : SI + imparfait du subjonctif → conditionnel.\n*Si tuviera dinero, viajaría.*\n\n3️⃣ **Irréel passé** (impossible) : SI + plus-que-parfait du subjonctif → conditionnel composé.\n*Si hubiera estudiado, habría aprobado.*\n\n⚠️ JAMAIS de futur ni de conditionnel juste après SI !",
+    "en": "⚙️ Three types:\n1️⃣ Real: SI + present → present/future. *Si estudias, aprobarás.*\n2️⃣ Unreal present: SI + imperfect subjunctive → conditional. *Si tuviera dinero, viajaría.*\n3️⃣ Unreal past: SI + pluperfect subjunctive → conditional perfect.\n⚠️ Never future/conditional right after SI!"
+  },
+  "drills": [
+    {
+      "prompt": "Si ___ (llover), nos quedamos en casa. (type 1)",
+      "answer": "llueve"
+    },
+    {
+      "prompt": "Si estudias, ___ (aprobar, tú) el examen.",
+      "answer": "aprobarás"
+    },
+    {
+      "prompt": "Si ___ (tener, yo) dinero, viajaría más.",
+      "answer": "tuviera"
+    },
+    {
+      "prompt": "Si pudiera, te ___ (ayudar, yo).",
+      "answer": "ayudaría"
+    },
+    {
+      "prompt": "Si ___ (ser, yo) tú, no iría.",
+      "answer": "fuera"
+    },
+    {
+      "prompt": "Si hace sol mañana, ___ (ir, nosotros) a la playa.",
+      "answer": "iremos"
+    },
+    {
+      "prompt": "Si ella ___ (saber) la verdad, se enfadaría.",
+      "answer": "supiera"
+    },
+    {
+      "prompt": "Si me llamas, te ___ (contestar, yo).",
+      "answer": "contesto"
+    },
+    {
+      "prompt": "Si ___ (vivir, ellos) aquí, serían más felices.",
+      "answer": "vivieran"
+    },
+    {
+      "prompt": "Si hubiera estudiado, ___ (aprobar, él) el examen.",
+      "answer": "habría aprobado"
+    },
+    {
+      "prompt": "Si ___ (poder, nosotros), iríamos contigo.",
+      "answer": "pudiéramos"
+    },
+    {
+      "prompt": "Si tienes hambre, ___ (comer, tú) algo. (impératif)",
+      "answer": "come"
+    }
+  ]
+}
