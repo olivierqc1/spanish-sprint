@@ -1,0 +1,62 @@
+{
+  "id": "empezar_a",
+  "title": {
+    "fr": "Empezar a / Comenzar a + infinitif – Commencer à",
+    "en": "Empezar a + infinitive – To start doing"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ **EMPEZAR A / COMENZAR A + infinitif** = commencer à faire.\n\n➡️ *Empecé a estudiar catalán en enero.* → J'ai commencé à étudier le catalan en janvier.\n➡️ *Empieza a llover.* → Il commence à pleuvoir.\n\n🎯 **empezar** = e→ie : empiezo, empiezas, empieza, empezamos, empezáis, empiezan.\n⚠️ Passé simple : **empecé** (z→c devant e), empezaste, empezó...\n\n💡 Toujours avec **A** avant l'infinitif !",
+    "en": "⚙️ **EMPEZAR A + infinitive** = to start doing.\n➡️ *Empecé a estudiar catalán.*\n🎯 e→ie: empiezo, empiezas... Preterite: **empecé** (z→c).\n⚠️ Always with **A**!"
+  },
+  "drills": [
+    {
+      "prompt": "Yo ___ ___ estudiar a las ocho. (je commence à)",
+      "answer": "empiezo a"
+    },
+    {
+      "prompt": "___ ___ llover. (il commence à)",
+      "answer": "empieza a"
+    },
+    {
+      "prompt": "Nosotros ___ ___ trabajar mañana. (commençons à)",
+      "answer": "empezamos a"
+    },
+    {
+      "prompt": "Ella ___ ___ correr el año pasado. (a commencé à)",
+      "answer": "empezó a"
+    },
+    {
+      "prompt": "Yo ___ ___ aprender catalán en 2025. (j'ai commencé à)",
+      "answer": "empecé a"
+    },
+    {
+      "prompt": "Ellos ___ ___ construir la casa. (ont commencé à)",
+      "answer": "empezaron a"
+    },
+    {
+      "prompt": "¿Cuándo ___ ___ entrenar? (tú, présent)",
+      "answer": "empiezas a"
+    },
+    {
+      "prompt": "Vosotros ___ ___ entender el problema. (commencez à)",
+      "answer": "empezáis a"
+    },
+    {
+      "prompt": "El niño ___ ___ hablar muy pronto. (a commencé à)",
+      "answer": "empezó a"
+    },
+    {
+      "prompt": "¿A qué hora ___ (empezar) la película?",
+      "answer": "empieza"
+    },
+    {
+      "prompt": "Tú ___ ___ cocinar muy bien. (commences à)",
+      "answer": "empiezas a"
+    },
+    {
+      "prompt": "De repente, todos ___ ___ gritar. (ont commencé à)",
+      "answer": "empezaron a"
+    }
+  ]
+}
