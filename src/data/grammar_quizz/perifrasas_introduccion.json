@@ -1,0 +1,62 @@
+{
+  "id": "perifrasas_introduccion",
+  "title": {
+    "fr": "Ya, todavía, ya no, aún no, todavía no",
+    "en": "Ya, todavía, ya no, aún no"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Quatre nuances temporelles :\n\n🎯 **YA** = déjà : *Ya he comido.* → J'ai déjà mangé.\n🎯 **TODAVÍA / AÚN** = encore : *Todavía trabajo allí.* → Je travaille encore là-bas.\n🎯 **YA NO** = ne... plus : *Ya no fumo.* → Je ne fume plus.\n🎯 **TODAVÍA NO / AÚN NO** = pas encore : *Todavía no he terminado.* → Je n'ai pas encore fini.\n\n💡 Paires logiques :\n¿Ya has comido? → Sí, ya / No, todavía no.\n¿Todavía vives allí? → Sí, todavía / No, ya no.",
+    "en": "⚙️ Four time nuances:\n**YA** = already · **TODAVÍA/AÚN** = still · **YA NO** = no longer · **TODAVÍA NO** = not yet.\nPairs: ¿Ya has comido? → No, todavía no. / ¿Todavía vives allí? → No, ya no."
+  },
+  "drills": [
+    {
+      "prompt": "¿Has terminado? — No, ___ ___. (pas encore)",
+      "answer": "todavía no"
+    },
+    {
+      "prompt": "___ he visto esa película. (déjà)",
+      "answer": "ya"
+    },
+    {
+      "prompt": "___ vivo en ese barrio, me mudé. (ne... plus)",
+      "answer": "ya no"
+    },
+    {
+      "prompt": "¿___ trabajas en el banco? (encore)",
+      "answer": "todavía"
+    },
+    {
+      "prompt": "Son las 12 y ___ ___ se ha levantado. (pas encore)",
+      "answer": "todavía no"
+    },
+    {
+      "prompt": "Antes fumaba, pero ___ ___ fumo. (ne... plus)",
+      "answer": "ya no"
+    },
+    {
+      "prompt": "¿___ has hecho la maleta? (déjà)",
+      "answer": "ya"
+    },
+    {
+      "prompt": "___ no hemos recibido el informe. (pas encore, avec aún)",
+      "answer": "aún"
+    },
+    {
+      "prompt": "Mi abuelo ___ conduce, a sus 80 años. (encore)",
+      "answer": "todavía"
+    },
+    {
+      "prompt": "___ no tengo el visado, sigo esperando. (pas encore)",
+      "answer": "todavía"
+    },
+    {
+      "prompt": "— ¿Sigues en Barcelona? — Sí, ___ vivo aquí. (encore)",
+      "answer": "todavía"
+    },
+    {
+      "prompt": "— ¿Quieres más café? — No, ___ he tomado dos. (déjà)",
+      "answer": "ya"
+    }
+  ]
+}
