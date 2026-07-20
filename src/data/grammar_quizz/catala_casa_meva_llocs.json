@@ -1,0 +1,62 @@
+{
+  "id": "catala_casa_meva_llocs",
+  "title": {
+    "fr": "Catalan – 'a casa', 'casa meva' et lieux sans article",
+    "en": "Catalan – 'a casa', 'casa meva' and article-less places"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ En catalan, certains lieux s'emploient **sans article** :\n\n🎯 **casa** : *Sóc a casa* (je suis chez moi), *Vaig a casa meva / casa teva / casa la Laura* (chez moi/toi/Laura).\n⚠️ JAMAIS *la meva casa* pour dire 'chez moi' — *casa meva* !\n\n🎯 Autres lieux sans article : *anar a escola, ser a classe, anar a missa, ser a taula* (à table).\n\n🎯 AVEC article : *anar al cinema, al mercat, a la platja, al metge*.\n\n💡 *a casa* = chez soi (le foyer), *a la casa* = dans le bâtiment physique.",
+    "en": "⚙️ Some Catalan places take no article:\n🎯 **casa**: *Sóc a casa*, *Vaig a casa meva / casa la Laura*.\n⚠️ Never *la meva casa* for 'my place' — say *casa meva*!\nAlso: *a escola, a classe, a taula*. With article: *al cinema, al mercat, a la platja*."
+  },
+  "drills": [
+    {
+      "prompt": "Aquesta nit sopem a ___ ___. (chez moi)",
+      "answer": "casa meva"
+    },
+    {
+      "prompt": "Vine a ___ ___ aquest cap de setmana. (chez moi)",
+      "answer": "casa meva"
+    },
+    {
+      "prompt": "Els nens són a ___. (à l'école)",
+      "answer": "escola"
+    },
+    {
+      "prompt": "Sóc a ___, truca'm més tard. (chez moi/à la maison)",
+      "answer": "casa"
+    },
+    {
+      "prompt": "Anem a casa ___ Laura. (chez Laura)",
+      "answer": "la"
+    },
+    {
+      "prompt": "Tothom a ___! El dinar és a punt. (à table)",
+      "answer": "taula"
+    },
+    {
+      "prompt": "Vaig ___ mercat a comprar fruita. (au)",
+      "answer": "al"
+    },
+    {
+      "prompt": "Aquesta tarda anem ___ cinema. (au)",
+      "answer": "al"
+    },
+    {
+      "prompt": "Diumenge anirem a ___ platja.",
+      "answer": "la"
+    },
+    {
+      "prompt": "Quedem a ___ ___? (chez toi)",
+      "answer": "casa teva"
+    },
+    {
+      "prompt": "La festa és a casa ___ Pere. (chez Pere)",
+      "answer": "el"
+    },
+    {
+      "prompt": "Encara ets a ___? Jo ja he sortit. (au travail/à la maison → casa)",
+      "answer": "casa"
+    }
+  ]
+}
