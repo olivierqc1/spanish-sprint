@@ -1,0 +1,78 @@
+{
+  "id": "preterito_irregulares_visual",
+  "title": {
+    "fr": "Passé simple – Verbes irréguliers (visuel bilingue)",
+    "en": "Preterite – Irregular verbs (visual)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ **Radicaux irréguliers** (terminaisons SANS accent : -e, -iste, -o, -imos, -isteis, -ieron) :\n\n🎯 tener → **tuv-** (tuve, tuviste, tuvo...)\nestar → **estuv-** · andar → **anduv-**\npoder → **pud-** · poner → **pus-** · saber → **sup-**\nhacer → **hic-** (él **hizo**) · querer → **quis-** · venir → **vin-**\ndecir → **dij-** (ellos **dijeron**) · traer → **traj-** (trajeron)\n\n🎯 **Totalement irréguliers** :\nser/ir → fui, fuiste, fue, fuimos, fuisteis, fueron\ndar → di, diste, dio · ver → vi, viste, vio\n\n💡 hay → **hubo**",
+    "en": "⚙️ Irregular stems (endings without accent: -e, -iste, -o...):\ntener→tuv-, estar→estuv-, poder→pud-, poner→pus-, saber→sup-, hacer→hic- (hizo), querer→quis-, venir→vin-, decir→dij- (dijeron), traer→traj-.\nser/ir→fui, fue, fueron · dar→di, dio · ver→vi, vio · hay→hubo."
+  },
+  "drills": [
+    {
+      "prompt": "Ayer ___ (tener, yo) mucho trabajo.",
+      "answer": "tuve"
+    },
+    {
+      "prompt": "Ella ___ (estar) en Girona el verano pasado.",
+      "answer": "estuvo"
+    },
+    {
+      "prompt": "¿Qué ___ (hacer, tú) el fin de semana?",
+      "answer": "hiciste"
+    },
+    {
+      "prompt": "Él ___ (hacer) la cena anoche.",
+      "answer": "hizo"
+    },
+    {
+      "prompt": "Nosotros ___ (ir) a Tarragona en mayo.",
+      "answer": "fuimos"
+    },
+    {
+      "prompt": "Ellos ___ (venir) tarde a la reunión.",
+      "answer": "vinieron"
+    },
+    {
+      "prompt": "Yo no ___ (poder) llamarte ayer.",
+      "answer": "pude"
+    },
+    {
+      "prompt": "¿Quién te ___ (decir) eso?",
+      "answer": "dijo"
+    },
+    {
+      "prompt": "Ellos ___ (decir) la verdad.",
+      "answer": "dijeron"
+    },
+    {
+      "prompt": "Ella ___ (poner) la mesa.",
+      "answer": "puso"
+    },
+    {
+      "prompt": "Anoche ___ (haber) una tormenta.",
+      "answer": "hubo"
+    },
+    {
+      "prompt": "Yo ___ (saber) la noticia esta mañana.",
+      "answer": "supe"
+    },
+    {
+      "prompt": "Ayer ___ (ver, yo) a tu hermano.",
+      "answer": "vi"
+    },
+    {
+      "prompt": "Me ___ (dar, ellos) un regalo.",
+      "answer": "dieron"
+    },
+    {
+      "prompt": "Ellos ___ (traer) vino a la cena.",
+      "answer": "trajeron"
+    },
+    {
+      "prompt": "La fiesta ___ (ser) un éxito.",
+      "answer": "fue"
+    }
+  ]
+}
