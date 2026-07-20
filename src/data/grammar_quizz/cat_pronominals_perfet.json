@@ -1,0 +1,62 @@
+{
+  "id": "cat_pronominals_perfet",
+  "title": {
+    "fr": "Catalan : verbes pronominaux au perfet",
+    "en": "Catalan: pronominal verbs in the perfet"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Au **pretèrit perfet**, le pronom se place AVANT l'auxiliaire haver :\n\n🎯 **m'he, t'has, s'ha, ens hem, us heu, s'han + participe**\n➡️ *M'he llevat a les set.* → Je me suis levé à sept heures.\n➡️ *Ens hem descuidat les claus.* → Nous avons oublié les clés.\n➡️ *S'han trobat malament.* → Ils se sont sentis mal.\n\n⚠️ Le participe NE s'accorde PAS avec le sujet : *Ella s'ha llevat* (pas *llevada*).\n\n💡 Verbes fréquents : llevar-se, adormir-se, descuidar-se, trobar-se, dutxar-se, vestir-se, quedar-se, equivocar-se.",
+    "en": "⚙️ In the pretèrit perfet, the pronoun goes BEFORE haver:\n**m'he, t'has, s'ha, ens hem, us heu, s'han + participle**\n➡️ *M'he llevat a les set. Ens hem descuidat les claus.*\n⚠️ No participle agreement: *Ella s'ha llevat.*"
+  },
+  "drills": [
+    {
+      "prompt": "Avui ___ ___ llevat a les set. (je me suis)",
+      "answer": "m'he"
+    },
+    {
+      "prompt": "Ell ___ ___ adormit al sofà. (il s'est)",
+      "answer": "s'ha"
+    },
+    {
+      "prompt": "Nosaltres ___ ___ descuidat les claus. (nous avons oublié)",
+      "answer": "ens hem"
+    },
+    {
+      "prompt": "¿___ ___ dutxat ja? (tu t'es)",
+      "answer": "t'has"
+    },
+    {
+      "prompt": "Els meus pares no ___ ___ trobat gens bé. (se sont)",
+      "answer": "s'han"
+    },
+    {
+      "prompt": "Aquest matí ___ ___ vestit ràpidament. (je me suis)",
+      "answer": "m'he"
+    },
+    {
+      "prompt": "Vosaltres ___ ___ quedat a casa? (vous êtes restés)",
+      "answer": "us heu"
+    },
+    {
+      "prompt": "Ella ___ ___ equivocat de carrer. (s'est trompée)",
+      "answer": "s'ha"
+    },
+    {
+      "prompt": "Jo ___ ___ adormit i he arribat tard. (je me suis endormi)",
+      "answer": "m'he"
+    },
+    {
+      "prompt": "Ens ___ passat molt bé a la festa. (hem)",
+      "answer": "hem"
+    },
+    {
+      "prompt": "Avui no ___ ___ afaitat. (tu ne t'es pas)",
+      "answer": "t'has"
+    },
+    {
+      "prompt": "Les nenes ___ ___ rentat les mans. (se sont)",
+      "answer": "s'han"
+    }
+  ]
+}
