@@ -1,0 +1,70 @@
+{
+  "id": "cat_possessius",
+  "title": {
+    "fr": "Catalan : les possessifs",
+    "en": "Catalan: possessives"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙️ En catalan, le possessif prend **l'article** et s'accorde :\n\n🎯 **el meu / la meva / els meus / les meves** (mon/ma/mes)\n**el teu / la teva / els teus / les teves** (ton/ta/tes)\n**el seu / la seva / els seus / les seves** (son/sa/ses, leur)\n**el nostre / la nostra / els nostres / les nostres** (notre/nos)\n**el vostre / la vostra / els vostres / les vostres** (votre/vos)\n\n➡️ *el meu llibre, la meva germana, els meus amics, les meves claus*\n\n⚠️ Exception : pas d'article avec la famille proche au singulier possible (*mon pare* familier) et **casa meva** (chez moi).",
+    "en": "⚙️ Catalan possessives take the article and agree: el meu / la meva / els meus / les meves, etc.\n➡️ *el meu llibre, la meva germana*\n⚠️ Exception: **casa meva** (my place), no article."
+  },
+  "drills": [
+    {
+      "prompt": "___ ___ llibre és nou. (mon)",
+      "answer": "el meu"
+    },
+    {
+      "prompt": "___ ___ germana viu a Girona. (ma)",
+      "answer": "la meva"
+    },
+    {
+      "prompt": "___ ___ amics són catalans. (mes, masc.)",
+      "answer": "els meus"
+    },
+    {
+      "prompt": "___ ___ claus són a la taula. (mes, fém.)",
+      "answer": "les meves"
+    },
+    {
+      "prompt": "___ ___ cotxe és vermell. (ton)",
+      "answer": "el teu"
+    },
+    {
+      "prompt": "___ ___ feina és interessant. (ta)",
+      "answer": "la teva"
+    },
+    {
+      "prompt": "___ ___ pares treballen molt. (tes)",
+      "answer": "els teus"
+    },
+    {
+      "prompt": "___ ___ gos es diu Max. (son)",
+      "answer": "el seu"
+    },
+    {
+      "prompt": "___ ___ casa és gran. (leur, fém.)",
+      "answer": "la seva"
+    },
+    {
+      "prompt": "___ ___ pis és a Barcelona. (notre)",
+      "answer": "el nostre"
+    },
+    {
+      "prompt": "___ ___ ciutat és bonica. (notre, fém.)",
+      "answer": "la nostra"
+    },
+    {
+      "prompt": "___ ___ fills parlen català. (vos)",
+      "answer": "els vostres"
+    },
+    {
+      "prompt": "Vaig a casa ___. (chez moi)",
+      "answer": "meva"
+    },
+    {
+      "prompt": "___ ___ maletes són aquí. (leurs, fém.)",
+      "answer": "les seves"
+    }
+  ]
+}
