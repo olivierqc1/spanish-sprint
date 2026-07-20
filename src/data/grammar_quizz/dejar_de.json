@@ -1,0 +1,62 @@
+{
+  "id": "dejar_de",
+  "title": {
+    "fr": "Dejar de + infinitif – Arrêter de faire",
+    "en": "Dejar de + infinitive – To stop doing"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ **DEJAR DE + infinitif** = arrêter de faire quelque chose.\n\n➡️ *Dejé de fumar hace dos años.* → J'ai arrêté de fumer il y a deux ans.\n➡️ *¡Deja de gritar!* → Arrête de crier !\n\n🎯 **NO DEJAR DE** = ne pas manquer de / ne pas cesser de :\n*No dejes de visitar el museo.* → Ne manque pas de visiter le musée.\n\n💡 **dejar** seul = laisser : *Dejé las llaves en casa.*",
+    "en": "⚙️ **DEJAR DE + infinitive** = to stop doing something.\n➡️ *Dejé de fumar.* → I stopped smoking.\n🎯 **NO DEJAR DE** = don't miss / never stop: *No dejes de visitar el museo.*"
+  },
+  "drills": [
+    {
+      "prompt": "Mi padre ___ ___ fumar el año pasado. (a arrêté de)",
+      "answer": "dejó de"
+    },
+    {
+      "prompt": "¡___ ___ hacer ruido! (arrête de, tú imperativo)",
+      "answer": "deja de"
+    },
+    {
+      "prompt": "Nosotros ___ ___ ir al gimnasio. (avons arrêté de)",
+      "answer": "dejamos de"
+    },
+    {
+      "prompt": "No ___ ___ llover en todo el día. (n'a pas cessé de)",
+      "answer": "dejó de"
+    },
+    {
+      "prompt": "Yo ___ ___ beber café por las tardes. (j'ai arrêté de)",
+      "answer": "dejé de"
+    },
+    {
+      "prompt": "Ellos ___ ___ verse hace años. (ont arrêté de)",
+      "answer": "dejaron de"
+    },
+    {
+      "prompt": "¿Cuándo ___ ___ trabajar allí? (tú, as arrêté de)",
+      "answer": "dejaste de"
+    },
+    {
+      "prompt": "No ___ (dejar, tú) de escribirme. (ne cesse pas de)",
+      "answer": "dejes"
+    },
+    {
+      "prompt": "Ella quiere ___ ___ comer azúcar. (arrêter de)",
+      "answer": "dejar de"
+    },
+    {
+      "prompt": "El bebé no ___ ___ llorar. (n'arrête pas de)",
+      "answer": "deja de"
+    },
+    {
+      "prompt": "Vosotros ___ ___ estudiar catalán. (avez arrêté de)",
+      "answer": "dejasteis de"
+    },
+    {
+      "prompt": "Cuando llegué, ___ ___ nevar. (il a arrêté de)",
+      "answer": "dejó de"
+    }
+  ]
+}
