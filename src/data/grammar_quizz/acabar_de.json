@@ -1,0 +1,62 @@
+{
+  "id": "acabar_de",
+  "title": {
+    "fr": "Acabar de + infinitif – Venir de faire",
+    "en": "Acabar de + infinitive – To have just done"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ **ACABAR DE + infinitif** = venir de faire quelque chose (passé très récent).\n\n➡️ *Acabo de llegar.* → Je viens d'arriver.\n➡️ *Acabamos de comer.* → Nous venons de manger.\n\n🎯 Conjugaison au présent : acabo, acabas, acaba, acabamos, acabáis, acaban + DE + infinitif.\n\n⚠️ À l'imparfait = 'je venais de' : *Acababa de salir cuando llamaste.*\n\n💡 Ne pas confondre avec **acabar** seul (finir) : *Acabé el libro* = j'ai fini le livre.",
+    "en": "⚙️ **ACABAR DE + infinitive** = to have just done something.\n➡️ *Acabo de llegar.* → I have just arrived.\nPresent: acabo, acabas, acaba... + DE + infinitive.\n⚠️ Imperfect = 'had just': *Acababa de salir cuando llamaste.*"
+  },
+  "drills": [
+    {
+      "prompt": "___ ___ llegar a casa. (je viens de)",
+      "answer": "acabo de"
+    },
+    {
+      "prompt": "Ella ___ ___ terminar el examen. (elle vient de)",
+      "answer": "acaba de"
+    },
+    {
+      "prompt": "Nosotros ___ ___ comer. (nous venons de)",
+      "answer": "acabamos de"
+    },
+    {
+      "prompt": "¿Tú ___ ___ despertarte? (tu viens de)",
+      "answer": "acabas de"
+    },
+    {
+      "prompt": "Ellos ___ ___ salir del cine. (ils viennent de)",
+      "answer": "acaban de"
+    },
+    {
+      "prompt": "Vosotros ___ ___ volver del viaje. (vous venez de)",
+      "answer": "acabáis de"
+    },
+    {
+      "prompt": "Yo ___ ___ ver a Laura. (je viens de)",
+      "answer": "acabo de"
+    },
+    {
+      "prompt": "El tren ___ ___ salir. (vient de)",
+      "answer": "acaba de"
+    },
+    {
+      "prompt": "___ (acabar, yo) de mudarme de piso.",
+      "answer": "acabo"
+    },
+    {
+      "prompt": "Cuando llamaste, yo ___ ___ salir. (je venais de)",
+      "answer": "acababa de"
+    },
+    {
+      "prompt": "Mis padres ___ ___ llamarme. (viennent de)",
+      "answer": "acaban de"
+    },
+    {
+      "prompt": "¿___ (acabar, vosotros) de cenar?",
+      "answer": "acabáis"
+    }
+  ]
+}
