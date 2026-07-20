@@ -1,0 +1,70 @@
+{
+  "id": "condicional",
+  "title": {
+    "fr": "Conditionnel – Formation et usages",
+    "en": "Conditional – Formation and uses"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ **Formation** : infinitif + -ía, -ías, -ía, -íamos, -íais, -ían.\n➡️ *hablaría, comería, viviría*\n\n🎯 **Irréguliers** (mêmes radicaux que le futur) :\ntener → tendría · poner → pondría · venir → vendría · salir → saldría · decir → diría · hacer → haría · saber → sabría · poder → podría · querer → querría · haber → habría\n\n🎯 **Usages** :\n1️⃣ Conseil : *Deberías estudiar más.*\n2️⃣ Politesse : *¿Podrías ayudarme?*\n3️⃣ Hypothèse : *Yo en tu lugar, no iría.*\n4️⃣ Futur dans le passé : *Dijo que vendría.*",
+    "en": "⚙️ Formation: infinitive + -ía endings. *hablaría, comería, viviría*\nIrregulars: tendría, pondría, vendría, saldría, diría, haría, sabría, podría, querría, habría.\nUses: advice, politeness, hypothesis, future in the past."
+  },
+  "drills": [
+    {
+      "prompt": "Yo ___ (viajar) por toda Europa.",
+      "answer": "viajaría"
+    },
+    {
+      "prompt": "¿___ (poder, tú) ayudarme con esto?",
+      "answer": "podrías"
+    },
+    {
+      "prompt": "Nosotros ___ (comer) en ese restaurante.",
+      "answer": "comeríamos"
+    },
+    {
+      "prompt": "Ella dijo que ___ (venir) mañana.",
+      "answer": "vendría"
+    },
+    {
+      "prompt": "Vosotros ___ (deber) descansar más.",
+      "answer": "deberíais"
+    },
+    {
+      "prompt": "Yo en tu lugar no ___ (hacer) eso.",
+      "answer": "haría"
+    },
+    {
+      "prompt": "Ellos ___ (tener) que salir antes.",
+      "answer": "tendrían"
+    },
+    {
+      "prompt": "Me ___ (gustar) vivir cerca del mar.",
+      "answer": "gustaría"
+    },
+    {
+      "prompt": "¿Qué ___ (decir, tú) en mi situación?",
+      "answer": "dirías"
+    },
+    {
+      "prompt": "Con más tiempo, yo ___ (saber) la respuesta.",
+      "answer": "sabría"
+    },
+    {
+      "prompt": "Pensé que ___ (haber) más gente.",
+      "answer": "habría"
+    },
+    {
+      "prompt": "¿Te ___ (importar) cerrar la ventana?",
+      "answer": "importaría"
+    },
+    {
+      "prompt": "Ellos ___ (querer) conocerte.",
+      "answer": "querrían"
+    },
+    {
+      "prompt": "Juan ___ (salir) antes si pudiera.",
+      "answer": "saldría"
+    }
+  ]
+}
