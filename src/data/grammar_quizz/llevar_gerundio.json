@@ -1,0 +1,62 @@
+{
+  "id": "llevar_gerundio",
+  "title": {
+    "fr": "Llevar + gérondif – Exprimer la durée en cours",
+    "en": "Llevar + gerund – Duration up to now"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ **LLEVAR + durée + gérondif** = faire quelque chose depuis X temps.\n\n➡️ *Llevo tres años viviendo en Barcelona.* → J'habite à Barcelone depuis trois ans.\n➡️ *¿Cuánto tiempo llevas estudiando catalán?*\n\n🎯 Gérondif : -ar → -ando (hablando) · -er/-ir → -iendo (comiendo, viviendo).\nIrréguliers : leyendo, durmiendo, pidiendo, diciendo, yendo.\n\n🎯 **LLEVAR SIN + infinitif** = ne pas faire depuis : *Llevo dos días sin dormir.*\n\n💡 Équivalents : *Hace tres años que vivo aquí* = *Vivo aquí desde hace tres años.*",
+    "en": "⚙️ **LLEVAR + time + gerund** = have been doing for X time.\n➡️ *Llevo tres años viviendo en Barcelona.*\nGerund: -ando / -iendo. Irregular: leyendo, durmiendo, pidiendo, diciendo.\n**LLEVAR SIN + infinitive** = haven't done for: *Llevo dos días sin dormir.*"
+  },
+  "drills": [
+    {
+      "prompt": "___ tres años ___ (vivir, yo) en Barcelona.",
+      "answer": "llevo viviendo"
+    },
+    {
+      "prompt": "¿Cuánto tiempo ___ (llevar, tú) estudiando catalán?",
+      "answer": "llevas"
+    },
+    {
+      "prompt": "Ella lleva dos horas ___ (esperar).",
+      "answer": "esperando"
+    },
+    {
+      "prompt": "Llevamos seis meses ___ (trabajar) en el proyecto.",
+      "answer": "trabajando"
+    },
+    {
+      "prompt": "Llevo dos días ___ dormir bien. (sans)",
+      "answer": "sin"
+    },
+    {
+      "prompt": "Ellos ___ un año ___ (salir) juntos.",
+      "answer": "llevan saliendo"
+    },
+    {
+      "prompt": "Llevo toda la mañana ___ (leer) este informe.",
+      "answer": "leyendo"
+    },
+    {
+      "prompt": "El niño lleva una hora ___ (dormir).",
+      "answer": "durmiendo"
+    },
+    {
+      "prompt": "¿Cuánto ___ (llevar, vosotros) viviendo aquí?",
+      "answer": "lleváis"
+    },
+    {
+      "prompt": "Llevan meses ___ (decir) lo mismo.",
+      "answer": "diciendo"
+    },
+    {
+      "prompt": "Llevo mucho tiempo ___ (querer) visitarte.",
+      "answer": "queriendo"
+    },
+    {
+      "prompt": "Mi hermano lleva semanas ___ (pedir) vacaciones.",
+      "answer": "pidiendo"
+    }
+  ]
+}
