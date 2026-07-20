@@ -1,0 +1,66 @@
+{
+  "id": "estilo_indirecto",
+  "title": {
+    "fr": "Le discours indirect",
+    "en": "Reported speech"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Rapporter les paroles : **dice que / dijo que / preguntó si...**\n\n🎯 **Présent → présent** (dice que) : *«Estoy cansado» → Dice que está cansado.*\n\n🎯 **Passé (dijo que)** — transformations :\nprésent → imparfait : *«Trabajo» → Dijo que trabajaba.*\npassé composé/simple → plus-que-parfait : *«He comido» → Dijo que había comido.*\nfutur → conditionnel : *«Iré» → Dijo que iría.*\n\n🎯 **Questions** : *«¿Dónde vives?» → Preguntó dónde vivía.* · *«¿Vienes?» → Preguntó si venía.*\n\n💡 Changements : yo→él, mi→su, hoy→ese día, mañana→al día siguiente, aquí→allí.",
+    "en": "⚙️ Reporting speech: dice que / dijo que / preguntó si.\nWith **dijo que**: present→imperfect, perfect→pluperfect, future→conditional.\nQuestions: *Preguntó dónde vivía / si venía.*\nShifts: yo→él, hoy→ese día, mañana→al día siguiente."
+  },
+  "drills": [
+    {
+      "prompt": "«Estoy cansado.» → Dice que ___ cansado.",
+      "answer": "está"
+    },
+    {
+      "prompt": "«Trabajo en Barcelona.» → Dijo que ___ en Barcelona.",
+      "answer": "trabajaba"
+    },
+    {
+      "prompt": "«Iré mañana.» → Dijo que ___ al día siguiente.",
+      "answer": "iría"
+    },
+    {
+      "prompt": "«He terminado.» → Dijo que ___ terminado.",
+      "answer": "había"
+    },
+    {
+      "prompt": "«¿Dónde vives?» → Me preguntó dónde ___.",
+      "answer": "vivía"
+    },
+    {
+      "prompt": "«¿Vienes a la fiesta?» → Preguntó ___ venía a la fiesta.",
+      "answer": "si"
+    },
+    {
+      "prompt": "«Tengo hambre.» → Dijo que ___ hambre.",
+      "answer": "tenía"
+    },
+    {
+      "prompt": "«Compraré el pan.» → Dijo que ___ el pan.",
+      "answer": "compraría"
+    },
+    {
+      "prompt": "«Vivimos aquí.» → Dijeron que vivían ___.",
+      "answer": "allí"
+    },
+    {
+      "prompt": "«Llegué tarde.» → Dijo que ___ llegado tarde.",
+      "answer": "había"
+    },
+    {
+      "prompt": "«¿Qué haces?» → Me preguntó qué ___.",
+      "answer": "hacía"
+    },
+    {
+      "prompt": "«Puedo ayudarte.» → Dijo que ___ ayudarme.",
+      "answer": "podía"
+    },
+    {
+      "prompt": "«Saldremos hoy.» → Dijeron que saldrían ___ día.",
+      "answer": "ese"
+    }
+  ]
+}
