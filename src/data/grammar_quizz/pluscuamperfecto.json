@@ -1,0 +1,62 @@
+{
+  "id": "pluscuamperfecto",
+  "title": {
+    "fr": "Plus-que-parfait (había + participio)",
+    "en": "Pluperfect (había + participle)"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ **HABÍA + participe** : había, habías, había, habíamos, habíais, habían + hablado/comido/vivido.\n\n🎯 **Usage** : une action passée ANTÉRIEURE à une autre action passée.\n➡️ *Cuando llegué, el tren ya había salido.* → Quand je suis arrivé, le train était déjà parti.\n\n🎯 Participes irréguliers : hecho, dicho, visto, escrito, puesto, vuelto, abierto, roto, muerto, cubierto.\n\n💡 Mots fréquents : ya, todavía no, nunca, antes.",
+    "en": "⚙️ **HABÍA + participle**: había, habías, había, habíamos, habíais, habían.\nUse: a past action BEFORE another past action.\n➡️ *Cuando llegué, el tren ya había salido.*\nIrregular participles: hecho, dicho, visto, escrito, puesto, vuelto, abierto, roto."
+  },
+  "drills": [
+    {
+      "prompt": "Cuando llegué, el tren ya ___ (salir).",
+      "answer": "había salido"
+    },
+    {
+      "prompt": "Ella dijo que ___ (ver) esa película.",
+      "answer": "había visto"
+    },
+    {
+      "prompt": "Nunca ___ (estar, yo) en Andorra antes de 2026.",
+      "answer": "había estado"
+    },
+    {
+      "prompt": "Cuando llamaste, ya ___ (comer, nosotros).",
+      "answer": "habíamos comido"
+    },
+    {
+      "prompt": "Ellos no ___ (terminar) el trabajo.",
+      "answer": "habían terminado"
+    },
+    {
+      "prompt": "¿___ (leer, tú) el libro antes de ver la película?",
+      "answer": "habías leído"
+    },
+    {
+      "prompt": "El concierto ya ___ (empezar) cuando entramos.",
+      "answer": "había empezado"
+    },
+    {
+      "prompt": "Vosotros ya ___ (hacer) la reserva.",
+      "answer": "habíais hecho"
+    },
+    {
+      "prompt": "No encontré las llaves porque las ___ (perder, yo).",
+      "answer": "había perdido"
+    },
+    {
+      "prompt": "Me dijo que ___ (escribir, ella) la carta.",
+      "answer": "había escrito"
+    },
+    {
+      "prompt": "Cuando volvimos, alguien ___ (abrir) la puerta.",
+      "answer": "había abierto"
+    },
+    {
+      "prompt": "Nunca ___ (correr, yo) una maratón antes.",
+      "answer": "había corrido"
+    }
+  ]
+}
