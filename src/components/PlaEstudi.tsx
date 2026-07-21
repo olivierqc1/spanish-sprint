@@ -16,7 +16,7 @@ import {
   getTodayTasks,
   toggleTask,
   todaysInput,
-  todaysOutput,
+  todaysProduction,
   type Level,
   type TargetLang,
   type PlanConfig,
@@ -210,7 +210,7 @@ export default function PlaEstudi() {
             return (
               <Link
                 key={p.id}
-                href="/grammaire"
+                href={`/grammaire?point=${p.id}`}
                 className="flex items-center justify-between bg-slate-800 rounded-lg p-3 hover:bg-slate-750"
               >
                 <div className="min-w-0">
@@ -228,7 +228,7 @@ export default function PlaEstudi() {
             );
           })}
           <p className="text-xs text-slate-500">
-            Ouvre Grammaire et cherche ces modules par leur nom.
+            Tape un objectif pour l'ouvrir directement.
           </p>
         </div>
       )}
@@ -248,17 +248,22 @@ export default function PlaEstudi() {
               <span className="text-sm">🎧 {todaysInput()}</span>
             </button>
           )}
-          {wantsOutput(cfg.minutesPerDay) && (
-            <button
-              onClick={() => toggleTask('output')}
-              className="w-full flex items-center gap-3 bg-slate-800 rounded-lg p-3 text-left"
-            >
-              <span className={tasks.output ? 'text-emerald-400' : 'text-slate-600'}>
-                {tasks.output ? '☑' : '☐'}
-              </span>
-              <span className="text-sm">✍️ {todaysOutput()}</span>
-            </button>
-          )}
+          {wantsOutput(cfg.minutesPerDay) && (() => {
+            const prod = todaysProduction(cfg);
+            return (
+              <button
+                onClick={() => toggleTask('output')}
+                className="w-full flex items-start gap-3 bg-slate-800 rounded-lg p-3 text-left"
+              >
+                <span className={tasks.output ? 'text-emerald-400 mt-0.5' : 'text-slate-600 mt-0.5'}>
+                  {tasks.output ? '☑' : '☐'}
+                </span>
+                <span className="text-sm">
+                  <span className="font-semibold">{prod.modality}</span> — {prod.topic}
+                </span>
+              </button>
+            );
+          })()}
         </div>
       )}
 
