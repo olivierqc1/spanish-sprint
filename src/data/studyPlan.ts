@@ -140,29 +140,122 @@ export function estimateDaysLeft(cfg: PlanConfig): number {
   return Math.ceil(remaining.length / pointsPerDay(cfg.minutesPerDay));
 }
 
-// Suggestions input / output qui tournent chaque jour
-const INPUT_TASKS = [
-  'Podcast Easy Catalan (épisode débutant + transcription)',
-  'Un article court sur VilaWeb ou 3Cat — note 10 mots',
-  'Infos de Catalunya Ràdio (écoute active, 10 min)',
-  'Un épisode de série sur 3Cat, sous-titres en català',
-];
-const OUTPUT_TASKS = [
-  'Écris 8 phrases sur ta journée (mélange les temps)',
-  'Enregistre-toi 2 min : raconte hier et demain',
-  '10 min de conversation avec Laura, 100% en català',
-  'Dictée courte : Easy Catalan, écoute et transcris',
-];
-
 function dayIndex(): number {
   const d = new Date();
   const start = new Date(d.getFullYear(), 0, 0);
   return Math.floor((d.getTime() - start.getTime()) / 86400000);
 }
 
+// ---------- input (écoute) ----------
+const INPUT_TASKS = [
+  'Podcast Easy Catalan (épisode débutant + transcription)',
+  'Un article court sur VilaWeb ou 3Cat — note 10 mots',
+  'Infos de Catalunya Ràdio (écoute active, 10 min)',
+  'Un épisode de série sur 3Cat, sous-titres en català',
+];
 export function todaysInput(): string {
   return INPUT_TASKS[dayIndex() % INPUT_TASKS.length];
 }
-export function todaysOutput(): string {
-  return OUTPUT_TASKS[dayIndex() % OUTPUT_TASKS.length];
+
+// ---------- production (sujet écrit/oral accordé au thème du jour) ----------
+type Theme = 'past' | 'future' | 'conditional' | 'pronouns' | 'subjunctive' | 'general';
+
+const PROMPTS: Record<TargetLang, Record<Theme, string[]>> = {
+  catalan: {
+    past: [
+      'Explica què vas fer el cap de setmana passat (mín. 6 frases).',
+      'Descriu el teu últim viatge: on vas anar i què va passar.',
+      "Com ha anat el teu dia d'avui? Fes servir el perfet.",
+      'Explica una cursa de muntanya que hagis corregut.',
+    ],
+    future: [
+      'Com serà la teva setmana que ve? Explica els teus plans.',
+      'Què faràs quan comencis el màster a la UB?',
+      "Imagina la teva vida d'aquí a cinc anys.",
+      'Quins llocs de Catalunya visitaràs aquest any?',
+    ],
+    conditional: [
+      'Si guanyessis la loteria, què faries?',
+      'Quin consell donaries a algú que arriba a viure a Barcelona?',
+      'Si poguessis viure en qualsevol època de la història, quina triaries i per què?',
+      'Què faries si tinguessis un mes lliure sense feina?',
+    ],
+    pronouns: [
+      'Descriu la teva rutina del matí i substitueix els noms per pronoms febles.',
+      'Respon amb pronoms: Vas sovint a la muntanya? Beus vi? Fas els deures?',
+      'Explica un plat que cuines i com el prepares, usant pronoms.',
+      'Explica què fas amb les teves coses (claus, cafè, llibres) amb en/hi/el/la.',
+    ],
+    subjunctive: [
+      'Digues què vols que passi aquest any (Vull que...).',
+      'Dona la teva opinió: És important que... / No crec que...',
+      'Expressa desitjos per al teu futur a Barcelona (Espero que...).',
+      'Recomana a un amic què faci a Barcelona (Et recomano que...).',
+    ],
+    general: [
+      "Presenta't: qui ets, d'on véns i per què vius a Barcelona.",
+      'Explica la història romana de Barcelona (Barcino) en 6 frases.',
+      "Descriu el teu grup de música preferit i per què t'agrada.",
+      "Explica per què t'agrada el vi i quins en prefereixes.",
+    ],
+  },
+  spanish: {
+    past: [
+      'Cuenta qué hiciste el fin de semana pasado (mín. 6 frases).',
+      'Describe tu último viaje: adónde fuiste y qué pasó.',
+      '¿Cómo ha ido tu día de hoy? Usa el pretérito perfecto.',
+      'Explica una carrera de montaña que hayas corrido.',
+    ],
+    future: [
+      '¿Cómo será tu próxima semana? Explica tus planes.',
+      '¿Qué harás cuando empieces el máster?',
+      'Imagina tu vida dentro de cinco años.',
+      '¿Qué lugares visitarás este año?',
+    ],
+    conditional: [
+      'Si ganaras la lotería, ¿qué harías?',
+      '¿Qué consejo le darías a alguien que llega a vivir a Barcelona?',
+      'Si pudieras vivir en cualquier época, ¿cuál elegirías y por qué?',
+      '¿Qué harías si tuvieras un mes libre?',
+    ],
+    pronouns: [
+      'Describe tu rutina y sustituye los nombres por pronombres.',
+      '¿Ves a menudo a tus amigos? ¿Bebes café? Responde usando pronombres.',
+      'Explica un plato que cocinas usando lo/la/los/las/le.',
+      'Cuenta qué haces con tus cosas usando pronombres.',
+    ],
+    subjunctive: [
+      'Di qué quieres que pase este año (Quiero que...).',
+      'Da tu opinión: Es importante que... / No creo que...',
+      'Expresa deseos para tu futuro (Espero que...).',
+      'Recomienda a un amigo qué hacer (Te recomiendo que...).',
+    ],
+    general: [
+      'Preséntate: quién eres, de dónde vienes y por qué vives en Barcelona.',
+      'Explica la historia romana de Barcelona en 6 frases.',
+      'Describe tu grupo de música favorito y por qué te gusta.',
+      'Explica por qué te gusta el vino y cuáles prefieres.',
+    ],
+  },
+};
+
+function themeOfDay(cfg: PlanConfig): Theme {
+  const ids = todaysGrammar(cfg).map((p) => p.id).join(' ');
+  if (/pronom|feble|combinat|cod|coi/.test(ids)) return 'pronouns';
+  if (/subjuntiu|subjuntivo/.test(ids)) return 'subjunctive';
+  if (/condicional/.test(ids)) return 'conditional';
+  if (/futur|futuro/.test(ids)) return 'future';
+  if (/perfet|perifrastic|imperfet|passat|pronominals|preterito|pluscuam|plusquam|indefinit/.test(ids))
+    return 'past';
+  return 'general';
+}
+
+export type Production = { theme: Theme; modality: string; topic: string };
+
+export function todaysProduction(cfg: PlanConfig): Production {
+  const theme = themeOfDay(cfg);
+  const bank = PROMPTS[cfg.lang][theme] || PROMPTS[cfg.lang].general;
+  const topic = bank[dayIndex() % bank.length];
+  const modality = dayIndex() % 2 === 0 ? '✍️ Écris' : '🎙️ Enregistre-toi (oral)';
+  return { theme, modality, topic };
 }
