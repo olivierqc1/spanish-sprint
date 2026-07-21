@@ -10,6 +10,48 @@ export type GrammarPoint = {
 
 export const grammarPoints: GrammarPoint[] = [
 {
+  id: "cat_perfet_perifrastic",
+  title: {
+    fr: "Catalan : perfet vs perifràstic (avui he anat / ahir vaig anar)",
+    en: "Catalan: perfet vs perifràstic"
+  },
+  level: "A2",
+  note: {
+    fr: "Quel passé choisir selon le moment : avui he anat / ahir vaig anar.",
+    en: "Which past to use: avui he anat / ahir vaig anar."
+  },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_perfet_perifrastic.json"
+},
+{
+  id: "cat_pronoms_combinats",
+  title: {
+    fr: "Catalan : combinaisons de pronoms febles (l'hi, els hi, me'l)",
+    en: "Catalan: weak pronoun combinations"
+  },
+  level: "B1",
+  note: {
+    fr: "Deux pronoms ensemble : l'hi dono, me'l dónes, te la porto.",
+    en: "Two pronouns together: l'hi dono, me'l dónes, te la porto."
+  },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_pronoms_combinats.json"
+},
+{
+  id: "cat_futur_condicional",
+  title: {
+    fr: "Catalan : futur vs conditionnel (usage et hypothèses)",
+    en: "Catalan: future vs conditional (uses and hypotheses)"
+  },
+  level: "A2-B1",
+  note: {
+    fr: "Quand choisir : demà aniré (futur) vs voldria un cafè (condicional).",
+    en: "When to choose: demà aniré vs voldria un cafè."
+  },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_futur_condicional.json"
+},
+{
   id: "cat_pronominals_perfet",
   title: {
     fr: "Catalan : verbes pronominaux au perfet",
