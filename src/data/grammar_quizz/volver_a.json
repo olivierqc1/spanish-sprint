@@ -1,0 +1,62 @@
+{
+  "id": "volver_a",
+  "title": {
+    "fr": "Volver a + infinitif – Refaire, recommencer",
+    "en": "Volver a + infinitive – To do again"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ **VOLVER A + infinitif** = refaire, faire à nouveau.\n\n➡️ *Volví a leer el libro.* → J'ai relu le livre.\n➡️ *No vuelvas a hacer eso.* → Ne refais pas ça.\n\n🎯 **volver** = o→ue : vuelvo, vuelves, vuelve, volvemos, volvéis, vuelven.\nPassé : volví, volviste, volvió... Participe : **vuelto**.\n\n💡 **volver** seul = revenir : *Vuelvo a casa a las ocho.*",
+    "en": "⚙️ **VOLVER A + infinitive** = to do again.\n➡️ *Volví a leer el libro.* → I reread the book.\no→ue: vuelvo, vuelves... Participle: **vuelto**.\n*volver* alone = to return."
+  },
+  "drills": [
+    {
+      "prompt": "___ ___ ver la película anoche. (j'ai revu)",
+      "answer": "volví a"
+    },
+    {
+      "prompt": "No ___ ___ hacer eso, por favor. (tú, ne refais pas → vuelvas a)",
+      "answer": "vuelvas a"
+    },
+    {
+      "prompt": "Ella ___ ___ llamar esta mañana. (a rappelé)",
+      "answer": "volvió a"
+    },
+    {
+      "prompt": "Nosotros ___ ___ intentarlo mañana. (réessaierons → volveremos a)",
+      "answer": "volveremos a"
+    },
+    {
+      "prompt": "¿___ ___ ver a Marta? (tú, présent : revois-tu)",
+      "answer": "vuelves a"
+    },
+    {
+      "prompt": "Ellos ___ ___ perder las llaves. (ont reperdu)",
+      "answer": "volvieron a"
+    },
+    {
+      "prompt": "Yo nunca ___ ___ fumar. (n'ai jamais refumé → he vuelto a)",
+      "answer": "he vuelto a"
+    },
+    {
+      "prompt": "El equipo ___ ___ ganar la liga. (a regagné)",
+      "answer": "volvió a"
+    },
+    {
+      "prompt": "Si suspendes, ___ ___ presentarte. (tú, futur : te représenteras)",
+      "answer": "volverás a"
+    },
+    {
+      "prompt": "Vosotros ___ ___ cometer el mismo error. (refaites, présent)",
+      "answer": "volvéis a"
+    },
+    {
+      "prompt": "Quiero ___ ___ visitar Andorra. (re-visiter)",
+      "answer": "volver a"
+    },
+    {
+      "prompt": "Después de la lesión, ___ ___ correr. (elle a recouru)",
+      "answer": "volvió a"
+    }
+  ]
+}
