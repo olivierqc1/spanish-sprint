@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import Dashboard from '@/components/Dashboard';
 import { texts, countryLabels } from './homeTexts';
 
@@ -104,6 +105,27 @@ export default function Home() {
             onPractice={() => router.push('/grammaire')}
           />
         </div>
+
+        {/* ── PLAN DU JOUR ── */}
+        <Link
+          href="/pla"
+          className="block mb-10 rounded-2xl p-5 border border-emerald-700 bg-gradient-to-r from-emerald-900/40 to-slate-900 hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-900/20 transition-all"
+        >
+          <div className="flex items-center gap-4">
+            <span className="text-3xl">🎯</span>
+            <div>
+              <p className="font-black text-lg">
+                {uiLanguage === 'fr' ? 'Mon plan du jour' : 'My daily plan'}
+              </p>
+              <p className="text-slate-400 text-sm">
+                {uiLanguage === 'fr'
+                  ? 'Objectifs personnalisés + sujet de production, selon ton niveau et ton temps'
+                  : 'Personalised goals + a writing/speaking topic, based on your level and time'}
+              </p>
+            </div>
+            <span className="ml-auto text-emerald-400 text-2xl">→</span>
+          </div>
+        </Link>
 
         {/* ── HERO ── */}
         <div className="text-center mb-10">
