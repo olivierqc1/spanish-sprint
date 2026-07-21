@@ -98,6 +98,16 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
     }
   };
 
+  // Deep-link : ouvre directement un module via ?point=<id>
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const id = new URLSearchParams(window.location.search).get('point');
+    if (!id) return;
+    const target = points.find((pt) => pt.id === id);
+    if (target) loadQuiz(target);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [points]);
+
   const closeDrill = () => {
     // Enregistre le score du thème seulement si la session a été complétée.
     const total = quizData?.drills?.length ?? 0;
