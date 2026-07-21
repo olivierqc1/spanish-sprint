@@ -1,0 +1,79 @@
+{
+  "id": "cat_pronoms_combinats",
+  "title": {
+    "fr": "Catalan : combinaisons de pronoms febles (l'hi, els hi, me'l)",
+    "en": "Catalan: weak pronoun combinations (l'hi, els hi, me'l)"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Quand DEUX pronoms se combinent, l'ordre est **COI + COD**, et les formes fusionnent.\n\n🎯 **Le plus fréquent — donner qqch À qqn :**\n→ *Dono el llibre a en Pau* → **L'hi dono** (le lui, à lui/elle).\n→ *Dono els llibres a en Pau* → **Els hi dono** (les lui).\n→ *Dono la carta a la Maria* → **L'hi dono** / *les cartes* → **Les hi dono**.\n\n🎯 **Avec un pronom personnel (me, te, ens, us) + COD :**\n→ *Em dónes el llibre?* → **Me'l dónes?** (me le)\n→ *Et porto la clau* → **Te la porto** (te la)\n→ *Ens deixa els seus apunts* → **Ens els deixa** (nous les)\n\n💡 me + el = **me'l** · me + la = **me la** · me + els = **me'ls** · me + en = **me'n** · te + el = **te'l** · li + el = **l'hi** · li + els = **els hi**.",
+    "en": "⚙️ Two combined pronouns: order = INDIRECT + DIRECT, and forms fuse.\n→ *L'hi dono* (I give it to him/her) · *Els hi dono* (I give them to him/her).\n→ *Me'l dónes?* (will you give it to me?) · *Te la porto* (I bring it to you).\nKey fusions: me+el=me'l, me+en=me'n, te+la=te la, li+el=l'hi, li+els=els hi."
+  },
+  "country": "catalonia",
+  "drills": [
+    {
+      "prompt": "Dono el llibre a en Pau → ___ dono. (le lui)",
+      "answer": "l'hi"
+    },
+    {
+      "prompt": "Dono els llibres a la Maria → ___ dono. (les lui)",
+      "answer": "els hi"
+    },
+    {
+      "prompt": "Em dónes el bolígraf? → ___ dónes? (me le)",
+      "answer": "me'l"
+    },
+    {
+      "prompt": "Et porto la clau → ___ porto. (te la)",
+      "answer": "te la"
+    },
+    {
+      "prompt": "Porta les cartes a l'oficina → ___ porta. Attention : hi (lieu) + les",
+      "answer": "les hi"
+    },
+    {
+      "prompt": "Ens deixa els apunts → ___ deixa. (nous les)",
+      "answer": "ens els"
+    },
+    {
+      "prompt": "Em dus aigua? (dus-ne un got) → ___ dus? (m'en)",
+      "answer": "me'n"
+    },
+    {
+      "prompt": "Explica el problema a nosaltres → ___ explica. (nous l')",
+      "answer": "ens l'"
+    },
+    {
+      "prompt": "Compra el pa per a mi → ___ compra. (me le)",
+      "answer": "me'l"
+    },
+    {
+      "prompt": "Dona la notícia als pares → ___ dona. (la leur)",
+      "answer": "els hi"
+    },
+    {
+      "prompt": "Et deixo els meus llibres → ___ deixo. (te les)",
+      "answer": "te'ls"
+    },
+    {
+      "prompt": "Envia la foto a la Laura → ___ envia. (la lui)",
+      "answer": "l'hi"
+    },
+    {
+      "prompt": "Us porto el cafè ara → ___ porto. (vous le)",
+      "answer": "us el"
+    },
+    {
+      "prompt": "Poses sucre al cafè? → ___ poses? (y en — hi + en)",
+      "answer": "n'hi"
+    },
+    {
+      "prompt": "Deixa les claus a mi → ___ deixa. (me les)",
+      "answer": "me les"
+    },
+    {
+      "prompt": "Diu la veritat a en Marc → ___ diu. (la lui)",
+      "answer": "l'hi"
+    }
+  ]
+}
