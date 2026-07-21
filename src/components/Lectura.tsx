@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState, useEffect } from 'react';
+import { type ReactNode, useMemo, useState, useEffect } from 'react';
 import { lectures, type Lectura } from '@/data/lectures';
 import { useSpeak } from '@/hooks/useSpeak';
 
@@ -13,6 +13,11 @@ function norm(s: string): string {
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[.,;:!?«»"'’·()]/g, '')
     .trim();
+}
+
+// Retire la ponctuation en début/fin pour l'affichage de la traduction.
+function clean(s: string): string {
+  return s.replace(/^[^0-9A-Za-zàèéíòóúïüçÀÈÉÍÒÓÚÏÜÇ]+|[^0-9A-Za-zàèéíòóúïüçÀÈÉÍÒÓÚÏÜÇ]+$/g, '');
 }
 
 function loadRead(): string[] {
@@ -51,26 +56,44 @@ export default function Lectura() {
     saveRead(next);
   };
 
-  // Rendu d'un paragraphe : chaque mot présent au glossaire devient cliquable.
+  const clickable = (content: string, gloss: string, key: number) => (
+    <button
+      key={key}
+      onClick={() => setPicked({ word: clean(content), gloss })}
+      className="underline decoration-dotted decoration-blue-400 underline-offset-4 text-blue-200 hover:text-blue-100"
+    >
+      {content}
+    </button>
+  );
+
+  // Rendu d'un paragraphe : gère les mots ET les expressions de 2 mots du glossaire.
   const renderParagraph = (para: string, pIdx: number) => {
-    const tokens = para.split(/(\s+)/); // garde les espaces
+    const parts = para.split(/(\s+)/); // mots et espaces, en alternance
+    const out: ReactNode[] = [];
+    for (let i = 0; i < parts.length; i++) {
+      const tok = parts[i];
+      if (tok === '' || /^\s+$/.test(tok)) {
+        out.push(<span key={i}>{tok}</span>);
+        continue;
+      }
+      // regarde le mot suivant (à travers l'espace) pour une expression de 2 mots
+      const spaceTok = parts[i + 1];
+      const nextTok = parts[i + 2];
+      if (nextTok && spaceTok && /^\s+$/.test(spaceTok)) {
+        const bigram = `${norm(tok)} ${norm(nextTok)}`;
+        const g2 = text.glossary[bigram];
+        if (g2) {
+          out.push(clickable(`${tok}${spaceTok}${nextTok}`, g2, i));
+          i += 2; // consomme l'espace + le mot suivant
+          continue;
+        }
+      }
+      const g1 = text.glossary[norm(tok)];
+      out.push(g1 ? clickable(tok, g1, i) : <span key={i}>{tok}</span>);
+    }
     return (
       <p key={pIdx} className="text-lg leading-relaxed text-slate-100 mb-3">
-        {tokens.map((tok, i) => {
-          if (/^\s+$/.test(tok)) return <span key={i}>{tok}</span>;
-          const key = norm(tok);
-          const gloss = text.glossary[key];
-          if (!gloss) return <span key={i}>{tok}</span>;
-          return (
-            <button
-              key={i}
-              onClick={() => setPicked({ word: tok.replace(/^[^\wàèéíòóúïüçÀÈÉÍÒÓÚÏÜÇ]+|[^\wàèéíòóúïüçÀÈÉÍÒÓÚÏÜÇ]+$/g, ''), gloss })}
-              className="underline decoration-dotted decoration-blue-400 underline-offset-4 text-blue-200 hover:text-blue-100"
-            >
-              {tok}
-            </button>
-          );
-        })}
+        {out}
       </p>
     );
   };
