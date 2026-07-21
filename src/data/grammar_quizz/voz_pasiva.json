@@ -1,0 +1,62 @@
+{
+  "id": "voz_pasiva",
+  "title": {
+    "fr": "La voix passive (ser + participio)",
+    "en": "The passive voice (ser + participle)"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ **SER + participe (accordé) + POR + agent** :\n\n➡️ *La novela fue escrita por Cervantes.* → Le roman fut écrit par Cervantès.\n➡️ *Los ladrones fueron detenidos por la policía.*\n\n🎯 Le participe s'accorde avec le SUJET : escrita, detenidos, construidas.\n\n🎯 Temps fréquents : fue/fueron (passé simple), ha sido/han sido (passé composé), será/serán (futur), es/son (présent, style journalistique).\n\n💡 À l'oral, l'espagnol préfère le **SE passif** (*Se construyó en 1900*) ou la 3e personne du pluriel (*Lo detuvieron*).",
+    "en": "⚙️ **SER + participle (agreeing) + POR + agent**:\n➡️ *La novela fue escrita por Cervantes.*\nParticiple agrees with the subject. Common tenses: fue/fueron, ha sido, será.\n💡 Spoken Spanish prefers SE-passive or 3rd person plural."
+  },
+  "drills": [
+    {
+      "prompt": "La novela ___ ___ (escribir) por Cervantes.",
+      "answer": "fue escrita"
+    },
+    {
+      "prompt": "Los ladrones ___ ___ (detener) por la policía.",
+      "answer": "fueron detenidos"
+    },
+    {
+      "prompt": "La Sagrada Família ___ (diseñar) por Gaudí. (passé simple → fue diseñada)",
+      "answer": "fue diseñada"
+    },
+    {
+      "prompt": "Las casas ___ ___ (construir) en 1920.",
+      "answer": "fueron construidas"
+    },
+    {
+      "prompt": "El presidente ___ ___ (elegir) ayer.",
+      "answer": "fue elegido"
+    },
+    {
+      "prompt": "La ley ha ___ (aprobar, fém.) por el parlamento.",
+      "answer": "sido aprobada"
+    },
+    {
+      "prompt": "Los resultados ___ (publicar, futur) mañana. (serán publicados)",
+      "answer": "serán publicados"
+    },
+    {
+      "prompt": "La ciudad ___ ___ (fundar) por los romanos.",
+      "answer": "fue fundada"
+    },
+    {
+      "prompt": "El cuadro ha ___ ___ (robar, masc.) del museo.",
+      "answer": "sido robado"
+    },
+    {
+      "prompt": "Las cartas ___ ___ (enviar) la semana pasada.",
+      "answer": "fueron enviadas"
+    },
+    {
+      "prompt": "El puente ___ ___ (inaugurar, masc.) por el alcalde.",
+      "answer": "fue inaugurado"
+    },
+    {
+      "prompt": "Estas obras ___ (pintar, passé simple) por Picasso. (fueron pintadas)",
+      "answer": "fueron pintadas"
+    }
+  ]
+}
