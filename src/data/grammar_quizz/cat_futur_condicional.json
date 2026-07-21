@@ -1,0 +1,87 @@
+{
+  "id": "cat_futur_condicional",
+  "title": {
+    "fr": "Catalan : futur vs conditionnel (usage et hypothèses)",
+    "en": "Catalan: future vs conditional (uses and hypotheses)"
+  },
+  "level": "A2-B1",
+  "note": {
+    "fr": "⚙️ Tu apprends les deux en cours en ce moment — voici QUAND choisir l'un ou l'autre.\n\n🎯 **FUTUR** (parlaré, faré, aniré...) :\n1️⃣ Fait futur réel : *Demà aniré a la feina.*\n2️⃣ Probabilité au présent : *Ara seran les tres.* (il doit être trois heures)\n3️⃣ Après SI réel : *Si plou, no sortiré.* (si + présent → futur)\n\n🎯 **CONDICIONAL** (parlaria, faria, aniria...) :\n1️⃣ Politesse : *Voldria un cafè. / Podries ajudar-me?*\n2️⃣ Conseil : *Jo que tu, parlaria amb ell.*\n3️⃣ Hypothèse irréelle : *Si tingués diners, viatjaria.* (si + imperfet de subjuntiu → condicional)\n4️⃣ Futur dans le passé : *Va dir que vindria.*\n\n⚠️ Radical IRRÉGULIER commun aux deux : ser→ser-, fer→far-, anar→anir-, tenir→tindr-, venir→vindr-, poder→podr-, voler→voldr-, saber→sabr-, veure→veur-, haver→haur-.",
+    "en": "⚙️ You're learning both right now — here's WHEN to pick each.\n**FUTUR**: real future (*Demà aniré*), present probability (*Seran les tres*), after real SI (*Si plou, no sortiré*).\n**CONDICIONAL**: politeness (*Voldria un cafè*), advice (*Jo que tu, parlaria*), unreal hypothesis (*Si tingués diners, viatjaria*), future-in-past (*Va dir que vindria*).\nShared irregular stems: far-, anir-, tindr-, vindr-, podr-, voldr-, sabr-, haur-."
+  },
+  "country": "catalonia",
+  "drills": [
+    {
+      "prompt": "Demà ___ (anar, jo) a la muntanya. (futur réel)",
+      "answer": "aniré"
+    },
+    {
+      "prompt": "___ (voler, jo) un cafè, si us plau. (politesse → condicional)",
+      "answer": "voldria"
+    },
+    {
+      "prompt": "Si plou, no ___ (sortir, jo). (si réel → futur)",
+      "answer": "sortiré"
+    },
+    {
+      "prompt": "Si tingués temps, ___ (venir, jo) amb tu. (hypothèse irréelle → condicional)",
+      "answer": "vindria"
+    },
+    {
+      "prompt": "___ (poder, tu) ajudar-me? (politesse)",
+      "answer": "podries"
+    },
+    {
+      "prompt": "La setmana que ve ___ (fer, nosaltres) l'examen. (futur)",
+      "answer": "farem"
+    },
+    {
+      "prompt": "Jo que tu, ___ (parlar) amb el director. (conseil)",
+      "answer": "parlaria"
+    },
+    {
+      "prompt": "Ara ___ (ser) les tres de la tarda. (probabilité présent → futur)",
+      "answer": "seran"
+    },
+    {
+      "prompt": "Va dir que ___ (arribar) tard. (futur dans le passé → condicional)",
+      "answer": "arribaria"
+    },
+    {
+      "prompt": "Si estudies, ___ (aprovar, tu) l'examen. (si réel → futur)",
+      "answer": "aprovaràs"
+    },
+    {
+      "prompt": "Si fos ric, ___ (comprar, jo) una casa al mar. (hypothèse → condicional)",
+      "answer": "compraria"
+    },
+    {
+      "prompt": "L'any que ve ___ (tenir, jo) trenta anys. (futur)",
+      "answer": "tindré"
+    },
+    {
+      "prompt": "___ (haver-hi) d'haver una solució, no creus? (probabilité → futur : hi haurà)",
+      "answer": "hi haurà"
+    },
+    {
+      "prompt": "M'agradaria... de fet, ___ (voler, nosaltres) reservar taula. (politesse)",
+      "answer": "voldríem"
+    },
+    {
+      "prompt": "Si no fes tant fred, ___ (sortir, nosaltres) a córrer. (hypothèse → condicional)",
+      "answer": "sortiríem"
+    },
+    {
+      "prompt": "Demà ella ___ (saber) els resultats. (futur)",
+      "answer": "sabrà"
+    },
+    {
+      "prompt": "___ (poder, vosaltres) tornar més tard? (politesse)",
+      "answer": "podríeu"
+    },
+    {
+      "prompt": "Si m'ho demanessis, t'___ (ajudar, jo). (hypothèse → condicional : ajudaria)",
+      "answer": "ajudaria"
+    }
+  ]
+}
