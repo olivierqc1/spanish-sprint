@@ -10,6 +10,20 @@ export type GrammarPoint = {
 
 export const grammarPoints: GrammarPoint[] = [
 {
+  id: "cat_pronominals_perfet",
+  title: {
+    fr: "Catalan : verbes pronominaux au perfet",
+    en: "Catalan: pronominal verbs in the perfet"
+  },
+  level: "A2",
+  note: {
+    fr: "m'he llevat, s'ha adormit, ens hem descuidat : le pronom avant haver.",
+    en: "m'he llevat, s'ha adormit: pronoun before haver."
+  },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_pronominals_perfet.json"
+},
+{
   id: "catala_preterit_perfet",
   title: {
     fr: "Catalan – Le pretèrit perfet (he pintat)",
