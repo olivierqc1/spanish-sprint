@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { useSpeak } from "@/hooks/useSpeak";
 
 type Drill = {
   prompt: string;
@@ -24,6 +25,21 @@ type Props = {
 };
 
 const ACCENTS = ['á', 'é', 'í', 'ó', 'ú', 'à', 'è', 'ò', 'ç', 'ï', 'ü', 'ñ', 'l·l', '¿', '¡'];
+
+// Reconstruit la phrase complète (blanc rempli, indices retirés) pour la lecture audio.
+function buildSpoken(prompt: string, answer: string): string {
+  let s = prompt.replace(/<[^>]*>/g, ' ');            // retire le HTML éventuel
+  const hadBlank = /_{2,}/.test(s);
+  s = s.replace(/_{2,}(?:\s+_{2,})*/, answer);         // remplit le 1er slot (fusionne les blancs adjacents)
+  s = s.replace(/→|➜|=>/g, ', ');                       // flèches -> pause naturelle
+  s = s.replace(/\([^)]*\)/g, ' ');                     // retire les indices entre parenthèses
+  s = s.replace(/_{2,}/g, ' ');                         // supprime tout blanc résiduel
+  s = s.replace(/\s+/g, ' ').replace(/\s+([.,;:!?])/g, '$1').trim();
+  if (!hadBlank && !s.toLowerCase().includes(answer.toLowerCase())) {
+    s = `${s} ${answer}`.trim();
+  }
+  return s;
+}
 
 export default function GrammarDrill({ title, note, visual, drills, onClose, language = 'fr', onAnswer }: Props) {
   const [hasStarted, setHasStarted] = useState(false);
@@ -96,6 +112,14 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
   };
 
   const t = texts[language];
+  const { speak, supported: canSpeak } = useSpeak('ca-ES');
+
+  const speakSentence = () => {
+    const isSpanish =
+      typeof window !== 'undefined' &&
+      localStorage.getItem('iberian-sprint-target-language') === 'spanish';
+    speak(buildSpoken(currentDrill.prompt, currentDrill.answer), isSpanish ? 'es-ES' : 'ca-ES');
+  };
 
   const renderVisual = (v: Visual) => (
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', margin: '0 0 16px 0' }}>
@@ -311,6 +335,15 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
                   <p className="text-rose-400 font-bold">✗ {t.incorrect}</p>
                   <p className="text-sm mt-1 text-slate-300">{t.correctAnswer} : <span className="font-bold text-white">{currentDrill.answer}</span></p>
                 </div>
+              )}
+
+              {canSpeak && (
+                <button
+                  onClick={speakSentence}
+                  className="mt-3 inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-semibold px-4 py-2 rounded-xl transition"
+                >
+                  🔊 {language === 'fr' ? 'Écouter la phrase' : 'Listen to the sentence'}
+                </button>
               )}
             </div>
           )}
