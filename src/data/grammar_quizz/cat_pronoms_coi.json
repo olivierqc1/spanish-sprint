@@ -1,0 +1,87 @@
+{
+  "id": "cat_pronoms_coi",
+  "title": {
+    "fr": "Catalan : pronoms COI (li / els / em / et / ens / us)",
+    "en": "Catalan: indirect object pronouns"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Le **COI** (complement indirecte) = **à qui** on donne, dit, écrit, téléphone.\nIl répond à « a qui ? » et le nom est introduit par **a**.\n\n⚠️ **Le COI ne distingue PAS le genre** — c'est là que tout le monde se trompe :\n🎯 **singulier → li** (à lui **ET** à elle)\n→ *Dono el llibre a en Pau → **Li** dono el llibre*\n→ *Dono el llibre a la Maria → **Li** dono el llibre* (même forme !)\n🎯 **pluriel → els** (à eux **ET** à elles)\n→ *Escric als meus pares → **Els** escric*\n\n🎯 **Personnes 1 et 2** : em, et, ens, us — identiques au COD, rien à choisir.\n\n💡 Verbes typiques à COI : donar, dir, explicar, escriure, **trucar**, demanar, regalar, portar, agradar.\n⚠️ Compare : *Veig la Laura* (COD → **la** veig) vs *Truco a la Laura* (COI → **li** truco).",
+    "en": "⚙️ The COI answers 'to whom', introduced by **a**.\n⚠️ It does NOT distinguish gender: singular → **li** (to him AND to her), plural → **els**.\n1st/2nd person: em, et, ens, us — same as COD.\nCompare: *La veig* (COD) vs *Li truco* (COI)."
+  },
+  "country": "catalonia",
+  "drills": [
+    {
+      "prompt": "Dono el llibre a en Pau → ___ dono el llibre. [COI masc. sing.]",
+      "answer": "li"
+    },
+    {
+      "prompt": "Dono el llibre a la Maria → ___ dono el llibre. [COI fém. sing. — même forme !]",
+      "answer": "li"
+    },
+    {
+      "prompt": "Escric als meus pares → ___ escric. [COI plur.]",
+      "answer": "els"
+    },
+    {
+      "prompt": "Explico la història a les nenes → ___ explico la història. [COI fém. plur.]",
+      "answer": "els"
+    },
+    {
+      "prompt": "Truco a la Laura → ___ truco. [trucar = COI en català]",
+      "answer": "li"
+    },
+    {
+      "prompt": "Dic la veritat a l'Anna → ___ dic la veritat. [COI sing.]",
+      "answer": "li"
+    },
+    {
+      "prompt": "Regalen flors a mi → ___ regalen flors. [1re pers.]",
+      "answer": "em"
+    },
+    {
+      "prompt": "Demano un favor a tu → ___ demano un favor. [2e pers.]",
+      "answer": "et"
+    },
+    {
+      "prompt": "Diuen la veritat a nosaltres → ___ diuen la veritat. [1re plur.]",
+      "answer": "ens"
+    },
+    {
+      "prompt": "Porto el cafè a vosaltres → ___ porto el cafè. [2e plur.]",
+      "answer": "us"
+    },
+    {
+      "prompt": "Escriu un correu al director → ___ escriu un correu. [COI sing.]",
+      "answer": "li"
+    },
+    {
+      "prompt": "Compra un regal als seus fills → ___ compra un regal. [COI plur.]",
+      "answer": "els"
+    },
+    {
+      "prompt": "Veig la Laura → ___ veig. [attention : COD, pas COI !]",
+      "answer": "la"
+    },
+    {
+      "prompt": "Truco a en Marc → ___ truco. [COI]",
+      "answer": "li"
+    },
+    {
+      "prompt": "Aquesta idea agrada a la Marta → ___ agrada. [agradar = COI]",
+      "answer": "li"
+    },
+    {
+      "prompt": "Envio la foto als amics → ___ envio la foto. [COI plur.]",
+      "answer": "els"
+    },
+    {
+      "prompt": "Pregunto l'hora a un senyor → ___ pregunto l'hora. [COI sing.]",
+      "answer": "li"
+    },
+    {
+      "prompt": "Ensenyo català a vosaltres → ___ ensenyo català. [2e plur.]",
+      "answer": "us"
+    }
+  ]
+}
