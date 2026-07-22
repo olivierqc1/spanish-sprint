@@ -10,6 +10,34 @@ export type GrammarPoint = {
 
 export const grammarPoints: GrammarPoint[] = [
 {
+  id: "cat_participis_irregulars",
+  title: {
+    fr: "Catalan : participes irréguliers au perfet",
+    en: "Catalan: irregular participles in the perfet"
+  },
+  level: "A2",
+  note: {
+    fr: "fet, dit, vist, obert, pres, après + le groupe en -gut.",
+    en: "fet, dit, vist, obert, pres, après + the -gut group."
+  },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_participis_irregulars.json"
+},
+{
+  id: "cat_gerundi",
+  title: {
+    fr: "Catalan : le gérondif et les actions en cours",
+    en: "Catalan: the gerund and ongoing actions"
+  },
+  level: "A2-B1",
+  note: {
+    fr: "parlant, dormint, fent... estar/anar/continuar + gerundi.",
+    en: "parlant, dormint, fent... estar/anar/continuar + gerund."
+  },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_gerundi.json"
+},
+{
   id: "cat_pronoms_cod",
   title: {
     fr: "Catalan : pronoms COD (el / la / els / les / ho / en)",
