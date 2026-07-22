@@ -1,0 +1,103 @@
+{
+  "id": "cat_gerundi",
+  "title": {
+    "fr": "Catalan : le gérondif et les actions en cours",
+    "en": "Catalan: the gerund and ongoing actions"
+  },
+  "level": "A2-B1",
+  "note": {
+    "fr": "⚙️ **Formation du gérondif :**\n-AR → **-ant** : parlar → parlant\n-ER / -RE → **-ent** : córrer → corrent, perdre → perdent, beure → bevent\n-IR → **-int** : dormir → dormint, sortir → sortint\n\n🎯 **Irréguliers utiles :**\nfer → **fent** · dir → **dient** · veure → **veient** · creure → **creient**\ncaure → **caient** · treure → **traient** · riure → **rient** · dur → **duent**\nescriure → **escrivint** · viure → **vivint** · ser → **sent**\n\n🎯 **ESTAR + gerundi** = action en cours : *Estic parlant amb la Laura.*\n🎯 **ANAR + gerundi** = progression graduelle : *El seu català va millorant.*\n🎯 **CONTINUAR / SEGUIR + gerundi** = continuer à : *Continua plovent.*\n\n⚠️ **Le catalan utilise BEAUCOUP MOINS *estar + gerundi* que l'espagnol.** Pour une action en cours, le présent simple suffit souvent : *Què fas?* est plus naturel que *Què estàs fent?*\n\n⚠️ **Interdits** (fautes fréquentes) :\n✗ gérondif de postériorité : *Va caure, trencant-se la cama* → dis *i es va trencar la cama*.\n✗ gérondif comme adjectif : *una caixa contenint llibres* → dis *que conté llibres*.",
+    "en": "⚙️ Gerund: -AR → -ant, -ER/-RE → -ent, -IR → -int.\nIrregular: fent, dient, veient, creient, caient, traient, rient, duent, escrivint, vivint, sent.\n**ESTAR + gerund** = ongoing. **ANAR + gerund** = gradual. **CONTINUAR + gerund** = keep doing.\n⚠️ Catalan uses *estar + gerund* far LESS than Spanish — simple present is often better.\n⚠️ Never use the gerund for a following action or as an adjective."
+  },
+  "country": "catalonia",
+  "drills": [
+    {
+      "prompt": "parlar → gérondif",
+      "answer": "parlant"
+    },
+    {
+      "prompt": "dormir → gérondif",
+      "answer": "dormint"
+    },
+    {
+      "prompt": "córrer → gérondif",
+      "answer": "corrent"
+    },
+    {
+      "prompt": "beure → gérondif",
+      "answer": "bevent"
+    },
+    {
+      "prompt": "fer → gérondif",
+      "answer": "fent"
+    },
+    {
+      "prompt": "dir → gérondif",
+      "answer": "dient"
+    },
+    {
+      "prompt": "veure → gérondif",
+      "answer": "veient"
+    },
+    {
+      "prompt": "escriure → gérondif",
+      "answer": "escrivint"
+    },
+    {
+      "prompt": "viure → gérondif",
+      "answer": "vivint"
+    },
+    {
+      "prompt": "treure → gérondif",
+      "answer": "traient"
+    },
+    {
+      "prompt": "caure → gérondif",
+      "answer": "caient"
+    },
+    {
+      "prompt": "sortir → gérondif",
+      "answer": "sortint"
+    },
+    {
+      "prompt": "Ara mateix ___ ___ (parlar, jo) amb la Laura. (estar + gerundi)",
+      "answer": "estic parlant"
+    },
+    {
+      "prompt": "Què ___ ___ (fer, tu)? (estar + gerundi)",
+      "answer": "estàs fent"
+    },
+    {
+      "prompt": "Els nens ___ ___ (dormir). (estar + gerundi)",
+      "answer": "estan dormint"
+    },
+    {
+      "prompt": "___ ___ (escriure, nosaltres) un informe. (estar + gerundi)",
+      "answer": "estem escrivint"
+    },
+    {
+      "prompt": "El seu català ___ ___ (millorar) de mica en mica. (anar + gerundi)",
+      "answer": "va millorant"
+    },
+    {
+      "prompt": "Els preus ___ ___ (pujar) cada any. (anar + gerundi)",
+      "answer": "van pujant"
+    },
+    {
+      "prompt": "___ ___ (ploure) des de fa hores. (continuar + gerundi)",
+      "answer": "continua plovent"
+    },
+    {
+      "prompt": "Ella ___ ___ (treballar) al mateix lloc. (seguir + gerundi)",
+      "answer": "segueix treballant"
+    },
+    {
+      "prompt": "Vosaltres ___ ___ (mirar) la tele? (estar + gerundi)",
+      "answer": "esteu mirant"
+    },
+    {
+      "prompt": "Ells ___ ___ (venir) cap aquí. (estar + gerundi)",
+      "answer": "estan venint"
+    }
+  ]
+}
