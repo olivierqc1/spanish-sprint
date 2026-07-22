@@ -1,0 +1,87 @@
+{
+  "id": "cat_pronoms_cod",
+  "title": {
+    "fr": "Catalan : pronoms COD (el / la / els / les / ho / en)",
+    "en": "Catalan: direct object pronouns"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Le **COD** (complement directe) = ce sur quoi porte l'action, **sans préposition**.\nIl s'accorde en genre et en nombre :\n\n🎯 **masculin sing. → el** (l' devant voyelle) : *Compro el pa → El compro*\n🎯 **féminin sing. → la** (l' devant voyelle) : *Veig la Laura → La veig*\n🎯 **masculin plur. → els** : *Llegeixo els diaris → Els llegeixo*\n🎯 **féminin plur. → les** : *Compro les pomes → Les compro*\n\n🎯 **ho** = une idée entière, « això » : *Saps això? → Ho saps?*\n🎯 **en** = quantité indéfinie (pa, dos, molts, gens) : *Vols pa? → En vols?*\n\n⚠️ Apostrophe devant voyelle : *l'obro, l'estimo* (masc. ET fém.).\n💡 Attention : certains verbes catalans prennent le COD là où le castillan met un COI. *Ajudo la Maria → L'ajudo* (pas « li ajudo »).",
+    "en": "⚙️ The COD (direct object) takes no preposition and agrees in gender/number:\nmasc sg → **el** (l'), fem sg → **la** (l'), masc pl → **els**, fem pl → **les**.\n**ho** = a whole idea. **en** = indefinite quantity.\n⚠️ Apostrophe before a vowel: l'obro."
+  },
+  "country": "catalonia",
+  "drills": [
+    {
+      "prompt": "Compro el pa → ___ ___ . (pronom + verb) [masc. sing.]",
+      "answer": "el compro"
+    },
+    {
+      "prompt": "Veig la Laura → ___ ___ . [fém. sing.]",
+      "answer": "la veig"
+    },
+    {
+      "prompt": "Llegeixo els diaris → ___ ___ . [masc. plur.]",
+      "answer": "els llegeixo"
+    },
+    {
+      "prompt": "Compro les pomes → ___ ___ . [fém. plur.]",
+      "answer": "les compro"
+    },
+    {
+      "prompt": "Obro la finestra → ___ ___ . [fém. sing. + voyelle → apostrophe]",
+      "answer": "l'obro"
+    },
+    {
+      "prompt": "Estimo el meu germà → ___ ___ . [masc. sing. + voyelle]",
+      "answer": "l'estimo"
+    },
+    {
+      "prompt": "Saps això? → ___ ___ ? [idée entière → neutre]",
+      "answer": "ho saps"
+    },
+    {
+      "prompt": "No entenc això → No ___ ___ . [neutre]",
+      "answer": "ho entenc"
+    },
+    {
+      "prompt": "Vols pa? → Sí, ___ ___ . [quantité indéfinie]",
+      "answer": "en vull"
+    },
+    {
+      "prompt": "Tinc dos germans → ___ ___ dos. [quantité indéfinie]",
+      "answer": "en tinc"
+    },
+    {
+      "prompt": "Menjo la carn → ___ ___ . [fém. sing.]",
+      "answer": "la menjo"
+    },
+    {
+      "prompt": "Escolto els podcasts → ___ ___ . [masc. plur.]",
+      "answer": "els escolto"
+    },
+    {
+      "prompt": "Veus les muntanyes? → Sí, ___ ___ . [fém. plur.]",
+      "answer": "les veig"
+    },
+    {
+      "prompt": "Estudio l'economia → ___ ___ . [fém. sing. + voyelle]",
+      "answer": "l'estudio"
+    },
+    {
+      "prompt": "Ajudo la Maria → ___ ___ . [COD en català, pas COI !]",
+      "answer": "l'ajudo"
+    },
+    {
+      "prompt": "Beus vi? → Sí, ___ ___ una mica. [quantité indéfinie]",
+      "answer": "en bec"
+    },
+    {
+      "prompt": "Coneixes els meus pares? → Sí, ___ ___ . [masc. plur.]",
+      "answer": "els conec"
+    },
+    {
+      "prompt": "Ha comprat les entrades → ___ ___ comprat. [fém. plur.]",
+      "answer": "les ha"
+    }
+  ]
+}
