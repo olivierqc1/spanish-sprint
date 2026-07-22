@@ -1,79 +1,103 @@
 {
   "id": "cat_pronoms_combinats",
   "title": {
-    "fr": "Catalan : combinaisons de pronoms febles (l'hi, els hi, me'l)",
-    "en": "Catalan: weak pronoun combinations (l'hi, els hi, me'l)"
+    "fr": "Catalan : combinaisons de pronoms (me'l, l'hi, la hi...)",
+    "en": "Catalan: combined weak pronouns"
   },
   "level": "B1",
   "note": {
-    "fr": "⚙️ Quand DEUX pronoms se combinent, l'ordre est **COI + COD**, et les formes fusionnent.\n\n🎯 **Le plus fréquent — donner qqch À qqn :**\n→ *Dono el llibre a en Pau* → **L'hi dono** (le lui, à lui/elle).\n→ *Dono els llibres a en Pau* → **Els hi dono** (les lui).\n→ *Dono la carta a la Maria* → **L'hi dono** / *les cartes* → **Les hi dono**.\n\n🎯 **Avec un pronom personnel (me, te, ens, us) + COD :**\n→ *Em dónes el llibre?* → **Me'l dónes?** (me le)\n→ *Et porto la clau* → **Te la porto** (te la)\n→ *Ens deixa els seus apunts* → **Ens els deixa** (nous les)\n\n💡 me + el = **me'l** · me + la = **me la** · me + els = **me'ls** · me + en = **me'n** · te + el = **te'l** · li + el = **l'hi** · li + els = **els hi**.",
-    "en": "⚙️ Two combined pronouns: order = INDIRECT + DIRECT, and forms fuse.\n→ *L'hi dono* (I give it to him/her) · *Els hi dono* (I give them to him/her).\n→ *Me'l dónes?* (will you give it to me?) · *Te la porto* (I bring it to you).\nKey fusions: me+el=me'l, me+en=me'n, te+la=te la, li+el=l'hi, li+els=els hi."
+    "fr": "⚙️ Quand deux pronoms se rencontrent : **COI d'abord, COD ensuite**, et ils fusionnent.\n\n🎯 **Table à connaître** (COI ↓ + COD →) :\n**em** + el/la/els/les/ho/en → **me'l · me la · me'ls · me les · m'ho · me'n**\n**et** + ... → **te'l · te la · te'ls · te les · t'ho · te'n**\n**li** + ... → **l'hi · la hi · els hi · les hi · l'hi (ho) · n'hi**\n**ens** + ... → **ens el · ens la · ens els · ens les · ens ho · ens en**\n**us** + ... → **us el · us la · us els · us les · us ho · us en**\n\n🎯 **en + hi** = **n'hi** : *Poses sucre al cafè? → N'hi poses?*\n\n⚠️ Méthode : identifie d'abord le COI (à qui ?), puis le COD (quoi ? quel genre, quel nombre ?), puis va chercher la case.\n💡 À l'oral, beaucoup de Catalans disent *l'hi* et *els hi* pour presque tout — mais à l'écrit, garde les formes ci-dessus.",
+    "en": "⚙️ Two pronouns: INDIRECT first, DIRECT second, and they fuse.\nem → me'l, me la, me'ls, me les, m'ho, me'n\net → te'l, te la, te'ls, te les, t'ho, te'n\nli → l'hi, la hi, els hi, les hi, n'hi\nens/us → ens el, us el, etc.\nMethod: find the COI, then the COD (gender+number), then look up the cell."
   },
   "country": "catalonia",
   "drills": [
     {
-      "prompt": "Dono el llibre a en Pau → ___ dono. (le lui)",
-      "answer": "l'hi"
-    },
-    {
-      "prompt": "Dono els llibres a la Maria → ___ dono. (les lui)",
-      "answer": "els hi"
-    },
-    {
-      "prompt": "Em dónes el bolígraf? → ___ dónes? (me le)",
+      "prompt": "Compra el pa per a mi → ___ compra. [COI: em · COD: el pa = masc. sing.]",
       "answer": "me'l"
     },
     {
-      "prompt": "Et porto la clau → ___ porto. (te la)",
-      "answer": "te la"
+      "prompt": "Em portes la clau? → ___ portes? [COI: em · COD: la clau = fém. sing.]",
+      "answer": "me la"
     },
     {
-      "prompt": "Porta les cartes a l'oficina → ___ porta. Attention : hi (lieu) + les",
-      "answer": "les hi"
+      "prompt": "Em dónes els llibres? → ___ dónes? [COI: em · COD: els llibres = masc. plur.]",
+      "answer": "me'ls"
     },
     {
-      "prompt": "Ens deixa els apunts → ___ deixa. (nous les)",
-      "answer": "ens els"
-    },
-    {
-      "prompt": "Em dus aigua? (dus-ne un got) → ___ dus? (m'en)",
-      "answer": "me'n"
-    },
-    {
-      "prompt": "Explica el problema a nosaltres → ___ explica. (nous l')",
-      "answer": "ens l'"
-    },
-    {
-      "prompt": "Compra el pa per a mi → ___ compra. (me le)",
-      "answer": "me'l"
-    },
-    {
-      "prompt": "Dona la notícia als pares → ___ dona. (la leur)",
-      "answer": "els hi"
-    },
-    {
-      "prompt": "Et deixo els meus llibres → ___ deixo. (te les)",
-      "answer": "te'ls"
-    },
-    {
-      "prompt": "Envia la foto a la Laura → ___ envia. (la lui)",
-      "answer": "l'hi"
-    },
-    {
-      "prompt": "Us porto el cafè ara → ___ porto. (vous le)",
-      "answer": "us el"
-    },
-    {
-      "prompt": "Poses sucre al cafè? → ___ poses? (y en — hi + en)",
-      "answer": "n'hi"
-    },
-    {
-      "prompt": "Deixa les claus a mi → ___ deixa. (me les)",
+      "prompt": "Em compres les entrades? → ___ compres? [COI: em · COD: les entrades = fém. plur.]",
       "answer": "me les"
     },
     {
-      "prompt": "Diu la veritat a en Marc → ___ diu. (la lui)",
+      "prompt": "Em dus aigua? → ___ dus? [COI: em · COD: quantité indéfinie]",
+      "answer": "me'n"
+    },
+    {
+      "prompt": "Em dius això? → ___ dius? [COI: em · COD: idée = ho]",
+      "answer": "m'ho"
+    },
+    {
+      "prompt": "Et deixo el cotxe → ___ deixo. [COI: et · COD: el cotxe = masc. sing.]",
+      "answer": "te'l"
+    },
+    {
+      "prompt": "Et porto la maleta → ___ porto. [COI: et · COD: la maleta = fém. sing.]",
+      "answer": "te la"
+    },
+    {
+      "prompt": "Et deixo els meus apunts → ___ deixo. [COI: et · COD: masc. plur.]",
+      "answer": "te'ls"
+    },
+    {
+      "prompt": "Dono el llibre a en Pau → ___ dono. [COI: li · COD: el llibre = masc. sing.]",
       "answer": "l'hi"
+    },
+    {
+      "prompt": "Dono la carta a la Maria → ___ dono. [COI: li · COD: la carta = fém. sing.]",
+      "answer": "la hi"
+    },
+    {
+      "prompt": "Dono els llibres a en Pau → ___ dono. [COI: li · COD: masc. plur.]",
+      "answer": "els hi"
+    },
+    {
+      "prompt": "Dono les claus a la Maria → ___ dono. [COI: li · COD: fém. plur.]",
+      "answer": "les hi"
+    },
+    {
+      "prompt": "Dic la veritat a l'Anna → ___ dic. [COI: li · COD: la veritat = fém. sing.]",
+      "answer": "la hi"
+    },
+    {
+      "prompt": "Envio la foto a la Laura → ___ envio. [COI: li · COD: la foto = fém. sing.]",
+      "answer": "la hi"
+    },
+    {
+      "prompt": "Explica el problema a en Marc → ___ explica. [COI: li · COD: masc. sing.]",
+      "answer": "l'hi"
+    },
+    {
+      "prompt": "Dona vi a la Marta → ___ dona. [COI: li · COD: quantité indéfinie]",
+      "answer": "n'hi"
+    },
+    {
+      "prompt": "Poses sucre al cafè? → ___ poses? [COD: quantité (en) · lieu: al cafè (hi)]",
+      "answer": "n'hi"
+    },
+    {
+      "prompt": "Ens porta el cafè → ___ porta. [COI: ens · COD: el cafè = masc. sing.]",
+      "answer": "ens el"
+    },
+    {
+      "prompt": "Us explico la història → ___ explico. [COI: us · COD: la història = fém. sing.]",
+      "answer": "us la"
+    },
+    {
+      "prompt": "Ens deixa els apunts → ___ deixa. [COI: ens · COD: masc. plur.]",
+      "answer": "ens els"
+    },
+    {
+      "prompt": "Ens explica això → ___ explica. [COI: ens · COD: idée = ho]",
+      "answer": "ens ho"
     }
   ]
 }
