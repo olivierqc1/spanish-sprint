@@ -1,0 +1,111 @@
+{
+  "id": "cat_participis_irregulars",
+  "title": {
+    "fr": "Catalan : participes irréguliers au perfet",
+    "en": "Catalan: irregular participles in the perfet"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Au **pretèrit perfet** (haver + participe), beaucoup de participes sont irréguliers.\n\n🎯 **Les plus fréquents :**\nfer → **fet** · dir → **dit** · veure → **vist** · escriure → **escrit**\nobrir → **obert** · omplir → **omplert** · morir → **mort** · néixer → **nascut**\nprendre → **pres** · aprendre → **après** · entendre → **entès** · comprendre → **comprès**\nrespondre → **respost** · treure → **tret** · dur → **dut**\n\n🎯 **En -GUT** (très nombreux) :\npoder → **pogut** · voler → **volgut** · saber → **sabut** · tenir → **tingut**\nvenir → **vingut** · haver → **hagut** · beure → **begut** · creure → **cregut**\ncaure → **caigut** · ploure → **plogut** · viure → **viscut** · conèixer → **conegut**\nriure → **rigut** · moure → **mogut** · seure → **segut** · valer → **valgut**\n\n🎯 ser/estar → **estat** (ser accepte aussi *sigut*)\n\n⚠️ Le participe ne s'accorde PAS avec le sujet : *Ella ha vist* (pas *vista*).",
+    "en": "⚙️ Many Catalan participles are irregular.\nfer→fet, dir→dit, veure→vist, escriure→escrit, obrir→obert, prendre→pres, aprendre→après, entendre→entès, respondre→respost, treure→tret.\n-GUT group: pogut, volgut, sabut, tingut, vingut, hagut, begut, cregut, caigut, plogut, viscut, conegut.\nser/estar → estat.\n⚠️ No agreement with the subject."
+  },
+  "country": "catalonia",
+  "drills": [
+    {
+      "prompt": "Avui ___ ___ (fer, jo) molta feina.",
+      "answer": "he fet"
+    },
+    {
+      "prompt": "Ella ___ ___ (dir) la veritat.",
+      "answer": "ha dit"
+    },
+    {
+      "prompt": "Aquest matí ___ ___ (veure, nosaltres) la Laura.",
+      "answer": "hem vist"
+    },
+    {
+      "prompt": "Encara no ___ ___ (escriure, jo) l'informe.",
+      "answer": "he escrit"
+    },
+    {
+      "prompt": "Qui ___ ___ (obrir) la finestra?",
+      "answer": "ha obert"
+    },
+    {
+      "prompt": "Ells ___ ___ (prendre) el tren de les vuit.",
+      "answer": "han pres"
+    },
+    {
+      "prompt": "No ___ ___ (entendre, jo) res de la classe.",
+      "answer": "he entès"
+    },
+    {
+      "prompt": "Aquest any ___ ___ (aprendre, jo) molt català.",
+      "answer": "he après"
+    },
+    {
+      "prompt": "Avui ___ ___ (ploure) tot el dia.",
+      "answer": "ha plogut"
+    },
+    {
+      "prompt": "___ ___ (caure, tu) de la bici?",
+      "answer": "has caigut"
+    },
+    {
+      "prompt": "Aquesta setmana ___ ___ (viure, nosaltres) coses estranyes.",
+      "answer": "hem viscut"
+    },
+    {
+      "prompt": "Ja ___ ___ (respondre, ells) al correu.",
+      "answer": "han respost"
+    },
+    {
+      "prompt": "No ___ ___ (poder, jo) venir abans.",
+      "answer": "he pogut"
+    },
+    {
+      "prompt": "___ ___ (tenir, vosaltres) molta sort!",
+      "answer": "heu tingut"
+    },
+    {
+      "prompt": "Encara no ___ ___ (néixer) el bebè.",
+      "answer": "ha nascut"
+    },
+    {
+      "prompt": "___ ___ (beure, ell) massa cafè aquest matí.",
+      "answer": "ha begut"
+    },
+    {
+      "prompt": "Avui ___ ___ (treure, jo) diners del banc.",
+      "answer": "he tret"
+    },
+    {
+      "prompt": "Aquest any ___ ___ (conèixer, nosaltres) molta gent.",
+      "answer": "hem conegut"
+    },
+    {
+      "prompt": "Ho ___ ___ (saber, jo) aquest matí.",
+      "answer": "he sabut"
+    },
+    {
+      "prompt": "Ells no ___ ___ (voler) quedar-se.",
+      "answer": "han volgut"
+    },
+    {
+      "prompt": "Avui ___ ___ (ser, jo) molt lent.",
+      "answer": "he estat"
+    },
+    {
+      "prompt": "Ella ___ ___ (creure) el que li han dit.",
+      "answer": "ha cregut"
+    },
+    {
+      "prompt": "___ ___ (venir, ells) a peu.",
+      "answer": "han vingut"
+    },
+    {
+      "prompt": "El nen ___ ___ (riure) tota l'estona.",
+      "answer": "ha rigut"
+    }
+  ]
+}
