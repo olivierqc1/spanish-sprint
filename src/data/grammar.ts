@@ -10,6 +10,34 @@ export type GrammarPoint = {
 
 export const grammarPoints: GrammarPoint[] = [
 {
+  id: "cat_pronoms_cod",
+  title: {
+    fr: "Catalan : pronoms COD (el / la / els / les / ho / en)",
+    en: "Catalan: direct object pronouns"
+  },
+  level: "A2",
+  note: {
+    fr: "El compro, la veig, els llegeixo, les compro, ho sé, en vull.",
+    en: "El compro, la veig, els llegeixo, ho sé, en vull."
+  },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_pronoms_cod.json"
+},
+{
+  id: "cat_pronoms_coi",
+  title: {
+    fr: "Catalan : pronoms COI (li / els / em / et / ens / us)",
+    en: "Catalan: indirect object pronouns"
+  },
+  level: "A2",
+  note: {
+    fr: "li = à lui ET à elle. Le COI ne distingue pas le genre.",
+    en: "li = to him AND to her. The COI has no gender."
+  },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_pronoms_coi.json"
+},
+{
   id: "cat_perfet_perifrastic",
   title: {
     fr: "Catalan : perfet vs perifràstic (avui he anat / ahir vaig anar)",
