@@ -2,29 +2,29 @@
   "id": "cat_perfet_perifrastic",
   "title": {
     "fr": "Catalan : perfet vs perifràstic (avui he anat / ahir vaig anar)",
-    "en": "Catalan: perfet vs perifràstic (avui he anat / ahir vaig anar)"
+    "en": "Catalan: perfet vs perifràstic"
   },
   "level": "A2",
   "note": {
-    "fr": "⚙️ Deux passés catalans, choix selon le **moment** :\n\n🎯 **PRETÈRIT PERFET** (haver + participe) = passé RELIÉ au présent : aujourd'hui, cette semaine, ce mois, encore maintenant.\n→ *Avui he anat / Aquesta setmana hem treballat / Encara no ho he fet.*\nMarqueurs : avui, aquest matí, aquesta setmana/mes/any, ja, encara no, mai (dans ta vie).\n\n🎯 **PRETÈRIT PERIFRÀSTIC** (vaig/vas/va/vam/vau/van + INFINITIF) = passé COUPÉ du présent : hier, la semaine dernière, une date.\n→ *Ahir vaig anar / La setmana passada vam treballar / L'any 2020 va néixer.*\nMarqueurs : ahir, ahir a la nit, la setmana/el mes/l'any passat, fa dos dies, dilluns.\n\n⚠️ Perifràstic = **vaig + infinitif** (jamais participe !). *vaig anar*, PAS *vaig anat*.",
-    "en": "⚙️ Two Catalan pasts, chosen by TIME frame:\n**PERFET** (haver + participle) = linked to now: avui, aquesta setmana, ja, encara no. → *Avui he anat.*\n**PERIFRÀSTIC** (vaig/vas/va + INFINITIVE) = cut off from now: ahir, la setmana passada, fa dos dies. → *Ahir vaig anar.*\n⚠️ Perifràstic uses the INFINITIVE, never the participle!"
+    "fr": "⚙️ Deux passés catalans, choix selon le **moment** :\n\n🎯 **PRETÈRIT PERFET** (haver + participe) = passé dans une période PAS ENCORE FINIE.\n→ *Avui he anat / Aquesta setmana hem treballat / Encara no ho he fet.*\nMarqueurs : avui, aquest matí, aquesta setmana/mes/any, ja, encara no, mai.\n⚠️ **fa una hora / fa deu minuts** → c'est encore AUJOURD'HUI, donc **perfet** : *Fa una hora ha trucat.*\n\n🎯 **PRETÈRIT PERIFRÀSTIC** (vaig/vas/va/vam/vau/van + INFINITIF) = passé COUPÉ du présent.\n→ *Ahir vaig anar / La setmana passada vam treballar / El 2015 va néixer.*\nMarqueurs : ahir, la setmana/el mes/l'any passat, dilluns passat, **fa dos dies**, une date.\n\n⚠️ Perifràstic = **vaig + infinitif** (jamais participe !). *vaig anar*, PAS *vaig anat*.\n💡 Le sujet peut arriver APRÈS le verbe : *ha trucat el teu pare* (3e pers., pas 1re !).",
+    "en": "⚙️ Two Catalan pasts, chosen by TIME frame:\n**PERFET** (haver + participle) = period not yet finished: avui, aquesta setmana, ja, encara no. Also **fa una hora** (still today!).\n**PERIFRÀSTIC** (vaig/vas/va + INFINITIVE) = cut off from now: ahir, la setmana passada, fa dos dies, a date.\n⚠️ Perifràstic uses the INFINITIVE, never the participle!"
   },
   "country": "catalonia",
   "drills": [
     {
-      "prompt": "Avui ___ ___ (anar, jo) al mercat. (je suis allé — aujourd'hui)",
+      "prompt": "Avui ___ ___ (anar, jo) al mercat. (aujourd'hui)",
       "answer": "he anat"
     },
     {
-      "prompt": "Ahir ___ ___ (anar, jo) al mercat. (je suis allé — hier)",
+      "prompt": "Ahir ___ ___ (anar, jo) al mercat. (hier)",
       "answer": "vaig anar"
     },
     {
-      "prompt": "Aquesta setmana ___ ___ (treballar, nosaltres) molt. (cette semaine)",
+      "prompt": "Aquesta setmana ___ ___ (treballar, nosaltres) molt.",
       "answer": "hem treballat"
     },
     {
-      "prompt": "La setmana passada ___ ___ (treballar, nosaltres) poc. (la semaine dernière)",
+      "prompt": "La setmana passada ___ ___ (treballar, nosaltres) poc.",
       "answer": "vam treballar"
     },
     {
@@ -36,7 +36,11 @@
       "answer": "vaig veure"
     },
     {
-      "prompt": "Aquest matí ___ ___ (llevar-se → llevar) tard. Attention pronom! (je me suis levé, ce matin)",
+      "prompt": "Fa una hora ___ ___ (trucar) el teu pare. (encara és avui — sujet = el teu pare)",
+      "answer": "ha trucat"
+    },
+    {
+      "prompt": "Aquest matí ___ ___ (llevar-se) tard. Attention pronom ! (je me suis levé)",
       "answer": "m'he llevat"
     },
     {
@@ -44,7 +48,7 @@
       "answer": "va arribar"
     },
     {
-      "prompt": "Ja ___ ___ (dinar, vosaltres)? (déjà — vous avez déjeuné)",
+      "prompt": "Ja ___ ___ (dinar, vosaltres)? (déjà)",
       "answer": "heu dinat"
     },
     {
@@ -52,7 +56,7 @@
       "answer": "va néixer"
     },
     {
-      "prompt": "Aquest any ___ ___ (córrer, jo) una marató. (cette année)",
+      "prompt": "Aquest any ___ ___ (córrer, jo) una marató.",
       "answer": "he corregut"
     },
     {
@@ -60,28 +64,32 @@
       "answer": "van sopar"
     },
     {
-      "prompt": "Avui ___ ___ (perdre, jo) les claus. (aujourd'hui)",
+      "prompt": "Avui ___ ___ (perdre, jo) les claus.",
       "answer": "he perdut"
     },
     {
-      "prompt": "Fa una hora ___ ___ (trucar) el teu pare. (il y a une heure)",
+      "prompt": "Dissabte passat ___ ___ (trucar) la teva mare. (samedi dernier)",
       "answer": "va trucar"
     },
     {
-      "prompt": "Aquest cap de setmana ___ ___ (estar, nosaltres) a Girona. (ce week-end, encore proche)",
+      "prompt": "Aquest cap de setmana ___ ___ (estar, nosaltres) a Girona.",
       "answer": "hem estat"
     },
     {
-      "prompt": "El 2020 ___ ___ (mudar-se → mudar) a Barcelona. Attention pronom! (en 2020)",
+      "prompt": "El 2020 ___ ___ (mudar-se) a Barcelona. Attention pronom ! (je me suis installé)",
       "answer": "em vaig mudar"
     },
     {
-      "prompt": "Encara no ___ ___ (rebre, ells) l'informe. (pas encore)",
+      "prompt": "Encara no ___ ___ (rebre, ells) l'informe.",
       "answer": "han rebut"
     },
     {
-      "prompt": "La primavera passada ___ ___ (viatjar, jo) a Alemanya. (le printemps dernier)",
+      "prompt": "La primavera passada ___ ___ (viatjar, jo) a Alemanya.",
       "answer": "vaig viatjar"
+    },
+    {
+      "prompt": "Fa deu minuts ___ ___ (sortir) la Marta. (il y a dix minutes — encara és avui)",
+      "answer": "ha sortit"
     }
   ]
 }
