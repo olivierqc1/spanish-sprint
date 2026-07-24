@@ -395,3 +395,4 @@ export function getTodayPlan(cfg: PlanConfig): TodayPlan {
 
   return { mode: 'normal', items, weakCount: weak.length, dueCount: due.length };
 }
+ 
