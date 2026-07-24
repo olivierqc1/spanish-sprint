@@ -4,6 +4,7 @@
 
 import { grammarPoints, type GrammarPoint } from './grammar';
 import { getAllTopicScores } from './topicProgress';
+import { dayKey, daysBetween, addDays } from './activityLog';
 
 export type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
 export type TargetLang = 'catalan' | 'spanish';
@@ -14,6 +15,7 @@ export type PlanConfig = {
   minutesPerDay: number;
   lang: TargetLang;
   startDate: string; // YYYY-MM-DD
+  targetDate: string; // YYYY-MM-DD — la date butoir de ton objectif
 };
 
 const CONFIG_KEY = 'ss_studyplan_v1';
@@ -33,16 +35,18 @@ function isCatalan(p: GrammarPoint): boolean {
   return p.id.startsWith('cat') || p.id.startsWith('catala');
 }
 
-export function dayKey(d = new Date()): string {
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-}
+export { dayKey } from './activityLog';
 
 // ---------- config ----------
 export function loadConfig(): PlanConfig | null {
   if (typeof window === 'undefined') return null;
   try {
     const r = localStorage.getItem(CONFIG_KEY);
-    return r ? (JSON.parse(r) as PlanConfig) : null;
+    if (!r) return null;
+    const c = JSON.parse(r) as PlanConfig;
+    // Rétrocompatibilité : anciens plans sans date cible
+    if (!c.targetDate) c.targetDate = addDays(c.startDate || dayKey(), 56);
+    return c;
   } catch {
     return null;
   }
@@ -258,4 +262,60 @@ export function todaysProduction(cfg: PlanConfig): Production {
   const topic = bank[dayIndex() % bank.length];
   const modality = dayIndex() % 2 === 0 ? '✍️ Écris' : '🎙️ Enregistre-toi (oral)';
   return { theme, modality, topic };
+}
+
+// ---------- calendrier & rythme ----------
+export type PlanStatus = 'done' | 'ahead' | 'ontrack' | 'behind' | 'expired';
+
+export type Pacing = {
+  totalDays: number;      // durée totale du plan
+  elapsedDays: number;    // jours écoulés depuis le début
+  daysLeft: number;       // jours restants avant la date cible
+  remaining: number;      // modules encore à acquérir
+  capacityPerDay: number; // ce que ton temps quotidien permet
+  requiredPerDay: number; // ce qu'il faudrait pour tenir la date
+  projectedDays: number;  // jours nécessaires à ton rythme
+  projectedDate: string;  // date de fin prévue
+  status: PlanStatus;
+};
+
+export function getPacing(cfg: PlanConfig): Pacing {
+  const today = dayKey();
+  const { remaining: rem } = buildCurriculum(cfg);
+  const remaining = rem.length;
+  const capacityPerDay = pointsPerDay(cfg.minutesPerDay);
+
+  const totalDays = Math.max(1, daysBetween(cfg.startDate, cfg.targetDate));
+  const elapsedDays = Math.max(0, daysBetween(cfg.startDate, today));
+  const daysLeft = daysBetween(today, cfg.targetDate);
+
+  const projectedDays = Math.ceil(remaining / capacityPerDay);
+  const projectedDate = addDays(today, projectedDays);
+  const requiredPerDay = daysLeft > 0 ? remaining / daysLeft : Infinity;
+
+  let status: PlanStatus;
+  if (remaining === 0) status = 'done';
+  else if (daysLeft < 0) status = 'expired';
+  else if (projectedDays <= daysLeft * 0.85) status = 'ahead';
+  else if (projectedDays <= daysLeft) status = 'ontrack';
+  else status = 'behind';
+
+  return {
+    totalDays,
+    elapsedDays,
+    daysLeft,
+    remaining,
+    capacityPerDay,
+    requiredPerDay,
+    projectedDays,
+    projectedDate,
+    status,
+  };
+}
+
+// Format court pour l'affichage : "6 sept."
+export function formatShort(key: string): string {
+  const [, m, d] = key.split('-').map(Number);
+  const mois = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
+  return `${d} ${mois[(m || 1) - 1]}`;
 }
