@@ -1,0 +1,62 @@
+{
+  "id": "terminar_de",
+  "title": {
+    "fr": "Terminar de + infinitif – Finir de faire",
+    "en": "Terminar de + infinitive – To finish doing"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ **TERMINAR DE / ACABAR DE + infinitif** = finir de faire.\n\n➡️ *Terminé de trabajar a las seis.* → J'ai fini de travailler à six heures.\n➡️ *¿Has terminado de comer?*\n\n⚠️ Attention au sens double d'**acabar de** :\nau PRÉSENT = venir de (*Acabo de llegar*) ;\nau PASSÉ = finir de (*Acabé de leer el libro*).\n\n🎯 **NO TERMINAR DE** = ne pas totalement : *No termino de entenderlo.* → Je n'arrive pas vraiment à le comprendre.",
+    "en": "⚙️ **TERMINAR DE + infinitive** = to finish doing.\n➡️ *Terminé de trabajar a las seis.*\n⚠️ *acabar de* in present = have just; in past = finished.\n**NO TERMINAR DE** = not quite: *No termino de entenderlo.*"
+  },
+  "drills": [
+    {
+      "prompt": "Yo ___ ___ trabajar a las seis. (j'ai fini de)",
+      "answer": "terminé de"
+    },
+    {
+      "prompt": "¿Has ___ ___ comer? (fini de)",
+      "answer": "terminado de"
+    },
+    {
+      "prompt": "Ella ___ ___ estudiar a medianoche. (a fini de)",
+      "answer": "terminó de"
+    },
+    {
+      "prompt": "Nosotros ___ ___ pintar el piso ayer. (avons fini de)",
+      "answer": "terminamos de"
+    },
+    {
+      "prompt": "No ___ ___ entender este ejercicio. (je n'arrive pas vraiment à)",
+      "answer": "termino de"
+    },
+    {
+      "prompt": "Ellos ___ ___ cenar muy tarde. (ont fini de)",
+      "answer": "terminaron de"
+    },
+    {
+      "prompt": "Cuando ___ ___ leer, apaga la luz. (tú, subj. → termines)",
+      "answer": "termines de"
+    },
+    {
+      "prompt": "¿A qué hora ___ (terminar, tú) de trabajar hoy?",
+      "answer": "terminas"
+    },
+    {
+      "prompt": "Todavía no he ___ ___ hacer la maleta. (fini de)",
+      "answer": "terminado de"
+    },
+    {
+      "prompt": "Vosotros ___ ___ ordenar la casa. (avez fini de)",
+      "answer": "terminasteis de"
+    },
+    {
+      "prompt": "El niño no termina ___ comerse la sopa.",
+      "answer": "de"
+    },
+    {
+      "prompt": "Ya ___ (terminar, yo) de escribir el informe. (passé composé → he terminado)",
+      "answer": "he terminado"
+    }
+  ]
+}
