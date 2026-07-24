@@ -22,6 +22,7 @@ import {
   type PlanConfig,
 } from '@/data/studyPlan';
 import { getAllTopicScores } from '@/data/topicProgress';
+import PlaCalendari from '@/components/PlaCalendari';
 
 const MINUTES = [20, 30, 45, 60, 90, 120];
 
@@ -40,6 +41,7 @@ export default function PlaEstudi() {
   const [target, setTarget] = useState<Level>('B1');
   const [minutes, setMinutes] = useState<number>(60);
   const [lang, setLang] = useState<TargetLang>('catalan');
+  const [targetDate, setTargetDate] = useState<string>('2026-09-15');
 
   useEffect(() => {
     const c = loadConfig();
@@ -49,6 +51,7 @@ export default function PlaEstudi() {
       setTarget(c.targetLevel);
       setMinutes(c.minutesPerDay);
       setLang(c.lang);
+      if (c.targetDate) setTargetDate(c.targetDate);
     } else {
       const saved = localStorage.getItem('iberian-sprint-target-language');
       if (saved === 'catalan' || saved === 'spanish') setLang(saved);
@@ -85,6 +88,7 @@ export default function PlaEstudi() {
       minutesPerDay: minutes,
       lang,
       startDate: cfg?.startDate ?? today(),
+      targetDate,
     };
     saveConfig(c);
     setCfg(c);
@@ -152,6 +156,16 @@ export default function PlaEstudi() {
           ))}
         </div>
 
+        <label className="block text-sm font-semibold text-slate-300 mb-1">
+          Date cible (ton échéance)
+        </label>
+        <input
+          type="date"
+          value={targetDate}
+          onChange={(e) => setTargetDate(e.target.value)}
+          className="w-full mb-5 bg-slate-800 rounded-lg p-2 text-white"
+        />
+
         <button
           onClick={save}
           className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-black"
@@ -193,6 +207,8 @@ export default function PlaEstudi() {
           {done ? 'Périmètre terminé 🎉' : `≈ ${view?.daysLeft} jours à ce rythme`}
         </p>
       </div>
+
+      <PlaCalendari cfg={cfg} />
 
       {/* Grammaire du jour */}
       {done ? (
