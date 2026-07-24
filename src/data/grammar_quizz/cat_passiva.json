@@ -1,0 +1,79 @@
+{
+  "id": "cat_passiva",
+  "title": {
+    "fr": "Catalan : la voix passive et le SE passif",
+    "en": "Catalan: passive voice and passive SE"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ PASSIVE : SER + PARTICIPI (accordé) + PER + agent\nLa novel·la VA SER ESCRITA per Rodoreda.\nEls lladres VAN SER DETINGUTS per la policia.\n⚠️ Le participe s'accorde avec le SUJET : escrita, detinguts, construïdes.\n\n⚙️ SE PASSIF (bien plus fréquent à l'oral et à l'écrit courant)\nLe verbe s'accorde avec le nom :\nES VEN un pis. · ES VENEN pisos.\nES PARLA català. · ES PARLEN tres llengües.\n\n⚙️ SE IMPERSONNEL — pas de sujet, toujours au singulier\nES VIU bé a Barcelona. · ES MENJA tard a Espanya.\n\n💡 En catalan courant, on préfère le SE passif ou la 3e personne du pluriel\nà la passive avec « ser » : *Van construir el pont el 1900* plutôt que\n*El pont va ser construït el 1900*.",
+    "en": "⚙️ Passive: SER + participle (agreeing) + PER + agent.\nLa novel·la va ser escrita per Rodoreda.\nSE passive: es ven un pis / es venen pisos (verb agrees).\nImpersonal SE: es viu bé a Barcelona (always singular)."
+  },
+  "country": "catalonia",
+  "drills": [
+    {
+      "prompt": "La novel·la ___ ___ ___ (escriure) per Rodoreda. [va ser + participe fém.]",
+      "answer": "va ser escrita"
+    },
+    {
+      "prompt": "Els lladres ___ ___ ___ (detenir) per la policia. [masc. plur.]",
+      "answer": "van ser detinguts"
+    },
+    {
+      "prompt": "La Sagrada Família ___ ___ ___ (dissenyar) per Gaudí. [fém. sing.]",
+      "answer": "va ser dissenyada"
+    },
+    {
+      "prompt": "Les cases ___ ___ ___ (construir) el 1920. [fém. plur.]",
+      "answer": "van ser construïdes"
+    },
+    {
+      "prompt": "___ ___ (vendre) un pis al centre. [se passif, singulier]",
+      "answer": "es ven"
+    },
+    {
+      "prompt": "___ ___ (vendre) pisos en aquest edifici. [se passif, pluriel]",
+      "answer": "es venen"
+    },
+    {
+      "prompt": "___ ___ (parlar) català i castellà aquí. [se passif, pluriel]",
+      "answer": "es parlen"
+    },
+    {
+      "prompt": "___ ___ (buscar) cambrers. [se passif, pluriel]",
+      "answer": "es busquen"
+    },
+    {
+      "prompt": "___ ___ (viure) molt bé a Barcelona. [se impersonnel]",
+      "answer": "es viu"
+    },
+    {
+      "prompt": "A Espanya ___ ___ (sopar) tard. [se impersonnel]",
+      "answer": "es sopa"
+    },
+    {
+      "prompt": "___ ___ (prohibir) fumar al metro. [se impersonnel]",
+      "answer": "es prohibeix"
+    },
+    {
+      "prompt": "Des d'aquí ___ ___ (veure) el mar. [se passif, singulier]",
+      "answer": "es veu"
+    },
+    {
+      "prompt": "___ ___ (sentir) les campanes des de casa. [se passif, pluriel]",
+      "answer": "es senten"
+    },
+    {
+      "prompt": "La ciutat ___ ___ ___ (fundar) pels romans. [fém. sing.]",
+      "answer": "va ser fundada"
+    },
+    {
+      "prompt": "El quadre ___ ___ ___ (robar) del museu. [masc. sing.]",
+      "answer": "va ser robat"
+    },
+    {
+      "prompt": "___ ___ (necessitar) voluntaris per a la cursa. [se passif, pluriel]",
+      "answer": "es necessiten"
+    }
+  ]
+}
