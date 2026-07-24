@@ -124,7 +124,14 @@ export function buildCurriculum(cfg: PlanConfig): Curriculum {
   const lo = RANK[cfg.currentLevel];
   const hi = Math.max(lo, RANK[cfg.targetLevel]);
   const scores = getAllTopicScores();
-  const all = grammarPoints
+  // Dédoublonnage : grammar.ts contient des entrées enregistrées deux fois.
+  const seenIds = new Set<string>();
+  const unique = grammarPoints.filter((p) => {
+    if (seenIds.has(p.id)) return false;
+    seenIds.add(p.id);
+    return true;
+  });
+  const all = unique
     .filter((p) => (cfg.lang === 'catalan' ? isCatalan(p) : !isCatalan(p)))
     .filter((p) => {
       const r = maxRank(p.level);
