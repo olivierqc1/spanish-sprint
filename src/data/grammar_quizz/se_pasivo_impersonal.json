@@ -1,0 +1,62 @@
+{
+  "id": "se_pasivo_impersonal",
+  "title": {
+    "fr": "SE passif et impersonnel",
+    "en": "Passive and impersonal SE"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Deux structures avec **SE** :\n\n1️⃣ **SE passif** (avec un sujet, le verbe s'accorde) :\n*Se vende piso.* / *Se venden pisos.* → verbe au singulier ou pluriel selon le nom.\n*Se habla catalán aquí. / Se hablan tres lenguas.*\n\n2️⃣ **SE impersonnel** (pas de sujet précis, toujours singulier) :\n*Se vive bien en Barcelona.* → On vit bien à Barcelone.\n*Se come tarde en España.* · *En verano se duerme mal.*\n\n💡 Typique des annonces et règles : *Se alquila, Se prohíbe fumar, Se ruega silencio.*",
+    "en": "⚙️ Two SE structures:\n1️⃣ Passive SE (verb agrees with noun): *Se vende piso / Se venden pisos.*\n2️⃣ Impersonal SE (always singular): *Se vive bien en Barcelona.*\nCommon in signs: *Se alquila, Se prohíbe fumar.*"
+  },
+  "drills": [
+    {
+      "prompt": "Se ___ (vender) pisos en este edificio.",
+      "answer": "venden"
+    },
+    {
+      "prompt": "Se ___ (hablar) catalán y castellano aquí.",
+      "answer": "hablan"
+    },
+    {
+      "prompt": "Se ___ (vivir) bien en Barcelona.",
+      "answer": "vive"
+    },
+    {
+      "prompt": "En España se ___ (cenar) tarde.",
+      "answer": "cena"
+    },
+    {
+      "prompt": "Se ___ (alquilar) habitación en el centro.",
+      "answer": "alquila"
+    },
+    {
+      "prompt": "Se ___ (necesitar) camareros. (pluriel)",
+      "answer": "necesitan"
+    },
+    {
+      "prompt": "Se ___ (prohibir) fumar en el metro.",
+      "answer": "prohíbe"
+    },
+    {
+      "prompt": "¿Cómo se ___ (decir) 'chien' en catalán?",
+      "answer": "dice"
+    },
+    {
+      "prompt": "Se ___ (buscar) voluntarios para la carrera.",
+      "answer": "buscan"
+    },
+    {
+      "prompt": "Desde aquí se ___ (ver) la Sagrada Família.",
+      "answer": "ve"
+    },
+    {
+      "prompt": "Se ___ (comer) muy bien en este barrio.",
+      "answer": "come"
+    },
+    {
+      "prompt": "Se ___ (oír) las campanas desde casa.",
+      "answer": "oyen"
+    }
+  ]
+}
