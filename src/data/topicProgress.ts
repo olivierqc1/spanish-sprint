@@ -1,6 +1,8 @@
 // src/data/topicProgress.ts
 // Meilleur score (%) par point de grammaire, en localStorage.
 
+import { recordActivity } from './activityLog';
+
 const KEY = 'ss_topic_progress_v1';
 type ScoreMap = Record<string, number>; // id du point -> meilleur %
 
@@ -24,7 +26,9 @@ function save(m: ScoreMap): void {
 }
 
 // N'enregistre que si c'est un meilleur score que l'existant.
+// Marque toujours le jour comme "étudié", même si le score n'est pas un record.
 export function recordTopicScore(id: string, pct: number): void {
+  recordActivity();
   const m = load();
   if (pct > (m[id] ?? -1)) {
     m[id] = pct;
