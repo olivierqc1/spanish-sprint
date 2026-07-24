@@ -1,0 +1,79 @@
+{
+  "id": "cat_relatius",
+  "title": {
+    "fr": "Catalan : les propositions relatives (que, qui, què, on)",
+    "en": "Catalan: relative clauses"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ QUE — le plus courant, sans préposition (sujet ou COD, personnes ET choses)\nEl noi QUE viu aquí. · El llibre QUE vaig comprar.\n\n⚙️ Après une PRÉPOSITION, ça change :\n· personnes → QUI : La noia AMB QUI parlava. · L'home A QUI vaig escriure.\n· choses → QUÈ : El tema DE QUÈ parlem. · La casa EN QUÈ vivia.\n\n⚙️ EL QUAL / LA QUAL / ELS QUALS / LES QUALS\nRegistre soutenu, ou pour lever une ambiguïté :\nEl director, EL QUAL va arribar tard, es va disculpar.\n\n⚙️ ON = lieu (remplace « en què »)\nLa ciutat ON vaig néixer.\n\n⚙️ EL QUE / ALLÒ QUE = « ce que »\nNo entenc EL QUE dius.\n\n⚠️ Faute fréquente (calque du castillan) : ✗ el noi que li vaig donar\n→ correct : el noi A QUI vaig donar el llibre.",
+    "en": "⚙️ QUE = default relative (people and things, no preposition).\nAfter a preposition: QUI for people (amb qui, a qui), QUÈ for things (de què, en què).\nEL QUAL / LA QUAL = formal register. ON = place. EL QUE = \"what\"."
+  },
+  "country": "catalonia",
+  "drills": [
+    {
+      "prompt": "El noi ___ viu aquí és amic meu. [sujet, sans préposition]",
+      "answer": "que"
+    },
+    {
+      "prompt": "El llibre ___ vaig comprar és molt bo. [COD]",
+      "answer": "que"
+    },
+    {
+      "prompt": "La noia amb ___ parlava és la Laura. [personne + préposition]",
+      "answer": "qui"
+    },
+    {
+      "prompt": "L'home a ___ vaig escriure no ha contestat. [personne + préposition]",
+      "answer": "qui"
+    },
+    {
+      "prompt": "El tema de ___ parlem és complex. [chose + préposition]",
+      "answer": "què"
+    },
+    {
+      "prompt": "La ciutat ___ vaig néixer és Montreal. [lieu]",
+      "answer": "on"
+    },
+    {
+      "prompt": "No entenc ___ ___ dius. [« ce que »]",
+      "answer": "el que"
+    },
+    {
+      "prompt": "Els amics amb ___ vaig anar a Girona. [personnes + préposition]",
+      "answer": "qui"
+    },
+    {
+      "prompt": "La casa ___ vivíem era molt vella. [lieu]",
+      "answer": "on"
+    },
+    {
+      "prompt": "El director, el ___ va arribar tard, es va disculpar. [registre soutenu]",
+      "answer": "qual"
+    },
+    {
+      "prompt": "La proposta de ___ et vaig parlar. [chose + préposition]",
+      "answer": "què"
+    },
+    {
+      "prompt": "Aquesta és la raó per la ___ vaig marxar. [soutenu, fém.]",
+      "answer": "qual"
+    },
+    {
+      "prompt": "Les persones ___ treballen aquí són simpàtiques. [sujet]",
+      "answer": "que"
+    },
+    {
+      "prompt": "El restaurant ___ vam sopar era car. [lieu]",
+      "answer": "on"
+    },
+    {
+      "prompt": "Tot ___ ___ diu és veritat. [« ce que »]",
+      "answer": "el que"
+    },
+    {
+      "prompt": "La feina ___ faig m'agrada molt. [COD]",
+      "answer": "que"
+    }
+  ]
+}
