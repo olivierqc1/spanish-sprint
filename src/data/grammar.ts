@@ -10,6 +10,44 @@ export type GrammarPoint = {
 
 export const grammarPoints: GrammarPoint[] = [
 {
+  id: "cat_subjuntiu_present",
+  title: { fr: "Catalan : le subjonctif présent", en: "Catalan: present subjunctive" },
+  level: "B1",
+  note: { fr: "Vull que vinguis. sigui, tingui, faci, vagi, pugui, sàpiga.",
+          en: "Vull que vinguis. sigui, tingui, faci, vagi, pugui." },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_subjuntiu_present.json"
+},
+{
+  id: "cat_plusquamperfet",
+  title: { fr: "Catalan : le plus-que-parfait (havia parlat)", en: "Catalan: pluperfect" },
+  level: "B1",
+  note: { fr: "Quan vaig arribar, el tren ja havia sortit.",
+          en: "Quan vaig arribar, el tren ja havia sortit." },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_plusquamperfet.json"
+},
+{
+  id: "cat_relatius",
+  title: { fr: "Catalan : les propositions relatives (que, qui, què, on)",
+           en: "Catalan: relative clauses" },
+  level: "B1",
+  note: { fr: "que · amb qui (personnes) · de què (choses) · on (lieu).",
+          en: "que · amb qui (people) · de què (things) · on (place)." },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_relatius.json"
+},
+{
+  id: "cat_passiva",
+  title: { fr: "Catalan : la voix passive et le SE passif",
+           en: "Catalan: passive voice and passive SE" },
+  level: "B1",
+  note: { fr: "va ser escrita per... · es venen pisos · es viu bé.",
+          en: "va ser escrita per... · es venen pisos · es viu bé." },
+  country: "catalonia",
+  jsonPath: "/data/grammar_quizz/cat_passiva.json"
+},
+{
   id: "cat_participis_irregulars",
   title: {
     fr: "Catalan : participes irréguliers au perfet",
