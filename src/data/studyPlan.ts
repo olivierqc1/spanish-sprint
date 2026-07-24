@@ -3,7 +3,7 @@
 // et lit les scores réels de topicProgress pour s'ajuster automatiquement.
 
 import { grammarPoints, type GrammarPoint } from './grammar';
-import { getAllTopicScores } from './topicProgress';
+import { getAllTopicScores, getAllLastSeen } from './topicProgress';
 import { dayKey, daysBetween, addDays } from './activityLog';
 
 export type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
@@ -20,7 +20,9 @@ export type PlanConfig = {
 
 const CONFIG_KEY = 'ss_studyplan_v1';
 const TASKS_KEY = 'ss_studyplan_tasks_v1';
-const MASTERY = 80; // % pour considérer un point acquis
+const MASTERY = 80;    // % pour considérer un point acquis
+const GATE = 3;        // nb de modules faibles qui déclenche le mode consolidation
+const REVIEW_DAYS = 14; // un module acquis se révise après ce nb de jours
 
 export const LEVELS: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 const RANK: Record<Level, number> = { A1: 1, A2: 2, B1: 3, B2: 4, C1: 5, C2: 6 };
@@ -318,4 +320,71 @@ export function formatShort(key: string): string {
   const [, m, d] = key.split('-').map(Number);
   const mois = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
   return `${d} ${mois[(m || 1) - 1]}`;
+}
+
+// ---------- consolidation & révisions espacées ----------
+export type Reason = 'weak' | 'review' | 'new';
+export type TodayItem = { point: GrammarPoint; reason: Reason; best?: number };
+export type TodayPlan = {
+  mode: 'gate' | 'normal';
+  items: TodayItem[];
+  weakCount: number;   // modules déjà tentés mais sous le seuil
+  dueCount: number;    // modules acquis à réviser
+};
+
+// Modules travaillés mais encore sous le seuil, du plus faible au moins faible.
+export function getWeakPoints(cfg: PlanConfig): GrammarPoint[] {
+  const scores = getAllTopicScores();
+  return buildCurriculum(cfg)
+    .all.filter((p) => scores[p.id] !== undefined && scores[p.id] < MASTERY)
+    .sort((a, b) => (scores[a.id] ?? 0) - (scores[b.id] ?? 0));
+}
+
+// Modules acquis mais pas revus depuis REVIEW_DAYS jours.
+export function getDuePoints(cfg: PlanConfig): GrammarPoint[] {
+  const scores = getAllTopicScores();
+  const seen = getAllLastSeen();
+  const today = dayKey();
+  return buildCurriculum(cfg)
+    .all.filter((p) => (scores[p.id] ?? 0) >= MASTERY)
+    .filter((p) => {
+      const last = seen[p.id];
+      return !last || daysBetween(last, today) >= REVIEW_DAYS;
+    })
+    .sort((a, b) => {
+      const la = seen[a.id] ?? '0000-01-01';
+      const lb = seen[b.id] ?? '0000-01-01';
+      return la < lb ? -1 : 1;
+    });
+}
+
+// Le plan du jour : consolidation forcée si trop de modules faibles.
+export function getTodayPlan(cfg: PlanConfig): TodayPlan {
+  const scores = getAllTopicScores();
+  const perDay = pointsPerDay(cfg.minutesPerDay);
+  const weak = getWeakPoints(cfg);
+  const due = getDuePoints(cfg);
+  const fresh = buildCurriculum(cfg).all.filter((p) => scores[p.id] === undefined);
+
+  const wrap = (list: GrammarPoint[], reason: Reason): TodayItem[] =>
+    list.map((point) => ({ point, reason, best: scores[point.id] }));
+
+  // Verrou : trop de modules mal maîtrisés -> uniquement de la consolidation.
+  if (weak.length >= GATE) {
+    return {
+      mode: 'gate',
+      items: wrap(weak.slice(0, perDay), 'weak'),
+      weakCount: weak.length,
+      dueCount: due.length,
+    };
+  }
+
+  // Sinon : une révision espacée max, puis les faibles, puis du nouveau.
+  const items: TodayItem[] = [
+    ...wrap(due.slice(0, 1), 'review'),
+    ...wrap(weak, 'weak'),
+    ...wrap(fresh, 'new'),
+  ].slice(0, perDay);
+
+  return { mode: 'normal', items, weakCount: weak.length, dueCount: due.length };
 }
