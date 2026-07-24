@@ -8,7 +8,7 @@ import {
   saveConfig,
   clearConfig,
   buildCurriculum,
-  todaysGrammar,
+  getTodayPlan,
   estimateDaysLeft,
   pointsPerDay,
   wantsInput,
@@ -71,10 +71,12 @@ export default function PlaEstudi() {
   const view = useMemo(() => {
     if (!cfg) return null;
     const cur = buildCurriculum(cfg);
+    const plan = getTodayPlan(cfg);
     return {
-      grammar: todaysGrammar(cfg),
+      plan,
       mastered: cur.mastered.length,
       total: cur.all.length,
+      dueCount: plan.dueCount,
       daysLeft: estimateDaysLeft(cfg),
       perDay: pointsPerDay(cfg.minutesPerDay),
     };
@@ -179,7 +181,7 @@ export default function PlaEstudi() {
   // ---------- VUE DU JOUR ----------
   const tasks = getTodayTasks();
   const pct = view && view.total > 0 ? Math.round((view.mastered / view.total) * 100) : 0;
-  const done = view && view.grammar.length === 0;
+  const done = view && view.plan.items.length === 0;
 
   return (
     <section className="bg-slate-900 rounded-2xl p-5 border border-slate-800 space-y-4">
@@ -218,20 +220,41 @@ export default function PlaEstudi() {
         </div>
       ) : (
         <div className="space-y-2">
+          {view?.plan.mode === 'gate' && (
+            <div className="bg-amber-950/40 border border-amber-700 rounded-xl p-3 mb-1">
+              <p className="text-sm font-bold text-amber-300">🔒 Mode consolidation</p>
+              <p className="text-xs text-amber-100/80 mt-1">
+                {view.plan.weakCount} modules sont encore sous 80 %. Repasse-les au-dessus du seuil
+                avant d'en ouvrir de nouveaux — inutile d'empiler du neuf sur des bases fragiles.
+              </p>
+            </div>
+          )}
+
           <p className="text-xs uppercase tracking-wide text-slate-500 font-bold">
-            Grammaire ({view?.grammar.length})
+            {view?.plan.mode === 'gate' ? 'À consolider' : 'Grammaire'} ({view?.plan.items.length})
           </p>
-          {view?.grammar.map((p) => {
-            const best = scores[p.id];
+
+          {view?.plan.items.map(({ point, reason, best }) => {
+            const badge =
+              reason === 'weak'
+                ? { text: 'à consolider', cls: 'bg-amber-900/50 text-amber-300' }
+                : reason === 'review'
+                ? { text: 'révision', cls: 'bg-violet-900/50 text-violet-300' }
+                : { text: 'nouveau', cls: 'bg-blue-900/50 text-blue-300' };
             return (
               <Link
-                key={p.id}
-                href={`/grammaire?point=${p.id}`}
+                key={point.id}
+                href={`/grammaire?point=${point.id}`}
                 className="flex items-center justify-between bg-slate-800 rounded-lg p-3 hover:bg-slate-750"
               >
                 <div className="min-w-0">
-                  <p className="text-sm font-semibold truncate">{p.title.fr}</p>
-                  <p className="text-xs text-slate-500">{p.level}</p>
+                  <p className="text-sm font-semibold truncate">{point.title.fr}</p>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <span className="text-xs text-slate-500">{point.level}</span>
+                    <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full ${badge.cls}`}>
+                      {badge.text}
+                    </span>
+                  </div>
                 </div>
                 <span
                   className={`text-xs font-bold shrink-0 ml-2 ${
@@ -243,8 +266,12 @@ export default function PlaEstudi() {
               </Link>
             );
           })}
+
           <p className="text-xs text-slate-500">
             Tape un objectif pour l'ouvrir directement.
+            {view && view.dueCount > 0 && view.plan.mode === 'normal' && (
+              <> · {view.dueCount} module(s) à réviser bientôt.</>
+            )}
           </p>
         </div>
       )}
