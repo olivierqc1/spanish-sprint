@@ -1,0 +1,20 @@
+{
+  "id": "cat_pronoms_febles",
+  "title": "Pronoms febles — en, hi, ho, el/la, li",
+  "level": "A2",
+  "note": "**FR** : LE gros trou des bases en catalan. Sans eux, tu ne comprends pas la moitié des réponses. Complète avec le bon pronom.\n**EN** : the biggest gap in Catalan basics. Without these you miss half of what people answer.\n\n- **en** = *de + chose* / du partitif : *No **en** tinc* = je n'**en** ai pas\n- **hi** = lieu / « y » : *Ja **hi** vaig* = j'**y** vais\n- **ho** = « le » neutre (une idée) : *Ja **ho** sé* = je **le** sais\n- **el / la / els / les** = COD précis : *El veig* = je **le** vois\n- **li / els** = COI (à qqn) : *Li dono el llibre* = je **lui** donne le livre",
+  "drills": [
+    { "prompt": "— Tens pa? — No, no ___ tinc. (du pain → partitif)", "answer": "en", "hint": "partitif de + chose" },
+    { "prompt": "— Quants germans tens? — ___ tinc dos. (j'en ai deux)", "answer": "En", "hint": "en + nombre" },
+    { "prompt": "Vas a Girona? Sí, ___ vaig demà. (y = à Girona)", "answer": "hi", "hint": "lieu" },
+    { "prompt": "A la nevera ___ ha llet. (il y a)", "answer": "hi", "hint": "hi ha = il y a" },
+    { "prompt": "— Saps on és? — Sí, ___ sé. (je le sais)", "answer": "ho", "hint": "neutre = une idée" },
+    { "prompt": "No ___ entenc, pots repetir? (je ne le comprends pas)", "answer": "ho", "hint": "neutre" },
+    { "prompt": "Aquest llibre? Sí, ___ vull. (je le veux → llibre masc.)", "answer": "el", "hint": "COD masculin" },
+    { "prompt": "La Laura? Fa temps que no ___ veig. (je ne la vois pas)", "answer": "la", "hint": "COD féminin" },
+    { "prompt": "Les claus? Ja ___ tinc. (je les ai → claus fém. pl.)", "answer": "les", "hint": "COD fém. pluriel" },
+    { "prompt": "A la meva mare ___ truco cada diumenge. (je lui téléphone)", "answer": "li", "hint": "COI à qqn" },
+    { "prompt": "Als meus pares ___ escric un correu. (je leur écris)", "answer": "els", "hint": "COI pluriel" },
+    { "prompt": "— Vols cafè? — No, gràcies, no ___ vull. (je n'en veux pas)", "answer": "en", "hint": "partitif" }
+  ]
+}
