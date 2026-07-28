@@ -1,0 +1,158 @@
+{
+  "id": "cat_vocab_menjar_compres",
+  "title": "Vocabulari — menjar i compres",
+  "level": "A1-A2",
+  "note": "Manger, cuisiner, acheter : le theme le plus frequent a l'oral. Produis le mot catalan avant de verifier.",
+  "drills": [
+    {
+      "prompt": "le pain →",
+      "answer": "el pa",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le lait →",
+      "answer": "la llet",
+      "hint": "la..."
+    },
+    {
+      "prompt": "le fromage →",
+      "answer": "el formatge",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la viande →",
+      "answer": "la carn",
+      "hint": "la..."
+    },
+    {
+      "prompt": "le poisson →",
+      "answer": "el peix",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le poulet →",
+      "answer": "el pollastre",
+      "hint": "el..."
+    },
+    {
+      "prompt": "l'oeuf →",
+      "answer": "l'ou",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "le riz →",
+      "answer": "l'arròs",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "les legumes →",
+      "answer": "les verdures",
+      "hint": "le..."
+    },
+    {
+      "prompt": "les fruits →",
+      "answer": "la fruita",
+      "hint": "la..."
+    },
+    {
+      "prompt": "la pomme →",
+      "answer": "la poma",
+      "hint": "la..."
+    },
+    {
+      "prompt": "l'oignon →",
+      "answer": "la ceba",
+      "hint": "la..."
+    },
+    {
+      "prompt": "l'ail →",
+      "answer": "l'all",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "l'huile →",
+      "answer": "l'oli",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "le sel →",
+      "answer": "la sal",
+      "hint": "la..."
+    },
+    {
+      "prompt": "le sucre →",
+      "answer": "el sucre",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le vin →",
+      "answer": "el vi",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la biere →",
+      "answer": "la cervesa",
+      "hint": "la..."
+    },
+    {
+      "prompt": "le petit-dejeuner →",
+      "answer": "l'esmorzar",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "le diner (midi) →",
+      "answer": "el dinar",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le souper →",
+      "answer": "el sopar",
+      "hint": "el..."
+    },
+    {
+      "prompt": "avoir faim →",
+      "answer": "tenir gana",
+      "hint": "te..."
+    },
+    {
+      "prompt": "avoir soif →",
+      "answer": "tenir set",
+      "hint": "te..."
+    },
+    {
+      "prompt": "gouter (verbe) →",
+      "answer": "tastar",
+      "hint": "ta..."
+    },
+    {
+      "prompt": "le marche →",
+      "answer": "el mercat",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la boulangerie →",
+      "answer": "el forn",
+      "hint": "el..."
+    },
+    {
+      "prompt": "l'addition →",
+      "answer": "el compte",
+      "hint": "el..."
+    },
+    {
+      "prompt": "cher →",
+      "answer": "car",
+      "hint": "ca..."
+    },
+    {
+      "prompt": "bon marche →",
+      "answer": "barat",
+      "hint": "ba..."
+    },
+    {
+      "prompt": "faire les courses →",
+      "answer": "fer la compra",
+      "hint": "fe..."
+    }
+  ]
+}
