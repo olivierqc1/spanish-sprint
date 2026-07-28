@@ -1,0 +1,22 @@
+{
+  "id": "cat_present_verbs_frequents",
+  "title": "Present — els verbs que fas servir cada dia",
+  "level": "A1",
+  "note": "**FR** : le socle. Ces 10 verbes couvrent 80% de ce que tu dis au quotidien. Conjugue au présent.\n**EN** : the bedrock. These 10 verbs cover 80% of everyday speech.\n\nAttention au piège **ser / estar** : *ser* = identité/caractéristique permanente, *estar* = état/lieu momentané.",
+  "drills": [
+    { "prompt": "Jo ___ del Quebec. (ser)", "answer": "sóc", "hint": "ser, origine" },
+    { "prompt": "Nosaltres ___ a Barcelona. (estar, lieu)", "answer": "estem", "hint": "estar, lieu" },
+    { "prompt": "Ella ___ 30 anys. (tenir)", "answer": "té", "hint": "tenir" },
+    { "prompt": "Què ___ (tu) aquest cap de setmana? (fer)", "answer": "fas", "hint": "fer" },
+    { "prompt": "Nosaltres ___ a la muntanya. (anar)", "answer": "anem", "hint": "anar" },
+    { "prompt": "Jo ___ un cafè, si us plau. (voler)", "answer": "vull", "hint": "voler" },
+    { "prompt": "___ (tu) venir demà? (poder)", "answer": "Pots", "hint": "poder" },
+    { "prompt": "A la plaça ___ molta gent. (haver-hi)", "answer": "hi ha", "hint": "haver-hi = il y a" },
+    { "prompt": "M'___ molt el vi negre. (agradar, ça me plaît)", "answer": "agrada", "hint": "agradar, sing." },
+    { "prompt": "Ells ___ que sí. (dir)", "answer": "diuen", "hint": "dir" },
+    { "prompt": "Vosaltres ___ de França? (ser, origine)", "answer": "sou", "hint": "ser" },
+    { "prompt": "Jo ___ cansat avui. (estar, état)", "answer": "estic", "hint": "estar, état passager" },
+    { "prompt": "Ella ___ a la festa aquest vespre. (venir)", "answer": "ve", "hint": "venir" },
+    { "prompt": "Nosaltres ___ nedar. (saber)", "answer": "sabem", "hint": "saber" }
+  ]
+}
