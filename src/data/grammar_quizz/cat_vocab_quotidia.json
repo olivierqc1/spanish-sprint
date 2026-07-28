@@ -1,0 +1,158 @@
+{
+  "id": "cat_vocab_quotidia",
+  "title": "Vocabulari — la vida quotidiana",
+  "level": "A1-A2",
+  "note": "Le vocabulaire de tous les jours : maison, routine, objets. Produis le mot catalan AVANT de regarder la reponse.",
+  "drills": [
+    {
+      "prompt": "se lever →",
+      "answer": "llevar-se",
+      "hint": "ll..."
+    },
+    {
+      "prompt": "se coucher →",
+      "answer": "anar a dormir",
+      "hint": "an..."
+    },
+    {
+      "prompt": "s'habiller →",
+      "answer": "vestir-se",
+      "hint": "ve..."
+    },
+    {
+      "prompt": "se doucher →",
+      "answer": "dutxar-se",
+      "hint": "du..."
+    },
+    {
+      "prompt": "le lit →",
+      "answer": "el llit",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la cuisine →",
+      "answer": "la cuina",
+      "hint": "la..."
+    },
+    {
+      "prompt": "la chambre →",
+      "answer": "l'habitació",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "la salle de bain →",
+      "answer": "el bany",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la porte →",
+      "answer": "la porta",
+      "hint": "la..."
+    },
+    {
+      "prompt": "la fenetre →",
+      "answer": "la finestra",
+      "hint": "la..."
+    },
+    {
+      "prompt": "la table →",
+      "answer": "la taula",
+      "hint": "la..."
+    },
+    {
+      "prompt": "la chaise →",
+      "answer": "la cadira",
+      "hint": "la..."
+    },
+    {
+      "prompt": "la cle →",
+      "answer": "la clau",
+      "hint": "la..."
+    },
+    {
+      "prompt": "le telephone →",
+      "answer": "el telèfon",
+      "hint": "el..."
+    },
+    {
+      "prompt": "l'argent →",
+      "answer": "els diners",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le sac →",
+      "answer": "la bossa",
+      "hint": "la..."
+    },
+    {
+      "prompt": "ranger →",
+      "answer": "endreçar",
+      "hint": "en..."
+    },
+    {
+      "prompt": "nettoyer →",
+      "answer": "netejar",
+      "hint": "ne..."
+    },
+    {
+      "prompt": "laver →",
+      "answer": "rentar",
+      "hint": "re..."
+    },
+    {
+      "prompt": "cuisiner →",
+      "answer": "cuinar",
+      "hint": "cu..."
+    },
+    {
+      "prompt": "le matin →",
+      "answer": "el matí",
+      "hint": "el..."
+    },
+    {
+      "prompt": "l'apres-midi →",
+      "answer": "la tarda",
+      "hint": "la..."
+    },
+    {
+      "prompt": "le soir →",
+      "answer": "el vespre",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la nuit →",
+      "answer": "la nit",
+      "hint": "la..."
+    },
+    {
+      "prompt": "tot de suite →",
+      "answer": "de seguida",
+      "hint": "de..."
+    },
+    {
+      "prompt": "souvent →",
+      "answer": "sovint",
+      "hint": "so..."
+    },
+    {
+      "prompt": "parfois →",
+      "answer": "de vegades",
+      "hint": "de..."
+    },
+    {
+      "prompt": "jamais →",
+      "answer": "mai",
+      "hint": "ma..."
+    },
+    {
+      "prompt": "tot →",
+      "answer": "aviat",
+      "hint": "av..."
+    },
+    {
+      "prompt": "tard →",
+      "answer": "tard",
+      "hint": "ta..."
+    }
+  ]
+}
