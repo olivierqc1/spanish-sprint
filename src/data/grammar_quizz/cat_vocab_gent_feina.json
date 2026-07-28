@@ -1,0 +1,158 @@
+{
+  "id": "cat_vocab_gent_feina",
+  "title": "Vocabulari — la gent i la feina",
+  "level": "A1-A2",
+  "note": "Decrire les gens, parler de son travail et de ses etudes. Produis le mot catalan avant de verifier.",
+  "drills": [
+    {
+      "prompt": "l'ami →",
+      "answer": "l'amic",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "l'amie →",
+      "answer": "l'amiga",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "le voisin →",
+      "answer": "el veí",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le collegue →",
+      "answer": "el company de feina",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le mari →",
+      "answer": "el marit",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la femme (epouse) →",
+      "answer": "la dona",
+      "hint": "la..."
+    },
+    {
+      "prompt": "le fils →",
+      "answer": "el fill",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la fille →",
+      "answer": "la filla",
+      "hint": "la..."
+    },
+    {
+      "prompt": "les parents →",
+      "answer": "els pares",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le frere →",
+      "answer": "el germà",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la soeur →",
+      "answer": "la germana",
+      "hint": "la..."
+    },
+    {
+      "prompt": "les grands-parents →",
+      "answer": "els avis",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le travail →",
+      "answer": "la feina",
+      "hint": "la..."
+    },
+    {
+      "prompt": "le bureau →",
+      "answer": "l'oficina",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "la reunion →",
+      "answer": "la reunió",
+      "hint": "la..."
+    },
+    {
+      "prompt": "le patron →",
+      "answer": "el cap",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le salaire →",
+      "answer": "el sou",
+      "hint": "el..."
+    },
+    {
+      "prompt": "chercher du travail →",
+      "answer": "buscar feina",
+      "hint": "bu..."
+    },
+    {
+      "prompt": "l'entretien →",
+      "answer": "l'entrevista",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "l'entreprise →",
+      "answer": "l'empresa",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "etudier →",
+      "answer": "estudiar",
+      "hint": "es..."
+    },
+    {
+      "prompt": "apprendre →",
+      "answer": "aprendre",
+      "hint": "ap..."
+    },
+    {
+      "prompt": "enseigner →",
+      "answer": "ensenyar",
+      "hint": "en..."
+    },
+    {
+      "prompt": "le cours →",
+      "answer": "el curs",
+      "hint": "el..."
+    },
+    {
+      "prompt": "sympa →",
+      "answer": "simpàtic",
+      "hint": "si..."
+    },
+    {
+      "prompt": "gentil →",
+      "answer": "amable",
+      "hint": "am..."
+    },
+    {
+      "prompt": "fatigue →",
+      "answer": "cansat",
+      "hint": "ca..."
+    },
+    {
+      "prompt": "occupe →",
+      "answer": "ocupat",
+      "hint": "oc..."
+    },
+    {
+      "prompt": "content →",
+      "answer": "content",
+      "hint": "co..."
+    },
+    {
+      "prompt": "inquiet →",
+      "answer": "preocupat",
+      "hint": "pr..."
+    }
+  ]
+}
