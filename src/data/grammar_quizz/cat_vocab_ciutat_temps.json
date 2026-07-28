@@ -1,0 +1,158 @@
+{
+  "id": "cat_vocab_ciutat_temps",
+  "title": "Vocabulari — la ciutat, el temps, els viatges",
+  "level": "A1-A2",
+  "note": "Se deplacer, decrire la ville et la meteo, voyager. Produis le mot catalan avant de verifier.",
+  "drills": [
+    {
+      "prompt": "la rue →",
+      "answer": "el carrer",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la place →",
+      "answer": "la plaça",
+      "hint": "la..."
+    },
+    {
+      "prompt": "le quartier →",
+      "answer": "el barri",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le batiment →",
+      "answer": "l'edifici",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "l'immeuble (appart) →",
+      "answer": "el pis",
+      "hint": "el..."
+    },
+    {
+      "prompt": "l'ascenseur →",
+      "answer": "l'ascensor",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "l'etage →",
+      "answer": "el pis",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le trottoir →",
+      "answer": "la vorera",
+      "hint": "la..."
+    },
+    {
+      "prompt": "le metro →",
+      "answer": "el metro",
+      "hint": "el..."
+    },
+    {
+      "prompt": "l'autobus →",
+      "answer": "l'autobús",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "le train →",
+      "answer": "el tren",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la voiture →",
+      "answer": "el cotxe",
+      "hint": "el..."
+    },
+    {
+      "prompt": "a pied →",
+      "answer": "a peu",
+      "hint": "a ..."
+    },
+    {
+      "prompt": "le billet →",
+      "answer": "el bitllet",
+      "hint": "el..."
+    },
+    {
+      "prompt": "l'arret →",
+      "answer": "la parada",
+      "hint": "la..."
+    },
+    {
+      "prompt": "la gare →",
+      "answer": "l'estació",
+      "hint": "l'..."
+    },
+    {
+      "prompt": "tourner →",
+      "answer": "girar",
+      "hint": "gi..."
+    },
+    {
+      "prompt": "tout droit →",
+      "answer": "tot recte",
+      "hint": "to..."
+    },
+    {
+      "prompt": "a gauche →",
+      "answer": "a l'esquerra",
+      "hint": "a ..."
+    },
+    {
+      "prompt": "a droite →",
+      "answer": "a la dreta",
+      "hint": "a ..."
+    },
+    {
+      "prompt": "pres →",
+      "answer": "a prop",
+      "hint": "a ..."
+    },
+    {
+      "prompt": "loin →",
+      "answer": "lluny",
+      "hint": "ll..."
+    },
+    {
+      "prompt": "il fait chaud →",
+      "answer": "fa calor",
+      "hint": "fa..."
+    },
+    {
+      "prompt": "il fait froid →",
+      "answer": "fa fred",
+      "hint": "fa..."
+    },
+    {
+      "prompt": "il pleut →",
+      "answer": "plou",
+      "hint": "pl..."
+    },
+    {
+      "prompt": "il y a du vent →",
+      "answer": "fa vent",
+      "hint": "fa..."
+    },
+    {
+      "prompt": "le ciel →",
+      "answer": "el cel",
+      "hint": "el..."
+    },
+    {
+      "prompt": "le soleil →",
+      "answer": "el sol",
+      "hint": "el..."
+    },
+    {
+      "prompt": "la montagne →",
+      "answer": "la muntanya",
+      "hint": "la..."
+    },
+    {
+      "prompt": "la plage →",
+      "answer": "la platja",
+      "hint": "la..."
+    }
+  ]
+}
