@@ -9,6 +9,11 @@ export type GrammarPoint = {
 };
 
 export const grammarPoints: GrammarPoint[] = [
+{ id: "cat_pronoms_febles", title: "Pronoms febles — en, hi, ho, el/la, li", level: "A2", lang: "catalan" },
+{ id: "cat_connectors_basics", title: "Connectors bàsics", level: "A2", lang: "catalan" },
+{ id: "cat_chunks_funcionals", title: "Frases fetes — sobreviure", level: "A2", lang: "catalan" },
+{ id: "cat_present_verbs_frequents", title: "Present — verbs quotidians", level: "A1", lang: "catalan" },
+{ id: "cat_vocab_survival", title: "Vocabulari de supervivència", level: "A1", lang: "catalan" },
 {
   id: "cat_subjuntiu_present",
   title: { fr: "Catalan : le subjonctif présent", en: "Catalan: present subjunctive" },
