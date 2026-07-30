@@ -1,0 +1,46 @@
+{
+  "id": "cat_condicional_haver_de",
+  "title": {
+    "fr": "Catalan : conditionnel (de « Hauríem de »)",
+    "en": "Catalan: conditional from « Hauríem de »"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙ Transformer « Hauríem de + infinitif » en conditionnel.\n\n🎯 LE CONDITIONNEL RÉGULIER\n→ infinitif ENTIER + ia / ies / ia / íem / íeu / ien\n→ parlar : parlaria, parlaries, parlaria, parlaríem, parlaríeu, parlarien\n\n🎯 EXEMPLE DE TRANSFORMATION\n→ Hauríem DE REPARAR l'edifici → REPARARÍEM l'edifici\n→ On garde le sens, on condense en un seul verbe.\n\n💡 Le radical du conditionnel est TOUJOURS le même que celui du futur.",
+    "en": "⚙ Regular conditional = full infinitive + ia/ies/ia/íem/íeu/ien. Hauríem de reparar → Repararíem."
+  },
+  "drills": [
+    {
+      "prompt": "Hauríem de reparar l'edifici. → ___ l'edifici.",
+      "answer": "Repararíem"
+    },
+    {
+      "prompt": "Hauríem de netejar l'interior. → ___ l'interior.",
+      "answer": "Netejaríem"
+    },
+    {
+      "prompt": "Hauríem de pintar les parets. → ___ les parets.",
+      "answer": "Pintaríem"
+    },
+    {
+      "prompt": "Hauríem de repassar les finestres. → ___ les finestres.",
+      "answer": "Repassaríem"
+    },
+    {
+      "prompt": "Hauríem de canviar les instal·lacions. → ___ les instal·lacions.",
+      "answer": "Canviaríem"
+    },
+    {
+      "prompt": "Hauríem de parlar amb el veí. → ___ amb el veí.",
+      "answer": "Parlaríem"
+    },
+    {
+      "prompt": "Hauríem de trucar a l'administrador. → ___ a l'administrador.",
+      "answer": "Trucaríem"
+    },
+    {
+      "prompt": "Hauríem d'estudiar més. → ___ més.",
+      "answer": "Estudiaríem"
+    }
+  ]
+}
