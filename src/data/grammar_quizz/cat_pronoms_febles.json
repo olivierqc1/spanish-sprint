@@ -1,20 +1,62 @@
 {
   "id": "cat_pronoms_febles",
-  "title": "Pronoms febles — en, hi, ho, el/la, li",
+  "title": {
+    "fr": "Catalan : pronoms febles (en, hi, ho, el/la, li)",
+    "en": "Catalan: weak pronouns"
+  },
   "level": "A2",
-  "note": "**FR** : LE gros trou des bases en catalan. Sans eux, tu ne comprends pas la moitié des réponses. Complète avec le bon pronom.\n**EN** : the biggest gap in Catalan basics. Without these you miss half of what people answer.\n\n- **en** = *de + chose* / du partitif : *No **en** tinc* = je n'**en** ai pas\n- **hi** = lieu / « y » : *Ja **hi** vaig* = j'**y** vais\n- **ho** = « le » neutre (une idée) : *Ja **ho** sé* = je **le** sais\n- **el / la / els / les** = COD précis : *El veig* = je **le** vois\n- **li / els** = COI (à qqn) : *Li dono el llibre* = je **lui** donne le livre",
+  "note": {
+    "fr": "⚙ Les pronoms febles remplacent un mot déjà connu. Sans eux, tu ne comprends pas les réponses courtes.\n\n🎯 EN → remplace « de + chose » ou un partitif\n→ Tens pa? — No, no EN tinc.\n→ Quants germans? — EN tinc dos.\n\n🎯 HI → remplace un lieu (le « y » français)\n→ Vas a Girona? — Sí, HI vaig demà.\n→ HI HA = il y a\n\n🎯 HO → remplace une idée entière (neutre)\n→ Saps on és? — Sí, HO sé.\n\n🎯 EL / LA / ELS / LES → COD précis\n→ Aquest llibre? EL vull.\n\n🎯 LI / ELS → COI (à quelqu'un)\n→ A la mare, LI truco cada diumenge.\n\n💡 Piège : « en » n'est jamais un lieu, « hi » n'est jamais une chose.",
+    "en": "⚙ Catalan weak pronouns: EN (of it/some), HI (there), HO (neutral it), EL/LA/ELS/LES (direct object), LI/ELS (indirect object)."
+  },
   "drills": [
-    { "prompt": "— Tens pa? — No, no ___ tinc. (du pain → partitif)", "answer": "en", "hint": "partitif de + chose" },
-    { "prompt": "— Quants germans tens? — ___ tinc dos. (j'en ai deux)", "answer": "En", "hint": "en + nombre" },
-    { "prompt": "Vas a Girona? Sí, ___ vaig demà. (y = à Girona)", "answer": "hi", "hint": "lieu" },
-    { "prompt": "A la nevera ___ ha llet. (il y a)", "answer": "hi", "hint": "hi ha = il y a" },
-    { "prompt": "— Saps on és? — Sí, ___ sé. (je le sais)", "answer": "ho", "hint": "neutre = une idée" },
-    { "prompt": "No ___ entenc, pots repetir? (je ne le comprends pas)", "answer": "ho", "hint": "neutre" },
-    { "prompt": "Aquest llibre? Sí, ___ vull. (je le veux → llibre masc.)", "answer": "el", "hint": "COD masculin" },
-    { "prompt": "La Laura? Fa temps que no ___ veig. (je ne la vois pas)", "answer": "la", "hint": "COD féminin" },
-    { "prompt": "Les claus? Ja ___ tinc. (je les ai → claus fém. pl.)", "answer": "les", "hint": "COD fém. pluriel" },
-    { "prompt": "A la meva mare ___ truco cada diumenge. (je lui téléphone)", "answer": "li", "hint": "COI à qqn" },
-    { "prompt": "Als meus pares ___ escric un correu. (je leur écris)", "answer": "els", "hint": "COI pluriel" },
-    { "prompt": "— Vols cafè? — No, gràcies, no ___ vull. (je n'en veux pas)", "answer": "en", "hint": "partitif" }
+    {
+      "prompt": "— Tens pa? — No, no ___ tinc. (du pain → partitif)",
+      "answer": "en"
+    },
+    {
+      "prompt": "— Quants germans tens? — ___ tinc dos. (j'en ai deux)",
+      "answer": "En"
+    },
+    {
+      "prompt": "Vas a Girona? Sí, ___ vaig demà. (y = à Girona)",
+      "answer": "hi"
+    },
+    {
+      "prompt": "A la nevera ___ ha llet. (il y a)",
+      "answer": "hi"
+    },
+    {
+      "prompt": "— Saps on és? — Sí, ___ sé. (je le sais)",
+      "answer": "ho"
+    },
+    {
+      "prompt": "No ___ entenc, pots repetir? (je ne le comprends pas)",
+      "answer": "ho"
+    },
+    {
+      "prompt": "Aquest llibre? Sí, ___ vull. (je le veux → llibre masc.)",
+      "answer": "el"
+    },
+    {
+      "prompt": "La Laura? Fa temps que no ___ veig. (je ne la vois pas)",
+      "answer": "la"
+    },
+    {
+      "prompt": "Les claus? Ja ___ tinc. (je les ai → claus fém. pl.)",
+      "answer": "les"
+    },
+    {
+      "prompt": "A la meva mare ___ truco cada diumenge. (je lui téléphone)",
+      "answer": "li"
+    },
+    {
+      "prompt": "Als meus pares ___ escric un correu. (je leur écris)",
+      "answer": "els"
+    },
+    {
+      "prompt": "— Vols cafè? — No, gràcies, no ___ vull. (je n'en veux pas)",
+      "answer": "en"
+    }
   ]
 }
