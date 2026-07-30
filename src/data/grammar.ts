@@ -10,6 +10,12 @@ export type GrammarPoint = {
 };
 
 export const grammarPoints: GrammarPoint[] = [
+{ id: "cat_habitatge_hi_ha", title: { fr: "Catalan : logement, hi ha / n'hi ha, situer", en: "Catalan: housing, hi ha / n'hi ha, location" }, level: "A2", note: { fr: "Decrire un logement et situer les choses dans l'espace.", en: "Describing a home and locating things." }, country: "all", jsonPath: "/data/grammar_quizz/cat_habitatge_hi_ha.json" },
+  { id: "cat_comparatius", title: { fr: "Catalan : comparer (mes que, tan com, millor)", en: "Catalan: comparatives" }, level: "A2", note: { fr: "millor et pitjor, jamais mes bo ni mes dolent.", en: "millor and pitjor, never mes bo." }, country: "all", jsonPath: "/data/grammar_quizz/cat_comparatius.json" },
+  { id: "cat_salut_cos", title: { fr: "Catalan : la sante et le corps", en: "Catalan: health and the body" }, level: "A2", note: { fr: "Le corps, les symptomes, chez le medecin.", en: "Body, symptoms, at the doctor's." }, country: "all", jsonPath: "/data/grammar_quizz/cat_salut_cos.json" },
+  { id: "cat_feina_estudis", title: { fr: "Catalan : le travail et les etudes", en: "Catalan: work and studies" }, level: "A2", note: { fr: "Entretien, contrat, master : utile pour l'UB.", en: "Interviews, contracts, university." }, country: "all", jsonPath: "/data/grammar_quizz/cat_feina_estudis.json" },
+  { id: "cat_quedar_plans", title: { fr: "Catalan : fixer un rendez-vous, faire des plans", en: "Catalan: making plans" }, level: "A2", note: { fr: "Proposer, accepter, refuser, et le futur.", en: "Proposing, accepting, declining, future tense." }, country: "all", jsonPath: "/data/grammar_quizz/cat_quedar_plans.json" },
+  { id: "cat_menjar_fora", title: { fr: "Catalan : au bar et au restaurant", en: "Catalan: eating out" }, level: "A2", note: { fr: "Commander, demander, payer.", en: "Ordering, asking, paying." }, country: "all", jsonPath: "/data/grammar_quizz/cat_menjar_fora.json" },
   {
     id: "cat_pronoms_febles",
     title: { fr: "Catalan : pronoms febles (en, hi, ho, el/la, li)", en: "Catalan: weak pronouns (en, hi, ho, el/la, li)" },
