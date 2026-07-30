@@ -1,0 +1,138 @@
+{
+  "id": "cat_feina_estudis",
+  "title": "La feina i els estudis",
+  "level": "A2",
+  "note": "Travail, entretien, etudes : le vocabulaire dont tu as besoin pour l'UB et pour chercher un emploi.",
+  "drills": [
+    {
+      "prompt": "le travail / l'emploi →",
+      "answer": "la feina",
+      "hint": "la f..."
+    },
+    {
+      "prompt": "chercher du travail →",
+      "answer": "buscar feina",
+      "hint": "bu..."
+    },
+    {
+      "prompt": "l'entretien d'embauche →",
+      "answer": "l'entrevista de treball",
+      "hint": "l'e..."
+    },
+    {
+      "prompt": "le CV →",
+      "answer": "el curriculum",
+      "hint": "el c..."
+    },
+    {
+      "prompt": "le salaire →",
+      "answer": "el sou",
+      "hint": "el s..."
+    },
+    {
+      "prompt": "l'horaire →",
+      "answer": "l'horari",
+      "hint": "l'h..."
+    },
+    {
+      "prompt": "le patron / la cheffe →",
+      "answer": "el cap",
+      "hint": "el c..."
+    },
+    {
+      "prompt": "le collegue →",
+      "answer": "el company de feina",
+      "hint": "el c..."
+    },
+    {
+      "prompt": "l'entreprise →",
+      "answer": "l'empresa",
+      "hint": "l'e..."
+    },
+    {
+      "prompt": "la reunion →",
+      "answer": "la reunio",
+      "hint": "la r..."
+    },
+    {
+      "prompt": "le contrat →",
+      "answer": "el contracte",
+      "hint": "el c..."
+    },
+    {
+      "prompt": "a temps plein →",
+      "answer": "a jornada completa",
+      "hint": "a j..."
+    },
+    {
+      "prompt": "a temps partiel →",
+      "answer": "a mitja jornada",
+      "hint": "a m..."
+    },
+    {
+      "prompt": "le stage →",
+      "answer": "les practiques",
+      "hint": "les p..."
+    },
+    {
+      "prompt": "les etudes →",
+      "answer": "els estudis",
+      "hint": "els e..."
+    },
+    {
+      "prompt": "la licence / le diplome →",
+      "answer": "la carrera",
+      "hint": "la c..."
+    },
+    {
+      "prompt": "le master →",
+      "answer": "el master",
+      "hint": "el m..."
+    },
+    {
+      "prompt": "la matiere / le cours →",
+      "answer": "l'assignatura",
+      "hint": "l'a..."
+    },
+    {
+      "prompt": "passer un examen →",
+      "answer": "fer un examen",
+      "hint": "fer..."
+    },
+    {
+      "prompt": "reussir (un examen) →",
+      "answer": "aprovar",
+      "hint": "ap..."
+    },
+    {
+      "prompt": "echouer →",
+      "answer": "suspendre",
+      "hint": "su..."
+    },
+    {
+      "prompt": "s'inscrire →",
+      "answer": "matricular-se",
+      "hint": "ma..."
+    },
+    {
+      "prompt": "la bourse (etudes) →",
+      "answer": "la beca",
+      "hint": "la b..."
+    },
+    {
+      "prompt": "Je travaille comme analyste. →",
+      "answer": "Treballo d'analista",
+      "hint": "Tre..."
+    },
+    {
+      "prompt": "Je fais un master d'economie. →",
+      "answer": "Faig un master d'economia",
+      "hint": "Faig..."
+    },
+    {
+      "prompt": "Ca fait deux ans que j'habite ici. →",
+      "answer": "Fa dos anys que visc aqui",
+      "hint": "Fa..."
+    }
+  ]
+}
