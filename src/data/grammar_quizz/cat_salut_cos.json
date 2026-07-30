@@ -1,0 +1,148 @@
+{
+  "id": "cat_salut_cos",
+  "title": "La salut i el cos",
+  "level": "A2",
+  "note": "Le corps, les symptomes, chez le medecin. Produis avant de verifier.",
+  "drills": [
+    {
+      "prompt": "la tete →",
+      "answer": "el cap",
+      "hint": "el c..."
+    },
+    {
+      "prompt": "le dos →",
+      "answer": "l'esquena",
+      "hint": "l'e..."
+    },
+    {
+      "prompt": "la jambe →",
+      "answer": "la cama",
+      "hint": "la c..."
+    },
+    {
+      "prompt": "le pied →",
+      "answer": "el peu",
+      "hint": "el p..."
+    },
+    {
+      "prompt": "la main →",
+      "answer": "la ma",
+      "hint": "la m..."
+    },
+    {
+      "prompt": "le bras →",
+      "answer": "el brac",
+      "hint": "el b..."
+    },
+    {
+      "prompt": "le ventre →",
+      "answer": "la panxa",
+      "hint": "la p..."
+    },
+    {
+      "prompt": "la gorge →",
+      "answer": "el coll",
+      "hint": "el c..."
+    },
+    {
+      "prompt": "le genou →",
+      "answer": "el genoll",
+      "hint": "el g..."
+    },
+    {
+      "prompt": "l'oeil →",
+      "answer": "l'ull",
+      "hint": "l'u..."
+    },
+    {
+      "prompt": "la dent →",
+      "answer": "la dent",
+      "hint": "la d..."
+    },
+    {
+      "prompt": "J'ai mal a la tete. →",
+      "answer": "Em fa mal el cap",
+      "hint": "Em..."
+    },
+    {
+      "prompt": "J'ai mal aux jambes. (pluriel) →",
+      "answer": "Em fan mal les cames",
+      "hint": "Em..."
+    },
+    {
+      "prompt": "etre malade →",
+      "answer": "estar malalt",
+      "hint": "es..."
+    },
+    {
+      "prompt": "tomber malade →",
+      "answer": "posar-se malalt",
+      "hint": "po..."
+    },
+    {
+      "prompt": "la fievre →",
+      "answer": "la febre",
+      "hint": "la f..."
+    },
+    {
+      "prompt": "le rhume →",
+      "answer": "el refredat",
+      "hint": "el r..."
+    },
+    {
+      "prompt": "la toux →",
+      "answer": "la tos",
+      "hint": "la t..."
+    },
+    {
+      "prompt": "le medecin →",
+      "answer": "el metge",
+      "hint": "el m..."
+    },
+    {
+      "prompt": "l'ordonnance →",
+      "answer": "la recepta",
+      "hint": "la r..."
+    },
+    {
+      "prompt": "le medicament →",
+      "answer": "el medicament",
+      "hint": "el m..."
+    },
+    {
+      "prompt": "le rendez-vous (medical) →",
+      "answer": "la cita",
+      "hint": "la c..."
+    },
+    {
+      "prompt": "la pharmacie →",
+      "answer": "la farmacia",
+      "hint": "la f..."
+    },
+    {
+      "prompt": "se reposer →",
+      "answer": "descansar",
+      "hint": "de..."
+    },
+    {
+      "prompt": "guerir / se remettre →",
+      "answer": "recuperar-se",
+      "hint": "re..."
+    },
+    {
+      "prompt": "Je ne me sens pas bien. →",
+      "answer": "No em trobo be",
+      "hint": "No..."
+    },
+    {
+      "prompt": "Comment vas-tu? (sante) →",
+      "answer": "Com et trobes?",
+      "hint": "Com..."
+    },
+    {
+      "prompt": "prendre un medicament →",
+      "answer": "prendre un medicament",
+      "hint": "pre..."
+    }
+  ]
+}
