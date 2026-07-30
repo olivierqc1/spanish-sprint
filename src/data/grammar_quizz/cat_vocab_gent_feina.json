@@ -1,158 +1,134 @@
 {
   "id": "cat_vocab_gent_feina",
-  "title": "Vocabulari — la gent i la feina",
+  "title": {
+    "fr": "Catalan : les gens et le travail",
+    "en": "Catalan: people and work"
+  },
   "level": "A1-A2",
-  "note": "Decrire les gens, parler de son travail et de ses etudes. Produis le mot catalan avant de verifier.",
+  "note": {
+    "fr": "⚙ Décrire les gens, parler de son travail et de ses études.\n\n🎯 LA FAMILLE\n→ els pares = les parents · els avis = les grands-parents\n→ la dona = la femme (épouse) · el marit = le mari\n\n🎯 ADJECTIFS DE CARACTÈRE\n→ simpàtic, amable, cansat, ocupat, content, preocupat\n→ Ils s'accordent : cansat / cansada / cansats / cansades\n\n💡 EL CAP = à la fois « la tête » et « le chef ». Le contexte tranche.",
+    "en": "⚙ People and work. Adjectives agree: cansat/cansada. EL CAP means both 'head' and 'boss'."
+  },
   "drills": [
     {
       "prompt": "l'ami →",
-      "answer": "l'amic",
-      "hint": "l'..."
+      "answer": "l'amic"
     },
     {
       "prompt": "l'amie →",
-      "answer": "l'amiga",
-      "hint": "l'..."
+      "answer": "l'amiga"
     },
     {
       "prompt": "le voisin →",
-      "answer": "el veí",
-      "hint": "el..."
+      "answer": "el veí"
     },
     {
       "prompt": "le collegue →",
-      "answer": "el company de feina",
-      "hint": "el..."
+      "answer": "el company de feina"
     },
     {
       "prompt": "le mari →",
-      "answer": "el marit",
-      "hint": "el..."
+      "answer": "el marit"
     },
     {
       "prompt": "la femme (epouse) →",
-      "answer": "la dona",
-      "hint": "la..."
+      "answer": "la dona"
     },
     {
       "prompt": "le fils →",
-      "answer": "el fill",
-      "hint": "el..."
+      "answer": "el fill"
     },
     {
       "prompt": "la fille →",
-      "answer": "la filla",
-      "hint": "la..."
+      "answer": "la filla"
     },
     {
       "prompt": "les parents →",
-      "answer": "els pares",
-      "hint": "el..."
+      "answer": "els pares"
     },
     {
       "prompt": "le frere →",
-      "answer": "el germà",
-      "hint": "el..."
+      "answer": "el germà"
     },
     {
       "prompt": "la soeur →",
-      "answer": "la germana",
-      "hint": "la..."
+      "answer": "la germana"
     },
     {
       "prompt": "les grands-parents →",
-      "answer": "els avis",
-      "hint": "el..."
+      "answer": "els avis"
     },
     {
       "prompt": "le travail →",
-      "answer": "la feina",
-      "hint": "la..."
+      "answer": "la feina"
     },
     {
       "prompt": "le bureau →",
-      "answer": "l'oficina",
-      "hint": "l'..."
+      "answer": "l'oficina"
     },
     {
       "prompt": "la reunion →",
-      "answer": "la reunió",
-      "hint": "la..."
+      "answer": "la reunió"
     },
     {
       "prompt": "le patron →",
-      "answer": "el cap",
-      "hint": "el..."
+      "answer": "el cap"
     },
     {
       "prompt": "le salaire →",
-      "answer": "el sou",
-      "hint": "el..."
+      "answer": "el sou"
     },
     {
       "prompt": "chercher du travail →",
-      "answer": "buscar feina",
-      "hint": "bu..."
+      "answer": "buscar feina"
     },
     {
       "prompt": "l'entretien →",
-      "answer": "l'entrevista",
-      "hint": "l'..."
+      "answer": "l'entrevista"
     },
     {
       "prompt": "l'entreprise →",
-      "answer": "l'empresa",
-      "hint": "l'..."
+      "answer": "l'empresa"
     },
     {
       "prompt": "etudier →",
-      "answer": "estudiar",
-      "hint": "es..."
+      "answer": "estudiar"
     },
     {
       "prompt": "apprendre →",
-      "answer": "aprendre",
-      "hint": "ap..."
+      "answer": "aprendre"
     },
     {
       "prompt": "enseigner →",
-      "answer": "ensenyar",
-      "hint": "en..."
+      "answer": "ensenyar"
     },
     {
       "prompt": "le cours →",
-      "answer": "el curs",
-      "hint": "el..."
+      "answer": "el curs"
     },
     {
       "prompt": "sympa →",
-      "answer": "simpàtic",
-      "hint": "si..."
+      "answer": "simpàtic"
     },
     {
       "prompt": "gentil →",
-      "answer": "amable",
-      "hint": "am..."
+      "answer": "amable"
     },
     {
       "prompt": "fatigue →",
-      "answer": "cansat",
-      "hint": "ca..."
+      "answer": "cansat"
     },
     {
       "prompt": "occupe →",
-      "answer": "ocupat",
-      "hint": "oc..."
+      "answer": "ocupat"
     },
     {
       "prompt": "content →",
-      "answer": "content",
-      "hint": "co..."
+      "answer": "content"
     },
     {
       "prompt": "inquiet →",
-      "answer": "preocupat",
-      "hint": "pr..."
+      "answer": "preocupat"
     }
   ]
 }
