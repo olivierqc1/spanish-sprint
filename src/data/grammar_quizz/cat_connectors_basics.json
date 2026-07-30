@@ -1,20 +1,62 @@
 {
   "id": "cat_connectors_basics",
-  "title": "Connectors bàsics — parlar amb fluïdesa",
+  "title": {
+    "fr": "Catalan : connecteurs de base",
+    "en": "Catalan: basic connectors"
+  },
   "level": "A2",
-  "note": "**FR** : les mots qui relient tes phrases. C'est ça qui te fait *enchaîner* au lieu de sortir des mots isolés. Complète avec le bon connecteur.\n**EN** : the words that link your sentences — what lets you *chain* ideas instead of dropping isolated words.\n\n- **però** = mais\n- **doncs** = donc / alors\n- **llavors** = alors, ensuite (dans le temps)\n- **o sigui / és a dir** = c'est-à-dire\n- **per això** = c'est pour ça\n- **perquè** = parce que\n- **mentre** = pendant que\n- **a més** = en plus\n- **tot i que** = bien que\n- **sinó** = mais (après une négation)",
+  "note": {
+    "fr": "⚙ Les connecteurs font la différence entre parler par mots isolés et parler par phrases.\n\n🎯 OPPOSER\n→ però = mais\n→ sinó = mais (seulement après une négation) : No vull te, SINÓ cafè.\n→ tot i que = bien que\n\n🎯 EXPLIQUER\n→ perquè = parce que\n→ per això = c'est pour ça (conséquence)\n→ doncs = donc, alors\n\n🎯 ORGANISER\n→ llavors = ensuite (dans le temps)\n→ mentre = pendant que\n→ a més = en plus\n→ o sigui / és a dir = c'est-à-dire\n\n💡 Piège classique : après une négation, c'est SINÓ, jamais PERÒ.",
+    "en": "⚙ Connectors: però (but), sinó (but after a negative), perquè (because), per això (that's why), doncs (so), llavors (then), mentre (while), a més (moreover)."
+  },
   "drills": [
-    { "prompt": "Vull sortir, ___ està plovent. (mais)", "answer": "però", "hint": "mais" },
-    { "prompt": "No tinc gana, ___ no sopo. (donc / alors)", "answer": "doncs", "hint": "donc" },
-    { "prompt": "Primer vam sopar i ___ vam anar al cinema. (ensuite)", "answer": "llavors", "hint": "ensuite, dans le temps" },
-    { "prompt": "És a dir, treballo des de casa, ___ no agafo el metro. (c'est pour ça)", "answer": "per això", "hint": "conséquence" },
-    { "prompt": "No vinc ___ estic cansat. (parce que)", "answer": "perquè", "hint": "cause" },
-    { "prompt": "___ tu cuines, jo paro la taula. (pendant que)", "answer": "Mentre", "hint": "simultanéité" },
-    { "prompt": "M'agrada córrer i, ___, vaig al gimnàs. (en plus)", "answer": "a més", "hint": "ajout" },
-    { "prompt": "___ plou, sortim igualment. (bien que)", "answer": "Tot i que", "hint": "concession" },
-    { "prompt": "No vull te, ___ cafè. (mais après négation)", "answer": "sinó", "hint": "sinó, pas però" },
-    { "prompt": "Estic ocupat, ___, no vull dir que no. (c'est-à-dire)", "answer": "o sigui", "hint": "reformulation" },
-    { "prompt": "Plovia molt; ___, vam decidir quedar-nos a casa. (donc, en conséquence)", "answer": "per això", "hint": "conséquence" },
-    { "prompt": "Vaig estudiar molt, ___ vaig aprovar. (donc)", "answer": "doncs", "hint": "résultat" }
+    {
+      "prompt": "Vull sortir, ___ està plovent. (mais)",
+      "answer": "però"
+    },
+    {
+      "prompt": "No tinc gana, ___ no sopo. (donc / alors)",
+      "answer": "doncs"
+    },
+    {
+      "prompt": "Primer vam sopar i ___ vam anar al cinema. (ensuite)",
+      "answer": "llavors"
+    },
+    {
+      "prompt": "És a dir, treballo des de casa, ___ no agafo el metro. (c'est pour ça)",
+      "answer": "per això"
+    },
+    {
+      "prompt": "No vinc ___ estic cansat. (parce que)",
+      "answer": "perquè"
+    },
+    {
+      "prompt": "___ tu cuines, jo paro la taula. (pendant que)",
+      "answer": "Mentre"
+    },
+    {
+      "prompt": "M'agrada córrer i, ___, vaig al gimnàs. (en plus)",
+      "answer": "a més"
+    },
+    {
+      "prompt": "___ plou, sortim igualment. (bien que)",
+      "answer": "Tot i que"
+    },
+    {
+      "prompt": "No vull te, ___ cafè. (mais après négation)",
+      "answer": "sinó"
+    },
+    {
+      "prompt": "Estic ocupat, ___, no vull dir que no. (c'est-à-dire)",
+      "answer": "o sigui"
+    },
+    {
+      "prompt": "Plovia molt; ___, vam decidir quedar-nos a casa. (donc, en conséquence)",
+      "answer": "per això"
+    },
+    {
+      "prompt": "Vaig estudiar molt, ___ vaig aprovar. (donc)",
+      "answer": "doncs"
+    }
   ]
 }
