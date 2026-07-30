@@ -1,24 +1,78 @@
 {
   "id": "cat_vocab_survival",
-  "title": "Vocabulari de supervivència — menjar, casa, feina, ciutat",
+  "title": {
+    "fr": "Catalan : vocabulaire de survie",
+    "en": "Catalan: survival vocabulary"
+  },
   "level": "A1",
-  "note": "**FR** : le vocab de base par thème pour tenir une conversation du quotidien. Traduis en catalan.\n**EN** : core everyday vocabulary by theme. Translate into Catalan.",
+  "note": {
+    "fr": "⚙ Le vocabulaire minimum pour tenir une journée en catalan.\n\n🎯 Attention aux castillanismes fréquents :\n→ manger = MENJAR (pas « comer »)\n→ la boulangerie = LA FLECA ou EL FORN (pas « panaderia »)\n→ le travail = LA FEINA (pas « el treball » dans l'usage courant)\n\n💡 Produis le mot AVANT de regarder la réponse. C'est le rappel actif qui installe le vocabulaire, pas la relecture.",
+    "en": "⚙ Minimum everyday vocabulary. Watch for Spanish interference: menjar (not comer), la fleca (not panaderia)."
+  },
   "drills": [
-    { "prompt": "manger (verbe) →", "answer": "menjar", "hint": "≠ esp. comer" },
-    { "prompt": "boire →", "answer": "beure", "hint": "menjar / beure" },
-    { "prompt": "le petit-déjeuner →", "answer": "l'esmorzar", "hint": "esmorzar" },
-    { "prompt": "l'eau →", "answer": "l'aigua", "hint": "aigua" },
-    { "prompt": "la maison →", "answer": "la casa", "hint": "casa" },
-    { "prompt": "la clé →", "answer": "la clau", "hint": "clau, pl. claus" },
-    { "prompt": "le travail / l'emploi →", "answer": "la feina", "hint": "feina" },
-    { "prompt": "la réunion →", "answer": "la reunió", "hint": "reunió" },
-    { "prompt": "la rue →", "answer": "el carrer", "hint": "carrer" },
-    { "prompt": "le quartier →", "answer": "el barri", "hint": "barri" },
-    { "prompt": "aujourd'hui →", "answer": "avui", "hint": "avui" },
-    { "prompt": "demain →", "answer": "demà", "hint": "demà" },
-    { "prompt": "maintenant →", "answer": "ara", "hint": "ara" },
-    { "prompt": "acheter →", "answer": "comprar", "hint": "comprar" },
-    { "prompt": "cher (prix élevé) →", "answer": "car", "hint": "car / barat" },
-    { "prompt": "il fait froid →", "answer": "fa fred", "hint": "fer + météo" }
+    {
+      "prompt": "manger (verbe) →",
+      "answer": "menjar"
+    },
+    {
+      "prompt": "boire →",
+      "answer": "beure"
+    },
+    {
+      "prompt": "le petit-déjeuner →",
+      "answer": "l'esmorzar"
+    },
+    {
+      "prompt": "l'eau →",
+      "answer": "l'aigua"
+    },
+    {
+      "prompt": "la maison →",
+      "answer": "la casa"
+    },
+    {
+      "prompt": "la clé →",
+      "answer": "la clau"
+    },
+    {
+      "prompt": "le travail / l'emploi →",
+      "answer": "la feina"
+    },
+    {
+      "prompt": "la réunion →",
+      "answer": "la reunió"
+    },
+    {
+      "prompt": "la rue →",
+      "answer": "el carrer"
+    },
+    {
+      "prompt": "le quartier →",
+      "answer": "el barri"
+    },
+    {
+      "prompt": "aujourd'hui →",
+      "answer": "avui"
+    },
+    {
+      "prompt": "demain →",
+      "answer": "demà"
+    },
+    {
+      "prompt": "maintenant →",
+      "answer": "ara"
+    },
+    {
+      "prompt": "acheter →",
+      "answer": "comprar"
+    },
+    {
+      "prompt": "cher (prix élevé) →",
+      "answer": "car"
+    },
+    {
+      "prompt": "il fait froid →",
+      "answer": "fa fred"
+    }
   ]
 }
