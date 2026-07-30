@@ -1,158 +1,134 @@
 {
   "id": "cat_vocab_menjar_compres",
-  "title": "Vocabulari — menjar i compres",
+  "title": {
+    "fr": "Catalan : manger et faire les courses",
+    "en": "Catalan: food and shopping"
+  },
   "level": "A1-A2",
-  "note": "Manger, cuisiner, acheter : le theme le plus frequent a l'oral. Produis le mot catalan avant de verifier.",
+  "note": {
+    "fr": "⚙ Manger et faire les courses : le thème le plus fréquent à l'oral.\n\n🎯 LES REPAS\n→ esmorzar = petit-déjeuner · dinar = repas de midi · sopar = souper\n→ Ces mots sont à la fois noms et verbes : Sopo a les nou.\n\n🎯 AVOIR FAIM / SOIF\n→ tenir gana · tenir set (avec TENIR, comme en français « avoir »)\n\n💡 Piège : « le compte » à payer = EL COMPTE. Ne pas confondre avec « el conte » (le conte).",
+    "en": "⚙ Food and shopping. Meals: esmorzar, dinar, sopar (also verbs). tenir gana = to be hungry."
+  },
   "drills": [
     {
       "prompt": "le pain →",
-      "answer": "el pa",
-      "hint": "el..."
+      "answer": "el pa"
     },
     {
       "prompt": "le lait →",
-      "answer": "la llet",
-      "hint": "la..."
+      "answer": "la llet"
     },
     {
       "prompt": "le fromage →",
-      "answer": "el formatge",
-      "hint": "el..."
+      "answer": "el formatge"
     },
     {
       "prompt": "la viande →",
-      "answer": "la carn",
-      "hint": "la..."
+      "answer": "la carn"
     },
     {
       "prompt": "le poisson →",
-      "answer": "el peix",
-      "hint": "el..."
+      "answer": "el peix"
     },
     {
       "prompt": "le poulet →",
-      "answer": "el pollastre",
-      "hint": "el..."
+      "answer": "el pollastre"
     },
     {
       "prompt": "l'oeuf →",
-      "answer": "l'ou",
-      "hint": "l'..."
+      "answer": "l'ou"
     },
     {
       "prompt": "le riz →",
-      "answer": "l'arròs",
-      "hint": "l'..."
+      "answer": "l'arròs"
     },
     {
       "prompt": "les legumes →",
-      "answer": "les verdures",
-      "hint": "le..."
+      "answer": "les verdures"
     },
     {
       "prompt": "les fruits →",
-      "answer": "la fruita",
-      "hint": "la..."
+      "answer": "la fruita"
     },
     {
       "prompt": "la pomme →",
-      "answer": "la poma",
-      "hint": "la..."
+      "answer": "la poma"
     },
     {
       "prompt": "l'oignon →",
-      "answer": "la ceba",
-      "hint": "la..."
+      "answer": "la ceba"
     },
     {
       "prompt": "l'ail →",
-      "answer": "l'all",
-      "hint": "l'..."
+      "answer": "l'all"
     },
     {
       "prompt": "l'huile →",
-      "answer": "l'oli",
-      "hint": "l'..."
+      "answer": "l'oli"
     },
     {
       "prompt": "le sel →",
-      "answer": "la sal",
-      "hint": "la..."
+      "answer": "la sal"
     },
     {
       "prompt": "le sucre →",
-      "answer": "el sucre",
-      "hint": "el..."
+      "answer": "el sucre"
     },
     {
       "prompt": "le vin →",
-      "answer": "el vi",
-      "hint": "el..."
+      "answer": "el vi"
     },
     {
       "prompt": "la biere →",
-      "answer": "la cervesa",
-      "hint": "la..."
+      "answer": "la cervesa"
     },
     {
       "prompt": "le petit-dejeuner →",
-      "answer": "l'esmorzar",
-      "hint": "l'..."
+      "answer": "l'esmorzar"
     },
     {
       "prompt": "le diner (midi) →",
-      "answer": "el dinar",
-      "hint": "el..."
+      "answer": "el dinar"
     },
     {
       "prompt": "le souper →",
-      "answer": "el sopar",
-      "hint": "el..."
+      "answer": "el sopar"
     },
     {
       "prompt": "avoir faim →",
-      "answer": "tenir gana",
-      "hint": "te..."
+      "answer": "tenir gana"
     },
     {
       "prompt": "avoir soif →",
-      "answer": "tenir set",
-      "hint": "te..."
+      "answer": "tenir set"
     },
     {
       "prompt": "gouter (verbe) →",
-      "answer": "tastar",
-      "hint": "ta..."
+      "answer": "tastar"
     },
     {
       "prompt": "le marche →",
-      "answer": "el mercat",
-      "hint": "el..."
+      "answer": "el mercat"
     },
     {
       "prompt": "la boulangerie →",
-      "answer": "el forn",
-      "hint": "el..."
+      "answer": "el forn"
     },
     {
       "prompt": "l'addition →",
-      "answer": "el compte",
-      "hint": "el..."
+      "answer": "el compte"
     },
     {
       "prompt": "cher →",
-      "answer": "car",
-      "hint": "ca..."
+      "answer": "car"
     },
     {
       "prompt": "bon marche →",
-      "answer": "barat",
-      "hint": "ba..."
+      "answer": "barat"
     },
     {
       "prompt": "faire les courses →",
-      "answer": "fer la compra",
-      "hint": "fe..."
+      "answer": "fer la compra"
     }
   ]
 }
