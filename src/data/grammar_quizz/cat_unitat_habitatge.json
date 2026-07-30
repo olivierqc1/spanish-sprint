@@ -1,203 +1,170 @@
 {
   "id": "cat_unitat_habitatge",
-  "title": "Unitat A2 — El pis i el barri",
+  "title": {
+    "fr": "Catalan A2 : unité complète — el pis i el barri",
+    "en": "Catalan A2: full unit — home and neighbourhood"
+  },
   "level": "A2",
-  "note": "Unite complete : lexique du logement, comprehension d'une annonce, hi ha / n'hi ha, comparatifs et imperfet. Produis la reponse avant de verifier.",
+  "note": {
+    "fr": "⚙ Unité complète A2 : le pis et le barri.\n\n🎯 CE QUE TU RÉVISES ICI\n→ le lexique du logement et du quartier\n→ la compréhension d'une annonce de location\n→ HI HA / NO HI HA / N'HI HA / HI HAVIA\n→ les comparatifs : més...que, menys...que, millor\n→ l'imperfet pour dire comment c'était avant\n\n🎯 RAPPEL HI HA\n→ HI HA = il y a · N'HI HA = il y en a · HI HAVIA = il y avait\n\n🎯 RAPPEL IMPERFET\n→ ser : era, eres, era, érem, éreu, eren\n→ haver-hi : hi havia\n\n💡 Pour les questions verdader/fals, réponds exactement « verdader » ou « fals ».",
+    "en": "⚙ Full A2 unit: housing vocabulary, rental ad comprehension, hi ha / n'hi ha, comparatives, imperfect."
+  },
   "drills": [
     {
       "prompt": "Quina paraula és? « on pugem a peu fins al nostre pis »",
-      "answer": "l'escala",
-      "hint": "l'es..."
+      "answer": "l'escala"
     },
     {
       "prompt": "Quina paraula és? « la part de fora, entre el pis i el carrer »",
-      "answer": "el balcó",
-      "hint": "el b..."
+      "answer": "el balcó"
     },
     {
       "prompt": "Quina paraula és? « la superfície plana a sobre de l'edifici »",
-      "answer": "el terrat",
-      "hint": "el t..."
+      "answer": "el terrat"
     },
     {
       "prompt": "Quina paraula és? « la màquina que ens puja sense caminar »",
-      "answer": "l'ascensor",
-      "hint": "l'as..."
+      "answer": "l'ascensor"
     },
     {
       "prompt": "Quina paraula és? « per on entra la llum »",
-      "answer": "la finestra",
-      "hint": "la f..."
+      "answer": "la finestra"
     },
     {
       "prompt": "Quina paraula és? « la persona que viu al costat »",
-      "answer": "el veí",
-      "hint": "el v..."
+      "answer": "el veí"
     },
     {
       "prompt": "Quina paraula és? « la part del carrer per on caminem »",
-      "answer": "la vorera",
-      "hint": "la v..."
+      "answer": "la vorera"
     },
     {
       "prompt": "Quina paraula és? « el que no et deixa dormir »",
-      "answer": "el soroll",
-      "hint": "el s..."
+      "answer": "el soroll"
     },
     {
       "prompt": "« l'habitació » — dins del pis, a l'edifici o al barri?",
-      "answer": "dins del pis",
-      "hint": "dins ..."
+      "answer": "dins del pis"
     },
     {
       "prompt": "« el portal » — dins del pis, a l'edifici o al barri?",
-      "answer": "a l'edifici",
-      "hint": "a l'e..."
+      "answer": "a l'edifici"
     },
     {
       "prompt": "« el mercat » — dins del pis, a l'edifici o al barri?",
-      "answer": "al barri",
-      "hint": "al ba..."
+      "answer": "al barri"
     },
     {
       "prompt": "« el celobert » — dins del pis, a l'edifici o al barri?",
-      "answer": "a l'edifici",
-      "hint": "a l'e..."
+      "answer": "a l'edifici"
     },
     {
       "prompt": "« el passadís » — dins del pis, a l'edifici o al barri?",
-      "answer": "dins del pis",
-      "hint": "dins ..."
+      "answer": "dins del pis"
     },
     {
       "prompt": "« la fleca » — dins del pis, a l'edifici o al barri?",
-      "answer": "al barri",
-      "hint": "al ba..."
+      "answer": "al barri"
     },
     {
       "prompt": "« el rebedor » — dins del pis, a l'edifici o al barri?",
-      "answer": "dins del pis",
-      "hint": "dins ..."
+      "answer": "dins del pis"
     },
     {
       "prompt": "« el terrat » — dins del pis, a l'edifici o al barri?",
-      "answer": "a l'edifici",
-      "hint": "a l'e..."
+      "answer": "a l'edifici"
     },
     {
       "prompt": "« la parada de metro » — dins del pis, a l'edifici o al barri?",
-      "answer": "al barri",
-      "hint": "al ba..."
+      "answer": "al barri"
     },
     {
       "prompt": "Verdader o fals? « El pis té ascensor. »",
-      "answer": "fals",
-      "hint": "fal..."
+      "answer": "fals"
     },
     {
       "prompt": "Verdader o fals? « L'habitació té balcó. »",
-      "answer": "verdader",
-      "hint": "ver..."
+      "answer": "verdader"
     },
     {
       "prompt": "Verdader o fals? « Hi ha una rentadora dins del pis. »",
-      "answer": "fals",
-      "hint": "fal..."
+      "answer": "fals"
     },
     {
       "prompt": "Verdader o fals? « El mercat obre tots els dies. »",
-      "answer": "fals",
-      "hint": "fal..."
+      "answer": "fals"
     },
     {
       "prompt": "Verdader o fals? « Al barri hi ha menys turistes que abans. »",
-      "answer": "fals",
-      "hint": "fal..."
+      "answer": "fals"
     },
     {
       "prompt": "Verdader o fals? « Es pot anar a viure amb un gat. »",
-      "answer": "fals",
-      "hint": "fal..."
+      "answer": "fals"
     },
     {
       "prompt": "Al meu carrer ___ tres forns.",
-      "answer": "hi ha",
-      "hint": "hi ..."
+      "answer": "hi ha"
     },
     {
       "prompt": "— Hi ha una farmàcia per aquí? — Sí, ___ una a la cantonada.",
-      "answer": "n'hi ha",
-      "hint": "n'h..."
+      "answer": "n'hi ha"
     },
     {
       "prompt": "Al pis ___ calefacció, i a l'hivern fa molt de fred.",
-      "answer": "no hi ha",
-      "hint": "no ..."
+      "answer": "no hi ha"
     },
     {
       "prompt": "Al terrat ___ molt bones vistes.",
-      "answer": "hi ha",
-      "hint": "hi ..."
+      "answer": "hi ha"
     },
     {
       "prompt": "— Queden habitacions lliures? — No, no ___ cap.",
-      "answer": "n'hi ha",
-      "hint": "n'h..."
+      "answer": "n'hi ha"
     },
     {
       "prompt": "Abans, al barri ___ més botigues petites.",
-      "answer": "hi havia",
-      "hint": "hi ..."
+      "answer": "hi havia"
     },
     {
       "prompt": "Mon appart est plus lumineux que le précédent. →",
-      "answer": "El meu pis és més lluminós que l'anterior",
-      "hint": "El meu..."
+      "answer": "El meu pis és més lluminós que l'anterior"
     },
     {
       "prompt": "Mon quartier est moins tranquille que le centre. →",
-      "answer": "El meu barri és menys tranquil que el centre",
-      "hint": "El meu..."
+      "answer": "El meu barri és menys tranquil que el centre"
     },
     {
       "prompt": "Vivre avec des colocs est plus économique. →",
-      "answer": "Viure amb companys és més barat",
-      "hint": "Viure ..."
+      "answer": "Viure amb companys és més barat"
     },
     {
       "prompt": "Ce four est meilleur que celui-là. →",
-      "answer": "Aquest forn és millor que aquell",
-      "hint": "Aquest..."
+      "answer": "Aquest forn és millor que aquell"
     },
     {
       "prompt": "Quan jo ___ (ser) petit, vivia en una casa amb jardí.",
-      "answer": "era",
-      "hint": "era..."
+      "answer": "era"
     },
     {
       "prompt": "Quan era petit, ___ (viure) en una casa amb jardí.",
-      "answer": "vivia",
-      "hint": "viv..."
+      "answer": "vivia"
     },
     {
       "prompt": "No ___ (haver-hi) ascensor perquè només tenia una planta.",
-      "answer": "hi havia",
-      "hint": "hi ..."
+      "answer": "hi havia"
     },
     {
       "prompt": "No hi havia ascensor perquè només ___ (tenir) una planta.",
-      "answer": "tenia",
-      "hint": "ten..."
+      "answer": "tenia"
     },
     {
       "prompt": "Al costat ___ (haver-hi) un camp de futbol.",
-      "answer": "hi havia",
-      "hint": "hi ..."
+      "answer": "hi havia"
     },
     {
       "prompt": "Els nens ___ (jugar) a futbol cada tarda.",
-      "answer": "jugaven",
-      "hint": "jug..."
+      "answer": "jugaven"
     }
   ]
 }
