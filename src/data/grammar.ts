@@ -10,6 +10,14 @@ export type GrammarPoint = {
 };
 
 export const grammarPoints: GrammarPoint[] = [
+{
+    id: "cat_unitat_habitatge",
+    title: { fr: "Catalan A2 : unite complete — le pis et le barri", en: "Catalan A2: full unit — home and neighbourhood" },
+    level: "A2",
+    note: { fr: "Lexique du logement, comprehension d'annonce, hi ha / n'hi ha, comparatifs, imperfet.", en: "Housing vocabulary, ad comprehension, hi ha / n'hi ha, comparatives, imperfect." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_unitat_habitatge.json"
+  },
 { id: "cat_habitatge_hi_ha", title: { fr: "Catalan : logement, hi ha / n'hi ha, situer", en: "Catalan: housing, hi ha / n'hi ha, location" }, level: "A2", note: { fr: "Decrire un logement et situer les choses dans l'espace.", en: "Describing a home and locating things." }, country: "all", jsonPath: "/data/grammar_quizz/cat_habitatge_hi_ha.json" },
   { id: "cat_comparatius", title: { fr: "Catalan : comparer (mes que, tan com, millor)", en: "Catalan: comparatives" }, level: "A2", note: { fr: "millor et pitjor, jamais mes bo ni mes dolent.", en: "millor and pitjor, never mes bo." }, country: "all", jsonPath: "/data/grammar_quizz/cat_comparatius.json" },
   { id: "cat_salut_cos", title: { fr: "Catalan : la sante et le corps", en: "Catalan: health and the body" }, level: "A2", note: { fr: "Le corps, les symptomes, chez le medecin.", en: "Body, symptoms, at the doctor's." }, country: "all", jsonPath: "/data/grammar_quizz/cat_salut_cos.json" },
