@@ -1,148 +1,126 @@
 {
   "id": "cat_salut_cos",
-  "title": "La salut i el cos",
+  "title": {
+    "fr": "Catalan : la santé et le corps",
+    "en": "Catalan: health and the body"
+  },
   "level": "A2",
-  "note": "Le corps, les symptomes, chez le medecin. Produis avant de verifier.",
+  "note": {
+    "fr": "⚙ Le corps, les symptômes, aller chez le médecin.\n\n🎯 AVOIR MAL : la structure catalane\n→ EM FA MAL + singulier : Em fa mal el cap\n→ EM FAN MAL + pluriel : Em fan mal les cames\n→ Le verbe s'accorde avec la PARTIE DU CORPS, pas avec la personne.\n\n🎯 ÊTRE / TOMBER MALADE\n→ estar malalt = être malade (état)\n→ posar-se malalt = tomber malade (changement)\n\n🎯 CHEZ LE MÉDECIN\n→ el metge · la recepta · la cita · la farmàcia\n→ No em trobo bé = Je ne me sens pas bien\n\n💡 LA MÀ (la main) et EL BRAÇ (le bras) : attention à l'accent et à la cédille.",
+    "en": "⚙ EM FA MAL + singular / EM FAN MAL + plural. The verb agrees with the body part, not the person."
+  },
   "drills": [
     {
       "prompt": "la tete →",
-      "answer": "el cap",
-      "hint": "el c..."
+      "answer": "el cap"
     },
     {
       "prompt": "le dos →",
-      "answer": "l'esquena",
-      "hint": "l'e..."
+      "answer": "l'esquena"
     },
     {
       "prompt": "la jambe →",
-      "answer": "la cama",
-      "hint": "la c..."
+      "answer": "la cama"
     },
     {
       "prompt": "le pied →",
-      "answer": "el peu",
-      "hint": "el p..."
+      "answer": "el peu"
     },
     {
       "prompt": "la main →",
-      "answer": "la ma",
-      "hint": "la m..."
+      "answer": "la mà"
     },
     {
       "prompt": "le bras →",
-      "answer": "el brac",
-      "hint": "el b..."
+      "answer": "el braç"
     },
     {
       "prompt": "le ventre →",
-      "answer": "la panxa",
-      "hint": "la p..."
+      "answer": "la panxa"
     },
     {
       "prompt": "la gorge →",
-      "answer": "el coll",
-      "hint": "el c..."
+      "answer": "el coll"
     },
     {
       "prompt": "le genou →",
-      "answer": "el genoll",
-      "hint": "el g..."
+      "answer": "el genoll"
     },
     {
       "prompt": "l'oeil →",
-      "answer": "l'ull",
-      "hint": "l'u..."
+      "answer": "l'ull"
     },
     {
       "prompt": "la dent →",
-      "answer": "la dent",
-      "hint": "la d..."
+      "answer": "la dent"
     },
     {
       "prompt": "J'ai mal a la tete. →",
-      "answer": "Em fa mal el cap",
-      "hint": "Em..."
+      "answer": "Em fa mal el cap"
     },
     {
       "prompt": "J'ai mal aux jambes. (pluriel) →",
-      "answer": "Em fan mal les cames",
-      "hint": "Em..."
+      "answer": "Em fan mal les cames"
     },
     {
       "prompt": "etre malade →",
-      "answer": "estar malalt",
-      "hint": "es..."
+      "answer": "estar malalt"
     },
     {
       "prompt": "tomber malade →",
-      "answer": "posar-se malalt",
-      "hint": "po..."
+      "answer": "posar-se malalt"
     },
     {
       "prompt": "la fievre →",
-      "answer": "la febre",
-      "hint": "la f..."
+      "answer": "la febre"
     },
     {
       "prompt": "le rhume →",
-      "answer": "el refredat",
-      "hint": "el r..."
+      "answer": "el refredat"
     },
     {
       "prompt": "la toux →",
-      "answer": "la tos",
-      "hint": "la t..."
+      "answer": "la tos"
     },
     {
       "prompt": "le medecin →",
-      "answer": "el metge",
-      "hint": "el m..."
+      "answer": "el metge"
     },
     {
       "prompt": "l'ordonnance →",
-      "answer": "la recepta",
-      "hint": "la r..."
+      "answer": "la recepta"
     },
     {
       "prompt": "le medicament →",
-      "answer": "el medicament",
-      "hint": "el m..."
+      "answer": "el medicament"
     },
     {
       "prompt": "le rendez-vous (medical) →",
-      "answer": "la cita",
-      "hint": "la c..."
+      "answer": "la cita"
     },
     {
       "prompt": "la pharmacie →",
-      "answer": "la farmacia",
-      "hint": "la f..."
+      "answer": "la farmàcia"
     },
     {
       "prompt": "se reposer →",
-      "answer": "descansar",
-      "hint": "de..."
+      "answer": "descansar"
     },
     {
       "prompt": "guerir / se remettre →",
-      "answer": "recuperar-se",
-      "hint": "re..."
+      "answer": "recuperar-se"
     },
     {
       "prompt": "Je ne me sens pas bien. →",
-      "answer": "No em trobo be",
-      "hint": "No..."
+      "answer": "No em trobo bé"
     },
     {
       "prompt": "Comment vas-tu? (sante) →",
-      "answer": "Com et trobes?",
-      "hint": "Com..."
+      "answer": "Com et trobes?"
     },
     {
       "prompt": "prendre un medicament →",
-      "answer": "prendre un medicament",
-      "hint": "pre..."
+      "answer": "prendre un medicament"
     }
   ]
 }
