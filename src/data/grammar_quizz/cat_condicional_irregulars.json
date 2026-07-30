@@ -1,0 +1,62 @@
+{
+  "id": "cat_condicional_irregulars",
+  "title": {
+    "fr": "Catalan : conditionnel, verbes irréguliers",
+    "en": "Catalan: conditional, irregular verbs"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙ Les irréguliers du conditionnel : c'est le radical qui change, jamais la terminaison.\n\n🎯 RADICAUX À MÉMORISER (= ceux du futur)\n→ fer → FAR- : faria, faríem\n→ tenir → TINDR- : tindria\n→ venir → VINDR- : vindria\n→ poder → PODR- : podria\n→ voler → VOLDR- : voldria\n→ saber → SABR- : sabria\n→ haver → HAUR- : hauria\n→ veure → VEUR- : veuria\n→ anar → ANIR- : aniria\n→ dir → DIR- : diria\n\n🎯 TERMINAISONS (identiques pour tous)\n→ ia · ies · ia · íem · íeu · ien\n\n💡 Si tu connais le futur, tu connais le conditionnel : même radical.",
+    "en": "⚙ Irregular stems (same as future): far-, tindr-, vindr-, podr-, voldr-, sabr-, haur-, veur-, anir-, dir-."
+  },
+  "drills": [
+    {
+      "prompt": "Jo ___ (ser) més feliç al camp.",
+      "answer": "seria"
+    },
+    {
+      "prompt": "Nosaltres ho ___ (fer) demà.",
+      "answer": "faríem"
+    },
+    {
+      "prompt": "Ella ___ (tenir) temps la setmana que ve.",
+      "answer": "tindria"
+    },
+    {
+      "prompt": "Vosaltres ___ (venir) a la festa?",
+      "answer": "vindríeu"
+    },
+    {
+      "prompt": "Jo no ___ (poder) arribar a les 8.",
+      "answer": "podria"
+    },
+    {
+      "prompt": "Ells ___ (voler) un cafè, si us plau.",
+      "answer": "voldrien"
+    },
+    {
+      "prompt": "Tu ___ (saber) la resposta?",
+      "answer": "sabries"
+    },
+    {
+      "prompt": "Nosaltres ___ (anar) a la muntanya.",
+      "answer": "aniríem"
+    },
+    {
+      "prompt": "Jo ___ (haver) de marxar abans.",
+      "answer": "hauria"
+    },
+    {
+      "prompt": "Des d'aquí tu ___ (veure) tot el barri.",
+      "answer": "veuries"
+    },
+    {
+      "prompt": "Ell ___ (dir) que sí.",
+      "answer": "diria"
+    },
+    {
+      "prompt": "Vosaltres ___ (estar) millor a casa.",
+      "answer": "estaríeu"
+    }
+  ]
+}
