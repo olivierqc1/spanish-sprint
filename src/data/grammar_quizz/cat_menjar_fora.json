@@ -1,0 +1,133 @@
+{
+  "id": "cat_menjar_fora",
+  "title": "Menjar fora — al bar i al restaurant",
+  "level": "A2",
+  "note": "Commander, demander, payer. Les formules exactes qu'on entend a Barcelone.",
+  "drills": [
+    {
+      "prompt": "Une table pour deux, s'il vous plait. →",
+      "answer": "Una taula per a dos, si us plau",
+      "hint": "Una..."
+    },
+    {
+      "prompt": "La carte, s'il vous plait. →",
+      "answer": "La carta, si us plau",
+      "hint": "La ..."
+    },
+    {
+      "prompt": "Qu'est-ce que vous me conseillez? →",
+      "answer": "Què em recomana?",
+      "hint": "Què..."
+    },
+    {
+      "prompt": "Je voudrais... →",
+      "answer": "Voldria...",
+      "hint": "Vol..."
+    },
+    {
+      "prompt": "Pour moi, ce sera... →",
+      "answer": "Per a mi, ...",
+      "hint": "Per..."
+    },
+    {
+      "prompt": "le menu du jour →",
+      "answer": "el menú del dia",
+      "hint": "el ..."
+    },
+    {
+      "prompt": "l'entree (plat) →",
+      "answer": "el primer",
+      "hint": "el ..."
+    },
+    {
+      "prompt": "le plat principal →",
+      "answer": "el segon",
+      "hint": "el ..."
+    },
+    {
+      "prompt": "le dessert →",
+      "answer": "les postres",
+      "hint": "les..."
+    },
+    {
+      "prompt": "l'addition →",
+      "answer": "el compte",
+      "hint": "el ..."
+    },
+    {
+      "prompt": "L'addition, s'il vous plait. →",
+      "answer": "El compte, si us plau",
+      "hint": "El ..."
+    },
+    {
+      "prompt": "On peut payer par carte? →",
+      "answer": "Es pot pagar amb targeta?",
+      "hint": "Es ..."
+    },
+    {
+      "prompt": "Il y a des plats vegetariens? →",
+      "answer": "Hi ha plats vegetarians?",
+      "hint": "Hi ..."
+    },
+    {
+      "prompt": "Je suis allergique a... →",
+      "answer": "Sóc al·lèrgic a...",
+      "hint": "Sóc..."
+    },
+    {
+      "prompt": "un verre d'eau →",
+      "answer": "un got d'aigua",
+      "hint": "un ..."
+    },
+    {
+      "prompt": "une bouteille de vin →",
+      "answer": "una ampolla de vi",
+      "hint": "una..."
+    },
+    {
+      "prompt": "un cafe allonge →",
+      "answer": "un cafè amb llet",
+      "hint": "un ..."
+    },
+    {
+      "prompt": "le pourboire →",
+      "answer": "la propina",
+      "hint": "la ..."
+    },
+    {
+      "prompt": "la serviette →",
+      "answer": "el tovalló",
+      "hint": "el ..."
+    },
+    {
+      "prompt": "la fourchette →",
+      "answer": "la forquilla",
+      "hint": "la ..."
+    },
+    {
+      "prompt": "le couteau →",
+      "answer": "el ganivet",
+      "hint": "el ..."
+    },
+    {
+      "prompt": "la cuillere →",
+      "answer": "la cullera",
+      "hint": "la ..."
+    },
+    {
+      "prompt": "C'etait tres bon. →",
+      "answer": "Estava molt bo",
+      "hint": "Est..."
+    },
+    {
+      "prompt": "On est presses. →",
+      "answer": "Tenim pressa",
+      "hint": "Ten..."
+    },
+    {
+      "prompt": "Encore un peu de pain? →",
+      "answer": "Una mica mes de pa?",
+      "hint": "Una..."
+    }
+  ]
+}
