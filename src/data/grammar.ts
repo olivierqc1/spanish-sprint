@@ -11,6 +11,38 @@ export type GrammarPoint = {
 
 export const grammarPoints: GrammarPoint[] = [
 {
+    id: "cat_vocab_quotidia",
+    title: { fr: "Catalan — Vocabulaire du quotidien", en: "Catalan — Everyday vocabulary" },
+    level: "A1-A2",
+    note: { fr: "Maison, routine, objets : 30 mots de base.", en: "Home, routine, objects: 30 core words." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_vocab_quotidia.json"
+  },
+  {
+    id: "cat_vocab_menjar_compres",
+    title: { fr: "Catalan — Manger et faire les courses", en: "Catalan — Food and shopping" },
+    level: "A1-A2",
+    note: { fr: "Le thème le plus fréquent à l'oral : 30 mots.", en: "The most frequent spoken topic: 30 words." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_vocab_menjar_compres.json"
+  },
+  {
+    id: "cat_vocab_gent_feina",
+    title: { fr: "Catalan — Les gens et le travail", en: "Catalan — People and work" },
+    level: "A1-A2",
+    note: { fr: "Famille, collègues, adjectifs de caractère : 30 mots.", en: "Family, colleagues, adjectives: 30 words." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_vocab_gent_feina.json"
+  },
+  {
+    id: "cat_vocab_ciutat_temps",
+    title: { fr: "Catalan — Ville, météo et déplacements", en: "Catalan — City, weather, getting around" },
+    level: "A1-A2",
+    note: { fr: "Se déplacer, décrire la ville et le temps : 30 mots.", en: "Getting around, city and weather: 30 words." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_vocab_ciutat_temps.json"
+  },
+{
     id: "cat_unitat_habitatge",
     title: { fr: "Catalan A2 : unite complete — le pis et le barri", en: "Catalan A2: full unit — home and neighbourhood" },
     level: "A2",
