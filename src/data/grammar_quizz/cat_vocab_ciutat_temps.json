@@ -1,158 +1,134 @@
 {
   "id": "cat_vocab_ciutat_temps",
-  "title": "Vocabulari — la ciutat, el temps, els viatges",
+  "title": {
+    "fr": "Catalan : ville, météo et déplacements",
+    "en": "Catalan: city, weather, getting around"
+  },
   "level": "A1-A2",
-  "note": "Se deplacer, decrire la ville et la meteo, voyager. Produis le mot catalan avant de verifier.",
+  "note": {
+    "fr": "⚙ Se déplacer, décrire la ville et la météo.\n\n🎯 LA MÉTÉO avec FER\n→ fa calor · fa fred · fa vent · fa bon temps\n→ Mais : PLOU (il pleut) et NEVA (il neige) sont des verbes seuls.\n\n🎯 S'ORIENTER\n→ a l'esquerra = à gauche · a la dreta = à droite\n→ tot recte = tout droit · girar = tourner\n\n💡 EL PIS signifie à la fois « l'appartement » et « l'étage ».",
+    "en": "⚙ City, weather, getting around. Weather uses FER: fa calor, fa fred. But PLOU (it rains) stands alone."
+  },
   "drills": [
     {
       "prompt": "la rue →",
-      "answer": "el carrer",
-      "hint": "el..."
+      "answer": "el carrer"
     },
     {
       "prompt": "la place →",
-      "answer": "la plaça",
-      "hint": "la..."
+      "answer": "la plaça"
     },
     {
       "prompt": "le quartier →",
-      "answer": "el barri",
-      "hint": "el..."
+      "answer": "el barri"
     },
     {
       "prompt": "le batiment →",
-      "answer": "l'edifici",
-      "hint": "l'..."
+      "answer": "l'edifici"
     },
     {
       "prompt": "l'immeuble (appart) →",
-      "answer": "el pis",
-      "hint": "el..."
+      "answer": "el pis"
     },
     {
       "prompt": "l'ascenseur →",
-      "answer": "l'ascensor",
-      "hint": "l'..."
+      "answer": "l'ascensor"
     },
     {
       "prompt": "l'etage →",
-      "answer": "el pis",
-      "hint": "el..."
+      "answer": "el pis"
     },
     {
       "prompt": "le trottoir →",
-      "answer": "la vorera",
-      "hint": "la..."
+      "answer": "la vorera"
     },
     {
       "prompt": "le metro →",
-      "answer": "el metro",
-      "hint": "el..."
+      "answer": "el metro"
     },
     {
       "prompt": "l'autobus →",
-      "answer": "l'autobús",
-      "hint": "l'..."
+      "answer": "l'autobús"
     },
     {
       "prompt": "le train →",
-      "answer": "el tren",
-      "hint": "el..."
+      "answer": "el tren"
     },
     {
       "prompt": "la voiture →",
-      "answer": "el cotxe",
-      "hint": "el..."
+      "answer": "el cotxe"
     },
     {
       "prompt": "a pied →",
-      "answer": "a peu",
-      "hint": "a ..."
+      "answer": "a peu"
     },
     {
       "prompt": "le billet →",
-      "answer": "el bitllet",
-      "hint": "el..."
+      "answer": "el bitllet"
     },
     {
       "prompt": "l'arret →",
-      "answer": "la parada",
-      "hint": "la..."
+      "answer": "la parada"
     },
     {
       "prompt": "la gare →",
-      "answer": "l'estació",
-      "hint": "l'..."
+      "answer": "l'estació"
     },
     {
       "prompt": "tourner →",
-      "answer": "girar",
-      "hint": "gi..."
+      "answer": "girar"
     },
     {
       "prompt": "tout droit →",
-      "answer": "tot recte",
-      "hint": "to..."
+      "answer": "tot recte"
     },
     {
       "prompt": "a gauche →",
-      "answer": "a l'esquerra",
-      "hint": "a ..."
+      "answer": "a l'esquerra"
     },
     {
       "prompt": "a droite →",
-      "answer": "a la dreta",
-      "hint": "a ..."
+      "answer": "a la dreta"
     },
     {
       "prompt": "pres →",
-      "answer": "a prop",
-      "hint": "a ..."
+      "answer": "a prop"
     },
     {
       "prompt": "loin →",
-      "answer": "lluny",
-      "hint": "ll..."
+      "answer": "lluny"
     },
     {
       "prompt": "il fait chaud →",
-      "answer": "fa calor",
-      "hint": "fa..."
+      "answer": "fa calor"
     },
     {
       "prompt": "il fait froid →",
-      "answer": "fa fred",
-      "hint": "fa..."
+      "answer": "fa fred"
     },
     {
       "prompt": "il pleut →",
-      "answer": "plou",
-      "hint": "pl..."
+      "answer": "plou"
     },
     {
       "prompt": "il y a du vent →",
-      "answer": "fa vent",
-      "hint": "fa..."
+      "answer": "fa vent"
     },
     {
       "prompt": "le ciel →",
-      "answer": "el cel",
-      "hint": "el..."
+      "answer": "el cel"
     },
     {
       "prompt": "le soleil →",
-      "answer": "el sol",
-      "hint": "el..."
+      "answer": "el sol"
     },
     {
       "prompt": "la montagne →",
-      "answer": "la muntanya",
-      "hint": "la..."
+      "answer": "la muntanya"
     },
     {
       "prompt": "la plage →",
-      "answer": "la platja",
-      "hint": "la..."
+      "answer": "la platja"
     }
   ]
 }
