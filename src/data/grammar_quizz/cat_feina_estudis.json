@@ -1,138 +1,118 @@
 {
   "id": "cat_feina_estudis",
-  "title": "La feina i els estudis",
+  "title": {
+    "fr": "Catalan : le travail et les études",
+    "en": "Catalan: work and studies"
+  },
   "level": "A2",
-  "note": "Travail, entretien, etudes : le vocabulaire dont tu as besoin pour l'UB et pour chercher un emploi.",
+  "note": {
+    "fr": "⚙ Travail et études : utile pour chercher un emploi et pour l'université.\n\n🎯 PARLER DE SON MÉTIER : préposition DE\n→ Treballo D'analista (je travaille comme analyste)\n→ Treballo DE cambrer\n\n🎯 DURÉE : FA ... QUE\n→ FA dos anys QUE visc aquí = Ça fait deux ans que j'habite ici\n\n🎯 EXAMENS\n→ fer un examen = passer un examen\n→ APROVAR = réussir · SUSPENDRE = échouer\n→ Attention : « passer un examen » en français ≠ réussir\n\n💡 EL CAP = le chef. LA FEINA = le travail (plus courant que « el treball »).",
+    "en": "⚙ Treballo D'analista (work as). FA dos anys QUE visc aquí. APROVAR = to pass, SUSPENDRE = to fail."
+  },
   "drills": [
     {
       "prompt": "le travail / l'emploi →",
-      "answer": "la feina",
-      "hint": "la f..."
+      "answer": "la feina"
     },
     {
       "prompt": "chercher du travail →",
-      "answer": "buscar feina",
-      "hint": "bu..."
+      "answer": "buscar feina"
     },
     {
       "prompt": "l'entretien d'embauche →",
-      "answer": "l'entrevista de treball",
-      "hint": "l'e..."
+      "answer": "l'entrevista de treball"
     },
     {
       "prompt": "le CV →",
-      "answer": "el curriculum",
-      "hint": "el c..."
+      "answer": "el currículum"
     },
     {
       "prompt": "le salaire →",
-      "answer": "el sou",
-      "hint": "el s..."
+      "answer": "el sou"
     },
     {
       "prompt": "l'horaire →",
-      "answer": "l'horari",
-      "hint": "l'h..."
+      "answer": "l'horari"
     },
     {
       "prompt": "le patron / la cheffe →",
-      "answer": "el cap",
-      "hint": "el c..."
+      "answer": "el cap"
     },
     {
       "prompt": "le collegue →",
-      "answer": "el company de feina",
-      "hint": "el c..."
+      "answer": "el company de feina"
     },
     {
       "prompt": "l'entreprise →",
-      "answer": "l'empresa",
-      "hint": "l'e..."
+      "answer": "l'empresa"
     },
     {
       "prompt": "la reunion →",
-      "answer": "la reunio",
-      "hint": "la r..."
+      "answer": "la reunió"
     },
     {
       "prompt": "le contrat →",
-      "answer": "el contracte",
-      "hint": "el c..."
+      "answer": "el contracte"
     },
     {
       "prompt": "a temps plein →",
-      "answer": "a jornada completa",
-      "hint": "a j..."
+      "answer": "a jornada completa"
     },
     {
       "prompt": "a temps partiel →",
-      "answer": "a mitja jornada",
-      "hint": "a m..."
+      "answer": "a mitja jornada"
     },
     {
       "prompt": "le stage →",
-      "answer": "les practiques",
-      "hint": "les p..."
+      "answer": "les pràctiques"
     },
     {
       "prompt": "les etudes →",
-      "answer": "els estudis",
-      "hint": "els e..."
+      "answer": "els estudis"
     },
     {
       "prompt": "la licence / le diplome →",
-      "answer": "la carrera",
-      "hint": "la c..."
+      "answer": "la carrera"
     },
     {
       "prompt": "le master →",
-      "answer": "el master",
-      "hint": "el m..."
+      "answer": "el màster"
     },
     {
       "prompt": "la matiere / le cours →",
-      "answer": "l'assignatura",
-      "hint": "l'a..."
+      "answer": "l'assignatura"
     },
     {
       "prompt": "passer un examen →",
-      "answer": "fer un examen",
-      "hint": "fer..."
+      "answer": "fer un examen"
     },
     {
       "prompt": "reussir (un examen) →",
-      "answer": "aprovar",
-      "hint": "ap..."
+      "answer": "aprovar"
     },
     {
       "prompt": "echouer →",
-      "answer": "suspendre",
-      "hint": "su..."
+      "answer": "suspendre"
     },
     {
       "prompt": "s'inscrire →",
-      "answer": "matricular-se",
-      "hint": "ma..."
+      "answer": "matricular-se"
     },
     {
       "prompt": "la bourse (etudes) →",
-      "answer": "la beca",
-      "hint": "la b..."
+      "answer": "la beca"
     },
     {
       "prompt": "Je travaille comme analyste. →",
-      "answer": "Treballo d'analista",
-      "hint": "Tre..."
+      "answer": "Treballo d'analista"
     },
     {
       "prompt": "Je fais un master d'economie. →",
-      "answer": "Faig un master d'economia",
-      "hint": "Faig..."
+      "answer": "Faig un màster d'economia"
     },
     {
       "prompt": "Ca fait deux ans que j'habite ici. →",
-      "answer": "Fa dos anys que visc aqui",
-      "hint": "Fa..."
+      "answer": "Fa dos anys que visc aquí"
     }
   ]
 }
