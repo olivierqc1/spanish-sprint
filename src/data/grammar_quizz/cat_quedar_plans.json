@@ -1,0 +1,128 @@
+{
+  "id": "cat_quedar_plans",
+  "title": "Quedar amb algu i fer plans",
+  "level": "A2",
+  "note": "Proposer, accepter, refuser, fixer un rendez-vous. Le futur et les formules d'usage.",
+  "drills": [
+    {
+      "prompt": "On se voit demain? →",
+      "answer": "Quedem dema?",
+      "hint": "Qu..."
+    },
+    {
+      "prompt": "A quelle heure on se voit? →",
+      "answer": "A quina hora quedem?",
+      "hint": "A q..."
+    },
+    {
+      "prompt": "Ca te va? / Ca te convient? →",
+      "answer": "Et va be?",
+      "hint": "Et..."
+    },
+    {
+      "prompt": "Ca me va tres bien. →",
+      "answer": "Em va molt be",
+      "hint": "Em..."
+    },
+    {
+      "prompt": "Je ne peux pas, desole. →",
+      "answer": "No puc, ho sento",
+      "hint": "No..."
+    },
+    {
+      "prompt": "Une autre fois, peut-etre. →",
+      "answer": "Una altra vegada, potser",
+      "hint": "Una..."
+    },
+    {
+      "prompt": "D'accord, parfait. →",
+      "answer": "D'acord, perfecte",
+      "hint": "D'a..."
+    },
+    {
+      "prompt": "On se retrouve devant le cinema. →",
+      "answer": "Ens trobem davant del cinema",
+      "hint": "Ens..."
+    },
+    {
+      "prompt": "Je serai un peu en retard. →",
+      "answer": "Arribare una mica tard",
+      "hint": "Arr..."
+    },
+    {
+      "prompt": "Tu es libre jeudi? →",
+      "answer": "Estas lliure dijous?",
+      "hint": "Es..."
+    },
+    {
+      "prompt": "Ca te dirait d'aller courir? →",
+      "answer": "Et ve de gust anar a correr?",
+      "hint": "Et v..."
+    },
+    {
+      "prompt": "Je t'invite. →",
+      "answer": "Convido jo",
+      "hint": "Con..."
+    },
+    {
+      "prompt": "On paie chacun sa part. →",
+      "answer": "Paguem a mitges",
+      "hint": "Pa..."
+    },
+    {
+      "prompt": "demain matin →",
+      "answer": "dema al mati",
+      "hint": "dema..."
+    },
+    {
+      "prompt": "apres-demain →",
+      "answer": "dema passat",
+      "hint": "dema..."
+    },
+    {
+      "prompt": "ce soir →",
+      "answer": "aquest vespre",
+      "hint": "aq..."
+    },
+    {
+      "prompt": "le week-end prochain →",
+      "answer": "el cap de setmana que ve",
+      "hint": "el c..."
+    },
+    {
+      "prompt": "Nous irons a la montagne. (futur) →",
+      "answer": "Anirem a la muntanya",
+      "hint": "An..."
+    },
+    {
+      "prompt": "Je t'appellerai ce soir. (futur) →",
+      "answer": "Et trucare aquest vespre",
+      "hint": "Et..."
+    },
+    {
+      "prompt": "Il fera beau demain. (futur) →",
+      "answer": "Dema fara bon temps",
+      "hint": "Dema..."
+    },
+    {
+      "prompt": "Quand tu arriveras, appelle-moi. →",
+      "answer": "Quan arribis, truca'm",
+      "hint": "Quan..."
+    },
+    {
+      "prompt": "annuler →",
+      "answer": "cancel·lar",
+      "hint": "can..."
+    },
+    {
+      "prompt": "etre en retard →",
+      "answer": "fer tard",
+      "hint": "fer..."
+    },
+    {
+      "prompt": "etre a l'heure →",
+      "answer": "ser puntual",
+      "hint": "ser..."
+    }
+  ]
+}
