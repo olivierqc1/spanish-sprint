@@ -1,22 +1,70 @@
 {
   "id": "cat_present_verbs_frequents",
-  "title": "Present — els verbs que fas servir cada dia",
+  "title": {
+    "fr": "Catalan : présent des verbes quotidiens",
+    "en": "Catalan: present of everyday verbs"
+  },
   "level": "A1",
-  "note": "**FR** : le socle. Ces 10 verbes couvrent 80% de ce que tu dis au quotidien. Conjugue au présent.\n**EN** : the bedrock. These 10 verbs cover 80% of everyday speech.\n\nAttention au piège **ser / estar** : *ser* = identité/caractéristique permanente, *estar* = état/lieu momentané.",
+  "note": {
+    "fr": "⚙ Le socle : une dizaine de verbes couvrent l'essentiel du quotidien.\n\n🎯 SER vs ESTAR\n→ ser = identité, origine, caractéristique : Sóc del Quebec\n→ estar = état passager, lieu : Estic cansat · Estem a Barcelona\n\n🎯 IRRÉGULIERS FRÉQUENTS\n→ tenir : tinc, tens, té, tenim, teniu, tenen\n→ fer : faig, fas, fa, fem, feu, fan\n→ anar : vaig, vas, va, anem, aneu, van\n→ voler : vull, vols, vol, volem, voleu, volen\n→ poder : puc, pots, pot, podem, podeu, poden\n→ venir : vinc, véns, ve, venim, veniu, vénen\n\n🎯 HI HA = il y a (invariable, jamais « hi han »)\n\n💡 AGRADAR fonctionne comme « plaire » : M'agrada el vi (sing.) / M'agraden els vins (plur.).",
+    "en": "⚙ Core present tense. ser = identity, estar = state/place. Irregulars: tinc, faig, vaig, vull, puc, vinc. HI HA = there is/are (invariable)."
+  },
   "drills": [
-    { "prompt": "Jo ___ del Quebec. (ser)", "answer": "sóc", "hint": "ser, origine" },
-    { "prompt": "Nosaltres ___ a Barcelona. (estar, lieu)", "answer": "estem", "hint": "estar, lieu" },
-    { "prompt": "Ella ___ 30 anys. (tenir)", "answer": "té", "hint": "tenir" },
-    { "prompt": "Què ___ (tu) aquest cap de setmana? (fer)", "answer": "fas", "hint": "fer" },
-    { "prompt": "Nosaltres ___ a la muntanya. (anar)", "answer": "anem", "hint": "anar" },
-    { "prompt": "Jo ___ un cafè, si us plau. (voler)", "answer": "vull", "hint": "voler" },
-    { "prompt": "___ (tu) venir demà? (poder)", "answer": "Pots", "hint": "poder" },
-    { "prompt": "A la plaça ___ molta gent. (haver-hi)", "answer": "hi ha", "hint": "haver-hi = il y a" },
-    { "prompt": "M'___ molt el vi negre. (agradar, ça me plaît)", "answer": "agrada", "hint": "agradar, sing." },
-    { "prompt": "Ells ___ que sí. (dir)", "answer": "diuen", "hint": "dir" },
-    { "prompt": "Vosaltres ___ de França? (ser, origine)", "answer": "sou", "hint": "ser" },
-    { "prompt": "Jo ___ cansat avui. (estar, état)", "answer": "estic", "hint": "estar, état passager" },
-    { "prompt": "Ella ___ a la festa aquest vespre. (venir)", "answer": "ve", "hint": "venir" },
-    { "prompt": "Nosaltres ___ nedar. (saber)", "answer": "sabem", "hint": "saber" }
+    {
+      "prompt": "Jo ___ del Quebec. (ser)",
+      "answer": "sóc"
+    },
+    {
+      "prompt": "Nosaltres ___ a Barcelona. (estar, lieu)",
+      "answer": "estem"
+    },
+    {
+      "prompt": "Ella ___ 30 anys. (tenir)",
+      "answer": "té"
+    },
+    {
+      "prompt": "Què ___ (tu) aquest cap de setmana? (fer)",
+      "answer": "fas"
+    },
+    {
+      "prompt": "Nosaltres ___ a la muntanya. (anar)",
+      "answer": "anem"
+    },
+    {
+      "prompt": "Jo ___ un cafè, si us plau. (voler)",
+      "answer": "vull"
+    },
+    {
+      "prompt": "___ (tu) venir demà? (poder)",
+      "answer": "Pots"
+    },
+    {
+      "prompt": "A la plaça ___ molta gent. (haver-hi)",
+      "answer": "hi ha"
+    },
+    {
+      "prompt": "M'___ molt el vi negre. (agradar, ça me plaît)",
+      "answer": "agrada"
+    },
+    {
+      "prompt": "Ells ___ que sí. (dir)",
+      "answer": "diuen"
+    },
+    {
+      "prompt": "Vosaltres ___ de França? (ser, origine)",
+      "answer": "sou"
+    },
+    {
+      "prompt": "Jo ___ cansat avui. (estar, état)",
+      "answer": "estic"
+    },
+    {
+      "prompt": "Ella ___ a la festa aquest vespre. (venir)",
+      "answer": "ve"
+    },
+    {
+      "prompt": "Nosaltres ___ nedar. (saber)",
+      "answer": "sabem"
+    }
   ]
 }
