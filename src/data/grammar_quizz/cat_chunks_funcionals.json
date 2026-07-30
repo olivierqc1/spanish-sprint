@@ -1,22 +1,70 @@
 {
   "id": "cat_chunks_funcionals",
-  "title": "Frases fetes — sobreviure en una conversa",
+  "title": {
+    "fr": "Catalan : phrases de survie",
+    "en": "Catalan: survival phrases"
+  },
   "level": "A2",
-  "note": "**FR** : des phrases toutes faites à ressortir sans réfléchir. Ce sont tes bouées de sauvetage quand tu parles. Traduis en catalan.\n**EN** : ready-made survival phrases you fire off without thinking. Translate into Catalan.\n\nAstuce : mémorise-les comme des blocs, pas mot à mot.",
+  "note": {
+    "fr": "⚙ Des blocs tout faits à sortir sans réfléchir. C'est ce qui te permet de tenir une conversation même avec peu de grammaire.\n\n🎯 DEMANDER DE L'AIDE\n→ Com es diu...? = Comment on dit...?\n→ Què vol dir...? = Qu'est-ce que ça veut dire?\n→ Pots repetir, si us plau?\n→ Pots parlar més a poc a poc?\n\n🎯 GAGNER DU TEMPS\n→ No ho entenc = Je ne comprends pas\n→ Vull dir que... = Je veux dire que...\n\n🎯 SOCIAL\n→ Com va? · No passa res · De res · Perdona\n\n💡 Quand un mot te manque, dis « com es diu...? » et CONTINUE. Ne t'arrête jamais pour chercher.",
+    "en": "⚙ Survival phrases: Com es diu...? · Què vol dir...? · Pots repetir? · No ho entenc · Vull dir que..."
+  },
   "drills": [
-    { "prompt": "Comment on dit… ? →", "answer": "Com es diu...?", "hint": "com es diu" },
-    { "prompt": "Qu'est-ce que ça veut dire ? →", "answer": "Què vol dir?", "hint": "vol dir" },
-    { "prompt": "Peux-tu répéter, s'il te plaît ? →", "answer": "Pots repetir, si us plau?", "hint": "pots repetir" },
-    { "prompt": "Je ne comprends pas. →", "answer": "No ho entenc.", "hint": "ho entenc" },
-    { "prompt": "Peux-tu m'aider ? →", "answer": "Em pots ajudar?", "hint": "em pots" },
-    { "prompt": "Je veux dire que… →", "answer": "Vull dir que...", "hint": "vull dir" },
-    { "prompt": "Peux-tu parler plus lentement ? →", "answer": "Pots parlar més a poc a poc?", "hint": "a poc a poc" },
-    { "prompt": "Comment ça va ? (familier) →", "answer": "Com va?", "hint": "com va" },
-    { "prompt": "Ce n'est pas grave. / Pas de souci. →", "answer": "No passa res.", "hint": "no passa res" },
-    { "prompt": "De rien. →", "answer": "De res.", "hint": "de res" },
-    { "prompt": "Combien ça coûte ? →", "answer": "Quant costa?", "hint": "quant costa" },
-    { "prompt": "Où est… ? →", "answer": "On és...?", "hint": "on és" },
-    { "prompt": "À quelle heure… ? →", "answer": "A quina hora...?", "hint": "quina hora" },
-    { "prompt": "Pardon / Excuse-moi. →", "answer": "Perdona.", "hint": "perdona / disculpa" }
+    {
+      "prompt": "Comment on dit… ? →",
+      "answer": "Com es diu...?"
+    },
+    {
+      "prompt": "Qu'est-ce que ça veut dire ? →",
+      "answer": "Què vol dir?"
+    },
+    {
+      "prompt": "Peux-tu répéter, s'il te plaît ? →",
+      "answer": "Pots repetir, si us plau?"
+    },
+    {
+      "prompt": "Je ne comprends pas. →",
+      "answer": "No ho entenc."
+    },
+    {
+      "prompt": "Peux-tu m'aider ? →",
+      "answer": "Em pots ajudar?"
+    },
+    {
+      "prompt": "Je veux dire que… →",
+      "answer": "Vull dir que..."
+    },
+    {
+      "prompt": "Peux-tu parler plus lentement ? →",
+      "answer": "Pots parlar més a poc a poc?"
+    },
+    {
+      "prompt": "Comment ça va ? (familier) →",
+      "answer": "Com va?"
+    },
+    {
+      "prompt": "Ce n'est pas grave. / Pas de souci. →",
+      "answer": "No passa res."
+    },
+    {
+      "prompt": "De rien. →",
+      "answer": "De res."
+    },
+    {
+      "prompt": "Combien ça coûte ? →",
+      "answer": "Quant costa?"
+    },
+    {
+      "prompt": "Où est… ? →",
+      "answer": "On és...?"
+    },
+    {
+      "prompt": "À quelle heure… ? →",
+      "answer": "A quina hora...?"
+    },
+    {
+      "prompt": "Pardon / Excuse-moi. →",
+      "answer": "Perdona."
+    }
   ]
 }
