@@ -1,0 +1,158 @@
+{
+  "id": "cat_habitatge_hi_ha",
+  "title": "Habitatge — hi ha, n'hi ha, situar l'espai",
+  "level": "A2",
+  "note": "Decrire un logement et situer les choses. Produis la reponse avant de verifier.",
+  "drills": [
+    {
+      "prompt": "Al meu carrer ___ tres forns. (il y a)",
+      "answer": "hi ha",
+      "hint": "hi..."
+    },
+    {
+      "prompt": "— Hi ha una farmacia per aqui? — Si, ___ una a la cantonada.",
+      "answer": "n'hi ha",
+      "hint": "n'..."
+    },
+    {
+      "prompt": "Al pis ___ calefaccio, i a l'hivern fa fred. (il n'y a pas)",
+      "answer": "no hi ha",
+      "hint": "no..."
+    },
+    {
+      "prompt": "Abans, al barri ___ mes botigues petites. (il y avait)",
+      "answer": "hi havia",
+      "hint": "hi..."
+    },
+    {
+      "prompt": "— Queden habitacions lliures? — No, no ___ cap.",
+      "answer": "n'hi ha",
+      "hint": "n'..."
+    },
+    {
+      "prompt": "l'ascenseur →",
+      "answer": "l'ascensor",
+      "hint": "l'a..."
+    },
+    {
+      "prompt": "l'escalier →",
+      "answer": "l'escala",
+      "hint": "l'e..."
+    },
+    {
+      "prompt": "le balcon →",
+      "answer": "el balco",
+      "hint": "el b..."
+    },
+    {
+      "prompt": "le toit-terrasse →",
+      "answer": "el terrat",
+      "hint": "el t..."
+    },
+    {
+      "prompt": "le voisin →",
+      "answer": "el vei",
+      "hint": "el v..."
+    },
+    {
+      "prompt": "le bruit →",
+      "answer": "el soroll",
+      "hint": "el s..."
+    },
+    {
+      "prompt": "le trottoir →",
+      "answer": "la vorera",
+      "hint": "la v..."
+    },
+    {
+      "prompt": "la chambre →",
+      "answer": "l'habitacio",
+      "hint": "l'h..."
+    },
+    {
+      "prompt": "le couloir →",
+      "answer": "el passadis",
+      "hint": "el p..."
+    },
+    {
+      "prompt": "l'entree (hall du pis) →",
+      "answer": "el rebedor",
+      "hint": "el r..."
+    },
+    {
+      "prompt": "la salle a manger →",
+      "answer": "el menjador",
+      "hint": "el m..."
+    },
+    {
+      "prompt": "lumineux →",
+      "answer": "lluminos",
+      "hint": "ll..."
+    },
+    {
+      "prompt": "bruyant →",
+      "answer": "sorollos",
+      "hint": "so..."
+    },
+    {
+      "prompt": "spacieux →",
+      "answer": "espaios",
+      "hint": "es..."
+    },
+    {
+      "prompt": "ensoleille →",
+      "answer": "assolellat",
+      "hint": "as..."
+    },
+    {
+      "prompt": "meuble →",
+      "answer": "moblat",
+      "hint": "mo..."
+    },
+    {
+      "prompt": "a cote de →",
+      "answer": "al costat de",
+      "hint": "al c..."
+    },
+    {
+      "prompt": "devant →",
+      "answer": "davant de",
+      "hint": "da..."
+    },
+    {
+      "prompt": "derriere →",
+      "answer": "darrere de",
+      "hint": "da..."
+    },
+    {
+      "prompt": "entre →",
+      "answer": "entre",
+      "hint": "en..."
+    },
+    {
+      "prompt": "au coin de la rue →",
+      "answer": "a la cantonada",
+      "hint": "a la c..."
+    },
+    {
+      "prompt": "pres de →",
+      "answer": "a prop de",
+      "hint": "a p..."
+    },
+    {
+      "prompt": "loin de →",
+      "answer": "lluny de",
+      "hint": "ll..."
+    },
+    {
+      "prompt": "en haut →",
+      "answer": "a dalt",
+      "hint": "a d..."
+    },
+    {
+      "prompt": "en bas →",
+      "answer": "a baix",
+      "hint": "a b..."
+    }
+  ]
+}
