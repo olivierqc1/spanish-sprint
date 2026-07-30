@@ -1,158 +1,134 @@
 {
   "id": "cat_habitatge_hi_ha",
-  "title": "Habitatge — hi ha, n'hi ha, situar l'espai",
+  "title": {
+    "fr": "Catalan : logement, hi ha / n'hi ha, situer",
+    "en": "Catalan: housing, hi ha / n'hi ha"
+  },
   "level": "A2",
-  "note": "Decrire un logement et situer les choses. Produis la reponse avant de verifier.",
+  "note": {
+    "fr": "⚙ Décrire un logement et situer les choses.\n\n🎯 HI HA / NO HI HA / N'HI HA\n→ HI HA = il y a : Hi ha molta llum\n→ NO HI HA = il n'y a pas : No hi ha ascensor\n→ N'HI HA = il y en a (quand on reparle de la chose) : — Hi ha farmàcia? — Sí, N'HI HA una\n→ Passé : HI HAVIA = il y avait\n→ HI HA est invariable : jamais « hi han »\n\n🎯 SITUER\n→ al costat de · davant de · darrere de · entre · a prop de · lluny de\n→ a dalt · a baix · a la cantonada\n\n💡 Après « davant » et « darrere », le catalan met DE : davant DE casa.",
+    "en": "⚙ HI HA = there is/are · NO HI HA = there isn't · N'HI HA = there is one (of them) · HI HAVIA = there was. Never 'hi han'."
+  },
   "drills": [
     {
       "prompt": "Al meu carrer ___ tres forns. (il y a)",
-      "answer": "hi ha",
-      "hint": "hi..."
+      "answer": "hi ha"
     },
     {
       "prompt": "— Hi ha una farmacia per aqui? — Si, ___ una a la cantonada.",
-      "answer": "n'hi ha",
-      "hint": "n'..."
+      "answer": "n'hi ha"
     },
     {
       "prompt": "Al pis ___ calefaccio, i a l'hivern fa fred. (il n'y a pas)",
-      "answer": "no hi ha",
-      "hint": "no..."
+      "answer": "no hi ha"
     },
     {
       "prompt": "Abans, al barri ___ mes botigues petites. (il y avait)",
-      "answer": "hi havia",
-      "hint": "hi..."
+      "answer": "hi havia"
     },
     {
       "prompt": "— Queden habitacions lliures? — No, no ___ cap.",
-      "answer": "n'hi ha",
-      "hint": "n'..."
+      "answer": "n'hi ha"
     },
     {
       "prompt": "l'ascenseur →",
-      "answer": "l'ascensor",
-      "hint": "l'a..."
+      "answer": "l'ascensor"
     },
     {
       "prompt": "l'escalier →",
-      "answer": "l'escala",
-      "hint": "l'e..."
+      "answer": "l'escala"
     },
     {
       "prompt": "le balcon →",
-      "answer": "el balco",
-      "hint": "el b..."
+      "answer": "el balcó"
     },
     {
       "prompt": "le toit-terrasse →",
-      "answer": "el terrat",
-      "hint": "el t..."
+      "answer": "el terrat"
     },
     {
       "prompt": "le voisin →",
-      "answer": "el vei",
-      "hint": "el v..."
+      "answer": "el veí"
     },
     {
       "prompt": "le bruit →",
-      "answer": "el soroll",
-      "hint": "el s..."
+      "answer": "el soroll"
     },
     {
       "prompt": "le trottoir →",
-      "answer": "la vorera",
-      "hint": "la v..."
+      "answer": "la vorera"
     },
     {
       "prompt": "la chambre →",
-      "answer": "l'habitacio",
-      "hint": "l'h..."
+      "answer": "l'habitació"
     },
     {
       "prompt": "le couloir →",
-      "answer": "el passadis",
-      "hint": "el p..."
+      "answer": "el passadís"
     },
     {
       "prompt": "l'entree (hall du pis) →",
-      "answer": "el rebedor",
-      "hint": "el r..."
+      "answer": "el rebedor"
     },
     {
       "prompt": "la salle a manger →",
-      "answer": "el menjador",
-      "hint": "el m..."
+      "answer": "el menjador"
     },
     {
       "prompt": "lumineux →",
-      "answer": "lluminos",
-      "hint": "ll..."
+      "answer": "lluminós"
     },
     {
       "prompt": "bruyant →",
-      "answer": "sorollos",
-      "hint": "so..."
+      "answer": "sorollós"
     },
     {
       "prompt": "spacieux →",
-      "answer": "espaios",
-      "hint": "es..."
+      "answer": "espaiós"
     },
     {
       "prompt": "ensoleille →",
-      "answer": "assolellat",
-      "hint": "as..."
+      "answer": "assolellat"
     },
     {
       "prompt": "meuble →",
-      "answer": "moblat",
-      "hint": "mo..."
+      "answer": "moblat"
     },
     {
       "prompt": "a cote de →",
-      "answer": "al costat de",
-      "hint": "al c..."
+      "answer": "al costat de"
     },
     {
       "prompt": "devant →",
-      "answer": "davant de",
-      "hint": "da..."
+      "answer": "davant de"
     },
     {
       "prompt": "derriere →",
-      "answer": "darrere de",
-      "hint": "da..."
+      "answer": "darrere de"
     },
     {
       "prompt": "entre →",
-      "answer": "entre",
-      "hint": "en..."
+      "answer": "entre"
     },
     {
       "prompt": "au coin de la rue →",
-      "answer": "a la cantonada",
-      "hint": "a la c..."
+      "answer": "a la cantonada"
     },
     {
       "prompt": "pres de →",
-      "answer": "a prop de",
-      "hint": "a p..."
+      "answer": "a prop de"
     },
     {
       "prompt": "loin de →",
-      "answer": "lluny de",
-      "hint": "ll..."
+      "answer": "lluny de"
     },
     {
       "prompt": "en haut →",
-      "answer": "a dalt",
-      "hint": "a d..."
+      "answer": "a dalt"
     },
     {
       "prompt": "en bas →",
-      "answer": "a baix",
-      "hint": "a b..."
+      "answer": "a baix"
     }
   ]
 }
