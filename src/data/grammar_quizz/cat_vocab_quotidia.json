@@ -1,158 +1,134 @@
 {
   "id": "cat_vocab_quotidia",
-  "title": "Vocabulari — la vida quotidiana",
+  "title": {
+    "fr": "Catalan : vocabulaire du quotidien",
+    "en": "Catalan: everyday vocabulary"
+  },
   "level": "A1-A2",
-  "note": "Le vocabulaire de tous les jours : maison, routine, objets. Produis le mot catalan AVANT de regarder la reponse.",
+  "note": {
+    "fr": "⚙ Maison, routine et objets du quotidien.\n\n🎯 VERBES PRONOMINAUX de la routine\n→ llevar-se = se lever · dutxar-se = se doucher · vestir-se = s'habiller\n→ Em llevo a les set · Es dutxa cada matí\n\n🎯 LES MOMENTS DE LA JOURNÉE\n→ el matí · la tarda · el vespre (début de soirée) · la nit\n→ Le catalan distingue VESPRE et NIT, contrairement au français.\n\n💡 Produis le mot avant de vérifier.",
+    "en": "⚙ Home and daily routine. Reflexive verbs: llevar-se, dutxar-se, vestir-se. Catalan separates VESPRE (early evening) from NIT (night)."
+  },
   "drills": [
     {
       "prompt": "se lever →",
-      "answer": "llevar-se",
-      "hint": "ll..."
+      "answer": "llevar-se"
     },
     {
       "prompt": "se coucher →",
-      "answer": "anar a dormir",
-      "hint": "an..."
+      "answer": "anar a dormir"
     },
     {
       "prompt": "s'habiller →",
-      "answer": "vestir-se",
-      "hint": "ve..."
+      "answer": "vestir-se"
     },
     {
       "prompt": "se doucher →",
-      "answer": "dutxar-se",
-      "hint": "du..."
+      "answer": "dutxar-se"
     },
     {
       "prompt": "le lit →",
-      "answer": "el llit",
-      "hint": "el..."
+      "answer": "el llit"
     },
     {
       "prompt": "la cuisine →",
-      "answer": "la cuina",
-      "hint": "la..."
+      "answer": "la cuina"
     },
     {
       "prompt": "la chambre →",
-      "answer": "l'habitació",
-      "hint": "l'..."
+      "answer": "l'habitació"
     },
     {
       "prompt": "la salle de bain →",
-      "answer": "el bany",
-      "hint": "el..."
+      "answer": "el bany"
     },
     {
       "prompt": "la porte →",
-      "answer": "la porta",
-      "hint": "la..."
+      "answer": "la porta"
     },
     {
       "prompt": "la fenetre →",
-      "answer": "la finestra",
-      "hint": "la..."
+      "answer": "la finestra"
     },
     {
       "prompt": "la table →",
-      "answer": "la taula",
-      "hint": "la..."
+      "answer": "la taula"
     },
     {
       "prompt": "la chaise →",
-      "answer": "la cadira",
-      "hint": "la..."
+      "answer": "la cadira"
     },
     {
       "prompt": "la cle →",
-      "answer": "la clau",
-      "hint": "la..."
+      "answer": "la clau"
     },
     {
       "prompt": "le telephone →",
-      "answer": "el telèfon",
-      "hint": "el..."
+      "answer": "el telèfon"
     },
     {
       "prompt": "l'argent →",
-      "answer": "els diners",
-      "hint": "el..."
+      "answer": "els diners"
     },
     {
       "prompt": "le sac →",
-      "answer": "la bossa",
-      "hint": "la..."
+      "answer": "la bossa"
     },
     {
       "prompt": "ranger →",
-      "answer": "endreçar",
-      "hint": "en..."
+      "answer": "endreçar"
     },
     {
       "prompt": "nettoyer →",
-      "answer": "netejar",
-      "hint": "ne..."
+      "answer": "netejar"
     },
     {
       "prompt": "laver →",
-      "answer": "rentar",
-      "hint": "re..."
+      "answer": "rentar"
     },
     {
       "prompt": "cuisiner →",
-      "answer": "cuinar",
-      "hint": "cu..."
+      "answer": "cuinar"
     },
     {
       "prompt": "le matin →",
-      "answer": "el matí",
-      "hint": "el..."
+      "answer": "el matí"
     },
     {
       "prompt": "l'apres-midi →",
-      "answer": "la tarda",
-      "hint": "la..."
+      "answer": "la tarda"
     },
     {
       "prompt": "le soir →",
-      "answer": "el vespre",
-      "hint": "el..."
+      "answer": "el vespre"
     },
     {
       "prompt": "la nuit →",
-      "answer": "la nit",
-      "hint": "la..."
+      "answer": "la nit"
     },
     {
       "prompt": "tot de suite →",
-      "answer": "de seguida",
-      "hint": "de..."
+      "answer": "de seguida"
     },
     {
       "prompt": "souvent →",
-      "answer": "sovint",
-      "hint": "so..."
+      "answer": "sovint"
     },
     {
       "prompt": "parfois →",
-      "answer": "de vegades",
-      "hint": "de..."
+      "answer": "de vegades"
     },
     {
       "prompt": "jamais →",
-      "answer": "mai",
-      "hint": "ma..."
+      "answer": "mai"
     },
     {
       "prompt": "tot →",
-      "answer": "aviat",
-      "hint": "av..."
+      "answer": "aviat"
     },
     {
       "prompt": "tard →",
-      "answer": "tard",
-      "hint": "ta..."
+      "answer": "tard"
     }
   ]
 }
