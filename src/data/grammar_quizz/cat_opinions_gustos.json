@@ -1,0 +1,94 @@
+{
+  "id": "cat_opinions_gustos",
+  "title": {
+    "fr": "Catalan — Opinions, goûts et préférences",
+    "en": "Catalan — Opinions and preferences"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙ Toute une aire thématique de Digui, digui (unités 8, 18, 28).\n\n🎯 AGRADAR — comme « plaire », pas « aimer »\n→ M'agrada el vi (singulier)\n→ M'agradEN els vins (pluriel : le verbe s'accorde avec la CHOSE)\n→ M'agrada molt · No m'agrada gens\n\n🎯 DONNER SON AVIS\n→ Què et sembla? = Qu'en penses-tu?\n→ Em sembla que... = Il me semble que...\n→ Crec que... / Penso que... = Je crois que...\n→ Per a mi... = Pour moi...\n\n🎯 ÊTRE D'ACCORD\n→ Hi estic d'acord (avec HI !) = Je suis d'accord\n→ No hi estic d'acord = Je ne suis pas d'accord\n→ Tens raó = Tu as raison\n\n🎯 PRÉFÉRER\n→ M'estimo més... = Je préfère... (très catalan)\n→ Prefereixo... · Millor que...\n\n💡 Piège : « estar d'acord » demande HI. On dit « hi estic d'acord », jamais « estic d'acord » seul.",
+    "en": "⚙ Opinions and taste. AGRADAR works like 'to please': M'agrada el vi / M'agradEN els vins. HI ESTIC D'ACORD (needs HI). M'estimo més = I prefer."
+  },
+  "drills": [
+    {
+      "prompt": "Ça me plaît beaucoup. (le vin) →",
+      "answer": "M'agrada molt el vi"
+    },
+    {
+      "prompt": "Ils me plaisent. (les films) →",
+      "answer": "M'agraden les pel·lícules"
+    },
+    {
+      "prompt": "Je n'aime pas ça du tout. →",
+      "answer": "No m'agrada gens"
+    },
+    {
+      "prompt": "Qu'en penses-tu? →",
+      "answer": "Què et sembla?"
+    },
+    {
+      "prompt": "Il me semble que c'est cher. →",
+      "answer": "Em sembla que és car"
+    },
+    {
+      "prompt": "Je crois que oui. →",
+      "answer": "Crec que sí"
+    },
+    {
+      "prompt": "Je pense que non. →",
+      "answer": "Penso que no"
+    },
+    {
+      "prompt": "Je suis d'accord. →",
+      "answer": "Hi estic d'acord"
+    },
+    {
+      "prompt": "Je ne suis pas d'accord. →",
+      "answer": "No hi estic d'acord"
+    },
+    {
+      "prompt": "Tu as raison. →",
+      "answer": "Tens raó"
+    },
+    {
+      "prompt": "Je préfère rester à la maison. →",
+      "answer": "M'estimo més quedar-me a casa"
+    },
+    {
+      "prompt": "Je préfère le train. →",
+      "answer": "Prefereixo el tren"
+    },
+    {
+      "prompt": "À mon avis, c'est mieux. →",
+      "answer": "Per a mi, és millor"
+    },
+    {
+      "prompt": "Ça m'est égal. →",
+      "answer": "M'és igual"
+    },
+    {
+      "prompt": "Je déteste attendre. →",
+      "answer": "Odio esperar"
+    },
+    {
+      "prompt": "C'est génial! →",
+      "answer": "És genial!"
+    },
+    {
+      "prompt": "Ça ne vaut pas la peine. →",
+      "answer": "No val la pena"
+    },
+    {
+      "prompt": "Moi aussi. (j'aime aussi) →",
+      "answer": "A mi també"
+    },
+    {
+      "prompt": "Moi non plus. →",
+      "answer": "A mi tampoc"
+    },
+    {
+      "prompt": "Ça dépend. →",
+      "answer": "Depèn"
+    }
+  ]
+}
