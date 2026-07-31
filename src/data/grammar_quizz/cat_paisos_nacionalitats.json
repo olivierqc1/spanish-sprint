@@ -1,0 +1,94 @@
+{
+  "id": "cat_paisos_nacionalitats",
+  "title": {
+    "fr": "Catalan — Pays, nationalités et langues",
+    "en": "Catalan — Countries, nationalities, languages"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ Dire d'où on vient et quelles langues on parle (Veus unité 1).\n\n🎯 D'OÙ ES-TU ?\n→ D'on ets? — Sóc del Quebec / Sóc de França\n→ Sóc quebequès · Sóc francesa\n\n🎯 ACCORD DES NATIONALITÉS\n→ francès / francesa · anglès / anglesa\n→ espanyol / espanyola · italià / italiana\n→ alemany / alemanya · canadenc / canadenca\n\n🎯 LES LANGUES — masculin, avec article\n→ Parlo EL català, EL francès i L'anglès\n→ Mais après « parlar » on l'omet souvent : Parlo català.\n\n🎯 LE PAYS\n→ Visc A Barcelona (ville) · Visc A Catalunya\n→ Vaig A França · Vinc DEL Quebec\n\n💡 Attention : « quebequès » et non « québécois ». Et le Canada = el Canadà, avec accent.",
+    "en": "⚙ Countries and nationalities. D'on ets? Sóc del Quebec. Nationalities agree: francès/francesa. Languages are masculine."
+  },
+  "drills": [
+    {
+      "prompt": "D'où es-tu? →",
+      "answer": "D'on ets?"
+    },
+    {
+      "prompt": "Je viens du Québec. →",
+      "answer": "Sóc del Quebec"
+    },
+    {
+      "prompt": "Je suis québécois. →",
+      "answer": "Sóc quebequès"
+    },
+    {
+      "prompt": "la France →",
+      "answer": "França"
+    },
+    {
+      "prompt": "l'Espagne →",
+      "answer": "Espanya"
+    },
+    {
+      "prompt": "le Canada →",
+      "answer": "el Canadà"
+    },
+    {
+      "prompt": "l'Angleterre →",
+      "answer": "Anglaterra"
+    },
+    {
+      "prompt": "l'Allemagne →",
+      "answer": "Alemanya"
+    },
+    {
+      "prompt": "l'Italie →",
+      "answer": "Itàlia"
+    },
+    {
+      "prompt": "français (masculin) →",
+      "answer": "francès"
+    },
+    {
+      "prompt": "française →",
+      "answer": "francesa"
+    },
+    {
+      "prompt": "anglaise →",
+      "answer": "anglesa"
+    },
+    {
+      "prompt": "allemand →",
+      "answer": "alemany"
+    },
+    {
+      "prompt": "italienne →",
+      "answer": "italiana"
+    },
+    {
+      "prompt": "Je parle catalan et français. →",
+      "answer": "Parlo català i francès"
+    },
+    {
+      "prompt": "Quelles langues parles-tu? →",
+      "answer": "Quines llengües parles?"
+    },
+    {
+      "prompt": "J'habite à Barcelone. →",
+      "answer": "Visc a Barcelona"
+    },
+    {
+      "prompt": "J'habite en Catalogne. →",
+      "answer": "Visc a Catalunya"
+    },
+    {
+      "prompt": "Je vais en France. →",
+      "answer": "Vaig a França"
+    },
+    {
+      "prompt": "Je suis étranger. →",
+      "answer": "Sóc estranger"
+    }
+  ]
+}
