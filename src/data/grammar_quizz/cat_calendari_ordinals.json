@@ -1,0 +1,98 @@
+{
+  "id": "cat_calendari_ordinals",
+  "title": {
+    "fr": "Catalan — Jours, saisons et ordinaux",
+    "en": "Catalan — Days, seasons, ordinal numbers"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ Le calendrier et les nombres ordinaux (Veus unités 3 et 4).\n\n🎯 LES JOURS — minuscule, masculin\n→ dilluns, dimarts, dimecres, dijous, divendres, dissabte, diumenge\n→ EL dilluns = lundi (celui-ci) · ELS dilluns = tous les lundis\n\n🎯 LES SAISONS\n→ la primavera · l'estiu · la tardor · l'hivern\n→ A l'estiu = en été\n\n🎯 LES PARTIES DU JOUR\n→ el matí · el migdia · la tarda · el vespre · la nit\n→ Le catalan distingue VESPRE (soirée) et NIT (nuit).\n\n🎯 LES ORDINAUX\n→ primer, segon, tercer, quart, cinquè, sisè, setè, vuitè, novè, desè\n→ Ils s'accordent : primera, segona, tercera\n→ Visc al tercer pis = j'habite au troisième\n\n💡 Piège : dimarts et dijous s'écrivent pareil au singulier et au pluriel.",
+    "en": "⚙ Days are lowercase and masculine. ELS dilluns = every Monday. Seasons take A: a l'estiu. Ordinals: primer, segon, tercer, quart, cinquè..."
+  },
+  "drills": [
+    {
+      "prompt": "lundi →",
+      "answer": "dilluns"
+    },
+    {
+      "prompt": "mercredi →",
+      "answer": "dimecres"
+    },
+    {
+      "prompt": "jeudi →",
+      "answer": "dijous"
+    },
+    {
+      "prompt": "samedi →",
+      "answer": "dissabte"
+    },
+    {
+      "prompt": "dimanche →",
+      "answer": "diumenge"
+    },
+    {
+      "prompt": "tous les lundis →",
+      "answer": "els dilluns"
+    },
+    {
+      "prompt": "le printemps →",
+      "answer": "la primavera"
+    },
+    {
+      "prompt": "l'été →",
+      "answer": "l'estiu"
+    },
+    {
+      "prompt": "l'automne →",
+      "answer": "la tardor"
+    },
+    {
+      "prompt": "l'hiver →",
+      "answer": "l'hivern"
+    },
+    {
+      "prompt": "en été →",
+      "answer": "a l'estiu"
+    },
+    {
+      "prompt": "le midi →",
+      "answer": "el migdia"
+    },
+    {
+      "prompt": "premier →",
+      "answer": "primer"
+    },
+    {
+      "prompt": "deuxième →",
+      "answer": "segon"
+    },
+    {
+      "prompt": "troisième →",
+      "answer": "tercer"
+    },
+    {
+      "prompt": "quatrième →",
+      "answer": "quart"
+    },
+    {
+      "prompt": "cinquième →",
+      "answer": "cinquè"
+    },
+    {
+      "prompt": "sixième →",
+      "answer": "sisè"
+    },
+    {
+      "prompt": "la première fois →",
+      "answer": "la primera vegada"
+    },
+    {
+      "prompt": "J'habite au troisième étage. →",
+      "answer": "Visc al tercer pis"
+    },
+    {
+      "prompt": "Quel jour on est? →",
+      "answer": "Quin dia és avui?"
+    }
+  ]
+}
