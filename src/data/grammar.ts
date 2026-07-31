@@ -11,6 +11,94 @@ export type GrammarPoint = {
 
 export const grammarPoints: GrammarPoint[] = [
 {
+    id: "cat_opinions_gustos",
+    title: { fr: "Catalan — Opinions, goûts et préférences", en: "Catalan — Opinions and preferences" },
+    level: "A2",
+    note: { fr: "Agradar, què et sembla, hi estic d'acord, m'estimo més.", en: "Agradar, opinions, agreeing, preferring." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_opinions_gustos.json"
+  },
+  {
+    id: "cat_compres_quantitats",
+    title: { fr: "Catalan — Quantités, mesures et achats", en: "Catalan — Quantities and shopping" },
+    level: "A2",
+    note: { fr: "Demanar tanda, quantités, prix, comment on veut un produit.", en: "Queuing, quantities, prices." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_compres_quantitats.json"
+  },
+  {
+    id: "cat_roba_descriure",
+    title: { fr: "Catalan — Vêtements et décrire quelqu'un", en: "Catalan — Clothes and describing people" },
+    level: "A2",
+    note: { fr: "Physique, vêtements, accord des couleurs, tailles.", en: "Appearance, clothes, colour agreement, sizes." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_roba_descriure.json"
+  },
+  {
+    id: "cat_permis_prohibicio",
+    title: { fr: "Catalan — Permission, interdiction, ordres", en: "Catalan — Permission and prohibition" },
+    level: "A2",
+    note: { fr: "Es pot, està prohibit, impératif et impératif négatif.", en: "Es pot, està prohibit, imperative forms." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_permis_prohibicio.json"
+  },
+{
+    id: "cat_dates_durada",
+    title: { fr: "Catalan — Dates, mois et durée", en: "Catalan — Dates, months and duration" },
+    level: "A2",
+    note: { fr: "Les mois, dire une date, fa... que, d'aquí a, fréquence.", en: "Months, dates, fa... que, duration, frequency." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_dates_durada.json"
+  },
+  {
+    id: "cat_avaries_reclamacions",
+    title: { fr: "Catalan — Pannes, réclamations et urgences", en: "Catalan — Breakdowns and complaints" },
+    level: "A2",
+    note: { fr: "No funciona, s'ha espatllat, réclamer, demander de l'aide.", en: "Reporting faults, complaining, asking for help." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_avaries_reclamacions.json"
+  },
+  {
+    id: "cat_descriure_objectes",
+    title: { fr: "Catalan — Décrire un objet : matière, goût, température", en: "Catalan — Describing objects" },
+    level: "A2",
+    note: { fr: "És de fusta, dolç/salat/amarg, trencat/brut/passat.", en: "Material with DE, taste, temperature, faulty states." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_descriure_objectes.json"
+  },
+{
+    id: "cat_quantificadors",
+    title: { fr: "Catalan — Quantificateurs (molt, gaire, gens, cap)", en: "Catalan — Quantifiers" },
+    level: "A1-A2",
+    note: { fr: "gaire n'existe qu'en négation et question. cap vs gens.", en: "gaire only in negatives/questions. cap vs gens." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_quantificadors.json"
+  },
+  {
+    id: "cat_paisos_nacionalitats",
+    title: { fr: "Catalan — Pays, nationalités et langues", en: "Catalan — Countries and nationalities" },
+    level: "A1-A2",
+    note: { fr: "D'on ets, accord des nationalités, prépositions de lieu.", en: "Where you're from, agreement, place prepositions." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_paisos_nacionalitats.json"
+  },
+  {
+    id: "cat_calendari_ordinals",
+    title: { fr: "Catalan — Jours, saisons et ordinaux", en: "Catalan — Days, seasons, ordinals" },
+    level: "A1-A2",
+    note: { fr: "Els dilluns = tous les lundis. Primer, segon, tercer, cinquè.", en: "Els dilluns = every Monday. Ordinal numbers." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_calendari_ordinals.json"
+  },
+  {
+    id: "cat_sentiments_estats",
+    title: { fr: "Catalan — Sentiments et états d'âme", en: "Catalan — Feelings and moods" },
+    level: "A1-A2",
+    note: { fr: "Estar + adjectif, tenir por/son/pressa, em fa il·lusió.", en: "Estar + adjective, tinc por, em fa il·lusió." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_sentiments_estats.json"
+  },
+{
     id: "cat_vocab_quotidia",
     title: { fr: "Catalan — Vocabulaire du quotidien", en: "Catalan — Everyday vocabulary" },
     level: "A1-A2",
