@@ -1,0 +1,94 @@
+{
+  "id": "cat_permis_prohibicio",
+  "title": {
+    "fr": "Catalan — Permission, interdiction, ordres",
+    "en": "Catalan — Permission, prohibition, orders"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙ Demander l'autorisation, permettre, interdire (Digui, digui unité 29).\n\n🎯 DEMANDER LA PERMISSION\n→ Es pot...? = On peut...?\n→ Puc...? = Est-ce que je peux...?\n→ Et fa res si...? = Ça te dérange si...?\n\n🎯 AUTORISER\n→ És clar! = Bien sûr!\n→ Endavant = Allez-y\n→ Cap problema = Aucun problème\n\n🎯 INTERDIRE\n→ No es pot... = On ne peut pas...\n→ Està prohibit... = Il est interdit de...\n→ No s'admeten... = On n'accepte pas...\n\n🎯 ORDONNER — l'impératif\n→ tu : Vine! Seu! Espera!\n→ vostè : Vingui! Segui! Esperi!\n→ Négatif = subjonctif : No vinguis! No esperis!\n\n💡 « Es pot passar? » (on peut passer?) est la formule qu'on entend partout.",
+    "en": "⚙ Permission and prohibition. Es pot...? = may one...? Està prohibit = it's forbidden. Negative imperative uses the subjunctive: No vinguis!"
+  },
+  "drills": [
+    {
+      "prompt": "On peut passer? →",
+      "answer": "Es pot passar?"
+    },
+    {
+      "prompt": "Est-ce que je peux entrer? →",
+      "answer": "Puc entrar?"
+    },
+    {
+      "prompt": "Ça te dérange si je fume? →",
+      "answer": "Et fa res si fumo?"
+    },
+    {
+      "prompt": "Bien sûr! →",
+      "answer": "És clar!"
+    },
+    {
+      "prompt": "Allez-y. →",
+      "answer": "Endavant"
+    },
+    {
+      "prompt": "Aucun problème. →",
+      "answer": "Cap problema"
+    },
+    {
+      "prompt": "On ne peut pas fumer ici. →",
+      "answer": "Aquí no es pot fumar"
+    },
+    {
+      "prompt": "Il est interdit d'entrer. →",
+      "answer": "Està prohibit entrar"
+    },
+    {
+      "prompt": "Les animaux ne sont pas admis. →",
+      "answer": "No s'admeten animals"
+    },
+    {
+      "prompt": "Attends! (tu) →",
+      "answer": "Espera!"
+    },
+    {
+      "prompt": "Attendez! (vostè) →",
+      "answer": "Esperi!"
+    },
+    {
+      "prompt": "Viens! (tu) →",
+      "answer": "Vine!"
+    },
+    {
+      "prompt": "Venez! (vostè) →",
+      "answer": "Vingui!"
+    },
+    {
+      "prompt": "Assieds-toi. →",
+      "answer": "Seu"
+    },
+    {
+      "prompt": "N'attends pas. →",
+      "answer": "No esperis"
+    },
+    {
+      "prompt": "Ne viens pas. →",
+      "answer": "No vinguis"
+    },
+    {
+      "prompt": "Ne t'inquiète pas. →",
+      "answer": "No et preocupis"
+    },
+    {
+      "prompt": "Fais attention! →",
+      "answer": "Ves amb compte!"
+    },
+    {
+      "prompt": "Tais-toi. →",
+      "answer": "Calla"
+    },
+    {
+      "prompt": "Laisse-moi tranquille. →",
+      "answer": "Deixa'm tranquil"
+    }
+  ]
+}
