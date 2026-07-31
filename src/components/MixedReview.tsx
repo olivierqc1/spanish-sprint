@@ -171,12 +171,12 @@ export default function MixedReview({ decks, sessionSize = 20, lang = "ca-ES" }:
       new Map(missed.map((m) => [m.prompt, m])).values()
     );
     return (
-      <div className="mx-auto max-w-md p-6">
-        <p className="text-center text-sm uppercase tracking-widest text-neutral-500">
+      <div className="mx-auto max-w-md p-6 text-white">
+        <p className="text-center text-sm uppercase tracking-widest text-slate-400">
           Sessió acabada
         </p>
         <p className="mt-2 text-center text-5xl font-semibold tabular-nums">{pct}%</p>
-        <p className="mt-1 text-center text-neutral-600">
+        <p className="mt-1 text-center text-slate-400">
           {right} / {seen} respostes correctes
         </p>
 
@@ -185,8 +185,8 @@ export default function MixedReview({ decks, sessionSize = 20, lang = "ca-ES" }:
             <p className="text-sm font-medium">A repassar ({uniqueMissed.length})</p>
             <ul className="mt-3 space-y-2">
               {uniqueMissed.map((m, i) => (
-                <li key={i} className="rounded-xl border border-neutral-200 p-3 text-sm">
-                  <span className="text-neutral-600">{m.prompt}</span>
+                <li key={i} className="rounded-xl border border-slate-700 bg-slate-800/50 p-3 text-sm">
+                  <span className="text-slate-400">{m.prompt}</span>
                   <br />
                   <span className="font-medium">{m.answer}</span>
                 </li>
@@ -197,7 +197,7 @@ export default function MixedReview({ decks, sessionSize = 20, lang = "ca-ES" }:
 
         <button
           onClick={restart}
-          className="mt-8 w-full rounded-full bg-neutral-900 px-6 py-4 text-white"
+          className="mt-8 w-full rounded-full bg-emerald-600 px-6 py-4 text-white"
         >
           Una altra sessió
         </button>
@@ -206,24 +206,24 @@ export default function MixedReview({ decks, sessionSize = 20, lang = "ca-ES" }:
   }
 
   return (
-    <div className="mx-auto max-w-md p-5">
+    <div className="mx-auto max-w-md p-5 text-white">
       <div className="flex items-baseline justify-between">
-        <span className="text-xs uppercase tracking-widest text-neutral-500">
+        <span className="text-xs uppercase tracking-widest text-slate-400">
           {card.deckTitle}
         </span>
-        <span className="text-sm tabular-nums text-neutral-500">
+        <span className="text-sm tabular-nums text-slate-400">
           {pos + 1} / {queue.length}
         </span>
       </div>
 
-      <div className="mt-1 h-1 w-full rounded-full bg-neutral-200">
+      <div className="mt-1 h-1 w-full rounded-full bg-slate-700">
         <div
-          className="h-1 rounded-full bg-neutral-900 transition-all"
+          className="h-1 rounded-full bg-emerald-600 transition-all"
           style={{ width: `${(pos / queue.length) * 100}%` }}
         />
       </div>
 
-      <div className="mt-8 rounded-2xl border border-neutral-200 p-6">
+      <div className="mt-8 rounded-2xl border border-slate-700 p-6">
         <p className="text-2xl leading-snug">
           {card.prompt.replace(/\s*→\s*$/, "")}
         </p>
@@ -240,16 +240,16 @@ export default function MixedReview({ decks, sessionSize = 20, lang = "ca-ES" }:
           autoCorrect="off"
           spellCheck={false}
           placeholder="Escriu-ho en català"
-          className="mt-5 w-full rounded-xl border border-neutral-300 px-4 py-3 text-lg outline-none focus:border-neutral-900 disabled:bg-neutral-50"
+          className="mt-5 w-full rounded-xl border border-slate-600 px-4 py-3 text-lg bg-slate-900 text-white outline-none focus:border-emerald-500 disabled:bg-slate-800"
         />
 
         {state === "right" && (
-          <p className="mt-4 font-medium text-emerald-700">Correcte</p>
+          <p className="mt-4 font-medium text-emerald-400">Correcte</p>
         )}
         {state === "wrong" && (
           <div className="mt-4">
-            <p className="font-medium text-red-700">Resposta : {card.answer}</p>
-            <p className="mt-1 text-sm text-neutral-600">
+            <p className="font-medium text-red-400">Resposta : {card.answer}</p>
+            <p className="mt-1 text-sm text-slate-400">
               Tornarà a sortir en aquesta mateixa sessió.
             </p>
           </div>
@@ -258,7 +258,7 @@ export default function MixedReview({ decks, sessionSize = 20, lang = "ca-ES" }:
         {state !== "typing" && (
           <button
             onClick={() => speak(card.answer)}
-            className="mt-3 text-sm underline text-neutral-700"
+            className="mt-3 text-sm underline text-slate-300"
           >
             Escolta la pronúncia
           </button>
@@ -267,12 +267,12 @@ export default function MixedReview({ decks, sessionSize = 20, lang = "ca-ES" }:
 
       <button
         onClick={state === "typing" ? submit : next}
-        className="mt-6 w-full rounded-full bg-neutral-900 px-6 py-4 text-white"
+        className="mt-6 w-full rounded-full bg-emerald-600 px-6 py-4 text-white"
       >
         {state === "typing" ? "Comprova" : "Següent"}
       </button>
 
-      <p className="mt-4 text-center text-sm tabular-nums text-neutral-500">
+      <p className="mt-4 text-center text-sm tabular-nums text-slate-400">
         {right} / {seen}
       </p>
     </div>
