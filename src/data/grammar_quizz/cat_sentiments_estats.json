@@ -1,0 +1,94 @@
+{
+  "id": "cat_sentiments_estats",
+  "title": {
+    "fr": "Catalan — Sentiments et états d'âme",
+    "en": "Catalan — Feelings and moods"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ Dire comment on se sent (Veus unité 5).\n\n🎯 ESTAR + adjectif pour un état passager\n→ Estic content / cansat / nerviós\n→ L'adjectif s'accorde : estic contenta\n\n🎯 TENIR + nom\n→ Tinc por = j'ai peur · Tinc son = j'ai sommeil\n→ Tinc pressa = je suis pressé · Tinc ganes de = j'ai envie de\n\n🎯 FER pour les sensations\n→ Em fa por = ça me fait peur\n→ Em fa vergonya = ça me gêne\n→ Em fa il·lusió = ça me réjouit (très catalan, pas d'équivalent français)\n\n🎯 SE SENTIR\n→ Com et trobes? = comment tu te sens?\n→ Em trobo bé / malament\n\n💡 FER IL·LUSIÓ est une des expressions les plus utiles et les plus intraduisibles : un mélange de « ça me fait plaisir » et « j'ai hâte ».",
+    "en": "⚙ Feelings. ESTAR + adjective for temporary states. TENIR + noun (tinc por, tinc son). Em fa il·lusió = I'm excited about it, no direct English equivalent."
+  },
+  "drills": [
+    {
+      "prompt": "Je suis content. →",
+      "answer": "Estic content"
+    },
+    {
+      "prompt": "Je suis fatiguée. →",
+      "answer": "Estic cansada"
+    },
+    {
+      "prompt": "Je suis nerveux. →",
+      "answer": "Estic nerviós"
+    },
+    {
+      "prompt": "Je suis inquiet. →",
+      "answer": "Estic preocupat"
+    },
+    {
+      "prompt": "Je suis de bonne humeur. →",
+      "answer": "Estic de bon humor"
+    },
+    {
+      "prompt": "J'ai peur. →",
+      "answer": "Tinc por"
+    },
+    {
+      "prompt": "J'ai sommeil. →",
+      "answer": "Tinc son"
+    },
+    {
+      "prompt": "Je suis pressé. →",
+      "answer": "Tinc pressa"
+    },
+    {
+      "prompt": "J'ai envie de sortir. →",
+      "answer": "Tinc ganes de sortir"
+    },
+    {
+      "prompt": "Ça me fait peur. →",
+      "answer": "Em fa por"
+    },
+    {
+      "prompt": "Ça me gêne. →",
+      "answer": "Em fa vergonya"
+    },
+    {
+      "prompt": "Ça me réjouit. →",
+      "answer": "Em fa il·lusió"
+    },
+    {
+      "prompt": "Comment tu te sens? →",
+      "answer": "Com et trobes?"
+    },
+    {
+      "prompt": "Je me sens bien. →",
+      "answer": "Em trobo bé"
+    },
+    {
+      "prompt": "Je me sens mal. →",
+      "answer": "Em trobo malament"
+    },
+    {
+      "prompt": "Je m'ennuie. →",
+      "answer": "M'avorreixo"
+    },
+    {
+      "prompt": "Je suis surpris. →",
+      "answer": "Estic sorprès"
+    },
+    {
+      "prompt": "Quel dommage! →",
+      "answer": "Quina llàstima!"
+    },
+    {
+      "prompt": "Je suis désolé. →",
+      "answer": "Ho sento"
+    },
+    {
+      "prompt": "Ne t'inquiète pas. →",
+      "answer": "No et preocupis"
+    }
+  ]
+}
