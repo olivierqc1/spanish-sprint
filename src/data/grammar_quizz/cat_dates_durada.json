@@ -1,0 +1,102 @@
+{
+  "id": "cat_dates_durada",
+  "title": {
+    "fr": "Catalan — Dates, mois et durée",
+    "en": "Catalan — Dates, months and duration"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙ Dire une date, un projet, une durée (Digui, digui unité 14).\n\n🎯 LES MOIS — minuscule en catalan\n→ gener, febrer, març, abril, maig, juny\n→ juliol, agost, setembre, octubre, novembre, desembre\n\n🎯 DIRE LA DATE\n→ el 15 de setembre · l'1 de maig (L'devant 1, 8, 11)\n→ Quin dia és avui? = On est quel jour?\n→ A quants som? = Le combien on est?\n\n🎯 DURÉE\n→ FA dos anys QUE visc aquí = ça fait deux ans que\n→ DES DE fa un mes = depuis un mois\n→ DURANT tres setmanes = pendant trois semaines\n→ D'aquí a una setmana = dans une semaine\n\n🎯 FRÉQUENCE\n→ cada dia · un cop per setmana · dos cops al mes\n\n💡 Piège : « il y a deux ans » (passé) = FA dos anys. « Ça fait deux ans que » = FA dos anys QUE.",
+    "en": "⚙ Dates and duration. Months are lowercase. FA dos anys = two years ago. FA dos anys QUE = for two years. D'aquí a = in (future)."
+  },
+  "drills": [
+    {
+      "prompt": "janvier →",
+      "answer": "gener"
+    },
+    {
+      "prompt": "mars →",
+      "answer": "març"
+    },
+    {
+      "prompt": "mai →",
+      "answer": "maig"
+    },
+    {
+      "prompt": "juin →",
+      "answer": "juny"
+    },
+    {
+      "prompt": "juillet →",
+      "answer": "juliol"
+    },
+    {
+      "prompt": "septembre →",
+      "answer": "setembre"
+    },
+    {
+      "prompt": "octobre →",
+      "answer": "octubre"
+    },
+    {
+      "prompt": "le 15 septembre →",
+      "answer": "el 15 de setembre"
+    },
+    {
+      "prompt": "le 1er mai →",
+      "answer": "l'1 de maig"
+    },
+    {
+      "prompt": "On est quel jour aujourd'hui? →",
+      "answer": "Quin dia és avui?"
+    },
+    {
+      "prompt": "Le combien on est? →",
+      "answer": "A quants som?"
+    },
+    {
+      "prompt": "Ça fait deux ans que j'habite ici. →",
+      "answer": "Fa dos anys que visc aquí"
+    },
+    {
+      "prompt": "Il y a trois mois. (passé) →",
+      "answer": "Fa tres mesos"
+    },
+    {
+      "prompt": "depuis un mois →",
+      "answer": "des de fa un mes"
+    },
+    {
+      "prompt": "pendant trois semaines →",
+      "answer": "durant tres setmanes"
+    },
+    {
+      "prompt": "dans une semaine →",
+      "answer": "d'aquí a una setmana"
+    },
+    {
+      "prompt": "une fois par semaine →",
+      "answer": "un cop per setmana"
+    },
+    {
+      "prompt": "deux fois par mois →",
+      "answer": "dos cops al mes"
+    },
+    {
+      "prompt": "l'année prochaine →",
+      "answer": "l'any que ve"
+    },
+    {
+      "prompt": "l'année dernière →",
+      "answer": "l'any passat"
+    },
+    {
+      "prompt": "Combien de temps ça dure? →",
+      "answer": "Quant dura?"
+    },
+    {
+      "prompt": "Jusqu'à quand? →",
+      "answer": "Fins quan?"
+    }
+  ]
+}
