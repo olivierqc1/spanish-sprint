@@ -1,0 +1,174 @@
+{
+  "id": "cat_alta_frequencia_verbs",
+  "title": {
+    "fr": "Catalan — Verbes à haute fréquence",
+    "en": "Catalan — High-frequency verbs"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ Les verbes qui reviennent constamment, au-delà des dix verbes de base.\n\nUn petit noyau de verbes couvre l'immense majorité des usages. Si tu les as automatisés, tu peux dire presque n'importe quoi — quitte à tourner autour du mot exact.\n\n🎯 LES PLUS FRÉQUENTS APRÈS SER/ESTAR/TENIR/FER\n→ dir, anar, veure, saber, poder, voler, donar, posar, passar, quedar, trobar, portar, deixar, arribar, sortir, parlar, pensar, creure, sembler (semblar), conèixer\n\n🎯 QUATRE PIÈGES POUR UN FRANCOPHONE\n→ SABER = savoir un fait · CONÈIXER = connaître une personne ou un lieu\n→ PORTAR / DUR = apporter, porter · ENDUR-SE = emporter\n→ QUEDAR = rester, mais aussi se donner rendez-vous\n→ TROBAR = trouver · TROBAR-SE = se sentir, se retrouver\n\n💡 Automatise-les à l'infinitif ET au présent : c'est la forme que tu utiliseras le plus.",
+    "en": "⚙ The core high-frequency verbs beyond ser/estar/tenir/fer. Watch saber vs conèixer, quedar (to stay / to arrange to meet), trobar vs trobar-se."
+  },
+  "drills": [
+    {
+      "prompt": "dire →",
+      "answer": "dir"
+    },
+    {
+      "prompt": "voir →",
+      "answer": "veure"
+    },
+    {
+      "prompt": "savoir (un fait) →",
+      "answer": "saber"
+    },
+    {
+      "prompt": "connaître (une personne) →",
+      "answer": "conèixer"
+    },
+    {
+      "prompt": "donner →",
+      "answer": "donar"
+    },
+    {
+      "prompt": "mettre, poser →",
+      "answer": "posar"
+    },
+    {
+      "prompt": "passer →",
+      "answer": "passar"
+    },
+    {
+      "prompt": "rester →",
+      "answer": "quedar-se"
+    },
+    {
+      "prompt": "trouver →",
+      "answer": "trobar"
+    },
+    {
+      "prompt": "se sentir →",
+      "answer": "trobar-se"
+    },
+    {
+      "prompt": "apporter, porter →",
+      "answer": "portar"
+    },
+    {
+      "prompt": "emporter →",
+      "answer": "endur-se"
+    },
+    {
+      "prompt": "laisser →",
+      "answer": "deixar"
+    },
+    {
+      "prompt": "arriver →",
+      "answer": "arribar"
+    },
+    {
+      "prompt": "sortir →",
+      "answer": "sortir"
+    },
+    {
+      "prompt": "entrer →",
+      "answer": "entrar"
+    },
+    {
+      "prompt": "penser →",
+      "answer": "pensar"
+    },
+    {
+      "prompt": "croire →",
+      "answer": "creure"
+    },
+    {
+      "prompt": "sembler →",
+      "answer": "semblar"
+    },
+    {
+      "prompt": "commencer →",
+      "answer": "començar"
+    },
+    {
+      "prompt": "finir →",
+      "answer": "acabar"
+    },
+    {
+      "prompt": "continuer →",
+      "answer": "continuar"
+    },
+    {
+      "prompt": "essayer →",
+      "answer": "provar"
+    },
+    {
+      "prompt": "demander (une chose) →",
+      "answer": "demanar"
+    },
+    {
+      "prompt": "demander (une question) →",
+      "answer": "preguntar"
+    },
+    {
+      "prompt": "attendre →",
+      "answer": "esperar"
+    },
+    {
+      "prompt": "chercher →",
+      "answer": "buscar"
+    },
+    {
+      "prompt": "emmener quelqu'un →",
+      "answer": "acompanyar"
+    },
+    {
+      "prompt": "se souvenir →",
+      "answer": "recordar-se"
+    },
+    {
+      "prompt": "oublier →",
+      "answer": "oblidar"
+    },
+    {
+      "prompt": "aider →",
+      "answer": "ajudar"
+    },
+    {
+      "prompt": "changer →",
+      "answer": "canviar"
+    },
+    {
+      "prompt": "devenir →",
+      "answer": "tornar-se"
+    },
+    {
+      "prompt": "Je sais nager. →",
+      "answer": "Sé nedar"
+    },
+    {
+      "prompt": "Je connais Barcelone. →",
+      "answer": "Conec Barcelona"
+    },
+    {
+      "prompt": "Je reste à la maison. →",
+      "answer": "Em quedo a casa"
+    },
+    {
+      "prompt": "Comment tu te sens? →",
+      "answer": "Com et trobes?"
+    },
+    {
+      "prompt": "Je l'ai oublié. →",
+      "answer": "Ho he oblidat"
+    },
+    {
+      "prompt": "Ça commence à huit heures. →",
+      "answer": "Comença a les vuit"
+    },
+    {
+      "prompt": "Je vais essayer. →",
+      "answer": "Ho provaré"
+    }
+  ]
+}
