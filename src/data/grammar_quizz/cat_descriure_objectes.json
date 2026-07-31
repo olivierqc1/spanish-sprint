@@ -1,0 +1,94 @@
+{
+  "id": "cat_descriure_objectes",
+  "title": {
+    "fr": "Catalan — Décrire un objet : matière, goût, température",
+    "en": "Catalan — Describing objects"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙ Décrire un objet et son état (Digui, digui unités 17 et 27).\n\n🎯 LA MATIÈRE — préposition DE\n→ És DE fusta / DE vidre / DE plàstic\n→ una taula DE fusta = une table en bois\n\n🎯 TEMPÉRATURE\n→ calent / fred / tebi (tiède)\n→ El cafè és fred = le café est froid\n\n🎯 GOÛT ET ODEUR\n→ dolç · salat · amarg · àcid · picant\n→ Fa bona olor = ça sent bon\n→ Té bon gust = ça a bon goût\n\n🎯 ÉTAT DÉFECTUEUX\n→ trencat = cassé · brut = sale · buit = vide\n→ passat = périmé, plus frais\n\n💡 Piège : la matière se dit avec DE, jamais avec EN. « una casa DE pedra ».",
+    "en": "⚙ Describing objects. Material takes DE: de fusta, de vidre. Taste: dolç, salat, amarg, picant. Fa bona olor = it smells good."
+  },
+  "drills": [
+    {
+      "prompt": "C'est en bois. →",
+      "answer": "És de fusta"
+    },
+    {
+      "prompt": "C'est en verre. →",
+      "answer": "És de vidre"
+    },
+    {
+      "prompt": "une table en bois →",
+      "answer": "una taula de fusta"
+    },
+    {
+      "prompt": "C'est en plastique. →",
+      "answer": "És de plàstic"
+    },
+    {
+      "prompt": "Le café est froid. →",
+      "answer": "El cafè és fred"
+    },
+    {
+      "prompt": "C'est trop chaud. →",
+      "answer": "És massa calent"
+    },
+    {
+      "prompt": "tiède →",
+      "answer": "tebi"
+    },
+    {
+      "prompt": "sucré →",
+      "answer": "dolç"
+    },
+    {
+      "prompt": "salé →",
+      "answer": "salat"
+    },
+    {
+      "prompt": "amer →",
+      "answer": "amarg"
+    },
+    {
+      "prompt": "piquant →",
+      "answer": "picant"
+    },
+    {
+      "prompt": "Ça sent bon. →",
+      "answer": "Fa bona olor"
+    },
+    {
+      "prompt": "Ça a bon goût. →",
+      "answer": "Té bon gust"
+    },
+    {
+      "prompt": "Ça n'a aucun goût. →",
+      "answer": "No té gust de res"
+    },
+    {
+      "prompt": "C'est cassé. →",
+      "answer": "Està trencat"
+    },
+    {
+      "prompt": "C'est sale. →",
+      "answer": "Està brut"
+    },
+    {
+      "prompt": "C'est vide. →",
+      "answer": "Està buit"
+    },
+    {
+      "prompt": "Ce lait est périmé. →",
+      "answer": "Aquesta llet està passada"
+    },
+    {
+      "prompt": "C'est très lourd. →",
+      "answer": "Pesa molt"
+    },
+    {
+      "prompt": "À quoi ça sert? →",
+      "answer": "Per a què serveix?"
+    }
+  ]
+}
