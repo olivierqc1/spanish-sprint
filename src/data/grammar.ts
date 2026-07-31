@@ -11,6 +11,22 @@ export type GrammarPoint = {
 
 export const grammarPoints: GrammarPoint[] = [
 {
+    id: "cat_alta_frequencia_gramatical",
+    title: { fr: "Catalan — Mots grammaticaux à haute fréquence", en: "Catalan — High-frequency function words" },
+    level: "A1-A2",
+    note: { fr: "Prépositions, adverbes, pronoms : les mots de toutes les phrases.", en: "Prepositions, adverbs, pronouns: the words in every sentence." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_alta_frequencia_gramatical.json"
+  },
+  {
+    id: "cat_alta_frequencia_verbs",
+    title: { fr: "Catalan — Verbes à haute fréquence", en: "Catalan — High-frequency verbs" },
+    level: "A1-A2",
+    note: { fr: "Le noyau de verbes au-delà de ser, estar, tenir, fer.", en: "Core verbs beyond ser, estar, tenir, fer." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_alta_frequencia_verbs.json"
+  },
+{
     id: "cat_opinions_gustos",
     title: { fr: "Catalan — Opinions, goûts et préférences", en: "Catalan — Opinions and preferences" },
     level: "A2",
