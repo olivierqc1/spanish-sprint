@@ -1,0 +1,174 @@
+{
+  "id": "cat_alta_frequencia_gramatical",
+  "title": {
+    "fr": "Catalan — Mots grammaticaux à haute fréquence",
+    "en": "Catalan — High-frequency function words"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ Les mots-outils : prépositions, conjonctions, adverbes, pronoms.\n\nCe sont les mots les plus fréquents de toutes les langues. Ils ne sont jamais dans les listes thématiques parce qu'ils n'appartiennent à aucun thème — et c'est pour ça qu'on ne les apprend jamais méthodiquement. Ils représentent pourtant une part énorme de tout texte ou toute conversation.\n\n🎯 PRÉPOSITIONS À SURVEILLER\n→ a, de, en, amb, per, per a, sense, fins, des de, cap a, sobre, sota, entre\n→ PER = par, à cause de · PER A = pour, destination\n\n🎯 ADVERBES CHARNIÈRES\n→ ja, encara, també, tampoc, potser, gairebé, només, sempre, mai, sovint\n→ JA = déjà · ENCARA = encore, toujours\n→ ENCARA NO = pas encore · JA NO = ne plus\n\n💡 Si tu ne devais réviser qu'un deck, ce serait celui-ci : ces mots reviennent dans chaque phrase que tu entendras.",
+    "en": "⚙ Function words: prepositions, conjunctions, adverbs. The highest-frequency words in any language, and the ones thematic lists always miss."
+  },
+  "drills": [
+    {
+      "prompt": "avec →",
+      "answer": "amb"
+    },
+    {
+      "prompt": "sans →",
+      "answer": "sense"
+    },
+    {
+      "prompt": "jusqu'à →",
+      "answer": "fins"
+    },
+    {
+      "prompt": "depuis →",
+      "answer": "des de"
+    },
+    {
+      "prompt": "vers (direction) →",
+      "answer": "cap a"
+    },
+    {
+      "prompt": "sur →",
+      "answer": "sobre"
+    },
+    {
+      "prompt": "sous →",
+      "answer": "sota"
+    },
+    {
+      "prompt": "entre →",
+      "answer": "entre"
+    },
+    {
+      "prompt": "pour (destination) →",
+      "answer": "per a"
+    },
+    {
+      "prompt": "par, à cause de →",
+      "answer": "per"
+    },
+    {
+      "prompt": "déjà →",
+      "answer": "ja"
+    },
+    {
+      "prompt": "encore, toujours →",
+      "answer": "encara"
+    },
+    {
+      "prompt": "pas encore →",
+      "answer": "encara no"
+    },
+    {
+      "prompt": "ne... plus →",
+      "answer": "ja no"
+    },
+    {
+      "prompt": "aussi →",
+      "answer": "també"
+    },
+    {
+      "prompt": "non plus →",
+      "answer": "tampoc"
+    },
+    {
+      "prompt": "peut-être →",
+      "answer": "potser"
+    },
+    {
+      "prompt": "presque →",
+      "answer": "gairebé"
+    },
+    {
+      "prompt": "seulement →",
+      "answer": "només"
+    },
+    {
+      "prompt": "trop tôt →",
+      "answer": "massa d'hora"
+    },
+    {
+      "prompt": "alors, donc →",
+      "answer": "doncs"
+    },
+    {
+      "prompt": "ensuite →",
+      "answer": "després"
+    },
+    {
+      "prompt": "avant →",
+      "answer": "abans"
+    },
+    {
+      "prompt": "pendant →",
+      "answer": "durant"
+    },
+    {
+      "prompt": "quelque chose →",
+      "answer": "alguna cosa"
+    },
+    {
+      "prompt": "quelqu'un →",
+      "answer": "algú"
+    },
+    {
+      "prompt": "rien →",
+      "answer": "res"
+    },
+    {
+      "prompt": "personne →",
+      "answer": "ningú"
+    },
+    {
+      "prompt": "partout →",
+      "answer": "pertot arreu"
+    },
+    {
+      "prompt": "nulle part →",
+      "answer": "enlloc"
+    },
+    {
+      "prompt": "comme ça →",
+      "answer": "així"
+    },
+    {
+      "prompt": "pourquoi →",
+      "answer": "per què"
+    },
+    {
+      "prompt": "parce que →",
+      "answer": "perquè"
+    },
+    {
+      "prompt": "comment →",
+      "answer": "com"
+    },
+    {
+      "prompt": "combien →",
+      "answer": "quant"
+    },
+    {
+      "prompt": "lequel, quel →",
+      "answer": "quin"
+    },
+    {
+      "prompt": "le mien →",
+      "answer": "el meu"
+    },
+    {
+      "prompt": "le tien →",
+      "answer": "el teu"
+    },
+    {
+      "prompt": "celui-ci →",
+      "answer": "aquest"
+    },
+    {
+      "prompt": "celui-là →",
+      "answer": "aquell"
+    }
+  ]
+}
