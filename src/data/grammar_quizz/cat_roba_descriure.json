@@ -1,0 +1,94 @@
+{
+  "id": "cat_roba_descriure",
+  "title": {
+    "fr": "Catalan — Vêtements et décrire quelqu'un",
+    "en": "Catalan — Clothes and describing people"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙ Décrire une personne : physique, vêtements, couleurs (Digui, digui unité 12).\n\n🎯 LE PHYSIQUE avec SER\n→ És alt / baix · prim / gros · ros / morè\n→ Té els ulls blaus · Té els cabells llargs\n\n🎯 PORTER un vêtement : PORTAR ou DUR\n→ Porta una camisa blanca\n→ Duu unes sabates negres\n\n🎯 ACCORD DES COULEURS\n→ blanc / blanca · negre / negra · vermell / vermella\n→ blau / blava · verd / verda\n→ Invariables : rosa, taronja, lila, marró\n\n🎯 LA TAILLE\n→ Quina talla fa? = Quelle taille faites-vous?\n→ Em va gran / petit = C'est trop grand / petit pour moi\n\n💡 On dit TÉ els ulls blaus (avoir), pas « és amb ulls blaus ».",
+    "en": "⚙ Describing people and clothes. PORTAR/DUR = to wear. Colours agree: blanc/blanca, blau/blava. Rosa, taronja, marró are invariable."
+  },
+  "drills": [
+    {
+      "prompt": "Il est grand et mince. →",
+      "answer": "És alt i prim"
+    },
+    {
+      "prompt": "Elle est blonde. →",
+      "answer": "És rossa"
+    },
+    {
+      "prompt": "Il a les yeux bleus. →",
+      "answer": "Té els ulls blaus"
+    },
+    {
+      "prompt": "Elle a les cheveux longs. →",
+      "answer": "Té els cabells llargs"
+    },
+    {
+      "prompt": "Il porte une chemise blanche. →",
+      "answer": "Porta una camisa blanca"
+    },
+    {
+      "prompt": "Elle porte des chaussures noires. →",
+      "answer": "Duu unes sabates negres"
+    },
+    {
+      "prompt": "la chemise →",
+      "answer": "la camisa"
+    },
+    {
+      "prompt": "le pantalon →",
+      "answer": "els pantalons"
+    },
+    {
+      "prompt": "la robe →",
+      "answer": "el vestit"
+    },
+    {
+      "prompt": "la jupe →",
+      "answer": "la faldilla"
+    },
+    {
+      "prompt": "le manteau →",
+      "answer": "l'abric"
+    },
+    {
+      "prompt": "les chaussures →",
+      "answer": "les sabates"
+    },
+    {
+      "prompt": "rouge (féminin) →",
+      "answer": "vermella"
+    },
+    {
+      "prompt": "bleu (féminin) →",
+      "answer": "blava"
+    },
+    {
+      "prompt": "vert (féminin) →",
+      "answer": "verda"
+    },
+    {
+      "prompt": "marron (invariable) →",
+      "answer": "marró"
+    },
+    {
+      "prompt": "Quelle taille faites-vous? →",
+      "answer": "Quina talla fa?"
+    },
+    {
+      "prompt": "C'est trop grand pour moi. →",
+      "answer": "Em va gran"
+    },
+    {
+      "prompt": "Je peux l'essayer? →",
+      "answer": "Me'l puc emprovar?"
+    },
+    {
+      "prompt": "Ça te va très bien. →",
+      "answer": "Et queda molt bé"
+    }
+  ]
+}
