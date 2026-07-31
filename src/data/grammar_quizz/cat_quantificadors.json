@@ -1,0 +1,94 @@
+{
+  "id": "cat_quantificadors",
+  "title": {
+    "fr": "Catalan — Quantificateurs (molt, gaire, gens, cap)",
+    "en": "Catalan — Quantifiers"
+  },
+  "level": "A1-A2",
+  "note": {
+    "fr": "⚙ Les quantificateurs catalans, dont certains n'existent pas en français.\n\n🎯 L'ÉCHELLE\n→ gens = pas du tout · una mica = un peu\n→ bastant = assez · força = pas mal, passablement\n→ molt = beaucoup · massa = trop · prou = assez (suffisant)\n\n🎯 GAIRE — le grand piège\n→ S'emploie surtout en phrase NÉGATIVE ou INTERROGATIVE\n→ No en tinc GAIRE = je n'en ai pas beaucoup\n→ Tens GAIRE feina? = tu as beaucoup de travail?\n→ En phrase affirmative on dit MOLT, pas gaire.\n\n🎯 CAP vs GENS\n→ CAP + nom comptable singulier : No tinc CAP amic\n→ GENS + non comptable ou degré : No tinc GENS de son\n\n🎯 ACCORD\n→ molt/molta/molts/moltes s'accordent devant un nom\n→ Mais invariables devant un adjectif : És molt alta\n\n💡 Retiens la paire : CAP = aucun (qu'on compte) · GENS = pas du tout (qu'on ne compte pas).",
+    "en": "⚙ Quantifiers. GAIRE = much/many, used in negatives and questions only. CAP + countable singular, GENS + uncountable. molt agrees before nouns, invariable before adjectives."
+  },
+  "drills": [
+    {
+      "prompt": "Je n'en ai pas du tout. →",
+      "answer": "No en tinc gens"
+    },
+    {
+      "prompt": "un peu de sucre →",
+      "answer": "una mica de sucre"
+    },
+    {
+      "prompt": "Il y a pas mal de gens. →",
+      "answer": "Hi ha força gent"
+    },
+    {
+      "prompt": "assez bien (suffisamment) →",
+      "answer": "prou bé"
+    },
+    {
+      "prompt": "C'est trop cher. →",
+      "answer": "És massa car"
+    },
+    {
+      "prompt": "Je n'ai pas beaucoup de temps. (gaire) →",
+      "answer": "No tinc gaire temps"
+    },
+    {
+      "prompt": "Tu as beaucoup de travail? (gaire) →",
+      "answer": "Tens gaire feina?"
+    },
+    {
+      "prompt": "Ce n'est pas très loin. (gaire) →",
+      "answer": "No és gaire lluny"
+    },
+    {
+      "prompt": "J'ai beaucoup de travail. (affirmatif) →",
+      "answer": "Tinc molta feina"
+    },
+    {
+      "prompt": "beaucoup de gens →",
+      "answer": "molta gent"
+    },
+    {
+      "prompt": "beaucoup d'amis →",
+      "answer": "molts amics"
+    },
+    {
+      "prompt": "Elle est très grande. →",
+      "answer": "És molt alta"
+    },
+    {
+      "prompt": "Je n'ai aucun ami. →",
+      "answer": "No tinc cap amic"
+    },
+    {
+      "prompt": "Il ne reste aucune place. →",
+      "answer": "No queda cap plaça"
+    },
+    {
+      "prompt": "Je n'ai pas du tout sommeil. →",
+      "answer": "No tinc gens de son"
+    },
+    {
+      "prompt": "Ça ne me plaît pas du tout. →",
+      "answer": "No m'agrada gens"
+    },
+    {
+      "prompt": "Il ne reste plus de pain. →",
+      "answer": "No queda gens de pa"
+    },
+    {
+      "prompt": "trop de bruit →",
+      "answer": "massa soroll"
+    },
+    {
+      "prompt": "Ça suffit. →",
+      "answer": "Ja n'hi ha prou"
+    },
+    {
+      "prompt": "plus ou moins →",
+      "answer": "més o menys"
+    }
+  ]
+}
