@@ -1,0 +1,94 @@
+{
+  "id": "cat_avaries_reclamacions",
+  "title": {
+    "fr": "Catalan — Pannes, réclamations et urgences",
+    "en": "Catalan — Breakdowns, complaints, emergencies"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙ Signaler une panne, réclamer, demander de l'aide (Digui, digui unité 19). Très utile quand on loue un appartement.\n\n🎯 SIGNALER UNE PANNE\n→ No funciona = ça ne marche pas\n→ S'ha espatllat = c'est tombé en panne\n→ Està trencat = c'est cassé\n→ Hi ha una fuita = il y a une fuite\n→ Fa una olor estranya = ça sent bizarre\n\n🎯 RÉCLAMER\n→ Voldria fer una reclamació\n→ Fa una setmana que espero\n→ Encara no ho han arreglat = ils ne l'ont toujours pas réparé\n→ Això no pot ser = ce n'est pas possible\n\n🎯 DEMANDER DE L'AIDE\n→ Em pot ajudar? · Necessito ajuda\n→ Truqueu a una ambulància! · És urgent\n\n💡 ARREGLAR = réparer. ESPATLLAR-SE = tomber en panne (pronominal).",
+    "en": "⚙ Reporting faults and complaining. No funciona = it doesn't work. S'ha espatllat = it broke down. Arreglar = to fix."
+  },
+  "drills": [
+    {
+      "prompt": "Ça ne marche pas. →",
+      "answer": "No funciona"
+    },
+    {
+      "prompt": "Le chauffage est tombé en panne. →",
+      "answer": "La calefacció s'ha espatllat"
+    },
+    {
+      "prompt": "L'ascenseur est cassé. →",
+      "answer": "L'ascensor està trencat"
+    },
+    {
+      "prompt": "Il y a une fuite d'eau. →",
+      "answer": "Hi ha una fuita d'aigua"
+    },
+    {
+      "prompt": "Il n'y a pas d'eau chaude. →",
+      "answer": "No hi ha aigua calenta"
+    },
+    {
+      "prompt": "La lumière ne s'allume pas. →",
+      "answer": "El llum no s'encén"
+    },
+    {
+      "prompt": "Ça sent bizarre. →",
+      "answer": "Fa una olor estranya"
+    },
+    {
+      "prompt": "Je voudrais faire une réclamation. →",
+      "answer": "Voldria fer una reclamació"
+    },
+    {
+      "prompt": "Ça fait une semaine que j'attends. →",
+      "answer": "Fa una setmana que espero"
+    },
+    {
+      "prompt": "Ils ne l'ont toujours pas réparé. →",
+      "answer": "Encara no ho han arreglat"
+    },
+    {
+      "prompt": "Quand allez-vous le réparer? →",
+      "answer": "Quan ho arreglaran?"
+    },
+    {
+      "prompt": "Ce n'est pas acceptable. →",
+      "answer": "Això no pot ser"
+    },
+    {
+      "prompt": "Je veux parler au responsable. →",
+      "answer": "Vull parlar amb el responsable"
+    },
+    {
+      "prompt": "Pouvez-vous m'aider? →",
+      "answer": "Em pot ajudar?"
+    },
+    {
+      "prompt": "J'ai besoin d'aide. →",
+      "answer": "Necessito ajuda"
+    },
+    {
+      "prompt": "C'est urgent. →",
+      "answer": "És urgent"
+    },
+    {
+      "prompt": "Appelez une ambulance! →",
+      "answer": "Truqueu a una ambulància!"
+    },
+    {
+      "prompt": "Il y a eu un accident. →",
+      "answer": "Hi ha hagut un accident"
+    },
+    {
+      "prompt": "réparer →",
+      "answer": "arreglar"
+    },
+    {
+      "prompt": "le plombier →",
+      "answer": "el lampista"
+    }
+  ]
+}
