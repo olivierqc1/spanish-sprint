@@ -1,0 +1,142 @@
+{
+  "id": "cat_direccions_ubicacio",
+  "title": {
+    "fr": "Catalan — Directions et situer dans l'espace",
+    "en": "Catalan — Directions and location"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙ Situer un objet et indiquer un chemin. Toutes les expressions attendues sont ici.\n\n🎯 SITUER — position (avec le verbe SER ou ESTAR)\n→ a la dreta DE = à droite de\n→ a l'esquerra DE = à gauche de\n→ al costat DE = à côté de\n→ davant DE = devant · darrere DE = derrière\n→ sobre / damunt DE = sur · sota / davall DE = sous\n→ dins DE = dans · fora DE = dehors\n→ entre ... i ... = entre ... et ...\n→ al mig DE = au milieu de\n→ a la cantonada = au coin de la rue\n⚠ Toutes ces expressions prennent DE devant un nom :\n   La cadira és al costat DE la taula.\n   Mais DE + EL donne DEL : al costat DEL sofà.\n\n🎯 DISTANCE\n→ a prop DE = près de · lluny DE = loin de\n→ aquí = ici · allà = là-bas\n→ a dalt = en haut · a baix = en bas\n→ a dos minuts = à deux minutes\n\n🎯 INDIQUER LE CHEMIN — impératif (tu)\n→ Ves tot recte = va tout droit\n→ Gira a la dreta = tourne à droite\n→ Gira a l'esquerra = tourne à gauche\n→ Travessa el carrer = traverse la rue\n→ Continua fins a... = continue jusqu'à...\n→ Agafa el primer carrer = prends la première rue\n→ Puja / Baixa = monte / descends\n\n🎯 LA MÊME CHOSE EN VOUVOIEMENT (vostè)\n→ Vagi tot recte · Giri a la dreta · Travessi el carrer · Continuï fins a...\n\n🎯 DEMANDER SON CHEMIN\n→ Perdoni, on és el mercat? = pardon, où est le marché?\n→ Com s'hi va? = comment on y va? (HI = là-bas)\n→ És gaire lluny? = c'est très loin? (GAIRE en question)\n→ Vaig bé per anar a...? = je vais dans la bonne direction pour...?\n\n💡 Piège : « tout droit » se dit TOT RECTE, jamais « tot dret » (dret = debout).\n💡 GIRAR = tourner. On dit « gira A la dreta », avec A.\n\n🎯 PHRASES MODÈLES — observe la structure\n→ La cadira és a la dreta de la taula. (la chaise est à droite de la table)\n→ El gat és sota el llit. (SOTA n'a pas besoin de DE)\n→ El llum és al costat del sofà. (de + el = DEL)\n→ El mercat és entre la plaça i l'escola.\n→ a prop de casa · lluny del centre · a dos minuts d'aquí\n→ Continua fins a la plaça.\n→ Vaig bé per anar a l'estació? (je vais bien pour aller à...?)\n\n⚠ SOTA, SOBRE et DINS peuvent se passer de DE devant un nom :\n   sota el llit · sobre la taula · dins la bossa\n   Mais DAVANT, DARRERE, AL COSTAT exigent DE : davant DE casa.",
+    "en": "⚙ Locating things and giving directions.\nPOSITION: a la dreta DE, a l'esquerra DE, al costat DE, davant DE, darrere DE, sobre, sota, dins DE, entre...i..., al mig DE. All take DE; DE+EL = DEL.\nDISTANCE: a prop de, lluny de, a dalt, a baix.\nDIRECTIONS (tu): Ves tot recte, Gira a la dreta, Travessa el carrer, Continua fins a...\nFORMAL (vostè): Vagi tot recte, Giri a la dreta, Travessi.\nASKING: On és...? · Com s'hi va? · És gaire lluny?\nNote: 'straight ahead' = TOT RECTE, never 'tot dret'."
+  },
+  "drills": [
+    {
+      "prompt": "à droite de →",
+      "answer": "a la dreta de"
+    },
+    {
+      "prompt": "à gauche de →",
+      "answer": "a l'esquerra de"
+    },
+    {
+      "prompt": "à côté de →",
+      "answer": "al costat de"
+    },
+    {
+      "prompt": "devant →",
+      "answer": "davant de"
+    },
+    {
+      "prompt": "derrière →",
+      "answer": "darrere de"
+    },
+    {
+      "prompt": "sur (au-dessus de) →",
+      "answer": "sobre / damunt de"
+    },
+    {
+      "prompt": "sous →",
+      "answer": "sota"
+    },
+    {
+      "prompt": "dans →",
+      "answer": "dins de"
+    },
+    {
+      "prompt": "entre ... et ... →",
+      "answer": "entre ... i ..."
+    },
+    {
+      "prompt": "au milieu de →",
+      "answer": "al mig de"
+    },
+    {
+      "prompt": "au coin de la rue →",
+      "answer": "a la cantonada"
+    },
+    {
+      "prompt": "La chaise est à droite de la table. →",
+      "answer": "La cadira és a la dreta de la taula"
+    },
+    {
+      "prompt": "Le chat est sous le lit. →",
+      "answer": "El gat és sota el llit"
+    },
+    {
+      "prompt": "La lampe est à côté du canapé. (de+el) →",
+      "answer": "El llum és al costat del sofà"
+    },
+    {
+      "prompt": "Le marché est entre la place et l'école. →",
+      "answer": "El mercat és entre la plaça i l'escola"
+    },
+    {
+      "prompt": "près de la maison →",
+      "answer": "a prop de casa"
+    },
+    {
+      "prompt": "loin du centre →",
+      "answer": "lluny del centre"
+    },
+    {
+      "prompt": "en haut →",
+      "answer": "a dalt"
+    },
+    {
+      "prompt": "en bas →",
+      "answer": "a baix"
+    },
+    {
+      "prompt": "à deux minutes d'ici →",
+      "answer": "a dos minuts d'aquí"
+    },
+    {
+      "prompt": "Va tout droit. (tu) →",
+      "answer": "Ves tot recte"
+    },
+    {
+      "prompt": "Tourne à droite. (tu) →",
+      "answer": "Gira a la dreta"
+    },
+    {
+      "prompt": "Tourne à gauche. (tu) →",
+      "answer": "Gira a l'esquerra"
+    },
+    {
+      "prompt": "Traverse la rue. (tu) →",
+      "answer": "Travessa el carrer"
+    },
+    {
+      "prompt": "Continue jusqu'à la place. (tu) →",
+      "answer": "Continua fins a la plaça"
+    },
+    {
+      "prompt": "Prends la première rue. (tu) →",
+      "answer": "Agafa el primer carrer"
+    },
+    {
+      "prompt": "Allez tout droit. (vostè) →",
+      "answer": "Vagi tot recte"
+    },
+    {
+      "prompt": "Tournez à droite. (vostè) →",
+      "answer": "Giri a la dreta"
+    },
+    {
+      "prompt": "Pardon, où est le marché ? →",
+      "answer": "Perdoni, on és el mercat?"
+    },
+    {
+      "prompt": "Comment on y va ? →",
+      "answer": "Com s'hi va?"
+    },
+    {
+      "prompt": "C'est très loin ? →",
+      "answer": "És gaire lluny?"
+    },
+    {
+      "prompt": "Je vais dans la bonne direction pour la gare ? →",
+      "answer": "Vaig bé per anar a l'estació?"
+    }
+  ]
+}
