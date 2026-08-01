@@ -11,6 +11,14 @@ export type GrammarPoint = {
 
 export const grammarPoints: GrammarPoint[] = [
 {
+    id: "cat_direccions_ubicacio",
+    title: { fr: "Catalan — Directions et situer dans l'espace", en: "Catalan — Directions and location" },
+    level: "A2",
+    note: { fr: "A la dreta de, sota, entre, ves tot recte, gira a la dreta.", en: "Position words and giving directions." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_direccions_ubicacio.json"
+  },
+{
     id: "cat_alta_frequencia_gramatical",
     title: { fr: "Catalan — Mots grammaticaux à haute fréquence", en: "Catalan — High-frequency function words" },
     level: "A1-A2",
