@@ -6,24 +6,44 @@
   },
   "level": "A2",
   "note": {
-    "fr": "⚙ Faire ses courses au marché ou en boutique (Digui, digui unité 7).\n\n🎯 DEMANAR TANDA — le tour de file\n→ Qui és l'últim? = C'est qui le dernier?\n→ Sóc l'última = C'est moi la dernière\n→ A qui li toca? = C'est à qui?\n\n🎯 QUANTITÉS\n→ un quilo · mig quilo · un quart = 250 g\n→ una dotzena = une douzaine\n→ un parell = une paire, deux\n→ una mica de = un peu de\n→ prou = assez · massa = trop\n\n🎯 COMMENT ON LE VEUT\n→ verd / madur = vert / mûr\n→ cuit / cru = cuit / cru\n→ tallat a rodanxes = coupé en rondelles\n\n💡 QUANT és? = combien ça coûte? · QUANT EN VOL? = vous en voulez combien?",
-    "en": "⚙ Shopping. Qui és l'últim? = who's last in line. un quart = 250g. Quant és? = how much is it?"
+    "fr": "⚙ Acheter au marché, à la boulangerie, en boutique. Toutes les expressions attendues dans cet exercice sont expliquées ici.\n\n🎯 FAIRE LA FILE — le rituel catalan\nDans un marché, on demande qui est le dernier arrivé, et on retient cette personne.\n→ Qui és l'últim? = c'est qui le dernier?\n→ Sóc l'últim / Sóc l'última = c'est moi le dernier\n→ A qui li toca? = c'est à qui le tour?\n\n🎯 LE COMMERÇANT VOUS ADRESSE LA PAROLE\n→ Digui'm! = littéralement « dites-moi », l'équivalent de « je vous écoute »\n→ Què desitja? = vous désirez?\n→ Alguna cosa més? = autre chose?\n\n🎯 DEMANDER LE PRIX\n→ Quant és? = ça fait combien? (le total)\n→ Quant val? / Quant costa? = combien ça coûte? (un article)\n→ Quant en vol? = vous en voulez combien? (EN reprend le produit)\n\n🎯 LES QUANTITÉS\n→ un quilo · mig quilo = un demi-kilo\n→ un quart = 250 g (jamais « un quart de quilo »)\n→ cent grams · dos-cents grams\n→ una dotzena = une douzaine · mitja dotzena = une demi-douzaine\n→ un parell = deux, une paire\n→ un tros = un morceau · una llesca = une tranche (de pain)\n→ un paquet · una ampolla = une bouteille · una llauna = une canette\n\n🎯 DOSER — les expressions à connaître par cœur\n→ una mica més = un peu plus · una mica menys = un peu moins\n→ JA N'HI HA PROU = ça suffit, c'est assez. Mot à mot : « il y en a déjà assez ».\n→ RES MÉS, GRÀCIES = ce sera tout, merci. Mot à mot : « rien de plus ».\n   C'est LA formule pour clore un achat. On ne dit pas « és tot ».\n→ Ja està = ça y est, c'est bon\n\n🎯 L'ÉTAT DU PRODUIT\n→ madur = mûr · verd = pas mûr · fresc = frais\n→ del dia = du jour · tendre = tendre\n\n🎯 PAYER\n→ Té canvi? = vous avez la monnaie?\n→ el canvi = la monnaie rendue\n→ en efectiu = en espèces · amb targeta = par carte\n→ el tiquet = le ticket de caisse\n\n💡 Les deux formules à retenir absolument : RES MÉS, GRÀCIES pour finir, et JA N'HI HA PROU pour dire stop quand on vous sert.\n\n🎯 QUELQUES PHRASES COMPLÈTES\n→ Com els vol? = vous les voulez comment?\n→ Puc pagar amb targeta? = je peux payer par carte?\n→ És massa car = c'est trop cher (MASSA = trop)\n→ ben madur = bien mûr (BEN devant un adjectif)\n\n🎯 LA STRUCTURE « QUANTITÉ + DE + PRODUIT »\nToujours avec DE, jamais sans :\n→ un quilo DE tomàquets · una dotzena D'ous\n→ un tros DE formatge · una llesca DE pa · una ampolla DE vi",
+    "en": "⚙ Shopping at the market. Every idiom used in this drill is explained here.\n\nQUEUING: Qui és l'últim? (who's last?) · Sóc l'últim · A qui li toca?\nSHOPKEEPER: Digui'm! (literally 'tell me' = how can I help) · Alguna cosa més?\nPRICE: Quant és? (total) · Quant val? (per item) · Quant en vol? (how much of it?)\nQUANTITIES: un quilo · mig quilo · un quart (=250g) · una dotzena · un parell · un tros · una llesca\nKEY IDIOMS: JA N'HI HA PROU = that's enough (lit. 'there's already enough of it'). RES MÉS, GRÀCIES = that'll be all (lit. 'nothing more'). Never 'és tot'.\nPAYING: Té canvi? · el canvi · en efectiu · amb targeta"
   },
   "drills": [
     {
-      "prompt": "C'est qui le dernier? (dans la file) →",
+      "prompt": "C'est qui le dernier ? (dans la file) →",
       "answer": "Qui és l'últim?"
     },
     {
       "prompt": "C'est moi le dernier. →",
-      "answer": "Sóc l'últim"
+      "answer": "Sóc l'últim / Sóc l'última"
     },
     {
-      "prompt": "Combien ça coûte? →",
+      "prompt": "C'est à qui le tour ? →",
+      "answer": "A qui li toca?"
+    },
+    {
+      "prompt": "« Dites-moi », je vous écoute. (formule du commerçant) →",
+      "answer": "Digui'm"
+    },
+    {
+      "prompt": "Vous désirez ? →",
+      "answer": "Què desitja?"
+    },
+    {
+      "prompt": "Autre chose ? →",
+      "answer": "Alguna cosa més?"
+    },
+    {
+      "prompt": "Ça fait combien ? (le total) →",
       "answer": "Quant és?"
     },
     {
-      "prompt": "Vous en voulez combien? →",
+      "prompt": "Combien ça coûte ? (un article) →",
+      "answer": "Quant val? / Quant costa?"
+    },
+    {
+      "prompt": "Vous en voulez combien ? →",
       "answer": "Quant en vol?"
     },
     {
@@ -35,60 +55,88 @@
       "answer": "mig quilo"
     },
     {
-      "prompt": "250 grammes →",
+      "prompt": "250 grammes (un mot) →",
       "answer": "un quart"
+    },
+    {
+      "prompt": "cent grammes →",
+      "answer": "cent grams"
     },
     {
       "prompt": "une douzaine d'œufs →",
       "answer": "una dotzena d'ous"
     },
     {
-      "prompt": "un peu de fromage →",
-      "answer": "una mica de formatge"
+      "prompt": "une demi-douzaine →",
+      "answer": "mitja dotzena"
     },
     {
-      "prompt": "C'est assez. →",
+      "prompt": "un morceau de fromage →",
+      "answer": "un tros de formatge"
+    },
+    {
+      "prompt": "une tranche de pain →",
+      "answer": "una llesca de pa"
+    },
+    {
+      "prompt": "une bouteille de vin →",
+      "answer": "una ampolla de vi"
+    },
+    {
+      "prompt": "un peu plus →",
+      "answer": "una mica més"
+    },
+    {
+      "prompt": "un peu moins →",
+      "answer": "una mica menys"
+    },
+    {
+      "prompt": "Ça suffit, c'est assez. (litt. « il y en a déjà assez ») →",
       "answer": "Ja n'hi ha prou"
     },
     {
-      "prompt": "C'est trop. →",
-      "answer": "És massa"
-    },
-    {
-      "prompt": "Je voudrais aussi... →",
-      "answer": "També voldria..."
-    },
-    {
-      "prompt": "Ce sera tout, merci. →",
+      "prompt": "Ce sera tout, merci. (litt. « rien de plus ») →",
       "answer": "Res més, gràcies"
     },
     {
-      "prompt": "Vous les voulez comment? →",
-      "answer": "Com els vol?"
+      "prompt": "Ça y est, c'est bon. →",
+      "answer": "Ja està"
     },
     {
       "prompt": "bien mûr →",
       "answer": "ben madur"
     },
     {
-      "prompt": "encore vert →",
-      "answer": "encara verd"
+      "prompt": "encore vert, pas mûr →",
+      "answer": "verd"
+    },
+    {
+      "prompt": "du jour, tout frais →",
+      "answer": "del dia"
+    },
+    {
+      "prompt": "Vous les voulez comment ? →",
+      "answer": "Com els vol?"
+    },
+    {
+      "prompt": "Vous avez la monnaie ? →",
+      "answer": "Té canvi?"
+    },
+    {
+      "prompt": "Je peux payer par carte ? →",
+      "answer": "Puc pagar amb targeta?"
+    },
+    {
+      "prompt": "en espèces →",
+      "answer": "en efectiu"
+    },
+    {
+      "prompt": "le ticket de caisse →",
+      "answer": "el tiquet"
     },
     {
       "prompt": "C'est trop cher. →",
       "answer": "És massa car"
-    },
-    {
-      "prompt": "Vous avez de la monnaie? →",
-      "answer": "Té canvi?"
-    },
-    {
-      "prompt": "Je peux payer par carte? →",
-      "answer": "Puc pagar amb targeta?"
-    },
-    {
-      "prompt": "un morceau de →",
-      "answer": "un tros de"
     }
   ]
 }
