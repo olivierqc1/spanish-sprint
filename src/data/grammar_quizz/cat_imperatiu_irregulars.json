@@ -1,0 +1,32 @@
+{
+  "id": "cat_imperatiu_irregulars",
+  "title": {
+    "fr": "Catalan — L'impératif, verbes irréguliers",
+    "en": "Catalan — The imperative, irregular verbs"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "Les verbes irréguliers ont souvent une forme tu très différente de leur radical normal. Attention : au négatif, cette forme tu change encore (elle rejoint le subjonctif).\n\nAnar → vés (tu) / vagi / anem / aneu / vagin — négatif: no vagis\nFer → fes (tu) / faci / fem / feu / facin — négatif: no facis\nDir → digues (tu) / digui / diguem / digueu / diguin — négatif: no diguis\nSer → sigues (tu) / sigui / siguem / sigueu / siguin — négatif: no siguis\nTenir → tingues (tu) / tingui / tinguem / tingueu / tinguin — négatif: no tinguis\nVenir → vine (tu) / vingui / vinguem / veniu / vinguin — négatif: no vinguis\nSaber → sàpigues (tu) / sàpiga / sapiguem / sapigueu / sàpiguen — négatif: no sàpigues",
+    "en": "Irregular verbs often have a tu form very different from their normal stem. Note: in the negative, this tu form changes again (it joins the subjunctive).\n\nAnar → vés (tu), negative: no vagis\nFer → fes (tu), negative: no facis\nDir → digues (tu), negative: no diguis\nSer → sigues (tu), negative: no siguis\nTenir → tingues (tu), negative: no tinguis\nVenir → vine (tu), negative: no vinguis\nSaber → sàpigues (tu), negative: no sàpigues"
+  },
+  "drills": [
+    { "prompt": "___ a casa ara mateix! (anar, tu)", "answer": "Vés", "options": ["Vés", "Vas", "Vagis", "Anar"] },
+    { "prompt": "No ___ sol pel bosc! (anar, tu)", "answer": "vagis", "options": ["vagis", "vés", "vas", "vagi"] },
+    { "prompt": "___ els deures! (fer, tu)", "answer": "Fes", "options": ["Fes", "Fas", "Facis", "Fer"] },
+    { "prompt": "No ___ això, sisplau! (fer, tu)", "answer": "facis", "options": ["facis", "fes", "fas", "faci"] },
+    { "prompt": "___ la veritat! (dir, tu)", "answer": "Digues", "options": ["Digues", "Dius", "Diguis", "Dir"] },
+    { "prompt": "No ___ mentides! (dir, tu)", "answer": "diguis", "options": ["diguis", "digues", "dius", "digui"] },
+    { "prompt": "___ pacient amb ell! (ser, tu)", "answer": "Sigues", "options": ["Sigues", "Ets", "Siguis", "Ser"] },
+    { "prompt": "No ___ tan impacient! (ser, tu)", "answer": "siguis", "options": ["siguis", "sigues", "ets", "sigui"] },
+    { "prompt": "___ compte a la carretera! (tenir, tu)", "answer": "Tingues", "options": ["Tingues", "Tens", "Tinguis", "Tenir"] },
+    { "prompt": "No ___ por, tot anirà bé! (tenir, tu)", "answer": "tinguis", "options": ["tinguis", "tingues", "tens", "tingui"] },
+    { "prompt": "___ aquí de seguida! (venir, tu)", "answer": "Vine", "options": ["Vine", "Véns", "Vinguis", "Venir"] },
+    { "prompt": "No ___ sense avisar! (venir, tu)", "answer": "vinguis", "options": ["vinguis", "vine", "véns", "vingui"] },
+    { "prompt": "___-t'ho de memòria! (saber, tu)", "answer": "Sàpigues", "options": ["Sàpigues", "Saps", "Sàpiga", "Saber"] },
+    { "prompt": "No ___ mai prou, sempre hi ha més a aprendre. (saber, tu)", "answer": "sàpigues", "options": ["sàpigues", "sàpiga", "saps", "sap"] },
+    { "prompt": "___ a la festa amb nosaltres! (venir, vostè)", "answer": "Vingui", "options": ["Vingui", "Ve", "Vindrà", "Vingueu"] },
+    { "prompt": "___ puntuals, si us plau! (ser, vostès)", "answer": "Siguin", "options": ["Siguin", "Són", "Sigueu", "Seran"] },
+    { "prompt": "___ el que calgui! (fer, vostè)", "answer": "Faci", "options": ["Faci", "Fa", "Farà", "Feu"] },
+    { "prompt": "No ___ res sense preguntar-me. (fer, vostè)", "answer": "faci", "options": ["faci", "fa", "faria", "feu"] }
+  ]
+}
