@@ -1,0 +1,30 @@
+{
+  "id": "cat_pronom_ho",
+  "title": {
+    "fr": "Catalan — Le pronom neutre HO (vs el/la/els/les)",
+    "en": "Catalan — The neutral pronoun HO (vs el/la/els/les)"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ **HO** est un pronom neutre. Il remplace une idée, une action, un fait, un adjectif — pas un nom précis.\n\n🔹 **el/la/els/les** → remplacent un nom précis (genre + nombre connus)\n➡️ *El cotxe? El repararé.*\n➡️ *Les claus? Les he perdut.*\n\n🔹 **ho** → remplace une phrase, une idée, un adjectif, ou quelque chose de vague (= 'ça', 'le' au sens large)\n➡️ *Ja ho sé.* (Je le sais déjà.)\n➡️ *No ho entenc.* (Je ne comprends pas ça.)\n➡️ *Estàs cansat? Sí, ho estic.* (Oui, je le suis — adjectif, pas nom.)\n\n💡 **Truc :** si tu peux pointer du doigt UN objet précis → el/la/els/les. Si c'est une idée, un état, une action → ho.",
+    "en": "⚙️ **HO** is a neutral pronoun. It replaces an idea, action, fact, or adjective — not a specific noun.\n\n🔹 **el/la/els/les** → replace a specific noun (known gender + number)\n🔹 **ho** → replaces a clause, idea, adjective, or something vague (= 'it/that')\n\n💡 **Tip:** if you can point to ONE specific object → el/la/els/les. If it's an idea, state, or action → ho."
+  },
+  "country": "es",
+  "drills": [
+    { "prompt": "Aquest llibre és molt bo. ___ vull llegir. (le livre = nom précis)", "answer": "El" },
+    { "prompt": "No sé si vindrà, però ___ espero. (j'espère 'ça')", "answer": "ho" },
+    { "prompt": "Les claus? ___ he perdut. (les clés = nom précis, féminin pluriel)", "answer": "Les" },
+    { "prompt": "Estàs cansat? Sí, ___ estic. (adjectif, pas un nom)", "answer": "ho" },
+    { "prompt": "Vols saber la veritat? ___ vull saber. (la vérité = nom précis)", "answer": "la" },
+    { "prompt": "Diu que plourà, però no ___ crec. (je ne crois pas 'ça')", "answer": "ho" },
+    { "prompt": "Ja ___ sé, no cal que m'ho repeteixis. (je le sais déjà — idée)", "answer": "ho" },
+    { "prompt": "El pastís? ___ menjaré després. (le gâteau = nom précis)", "answer": "El" },
+    { "prompt": "Quan ___ vas a arreglar? (le fait de réparer, pas un objet nommé)", "answer": "ho" },
+    { "prompt": "Aquesta pel·lícula ja ___ he vist. (la pel·lícula = nom précis, féminin)", "answer": "l'" },
+    { "prompt": "És difícil, però ___ farem. (le faire = action)", "answer": "ho" },
+    { "prompt": "Els deures? ___ acabaré avui. (nom précis, masculin pluriel)", "answer": "Els" },
+    { "prompt": "No m'agrada com ___ has fet. (comment tu l'as fait = manière/action)", "answer": "ho" },
+    { "prompt": "Estàs content? Sí, molt ___ estic. (adjectif 'content')", "answer": "ho" },
+    { "prompt": "La resposta? Ja ___ sabem. (la réponse = nom précis)", "answer": "la" }
+  ]
+}
