@@ -11,6 +11,30 @@ export type GrammarPoint = {
 
 export const grammarPoints: GrammarPoint[] = [
 {
+  id: "cat_imperatiu",
+  title: { fr: "Catalan — L'impératif (imperatiu), verbes réguliers", en: "Catalan — The imperative (imperatiu), regular verbs" },
+  level: "B1",
+  note: { fr: "Formes propres pour tu/vosaltres, subjonctif pour vostè/nosaltres/vostès. Négatif: subjonctif partout.", en: "Own forms for tu/vosaltres, subjunctive for vostè/nosaltres/vostès. Negative: subjunctive everywhere." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_imperatiu.json"
+},
+{
+  id: "cat_imperatiu_irregulars",
+  title: { fr: "Catalan — L'impératif, verbes irréguliers", en: "Catalan — The imperative, irregular verbs" },
+  level: "B1",
+  note: { fr: "Anar, fer, dir, ser, tenir, venir, saber : formes tu très irrégulières.", en: "Anar, fer, dir, ser, tenir, venir, saber: highly irregular tu forms." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_imperatiu_irregulars.json"
+},
+{
+  id: "cat_pronom_ho",
+  title: { fr: "Catalan — Le pronom neutre HO (vs el/la/els/les)", en: "Catalan — The neutral pronoun HO (vs el/la/els/les)" },
+  level: "B1",
+  note: { fr: "Ho remplace une idée/action/adjectif, pas un nom précis.", en: "Ho replaces an idea/action/adjective, not a specific noun." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_pronom_ho.json"
+},
+{
     id: "cat_direccions_ubicacio",
     title: { fr: "Catalan — Directions et situer dans l'espace", en: "Catalan — Directions and location" },
     level: "A2",
