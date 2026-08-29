@@ -138,15 +138,65 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
     </div>
   );
 
+  const isTableRow = (l: string) => /^\s*\|.*\|\s*$/.test(l);
+  const isSeparatorRow = (l: string) => isTableRow(l) && /^[\s|:-]+$/.test(l);
+
   const formatNote = (text: string, compact = false) => {
     const lines = text.split('\n');
     const els: JSX.Element[] = [];
     const fs = compact ? '13px' : '14px';
+    let key = 0;
+    let i = 0;
 
-    lines.forEach((line, i) => {
+    while (i < lines.length) {
+      const line = lines[i];
       const tr = line.trim();
+
+      // ── Vrai tableau (syntaxe | col | col |) ─────────────────────────
+      if (isTableRow(line)) {
+        const tableLines: string[] = [];
+        while (i < lines.length && isTableRow(lines[i])) {
+          tableLines.push(lines[i]);
+          i++;
+        }
+        const rows = tableLines
+          .filter(l => !isSeparatorRow(l))
+          .map(l => l.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => c.trim()));
+
+        if (rows.length > 0) {
+          const [header, ...body] = rows;
+          els.push(
+            <div key={key++} style={{ overflowX: 'auto', margin: '10px 0 14px 0', borderRadius: '10px', border: '1px solid #1e293b' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: fs }}>
+                <thead>
+                  <tr>
+                    {header.map((h, hi) => (
+                      <th key={hi} style={{ textAlign: 'left', padding: '7px 12px', background: '#141b2e', borderBottom: '2px solid #a78bfa', color: '#c4b5fd', fontWeight: 'bold', whiteSpace: 'nowrap' }}>
+                        {h}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {body.map((row, ri) => (
+                    <tr key={ri} style={{ background: ri % 2 === 0 ? 'transparent' : '#0f172a' }}>
+                      {row.map((cell, ci) => (
+                        <td key={ci} style={{ padding: '7px 12px', color: ci === 0 ? '#93c5fd' : '#e2e8f0', borderBottom: '1px solid #1e293b', fontWeight: ci === 0 ? 'bold' : 'normal', whiteSpace: 'nowrap' }}>
+                          {cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+        continue;
+      }
+
       if (tr.match(/^─{3,}/)) {
-        els.push(<hr key={i} style={{ border: 'none', borderTop: '1px solid #334155', margin: '10px 0' }} />);
+        els.push(<hr key={key++} style={{ border: 'none', borderTop: '1px solid #334155', margin: '10px 0' }} />);
       } else if (tr.match(/^[🎬📽⚡💡🖼⚙📚🔥🎯]/u)) {
         const color = tr.startsWith('⚡') ? '#fbbf24'
           : tr.startsWith('🖼') ? '#60a5fa'
@@ -155,27 +205,28 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
           : tr.startsWith('📽') ? '#fb923c'
           : '#a78bfa';
         els.push(
-          <div key={i} style={{ fontWeight: 'bold', fontSize: compact ? '14px' : '16px', color, marginTop: '14px', marginBottom: '4px' }}>
+          <div key={key++} style={{ fontWeight: 'bold', fontSize: compact ? '14px' : '16px', color, marginTop: '14px', marginBottom: '4px' }}>
             {tr}
           </div>
         );
       } else if (tr.startsWith('→')) {
         els.push(
-          <div key={i} style={{ display: 'flex', gap: '6px', marginLeft: '6px', marginBottom: '3px' }}>
+          <div key={key++} style={{ display: 'flex', gap: '6px', marginLeft: '6px', marginBottom: '3px' }}>
             <span style={{ color: '#60a5fa', flexShrink: 0 }}>→</span>
             <span style={{ color: '#e2e8f0', fontSize: fs }}>{tr.slice(1).trim()}</span>
           </div>
         );
       } else if (!tr) {
-        els.push(<div key={i} style={{ height: '8px' }} />);
+        els.push(<div key={key++} style={{ height: '8px' }} />);
       } else {
         els.push(
-          <p key={i} style={{ color: '#cbd5e1', fontSize: fs, lineHeight: '1.55', margin: '2px 0' }}>
+          <p key={key++} style={{ color: '#cbd5e1', fontSize: fs, lineHeight: '1.55', margin: '2px 0' }}>
             {tr}
           </p>
         );
       }
-    });
+      i++;
+    }
     return els;
   };
 
