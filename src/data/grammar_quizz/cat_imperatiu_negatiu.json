@@ -1,44 +1,32 @@
 {
-  "id": "cat_imperatiu_afirmatiu",
+  "id": "cat_imperatiu_negatiu",
   "title": {
-    "fr": "Catalan — Impératif affirmatif (regular + irréguliers)",
-    "en": "Catalan — Affirmative imperative (regular + irregular)"
+    "fr": "Catalan — L'impératif négatif (imperatiu negatiu)",
+    "en": "Catalan — The negative imperative (imperatiu negatiu)"
   },
-  "level": "A2",
+  "level": "B1",
   "note": {
-    "fr": "⚙️ L'**impératif affirmatif** sert à donner des ordres, des conseils ou des instructions.\n\n🔹 **Formes régulières :**\n\n| Pronom | -ar (parlar) | -er (córrer) | -ir (obrir) |\n|--------|-------------|-------------|-------------|\n| tu | **parla** | **corre** | **obre** |\n| vostè | **parli** | **corri** | **obri** |\n| nosaltres | **parlem** | **correguem** | **obrim** |\n| vosaltres | **parleu** | **correu** | **obriu** |\n| vostès | **parlin** | **corrin** | **obrin** |\n\n🔹 **Verbes irréguliers essentiels :**\n\n| Verbe | tu | vostè | nosaltres | vosaltres | vostès |\n|-------|----|-------|-----------|-----------|--------|\n| **fer** (faire) | **fes** | **faci** | **fem** | **feu** | **facin** |\n| **anar** (aller) | **vés** | **vagi** | **anem** | **aneu** | **vagin** |\n| **venir** (venir) | **vine** | **vingui** | **vinguem** | **vingueu** | **vinguin** |\n| **dir** (dire) | **digues** | **digui** | **diguem** | **digueu** | **diguin** |\n| **tenir** (avoir) | **té** | **tingui** | **tinguem** | **tingueu** | **tinguin** |\n| **ser** (être) | **sigues** | **sigui** | **siguem** | **sigueu** | **siguin** |\n| **saber** (savoir) | **sàpigues** | **sàpiga** | **sapiguem** | **sapigueu** | **sàpiguen** |\n\n💡 **Remarques clés :**\n- La forme **tu** de l'impératif = 3e personne du présent (souvent)\n- La forme **vostè/vostès** = subjonctif présent\n- **anar → vés** (et non *anas*) — irrégulier total au singulier\n- **fer → fes** — très courant, à mémoriser absolument\n\n💬 **Exemples :**\n➡️ *Parla més a poc a poc!* (Parle plus lentement !)\n➡️ *Fes els deures!* (Fais tes devoirs !)\n➡️ *Vés a comprar pa.* (Va acheter du pain.)\n➡️ *Vine aquí!* (Viens ici !)\n➡️ *Digues la veritat.* (Dis la vérité.)",
-    "en": "⚙️ The **affirmative imperative** is used to give orders, advice or instructions.\n\n🔹 **Regular forms:**\n\n| Pronoun | -ar (parlar) | -er (córrer) | -ir (obrir) |\n|---------|-------------|-------------|-------------|\n| tu | **parla** | **corre** | **obre** |\n| vostè | **parli** | **corri** | **obri** |\n| nosaltres | **parlem** | **correguem** | **obrim** |\n| vosaltres | **parleu** | **correu** | **obriu** |\n| vostès | **parlin** | **corrin** | **obrin** |\n\n🔹 **Essential irregular verbs:**\n\n| Verb | tu | vostè | nosaltres | vosaltres | vostès |\n|------|----|-------|-----------|-----------|--------|\n| **fer** (to do) | **fes** | **faci** | **fem** | **feu** | **facin** |\n| **anar** (to go) | **vés** | **vagi** | **anem** | **aneu** | **vagin** |\n| **venir** (to come) | **vine** | **vingui** | **vinguem** | **vingueu** | **vinguin** |\n| **dir** (to say) | **digues** | **digui** | **diguem** | **digueu** | **diguin** |\n| **tenir** (to have) | **té** | **tingui** | **tinguem** | **tingueu** | **tinguin** |\n| **ser** (to be) | **sigues** | **sigui** | **siguem** | **sigueu** | **siguin** |\n| **saber** (to know) | **sàpigues** | **sàpiga** | **sapiguem** | **sapigueu** | **sàpiguen** |"
+    "fr": "L'IMPERATIU NEGATIU suit une règle unique et importante: TOUTES les personnes, même tu, utilisent le présent du SUBJONCTIF. Il n'existe pas de forme tu propre au négatif (contrairement à l'affirmatif).\n\nTABLE:\nPronom      NO + -AR (parlar)   NO + -RE (perdre)   NO + -IR (dormir)\ntu          no parlis           no perdis           no dormis\nvostè       no parli            no perdi            no dormi\nnosaltres   no parlem           no perdem           no dormim\nvosaltres   no parleu           no perdeu           no dormiu\nvostès      no parlin           no perdin           no dormin\n\nLE PIÈGE: tu affirmatif et tu négatif sont DIFFÉRENTS.\nparla (affirmatif) vs no parlis (négatif)\ntanca (affirmatif, tancar) vs no tanquis (négatif)\n\nPour vostè / nosaltres / vosaltres / vostès, la forme est la MÊME qu'à l'affirmatif (déjà du subjonctif) — on ajoute juste 'no' devant: parli -> no parli.\n\nCANVIS ORTOGRÀFICS (identiques au subjonctif, mais ici ils touchent aussi tu):\nc -> qu devant e/i : tancar -> no tanquis · buscar -> no busquis\ng -> gu devant e/i : pagar -> no paguis · jugar -> no juguis\nç -> c devant e/i : començar -> no comencis",
+    "en": "The NEGATIVE IMPERATIVE follows one important rule: ALL persons, even tu, use the present SUBJUNCTIVE. There is no separate tu form in the negative (unlike the affirmative).\n\nTABLE:\nPronoun     NO + -AR (parlar)   NO + -RE (perdre)   NO + -IR (dormir)\ntu          no parlis           no perdis           no dormis\nvostè       no parli            no perdi            no dormi\nnosaltres   no parlem           no perdem           no dormim\nvosaltres   no parleu           no perdeu           no dormiu\nvostès      no parlin           no perdin           no dormin\n\nTHE TRAP: affirmative tu and negative tu are DIFFERENT.\nparla (affirmative) vs no parlis (negative)\ntanca (affirmative, tancar) vs no tanquis (negative)\n\nFor vostè / nosaltres / vosaltres / vostès, the form is the SAME as the affirmative (already subjunctive) — just add 'no' in front: parli -> no parli.\n\nSPELLING CHANGES (same as the subjunctive, but here they also affect tu):\nc -> qu before e/i: tancar -> no tanquis · buscar -> no busquis\ng -> gu before e/i: pagar -> no paguis · jugar -> no juguis\nç -> c before e/i: començar -> no comencis"
   },
   "drills": [
-    { "prompt": "___ (tu) més a poc a poc! (parlar)", "answer": "Parla" },
-    { "prompt": "___ (tu) els deures! (fer)", "answer": "Fes" },
-    { "prompt": "___ (tu) a comprar pa. (anar)", "answer": "Vés" },
-    { "prompt": "___ (tu) aquí! (venir)", "answer": "Vine" },
-    { "prompt": "___ (tu) la veritat. (dir)", "answer": "Digues" },
-    { "prompt": "___ (tu) paciència. (tenir)", "answer": "Té" },
-    { "prompt": "___ (tu) valent! (ser)", "answer": "Sigues" },
-    { "prompt": "___ (tu) la porta. (obrir)", "answer": "Obre" },
-    { "prompt": "___ (tu) la lletra. (escriure → escriu)", "answer": "Escriu" },
-    { "prompt": "___ (tu) el llibre. (llegir → llegeix)", "answer": "Llegeix" },
-    { "prompt": "___ (vostè) per aquí, si us plau. (passar)", "answer": "Passi" },
-    { "prompt": "___ (vostè) la documentació. (portar)", "answer": "Porti" },
-    { "prompt": "___ (vostè) un moment. (esperar)", "answer": "Esperi" },
-    { "prompt": "___ (vostè) aquí. (seure → segui)", "answer": "Segui" },
-    { "prompt": "___ (vostè) el formulari. (fer)", "answer": "Faci" },
-    { "prompt": "___ (vostè) al despatx. (anar)", "answer": "Vagi" },
-    { "prompt": "___ (vostè) demà. (venir)", "answer": "Vingui" },
-    { "prompt": "___ (nosaltres) un cafè! (prendre → prenguem)", "answer": "Prenguem" },
-    { "prompt": "___ (nosaltres) a la platja. (anar)", "answer": "Anem" },
-    { "prompt": "___ (nosaltres) més! (fer)", "answer": "Fem" },
-    { "prompt": "___ (nosaltres) junts. (menjar → mengem)", "answer": "Mengem" },
-    { "prompt": "___ (vosaltres) atenció! (tenir)", "answer": "Tingueu" },
-    { "prompt": "___ (vosaltres) les mans. (rentar)", "answer": "Renteu" },
-    { "prompt": "___ (vosaltres) a casa. (anar)", "answer": "Aneu" },
-    { "prompt": "___ (vosaltres) la veritat. (dir)", "answer": "Digueu" },
-    { "prompt": "___ (vosaltres) tranquils. (ser)", "answer": "Sigueu" },
-    { "prompt": "___ (vostès) per favor. (seure → seguin)", "answer": "Seguin" },
-    { "prompt": "___ (vostès) els documents. (portar)", "answer": "Portin" },
-    { "prompt": "___ (vostès) la reunió. (fer)", "answer": "Facin" },
-    { "prompt": "___ (vostès) quan vulguin. (venir)", "answer": "Vinguin" }
+    { "prompt": "No ___ tan fort! (parlar, tu)", "answer": "parlis", "options": ["parlis", "parles", "parla", "parli"] },
+    { "prompt": "No ___ sol de nit! (caminar, tu)", "answer": "caminis", "options": ["caminis", "camines", "camina", "camini"] },
+    { "prompt": "No ___ encara, espera'm! (parar, tu)", "answer": "paris", "options": ["paris", "pares", "para", "pari"] },
+    { "prompt": "No ___ música tan alta! (escoltar, tu)", "answer": "escoltis", "options": ["escoltis", "escoltes", "escolta", "escolti"] },
+    { "prompt": "No ___ res sense preguntar. (comprar, tu)", "answer": "compris", "options": ["compris", "compres", "compra", "compri"] },
+    { "prompt": "No ___ la pantalla tota l'estona! (mirar, tu)", "answer": "miris", "options": ["miris", "mires", "mira", "miri"] },
+    { "prompt": "No ___ la finestra encara. (tancar, vostè)", "answer": "tanqui", "options": ["tanqui", "tanquis", "tanca", "tanqueu"] },
+    { "prompt": "No ___ mentides! (explicar, vostè)", "answer": "expliqui", "options": ["expliqui", "expliquis", "explica", "expliqueu"] },
+    { "prompt": "No ___ ara, espera. (pagar, vostè)", "answer": "pagui", "options": ["pagui", "paguis", "paga", "pagueu"] },
+    { "prompt": "No ___ tard. (arribar, vostè)", "answer": "arribi", "options": ["arribi", "arribis", "arriba", "arribeu"] },
+    { "prompt": "No ___ tan de pressa! (menjar, nosaltres)", "answer": "mengem", "options": ["mengem", "mengeu", "mengin", "mengi"] },
+    { "prompt": "No ___ sense ell. (començar, nosaltres)", "answer": "comencem", "options": ["comencem", "comenceu", "comencin", "comenci"] },
+    { "prompt": "No ___ més, és tard. (escoltar, nosaltres)", "answer": "escoltem", "options": ["escoltem", "escolteu", "escoltin", "escolti"] },
+    { "prompt": "No ___ tard demà! (arribar, vosaltres)", "answer": "arribeu", "options": ["arribeu", "arribin", "arribeu-vos", "arribi"] },
+    { "prompt": "No ___ a la sala! (jugar, vosaltres)", "answer": "jugueu", "options": ["jugueu", "juguin", "jugui", "juga"] },
+    { "prompt": "No ___ res avui. (comprar, vosaltres)", "answer": "compreu", "options": ["compreu", "comprin", "compra", "compri"] },
+    { "prompt": "No ___ sense avisar! (deixar, vostès)", "answer": "deixin", "options": ["deixin", "deixeu", "deixen", "deixi"] },
+    { "prompt": "No ___ problemes. (buscar, vostès)", "answer": "busquin", "options": ["busquin", "busqueu", "busquen", "busqui"] }
   ]
 }
