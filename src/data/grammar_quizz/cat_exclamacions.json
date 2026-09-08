@@ -1,0 +1,28 @@
+{
+  "id": "cat_exclamacions",
+  "title": {
+    "fr": "Catalan — Les exclamations (quin, que, com)",
+    "en": "Catalan — Exclamations (quin, que, com)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Trois structures pour s'exclamer en catalan.\n\n| Structure | Accord | Exemple |\n|---|---|---|\n| quin + nom masc. sing. | s'accorde avec le nom | Quin fred! |\n| quina + nom fém. sing. | s'accorde avec le nom | Quina sort! |\n| quins + nom masc. plur. | s'accorde avec le nom | Quins ulls més bonics! |\n| quines + nom fém. plur. | s'accorde avec le nom | Quines ganes tinc! |\n| que + adjectiu | invariable | Que bonic! |\n| com + verbe | invariable | Com plou! |\n\n💡 Quin/quina/quins/quines s'accorde toujours avec le nom qui suit (comme un adjectif) — c'est le piège principal.\n\n💡 Que + adjectif sert à s'exclamer sur une qualité (Que car!, Que bé!) — que ne s'accorde jamais.\n\n💡 Com + verbe sert à s'exclamer sur une action (Com plou!, Com corre!).",
+    "en": "⚙️ Three structures for exclamations in Catalan.\n\n| Structure | Agreement | Example |\n|---|---|---|\n| quin + masc. sing. noun | agrees with the noun | Quin fred! |\n| quina + fem. sing. noun | agrees with the noun | Quina sort! |\n| quins + masc. plur. noun | agrees with the noun | Quins ulls més bonics! |\n| quines + fem. plur. noun | agrees with the noun | Quines ganes tinc! |\n| que + adjective | invariable | Que bonic! |\n| com + verb | invariable | Com plou! |\n\n💡 Quin/quina/quins/quines always agrees with the following noun (like an adjective) — this is the main trap.\n\n💡 Que + adjective is for exclaiming about a quality (Que car!, Que bé!) — que never agrees.\n\n💡 Com + verb is for exclaiming about an action (Com plou!, Com corre!)."
+  },
+  "drills": [
+    { "prompt": "___ fred que fa avui! (masc. sing. : fred)", "answer": "Quin", "options": ["Quin", "Quina", "Quins", "Quines"] },
+    { "prompt": "___ sort has tingut! (fém. sing. : sort)", "answer": "Quina", "options": ["Quina", "Quin", "Quins", "Quines"] },
+    { "prompt": "___ ulls més bonics que tens! (masc. plur. : ulls)", "answer": "Quins", "options": ["Quins", "Quina", "Quin", "Quines"] },
+    { "prompt": "___ ganes tinc de vacances! (fém. plur. : ganes)", "answer": "Quines", "options": ["Quines", "Quins", "Quin", "Quina"] },
+    { "prompt": "___ bonic que és aquest poble! (que + adjectif)", "answer": "Que", "options": ["Que", "Quin", "Com", "Quina"] },
+    { "prompt": "___ car que és aquest restaurant! (que + adjectif)", "answer": "Que", "options": ["Que", "Quin", "Quina", "Com"] },
+    { "prompt": "___ casa més gran! (fém. sing. : casa)", "answer": "Quina", "options": ["Quina", "Quin", "Quins", "Quines"] },
+    { "prompt": "___ nens més ben educats! (masc. plur. : nens)", "answer": "Quins", "options": ["Quins", "Quina", "Quines", "Quin"] },
+    { "prompt": "___ plou avui! (com + verbe)", "answer": "Com", "options": ["Com", "Que", "Quin", "Quina"] },
+    { "prompt": "___ dia més trist! (masc. sing. : dia)", "answer": "Quin", "options": ["Quin", "Quina", "Quins", "Quines"] },
+    { "prompt": "___ flors més boniques! (fém. plur. : flors)", "answer": "Quines", "options": ["Quines", "Quins", "Quina", "Quin"] },
+    { "prompt": "___ content estic! (que + adjectif)", "answer": "Que", "options": ["Que", "Quin", "Com", "Quina"] },
+    { "prompt": "___ pena que no puguis venir! (fém. sing. : pena)", "answer": "Quina", "options": ["Quina", "Quin", "Quins", "Quines"] },
+    { "prompt": "___ ràpid corre aquest cotxe! (que + adjectif)", "answer": "Que", "options": ["Que", "Quin", "Quina", "Com"] }
+  ]
+}
