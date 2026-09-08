@@ -1,0 +1,31 @@
+{
+  "id": "cat_adverbis_manera_temps_quantitat",
+  "title": {
+    "fr": "Catalan — Adverbes de manière, de temps et de quantité",
+    "en": "Catalan — Adverbs of manner, time and quantity"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Trois familles d'adverbes très fréquentes, invariables (contrairement aux adjectifs).\n\n🎯 MANERA (comment ?)\n\n| Catalan | Français |\n|---|---|\n| bé / malament | bien / mal |\n| així | comme ça |\n| de pressa / a poc a poc | vite / doucement |\n| ràpidament / lentament / clarament | rapidement / lentement / clairement |\n\n💡 Formation en -ment : adjectif au FÉMININ + -ment → ràpida → ràpidament · lenta → lentament · clara → clarament · fàcil → fàcilment\n\n🎯 TEMPS (quand ?)\n\n| Catalan | Français |\n|---|---|\n| ara / abans / després | maintenant / avant / après |\n| aviat / tard | bientôt / tard |\n| sempre / mai / sovint / de vegades | toujours / jamais / souvent / parfois |\n| ja / encara | déjà / encore, toujours pas |\n\n🎯 QUANTITAT (combien ?)\n\n| Catalan | Français |\n|---|---|\n| molt / poc | beaucoup / peu |\n| massa / bastant / prou | trop / assez / suffisamment |\n| gaire | (ne)... beaucoup, surtout au négatif/interrogatif |\n| tan / tant | tellement (voir piège ci-dessous) |\n\n⚡ Piège tan / tant : TAN devant un adjectif ou un adverbe (tan content, tan ràpid) · TANT devant un verbe ou seul (Ha plogut tant! / T'estimo tant).",
+    "en": "⚙️ Three very common adverb families, invariable (unlike adjectives).\n\n🎯 MANNER (how?)\n\n| Catalan | English |\n|---|---|\n| bé / malament | well / badly |\n| així | like this |\n| de pressa / a poc a poc | fast / slowly |\n| ràpidament / lentament / clarament | quickly / slowly / clearly |\n\n💡 -ment formation: FEMININE adjective + -ment → ràpida → ràpidament · lenta → lentament · clara → clarament · fàcil → fàcilment\n\n🎯 TIME (when?)\n\n| Catalan | English |\n|---|---|\n| ara / abans / després | now / before / after |\n| aviat / tard | soon / late |\n| sempre / mai / sovint / de vegades | always / never / often / sometimes |\n| ja / encara | already / still, not yet |\n\n🎯 QUANTITY (how much?)\n\n| Catalan | English |\n|---|---|\n| molt / poc | a lot / little |\n| massa / bastant / prou | too much / quite a lot / enough |\n| gaire | much, mainly in negative/questions |\n| tan / tant | so / so much (see trap below) |\n\n⚡ Tan / tant trap: TAN before an adjective or adverb (tan content, tan ràpid) · TANT before a verb or standing alone (Ha plogut tant! / T'estimo tant)."
+  },
+  "drills": [
+    { "prompt": "Ho ha fet molt ___. (bien)", "answer": "bé", "options": ["bé", "malament", "així", "millor"] },
+    { "prompt": "No ho facis ___, fes-ho a poc a poc. (vite)", "answer": "de pressa", "options": ["de pressa", "a poc a poc", "bé", "malament"] },
+    { "prompt": "Parla més ___, no t'entenc. (lentement)", "answer": "lentament", "options": ["lentament", "ràpidament", "clarament", "fàcilment"] },
+    { "prompt": "Ha explicat el problema molt ___. (clairement)", "answer": "clarament", "options": ["clarament", "lentament", "ràpidament", "malament"] },
+    { "prompt": "Corre molt ___. (rapidement)", "answer": "ràpidament", "options": ["ràpidament", "lentament", "clarament", "fàcilment"] },
+    { "prompt": "___ no he estat mai a Roma. (pas encore)", "answer": "Encara", "options": ["Encara", "Ja", "Sempre", "Mai"] },
+    { "prompt": "___ he acabat els deures. (déjà)", "answer": "Ja", "options": ["Ja", "Encara", "Sempre", "Mai"] },
+    { "prompt": "No hi vaig ___, només de tant en tant. (souvent)", "answer": "sovint", "options": ["sovint", "sempre", "mai", "aviat"] },
+    { "prompt": "___ vindrem a visitar-te. (bientôt)", "answer": "Aviat", "options": ["Aviat", "Tard", "Ara", "Ahir"] },
+    { "prompt": "Ell ___ arriba tard a la feina. (toujours)", "answer": "sempre", "options": ["sempre", "mai", "sovint", "encara"] },
+    { "prompt": "M'agrada ___ aquesta cançó. (beaucoup)", "answer": "molt", "options": ["molt", "poc", "massa", "bastant"] },
+    { "prompt": "Aquest cafè és ___ car. (trop)", "answer": "massa", "options": ["massa", "molt", "poc", "bastant"] },
+    { "prompt": "No tinc ___ temps avui. (pas beaucoup, en négatif)", "answer": "gaire", "options": ["gaire", "molt", "poc", "massa"] },
+    { "prompt": "Estic ___ content amb els resultats. (assez)", "answer": "bastant", "options": ["bastant", "poc", "gaire", "tan"] },
+    { "prompt": "Hem caminat ___, ja no puc més! (tellement, devant verbe)", "answer": "tant", "options": ["tant", "tan", "massa", "gaire"] },
+    { "prompt": "Queda ___ pastís per a tothom? (assez)", "answer": "prou", "options": ["prou", "gaire", "massa", "tan"] },
+    { "prompt": "Estic ___ cansat que no puc ni parlar. (tellement, devant adjectif)", "answer": "tan", "options": ["tan", "tant", "massa", "prou"] }
+  ]
+}
