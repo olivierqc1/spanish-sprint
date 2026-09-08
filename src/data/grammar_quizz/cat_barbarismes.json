@@ -1,0 +1,26 @@
+{
+  "id": "cat_barbarismes",
+  "title": {
+    "fr": "Catalan — Barbarismes courants (castellanismes à éviter)",
+    "en": "Catalan — Common barbarisms (Spanish calques to avoid)"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Les castellanismes (barbarismes) sont des mots ou tournures copiés de l'espagnol qui sonnent mal en català, même s'ils sont compris.\n\n| Castellanisme (à éviter) | Forme correcte en català |\n|---|---|\n| entonces | aleshores / llavors |\n| bueno (mot de remplissage) | bé / doncs |\n| vale | d'acord |\n| a lo mejor | potser |\n| aunque | encara que / tot i que |\n| cuidado! | compte! / vigila! |\n| despacio | a poc a poc |\n| ir a por | anar a buscar |\n\n🎯 Le piège grammatical le plus fréquent : HI HA reste TOUJOURS invariable, même au pluriel — jamais 'hi han'.\n\n| Incorrect | Correct |\n|---|---|\n| Hi han tres cotxes. | Hi ha tres cotxes. |\n| Hi haurien molts problemes. | Hi hauria molts problemes. |\n\n💡 Truc : hi ha vient de haver-hi, un verbe impersonnel — il n'a pas de sujet qui s'accorde, même si ce qui suit est pluriel.",
+    "en": "⚙️ Castellanismes (barbarisms) are words or expressions copied from Spanish that sound wrong in Catalan, even if understood.\n\n| Spanish calque (avoid) | Correct Catalan form |\n|---|---|\n| entonces | aleshores / llavors |\n| bueno (filler word) | bé / doncs |\n| vale | d'acord |\n| a lo mejor | potser |\n| aunque | encara que / tot i que |\n| cuidado! | compte! / vigila! |\n| despacio | a poc a poc |\n| ir a por | anar a buscar |\n\n🎯 The most common grammatical trap: HI HA is ALWAYS invariable, even in the plural — never 'hi han'.\n\n| Incorrect | Correct |\n|---|---|\n| Hi han tres cotxes. | Hi ha tres cotxes. |\n| Hi haurien molts problemes. | Hi hauria molts problemes. |\n\n💡 Tip: hi ha comes from haver-hi, an impersonal verb — it has no subject to agree with, even when what follows is plural."
+  },
+  "drills": [
+    { "prompt": "___ no vaig entendre res, la veritat. (à la place de 'entonces')", "answer": "Aleshores", "options": ["Aleshores", "Entonces", "Bueno", "Vale"] },
+    { "prompt": "___, comencem la reunió. (à la place de 'bueno' pour introduire)", "answer": "Doncs", "options": ["Doncs", "Bueno", "Entonces", "Aunque"] },
+    { "prompt": "___ vinguis a les cinc, no passa res. (à la place de 'aunque')", "answer": "Encara que", "options": ["Encara que", "Aunque", "Cuidado", "Vale"] },
+    { "prompt": "___! El terra és mullat. (à la place de 'cuidado')", "answer": "Compte", "options": ["Compte", "Cuidado", "Vale", "Bueno"] },
+    { "prompt": "Camina ___, no corris tant. (à la place de 'despacio')", "answer": "a poc a poc", "options": ["a poc a poc", "despacio", "aleshores", "potser"] },
+    { "prompt": "___ arribi tard, ja m'ho esperava. (à la place de 'a lo mejor', différent registre — ici on veut 'potser')", "answer": "Potser", "options": ["Potser", "A lo mejor", "Vale", "Entonces"] },
+    { "prompt": "D'acord, ens veiem demà. (à la place de 'vale', choisis la forme correcte)", "answer": "D'acord", "options": ["D'acord", "Vale", "Bueno", "Entonces"] },
+    { "prompt": "Vaig ___ el gos al parc. (à la place de 'ir a por')", "answer": "a buscar", "options": ["a buscar", "a por", "per", "a per"] },
+    { "prompt": "___ tres cotxes aparcats aquí. (hi ha, toujours invariable)", "answer": "Hi ha", "options": ["Hi ha", "Hi han", "Hi hauran", "Hi havien"] },
+    { "prompt": "Abans ___ molts arbres en aquest carrer. (hi havia, imperfet, invariable)", "answer": "hi havia", "options": ["hi havia", "hi havien", "hi ha", "hi han"] },
+    { "prompt": "Amb aquest pla, ___ menys problemes. (hi hauria, condicional, invariable)", "answer": "hi hauria", "options": ["hi hauria", "hi haurien", "hi ha", "hi han"] },
+    { "prompt": "Demà ___ molta gent a la festa. (hi haurà, futur, invariable)", "answer": "hi haurà", "options": ["hi haurà", "hi hauran", "hi ha", "hi havia"] }
+  ]
+}
