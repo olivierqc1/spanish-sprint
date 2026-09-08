@@ -1,0 +1,38 @@
+{
+  "id": "cat_ortografia_alternances",
+  "title": {
+    "fr": "Catalan — Orthographe : B/V, accentuation, dièresi",
+    "en": "Catalan — Spelling: B/V, accentuation, dieresis"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Le català a plusieurs points d'orthographe qui ne s'entendent pas à l'oral — il faut les mémoriser.\n\n🎯 B / V — Dans la plupart des dialectes (dont Barcelone), B et V se prononcent EXACTEMENT pareil (betacisme). Impossible de deviner à l'oreille : il faut mémoriser mot par mot.\n\n| Mot | Orthographe |\n|---|---|\n| poble | b |\n| cavall | v |\n| haver | v |\n| llavors | v |\n| arribar | b |\n| vaixell | v |\n| cabell | b |\n| novè | v |\n\n🎯 ACCENTUACIÓ — Trois types de mots selon la syllabe accentuée :\n\n| Type | Règle de l'accent écrit | Exemple |\n|---|---|---|\n| agudes (accent sur la dernière syllabe) | accent écrit si le mot finit en voyelle, voyelle+s, -en ou -in | però, camió, francès |\n| planes (accent sur l'avant-dernière) | accent écrit SEULEMENT si le mot NE finit PAS en voyelle, voyelle+s, -en ou -in | fàcil, difícil (mais : jove, examen sans accent) |\n| esdrúixoles (accent sur l'antépénultième) | TOUJOURS un accent écrit | música, pàgina |\n\n🎯 DIÈRESI (ü / ï) — Deux usages :\n\n| Usage | Exemple |\n|---|---|\n| montrer que le U de GÜ/QÜ se prononce (devant e/i) | qüestió, pingüí (vs. guerra où le u est muet) |\n| séparer deux voyelles qui, sinon, formeraient une diphtongue | veïna, raïm |\n\n🎯 ALTERNANCE -IG / -JA (le son [tx] à la fin d'un mot masculin devient -tj- au féminin/dérivé)\n\n| Masculin (-ig) | Féminin |\n|---|---|\n| boig | boja |\n| roig | roja |\n| mig | mitja |\n| lleig | lletja |",
+    "en": "⚙️ Catalan has several spelling points that can't be heard in speech — they must be memorized.\n\n🎯 B / V — In most dialects (including Barcelona), B and V are pronounced EXACTLY the same (betacism). You can't guess by ear: memorize word by word.\n\n| Word | Spelling |\n|---|---|\n| poble | b |\n| cavall | v |\n| haver | v |\n| llavors | v |\n| arribar | b |\n| vaixell | v |\n| cabell | b |\n| novè | v |\n\n🎯 ACCENTUATION — Three word types by stressed syllable:\n\n| Type | Written accent rule | Example |\n|---|---|---|\n| agudes (stress on last syllable) | written accent if the word ends in a vowel, vowel+s, -en or -in | però, camió, francès |\n| planes (stress on second-to-last) | written accent ONLY if it does NOT end in vowel, vowel+s, -en or -in | fàcil, difícil (but: jove, examen — no accent) |\n| esdrúixoles (stress on third-to-last) | ALWAYS a written accent | música, pàgina |\n\n🎯 DIERESIS (ü / ï) — Two uses:\n\n| Use | Example |\n|---|---|\n| shows the U in GÜ/QÜ is pronounced (before e/i) | qüestió, pingüí (vs. guerra, where u is silent) |\n| separates two vowels that would otherwise form a diphthong | veïna, raïm |\n\n🎯 -IG / -JA ALTERNATION (the [tx] sound at the end of a masculine word becomes -tj- in the feminine/derived form)\n\n| Masculine (-ig) | Feminine |\n|---|---|\n| boig | boja |\n| roig | roja |\n| mig | mitja |\n| lleig | lletja |"
+  },
+  "drills": [
+    { "prompt": "Vivim en un po___le molt tranquil. (poble)", "answer": "b", "options": ["b", "v"] },
+    { "prompt": "Vaig muntar a ca___all. (cavall)", "answer": "v", "options": ["v", "b"] },
+    { "prompt": "'Hi ha' ve del verb ha___er. (haver)", "answer": "v", "options": ["v", "b"] },
+    { "prompt": "Ll___ors plourà. (llavors)", "answer": "v", "options": ["v", "b"] },
+    { "prompt": "Vam arri___ar tard. (arribar)", "answer": "b", "options": ["b", "v"] },
+    { "prompt": "Vam pujar al ___aixell. (vaixell)", "answer": "v", "options": ["v", "b"] },
+    { "prompt": "Té els ca___ells rossos. (cabell)", "answer": "b", "options": ["b", "v"] },
+    { "prompt": "És el no___è pis. (novè)", "answer": "v", "options": ["v", "b"] },
+    { "prompt": "M'agrada molt prendre un cafè... quina és la forma correcta? (però)", "answer": "però", "options": ["però", "pero", "péro", "però"] },
+    { "prompt": "Hem de fer transbord al metro. Quina és la forma correcta? (camió)", "answer": "camió", "options": ["camió", "camio", "càmio", "camiò"] },
+    { "prompt": "Aquest exercici és molt... quina és la forma correcta? (fàcil)", "answer": "fàcil", "options": ["fàcil", "facil", "facíl", "fácil"] },
+    { "prompt": "Aquest problema és molt... quina és la forma correcta? (difícil)", "answer": "difícil", "options": ["difícil", "dificil", "difìcil", "díficil"] },
+    { "prompt": "Demà tinc un... quina és la forma correcta (sense accent, acaba en -en)? (examen)", "answer": "examen", "options": ["examen", "exàmen", "éxamen", "examèn"] },
+    { "prompt": "El meu germà és molt... quina és la forma correcta (sense accent, acaba en vocal)? (jove)", "answer": "jove", "options": ["jove", "jòve", "jóve", "jovè"] },
+    { "prompt": "M'agrada escoltar... quina és la forma correcta (esdrúixola, sempre accent)? (música)", "answer": "música", "options": ["música", "musica", "musicà", "mùsica"] },
+    { "prompt": "Obre el llibre a la... quina és la forma correcta (esdrúixola, sempre accent)? (pàgina)", "answer": "pàgina", "options": ["pàgina", "pagina", "paginà", "págine"] },
+    { "prompt": "Aquesta és una q___estió important. (qüestió, es pronuncia el u)", "answer": "ü", "options": ["ü", "u", "uu", "ù"] },
+    { "prompt": "Al zoo hi ha un ping___í molt petit. (pingüí)", "answer": "ü", "options": ["ü", "u", "uu", "ù"] },
+    { "prompt": "La ve___na del tercer és molt simpàtica. (veïna, hiat)", "answer": "ï", "options": ["ï", "i", "í", "ii"] },
+    { "prompt": "A la tardor mengem ra___m. (raïm, hiat)", "answer": "ï", "options": ["ï", "i", "í", "ii"] },
+    { "prompt": "El gat és ___ (fem. de boig, parlant de la gata)", "answer": "boja", "options": ["boja", "boig", "boixa", "boigia"] },
+    { "prompt": "La samarreta és de color ___ (fem. de roig)", "answer": "roja", "options": ["roja", "roig", "rotja", "rossa"] },
+    { "prompt": "Són les dotze i ___ (fem. de mig, amb 'hora')", "answer": "mitja", "options": ["mitja", "mig", "mitge", "migja"] },
+    { "prompt": "Aquesta pel·lícula és molt ___ (fem. de lleig)", "answer": "lletja", "options": ["lletja", "lleig", "lletga", "lleitja"] }
+  ]
+}
