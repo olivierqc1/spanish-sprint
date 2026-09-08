@@ -1,0 +1,30 @@
+{
+  "id": "cat_obligacio_haver_de_caldre",
+  "title": {
+    "fr": "Catalan — L'obligation (haver de / caldre)",
+    "en": "Catalan — Obligation (haver de / caldre)"
+  },
+  "level": "A2",
+  "note": {
+    "fr": "⚙️ Le catalan a deux façons d'exprimer l'obligation : haver de (personnelle, se conjugue selon le sujet) et caldre (impersonnelle, invariable).\n\n💡 HAVER DE + infinitiu (obligation personnelle)\n\n| Pronom | haver de + infinitiu |\n|---|---|\n| jo | he de |\n| tu | has de |\n| ell / ella / vostè | ha de |\n| nosaltres | hem de |\n| vosaltres | heu de |\n| ells / elles / vostès | han de |\n\nEx : Has de venir demà. (Tu dois venir demain.)\n\n💡 CALDRE (obligation impersonnelle, ne se conjugue jamais avec un sujet personnel)\n\n| Forme | Exemple |\n|---|---|\n| cal + infinitiu | Cal arribar d'hora. |\n| cal que + subjonctif | Cal que arribis d'hora. |\n| caldrà (futur) | Caldrà portar el passaport. |\n| calia (imperfet) | Calia portar el passaport. |\n\n⚡ Truc : caldre reste toujours à la 3e personne du singulier (cal, caldrà, calia...). Pour préciser QUI doit faire l'action, on utilise 'cal que' + subjonctif : Cal que tu vinguis / Cal que vosaltres vingueu.",
+    "en": "⚙️ Catalan has two ways to express obligation: haver de (personal, conjugated per subject) and caldre (impersonal, invariable).\n\n💡 HAVER DE + infinitive (personal obligation)\n\n| Pronoun | haver de + infinitive |\n|---|---|\n| jo | he de |\n| tu | has de |\n| ell / ella / vostè | ha de |\n| nosaltres | hem de |\n| vosaltres | heu de |\n| ells / elles / vostès | han de |\n\nEx: Has de venir demà. (You have to come tomorrow.)\n\n💡 CALDRE (impersonal obligation, never conjugated for a personal subject)\n\n| Form | Example |\n|---|---|\n| cal + infinitive | Cal arribar d'hora. |\n| cal que + subjunctive | Cal que arribis d'hora. |\n| caldrà (future) | Caldrà portar el passaport. |\n| calia (imperfect) | Calia portar el passaport. |\n\n⚡ Tip: caldre always stays 3rd person singular (cal, caldrà, calia...). To say WHO must do the action, use 'cal que' + subjunctive: Cal que tu vinguis / Cal que vosaltres vingueu."
+  },
+  "drills": [
+    { "prompt": "___ estudiar més si vols aprovar. (haver de, tu)", "answer": "Has de", "options": ["Has de", "He de", "Ha de", "Han de"] },
+    { "prompt": "Nosaltres ___ marxar abans de les vuit. (haver de, nosaltres)", "answer": "Hem de", "options": ["Hem de", "Heu de", "Han de", "Ha de"] },
+    { "prompt": "Vosaltres ___ portar el carnet d'identitat. (haver de, vosaltres)", "answer": "Heu de", "options": ["Heu de", "Hem de", "Han de", "Has de"] },
+    { "prompt": "Els alumnes ___ lliurar el treball demà. (haver de, ells)", "answer": "Han de", "options": ["Han de", "Ha de", "Hem de", "Heu de"] },
+    { "prompt": "___ trucar al metge, no em trobo bé. (haver de, jo)", "answer": "He de", "options": ["He de", "Has de", "Ha de", "Han de"] },
+    { "prompt": "La reunió ___ començar puntual. (haver de, ella)", "answer": "ha de", "options": ["ha de", "han de", "hem de", "has de"] },
+    { "prompt": "___ molta paciència per fer aquesta feina. (caldre, impersonal)", "answer": "Cal", "options": ["Cal", "Caldrà", "Calia", "Cal que"] },
+    { "prompt": "___ que arribis abans de les nou. (caldre + que, tu)", "answer": "Cal", "options": ["Cal", "Caldrà", "Calia", "Caldreu"] },
+    { "prompt": "L'any que ve ___ renovar el passaport. (caldre, futur)", "answer": "caldrà", "options": ["caldrà", "cal", "calia", "cal que"] },
+    { "prompt": "Abans ___ demanar hora amb setmanes d'antelació. (caldre, imperfet)", "answer": "calia", "options": ["calia", "cal", "caldrà", "cal que"] },
+    { "prompt": "___ que porteu paraigua, sembla que plourà. (caldre + que, vosaltres)", "answer": "Cal", "options": ["Cal", "Caldrà", "Calia", "Caldreu"] },
+    { "prompt": "Per entrar ___ presentar el DNI. (caldre, impersonal)", "answer": "cal", "options": ["cal", "caldrà", "calia", "cal que"] },
+    { "prompt": "___ fer cua per entrar al museu. (caldre, impersonal)", "answer": "Cal", "options": ["Cal", "Caldrà", "Calia", "Cal que"] },
+    { "prompt": "Nosaltres no ___ portar res, ja ho tenen tot. (haver de, nosaltres)", "answer": "hem de", "options": ["hem de", "heu de", "han de", "ha de"] },
+    { "prompt": "___ que ho pensis bé abans de decidir. (caldre + que, tu)", "answer": "Cal", "options": ["Cal", "Caldrà", "Calia", "Caldries"] },
+    { "prompt": "Vostè ___ signar aquí, si us plau. (haver de, vostè)", "answer": "ha de", "options": ["ha de", "han de", "has de", "hem de"] }
+  ]
+}
