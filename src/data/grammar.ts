@@ -9,7 +9,14 @@ export type GrammarPoint = {
   jsonPath: string;
 };
 
-export const grammarPoints: GrammarPoint[] = [
+export const grammarPoints: GrammarPoint[] = [{
+  id: "cat_ortografia_alternances",
+  title: { fr: "Catalan — Orthographe : B/V, accentuation, dièresi", en: "Catalan — Spelling: B/V, accentuation, dieresis" },
+  level: "B1",
+  note: { fr: "B/V à mémoriser, règle agut/pla/esdrúixol, dièresi, boig/boja.", en: "B/V memorization, agut/pla/esdrúixol rule, dieresis, boig/boja." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_ortografia_alternances.json"
+},
 {
   id: "cat_barbarismes",
   title: { fr: "Catalan — Barbarismes courants (castellanismes à éviter)", en: "Catalan — Common barbarisms (Spanish calques to avoid)" },
