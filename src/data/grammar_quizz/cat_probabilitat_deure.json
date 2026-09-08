@@ -1,0 +1,28 @@
+{
+  "id": "cat_probabilitat_deure",
+  "title": {
+    "fr": "Catalan — La probabilité (deure + infinitiu)",
+    "en": "Catalan — Probability (deure + infinitive)"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Deure + infinitiu sert à exprimer une supposition, une probabilité (\"ça doit être...\", \"il doit avoir...\").\n\n| Pronom | deure (present) |\n|---|---|\n| jo | dec |\n| tu | deus |\n| ell / ella / vostè | deu |\n| nosaltres | devem |\n| vosaltres | deveu |\n| ells / elles / vostès | deuen |\n\n💡 Deure + infinitiu = probabilité au présent : Deu ser tard (Il doit être tard) · Deuen estar dormint (Ils doivent être en train de dormir)\n\n💡 Deure + haver + participi = probabilité dans le passé : Deu haver plogut (Il a dû pleuvoir) · Deuen haver marxat (Ils ont dû partir)\n\n⚡ Attention : deure sert aussi à dire \"devoir de l'argent\" (Et dec deu euros). Le sens vient toujours du contexte, pas de la forme.",
+    "en": "⚙️ Deure + infinitive is used to express a supposition or probability (\"it must be...\", \"he/she must have...\").\n\n| Pronoun | deure (present) |\n|---|---|\n| jo | dec |\n| tu | deus |\n| ell / ella / vostè | deu |\n| nosaltres | devem |\n| vosaltres | deveu |\n| ells / elles / vostès | deuen |\n\n💡 Deure + infinitive = present probability: Deu ser tard (It must be late) · Deuen estar dormint (They must be sleeping)\n\n💡 Deure + haver + past participle = past probability: Deu haver plogut (It must have rained) · Deuen haver marxat (They must have left)\n\n⚡ Note: deure is also the verb 'to owe money' (Et dec deu euros). The meaning always comes from context, not the form."
+  },
+  "drills": [
+    { "prompt": "___ ser tard, ja no hi ha ningú al carrer. (deure, ell)", "answer": "Deu", "options": ["Deu", "Dec", "Deus", "Deuen"] },
+    { "prompt": "Els meus pares ___ estar dormint. (deure, ells)", "answer": "Deuen", "options": ["Deuen", "Deu", "Devem", "Deveu"] },
+    { "prompt": "___ tenir raó, no ho havia pensat. (deure, tu)", "answer": "Deus", "options": ["Deus", "Dec", "Deu", "Deuen"] },
+    { "prompt": "Nosaltres ___ arribar tard, hi ha molt de trànsit. (deure, nosaltres)", "answer": "Devem", "options": ["Devem", "Deuen", "Deveu", "Deu"] },
+    { "prompt": "Vosaltres ___ estar cansats després del viatge. (deure, vosaltres)", "answer": "Deveu", "options": ["Deveu", "Devem", "Deuen", "Deu"] },
+    { "prompt": "___ haver oblidat les claus, no les trobo. (deure, jo)", "answer": "Dec", "options": ["Dec", "Deus", "Deu", "Devem"] },
+    { "prompt": "La Maria no contesta, ___ estar ocupada. (deure, ella)", "answer": "deu", "options": ["deu", "deus", "dec", "deuen"] },
+    { "prompt": "___ haver plogut molt, els carrers estan mullats. (deure, impersonal)", "answer": "Deu", "options": ["Deu", "Dec", "Deus", "Deuen"] },
+    { "prompt": "Amb aquest fred, ___ haver nevat a la muntanya. (deure, impersonal)", "answer": "deu", "options": ["deu", "deus", "dec", "devem"] },
+    { "prompt": "Els nens ___ tenir son, són les deu de la nit. (deure, ells)", "answer": "deuen", "options": ["deuen", "deu", "devem", "deveu"] },
+    { "prompt": "Vostè ___ conèixer bé la ciutat, hi viu fa anys. (deure, vostè)", "answer": "deu", "options": ["deu", "deus", "dec", "deuen"] },
+    { "prompt": "___ haver-hi algun problema, el tren no arriba. (deure, impersonal)", "answer": "Deu", "options": ["Deu", "Deuen", "Dec", "Devem"] },
+    { "prompt": "No sé on és en Marc, ___ haver sortit ja. (deure, ell)", "answer": "deu", "options": ["deu", "deus", "dec", "deuen"] },
+    { "prompt": "___ fer-se tard, marxem? (deure, impersonal)", "answer": "Deu", "options": ["Deu", "Dec", "Deus", "Deuen"] }
+  ]
+}
