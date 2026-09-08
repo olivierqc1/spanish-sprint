@@ -9,7 +9,22 @@ export type GrammarPoint = {
   jsonPath: string;
 };
 
-export const grammarPoints: GrammarPoint[] = [
+export const grammarPoints: GrammarPoint[] = [{
+  id: "cat_adverbis_manera_temps_quantitat",
+  title: { fr: "Catalan — Adverbes de manière, de temps et de quantité", en: "Catalan — Adverbs of manner, time and quantity" },
+  level: "A2",
+  note: { fr: "Bé/malament, sempre/mai, molt/gaire — et le piège tan/tant.", en: "Bé/malament, sempre/mai, molt/gaire — and the tan/tant trap." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_adverbis_manera_temps_quantitat.json"
+},
+{
+  id: "cat_exclamacions",
+  title: { fr: "Catalan — Les exclamations (quin, que, com)", en: "Catalan — Exclamations (quin, que, com)" },
+  level: "A2",
+  note: { fr: "Quin fred!, Que bonic!, Com plou! — accord de quin/quina/quins/quines.", en: "Quin fred!, Que bonic!, Com plou! — quin agreement." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_exclamacions.json"
+},
 {
   id: "cat_probabilitat_deure",
   title: { fr: "Catalan — La probabilité (deure + infinitiu)", en: "Catalan — Probability (deure + infinitive)" },
