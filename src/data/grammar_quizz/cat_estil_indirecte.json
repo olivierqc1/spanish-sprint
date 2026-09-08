@@ -1,0 +1,26 @@
+{
+  "id": "cat_estil_indirecte",
+  "title": {
+    "fr": "Catalan — Le discours indirect (estil indirecte)",
+    "en": "Catalan — Reported speech (estil indirecte)"
+  },
+  "level": "B2",
+  "note": {
+    "fr": "⚙️ Rapporter les paroles de quelqu'un avec 'que'. Si le verbe introducteur (diu, va dir, deia...) est au PASSÉ, le temps du verbe rapporté recule (concordança temporal). S'il est au présent, rien ne change.\n\n💡 CONCORDANÇA (verbe introducteur au passé)\n\n| Estil directe | Estil indirecte |\n|---|---|\n| present | imperfet |\n| futur | condicional |\n| pretèrit perfet / passat perifràstic | plusquamperfet |\n| imperatiu | que + imperfet de subjuntiu * |\n\n* forme avancée, voir la leçon sur l'imperfet de subjuntiu.\n\n💡 DEÍCTICS (les mots de lieu/temps changent aussi)\n\n| Directe | Indirecte |\n|---|---|\n| aquí | allà |\n| ara | aleshores / llavors |\n| avui | aquell dia |\n| demà | l'endemà |\n| ahir | el dia abans |\n| aquest / aquesta | aquell / aquella |\n\n💡 Exemple complet : \"Vindré demà,\" va dir en Pau. → En Pau va dir que vindria l'endemà. (futur → condicional, demà → l'endemà)",
+    "en": "⚙️ Reporting what someone said with 'que'. If the reporting verb (diu, va dir, deia...) is in the PAST, the reported verb's tense shifts back (tense agreement). If it's in the present, nothing changes.\n\n💡 TENSE SHIFT (reporting verb in the past)\n\n| Direct speech | Reported speech |\n|---|---|\n| present | imperfect |\n| future | conditional |\n| present perfect / simple past | pluperfect |\n| imperative | que + imperfect subjunctive * |\n\n* advanced form, see the imperfect subjunctive lesson.\n\n💡 DEICTICS (place/time words change too)\n\n| Direct | Reported |\n|---|---|\n| aquí (here) | allà (there) |\n| ara (now) | aleshores / llavors (then) |\n| avui (today) | aquell dia (that day) |\n| demà (tomorrow) | l'endemà (the next day) |\n| ahir (yesterday) | el dia abans (the day before) |\n| aquest / aquesta (this) | aquell / aquella (that) |\n\n💡 Full example: \"Vindré demà,\" va dir en Pau. → En Pau va dir que vindria l'endemà. (future → conditional, demà → l'endemà)"
+  },
+  "drills": [
+    { "prompt": "Directe: \"Vinc a la festa.\" — Indirecte: La Marta diu que ___ a la festa. (present, verb introductori en present)", "answer": "ve", "options": ["ve", "venia", "vindria", "vingués"] },
+    { "prompt": "Directe: \"Vindré demà.\" — Indirecte: En Jordi va dir que ___ l'endemà. (futur → condicional)", "answer": "vindria", "options": ["vindria", "vindrà", "ve", "venia"] },
+    { "prompt": "Directe: \"Estic cansat.\" — Indirecte: Em va dir que ___ cansat. (present → imperfet)", "answer": "estava", "options": ["estava", "està", "estarà", "estigués"] },
+    { "prompt": "Directe: \"He acabat la feina.\" — Indirecte: Va dir que ___ la feina. (pretèrit perfet → plusquamperfet)", "answer": "havia acabat", "options": ["havia acabat", "ha acabat", "hauria acabat", "acabava"] },
+    { "prompt": "Directe: \"Vaig anar al cinema.\" — Indirecte: Em va explicar que ___ al cinema. (passat perifràstic → plusquamperfet)", "answer": "havia anat", "options": ["havia anat", "va anar", "aniria", "anava"] },
+    { "prompt": "Directe: \"Vinc aquí demà.\" — Indirecte: Va dir que vindria ___ l'endemà. (aquí → allà)", "answer": "allà", "options": ["allà", "aquí", "ara", "avui"] },
+    { "prompt": "Directe: \"Ho vaig veure ahir.\" — Indirecte: Va dir que ho havia vist ___. (ahir → el dia abans)", "answer": "el dia abans", "options": ["el dia abans", "ahir", "avui", "l'endemà"] },
+    { "prompt": "Directe: \"Ho faré avui.\" — Indirecte: Va dir que ho faria ___. (avui → aquell dia)", "answer": "aquell dia", "options": ["aquell dia", "avui", "ara", "demà"] },
+    { "prompt": "Directe: \"Tinc gana.\" — Indirecte: Diu que ___ gana. (present, verb introductori en present, sense canvi)", "answer": "té", "options": ["té", "tenia", "tindria", "tingués"] },
+    { "prompt": "Directe: \"No puc venir.\" — Indirecte: Va dir que no ___ venir. (present → imperfet)", "answer": "podia", "options": ["podia", "pot", "podria", "pogués"] },
+    { "prompt": "Directe: \"Estudiaré medicina.\" — Indirecte: Va explicar que ___ medicina. (futur → condicional)", "answer": "estudiaria", "options": ["estudiaria", "estudiarà", "estudia", "estudiava"] },
+    { "prompt": "Directe: \"Aquest llibre és molt bo.\" — Indirecte: Va dir que ___ llibre era molt bo. (aquest → aquell)", "answer": "aquell", "options": ["aquell", "aquest", "aquella", "aquesta"] }
+  ]
+}
