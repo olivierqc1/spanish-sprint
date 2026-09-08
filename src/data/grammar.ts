@@ -11,6 +11,22 @@ export type GrammarPoint = {
 
 export const grammarPoints: GrammarPoint[] = [
 {
+  id: "cat_probabilitat_deure",
+  title: { fr: "Catalan — La probabilité (deure + infinitiu)", en: "Catalan — Probability (deure + infinitive)" },
+  level: "B1",
+  note: { fr: "Deu ser tard, deuen haver marxat — exprimer une supposition.", en: "Deu ser tard, deuen haver marxat — expressing a guess." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_probabilitat_deure.json"
+},
+{
+  id: "cat_obligacio_haver_de_caldre",
+  title: { fr: "Catalan — L'obligation (haver de / caldre)", en: "Catalan — Obligation (haver de / caldre)" },
+  level: "A2",
+  note: { fr: "Has de venir vs Cal que vinguis — obligation personnelle vs impersonnelle.", en: "Has de venir vs Cal que vinguis — personal vs impersonal obligation." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_obligacio_haver_de_caldre.json"
+},
+{
   id: "cat_imperatiu",
   title: { fr: "Catalan — L'impératif (imperatiu), verbes réguliers", en: "Catalan — The imperative (imperatiu), regular verbs" },
   level: "B1",
