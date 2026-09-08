@@ -9,7 +9,24 @@ export type GrammarPoint = {
   jsonPath: string;
 };
 
-export const grammarPoints: GrammarPoint[] = [{
+export const grammarPoints: GrammarPoint[] = [
+{
+  id: "cat_barbarismes",
+  title: { fr: "Catalan — Barbarismes courants (castellanismes à éviter)", en: "Catalan — Common barbarisms (Spanish calques to avoid)" },
+  level: "B1",
+  note: { fr: "Entonces→aleshores, bueno→doncs — et hi ha toujours invariable.", en: "Entonces→aleshores, bueno→doncs — and hi ha stays invariable." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_barbarismes.json"
+},
+{
+  id: "cat_estil_indirecte",
+  title: { fr: "Catalan — Le discours indirect (estil indirecte)", en: "Catalan — Reported speech (estil indirecte)" },
+  level: "B2",
+  note: { fr: "Concordance des temps et déictiques (aquí→allà, demà→l'endemà).", en: "Tense agreement and deictics (aquí→allà, demà→l'endemà)." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_estil_indirecte.json"
+},
+{
   id: "cat_adverbis_manera_temps_quantitat",
   title: { fr: "Catalan — Adverbes de manière, de temps et de quantité", en: "Catalan — Adverbs of manner, time and quantity" },
   level: "A2",
