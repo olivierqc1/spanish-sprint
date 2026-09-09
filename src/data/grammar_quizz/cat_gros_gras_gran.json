@@ -1,0 +1,26 @@
+{
+  "id": "cat_gros_gras_gran",
+  "title": {
+    "fr": "Catalan — Mots à ne pas confondre : gros, gras, gran, gruix",
+    "en": "Catalan — Words not to confuse: gros, gras, gran, gruix"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Six mots proches par le sens mais pas interchangeables.\n\n| Mot | Sens | Exemple |\n|---|---|---|\n| gros / grossa | volumineux, de grande taille | un llibre gros |\n| gras / grassa | qui a de la graisse, gras | carn grassa |\n| gran | grand, important (sens général) | una gran ciutat |\n| gruix (nom) | l'épaisseur | el gruix d'una paret |\n| gruixut / gruixuda (adj) | épais | una paret gruixuda |\n| greix (nom) | la graisse (la matière) | el greix de la carn |\n\n🎯 Piège de position avec GRAN : placé AVANT le nom, il signifie souvent \"grand/important\" (una gran dona = une femme remarquable) ; placé APRÈS un nom de personne, il peut signifier \"âgé\" (una dona gran = une femme âgée).\n\n💡 Astuce : gruix et greix sont des noms (l'épaisseur, la graisse) ; gruixut et gras/grassa sont des adjectifs.",
+    "en": "⚙️ Six words close in meaning but not interchangeable.\n\n| Word | Meaning | Example |\n|---|---|---|\n| gros / grossa | bulky, large in size | un llibre gros |\n| gras / grassa | fatty, has fat | carn grassa |\n| gran | big, important (general sense) | una gran ciutat |\n| gruix (noun) | thickness | el gruix d'una paret |\n| gruixut / gruixuda (adj) | thick | una paret gruixuda |\n| greix (noun) | fat/grease (the substance) | el greix de la carn |\n\n🎯 Position trap with GRAN: placed BEFORE the noun, it often means \"great/important\" (una gran dona = a remarkable woman); placed AFTER a person's name/noun, it can mean \"elderly\" (una dona gran = an elderly woman).\n\n💡 Tip: gruix and greix are nouns (thickness, fat); gruixut and gras/grassa are adjectives."
+  },
+  "drills": [
+    { "prompt": "Aquest llibre és molt ___, té gairebé mil pàgines. (volum)", "answer": "gros" },
+    { "prompt": "El gat del veí és molt ___, menja massa. (té greix)", "answer": "gras" },
+    { "prompt": "Barcelona és una ciutat molt ___. (grandària general)", "answer": "gran" },
+    { "prompt": "Aquesta paret és molt ___, aguanta bé el fred. (adjectiu, molt gruix)", "answer": "gruixuda" },
+    { "prompt": "Quin ___ té aquesta paret? (nom, l'espessor)", "answer": "gruix" },
+    { "prompt": "Aquesta carn té massa ___, val més triar-ne una altra. (nom, la matèria grassa)", "answer": "greix" },
+    { "prompt": "Va ser un ___ escriptor, el més important del segle. (davant el nom = important)", "answer": "gran" },
+    { "prompt": "Aquest tronc és molt ___, costarà de tallar. (volum)", "answer": "gros" },
+    { "prompt": "No m'agrada la carn massa ___. (adjectiu, femení)", "answer": "grassa" },
+    { "prompt": "Necessito un pot de vidre més ___ per guardar la confitura. (volum)", "answer": "gros" },
+    { "prompt": "Porta unes ulleres de vidre molt ___. (adjectiu, femení plural)", "answer": "gruixudes" },
+    { "prompt": "Amb tant de ___ a la paella, el menjar no és gaire saludable. (nom, la matèria)", "answer": "greix" }
+  ]
+}
