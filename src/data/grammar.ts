@@ -9,7 +9,24 @@ export type GrammarPoint = {
   jsonPath: string;
 };
 
-export const grammarPoints: GrammarPoint[] = [{
+export const grammarPoints: GrammarPoint[] = [
+{
+  id: "cat_apostrofacio",
+  title: { fr: "Catalan — L'apostrophe (l', d') et ses exceptions", en: "Catalan — Apostrophation (l', d') and its exceptions" },
+  level: "B1",
+  note: { fr: "L'aigua, d'amor — mais la iaia, la una, la ema : les 6 exceptions.", en: "L'aigua, d'amor — but la iaia, la una, la ema: the 6 exceptions." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_apostrofacio.json"
+},
+{
+  id: "cat_gros_gras_gran",
+  title: { fr: "Catalan — Mots à ne pas confondre : gros, gras, gran, gruix", en: "Catalan — Words not to confuse: gros, gras, gran, gruix" },
+  level: "B1",
+  note: { fr: "Gros (volum) vs gras (greix) vs gran (grandària/importància).", en: "Gros (bulk) vs gras (fat) vs gran (size/importance)." },
+  country: "all",
+  jsonPath: "/data/grammar_quizz/cat_gros_gras_gran.json"
+},
+{
   id: "cat_ortografia_alternances",
   title: { fr: "Catalan — Orthographe : B/V, accentuation, dièresi", en: "Catalan — Spelling: B/V, accentuation, dieresis" },
   level: "B1",
