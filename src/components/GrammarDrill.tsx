@@ -1,11 +1,16 @@
 "use client";
 import React, { useState } from "react";
 import { useSpeak } from "@/hooks/useSpeak";
+import { getCardProgress, saveCardProgress } from "@/utils/srs-storage";
+import { calculateNextReview } from "@/utils/srs-algorithm";
 
 type Drill = {
   prompt: string;
   answer: string;
   hint?: string | { fr: string; en: string };
+  // Identifiant stable pour le SRS (utilisé par le mode Repàs espaiat).
+  // Si absent, GrammarDrill le déduit de quizId + index de la question.
+  srsId?: string;
 };
 
 type Visual = {
@@ -22,6 +27,9 @@ type Props = {
   onClose: () => void;
   language?: 'fr' | 'en';
   onAnswer?: (correct: boolean, drill: Drill) => void;
+  // Identifiant du point de grammaire (ex. "cat_imperatiu"), utilisé pour
+  // générer un srsId stable par question quand drill.srsId n'est pas fourni.
+  quizId?: string;
 };
 
 const ACCENTS = ['á', 'é', 'í', 'ó', 'ú', 'à', 'è', 'ò', 'ç', 'ï', 'ü', 'ñ', 'l·l', '¿', '¡'];
@@ -41,7 +49,7 @@ function buildSpoken(prompt: string, answer: string): string {
   return s;
 }
 
-export default function GrammarDrill({ title, note, visual, drills, onClose, language = 'fr', onAnswer }: Props) {
+export default function GrammarDrill({ title, note, visual, drills, onClose, language = 'fr', onAnswer, quizId }: Props) {
   const [hasStarted, setHasStarted] = useState(false);
   const [showRules, setShowRules] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -72,6 +80,18 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
     setFeedback(correct ? "correct" : "incorrect");
     if (correct) setScore(score + 1);
     onAnswer?.(correct, currentDrill);
+
+    // Répétition espacée (SM-2) : chaque question de grammaire devient une
+    // carte au même titre que les flashcards de vocabulaire. Correct → "good",
+    // faux → "again". Aucun impact sur l'UX si le SRS échoue (best-effort).
+    try {
+      const srsId = currentDrill.srsId ?? `grammar:${quizId ?? 'unknown'}:${currentIndex}`;
+      const progress = getCardProgress(srsId);
+      const updated = calculateNextReview(progress, correct ? 'good' : 'again');
+      saveCardProgress(updated);
+    } catch {
+      // localStorage indisponible ou erreur de sérialisation : on ignore.
+    }
   };
 
   const nextDrill = () => {
