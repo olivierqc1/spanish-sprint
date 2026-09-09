@@ -237,6 +237,7 @@ export default function GrammarExplorer({ points, initialLevel, language }: Prop
       drills={quizData.drills}
       onClose={closeDrill}
       language={language}
+      quizId={selectedPoint.id}
       onAnswer={(correct, d) => {
         recordAnswer(correct);
         sess.current.total += 1;
