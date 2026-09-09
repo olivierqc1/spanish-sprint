@@ -1,0 +1,29 @@
+{
+  "id": "cat_apostrofacio",
+  "title": {
+    "fr": "Catalan — L'apostrophe (l', d') et ses exceptions",
+    "en": "Catalan — Apostrophation (l', d') and its exceptions"
+  },
+  "level": "B1",
+  "note": {
+    "fr": "⚙️ Règle de base : el / la / de + mot commençant par une voyelle (ou h muet) → l' / d'\n\n| Cas | Exemple |\n|---|---|\n| el + voyelle | l'home, l'arbre |\n| la + voyelle | l'aigua, l'illa, l'estrella |\n| de + voyelle | d'amor, d'un amic |\n\n⚡ EXCEPTIONS — la / na ne s'apostrophent PAS devant :\n\n| Exception | Exemple |\n|---|---|\n| mots féminins commençant par i/u/hi/hu atones (non accentuées) | la indústria, la universitat, la història |\n| i/u qui fait consonne (semi-voyelle, pas une vraie voyelle) | la iaia, el iogurt, la hiena, el ioga |\n| mots spécifiques à mémoriser | la host, la una (l'heure), la ira |\n| préfixe a- à valeur négative | la asimetria, la anormalitat |\n| noms de lettres | la a, la ema, la efa, la ena |\n| h aspiré (mots étrangers) | el hawaià, la hawaiana |\n\n🎯 Piège pour un francophone : contrairement au français, QUE ne s'apostrophe JAMAIS en català (pas de \"qu'\").\n\nCombine l'article ou la préposition indiqués avec le mot donné, en écrivant la forme complète et correcte.",
+    "en": "⚙️ Basic rule: el / la / de + word starting with a vowel (or silent h) → l' / d'\n\n| Case | Example |\n|---|---|\n| el + vowel | l'home, l'arbre |\n| la + vowel | l'aigua, l'illa, l'estrella |\n| de + vowel | d'amor, d'un amic |\n\n⚡ EXCEPTIONS — la / na do NOT apostrophize before:\n\n| Exception | Example |\n|---|---|\n| feminine words starting with unstressed i/u/hi/hu | la indústria, la universitat, la història |\n| i/u acting as a semi-consonant (not a true vowel) | la iaia, el iogurt, la hiena, el ioga |\n| specific words to memorize | la host, la una (the hour), la ira |\n| negative prefix a- | la asimetria, la anormalitat |\n| letter names | la a, la ema, la efa, la ena |\n| aspirated h (foreign words) | el hawaià, la hawaiana |\n\n🎯 Trap for a French speaker: unlike French, QUE never apostrophizes in Catalan (no \"qu'\").\n\nCombine the given article or preposition with the given word, writing out the full correct form."
+  },
+  "drills": [
+    { "prompt": "Combina: el + arbre", "answer": "l'arbre" },
+    { "prompt": "Combina: la + aigua", "answer": "l'aigua" },
+    { "prompt": "Combina: de + amor", "answer": "d'amor" },
+    { "prompt": "Combina: la + universitat (exception: i àtona)", "answer": "la universitat" },
+    { "prompt": "Combina: la + iaia (exception: i fa de consonant)", "answer": "la iaia" },
+    { "prompt": "Combina: la + una, parlant de l'hora (exception: mot específic)", "answer": "la una" },
+    { "prompt": "Combina: la + host (exception: mot específic)", "answer": "la host" },
+    { "prompt": "Combina: la + asimetria (exception: prefix a- negatiu)", "answer": "la asimetria" },
+    { "prompt": "Combina: la + ema, el nom de la lletra M (exception: nom de lletra)", "answer": "la ema" },
+    { "prompt": "Combina: el + hawaià (exception: h aspirada)", "answer": "el hawaià" },
+    { "prompt": "Combina: la + indústria (exception: i àtona)", "answer": "la indústria" },
+    { "prompt": "Combina: la + illa (i tònica, cas normal)", "answer": "l'illa" },
+    { "prompt": "Combina: el + iogurt (exception: i fa de consonant)", "answer": "el iogurt" },
+    { "prompt": "Combina: de + un amic", "answer": "d'un amic" },
+    { "prompt": "Completa: Vull ___ vinguis aviat. (que, no s'apostrofa mai)", "answer": "que" }
+  ]
+}
