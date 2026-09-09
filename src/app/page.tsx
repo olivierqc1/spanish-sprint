@@ -66,6 +66,8 @@ export default function Home() {
     { key: 'conjugaison', icon: '⚡', route: 'conjugaison', available: true, ...t.catalanModules.conjugation },
     { key: 'pronunciacio', icon: '🎤', route: 'pronunciacio', available: true, ...t.catalanModules.pronunciation },
     { key: 'grammaire', icon: '📚', route: 'grammaire', available: true, ...t.catalanModules.grammar },
+    { key: 'lectura', icon: '📖', route: 'lectura', available: true, ...t.catalanModules.lectura },
+    { key: 'repas', icon: '🔁', route: 'grammar-repas', available: true, ...t.catalanModules.repas },
     { key: 'dictee', icon: '✍️', route: 'dictee', available: true, ...t.catalanModules.dictee },
     { key: 'phrases', icon: '💬', route: 'conversations', available: false, ...t.catalanModules.phrases },
   ];
