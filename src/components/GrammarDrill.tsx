@@ -1,16 +1,10 @@
 "use client";
-import React, { useState } from "react";
-import { useSpeak } from "@/hooks/useSpeak";
-import { getCardProgress, saveCardProgress } from "@/utils/srs-storage";
-import { calculateNextReview } from "@/utils/srs-algorithm";
+import React, { useState, useRef, useEffect } from "react";
 
 type Drill = {
   prompt: string;
   answer: string;
   hint?: string | { fr: string; en: string };
-  // Identifiant stable pour le SRS (utilisé par le mode Repàs espaiat).
-  // Si absent, GrammarDrill le déduit de quizId + index de la question.
-  srsId?: string;
 };
 
 type Visual = {
@@ -26,41 +20,33 @@ type Props = {
   drills: Drill[];
   onClose: () => void;
   language?: 'fr' | 'en';
-  onAnswer?: (correct: boolean, drill: Drill) => void;
-  // Identifiant du point de grammaire (ex. "cat_imperatiu"), utilisé pour
-  // générer un srsId stable par question quand drill.srsId n'est pas fourni.
-  quizId?: string;
 };
 
-const ACCENTS = ['á', 'é', 'í', 'ó', 'ú', 'à', 'è', 'ò', 'ç', 'ï', 'ü', 'ñ', 'l·l', '¿', '¡'];
-
-// Reconstruit la phrase complète (blanc rempli, indices retirés) pour la lecture audio.
-function buildSpoken(prompt: string, answer: string): string {
-  let s = prompt.replace(/<[^>]*>/g, ' ');            // retire le HTML éventuel
-  const hadBlank = /_{2,}/.test(s);
-  s = s.replace(/_{2,}(?:\s+_{2,})*/, answer);         // remplit le 1er slot (fusionne les blancs adjacents)
-  s = s.replace(/→|➜|=>/g, ', ');                       // flèches -> pause naturelle
-  s = s.replace(/\([^)]*\)/g, ' ');                     // retire les indices entre parenthèses
-  s = s.replace(/_{2,}/g, ' ');                         // supprime tout blanc résiduel
-  s = s.replace(/\s+/g, ' ').replace(/\s+([.,;:!?])/g, '$1').trim();
-  if (!hadBlank && !s.toLowerCase().includes(answer.toLowerCase())) {
-    s = `${s} ${answer}`.trim();
-  }
-  return s;
-}
-
-export default function GrammarDrill({ title, note, visual, drills, onClose, language = 'fr', onAnswer, quizId }: Props) {
-  const [hasStarted, setHasStarted] = useState(false);
-  const [showRules, setShowRules] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+export default function GrammarDrill({ title, note, visual, drills, onClose, language = 'fr' }: Props) {
+  const [drillIndex, setDrillIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);      // which blank we're on
+  const [filledAnswers, setFilledAnswers] = useState<string[]>([]); // blanks already filled
   const [userAnswer, setUserAnswer] = useState("");
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
+  const [wrongAnswer, setWrongAnswer] = useState("");
   const [score, setScore] = useState(0);
+  const [totalAnswered, setTotalAnswered] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
-  const [showHint, setShowHint] = useState(false);
+  const [rulesOpen, setRulesOpen] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
 
-  const currentDrill = drills[currentIndex];
-  const progress = `${currentIndex + 1} / ${drills.length}`;
+  const currentDrill = drills[drillIndex];
+
+  // Parse multi-blank answers — comma-separated
+  const answerParts = currentDrill.answer.split(',').map(a => a.trim());
+  const totalBlanks = (currentDrill.prompt.match(/___/g) || []).length;
+  // If blanks count doesn't match answer parts, treat as single answer
+  const isMulti = totalBlanks > 1 && answerParts.length === totalBlanks;
+  const currentExpected = isMulti ? answerParts[subIndex] : currentDrill.answer;
+
+  useEffect(() => {
+    setTimeout(() => inputRef.current?.focus(), 50);
+  }, [drillIndex, subIndex, feedback]);
 
   const getText = (value: any): string => {
     if (!value) return '';
@@ -72,84 +58,125 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
   const displayTitle = getText(title);
   const displayNote = getText(note);
 
-  const normalizeAnswer = (text: string) =>
-    text.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[.,!?;:¿¡]/g, "");
+  const normalize = (text: string) =>
+    text
+      .toLowerCase()
+      .trim()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[\u2018\u2019\u0060\u00b4\u2032]/g, "'")
+      .replace(/\s*,\s*/g, ", ")
+      .replace(/[.;:!?]$/g, "")
+      .trim();
+
+  // Build sentence showing filled blanks in green, current blank as ___, future as ___
+  const buildSentence = () => {
+    const parts = currentDrill.prompt.split('___');
+    if (parts.length === 1) return <span>{currentDrill.prompt}</span>;
+
+    return (
+      <>
+        {parts.map((part, i) => {
+          if (i === parts.length - 1) return <span key={i}>{part}</span>;
+          const isFilled = isMulti && i < subIndex;
+          const isCurrent = !isMulti || i === subIndex;
+          return (
+            <React.Fragment key={i}>
+              <span>{part}</span>
+              {isFilled ? (
+                <span style={{ color: '#4ade80', fontWeight: 'bold', borderBottom: '2px solid #4ade80', padding: '0 2px' }}>
+                  {filledAnswers[i]}
+                </span>
+              ) : isCurrent ? (
+                <span style={{ display: 'inline-block', minWidth: '60px', borderBottom: '3px solid #3b82f6', margin: '0 2px', verticalAlign: 'bottom' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              ) : (
+                <span style={{ display: 'inline-block', minWidth: '60px', borderBottom: '3px solid #475569', margin: '0 2px', verticalAlign: 'bottom', opacity: 0.5 }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              )}
+            </React.Fragment>
+          );
+        })}
+      </>
+    );
+  };
 
   const checkAnswer = () => {
-    const correct = normalizeAnswer(userAnswer) === normalizeAnswer(currentDrill.answer);
+    if (!userAnswer.trim()) return;
+    const correct = normalize(userAnswer) === normalize(currentExpected);
     setFeedback(correct ? "correct" : "incorrect");
-    if (correct) setScore(score + 1);
-    onAnswer?.(correct, currentDrill);
-
-    // Répétition espacée (SM-2) : chaque question de grammaire devient une
-    // carte au même titre que les flashcards de vocabulaire. Correct → "good",
-    // faux → "again". Aucun impact sur l'UX si le SRS échoue (best-effort).
-    try {
-      const srsId = currentDrill.srsId ?? `grammar:${quizId ?? 'unknown'}:${currentIndex}`;
-      const progress = getCardProgress(srsId);
-      const updated = calculateNextReview(progress, correct ? 'good' : 'again');
-      saveCardProgress(updated);
-    } catch {
-      // localStorage indisponible ou erreur de sérialisation : on ignore.
-    }
+    if (!correct) setWrongAnswer(userAnswer);
+    setTotalAnswered(n => n + 1);
+    if (correct) setScore(s => s + 1);
   };
 
-  const nextDrill = () => {
-    if (currentIndex < drills.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+  const next = () => {
+    if (feedback === 'correct' && isMulti && subIndex < totalBlanks - 1) {
+      // Move to next blank in the SAME drill
+      setFilledAnswers(prev => {
+        const next = [...prev];
+        next[subIndex] = userAnswer.trim();
+        return next;
+      });
+      setSubIndex(s => s + 1);
       setUserAnswer("");
       setFeedback(null);
-      setShowHint(false);
+      setWrongAnswer("");
     } else {
-      setIsFinished(true);
+      // Move to next drill
+      if (drillIndex < drills.length - 1) {
+        setDrillIndex(i => i + 1);
+        setSubIndex(0);
+        setFilledAnswers([]);
+        setUserAnswer("");
+        setFeedback(null);
+        setWrongAnswer("");
+      } else {
+        setIsFinished(true);
+      }
     }
   };
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter") {
-      if (feedback === null) checkAnswer();
-      else nextDrill();
-    }
+  const handleKey = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") feedback === null ? checkAnswer() : next();
   };
 
-  const texts = {
-    fr: {
-      startButton: "Commencer les exercices", backButton: "Retour",
-      verify: "Verifier", next: "Suivant",
-      finish: "Terminer", correctAnswers: "bonnes reponses",
-      backToList: "Retour a la liste", placeholder: "Tape ta reponse ici...",
-      correct: "Correct!", incorrect: "Incorrect", correctAnswer: "Bonne reponse",
-      exercise: "Exercice", rules: "Règles", showHint: "Indice", hideHint: "Cacher",
-    },
-    en: {
-      startButton: "Start exercises", backButton: "Back",
-      verify: "Check", next: "Next",
-      finish: "Finish", correctAnswers: "correct answers",
-      backToList: "Back to list", placeholder: "Type your answer here...",
-      correct: "Correct!", incorrect: "Incorrect", correctAnswer: "Correct answer",
-      exercise: "Exercise", rules: "Rules", showHint: "Hint", hideHint: "Hide",
-    },
+  const speak = (text: string) => {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang = 'ca-ES';
+    utt.rate = 0.85;
+    window.speechSynthesis.speak(utt);
   };
 
-  const t = texts[language];
-  const { speak, supported: canSpeak } = useSpeak('ca-ES');
-
-  const speakSentence = () => {
-    const isSpanish =
-      typeof window !== 'undefined' &&
-      localStorage.getItem('iberian-sprint-target-language') === 'spanish';
-    speak(buildSpoken(currentDrill.prompt, currentDrill.answer), isSpanish ? 'es-ES' : 'ca-ES');
+  const getFullSentence = () => {
+    let s = currentDrill.prompt;
+    answerParts.forEach(a => { s = s.replace('___', a); });
+    return s;
   };
 
+  const t = {
+    fr: { rules: 'Règles', exercise: 'EXERCICE', correct: 'Correct !', incorrect: 'Incorrect',
+      goodAnswer: 'Bonne réponse', listen: 'Écouter la phrase', next: 'Suivant',
+      finish: 'Terminer', finished: 'Terminé !', goodAnswers: 'bonnes réponses',
+      retry: 'Recommencer', back: 'Retour', placeholder: 'Votre réponse...', verify: 'Vérifier',
+      blank: 'Blanc', of: 'sur' },
+    en: { rules: 'Rules', exercise: 'EXERCISE', correct: 'Correct!', incorrect: 'Incorrect',
+      goodAnswer: 'Correct answer', listen: 'Listen', next: 'Next',
+      finish: 'Finish', finished: 'Finished!', goodAnswers: 'correct answers',
+      retry: 'Retry', back: 'Back', placeholder: 'Your answer...', verify: 'Check',
+      blank: 'Blank', of: 'of' },
+  }[language];
+
+  // ── Visual comparison table ──────────────────────────────────────────────
   const renderVisual = (v: Visual) => (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', margin: '0 0 16px 0' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', margin: '12px 0' }}>
       {[v.left, v.right].map((col, ci) => (
         <div key={ci} style={{ borderRadius: '10px', overflow: 'hidden', border: `2px solid ${col.color}` }}>
-          <div style={{ background: col.color, padding: '8px 10px', fontWeight: 'bold', fontSize: '13px', color: '#fff', textAlign: 'center' }}>
+          <div style={{ background: col.color, padding: '7px 10px', fontWeight: 'bold', fontSize: '12px', color: '#fff', textAlign: 'center' }}>
             {col.title}
           </div>
           {col.items.map((item, ii) => (
-            <div key={ii} style={{ padding: '6px 10px', fontSize: '12px', color: '#e2e8f0', background: ii % 2 === 0 ? '#0f172a' : '#1e293b', borderBottom: '1px solid #334155' }}>
+            <div key={ii} style={{ padding: '5px 8px', fontSize: '11px', color: '#e2e8f0', background: ii % 2 === 0 ? '#0f172a' : '#1e293b', borderBottom: '1px solid #334155' }}>
               {item}
             </div>
           ))}
@@ -158,123 +185,45 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
     </div>
   );
 
-  const isTableRow = (l: string) => /^\s*\|.*\|\s*$/.test(l);
-  const isSeparatorRow = (l: string) => isTableRow(l) && /^[\s|:-]+$/.test(l);
-
-  const formatNote = (text: string, compact = false) => {
-    const lines = text.split('\n');
-    const els: JSX.Element[] = [];
-    const fs = compact ? '13px' : '14px';
-    let key = 0;
-    let i = 0;
-
-    while (i < lines.length) {
-      const line = lines[i];
-      const tr = line.trim();
-
-      // ── Vrai tableau (syntaxe | col | col |) ─────────────────────────
-      if (isTableRow(line)) {
-        const tableLines: string[] = [];
-        while (i < lines.length && isTableRow(lines[i])) {
-          tableLines.push(lines[i]);
-          i++;
-        }
-        const rows = tableLines
-          .filter(l => !isSeparatorRow(l))
-          .map(l => l.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => c.trim()));
-
-        if (rows.length > 0) {
-          const [header, ...body] = rows;
-          els.push(
-            <div key={key++} style={{ overflowX: 'auto', margin: '10px 0 14px 0', borderRadius: '10px', border: '1px solid #1e293b' }}>
-              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: fs }}>
-                <thead>
-                  <tr>
-                    {header.map((h, hi) => (
-                      <th key={hi} style={{ textAlign: 'left', padding: '7px 12px', background: '#141b2e', borderBottom: '2px solid #a78bfa', color: '#c4b5fd', fontWeight: 'bold', whiteSpace: 'nowrap' }}>
-                        {h}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {body.map((row, ri) => (
-                    <tr key={ri} style={{ background: ri % 2 === 0 ? 'transparent' : '#0f172a' }}>
-                      {row.map((cell, ci) => (
-                        <td key={ci} style={{ padding: '7px 12px', color: ci === 0 ? '#93c5fd' : '#e2e8f0', borderBottom: '1px solid #1e293b', fontWeight: ci === 0 ? 'bold' : 'normal', whiteSpace: 'nowrap' }}>
-                          {cell}
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          );
-        }
-        continue;
-      }
-
-      if (tr.match(/^─{3,}/)) {
-        els.push(<hr key={key++} style={{ border: 'none', borderTop: '1px solid #334155', margin: '10px 0' }} />);
-      } else if (tr.match(/^[🎬📽⚡💡🖼⚙📚🔥🎯]/u)) {
-        const color = tr.startsWith('⚡') ? '#fbbf24'
-          : tr.startsWith('🖼') ? '#60a5fa'
-          : tr.startsWith('💡') ? '#34d399'
-          : tr.startsWith('🎬') ? '#e879f9'
-          : tr.startsWith('📽') ? '#fb923c'
-          : '#a78bfa';
-        els.push(
-          <div key={key++} style={{ fontWeight: 'bold', fontSize: compact ? '14px' : '16px', color, marginTop: '14px', marginBottom: '4px' }}>
-            {tr}
-          </div>
-        );
-      } else if (tr.startsWith('→')) {
-        els.push(
-          <div key={key++} style={{ display: 'flex', gap: '6px', marginLeft: '6px', marginBottom: '3px' }}>
-            <span style={{ color: '#60a5fa', flexShrink: 0 }}>→</span>
-            <span style={{ color: '#e2e8f0', fontSize: fs }}>{tr.slice(1).trim()}</span>
-          </div>
-        );
-      } else if (!tr) {
-        els.push(<div key={key++} style={{ height: '8px' }} />);
-      } else {
-        els.push(
-          <p key={key++} style={{ color: '#cbd5e1', fontSize: fs, lineHeight: '1.55', margin: '2px 0' }}>
-            {tr}
-          </p>
-        );
-      }
-      i++;
+  // ── Note formatter ───────────────────────────────────────────────────────
+  const formatNote = (text: string) => text.split('\n').map((line, i) => {
+    const tr = line.trim();
+    if (tr.match(/^─{3,}/)) return <hr key={i} style={{ border: 'none', borderTop: '1px solid #334155', margin: '8px 0' }} />;
+    if (tr.match(/^[🎬📽⚡💡🖼⚙📚🔥🎯]/u)) {
+      const color = tr.startsWith('⚡') ? '#fbbf24' : tr.startsWith('🖼') ? '#60a5fa'
+        : tr.startsWith('💡') ? '#34d399' : tr.startsWith('🎬') ? '#e879f9' : '#a78bfa';
+      return <div key={i} style={{ fontWeight: 'bold', fontSize: '14px', color, marginTop: '12px', marginBottom: '3px' }}>{tr}</div>;
     }
-    return els;
-  };
+    if (tr.startsWith('→')) return (
+      <div key={i} style={{ display: 'flex', gap: '6px', marginLeft: '6px', marginBottom: '3px' }}>
+        <span style={{ color: '#60a5fa', flexShrink: 0 }}>→</span>
+        <span style={{ color: '#e2e8f0', fontSize: '13px' }}>{tr.slice(1).trim()}</span>
+      </div>
+    );
+    if (tr.match(/^\d+\./)) return <div key={i} style={{ fontWeight: 'bold', color: '#fbbf24', fontSize: '13px', marginTop: '8px', marginBottom: '2px' }}>{tr}</div>;
+    if (tr.toLowerCase().startsWith('mots cl') || tr.toLowerCase().startsWith('key word'))
+      return <div key={i} style={{ background: '#1e3a5f', borderRadius: '6px', padding: '3px 8px', fontSize: '12px', color: '#93c5fd', margin: '3px 0' }}>{tr}</div>;
+    if (!tr) return <div key={i} style={{ height: '6px' }} />;
+    return <p key={i} style={{ color: '#cbd5e1', fontSize: '13px', lineHeight: '1.5', margin: '2px 0' }}>{tr}</p>;
+  });
 
-  const hasContent = displayNote || visual;
-
-  // ---------- Écran de présentation ----------
-  if (!hasStarted && hasContent) {
+  // ── Finished ─────────────────────────────────────────────────────────────
+  if (isFinished) {
+    const pct = Math.round((score / totalAnswered) * 100);
     return (
-      <div className="fixed inset-0 bg-slate-950/95 backdrop-blur-sm flex items-start justify-center z-50 p-4 overflow-y-auto">
-        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 max-w-2xl w-full my-4 shadow-2xl">
-          <div className="flex justify-between items-start mb-5">
-            <h2 className="text-2xl font-black text-white pr-4 leading-tight">{displayTitle}</h2>
-            <button onClick={onClose} className="text-slate-500 hover:text-white text-2xl leading-none flex-shrink-0 transition">✕</button>
-          </div>
-          {visual && renderVisual(visual)}
-          {displayNote && (
-            <div style={{ background: '#0b1220', borderRadius: '16px', padding: '18px', marginBottom: '18px', maxHeight: '55vh', overflowY: 'auto', border: '1px solid #1e293b' }}>
-              {formatNote(displayNote)}
-            </div>
-          )}
-          <div className="flex gap-3">
-            <button onClick={() => setHasStarted(true)}
-              className="flex-1 bg-blue-600 hover:bg-blue-500 px-6 py-4 rounded-2xl font-bold text-lg transition shadow-lg shadow-blue-600/20">
-              {t.startButton} · {drills.length}
+      <div style={{ minHeight: '100vh', background: '#0f172a', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+        <div style={{ background: '#1e293b', borderRadius: '20px', padding: '40px 30px', maxWidth: '400px', width: '100%', textAlign: 'center' }}>
+          <div style={{ fontSize: '48px', marginBottom: '12px' }}>🎉</div>
+          <div style={{ fontSize: '64px', fontWeight: 'bold', color: pct >= 70 ? '#4ade80' : '#f87171', marginBottom: '8px' }}>{pct}%</div>
+          <p style={{ color: '#94a3b8', fontSize: '18px', marginBottom: '24px' }}>{score} / {totalAnswered} {t.goodAnswers}</p>
+          <div style={{ display: 'flex', gap: '12px' }}>
+            <button onClick={() => { setDrillIndex(0); setSubIndex(0); setFilledAnswers([]); setScore(0); setTotalAnswered(0); setUserAnswer(''); setFeedback(null); setIsFinished(false); }}
+              style={{ flex: 1, background: '#3b82f6', color: '#fff', border: 'none', borderRadius: '12px', padding: '14px', fontSize: '16px', fontWeight: 'bold', cursor: 'pointer' }}>
+              🔄 {t.retry}
             </button>
             <button onClick={onClose}
-              className="px-6 py-4 bg-slate-800 hover:bg-slate-700 rounded-2xl font-semibold transition">
-              {t.backButton}
+              style={{ flex: 1, background: '#334155', color: '#fff', border: 'none', borderRadius: '12px', padding: '14px', fontSize: '16px', fontWeight: 'bold', cursor: 'pointer' }}>
+              {t.back}
             </button>
           </div>
         </div>
@@ -282,156 +231,128 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
     );
   }
 
-  // ---------- Écran de fin ----------
-  if (isFinished) {
-    const pct = Math.round((score / drills.length) * 100);
-    const ring = pct >= 80 ? '#34d399' : pct >= 50 ? '#fbbf24' : '#fb7185';
-    const R = 54, C = 2 * Math.PI * R;
-    const dash = (pct / 100) * C;
-    const msg = pct >= 80
-      ? (language === 'fr' ? 'Excellent !' : 'Excellent!')
-      : pct >= 50
-        ? (language === 'fr' ? 'Bien joué' : 'Well done')
-        : (language === 'fr' ? 'Continue, ça vient' : 'Keep going');
-    return (
-      <div className="fixed inset-0 bg-slate-950/95 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 max-w-md w-full text-center shadow-2xl">
-          <div className="relative w-40 h-40 mx-auto mb-5">
-            <svg viewBox="0 0 128 128" className="w-full h-full -rotate-90">
-              <circle cx="64" cy="64" r={R} fill="none" stroke="#1e293b" strokeWidth="10" />
-              <circle cx="64" cy="64" r={R} fill="none" stroke={ring} strokeWidth="10" strokeLinecap="round"
-                strokeDasharray={`${dash} ${C}`} style={{ transition: 'stroke-dasharray 0.8s ease' }} />
-            </svg>
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <span className="text-4xl font-black text-white">{pct}%</span>
-            </div>
-          </div>
-          <h2 className="text-2xl font-black mb-1 text-white">{msg}</h2>
-          <p className="text-slate-400 mb-6">{score} / {drills.length} {t.correctAnswers}</p>
-          <button onClick={onClose}
-            className="w-full bg-blue-600 hover:bg-blue-500 px-6 py-3.5 rounded-2xl font-bold transition shadow-lg shadow-blue-600/20">
-            {t.backToList}
-          </button>
-        </div>
-      </div>
-    );
-  }
+  const progress = (drillIndex / drills.length) * 100;
+  const hasContent = displayNote || visual;
 
-  // ---------- Écran d'exercice ----------
-  const pctBar = ((currentIndex + 1) / drills.length) * 100;
-
+  // ── Main exercise UI ──────────────────────────────────────────────────────
   return (
-    <div className="fixed inset-0 bg-slate-950/95 backdrop-blur-sm z-50 p-3 overflow-y-auto">
-      <div className="max-w-2xl mx-auto">
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl">
+    <div style={{ minHeight: '100vh', background: '#0f172a', display: 'flex', flexDirection: 'column', maxWidth: '480px', margin: '0 auto' }}>
 
-          <div className="bg-slate-800 rounded-full h-1.5 overflow-hidden mb-4">
-            <div className="h-full transition-all duration-500 rounded-full"
-              style={{ width: `${pctBar}%`, background: 'linear-gradient(90deg,#3b82f6,#60a5fa)' }} />
+      {/* Progress bar */}
+      <div style={{ height: '4px', background: '#1e293b', flexShrink: 0 }}>
+        <div style={{ height: '100%', background: '#3b82f6', width: `${progress}%`, transition: 'width 0.3s' }} />
+      </div>
+
+      {/* Header */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 16px 8px' }}>
+        <div>
+          <h2 style={{ color: '#fff', fontWeight: 'bold', fontSize: '17px', margin: 0 }}>{displayTitle}</h2>
+          <p style={{ color: '#64748b', fontSize: '12px', margin: '2px 0 0' }}>
+            {t.exercise} {drillIndex + 1} / {drills.length}
+            {isMulti && ` · ${t.blank} ${subIndex + 1} ${t.of} ${totalBlanks}`}
+          </p>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <div style={{
+            background: score > 0 ? '#14532d' : '#1e293b',
+            border: `2px solid ${score > 0 ? '#4ade80' : '#334155'}`,
+            borderRadius: '20px', padding: '4px 12px',
+            color: score > 0 ? '#4ade80' : '#94a3b8',
+            fontSize: '14px', fontWeight: 'bold',
+          }}>
+            {score} / {drills.length}
           </div>
+          <button onClick={onClose} style={{ background: 'none', border: 'none', color: '#64748b', fontSize: '22px', cursor: 'pointer', lineHeight: 1 }}>×</button>
+        </div>
+      </div>
 
-          <div className="flex justify-between items-center mb-3">
-            <div className="flex-1 min-w-0">
-              <h2 className="text-lg font-bold truncate text-white">{displayTitle}</h2>
-              <p className="text-xs text-slate-500 uppercase tracking-wide">{t.exercise} {progress}</p>
-            </div>
-            <div className="flex items-center gap-3 ml-3">
-              <span className="px-3 py-1 rounded-full bg-slate-800 text-sm font-bold">
-                <span className="text-emerald-400">{score}</span>
-                <span className="text-slate-500"> / {drills.length}</span>
-              </span>
-              <button onClick={onClose} className="text-slate-500 hover:text-white text-xl">✕</button>
-            </div>
-          </div>
+      <div style={{ flex: 1, padding: '0 16px 24px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
 
-          {/* Bouton Règles — visible pendant tout l'exercice, sur tous les écrans */}
-          {hasContent && (
-            <button onClick={() => setShowRules(!showRules)}
-              className={`mb-3 px-3 py-1.5 rounded-lg text-sm font-semibold transition border ${showRules ? 'bg-purple-600/20 border-purple-500 text-purple-200' : 'bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700'}`}>
-              📖 {t.rules} {showRules ? '▲' : '▼'}
+        {/* Rules collapsible */}
+        {hasContent && (
+          <div style={{ background: '#1e293b', borderRadius: '12px', overflow: 'hidden' }}>
+            <button onClick={() => setRulesOpen(o => !o)}
+              style={{ width: '100%', background: 'none', border: 'none', padding: '12px 16px', display: 'flex', alignItems: 'center', gap: '8px', color: '#e2e8f0', fontSize: '15px', fontWeight: 'bold', cursor: 'pointer' }}>
+              📖 {t.rules}
+              <span style={{ marginLeft: 'auto', fontSize: '12px', color: '#64748b' }}>{rulesOpen ? '▲' : '▼'}</span>
             </button>
-          )}
-
-          {showRules && hasContent && (
-            <div className="mb-4 rounded-xl bg-slate-950 border border-slate-800 p-4" style={{ maxHeight: '40vh', overflowY: 'auto' }}>
-              {visual && renderVisual(visual)}
-              {displayNote && formatNote(displayNote)}
-            </div>
-          )}
-
-          <div className="bg-slate-950 border border-slate-800 rounded-2xl p-6 mb-4">
-            <p className="text-xl leading-relaxed text-white" dangerouslySetInnerHTML={{ __html: currentDrill.prompt }} />
-          </div>
-
-          <input type="text" value={userAnswer}
-            onChange={e => setUserAnswer(e.target.value)}
-            onKeyPress={handleKeyPress}
-            placeholder={t.placeholder}
-            disabled={feedback !== null}
-            autoFocus
-            className="w-full bg-slate-950 border-2 border-slate-700 rounded-2xl px-4 py-3.5 text-lg text-white focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 disabled:opacity-60 transition"
-          />
-
-          {/* Barre d'accents (espagnol + catalan) */}
-          {feedback === null && (
-            <div className="mt-2 flex flex-wrap gap-1.5">
-              {ACCENTS.map(ch => (
-                <button key={ch} type="button" onClick={() => setUserAnswer(userAnswer + ch)}
-                  className="min-w-9 h-9 px-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white text-base font-medium transition active:scale-95">
-                  {ch}
-                </button>
-              ))}
-            </div>
-          )}
-
-          {currentDrill.hint && feedback === null && (
-            <div className="mt-3">
-              <button onClick={() => setShowHint(!showHint)} className="text-sm text-blue-400 hover:text-blue-300 transition">
-                💡 {showHint ? t.hideHint : t.showHint}
-              </button>
-              {showHint && (
-                <div className="mt-2 p-3 bg-slate-800 rounded-xl text-sm text-slate-300 border border-slate-700">
-                  {getText(currentDrill.hint)}
-                </div>
-              )}
-            </div>
-          )}
-
-          {feedback && (
-            <div className={`mt-3 p-4 rounded-2xl border ${feedback === "correct" ? "bg-emerald-500/10 border-emerald-500/40" : "bg-rose-500/10 border-rose-500/40"}`}>
-              {feedback === "correct" ? (
-                <p className="text-emerald-400 font-bold text-lg">✓ {t.correct}</p>
-              ) : (
-                <div>
-                  <p className="text-rose-400 font-bold">✗ {t.incorrect}</p>
-                  <p className="text-sm mt-1 text-slate-300">{t.correctAnswer} : <span className="font-bold text-white">{currentDrill.answer}</span></p>
-                </div>
-              )}
-
-              {canSpeak && (
-                <button
-                  onClick={speakSentence}
-                  className="mt-3 inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-semibold px-4 py-2 rounded-xl transition"
-                >
-                  🔊 {language === 'fr' ? 'Écouter la phrase' : 'Listen to the sentence'}
-                </button>
-              )}
-            </div>
-          )}
-
-          <div className="pt-4">
-            {feedback === null ? (
-              <button onClick={checkAnswer} disabled={!userAnswer.trim()}
-                className="w-full bg-blue-600 hover:bg-blue-500 disabled:bg-slate-800 disabled:text-slate-600 disabled:cursor-not-allowed px-6 py-3.5 rounded-2xl font-bold transition text-lg shadow-lg shadow-blue-600/20 disabled:shadow-none">
-                {t.verify}
-              </button>
-            ) : (
-              <button onClick={nextDrill}
-                className="w-full bg-blue-600 hover:bg-blue-500 px-6 py-3.5 rounded-2xl font-bold transition text-lg shadow-lg shadow-blue-600/20">
-                {currentIndex < drills.length - 1 ? `${t.next} →` : t.finish}
-              </button>
+            {rulesOpen && (
+              <div style={{ padding: '0 16px 16px', borderTop: '1px solid #334155', maxHeight: '300px', overflowY: 'auto' }}>
+                {visual && renderVisual(visual)}
+                {displayNote && formatNote(displayNote)}
+              </div>
             )}
           </div>
+        )}
+
+        {/* Sentence */}
+        <div style={{ background: '#1e293b', borderRadius: '16px', padding: '24px 20px', textAlign: 'center' }}>
+          <p style={{ color: '#f1f5f9', fontSize: '21px', fontWeight: '600', lineHeight: '1.6', margin: 0 }}>
+            {buildSentence()}
+          </p>
+        </div>
+
+        {/* Input */}
+        <input
+          ref={inputRef}
+          type="text"
+          value={userAnswer}
+          onChange={e => setUserAnswer(e.target.value)}
+          onKeyDown={handleKey}
+          placeholder={getText(currentDrill.hint) || t.placeholder}
+          disabled={feedback !== null}
+          style={{
+            width: '100%', padding: '18px 20px', borderRadius: '14px',
+            border: `2px solid ${feedback === 'correct' ? '#16a34a' : feedback === 'incorrect' ? '#dc2626' : '#334155'}`,
+            background: '#1e293b', color: '#fff', fontSize: '20px',
+            outline: 'none', boxSizing: 'border-box', fontWeight: '500',
+          }}
+        />
+
+        {/* Feedback */}
+        {feedback && (
+          <div style={{
+            background: feedback === 'correct' ? '#052e16' : '#1a0000',
+            border: `2px solid ${feedback === 'correct' ? '#16a34a' : '#dc2626'}`,
+            borderRadius: '14px', padding: '16px',
+          }}>
+            <p style={{ fontWeight: 'bold', fontSize: '17px', margin: '0 0 6px', color: feedback === 'correct' ? '#4ade80' : '#f87171' }}>
+              {feedback === 'correct' ? `✓ ${t.correct}` : `✗ ${t.incorrect}`}
+            </p>
+            {feedback === 'incorrect' && (
+              <p style={{ color: '#e2e8f0', margin: '0 0 10px', fontSize: '15px' }}>
+                {t.goodAnswer} : <strong style={{ color: '#4ade80' }}>{currentExpected}</strong>
+              </p>
+            )}
+            <button onClick={() => speak(getFullSentence())}
+              style={{ background: '#1e293b', border: '1px solid #334155', borderRadius: '10px', padding: '8px 14px', color: '#94a3b8', fontSize: '14px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              🔊 {t.listen}
+            </button>
+          </div>
+        )}
+
+        {/* Buttons */}
+        <div style={{ marginTop: 'auto' }}>
+          {feedback === null ? (
+            <button onClick={checkAnswer} disabled={!userAnswer.trim()}
+              style={{
+                width: '100%', padding: '18px', borderRadius: '14px', border: 'none',
+                background: userAnswer.trim() ? '#3b82f6' : '#1e293b',
+                color: userAnswer.trim() ? '#fff' : '#475569',
+                fontSize: '18px', fontWeight: 'bold',
+                cursor: userAnswer.trim() ? 'pointer' : 'not-allowed',
+                transition: 'background 0.2s',
+              }}>
+              {t.verify}
+            </button>
+          ) : (
+            <button onClick={next}
+              style={{ width: '100%', padding: '18px', borderRadius: '14px', border: 'none', background: '#3b82f6', color: '#fff', fontSize: '18px', fontWeight: 'bold', cursor: 'pointer' }}>
+              {feedback === 'correct' && isMulti && subIndex < totalBlanks - 1
+                ? `${t.blank} ${subIndex + 2} →`
+                : drillIndex < drills.length - 1 ? `${t.next} →` : t.finish}
+            </button>
+          )}
         </div>
       </div>
     </div>
