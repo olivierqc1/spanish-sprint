@@ -5,8 +5,13 @@
   },
   "drills": [
     {
-      "prompt": "Ayer (ir/yo) ___ al supermercado y (comprar/yo) ___ pan.",
-      "answer": "fui, compre",
+      "prompt": "Ayer (ir/yo) ___ al supermercado y (comprar/yo) compré pan.",
+      "answer": "fui",
+      "hint": "ayer + actions precises → passe simple"
+    },
+    {
+      "prompt": "Ayer (ir/yo) fui al supermercado y (comprar/yo) ___ pan.",
+      "answer": "compré",
       "hint": "ayer + actions precises → passe simple"
     },
     {
@@ -15,8 +20,13 @@
       "hint": "cuando era pequeno + habitude → imparfait"
     },
     {
-      "prompt": "(Ser) ___ las tres cuando (llegar/el) ___.",
-      "answer": "Eran, llego",
+      "prompt": "(Ser) ___ las tres cuando (llegar/el) llegó.",
+      "answer": "Eran",
+      "hint": "eran = contexte (imp.) / llego = action (p.s.)"
+    },
+    {
+      "prompt": "(Ser) Eran las tres cuando (llegar/el) ___.",
+      "answer": "llegó",
       "hint": "eran = contexte (imp.) / llego = action (p.s.)"
     },
     {
@@ -25,33 +35,63 @@
       "hint": "todos los dias + de nino → habitude → imparfait"
     },
     {
-      "prompt": "El lunes pasado (llamar/ella) ___ tres veces pero no (contestar/yo) ___.",
-      "answer": "llamo, conteste",
+      "prompt": "El lunes pasado (llamar/ella) ___ tres veces pero no (contestar/yo) contesté.",
+      "answer": "llamó",
       "hint": "el lunes pasado = moment precis → passe simple"
     },
     {
-      "prompt": "(Leer/yo) ___ cuando de repente (apagarse) ___ la luz.",
-      "answer": "Leia, se apago",
+      "prompt": "El lunes pasado (llamar/ella) llamó tres veces pero no (contestar/yo) ___.",
+      "answer": "contesté",
+      "hint": "el lunes pasado = moment precis → passe simple"
+    },
+    {
+      "prompt": "(Leer/yo) ___ cuando de repente (apagarse) se apagó la luz.",
+      "answer": "Leía",
       "hint": "leia = en cours (imp.) / se apago = interruption (p.s.)"
     },
     {
-      "prompt": "Siempre (desayunar/nosotros) ___ juntos cuando (ser) ___ ninos.",
-      "answer": "desayunabamos, eramos",
+      "prompt": "(Leer/yo) Leía cuando de repente (apagarse) ___ la luz.",
+      "answer": "se apagó",
+      "hint": "leia = en cours (imp.) / se apago = interruption (p.s.)"
+    },
+    {
+      "prompt": "Siempre (desayunar/nosotros) ___ juntos cuando (ser) éramos ninos.",
+      "answer": "desayunábamos",
       "hint": "siempre + cuando eramos → imparfait pour les deux"
     },
     {
-      "prompt": "En 2015, (mudarse/ella) ___ a Barcelona y (empezar) ___ a trabajar.",
-      "answer": "se mudo, empezo",
+      "prompt": "Siempre (desayunar/nosotros) desayunábamos juntos cuando (ser) ___ ninos.",
+      "answer": "éramos",
+      "hint": "siempre + cuando eramos → imparfait pour les deux"
+    },
+    {
+      "prompt": "En 2015, (mudarse/ella) ___ a Barcelona y (empezar) empezó a trabajar.",
+      "answer": "se mudó",
       "hint": "en 2015 + sequence → passe simple"
     },
     {
-      "prompt": "(Hacer) ___ mucho frio cuando (salir/nosotros) ___ de casa.",
-      "answer": "Hacia, salimos",
+      "prompt": "En 2015, (mudarse/ella) se mudó a Barcelona y (empezar) ___ a trabajar.",
+      "answer": "empezó",
+      "hint": "en 2015 + sequence → passe simple"
+    },
+    {
+      "prompt": "(Hacer) ___ mucho frio cuando (salir/nosotros) salimos de casa.",
+      "answer": "Hacía",
       "hint": "hacia = description (imp.) / salimos = action (p.s.)"
     },
     {
-      "prompt": "Antes, (trabajar/el) ___ en un banco, pero el anio pasado (cambiar) ___ de trabajo.",
-      "answer": "trabajaba, cambio",
+      "prompt": "(Hacer) Hacía mucho frio cuando (salir/nosotros) ___ de casa.",
+      "answer": "salimos",
+      "hint": "hacia = description (imp.) / salimos = action (p.s.)"
+    },
+    {
+      "prompt": "Antes, (trabajar/el) ___ en un banco, pero el anio pasado (cambiar) cambió de trabajo.",
+      "answer": "trabajaba",
+      "hint": "antes → imp. / el anio pasado → p.s."
+    },
+    {
+      "prompt": "Antes, (trabajar/el) trabajaba en un banco, pero el anio pasado (cambiar) ___ de trabajo.",
+      "answer": "cambió",
       "hint": "antes → imp. / el anio pasado → p.s."
     },
     {
@@ -60,8 +100,13 @@
       "hint": "ayer + heure precise → passe simple"
     },
     {
-      "prompt": "?Que (hacer/tu) ___ a las ocho todos los dias cuando (ser) ___ estudiante?",
-      "answer": "hacias, eras",
+      "prompt": "?Que (hacer/tu) ___ a las ocho todos los dias cuando (ser) eras estudiante?",
+      "answer": "hacías",
+      "hint": "todos los dias + cuando eras → imparfait"
+    },
+    {
+      "prompt": "?Que (hacer/tu) hacías a las ocho todos los dias cuando (ser) ___ estudiante?",
+      "answer": "eras",
       "hint": "todos los dias + cuando eras → imparfait"
     },
     {
@@ -70,8 +115,13 @@
       "hint": "de repente = soudain → passe simple"
     },
     {
-      "prompt": "Mientras (hablar/ella) ___ por telefono, (quemarse) ___ la comida.",
-      "answer": "hablaba, se quemo",
+      "prompt": "Mientras (hablar/ella) ___ por telefono, (quemarse) se quemó la comida.",
+      "answer": "hablaba",
+      "hint": "mientras → imp. / resultat → p.s."
+    },
+    {
+      "prompt": "Mientras (hablar/ella) hablaba por telefono, (quemarse) ___ la comida.",
+      "answer": "se quemó",
       "hint": "mientras → imp. / resultat → p.s."
     },
     {
@@ -80,28 +130,58 @@
       "hint": "antes + etat habituel → imparfait"
     },
     {
-      "prompt": "El domingo (levantarse/yo) ___, (desayunar) ___ y (salir) ___ a pasear.",
-      "answer": "me levante, desayune, sali",
+      "prompt": "El domingo (levantarse/yo) ___, (desayunar) desayuné y (salir) salí a pasear.",
+      "answer": "me levanté",
       "hint": "el domingo + sequence → passe simple pour les 3"
     },
     {
-      "prompt": "(Conocer/yo) ___ a mi mejor amigo cuando (tener/nosotros) ___ diez anios.",
-      "answer": "Conoci, teniamos",
+      "prompt": "El domingo (levantarse/yo) me levanté, (desayunar) ___ y (salir) salí a pasear.",
+      "answer": "desayuné",
+      "hint": "el domingo + sequence → passe simple pour les 3"
+    },
+    {
+      "prompt": "El domingo (levantarse/yo) me levanté, (desayunar) desayuné y (salir) ___ a pasear.",
+      "answer": "salí",
+      "hint": "el domingo + sequence → passe simple pour les 3"
+    },
+    {
+      "prompt": "(Conocer/yo) ___ a mi mejor amigo cuando (tener/nosotros) teníamos diez anios.",
+      "answer": "Conocí",
       "hint": "conoci = moment precis (p.s.) / teniamos = age contexte (imp.)"
     },
     {
-      "prompt": "Todos los veranos (ir/nosotros) ___ a la playa. Una vez (quedarse) ___ dos semanas.",
-      "answer": "ibamos, nos quedamos",
+      "prompt": "(Conocer/yo) Conocí a mi mejor amigo cuando (tener/nosotros) ___ diez anios.",
+      "answer": "teníamos",
+      "hint": "conoci = moment precis (p.s.) / teniamos = age contexte (imp.)"
+    },
+    {
+      "prompt": "Todos los veranos (ir/nosotros) ___ a la playa. Una vez (quedarse) nos quedamos dos semanas.",
+      "answer": "íbamos",
       "hint": "todos los veranos = habitude (imp.) / una vez = exception (p.s.)"
     },
     {
-      "prompt": "(Estar/yo) ___ muy nervioso porque (tener) ___ un examen al dia siguiente.",
-      "answer": "Estaba, tenia",
+      "prompt": "Todos los veranos (ir/nosotros) íbamos a la playa. Una vez (quedarse) ___ dos semanas.",
+      "answer": "nos quedamos",
+      "hint": "todos los veranos = habitude (imp.) / una vez = exception (p.s.)"
+    },
+    {
+      "prompt": "(Estar/yo) ___ muy nervioso porque (tener) tenía un examen al dia siguiente.",
+      "answer": "Estaba",
       "hint": "etat + contexte → imparfait pour les deux"
     },
     {
-      "prompt": "El profesor (explicar) ___ la leccion cuando (sonar) ___ el timbre.",
-      "answer": "explicaba, sono",
+      "prompt": "(Estar/yo) Estaba muy nervioso porque (tener) ___ un examen al dia siguiente.",
+      "answer": "tenía",
+      "hint": "etat + contexte → imparfait pour les deux"
+    },
+    {
+      "prompt": "El profesor (explicar) ___ la leccion cuando (sonar) sonó el timbre.",
+      "answer": "explicaba",
+      "hint": "explicaba = en cours (imp.) / sono = interruption (p.s.)"
+    },
+    {
+      "prompt": "El profesor (explicar) explicaba la leccion cuando (sonar) ___ el timbre.",
+      "answer": "sonó",
       "hint": "explicaba = en cours (imp.) / sono = interruption (p.s.)"
     },
     {
@@ -115,28 +195,58 @@
       "hint": "la semana pasada + 3 fois delimitees → passe simple"
     },
     {
-      "prompt": "Normalmente (comer/ella) ___ en casa, pero ese dia (salir) ___ a un restaurante.",
-      "answer": "comia, salio",
+      "prompt": "Normalmente (comer/ella) ___ en casa, pero ese dia (salir) salió a un restaurante.",
+      "answer": "comía",
       "hint": "normalmente = habitude (imp.) / ese dia = exception (p.s.)"
     },
     {
-      "prompt": "Cuando (llegar/yo) ___ a casa, mi madre (cocinar) ___ en la cocina.",
-      "answer": "llegue, cocinaba",
+      "prompt": "Normalmente (comer/ella) comía en casa, pero ese dia (salir) ___ a un restaurante.",
+      "answer": "salió",
+      "hint": "normalmente = habitude (imp.) / ese dia = exception (p.s.)"
+    },
+    {
+      "prompt": "Cuando (llegar/yo) ___ a casa, mi madre (cocinar) cocinaba en la cocina.",
+      "answer": "llegué",
       "hint": "llegue = arrivee (p.s.) / cocinaba = en cours a ce moment (imp.)"
     },
     {
-      "prompt": "(Querer/ella) ___ ser medica desde pequena. Al final lo (conseguir) ___.",
-      "answer": "Queria, consiguio",
+      "prompt": "Cuando (llegar/yo) llegué a casa, mi madre (cocinar) ___ en la cocina.",
+      "answer": "cocinaba",
+      "hint": "llegue = arrivee (p.s.) / cocinaba = en cours a ce moment (imp.)"
+    },
+    {
+      "prompt": "(Querer/ella) ___ ser medica desde pequena. Al final lo (conseguir) consiguió.",
+      "answer": "Quería",
       "hint": "queria = desir continu (imp.) / consiguio = resultat final (p.s.)"
     },
     {
-      "prompt": "Ayer (despertarse/yo) ___, (ducharse) ___ y (salir) ___ corriendo.",
-      "answer": "me desperte, me duche, sali",
+      "prompt": "(Querer/ella) Quería ser medica desde pequena. Al final lo (conseguir) ___.",
+      "answer": "consiguió",
+      "hint": "queria = desir continu (imp.) / consiguio = resultat final (p.s.)"
+    },
+    {
+      "prompt": "Ayer (despertarse/yo) ___, (ducharse) me duché y (salir) salí corriendo.",
+      "answer": "me desperté",
       "hint": "sequence matinale hier → passe simple pour les 3"
     },
     {
-      "prompt": "Mientras (caminar/yo) ___ por la calle, (empezar) ___ a llover.",
-      "answer": "caminaba, empezo",
+      "prompt": "Ayer (despertarse/yo) me desperté, (ducharse) ___ y (salir) salí corriendo.",
+      "answer": "me duché",
+      "hint": "sequence matinale hier → passe simple pour les 3"
+    },
+    {
+      "prompt": "Ayer (despertarse/yo) me desperté, (ducharse) me duché y (salir) ___ corriendo.",
+      "answer": "salí",
+      "hint": "sequence matinale hier → passe simple pour les 3"
+    },
+    {
+      "prompt": "Mientras (caminar/yo) ___ por la calle, (empezar) empezó a llover.",
+      "answer": "caminaba",
+      "hint": "mientras caminaba = en cours (imp.) / empezo = changement (p.s.)"
+    },
+    {
+      "prompt": "Mientras (caminar/yo) caminaba por la calle, (empezar) ___ a llover.",
+      "answer": "empezó",
       "hint": "mientras caminaba = en cours (imp.) / empezo = changement (p.s.)"
     },
     {
@@ -145,38 +255,73 @@
       "hint": "description d'une periode entiere → imparfait"
     },
     {
-      "prompt": "Una noche (escuchar/yo) ___ un ruido extranio y (llamar) ___ a la policia.",
-      "answer": "escuche, llame",
+      "prompt": "Una noche (escuchar/yo) ___ un ruido extranio y (llamar) llamé a la policia.",
+      "answer": "escuché",
       "hint": "una noche + sequence → passe simple"
     },
     {
-      "prompt": "El nino (llorar) ___ porque (tener) ___ hambre.",
-      "answer": "lloraba, tenia",
+      "prompt": "Una noche (escuchar/yo) escuché un ruido extranio y (llamar) ___ a la policia.",
+      "answer": "llamé",
+      "hint": "una noche + sequence → passe simple"
+    },
+    {
+      "prompt": "El nino (llorar) ___ porque (tener) tenía hambre.",
+      "answer": "lloraba",
       "hint": "etat continu + raison → imparfait pour les deux"
     },
     {
-      "prompt": "Cuando (ser/yo) ___ joven, (sonar) ___ con ser astronauta.",
-      "answer": "era, sonaba",
+      "prompt": "El nino (llorar) lloraba porque (tener) ___ hambre.",
+      "answer": "tenía",
+      "hint": "etat continu + raison → imparfait pour les deux"
+    },
+    {
+      "prompt": "Cuando (ser/yo) ___ joven, (sonar) soñaba con ser astronauta.",
+      "answer": "era",
       "hint": "etat + reve repete dans la jeunesse → imparfait"
     },
     {
-      "prompt": "Ayer por fin (terminar/yo) ___ el libro que (leer) ___ desde hace un mes.",
-      "answer": "termine, leia",
+      "prompt": "Cuando (ser/yo) era joven, (sonar) ___ con ser astronauta.",
+      "answer": "soñaba",
+      "hint": "etat + reve repete dans la jeunesse → imparfait"
+    },
+    {
+      "prompt": "Ayer por fin (terminar/yo) ___ el libro que (leer) leía desde hace un mes.",
+      "answer": "terminé",
       "hint": "ayer termine = achevement (p.s.) / leia desde = en cours depuis (imp.)"
     },
     {
-      "prompt": "Antes el barrio (ser) ___ tranquilo, pero el anio pasado (construir) ___ un centro comercial.",
-      "answer": "era, construyeron",
+      "prompt": "Ayer por fin (terminar/yo) terminé el libro que (leer) ___ desde hace un mes.",
+      "answer": "leía",
+      "hint": "ayer termine = achevement (p.s.) / leia desde = en cours depuis (imp.)"
+    },
+    {
+      "prompt": "Antes el barrio (ser) ___ tranquilo, pero el anio pasado (construir) construyeron un centro comercial.",
+      "answer": "era",
       "hint": "antes era = etat passe (imp.) / el anio pasado = fait precis (p.s.)"
     },
     {
-      "prompt": "La fiesta (estar) ___ muy animada cuando de repente (irse) ___ la luz.",
-      "answer": "estaba, se fue",
+      "prompt": "Antes el barrio (ser) era tranquilo, pero el anio pasado (construir) ___ un centro comercial.",
+      "answer": "construyeron",
+      "hint": "antes era = etat passe (imp.) / el anio pasado = fait precis (p.s.)"
+    },
+    {
+      "prompt": "La fiesta (estar) ___ muy animada cuando de repente (irse) se fue la luz.",
+      "answer": "estaba",
       "hint": "estaba = ambiance en cours (imp.) / se fue = evenement soudain (p.s.)"
     },
     {
-      "prompt": "Ayer (ver/yo) ___ a Juan en el metro. No lo (ver) ___ desde hace anios.",
-      "answer": "vi, habia visto",
+      "prompt": "La fiesta (estar) estaba muy animada cuando de repente (irse) ___ la luz.",
+      "answer": "se fue",
+      "hint": "estaba = ambiance en cours (imp.) / se fue = evenement soudain (p.s.)"
+    },
+    {
+      "prompt": "Ayer (ver/yo) ___ a Juan en el metro. No lo (ver) había visto desde hace anios.",
+      "answer": "vi",
+      "hint": "ayer vi = passe simple / depuis longtemps = plus-que-parfait"
+    },
+    {
+      "prompt": "Ayer (ver/yo) vi a Juan en el metro. No lo (ver) ___ desde hace anios.",
+      "answer": "había visto",
       "hint": "ayer vi = passe simple / depuis longtemps = plus-que-parfait"
     }
   ],
