@@ -129,6 +129,27 @@ export default function Home() {
           </div>
         </Link>
 
+        {/* ── MODE DELE B2 ── */}
+        <Link
+          href="/dele"
+          className="block -mt-6 mb-10 rounded-2xl p-5 border border-blue-700 bg-gradient-to-r from-blue-900/40 to-slate-900 hover:border-blue-500 transition-all"
+        >
+          <div className="flex items-center gap-4">
+            <span className="text-3xl">🎓</span>
+            <div>
+              <p className="font-black text-lg">
+                {uiLanguage === 'fr' ? 'Mode DELE B2' : 'DELE B2 mode'}
+              </p>
+              <p className="text-slate-400 text-sm">
+                {uiLanguage === 'fr'
+                  ? 'Semaine type, parcours subjonctif, écrit et oral chronométrés'
+                  : 'Weekly plan, subjunctive path, timed writing and speaking'}
+              </p>
+            </div>
+            <span className="ml-auto text-blue-400 text-2xl">→</span>
+          </div>
+        </Link>
+
         {/* ── HERO ── */}
         <div className="text-center mb-10">
           <div className="inline-flex items-center gap-3 mb-4">
