@@ -1,10 +1,15 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
+import { getCardProgress, saveCardProgress } from "@/utils/srs-storage";
+import { calculateNextReview } from "@/utils/srs-algorithm";
 
 type Drill = {
   prompt: string;
   answer: string;
   hint?: string | { fr: string; en: string };
+  // Identifiant stable pour le SRS (mode Repàs espaiat).
+  // Si absent, il est déduit de quizId + index de la question.
+  srsId?: string;
 };
 
 type Visual = {
@@ -20,9 +25,13 @@ type Props = {
   drills: Drill[];
   onClose: () => void;
   language?: 'fr' | 'en';
+  // Appelé une fois par question (score du thème, carnet d'erreurs).
+  onAnswer?: (correct: boolean, drill: Drill) => void;
+  // Identifiant du point de grammaire, pour générer un srsId stable.
+  quizId?: string;
 };
 
-export default function GrammarDrill({ title, note, visual, drills, onClose, language = 'fr' }: Props) {
+export default function GrammarDrill({ title, note, visual, drills, onClose, language = 'fr', onAnswer, quizId }: Props) {
   const [drillIndex, setDrillIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);      // which blank we're on
   const [filledAnswers, setFilledAnswers] = useState<string[]>([]); // blanks already filled
@@ -106,6 +115,21 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
     if (!correct) setWrongAnswer(userAnswer);
     setTotalAnswered(n => n + 1);
     if (correct) setScore(s => s + 1);
+
+    // Une question compte une seule fois : à la 1re erreur,
+    // ou quand le dernier blanc est rempli correctement.
+    const questionDone = !correct || !isMulti || subIndex === totalBlanks - 1;
+    if (questionDone) {
+      onAnswer?.(correct, currentDrill);
+      // Répétition espacée (SM-2) : best-effort, sans impact si ça échoue.
+      try {
+        const srsId = currentDrill.srsId ?? `grammar:${quizId ?? 'unknown'}:${drillIndex}`;
+        const updated = calculateNextReview(getCardProgress(srsId), correct ? 'good' : 'again');
+        saveCardProgress(updated);
+      } catch {
+        /* localStorage indisponible : on ignore */
+      }
+    }
   };
 
   const next = () => {
