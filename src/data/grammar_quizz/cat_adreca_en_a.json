@@ -10,17 +10,55 @@
     "en": "🏠 To say where you live, choose between EN and A depending on whether the street is known.\n\nEN + UN / UNA → street/square you do NOT know (indefinite)\n- Visc en un carrer molt estret (I live on a very narrow street)\n\nA + EL / LA → street you DO know (definite, with the name)\n- Viu al carrer Major (He lives on Major Street)\n- Vivim a l'avinguda República Argentina\n\nCONTRACTIONS with A:\n- a + el → al; a + la → a la; a + l' → a l'\n\nVOCAB: el carrer (street), la plaça (square), l'avinguda (avenue), el passeig (boulevard).\n\n💡 Known named street → A. Vague/unknown → EN un/una."
   },
   "drills": [
-    { "prompt": "« J'habite dans une rue très étroite » → Visc ___ carrer molt estret (rue inconnue)", "answer": "en un" },
-    { "prompt": "« Ils habitent dans une place centrale » → Viuen ___ plaça cèntrica (inconnue)", "answer": "en una" },
-    { "prompt": "« Il habite rue Major » → Viu ___ carrer Major (a + el)", "answer": "al" },
-    { "prompt": "« Nous habitons avenue República Argentina » → Vivim ___ avinguda... (a + l')", "answer": "a l'" },
-    { "prompt": "« J'habite rue de la Llibertat » → Visc ___ carrer de la Llibertat (a + el)", "answer": "al" },
-    { "prompt": "« J'habite place del Nord » → Visc ___ plaça del Nord (a + la)", "answer": "a la" },
-    { "prompt": "EN ou A ? Rue qu'on connaît, avec son nom →", "answer": "A (al / a la)" },
-    { "prompt": "EN ou A ? Rue vague qu'on ne connaît pas →", "answer": "EN (en un / en una)" },
-    { "prompt": "Contraction : a + el = ___", "answer": "al" },
-    { "prompt": "Contraction : a + la = ___", "answer": "a la" },
-    { "prompt": "« Sur quelle rue habites-tu ? » → en catalan", "answer": "A quin carrer vius?" },
-    { "prompt": "« J'habite place del Nord » → phrase complète en catalan", "answer": "Visc a la plaça del Nord" }
+    {
+      "prompt": "« J'habite dans une rue très étroite » → Visc ___ carrer molt estret (rue inconnue)",
+      "answer": "en un"
+    },
+    {
+      "prompt": "« Ils habitent dans une place centrale » → Viuen ___ plaça cèntrica (inconnue)",
+      "answer": "en una"
+    },
+    {
+      "prompt": "« Il habite rue Major » → Viu ___ carrer Major (a + el)",
+      "answer": "al"
+    },
+    {
+      "prompt": "« Nous habitons avenue República Argentina » → Vivim ___ avinguda... (a + l')",
+      "answer": "a l'"
+    },
+    {
+      "prompt": "« J'habite rue de la Llibertat » → Visc ___ carrer de la Llibertat (a + el)",
+      "answer": "al"
+    },
+    {
+      "prompt": "« J'habite place del Nord » → Visc ___ plaça del Nord (a + la)",
+      "answer": "a la"
+    },
+    {
+      "prompt": "EN ou A ? Rue qu'on connaît, avec son nom →",
+      "answer": "A",
+      "hint": "A + el = al / A + la = a la"
+    },
+    {
+      "prompt": "EN ou A ? Rue vague qu'on ne connaît pas →",
+      "answer": "EN",
+      "hint": "EN + un = en un / EN + una = en una"
+    },
+    {
+      "prompt": "Contraction : a + el = ___",
+      "answer": "al"
+    },
+    {
+      "prompt": "Contraction : a + la = ___",
+      "answer": "a la"
+    },
+    {
+      "prompt": "« Sur quelle rue habites-tu ? » → en catalan",
+      "answer": "A quin carrer vius?"
+    },
+    {
+      "prompt": "« J'habite place del Nord » → phrase complète en catalan",
+      "answer": "Visc a la plaça del Nord"
+    }
   ]
 }
