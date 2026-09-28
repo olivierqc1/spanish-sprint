@@ -32,7 +32,8 @@
     },
     {
       "prompt": "sur (au-dessus de) →",
-      "answer": "sobre / damunt de"
+      "answer": "sobre",
+      "hint": "sobre = sur / au-dessus (aussi: damunt de)"
     },
     {
       "prompt": "sous →",
