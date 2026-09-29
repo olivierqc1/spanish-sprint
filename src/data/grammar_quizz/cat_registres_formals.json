@@ -1,0 +1,33 @@
+{
+  "note": {
+    "fr": "Registres formel et informel en catalan\n\n─────────────────────────────────────\n\n⚡ TU vs VOSTÈ\n\nTU (tractament informal) → famille, amis, enfants\n→ Com et dius? · Tens gana? · Seu aquí.\n\nVOSTÈ (tractament formal) → personnes âgées, inconnus,\n   professionnels, situations officielles\n→ Vostè, com es diu? · Vostè té algun problema?\n→ VOSTÈ utilise la 3e personne du singulier !\n   Vostè vol un cafè? (= Il veut un café? → forme poli)\n\n─────────────────────────────────────\n\n🖼️ VOSALTRES vs VOSTÈS\n\nvosaltres = vous (informel pluriel)\nvostès = vous (formel pluriel, 3e pers. pl.)\n\n─────────────────────────────────────\n\n💡 VOCABULAIRE FORMEL vs INFORMEL\n\nInformel → Formel\n→ Hola → Bon dia / Bona tarda / Bona nit\n→ Adéu → Fins aviat / Que vagi bé / Bon dia\n→ Ok, vale → D'acord / Perfecte\n→ Quina és la teva adreça? → Quina és la seva adreça?\n→ Pots ajudar-me? → Pot ajudar-me? (vostè)\n→ Em dius el teu nom? → Em diu el seu nom?\n→ Tens un moment? → Té un moment?\n→ Vine! → Vingui!\n→ Asseu-te! → Assenteu-vos! / Seu!\n→ Espera! → Esperi!\n\n─────────────────────────────────────\n\n📽️ FORMULES COURANTES\n\nFormel (email, lettre) :\n→ Em dirigeixo a vostè per... (Je me permets de vous contacter pour...)\n→ Li agraeixo la seva atenció. (Je vous remercie de votre attention.)\n→ Atentament (Cordialement)\n→ En espera de la seva resposta... (Dans l'attente de votre réponse...)\n\nInformel :\n→ T'escric per... (Je t'écris pour...)\n→ Gràcies per tot! (Merci pour tout!)\n→ Fins aviat! (À bientôt!)",
+    "en": "Formal and informal registers in Catalan\n\n─────────────────────────────────────\n\n⚡ TU vs VOSTÈ\n\nTU (informal) → family, friends, children\n→ Com et dius? · Tens gana? · Seu aquí.\n\nVOSTÈ (formal) → elderly, strangers, professionals\n→ VOSTÈ uses the 3rd person singular!\n   Vostè vol un cafè?\n\n─────────────────────────────────────\n\n🖼️ VOSALTRES vs VOSTÈS\n\nvosaltres = you (informal plural)\nvostès = you (formal plural, 3rd pers. pl.)\n\n─────────────────────────────────────\n\n💡 INFORMAL vs FORMAL VOCABULARY\n\n→ Hola → Bon dia\n→ Ok → D'acord\n→ Pots? → Pot? (vostè)\n→ El teu → El seu (vostè)\n→ Vine! → Vingui!\n→ Espera! → Esperi!\n\n─────────────────────────────────────\n\n📽️ USEFUL FORMAL PHRASES\n\n→ Em dirigeixo a vostè per...\n→ Li agraeixo la seva atenció.\n→ Atentament\n→ En espera de la seva resposta..."
+  },
+  "drills": [
+    {"prompt": "Formel: «Pots ajudar-me?» → «___ ajudar-me?» (vostè)", "answer": "Pot", "hint": "vostè = 3e personne sing. → Pot"},
+    {"prompt": "Formel: «Com et dius?» → «Com ___ diu?» (vostè)", "answer": "es", "hint": "vostè → reflexif = es → Com es diu?"},
+    {"prompt": "Formel: «Tens un moment?» → «___ un moment?» (vostè)", "answer": "Té", "hint": "tenir → vostè (3e sing.) → Té"},
+    {"prompt": "Formel: «Vine!» → «___!» (vostè)", "answer": "Vingui", "hint": "impératif formel de venir → Vingui"},
+    {"prompt": "Formel: «Espera!» → «___!» (vostè)", "answer": "Esperi", "hint": "impératif formel d'esperar → Esperi"},
+    {"prompt": "Formel: «Asseu-te!» → «___!» (vostè)", "answer": "Assenteu-se", "hint": "impératif formel d'asseure's → Assenteu-se"},
+    {"prompt": "Formel: «El teu nom» → «El ___ nom» (vostè)", "answer": "seu", "hint": "possessif formel → seu (son/votre)"},
+    {"prompt": "Formel: «La teva adreça» → «La ___ adreça» (vostè)", "answer": "seva", "hint": "possessif formel féminin → seva"},
+    {"prompt": "Formel salutation le matin → ___", "answer": "Bon dia", "hint": "Bon dia = bonjour (matin) — formel"},
+    {"prompt": "Formel salutation l'après-midi → ___", "answer": "Bona tarda", "hint": "Bona tarda = bonjour/bonsoir (après-midi)"},
+    {"prompt": "Formel pour terminer un email → ___", "answer": "Atentament", "hint": "Atentament = Cordialement"},
+    {"prompt": "Formel: «Ok, d'accord» → ___", "answer": "D'acord", "hint": "D'acord = D'accord (neutre/formel)"},
+    {"prompt": "Formel: «Em dirigeixo a ___ per fer-li una consulta.» (vostè)", "answer": "vostè", "hint": "s'adresser formellement → a vostè"},
+    {"prompt": "Formel: «___ agraeixo la seva atenció.» (je vous remercie)", "answer": "Li", "hint": "Li (COI formel) = je lui/vous remercie"},
+    {"prompt": "Informal: «Comment tu t'appelles?» → ___", "answer": "Com et dius?", "hint": "dius = 2e pers. sing. de dir-se"},
+    {"prompt": "Formel: «Comment vous appelez-vous?» → ___", "answer": "Com es diu?", "hint": "es diu = 3e pers. sing. de dir-se (vostè)"},
+    {"prompt": "Formel pluriel: «Pots ajudar-nos?» (vosaltres) → «___ ajudar-nos?» (vostès)", "answer": "Poden", "hint": "vostès = 3e pers. pl. → Poden"},
+    {"prompt": "Formel: «Vostè ___ (voler) alguna cosa?» (Voulez-vous quelque chose?)", "answer": "vol", "hint": "voler → vostè (3e sing.) → vol"},
+    {"prompt": "Formel fin d'email: «En espera de ___ resposta» (votre réponse)", "answer": "la seva", "hint": "possessif formel → la seva"},
+    {"prompt": "Informal «Adéu» → Formel ___", "answer": "Que vagi bé", "hint": "Que vagi bé = formule de congé polie"},
+    {"prompt": "Formel: «Vostè ___ (saber) on és el despatx?» (savez-vous...?)", "answer": "sap", "hint": "saber → vostè → sap (3e sing.)"},
+    {"prompt": "Formel: «Li ___ (agrair) l'atenció.» (je vous remercie — présent)", "answer": "agraeixo", "hint": "agrair (incoatif) jo → agraeixo"},
+    {"prompt": "Formel: «Pot ___ (dir-me) com arribar?» (pourriez-vous me dire...)", "answer": "dir-me", "hint": "Pot + infinitif → Pot dir-me"},
+    {"prompt": "Informal: «Seu aquí.» → Formel: «___ aquí.» (vostè)", "answer": "Seu", "hint": "asseure's impératif → même forme pour 'seu' mais sens formel possible ici → Assenteu-se pour plus de formalité"},
+    {"prompt": "Formel email: «___ a vostè per demanar informació.» (je me permets...)", "answer": "Em dirigeixo", "hint": "Em dirigeixo a vostè per... = formule d'introduction officielle"}
+  ]
+}
