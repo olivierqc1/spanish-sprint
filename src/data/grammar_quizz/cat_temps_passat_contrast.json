@@ -1,0 +1,33 @@
+{
+  "note": {
+    "fr": "Contraste des temps du passé en catalan\n\n─────────────────────────────────────\n\n⚡ LES 4 TEMPS DU PASSÉ\n\n1. PASSAT PERIFRÀSTIC (vaig + inf.) = LE passé oral\n   Action ponctuelle, terminée, dans le passé\n   → Ahir vaig menjar paella. (Hier j'ai mangé la paella.)\n\n2. PRETÈRIT PERFET (he + participi) = passé proche\n   Lié au présent, aujourd'hui ou période non close\n   → Avui he menjat bé. (Aujourd'hui j'ai bien mangé.)\n   → Enguany he après molt. (Cette année j'ai beaucoup appris.)\n\n3. IMPERFET (menjava) = imparfait\n   Habitude, description, action en cours dans le passé\n   → Quan era petit, menjava molta pasta.\n   → Plovia quan vaig sortir.\n\n4. PLUSQUAMPERFET (havia + participi) = plus-que-parfait\n   Action terminée AVANT une autre action passée\n   → Quan vaig arribar, ell ja havia marxat.\n   (Quand je suis arrivé, il était déjà parti.)\n\n─────────────────────────────────────\n\n🖼️ SCHÉMA TEMPOREL\n\nPassé lointain ←──────────────────→ Présent\n[plovp.] [impf.] [p.perifr.] [p.perf.]\n havia     plovia   vaig      he\n marxat   plovia   sortir    menjat\n\n─────────────────────────────────────\n\n💡 PARTICIPES IRRÉGULIERS FRÉQUENTS\n\n→ fer → fet · dir → dit · veure → vist\n→ ser/estar → estat · tenir → tingut\n→ venir → vingut · poder → pogut\n→ voler → volgut · saber → sabut\n→ obrir → obert · escriure → escrit\n→ morir → mort · posar → posat",
+    "en": "Contrast of past tenses in Catalan\n\n─────────────────────────────────────\n\n⚡ THE 4 PAST TENSES\n\n1. PASSAT PERIFRÀSTIC (vaig + inf.) = THE spoken past\n   Completed action at a specific past moment\n   → Ahir vaig menjar paella.\n\n2. PRETÈRIT PERFET (he + participi) = recent past\n   Linked to present, today or unclosed period\n   → Avui he menjat bé.\n   → Enguany he après molt.\n\n3. IMPERFET (menjava) = imperfect\n   Habit, description, ongoing past action\n   → Quan era petit, menjava molta pasta.\n\n4. PLUSQUAMPERFET (havia + participi) = pluperfect\n   Action completed BEFORE another past action\n   → Quan vaig arribar, ell ja havia marxat.\n\n─────────────────────────────────────\n\n💡 COMMON IRREGULAR PARTICIPLES\n\n→ fer → fet · dir → dit · veure → vist\n→ ser → estat · tenir → tingut\n→ venir → vingut · poder → pogut\n→ obrir → obert · escriure → escrit"
+  },
+  "drills": [
+    {"prompt": "Ahir ___ (anar/jo) al mercat. (passé périphrastique — hier)", "answer": "vaig anar", "hint": "ahir → passat perifràstic: vaig anar"},
+    {"prompt": "Avui ___ (menjar/jo) molt bé. (passé composé — aujourd'hui)", "answer": "he menjat", "hint": "avui → pretèrit perfet: he menjat"},
+    {"prompt": "Quan era petit, ___ (jugar/jo) al carrer cada dia. (imparfait — habitude)", "answer": "jugava", "hint": "habitude passée → imperfet: jugava"},
+    {"prompt": "Quan vaig arribar, ell ja ___ (marxar). (plus-que-parfait)", "answer": "havia marxat", "hint": "action avant une autre → plusquamperfet: havia marxat"},
+    {"prompt": "De petit, ___ (viure/nosaltres) a un poble petit. (imparfait — description)", "answer": "vivíem", "hint": "description passée → imperfet: vivíem"},
+    {"prompt": "Enguany ___ (aprendre/jo) molt de català. (passé composé — cette année)", "answer": "he après", "hint": "enguany = cette année → pretèrit perfet: he après"},
+    {"prompt": "L'any passat ___ (treballar/jo) a Madrid. (passé périphrastique)", "answer": "vaig treballar", "hint": "l'any passat → passat perifràstic: vaig treballar"},
+    {"prompt": "___ (ploure) quan vaig sortir de casa. (imparfait — contexte)", "answer": "Plovia", "hint": "action en cours au moment → imperfet: Plovia"},
+    {"prompt": "Ahir ___ (veure/nosaltres) una pel·lícula boníssima. (passé périphrastique)", "answer": "vam veure", "hint": "ahir → passat perifràstic: vam veure"},
+    {"prompt": "Quan vaig obrir la porta, el gat ja ___ (sortir). (plus-que-parfait)", "answer": "havia sortit", "hint": "avant l'arrivée → plusquamperfet: havia sortit"},
+    {"prompt": "Sempre ___ (esmorzar/ell) a les vuit quan treballava allà. (imparfait)", "answer": "esmorzava", "hint": "sempre + habitude passée → imperfet: esmorzava"},
+    {"prompt": "Aquest mes ___ (llegir/jo) tres llibres. (passé composé — ce mois)", "answer": "he llegit", "hint": "aquest mes → pretèrit perfet: he llegit"},
+    {"prompt": "El 1992 ___ (celebrar-se) els Jocs Olímpics a Barcelona. (passé périphrastique)", "answer": "es van celebrar", "hint": "any concret passat → passat perifràstic: es van celebrar"},
+    {"prompt": "Li ___ (dir/jo) la veritat ahir. (passé périphrastique)", "answer": "vaig dir", "hint": "ahir → passat perifràstic: vaig dir"},
+    {"prompt": "Quan era jove, ___ (tenir/ell) molt de temps lliure. (imparfait — état)", "answer": "tenia", "hint": "état dans le passé → imperfet: tenia"},
+    {"prompt": "Vaig arribar a casa i ___ (adonar-se/jo) que havia oblidat les claus. (passé péri.)", "answer": "em vaig adonar", "hint": "séquence passée → passat perifràstic: em vaig adonar"},
+    {"prompt": "Quan va trucar, jo ___ (dormir). (imparfait — action en cours)", "answer": "dormia", "hint": "action interrompue → imperfet: dormia"},
+    {"prompt": "Avui ___ (parlar/jo) amb la directora. (passé composé — aujourd'hui)", "answer": "he parlat", "hint": "avui → pretèrit perfet: he parlat"},
+    {"prompt": "Ella va arribar quan nosaltres ja ___ (dinar). (plus-que-parfait)", "answer": "havíem dinat", "hint": "avant son arrivée → plusquamperfet: havíem dinat"},
+    {"prompt": "Quan vivia a Londres, ___ (prendre/jo) el metro cada dia. (imparfait)", "answer": "agafava", "hint": "habitude passée → imperfet: agafava"},
+    {"prompt": "L'altre dia ___ (trobar/jo) a la Maria per casualitat. (passé périphrastique)", "answer": "vaig trobar", "hint": "moment passé précis → passat perifràstic: vaig trobar"},
+    {"prompt": "Ja ___ (fer/jo) els deures abans que arribessis. (plus-que-parfait)", "answer": "havia fet", "hint": "avant ton arrivée → plusquamperfet: havia fet"},
+    {"prompt": "Fa poc ___ (inaugurar-se) el nou museu. (passé composé — récent)", "answer": "s'ha inaugurat", "hint": "fa poc = récemment → pretèrit perfet: s'ha inaugurat"},
+    {"prompt": "Ahir, mentre ___ (cuinar/jo), ___ (trucar/ella). (imparfait + passé péri.)", "answer": "cuinava, va trucar", "hint": "cuinava (en cours) + va trucar (interruption)"},
+    {"prompt": "Aquesta setmana ___ (dormir/jo) molt poc. (passé composé — cette semaine)", "answer": "he dormit", "hint": "aquesta setmana → pretèrit perfet: he dormit"}
+  ]
+}
