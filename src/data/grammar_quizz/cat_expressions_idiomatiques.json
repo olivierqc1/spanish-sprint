@@ -1,0 +1,33 @@
+{
+  "note": {
+    "fr": "Expressions idiomatiques catalanes\n\n─────────────────────────────────────\n\n⚡ AVEC LE CORPS\n\n→ Tenir molta barra → avoir du culot\n→ Anar de cap → être épuisé mentalement\n→ Fer la vista grossa → faire semblant de ne pas voir\n→ Perdre el fil → perdre le fil\n→ Donar la cara → assumer / faire face\n→ Trencar el gel → briser la glace\n→ Posar-se les piles → se mettre au boulot\n→ Tenir mà esquerra → avoir du tact / de la diplomatie\n\n─────────────────────────────────────\n\n🖼️ AVEC DES ANIMAUX\n\n→ Fer el ruc → faire l'idiot / l'âne\n→ Tenir la mosca darrere l'orella → avoir des doutes / sentir quelque chose\n→ Caure el burro → réaliser quelque chose enfin\n→ A mal temps, bona cara → faire bonne figure malgré les difficultés\n\n─────────────────────────────────────\n\n💡 AVEC MENJARS / OBJETS\n\n→ Anar de bòlit → être débordé\n→ No tenir ni un duro → être fauché\n→ Fer el salt → franchir le pas\n→ Posar-se les piles → s'y mettre sérieusement\n→ Anar al gra → aller à l'essentiel\n→ Tenir molts fronts oberts → avoir beaucoup de choses en cours\n→ Caure de quatre grapes → tomber à plat\n\n─────────────────────────────────────\n\n📽️ EXPRESSIONS TRÈS COURANTES\n\n→ Ja et diré → Je te dirai (façon de clore)\n→ Ara t'he vist → Je t'ai vu maintenant (ironie)\n→ No passa res → Ça ne fait rien / pas de problème\n→ Ja ho farem → On le fera bien (reporter à plus tard)\n→ Molt bé → Très bien\n→ Tant de bo → Si seulement / j'espère bien",
+    "en": "Catalan idiomatic expressions\n\n─────────────────────────────────────\n\n⚡ BODY EXPRESSIONS\n\n→ Tenir molta barra → to have a lot of nerve\n→ Anar de cap → to be mentally exhausted\n→ Fer la vista grossa → to turn a blind eye\n→ Perdre el fil → to lose the thread\n→ Donar la cara → to face up to something\n→ Trencar el gel → to break the ice\n→ Posar-se les piles → to get one's act together\n→ Tenir mà esquerra → to be tactful\n\n─────────────────────────────────────\n\n🖼️ ANIMAL EXPRESSIONS\n\n→ Fer el ruc → to play the fool\n→ Tenir la mosca darrere l'orella → to smell a rat\n→ Caure el burro → to finally realize something\n\n─────────────────────────────────────\n\n💡 VERY COMMON EXPRESSIONS\n\n→ No passa res → No problem / Never mind\n→ Tant de bo → I hope so / If only\n→ Anar al gra → to get to the point\n→ Anar de bòlit → to be swamped"
+  },
+  "drills": [
+    {"prompt": "No ha dit res del problema. Ha ___ la vista grossa. (faire semblant de ne pas voir)", "answer": "fet", "hint": "fer la vista grossa → ha fet la vista grossa"},
+    {"prompt": "Estic molt cansat avui. Vaig ___ de cap. (être épuisé mentalement)", "answer": "anar", "hint": "anar de cap = être épuisé → vaig anar de cap"},
+    {"prompt": "Que tinguis ___! Espero que tot vagi bé. (si seulement / j'espère que)", "answer": "raó", "hint": "Tant de bo que tinguis raó! = J'espère que tu as raison"},
+    {"prompt": "Anem al ___. Quin és el problema exactament? (aller à l'essentiel)", "answer": "gra", "hint": "anar al gra = aller à l'essentiel / au fait"},
+    {"prompt": "Finalment li ___ el burro i ha entès la situació. (réaliser enfin)", "answer": "ha caigut", "hint": "caure el burro = réaliser enfin → li ha caigut el burro"},
+    {"prompt": "Ha ___ molta barra per demanar-me un altre favor! (avoir du culot)", "answer": "tingut", "hint": "tenir molta barra = avoir du culot → ha tingut molta barra"},
+    {"prompt": "Ara he d'___ les piles si vull acabar a temps. (se mettre au travail)", "answer": "agafar", "hint": "posar-se/agafar les piles = se mettre au boulot"},
+    {"prompt": "No ___ res. No et preocupis! (ça ne fait rien)", "answer": "passa", "hint": "No passa res = Ça ne fait rien / pas de problème"},
+    {"prompt": "___ de bo que aprovi l'examen! (si seulement / j'espère bien)", "answer": "Tant", "hint": "Tant de bo = Si seulement / J'espère bien"},
+    {"prompt": "El seu problema és que ___ la mosca darrere l'orella. (avoir des doutes)", "answer": "té", "hint": "tenir la mosca darrere l'orella = sentir quelque chose → té"},
+    {"prompt": "Havia de ___ la cara i explicar el que havia passat. (assumer / faire face)", "answer": "donar", "hint": "donar la cara = assumer / faire face"},
+    {"prompt": "No es fàcil ___ el gel a una festa on no coneixes ningú. (briser la glace)", "answer": "trencar", "hint": "trencar el gel = briser la glace"},
+    {"prompt": "En aquesta reunió he ___ el fil. Pots repetir? (perdre le fil)", "answer": "perdut", "hint": "perdre el fil → he perdut el fil"},
+    {"prompt": "Té molta ___ esquerra, sap com tractar la gent difícil. (du tact)", "answer": "mà", "hint": "tenir mà esquerra = avoir du tact / de la diplomatie"},
+    {"prompt": "Esta setmana vaig ___ de bòlit, no paro. (être débordé)", "answer": "anar", "hint": "anar de bòlit = être débordé, surchargé"},
+    {"prompt": "Ha ___ el salt i ha muntat la seva empresa. (franchir le pas)", "answer": "fet", "hint": "fer el salt = franchir le pas → ha fet el salt"},
+    {"prompt": "No tinc ni un ___. Estic sense diners. (être fauché)", "answer": "duro", "hint": "no tenir ni un duro = être fauché"},
+    {"prompt": "Estava fent ___ ruc a la reunió i no escoltava. (faire l'idiot)", "answer": "el", "hint": "fer el ruc = faire l'idiot / ne pas faire attention"},
+    {"prompt": "Tens molts fronts ___ alhora. Has de prioritzar. (choses en cours)", "answer": "oberts", "hint": "tenir molts fronts oberts = avoir beaucoup de choses en cours"},
+    {"prompt": "A mal temps, bona ___. Endavant! (faire bonne figure)", "answer": "cara", "hint": "A mal temps, bona cara = faire bonne figure malgré les difficultés"},
+    {"prompt": "Posa't les ___ i acaba el projecte avui! (se mettre au boulot)", "answer": "piles", "hint": "posar-se les piles = s'y mettre sérieusement"},
+    {"prompt": "Li ha ___ el burro finalment — ara ja entén per què és important. (réaliser)", "answer": "caigut", "hint": "caure el burro = finalement comprendre/réaliser"},
+    {"prompt": "Tant de ___ que tot vagi bé! (j'espère que)", "answer": "bo", "hint": "Tant de bo = J'espère bien / Si seulement"},
+    {"prompt": "Quan parla amb els clients, sempre ___ la vista grossa als errors menors. (ignorer)", "answer": "fa", "hint": "fer la vista grossa = ignorer volontairement"},
+    {"prompt": "Estava d'___ i no vaig entendre res de la conversa. (être dans la lune)", "answer": "anar de cap", "hint": "anar de cap = être épuisé / dans les vapes"}
+  ]
+}
