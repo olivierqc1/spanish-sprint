@@ -1,0 +1,33 @@
+{
+  "note": {
+    "fr": "La voix passive en catalan\n\n─────────────────────────────────────\n\n⚡ PASSIVE AVEC SER + PARTICIPI\n\nActif: El cuiner va fer el pastís.\n→ Passif: El pastís va ser fet pel cuiner.\n\nFormule: ser (temps voulu) + participi (accordé)\n→ El projecte és aprovat. (Le projet est approuvé.)\n→ La carta va ser signada. (La lettre a été signée.)\n→ Els documents seran enviats. (Les docs seront envoyés.)\n\nLE COMPLÉMENT D'AGENT : per + article\n→ La llei va ser aprovada pel parlament.\n   (La loi a été adoptée par le parlement.)\n\n─────────────────────────────────────\n\n🖼️ PASSIVE RÉFLÉCHIE ES + VERBE\n\nTrès courante en catalan — évite la passive avec ser\n→ Es parla català aquí. (On parle catalan ici.)\n→ Es venen pisos nous. (On vend des appartements neufs.)\n→ S'ha decidit que... (Il a été décidé que...)\n→ Es busca cambrer/a. (On cherche un serveur/une serveuse.)\n\nAccord : es + verbe accordé au sujet logique\n→ Es ven un pis. (sing.) / Es venen pisos. (pl.)\n\n─────────────────────────────────────\n\n💡 IMPERSONNEL ES + VERBE\n\nQuand le sujet est indéfini (= on)\n→ Es diu que plourà. (On dit qu'il va pleuvoir.)\n→ Es pot aparcar aquí. (On peut se garer ici.)\n→ Com es fa això? (Comment fait-on ça?)\n\n─────────────────────────────────────\n\n📽️ SER vs ESTAR + PARTICIPI\n\nSER + participi = action passive\n→ La porta va ser tancada. (La porte a été fermée — action)\n\nESTAR + participi = état résultant\n→ La porta estava tancada. (La porte était fermée — état)",
+    "en": "The passive voice in Catalan\n\n─────────────────────────────────────\n\n⚡ PASSIVE WITH SER + PARTICIPI\n\nActive: El cuiner va fer el pastís.\n→ Passive: El pastís va ser fet pel cuiner.\n\nFormula: ser (any tense) + participi (agrees with subject)\n→ El projecte és aprovat.\n→ La carta va ser signada.\n\nAGENT: per + article\n→ La llei va ser aprovada pel parlament.\n\n─────────────────────────────────────\n\n🖼️ REFLEXIVE PASSIVE ES + VERB\n\nVery common in Catalan — avoids ser passive\n→ Es parla català aquí. (Catalan is spoken here.)\n→ Es venen pisos nous. (New flats are being sold.)\n→ Es busca cambrer/a. (Waiter/Waitress wanted.)\n\nAgreement: verb agrees with logical subject\n→ Es ven un pis (sing.) / Es venen pisos (pl.)\n\n─────────────────────────────────────\n\n💡 IMPERSONAL ES + VERB (= one/you/they)\n\n→ Es diu que plourà. (They say it will rain.)\n→ Es pot aparcar aquí. (You can park here.)\n→ Com es fa això? (How is this done?)\n\n─────────────────────────────────────\n\n📽️ SER vs ESTAR + PARTICIPI\n\nSER = passive action\n→ La porta va ser tancada. (The door was closed.)\n\nESTAR = resulting state\n→ La porta estava tancada. (The door was closed.)"
+  },
+  "drills": [
+    {"prompt": "El llibre ___ (escriure, passé) per una autora catalana. (passif ser)", "answer": "va ser escrit", "hint": "ser au passé + participi acordat: va ser escrit"},
+    {"prompt": "La llei ___ (aprovar) pel parlament. (passif ser, passé)", "answer": "va ser aprovada", "hint": "llei = féminin → aprovada: va ser aprovada"},
+    {"prompt": "Aquí ___ (parlar) català. (passif réfléchi es)", "answer": "es parla", "hint": "es + parlar (3e sing.) = on parle"},
+    {"prompt": "___ (vendre) pisos nous al centre. (passif réfléchi es, pluriel)", "answer": "Es venen", "hint": "es + vendre accordé au pluriel: Es venen"},
+    {"prompt": "___ (buscar) professor de català. (impersonnel es)", "answer": "Es busca", "hint": "es busca = on cherche (singulier indéfini)"},
+    {"prompt": "Com ___ (fer) això? (impersonnel es)", "answer": "es fa", "hint": "es fa = on fait / comment fait-on"},
+    {"prompt": "La porta ___ (tancar) a les deu. (passif ser, présent)", "answer": "és tancada", "hint": "ser présent + participi: és tancada (action régulière)"},
+    {"prompt": "La porta ___ (estar + tancar) quan vaig arribar. (état résultant)", "answer": "estava tancada", "hint": "estar + participi = état: estava tancada"},
+    {"prompt": "___ (dir) que plourà demà. (on dit que)", "answer": "Es diu", "hint": "es diu = on dit (impersonnel)"},
+    {"prompt": "Els documents ___ (enviar) avui. (passif ser, futur)", "answer": "seran enviats", "hint": "ser futur + participi pl.: seran enviats"},
+    {"prompt": "El projecte ___ (presentar) pel director dimecres. (passif, futur)", "answer": "serà presentat", "hint": "ser futur + participi: serà presentat"},
+    {"prompt": "___ (poder) aparcar aquí? (peut-on / est-ce qu'on peut?)", "answer": "Es pot", "hint": "es pot = on peut (impersonnel)"},
+    {"prompt": "Les cartes ___ (signar) per la directora. (passif ser, passé)", "answer": "van ser signades", "hint": "cartes = féminin pl. → signades: van ser signades"},
+    {"prompt": "___ (necessitar) voluntaris per l'esdeveniment. (impersonnel)", "answer": "Es necessiten", "hint": "es necessiten = on a besoin de (pl. → accordé)"},
+    {"prompt": "L'edifici ___ (construir) el 1920. (passif ser)", "answer": "va ser construït", "hint": "construir participi = construït: va ser construït"},
+    {"prompt": "Aquí no ___ (fumar). (il est interdit de fumer / on ne fume pas)", "answer": "es fuma", "hint": "no es fuma = on ne fume pas / interdit de fumer"},
+    {"prompt": "___ ha decidit que la reunió ___ ajornada. (passif réfléchi + ser)", "answer": "S', serà", "hint": "S'ha decidit = il a été décidé / serà ajornada = sera reportée"},
+    {"prompt": "Com ___ (dir) «merci» en català? (impersonnel)", "answer": "es diu", "hint": "es diu = comment dit-on"},
+    {"prompt": "El premi ___ (guanyar) per un equip jove. (passif ser, passé)", "answer": "va ser guanyat", "hint": "ser passé + guanyat: va ser guanyat"},
+    {"prompt": "El sopar ___ (preparar) per la meva mare ahir. (passif ser, passé)", "answer": "va ser preparat", "hint": "sopar = masc. → preparat: va ser preparat"},
+    {"prompt": "___ (vendre) entrades a la porta. (passif réfléchi)", "answer": "Es venen", "hint": "entrades = pl. → Es venen"},
+    {"prompt": "La decisió ___ (prendre) sense consultar-nos. (passif ser, passé)", "answer": "va ser presa", "hint": "prendre participi = pres, presa (f.) → va ser presa"},
+    {"prompt": "Quan vaig arribar, la feina ja ___ (fer + estar). (état résultant)", "answer": "estava feta", "hint": "estar + participi acordat: estava feta"},
+    {"prompt": "___ (saber) que el director dimitirà. (on sait que)", "answer": "Es sap", "hint": "es sap = on sait (impersonnel)"},
+    {"prompt": "Les obres ___ (acabar) l'any que ve. (passif ser, futur)", "answer": "seran acabades", "hint": "obres = féminin pl. → acabades: seran acabades"}
+  ]
+}
