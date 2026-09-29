@@ -1,127 +1,38 @@
 {
-  "id": "cat_subjuntiu_present",
-  "title": {
-    "fr": "Catalan : le subjonctif présent",
-    "en": "Catalan: present subjunctive"
-  },
-  "level": "B1",
   "note": {
-    "fr": "⚙️ SUBJONCTIF PRÉSENT — après un verbe de volonté, d'émotion, de doute\nou une expression impersonnelle, suivis de QUE.\n\n━━ FORMATION RÉGULIÈRE ━━\n-ar → parli, parlis, parli, parlem, parleu, parlin\n-re/-er → perdi, perdis, perdi, perdem, perdeu, perdin\n-ir → dormi, dormis, dormi, dormim, dormiu, dormin\n-ir incoatiu → serveixi, serveixis, serveixi, servim, serviu, serveixin\n\n━━ IRRÉGULIERS : radical fort SEULEMENT à jo/tu/ell/ells ━━\n(nosaltres et vosaltres reviennent souvent au régulier !)\nser → sigui / siguem / sigueu / siguin\nestar → estigui / estiguem / estigueu / estiguin\nanar → vagi / ANEM / ANEU / vagin      ⚠️ pas \"vaguem\" !\nfer → faci / FEM / FEU / facin\ntenir → tingui / tinguem / tingueu / tinguin\nvenir → vingui / vinguem / vingueu / vinguin\npoder → pugui / puguem / pugueu / puguin\nvoler → vulgui / vulguem / vulgueu / vulguin\nsaber → sàpiga / sapiguem / sapigueu / sàpiguen\nhaver → hagi / hàgim / hàgiu / hagin\nveure → vegi / vegem / vegeu / vegin\ndir → digui / diguem / digueu / diguin\nbeure → begui / beguem / begueu / beguin\nprendre → prengui / prenguem / prengueu / prenguin\n\n━━ LA RÈGLE QUI SAUVE ━━\nSauf ser et estar, en cas de doute sur NOSALTRES, essaie la forme\nrégulière : anem, fem, vegem, diguem (et non vaguem, faguem...).\n\n━━ QUAND L'EMPLOYER ━━\nVolonté : Vull que vinguis. · Cal que anem al metge.\nÉmotion : M'alegra que hagis aprovat.\nDoute / opinion niée : No crec que sigui fàcil.\nImpersonnel : És important que estudiïs.\nBut (perquè) : T'ho dic perquè ho sàpigues.\nFutur incertain : Quan vinguis, truca'm.\n\n⚠️ « crec que » AFFIRMATIF garde l'INDICATIF : Crec que és fàcil.",
-    "en": "⚙️ Present subjunctive after will, emotion, doubt or impersonal + QUE.\nRegular: -ar→parli, -re→perdi, -ir→dormi, incoatiu→serveixi.\nIrregular strong stem ONLY at jo/tu/ell/ells; nosaltres/vosaltres often revert:\nanar → vagi but ANEM/ANEU (not \"vaguem\"); fer → faci but FEM/FEU.\nser→sigui/siguem, estar→estigui/estiguem, tenir→tingui/tinguem,\npoder→pugui/puguem, voler→vulgui/vulguem, saber→sàpiga/sapiguem.\n⚠️ Affirmative \"crec que\" keeps the indicative."
+    "fr": "Le subjonctif présent en catalan (Subjuntiu present)\n\n─────────────────────────────────────\n\n⚡ QUAND L'UTILISER ?\n\n→ Après des verbes de volonté, désir, ordre\n   Vull que vinguis. (Je veux que tu viennes.)\n→ Après des verbes de doute, crainte, émotion\n   Temo que no arribi. (Je crains qu'il n'arrive pas.)\n→ Après certains connecteurs\n   perquè (pour que) / fins que (jusqu'à ce que)\n   abans que (avant que) / tot i que (bien que)\n→ Dans les phrases négatives avec croire\n   No crec que tingui raó. (Je ne crois pas qu'il ait raison.)\n\n─────────────────────────────────────\n\n🖼️ FORMATION\n\nVerbes en -AR (parlar) → radical + -i, -is, -i, -em, -eu, -in\n   parli, parlis, parli, parlem, parleu, parlin\n\nVerbes en -ER/-RE (beure) → radical + -i, -is, -i, -em, -eu, -in\n   begui, beguis, begui, beguem, begueu, beguin\n\nVerbes -IR incoatifs (llegir) → radical + -eixi, -eixis, -eixi, -im, -iu, -eixin\n   llegeixi, llegeixis, llegeixi, llegim, llegiu, llegeixin\n\n─────────────────────────────────────\n\n💡 IRRÉGULIERS ESSENTIELS\n\n→ ser → sigui, siguis, sigui, siguem, sigueu, siguin\n→ estar → estigui, estiguis, estigui, estiguem, estigueu, estiguin\n→ tenir → tingui, tinguis, tingui, tinguem, tingueu, tinguin\n→ fer → faci, facis, faci, fem, feu, facin\n→ anar → vagi, vagis, vagi, anem, aneu, vagin\n→ poder → pugui, puguis, pugui, puguem, pugueu, puguin\n→ saber → sàpiga, sàpigues, sàpiga, sapiguem, sapigueu, sàpiguen\n→ venir → vingui, vinguis, vingui, vinguem, vingueu, vinguin\n→ voler → vulgui, vulguis, vulgui, vulguem, vulgueu, vulguin\n→ dir → digui, diguis, digui, diguem, digueu, diguin\n→ haver → hagi, hagis, hagi, hàgim, hàgiu, hagin",
+    "en": "Present subjunctive in Catalan (Subjuntiu present)\n\n─────────────────────────────────────\n\n⚡ WHEN TO USE IT?\n\n→ After verbs of will, desire, order\n   Vull que vinguis. (I want you to come.)\n→ After verbs of doubt, fear, emotion\n   Temo que no arribi. (I fear he won't arrive.)\n→ After certain connectors\n   perquè (so that) / fins que (until)\n   abans que (before) / tot i que (although)\n→ In negative sentences with believe/think\n   No crec que tingui raó. (I don't think he's right.)\n\n─────────────────────────────────────\n\n🖼️ FORMATION\n\n-AR verbs (parlar) → stem + -i, -is, -i, -em, -eu, -in\n   parli, parlis, parli, parlem, parleu, parlin\n\n-ER/-RE verbs (beure) → stem + -i, -is, -i, -em, -eu, -in\n   begui, beguis, begui, beguem, beguem, beguin\n\n-IR inchoative (llegir) → stem + -eixi, -eixis, -eixi, -im, -iu, -eixin\n   llegeixi, llegeixis, llegeixi, llegim, llegiu, llegeixin\n\n─────────────────────────────────────\n\n💡 KEY IRREGULARS\n\n→ ser → sigui / estar → estigui\n→ tenir → tingui / fer → faci\n→ anar → vagi / poder → pugui\n→ venir → vingui / voler → vulgui\n→ dir → digui / haver → hagi"
   },
-  "country": "catalonia",
   "drills": [
-    {
-      "prompt": "Cal que ___ (anar, nosaltres) al metge. [ATTENTION : régulier, pas vag-]",
-      "answer": "anem"
-    },
-    {
-      "prompt": "Vull que ___ (anar, vosaltres) de seguida. [vosaltres]",
-      "answer": "aneu"
-    },
-    {
-      "prompt": "És important que ___ (fer, nosaltres) els deures. [pas fac-]",
-      "answer": "fem"
-    },
-    {
-      "prompt": "Espero que ___ (veure, nosaltres) la pel·lícula plegats. [nosaltres]",
-      "answer": "vegem"
-    },
-    {
-      "prompt": "Cal que ___ (dir, nosaltres) la veritat. [nosaltres]",
-      "answer": "diguem"
-    },
-    {
-      "prompt": "Vol que ___ (ser, nosaltres) puntuals. [ser garde le radical]",
-      "answer": "siguem"
-    },
-    {
-      "prompt": "Espera que ___ (estar, nosaltres) bé. [estar garde le radical]",
-      "answer": "estiguem"
-    },
-    {
-      "prompt": "Cal que ___ (tenir, nosaltres) paciència. [nosaltres]",
-      "answer": "tinguem"
-    },
-    {
-      "prompt": "Vull que ___ (venir, tu) demà.",
-      "answer": "vinguis"
-    },
-    {
-      "prompt": "No crec que ___ (ser) tan fàcil. [ell]",
-      "answer": "sigui"
-    },
-    {
-      "prompt": "Espero que ___ (estar, tu) bé.",
-      "answer": "estiguis"
-    },
-    {
-      "prompt": "M'alegra que ___ (tenir, tu) feina nova.",
-      "answer": "tinguis"
-    },
-    {
-      "prompt": "Dubto que ella ___ (voler) ajudar-nos.",
-      "answer": "vulgui"
-    },
-    {
-      "prompt": "Espero que ___ (poder, tu) venir.",
-      "answer": "puguis"
-    },
-    {
-      "prompt": "T'ho dic perquè ho ___ (saber, tu).",
-      "answer": "sàpigues"
-    },
-    {
-      "prompt": "No vull que ___ (marxar, ells) tan aviat.",
-      "answer": "marxin"
-    },
-    {
-      "prompt": "És possible que ___ (fer, ell) tard.",
-      "answer": "faci"
-    },
-    {
-      "prompt": "No crec que hi ___ (haver) prou temps.",
-      "answer": "hagi"
-    },
-    {
-      "prompt": "Vull que ___ (dir, tu) què penses.",
-      "answer": "diguis"
-    },
-    {
-      "prompt": "Espero que tot ___ (anar) bé. [ell]",
-      "answer": "vagi"
-    },
-    {
-      "prompt": "És important que ___ (estudiar, tu) cada dia.",
-      "answer": "estudiïs"
-    },
-    {
-      "prompt": "Prefereixo que ___ (quedar-se, ells) aquí. [es quedin]",
-      "answer": "es quedin"
-    },
-    {
-      "prompt": "És millor que ___ (dormir, tu) una mica.",
-      "answer": "dormis"
-    },
-    {
-      "prompt": "Crec que ___ (ser) fàcil. [AFFIRMATIF → indicatif]",
-      "answer": "és"
-    },
-    {
-      "prompt": "Cal que ___ (venir, vosaltres) aviat. [vosaltres]",
-      "answer": "vingueu"
-    },
-    {
-      "prompt": "Vull que ___ (poder, nosaltres) descansar. [nosaltres]",
-      "answer": "puguem"
-    },
-    {
-      "prompt": "No penso que ella ___ (saber) la resposta. [ell]",
-      "answer": "sàpiga"
-    },
-    {
-      "prompt": "Espero que ___ (voler, vosaltres) participar. [vosaltres]",
-      "answer": "vulgueu"
-    }
+    {"prompt": "Vull que tu ___ (venir) demà. (subjonctif)", "answer": "vinguis", "hint": "venir subj. tu → vinguis"},
+    {"prompt": "Espero que ell ___ (tenir) temps. (subjonctif)", "answer": "tingui", "hint": "tenir subj. ell → tingui"},
+    {"prompt": "No crec que ella ___ (tenir) raó. (subjonctif)", "answer": "tingui", "hint": "tenir subj. ella → tingui"},
+    {"prompt": "Vull que vosaltres ___ (parlar) amb ell. (subjonctif)", "answer": "parleu", "hint": "parlar subj. vosaltres → parleu"},
+    {"prompt": "Necessito que tu ___ (fer) això avui. (subjonctif)", "answer": "facis", "hint": "fer subj. tu → facis"},
+    {"prompt": "Temo que no ___ (arribar, ell) a temps. (subjonctif)", "answer": "arribi", "hint": "arribar subj. ell → arribi"},
+    {"prompt": "Et trucaré abans que ___ (marxar, tu). (subjonctif)", "answer": "marxis", "hint": "marxar subj. tu → marxis"},
+    {"prompt": "Esperaré fins que ___ (acabar, tu). (subjonctif)", "answer": "acabis", "hint": "acabar subj. tu → acabis"},
+    {"prompt": "Et parlo perquè ___ (entendre, tu) la situació. (subjonctif)", "answer": "entenguis", "hint": "entendre subj. tu → entenguis"},
+    {"prompt": "Dubto que ___ (ser, ell) tan fàcil. (subjonctif)", "answer": "sigui", "hint": "ser subj. ell → sigui"},
+    {"prompt": "Vull que ___ (ser, tu) feliç. (subjonctif)", "answer": "siguis", "hint": "ser subj. tu → siguis"},
+    {"prompt": "No penso que ___ (estar, ell) bé. (subjonctif)", "answer": "estigui", "hint": "estar subj. ell → estigui"},
+    {"prompt": "Vull que els nens ___ (anar) a dormir. (subjonctif)", "answer": "vagin", "hint": "anar subj. ells → vagin"},
+    {"prompt": "No crec que ells ___ (poder) venir. (subjonctif)", "answer": "puguin", "hint": "poder subj. ells → puguin"},
+    {"prompt": "M'alegro que ___ (venir, tu) a la festa. (subjonctif)", "answer": "vinguis", "hint": "venir subj. tu → vinguis"},
+    {"prompt": "Vull que ella ___ (dir) la veritat. (subjonctif)", "answer": "digui", "hint": "dir subj. ella → digui"},
+    {"prompt": "Espero que ells ___ (voler) participar. (subjonctif)", "answer": "vulguin", "hint": "voler subj. ells → vulguin"},
+    {"prompt": "Demano que tothom ___ (saber) la resposta. (subjonctif)", "answer": "sàpiga", "hint": "saber subj. → sàpiga"},
+    {"prompt": "No és possible que ___ (haver) passat això. (subjonctif passé)", "answer": "hagi", "hint": "haver subj. → hagi (pour former le subj. passé)"},
+    {"prompt": "Parla més fort perquè tothom ___ (escoltar). (subjonctif)", "answer": "escolti", "hint": "escoltar subj. → escolti"},
+    {"prompt": "Busco algú que ___ (parlar) japonès. (subjonctif)", "answer": "parli", "hint": "parlar subj. → parli (relatif indéfini)"},
+    {"prompt": "No hi ha ningú que ___ (saber) la resposta. (subjonctif)", "answer": "sàpiga", "hint": "saber subj. → sàpiga"},
+    {"prompt": "___ (ser, que) el que ___ (ser), ho farem. (quoi que ce soit)", "answer": "Sigui, sigui", "hint": "sigui el que sigui = quoi que ce soit"},
+    {"prompt": "Vol que jo ___ (llegir) el contracte. (subjonctif)", "answer": "llegeixi", "hint": "llegir (incoatif) subj. jo → llegeixi"},
+    {"prompt": "No deixis que ells ___ (entrar). (subjonctif)", "answer": "entrin", "hint": "entrar subj. ells → entrin"},
+    {"prompt": "Prefereixo que tu ___ (quedar-se) aquí. (subjonctif)", "answer": "et quedis", "hint": "quedar-se subj. tu → et quedis"},
+    {"prompt": "És important que nosaltres ___ (fer) exercici. (subjonctif)", "answer": "fem", "hint": "fer subj. nosaltres → fem"},
+    {"prompt": "Dubto que ella ___ (haver) dit això. (subj. passé)", "answer": "hagi dit", "hint": "subjonctif passé = hagi + participi → hagi dit"},
+    {"prompt": "No crec que ells ___ (arribar) ahir. (subj. passé)", "answer": "hagin arribat", "hint": "subjonctif passé ells = hagin + participi → hagin arribat"},
+    {"prompt": "Estic content que tu ___ (venir) ahir. (subj. passé)", "answer": "hagis vingut", "hint": "subjonctif passé tu = hagis + participi → hagis vingut"}
   ]
 }
