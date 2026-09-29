@@ -1,0 +1,33 @@
+{
+  "note": {
+    "fr": "Les pronoms relatifs en catalan (B2)\n\n─────────────────────────────────────\n\n⚡ QUE — sujet ou COD (le plus courant)\nLa persona que m'ha trucat és la meva germana.\n(La personne qui m'a appelé est ma sœur.)\nEl llibre que llegeixes és molt bo.\n(Le livre que tu lis est très bon.)\n\n─────────────────────────────────────\n\n🖼️ QUI — après préposition (personne)\nLa persona amb qui parles és el director.\n(La personne avec qui tu parles est le directeur.)\nLa noia de qui et parlava és aquí.\n(La fille dont je te parlais est là.)\n\n─────────────────────────────────────\n\n💡 EL QUAL / LA QUAL / ELS QUALS / LES QUALS\nAprès préposition (formel, choses et personnes)\nEl projecte en el qual treballo és important.\n(Le projet sur lequel je travaille est important.)\nLa raó per la qual ho faig és clara.\n(La raison pour laquelle je le fais est claire.)\n\n─────────────────────────────────────\n\n📽️ ON / QUAN / COM\n→ on → où (lieu): La casa on visc és gran.\n→ quan → quand (temps): El dia quan ens vam conèixer.\n→ com → comme/tel que: La manera com ho fa és perfecta.\n\n─────────────────────────────────────\n\n🎬 QUÈ — après préposition (chose neutre)\nAixò és el que vull. (C'est ce que je veux.)\nNo entenc el que dius. (Je ne comprends pas ce que tu dis.)",
+    "en": "Relative pronouns in Catalan (B2)\n\n─────────────────────────────────────\n\n⚡ QUE — subject or direct object (most common)\nLa persona que m'ha trucat és la meva germana.\n(The person who called me is my sister.)\nEl llibre que llegeixes és molt bo.\n(The book you're reading is very good.)\n\n─────────────────────────────────────\n\n🖼️ QUI — after preposition (person)\nLa persona amb qui parles és el director.\n(The person you're talking to is the director.)\n\n─────────────────────────────────────\n\n💡 EL QUAL / LA QUAL / ELS QUALS / LES QUALS\nAfter preposition (formal, things and people)\nEl projecte en el qual treballo és important.\n(The project I'm working on is important.)\n\n─────────────────────────────────────\n\n📽️ ON / QUAN / COM\n→ on → where: La casa on visc és gran.\n→ quan → when: El dia quan ens vam conèixer.\n→ com → how: La manera com ho fa és perfecta.\n\n─────────────────────────────────────\n\n🎬 QUÈ — after preposition (neutral thing)\nAixò és el que vull. (That's what I want.)\nNo entenc el que dius. (I don't understand what you're saying.)"
+  },
+  "drills": [
+    {"prompt": "La noia ___ ha trucat és la meva amiga. (qui)", "answer": "que", "hint": "que = qui/que (sujet ou COD)"},
+    {"prompt": "El cotxe ___ he comprat és nou. (que)", "answer": "que", "hint": "que = que (COD)"},
+    {"prompt": "La persona amb ___ parles és molt important. (avec qui)", "answer": "qui", "hint": "amb qui = avec qui (préposition + personne)"},
+    {"prompt": "La casa ___ visc és molt gran. (où)", "answer": "on", "hint": "on = où (lieu)"},
+    {"prompt": "El dia ___ ens vam conèixer va ser especial. (où / quand)", "answer": "que", "hint": "que ou quan pour le temps — que est plus courant"},
+    {"prompt": "Això és el ___ vull. (ce que)", "answer": "que", "hint": "el que = ce que"},
+    {"prompt": "La raó per ___ ho faig és personal. (laquelle — formel)", "answer": "la qual", "hint": "per la qual = pour laquelle (féminin)"},
+    {"prompt": "El projecte en ___ treballem és gran. (lequel — formel)", "answer": "el qual", "hint": "en el qual = dans lequel / sur lequel"},
+    {"prompt": "Les persones de ___ et parlava ja no hi son. (dont)", "answer": "qui", "hint": "de qui = dont (personnes)"},
+    {"prompt": "La manera ___ ho explica és molt clara. (dont / comme)", "answer": "com", "hint": "la manera com = la façon dont"},
+    {"prompt": "Els amics amb ___ sortim cada divendres. (avec qui)", "answer": "qui", "hint": "amb qui = avec qui"},
+    {"prompt": "El tema sobre ___ escriu és interessant. (lequel — formel)", "answer": "el qual", "hint": "sobre el qual = sur lequel"},
+    {"prompt": "No entenc el ___ dius. (ce que)", "answer": "que", "hint": "el que = ce que"},
+    {"prompt": "La família ___ vivia al costat s'ha mudat. (qui — sujet)", "answer": "que", "hint": "que = qui (sujet)"},
+    {"prompt": "El país ___ vaig néixer és molt bonic. (où — lieu)", "answer": "on", "hint": "on = où (lieu de naissance)"},
+    {"prompt": "Les raons per les ___ ho ha fet són complexes. (lesquelles — formel)", "answer": "quals", "hint": "per les quals = pour lesquelles"},
+    {"prompt": "El professor ___ ens va ensenyar matemàtiques ha jubilat. (qui)", "answer": "que", "hint": "que = qui (sujet)"},
+    {"prompt": "La pel·lícula de ___ et parlava ha guanyat un premi. (dont)", "answer": "la qual", "hint": "de la qual = dont (chose féminine — formel)"},
+    {"prompt": "Fes el ___ vulguis. (ce que tu veux)", "answer": "que", "hint": "el que = ce que"},
+    {"prompt": "La empresa per ___ treballa és catalana. (laquelle — formel)", "answer": "la qual", "hint": "per la qual = pour laquelle"},
+    {"prompt": "Això és ___ em preocupa. (ce qui)", "answer": "el que", "hint": "el que = ce qui / ce que"},
+    {"prompt": "L'habitació en ___ dorm és petita. (laquelle)", "answer": "la qual", "hint": "en la qual = dans laquelle"},
+    {"prompt": "Tothom ___ va venir va passar-ho bé. (qui = tous ceux qui)", "answer": "que", "hint": "que = qui après tothom"},
+    {"prompt": "La forma ___ ho ha resolt és genial. (dont / comment)", "answer": "com", "hint": "la forma com = la façon dont"},
+    {"prompt": "El moment ___ vaig veure això no ho oblidaré mai. (où / quand)", "answer": "en què", "hint": "en què = dans lequel / auquel (moment précis — formel)"}
+  ]
+}
