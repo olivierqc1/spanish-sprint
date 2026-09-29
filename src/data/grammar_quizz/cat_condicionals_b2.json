@@ -1,0 +1,33 @@
+{
+  "note": {
+    "fr": "Les conditionnelles en catalan\n\n─────────────────────────────────────\n\n⚡ TYPE 1 — RÉEL (possible)\nSi + présent → futur ou présent\nSi tinc temps, vindré. (Si j'ai le temps, je viendrai.)\n\n─────────────────────────────────────\n\n🖼️ TYPE 2 — IRRÉEL PRÉSENT (hypothétique)\nSi + imparfait subj. → conditionnel\nSi tingués diners, viatjaria. (Si j'avais de l'argent, je voyagerais.)\n\nConditional = radical futur + -ia, -ies, -ia, -íem, -íeu, -ien\n→ parlar → parlaria, parlaries, parlaria...\n→ fer → faria / tenir → tindria / poder → podria\n→ venir → vindria / dir → diria / saber → sabria\n→ voler → voldria / ser/estar → seria/estaria\n\nImparfait subjonctif = radical + -és, -essis, -és, -éssim, -éssiu, -essin\n→ parlar → parlés, parlessis, parlés...\n→ fer → fes / tenir → tingués / poder → pogués\n→ venir → vingués / anar → anés / ser → fos\n→ estar → estigués / dir → digués / voler → volgués\n\n─────────────────────────────────────\n\n💡 TYPE 3 — IRRÉEL PASSÉ (regret, impossibilité)\nSi + plus-que-parfait subj. → conditionnel passé\nSi hagués estudiat, hauria aprovat.\n(Si j'avais étudié, j'aurais réussi.)\n\nPlus-que-parfait subj. = hagués/haguessis... + participé\nConditionnel passé = hauria/hauries... + participé\n\n─────────────────────────────────────\n\n📽️ RÉSUMÉ\n\nRéel → Si + présent + futur\nHypothétique → Si + imp.subj. + conditionnel\nPassé impossible → Si + plusq.subj. + cond.passé",
+    "en": "Conditional sentences in Catalan\n\n─────────────────────────────────────\n\n⚡ TYPE 1 — REAL (possible)\nSi + present → future or present\nSi tinc temps, vindré. (If I have time, I'll come.)\n\n─────────────────────────────────────\n\n🖼️ TYPE 2 — UNREAL PRESENT (hypothetical)\nSi + imperfect subj. → conditional\nSi tingués diners, viatjaria. (If I had money, I'd travel.)\n\nConditional = future stem + -ia, -ies, -ia, -íem, -íeu, -ien\n→ parlar → parlaria / fer → faria\n→ tenir → tindria / poder → podria\n→ venir → vindria / voler → voldria\n\nImperfect subjunctive = stem + -és, -essis, -és, -éssim, -éssiu, -essin\n→ parlar → parlés / fer → fes\n→ tenir → tingués / poder → pogués\n→ ser → fos / estar → estigués\n\n─────────────────────────────────────\n\n💡 TYPE 3 — UNREAL PAST (regret/impossibility)\nSi + past perfect subj. → past conditional\nSi hagués estudiat, hauria aprovat.\n(If I had studied, I would have passed.)\n\n─────────────────────────────────────\n\n📽️ SUMMARY\n\nReal → Si + present + future\nHypothetical → Si + imp.subj. + conditional\nImpossible past → Si + pqpf.subj. + past conditional"
+  },
+  "drills": [
+    {"prompt": "Si tinc temps, ___ (venir/jo) demà. (type 1 — réel)", "answer": "vindré", "hint": "type 1: si + présent → futur → vindré"},
+    {"prompt": "Si ___ (tenir/jo) diners, viatjaria. (type 2 — hypothétique)", "answer": "tingués", "hint": "type 2: si + imp.subj. → tingués"},
+    {"prompt": "Si tingués més temps, ___ (llegir/jo) més. (type 2)", "answer": "llegiria", "hint": "conditionnel de llegir → llegiria"},
+    {"prompt": "Si hagués estudiat, ___ (aprovar/jo). (type 3 — passé impossible)", "answer": "hauria aprovat", "hint": "type 3: cond.passé = hauria + participi"},
+    {"prompt": "Si ___ (ser/ell) més alt, jugaria a bàsquet. (type 2)", "answer": "fos", "hint": "ser imp.subj. → fos"},
+    {"prompt": "Si fa bon temps demà, ___ (sortir/nosaltres). (type 1)", "answer": "sortirem", "hint": "type 1: si + présent → futur"},
+    {"prompt": "Si ___ (poder/jo), t'ajudaria. (type 2)", "answer": "pogués", "hint": "poder imp.subj. → pogués"},
+    {"prompt": "Si haguessin arribat abans, ___ (veure'ns). (type 3)", "answer": "hauríem pogut veure'ns", "hint": "type 3: hauríem + infinitif"},
+    {"prompt": "Si ___ (voler/tu), podries aprendre. (type 2)", "answer": "volguessis", "hint": "voler imp.subj. tu → volguessis"},
+    {"prompt": "Si fos ric, ___ (comprar/jo) una casa gran. (type 2)", "answer": "compraria", "hint": "conditionnel de comprar → compraria"},
+    {"prompt": "Si hagués ___ (saber) la veritat, hauria actuat diferent. (type 3)", "answer": "sabut", "hint": "saber participi → sabut"},
+    {"prompt": "Parlaria català millor si ___ (practicar/jo) més. (type 2)", "answer": "practiqués", "hint": "practicar imp.subj. → practiqués"},
+    {"prompt": "Si ___ (fer) bon temps, anirem a la platja. (type 1)", "answer": "fa", "hint": "type 1: si + présent indicatif → fa"},
+    {"prompt": "___ (venir/tu) si tens temps? (type 1)", "answer": "Vindràs", "hint": "type 1 → futur → Vindràs"},
+    {"prompt": "Si ___ (saber/jo) la resposta, te la diria. (type 2)", "answer": "sabés", "hint": "saber imp.subj. → sabés"},
+    {"prompt": "Hauria vingut si ___ (saber/jo) que hi eres. (type 3)", "answer": "hagués sabut", "hint": "saber pqpf.subj. → hagués sabut"},
+    {"prompt": "Si no ___ (ploure), podríem sortir. (type 2)", "answer": "plogués", "hint": "ploure imp.subj. → plogués"},
+    {"prompt": "Si treballes molt, ___ (aconseguir) el teu objectiu. (type 1)", "answer": "aconseguiràs", "hint": "type 1 → futur"},
+    {"prompt": "Si hagués tingut el teu número, ___ (trucar/jo/t'). (type 3)", "answer": "t'hauria trucat", "hint": "type 3: hauria + participi → t'hauria trucat"},
+    {"prompt": "Si ___ (estar/ell) aquí, ho sabria. (type 2)", "answer": "estigués", "hint": "estar imp.subj. → estigués"},
+    {"prompt": "Podries ajudar-me si ___ (tenir/tu) temps? (type 2)", "answer": "tinguessis", "hint": "tenir imp.subj. tu → tinguessis"},
+    {"prompt": "Si haguessis ___ (dir) la veritat, tot aniria millor. (type 3)", "answer": "dit", "hint": "dir participi → dit"},
+    {"prompt": "Si ___ (anar/nosaltres) a peu, arribaríem tard. (type 2)", "answer": "anéssim", "hint": "anar imp.subj. nosaltres → anéssim"},
+    {"prompt": "Si ___ (fer/jo) el que vull, seria feliç. (type 2)", "answer": "fes", "hint": "fer imp.subj. jo → fes"},
+    {"prompt": "Hauria estat millor si ___ (esperar/tu). (type 3)", "answer": "haguessis esperat", "hint": "pqpf.subj. tu = haguessis + participi"}
+  ]
+}
