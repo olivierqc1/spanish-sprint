@@ -1,0 +1,33 @@
+{
+  "note": {
+    "fr": "Connecteurs d'argumentation B2\n\n─────────────────────────────────────\n\n⚡ CONCESSSION (bien que, malgré)\n\n→ malgrat que + subjonctif → bien que\n   Malgrat que plogui, sortirem.\n→ tot i que + indicatif → bien que (oral)\n   Tot i que plou, sortirem.\n→ per molt que + subjonctif → quelle que soit l'ampleur\n   Per molt que treballi, no n'hi ha prou.\n→ per bé que + subjonctif → bien que (soutenu)\n   Per bé que tingui diners, no és feliç.\n→ si bé + indicatif → même si / quoique\n   Si bé és difícil, és possible.\n\n─────────────────────────────────────\n\n🖼️ RESTRICTION (sauf si, à moins que)\n\n→ tret que + subjonctif → sauf si / à moins que\n   Ho faré, tret que tinguis un problema.\n→ llevat que + subjonctif → sauf si (plus formel)\n   Vindré, llevat que em truquis per cancel·lar.\n→ sempre que + subjonctif → à condition que\n   Ho faré, sempre que em paguis.\n→ a condició que + subjonctif → à condition que\n\n─────────────────────────────────────\n\n💡 FINALITÉ et CAUSE\n\n→ per tal que + subjonctif → pour que / afin que\n   Parla fort per tal que tothom senti.\n→ a fi que + subjonctif → afin que (soutenu)\n→ a causa de + nom → à cause de\n→ gràcies a + nom → grâce à\n→ a conseqüència de → par suite de\n\n─────────────────────────────────────\n\n📽️ REFORMULATION et EMPHASE\n\n→ és més → de plus / qui plus est\n→ d'altra banda → d'autre part\n→ per contra → par contre\n→ de tota manera → quoi qu'il en soit\n→ val a dir que → il faut dire que\n→ cal tenir en compte que → il faut tenir compte du fait que",
+    "en": "Argumentation connectors B2\n\n─────────────────────────────────────\n\n⚡ CONCESSION\n\n→ malgrat que + subj. → although\n→ tot i que + indic. → although (spoken)\n→ per molt que + subj. → however much\n→ si bé → even though / albeit\n\n─────────────────────────────────────\n\n🖼️ RESTRICTION\n\n→ tret que + subj. → unless\n→ llevat que + subj. → unless (formal)\n→ sempre que + subj. → provided that\n→ a condició que + subj. → on condition that\n\n─────────────────────────────────────\n\n💡 PURPOSE and CAUSE\n\n→ per tal que + subj. → so that / in order that\n→ a fi que + subj. → in order that (formal)\n→ a causa de → because of\n→ gràcies a → thanks to\n\n─────────────────────────────────────\n\n📽️ REFORMULATION and EMPHASIS\n\n→ és més → furthermore\n→ d'altra banda → on the other hand\n→ per contra → on the contrary\n→ de tota manera → in any case\n→ val a dir que → it must be said that"
+  },
+  "drills": [
+    {"prompt": "___ que plogui, sortirem igualment. (bien que — subjonctif)", "answer": "Malgrat", "hint": "malgrat que + subjonctif = bien que"},
+    {"prompt": "Tot i ___ plou, sortirem. (bien que — indicatif, oral)", "answer": "que", "hint": "tot i que + indicatif = bien que (registre oral)"},
+    {"prompt": "___ molt que treballi, mai n'hi ha prou. (quelle que soit l'ampleur)", "answer": "Per", "hint": "per molt que + subjonctif = quelle que soit l'ampleur"},
+    {"prompt": "Ho faré, ___ que tinguis algun problema. (sauf si)", "answer": "tret", "hint": "tret que + subjonctif = sauf si / à moins que"},
+    {"prompt": "Vindré, ___ que em truquis per cancel·lar. (sauf si — formel)", "answer": "llevat", "hint": "llevat que + subjonctif = sauf si (plus formel)"},
+    {"prompt": "T'ajudaré, ___ que em paguis. (à condition que)", "answer": "sempre", "hint": "sempre que + subjonctif = à condition que / pourvu que"},
+    {"prompt": "Parla fort ___ tal que tothom senti. (pour que / afin que)", "answer": "per", "hint": "per tal que + subjonctif = pour que / afin que"},
+    {"prompt": "___ bé és difícil, és possible si t'esforces. (même si / quoique)", "answer": "Si", "hint": "si bé = même si / quoique (+ indicatif)"},
+    {"prompt": "Ha suspès ___ causa de la seva falta de preparació. (à cause de)", "answer": "a", "hint": "a causa de + nom = à cause de"},
+    {"prompt": "Ha aprovat ___ a la seva constància. (grâce à)", "answer": "gràcies", "hint": "gràcies a + nom = grâce à"},
+    {"prompt": "___ més, ha guanyat un premi. (de plus / qui plus est)", "answer": "És", "hint": "és més = de plus / qui plus est (en milieu de phrase)"},
+    {"prompt": "D'___ banda, cal considerar els costos. (d'autre part)", "answer": "altra", "hint": "d'altra banda = d'autre part"},
+    {"prompt": "___ contra, els resultats han estat positius. (par contre)", "answer": "Per", "hint": "per contra = par contre / en revanche"},
+    {"prompt": "De ___ manera, ho haurem de decidir. (quoi qu'il en soit)", "answer": "tota", "hint": "de tota manera = quoi qu'il en soit / de toute façon"},
+    {"prompt": "Val a ___ que la situació és complicada. (il faut dire que)", "answer": "dir", "hint": "val a dir que = il faut dire que / il convient de noter que"},
+    {"prompt": "___ bé que tingui diners, no n'és feliç. (bien que — soutenu)", "answer": "Per", "hint": "per bé que + subjonctif = bien que (registre soutenu)"},
+    {"prompt": "Cal tenir en ___ que no és la primera vegada. (il faut tenir compte)", "answer": "compte", "hint": "cal tenir en compte que = il faut tenir compte du fait que"},
+    {"prompt": "Ho faré ___ condició que m'expliquis el motiu. (à condition que)", "answer": "a", "hint": "a condició que + subjonctif = à condition que"},
+    {"prompt": "___ a conseqüència de la crisi, moltes empreses han tancat. (par suite de)", "answer": "A", "hint": "a conseqüència de = par suite de / en conséquence de"},
+    {"prompt": "A fi ___ que tothom entengui, ho explicaré de nou. (afin que — soutenu)", "answer": "que", "hint": "a fi que + subjonctif = afin que (registre soutenu)"},
+    {"prompt": "Malgrat ___ dificultats, hem acabat el projecte. (malgré — nom, sans subj.)", "answer": "les", "hint": "malgrat + article + nom (sans subjonctif) = malgré les difficultés"},
+    {"prompt": "___ bé té experiència, li falta confiança. (bien que — soutenu)", "answer": "Si", "hint": "si bé = quoique / bien que (+ indicatif)"},
+    {"prompt": "Li ho dius ___ tal que no s'ofengui. (pour qu'il ne soit pas offensé)", "answer": "per", "hint": "per tal que + subjonctif = pour que / de façon que"},
+    {"prompt": "Tret ___ tinguis una raó molt bona, no canviaré d'opinió. (à moins que)", "answer": "que", "hint": "tret que + subjonctif = à moins que"},
+    {"prompt": "Per ___ que ho intenti, no pot. (quels que soient ses efforts)", "answer": "molt", "hint": "per molt que = quels que soient les efforts / quelle que soit l'ampleur"}
+  ]
+}
