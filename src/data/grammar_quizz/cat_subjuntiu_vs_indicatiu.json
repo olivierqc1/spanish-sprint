@@ -1,0 +1,33 @@
+{
+  "note": {
+    "fr": "Subjonctif vs Indicatif en catalan\n\n─────────────────────────────────────\n\n⚡ INDICATIF — faits réels, certains\n\nAprès : creure que, pensar que, saber que,\ndir que, veure que, notar que\n→ Crec que tens raó. (Je crois que tu as raison.)\n→ Sé que vindrà. (Je sais qu'il viendra.)\n→ Veig que estàs cansat. (Je vois que tu es fatigué.)\n\n─────────────────────────────────────\n\n🖼️ SUBJONCTIF — doute, volonté, émotion\n\nAprès : voler que, esperar que, necessitar que,\ndemanar que, dubtar que, tenir por que\n→ Vull que vinguis. (Je veux que tu viennes.)\n→ Espero que tot vagi bé. (J'espère que tout ira bien.)\n→ Dubto que sigui veritat. (Je doute que ce soit vrai.)\n\n─────────────────────────────────────\n\n💡 LE VERBE FAIT TOUT\n\nCREC QUE → indicatif (affirmation positive)\nNO CREC QUE → subjonctif (doute)\n→ Crec que VÉ. (Je crois qu'il vient.) ✓\n→ No crec que VINGUI. (Je ne crois pas qu'il vienne.) ✓\n\nPENSO QUE → indicatif\nNO PENSO QUE → subjonctif\n\nÉS CERT QUE → indicatif\nNO ÉS CERT QUE → subjonctif\n\n─────────────────────────────────────\n\n📽️ CONNECTEURS → TOUJOURS SUBJONCTIF\n\n→ perquè (pour que, but) → subjonctif\n   Parla fort perquè t'escoltin.\n→ fins que (jusqu'à ce que) → subjonctif\n→ abans que (avant que) → subjonctif\n→ per tal que (afin que) → subjonctif\n→ malgrat que (bien que) → subjonctif\n→ tret que (à moins que) → subjonctif\n\n─────────────────────────────────────\n\n🎬 CONNECTEURS → TOUJOURS INDICATIF\n\n→ perquè (parce que, cause) → indicatif\n   Parla fort perquè hi ha soroll.\n→ quan (quand — fait réel) → indicatif\n→ com que (puisque) → indicatif\n→ ja que (puisque) → indicatif",
+    "en": "Subjunctive vs Indicative in Catalan\n\n─────────────────────────────────────\n\n⚡ INDICATIVE — real, certain facts\n\nAfter: creure que, pensar que, saber que\n→ Crec que tens raó.\n→ Sé que vindrà.\n\n─────────────────────────────────────\n\n🖼️ SUBJUNCTIVE — doubt, will, emotion\n\nAfter: voler que, esperar que, dubtar que\n→ Vull que vinguis.\n→ Dubto que sigui veritat.\n\n─────────────────────────────────────\n\n💡 THE VERB DETERMINES THE MOOD\n\nCREC QUE → indicative (positive)\nNO CREC QUE → subjunctive (doubt)\n\n─────────────────────────────────────\n\n📽️ CONNECTORS → ALWAYS SUBJUNCTIVE\n\n→ perquè (so that) / fins que / abans que\n→ per tal que / malgrat que / tret que\n\n─────────────────────────────────────\n\n🎬 CONNECTORS → ALWAYS INDICATIVE\n\n→ perquè (because) / com que / ja que\n→ quan (real fact)"
+  },
+  "drills": [
+    {"prompt": "Crec que ___ (tenir/ell) raó. (indicatif — croire que)", "answer": "té", "hint": "crec que (positif) + indicatif → té"},
+    {"prompt": "No crec que ___ (tenir/ell) raó. (subjonctif — ne pas croire que)", "answer": "tingui", "hint": "no crec que + subjonctif → tingui"},
+    {"prompt": "Vull que tu ___ (venir) demà. (subjonctif — vouloir que)", "answer": "vinguis", "hint": "voler que + subjonctif → vinguis"},
+    {"prompt": "Sé que ell ___ (venir) demà. (indicatif — savoir que)", "answer": "vindrà", "hint": "saber que + indicatif → vindrà (futur)"},
+    {"prompt": "Espero que tot ___ (anar) bé. (subjonctif — espérer que)", "answer": "vagi", "hint": "esperar que + subjonctif → vagi"},
+    {"prompt": "Veig que ___ (estar/tu) cansat. (indicatif — voir que)", "answer": "estàs", "hint": "veure que + indicatif → estàs"},
+    {"prompt": "Parla fort perquè tothom ___ (escoltar). (but → subjonctif)", "answer": "escolti", "hint": "perquè (but) + subjonctif → escolti"},
+    {"prompt": "Parla fort perquè hi ___ (haver) molt de soroll. (cause → indicatif)", "answer": "ha", "hint": "perquè (cause) + indicatif → hi ha"},
+    {"prompt": "Dubto que ell ___ (dir) la veritat. (subjonctif — douter que)", "answer": "digui", "hint": "dubtar que + subjonctif → digui"},
+    {"prompt": "És cert que ___ (haver-hi) un problema. (indicatif — c'est certain)", "answer": "hi ha", "hint": "és cert que + indicatif → hi ha"},
+    {"prompt": "No és cert que ___ (haver-hi) un problema. (subjonctif — pas certain)", "answer": "hi hagi", "hint": "no és cert que + subjonctif → hi hagi"},
+    {"prompt": "Penso que ___ (ser) la millor opció. (indicatif — penser que)", "answer": "és", "hint": "pensar que (positif) + indicatif → és"},
+    {"prompt": "No penso que ___ (ser) la millor opció. (subjonctif)", "answer": "sigui", "hint": "no pensar que + subjonctif → sigui"},
+    {"prompt": "Necessito que ___ (fer/tu) això ara. (subjonctif — avoir besoin que)", "answer": "facis", "hint": "necessitar que + subjonctif → facis"},
+    {"prompt": "Esperaré fins que ___ (arribar/tu). (subjonctif — jusqu'à ce que)", "answer": "arribiis", "hint": "fins que + subjonctif → arribis"},
+    {"prompt": "T'escriuré abans que ___ (marxar/tu). (subjonctif — avant que)", "answer": "marxis", "hint": "abans que + subjonctif → marxis"},
+    {"prompt": "Quan ___ (arribar/tu), truca'm. (indicatif — quand fait réel)", "answer": "arribiis", "hint": "quan + indicatif (fait futur réel) → arribes... wait: quan + futur = indicatif présent: arribes"},
+    {"prompt": "Com que ___ (ploure), no sortirem. (indicatif — puisque)", "answer": "plou", "hint": "com que (puisque) + indicatif → plou"},
+    {"prompt": "M'alegro que ___ (venir/tu). (subjonctif — émotion)", "answer": "vinguis", "hint": "alegrar-se que + subjonctif → vinguis"},
+    {"prompt": "Temo que no ___ (poder/ell) venir. (subjonctif — craindre que)", "answer": "pugui", "hint": "témer que + subjonctif → pugui"},
+    {"prompt": "Sé que ___ (ser) difícil, però ho intentarem. (indicatif)", "answer": "és", "hint": "saber que + indicatif → és"},
+    {"prompt": "Malgrat que ___ (ploure), sortim. (subjonctif — bien que)", "answer": "plogui", "hint": "malgrat que + subjonctif → plogui"},
+    {"prompt": "Ho faré tret que ___ (tenir/tu) un altre pla. (subjonctif — à moins que)", "answer": "tinguis", "hint": "tret que + subjonctif → tinguis"},
+    {"prompt": "Ara que ___ (saber/jo) la veritat, tot és diferent. (indicatif — maintenant que)", "answer": "sé", "hint": "ara que + indicatif → sé"},
+    {"prompt": "Busco algú que ___ (parlar) japonès. (subjonctif — indéfini)", "answer": "parli", "hint": "relatif après indéfini → subjonctif: parli"}
+  ]
+}
