@@ -1,26 +1,33 @@
 {
-  "id": "cat_estil_indirecte",
-  "title": {
-    "fr": "Catalan — Le discours indirect (estil indirecte)",
-    "en": "Catalan — Reported speech (estil indirecte)"
-  },
-  "level": "B2",
   "note": {
-    "fr": "⚙️ Rapporter les paroles de quelqu'un avec 'que'. Si le verbe introducteur (diu, va dir, deia...) est au PASSÉ, le temps du verbe rapporté recule (concordança temporal). S'il est au présent, rien ne change.\n\n💡 CONCORDANÇA (verbe introducteur au passé)\n\n| Estil directe | Estil indirecte |\n|---|---|\n| present | imperfet |\n| futur | condicional |\n| pretèrit perfet / passat perifràstic | plusquamperfet |\n| imperatiu | que + imperfet de subjuntiu * |\n\n* forme avancée, voir la leçon sur l'imperfet de subjuntiu.\n\n💡 DEÍCTICS (les mots de lieu/temps changent aussi)\n\n| Directe | Indirecte |\n|---|---|\n| aquí | allà |\n| ara | aleshores / llavors |\n| avui | aquell dia |\n| demà | l'endemà |\n| ahir | el dia abans |\n| aquest / aquesta | aquell / aquella |\n\n💡 Exemple complet : \"Vindré demà,\" va dir en Pau. → En Pau va dir que vindria l'endemà. (futur → condicional, demà → l'endemà)",
-    "en": "⚙️ Reporting what someone said with 'que'. If the reporting verb (diu, va dir, deia...) is in the PAST, the reported verb's tense shifts back (tense agreement). If it's in the present, nothing changes.\n\n💡 TENSE SHIFT (reporting verb in the past)\n\n| Direct speech | Reported speech |\n|---|---|\n| present | imperfect |\n| future | conditional |\n| present perfect / simple past | pluperfect |\n| imperative | que + imperfect subjunctive * |\n\n* advanced form, see the imperfect subjunctive lesson.\n\n💡 DEICTICS (place/time words change too)\n\n| Direct | Reported |\n|---|---|\n| aquí (here) | allà (there) |\n| ara (now) | aleshores / llavors (then) |\n| avui (today) | aquell dia (that day) |\n| demà (tomorrow) | l'endemà (the next day) |\n| ahir (yesterday) | el dia abans (the day before) |\n| aquest / aquesta (this) | aquell / aquella (that) |\n\n💡 Full example: \"Vindré demà,\" va dir en Pau. → En Pau va dir que vindria l'endemà. (future → conditional, demà → l'endemà)"
+    "fr": "Le discours indirect en catalan (Estil indirecte)\n\n─────────────────────────────────────\n\n⚡ RAPPORTER DES PAROLES\n\nDiscours direct → Discours indirect\nDiu: «Estic cansat» → Diu que està cansat.\nHa dit: «Vindré» → Ha dit que vindria.\n\nVerbes introducteurs :\n→ dir (dire) → dir que\n→ explicar (expliquer) → explicar que\n→ afirmar (affirmer) → afirmar que\n→ preguntar (demander) → preguntar si / preguntar + mot interrogatif\n→ demanar (demander/ordonner) → demanar que + subjonctif\n→ assegurar (assurer) → assegurar que\n\n─────────────────────────────────────\n\n🖼️ CHANGEMENTS DE TEMPS\n\nSi verbe introducteur au PASSÉ :\n→ présent → imparfait\n   «Estic cansat» → Va dir que estava cansat.\n→ futur → conditionnel\n   «Vindré» → Va dir que vindria.\n→ passé composé → plus-que-parfait\n   «He menjat» → Va dir que havia menjat.\n→ impératif → subjonctif imparfait\n   «Vine!» → Va demanar que vingués.\n\nSi verbe introducteur au PRÉSENT :\n→ pas de changement de temps\n   Diu que «Estic cansat» → Diu que està cansat.\n\n─────────────────────────────────────\n\n💡 QUESTIONS INDIRECTES\n\nQuestion oui/non → preguntar si\n«Véns?» → Va preguntar si venia.\n\nQuestion avec mot interrogatif → garde le mot\n«Quan arribes?» → Va preguntar quan arribava.\n«Qui ets?» → Va preguntar qui era.\n«On vas?» → Va preguntar on anava.\n\n─────────────────────────────────────\n\n📽️ PRONOMS et DEIXIS\n\n«Jo» → ell/ella / «Tu» → jo\n«Aquí» → allí / «Ara» → aleshores\n«Avui» → aquell dia / «Demà» → l'endemà",
+    "en": "Indirect speech in Catalan (Estil indirecte)\n\n─────────────────────────────────────\n\n⚡ REPORTING SPEECH\n\nDirect → Indirect\nDiu: «Estic cansat» → Diu que està cansat.\nHa dit: «Vindré» → Ha dit que vindria.\n\nReporting verbs:\n→ dir → dir que\n→ explicar → explicar que\n→ preguntar → preguntar si / preguntar + question word\n→ demanar → demanar que + subjunctive\n\n─────────────────────────────────────\n\n🖼️ TENSE CHANGES (past reporting verb)\n\n→ present → imperfect\n→ future → conditional\n→ present perfect → pluperfect\n→ imperative → imperfect subjunctive\n\nIf reporting verb is PRESENT: no tense change.\n\n─────────────────────────────────────\n\n💡 INDIRECT QUESTIONS\n\nYes/no question → preguntar si\n«Véns?» → Va preguntar si venia.\n\nWith question word → keep the word\n«Quan arribes?» → Va preguntar quan arribava."
   },
   "drills": [
-    { "prompt": "Directe: \"Vinc a la festa.\" — Indirecte: La Marta diu que ___ a la festa. (present, verb introductori en present)", "answer": "ve", "options": ["ve", "venia", "vindria", "vingués"] },
-    { "prompt": "Directe: \"Vindré demà.\" — Indirecte: En Jordi va dir que ___ l'endemà. (futur → condicional)", "answer": "vindria", "options": ["vindria", "vindrà", "ve", "venia"] },
-    { "prompt": "Directe: \"Estic cansat.\" — Indirecte: Em va dir que ___ cansat. (present → imperfet)", "answer": "estava", "options": ["estava", "està", "estarà", "estigués"] },
-    { "prompt": "Directe: \"He acabat la feina.\" — Indirecte: Va dir que ___ la feina. (pretèrit perfet → plusquamperfet)", "answer": "havia acabat", "options": ["havia acabat", "ha acabat", "hauria acabat", "acabava"] },
-    { "prompt": "Directe: \"Vaig anar al cinema.\" — Indirecte: Em va explicar que ___ al cinema. (passat perifràstic → plusquamperfet)", "answer": "havia anat", "options": ["havia anat", "va anar", "aniria", "anava"] },
-    { "prompt": "Directe: \"Vinc aquí demà.\" — Indirecte: Va dir que vindria ___ l'endemà. (aquí → allà)", "answer": "allà", "options": ["allà", "aquí", "ara", "avui"] },
-    { "prompt": "Directe: \"Ho vaig veure ahir.\" — Indirecte: Va dir que ho havia vist ___. (ahir → el dia abans)", "answer": "el dia abans", "options": ["el dia abans", "ahir", "avui", "l'endemà"] },
-    { "prompt": "Directe: \"Ho faré avui.\" — Indirecte: Va dir que ho faria ___. (avui → aquell dia)", "answer": "aquell dia", "options": ["aquell dia", "avui", "ara", "demà"] },
-    { "prompt": "Directe: \"Tinc gana.\" — Indirecte: Diu que ___ gana. (present, verb introductori en present, sense canvi)", "answer": "té", "options": ["té", "tenia", "tindria", "tingués"] },
-    { "prompt": "Directe: \"No puc venir.\" — Indirecte: Va dir que no ___ venir. (present → imperfet)", "answer": "podia", "options": ["podia", "pot", "podria", "pogués"] },
-    { "prompt": "Directe: \"Estudiaré medicina.\" — Indirecte: Va explicar que ___ medicina. (futur → condicional)", "answer": "estudiaria", "options": ["estudiaria", "estudiarà", "estudia", "estudiava"] },
-    { "prompt": "Directe: \"Aquest llibre és molt bo.\" — Indirecte: Va dir que ___ llibre era molt bo. (aquest → aquell)", "answer": "aquell", "options": ["aquell", "aquest", "aquella", "aquesta"] }
+    {"prompt": "«Estic cansat.» → Va dir que ___ cansat. (discours indirect passé)", "answer": "estava", "hint": "présent → imparfait au discours indirect"},
+    {"prompt": "«Vindré demà.» → Va dir que ___ l'endemà. (discours indirect passé)", "answer": "vindria", "hint": "futur → conditionnel au discours indirect"},
+    {"prompt": "«He menjat.» → Va dir que havia ___. (discours indirect passé)", "answer": "menjat", "hint": "passé composé → plus-que-parfait: havia menjat"},
+    {"prompt": "«Vine aquí!» → Va demanar que ___. (discours indirect — ordre)", "answer": "vingués", "hint": "impératif → subj.imparfait: vingués"},
+    {"prompt": "«Véns?» → Va preguntar si ___. (question oui/non)", "answer": "venia", "hint": "preguntar si + imparfait: venia"},
+    {"prompt": "«Quan arribes?» → Va preguntar quan ___. (question indirecte)", "answer": "arribava", "hint": "preguntar quan + imparfait: arribava"},
+    {"prompt": "«Tenim un problema.» → Van dir que ___ un problema. (passé)", "answer": "tenien", "hint": "tenir présent → imparfait: tenien"},
+    {"prompt": "«On vas?» → Va preguntar on ___. (question indirecte passé)", "answer": "anava", "hint": "preguntar on + imparfait: anava"},
+    {"prompt": "«Ho faré.» → Va assegurar que ho ___. (discours indirect passé)", "answer": "faria", "hint": "futur → conditionnel: faria"},
+    {"prompt": "«No sé res.» → Va dir que no ___ res. (discours indirect passé)", "answer": "sabia", "hint": "saber présent → imparfait: sabia"},
+    {"prompt": "«Qui és?» → Va preguntar qui ___. (question indirecte passé)", "answer": "era", "hint": "ser présent → imparfait: era"},
+    {"prompt": "«Esteu bé?» → Va preguntar si ___. (question indirecte passé)", "answer": "estaven bé", "hint": "estar présent pl. → imparfait: estaven bé"},
+    {"prompt": "«Fes-ho ara!» → Va demanar que ___ en aquell moment. (ordre passé)", "answer": "ho fes", "hint": "fer impératif → subj.imparfait: ho fes"},
+    {"prompt": "«He vist la pel·lícula.» → Va dir que ___ la pel·lícula. (passé)", "answer": "havia vist", "hint": "passé composé → plus-que-parfait: havia vist"},
+    {"prompt": "Diu: «Estic content.» → Diu que ___ content. (présent → présent)", "answer": "està", "hint": "verbe introducteur présent → pas de changement"},
+    {"prompt": "«Quants anys tens?» → Va preguntar quants anys ___. (passé)", "answer": "tenia", "hint": "tenir présent → imparfait: tenia"},
+    {"prompt": "«Ho he fet jo.» → Va explicar que ___ ell. (passé)", "answer": "ho havia fet", "hint": "passé composé → plus-que-parfait: ho havia fet"},
+    {"prompt": "«No vinguis!» → Va demanar que no ___. (ordre négatif passé)", "answer": "vingués", "hint": "impératif négatif → subj.imparfait: vingués"},
+    {"prompt": "«Podem ajudar-te.» → Van dir que ___ ajudar-me. (passé)", "answer": "podien", "hint": "poder présent → imparfait: podien"},
+    {"prompt": "«Sé la resposta.» → Va afirmar que ___ la resposta. (passé)", "answer": "sabia", "hint": "saber présent → imparfait: sabia"},
+    {"prompt": "«Per què no véns?» → Va preguntar per què no ___. (passé)", "answer": "venia", "hint": "venir présent → imparfait: venia"},
+    {"prompt": "«Hem decidit marxar.» → Van dir que ___ marxar. (passé)", "answer": "havien decidit", "hint": "passé composé → plus-que-parfait: havien decidit"},
+    {"prompt": "«Escolta'm!» → Va demanar que ___ . (ordre passé)", "answer": "l'escoltés", "hint": "escoltar impératif → subj.imparfait: l'escoltés"},
+    {"prompt": "Diu: «Ho faré demà.» → Diu que ___ demà. (présent → présent)", "answer": "ho farà", "hint": "verbe introducteur présent → futur reste futur"},
+    {"prompt": "«On éreu?» → Va preguntar on ___. (passé)", "answer": "eren", "hint": "ser présent pl. → imparfait: eren"}
   ]
 }
