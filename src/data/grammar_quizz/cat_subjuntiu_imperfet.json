@@ -1,0 +1,33 @@
+{
+  "note": {
+    "fr": "Le subjonctif imparfait en catalan (Imperfet de subjuntiu)\n\n─────────────────────────────────────\n\n⚡ QUAND L'UTILISER ?\n\n→ Dans les conditionnelles type 2 (Si + imp.subj.)\n   Si tingués diners, viatjaria. (Si j'avais de l'argent...)\n→ Après des verbes au passé demandant le subjonctif\n   Volia que vingués. (Je voulais qu'il vienne.)\n→ Après certaines expressions\n   com si... (comme si), per molt que... (bien que...)\n→ Pour exprimer un souhait improbable\n   M'agradaria que fos diferent. (J'aimerais que ce soit différent.)\n\n─────────────────────────────────────\n\n🖼️ FORMATION — terminaisons\n\nTous les verbes (sauf irreguliers) :\njo -és · tu -essis · ell -és\nnosaltres -éssim · vosaltres -éssiu · ells -essin\n\nVerbes -AR : parlar → parl-és\n→ parlés, parlessis, parlés, parléssim, parléssiu, parlessin\n\nVerbes -ER/-RE : beure → begu-és\n→ begués, beguessis, begués, beguéssim, beguéssiu, beguessin\n\nVerbes -IR : llegir → llegiés / dormir → dormís\n→ llegís, llegissis, llegís, llegíssim, llegíssiu, llegissin\n\n─────────────────────────────────────\n\n💡 IRRÉGULIERS ESSENTIELS\n\n→ ser → fos, fossis, fos, fóssim, fóssiu, fossin\n→ estar → estigués, estiguessis, estigués...\n→ tenir → tingués, tinguessis, tingués...\n→ fer → fes, fessis, fes, féssim, féssiu, fessin\n→ anar → anés, anessis, anés...\n→ poder → pogués, poguessis, pogués...\n→ venir → vingués, vinguessis, vingués...\n→ voler → volgués, volguessis, volgués...\n→ dir → digués, diguessis, digués...\n→ saber → sabés, sabessis, sabés...\n→ haver → hagués, haguessis, hagués...",
+    "en": "Imperfect subjunctive in Catalan\n\n─────────────────────────────────────\n\n⚡ WHEN TO USE IT?\n\n→ In type 2 conditionals (Si + imp.subj.)\n   Si tingués diners, viatjaria.\n→ After past-tense verbs requiring subjunctive\n   Volia que vingués. (I wanted him to come.)\n→ After certain expressions\n   com si... (as if), per molt que... (even though)\n→ To express an unlikely wish\n   M'agradaria que fos diferent.\n\n─────────────────────────────────────\n\n🖼️ FORMATION — endings\n\nAll verbs (except irregulars):\njo -és · tu -essis · ell -és\nnosaltres -éssim · vosaltres -éssiu · ells -essin\n\n-AR verbs: parlar → parlés\n-ER/-RE verbs: beure → begués\n-IR verbs: llegir → llegís\n\n─────────────────────────────────────\n\n💡 KEY IRREGULARS\n\n→ ser → fos / estar → estigués\n→ tenir → tingués / fer → fes\n→ anar → anés / poder → pogués\n→ venir → vingués / voler → volgués\n→ dir → digués / haver → hagués"
+  },
+  "drills": [
+    {"prompt": "Si ___ (tenir/jo) més temps, llegiria més. (imp.subj.)", "answer": "tingués", "hint": "tenir imp.subj. jo → tingués"},
+    {"prompt": "Volia que tu ___ (venir) a la festa. (imp.subj.)", "answer": "vinguessis", "hint": "venir imp.subj. tu → vinguessis"},
+    {"prompt": "Si ___ (ser/ell) més alt, jugaria a bàsquet. (imp.subj.)", "answer": "fos", "hint": "ser imp.subj. ell → fos"},
+    {"prompt": "M'agradaria que tot ___ (ser) més senzill. (imp.subj.)", "answer": "fos", "hint": "ser imp.subj. → fos"},
+    {"prompt": "Parlava com si ___ (saber) tot. (imp.subj.)", "answer": "sabés", "hint": "saber imp.subj. → sabés (com si = comme si)"},
+    {"prompt": "Li vaig demanar que ___ (fer) silenci. (imp.subj.)", "answer": "fes", "hint": "fer imp.subj. → fes"},
+    {"prompt": "Si ___ (poder/jo), t'ajudaria. (imp.subj.)", "answer": "pogués", "hint": "poder imp.subj. jo → pogués"},
+    {"prompt": "Esperava que nosaltres ___ (arribar) a temps. (imp.subj.)", "answer": "arribéssim", "hint": "arribar imp.subj. nosaltres → arribéssim"},
+    {"prompt": "Per molt que ___ (estudiar/ell), no aprovava. (imp.subj.)", "answer": "estudïés", "hint": "estudiar imp.subj. → estudiés"},
+    {"prompt": "Si ___ (voler/tu), podries canviar-ho. (imp.subj.)", "answer": "volguessis", "hint": "voler imp.subj. tu → volguessis"},
+    {"prompt": "Va parlar com si ___ (conèixer) tothom. (imp.subj.)", "answer": "conegués", "hint": "conèixer imp.subj. → conegués"},
+    {"prompt": "Li vaig dir que ___ (estar) tranquil. (imp.subj.)", "answer": "estigués", "hint": "estar imp.subj. → estigués"},
+    {"prompt": "Si ___ (anar/nosaltres) a peu, arribaríem tard. (imp.subj.)", "answer": "anéssim", "hint": "anar imp.subj. nosaltres → anéssim"},
+    {"prompt": "Necessitava algú que ___ (parlar) japonès. (imp.subj.)", "answer": "parlés", "hint": "parlar imp.subj. → parlés (relatif indéfini au passé)"},
+    {"prompt": "Volia que ella ___ (dir) la veritat. (imp.subj.)", "answer": "digués", "hint": "dir imp.subj. → digués"},
+    {"prompt": "Si ___ (fer) bon temps, aniríem a la platja. (imp.subj.)", "answer": "fes", "hint": "fer imp.subj. → fes"},
+    {"prompt": "Era impossible que ___ (haver) passat això. (imp.subj.)", "answer": "hagués", "hint": "haver imp.subj. → hagués"},
+    {"prompt": "Ojalà ___ (tenir/jo) una casa gran! (souhait irréel)", "answer": "tingués", "hint": "ojalà + imp.subj. → tingués"},
+    {"prompt": "Preferia que vosaltres ___ (quedar-se). (imp.subj.)", "answer": "us quedéssiu", "hint": "quedar-se imp.subj. vosaltres → us quedéssiu"},
+    {"prompt": "Si ___ (saber/jo) la resposta, te la diria. (imp.subj.)", "answer": "sabés", "hint": "saber imp.subj. jo → sabés"},
+    {"prompt": "Va actuar com si no ___ (saber) res. (imp.subj.)", "answer": "sabés", "hint": "saber imp.subj. → sabés"},
+    {"prompt": "Dubtava que ells ___ (poder) acabar a temps. (imp.subj.)", "answer": "poguessin", "hint": "poder imp.subj. ells → poguessin"},
+    {"prompt": "Si ___ (venir/tu) demà, ho veuríem junts. (imp.subj.)", "answer": "vinguessis", "hint": "venir imp.subj. tu → vinguessis"},
+    {"prompt": "Volia que els nens ___ (anar) a dormir aviat. (imp.subj.)", "answer": "anessin", "hint": "anar imp.subj. ells → anessin"},
+    {"prompt": "Era necessari que jo ___ (dir) la veritat. (imp.subj.)", "answer": "digués", "hint": "dir imp.subj. jo → digués"}
+  ]
+}
