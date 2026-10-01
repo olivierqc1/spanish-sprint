@@ -6,8 +6,8 @@
   },
   "level": "A2",
   "note": {
-    "fr": "4 verbes à ne pas confondre\n\n─────────────────────────────────────\n\n⚡ PORTAR = porter / apporter / emmener\n→ porto un abric (je porte un manteau)\n→ porta el pa! (apporte le pain!)\n→ el bus porta molta gent (le bus emmène beaucoup de monde)\nUsage : vêtements, objets qu'on apporte\n\n─────────────────────────────────────\n\n🖼️ DUR = porter / apporter (synonyme oral de portar)\n→ duo la motxilla (je porte le sac à dos)\n→ duu una camisa vermella (il porte une chemise rouge)\nUsage : même sens que portar, plus courant à Barcelone à l'oral\n\n─────────────────────────────────────\n\n💡 TENIR = avoir / tenir / posséder\n→ tinc el llibre a la mà (j'ai le livre en main)\n→ té molt de talent (il a beaucoup de talent)\nUsage : possession, tenir quelque chose\n\n─────────────────────────────────────\n\n📽️ AGUANTAR = tenir bon / supporter / maintenir\n→ aguanta la porta! (tiens la porte! = maintiens-la ouverte)\n→ aguanto el dolor (je supporte la douleur)\n→ no aguanto més (je n'en peux plus)\nUsage : résistance, tolérance, maintenir en place\n\n─────────────────────────────────────\n\n🎬 AGAFAR = prendre / attraper / saisir\n→ agafa el metro (prends le métro)\n→ agafa la pilota! (attrape le ballon!)\n→ agafa el telèfon (réponds au téléphone)\nUsage : saisir, attraper, prendre un transport",
-    "en": "4 verbs not to confuse\n\n─────────────────────────────────────\n\n⚡ PORTAR = to carry / to bring / to wear\n→ porto un abric (I'm wearing a coat)\n→ porta el pa! (bring the bread!)\nUse: clothing, bringing objects\n\n─────────────────────────────────────\n\n🖼️ DUR = to carry / to wear (oral synonym of portar)\n→ duo la motxilla (I'm carrying the backpack)\n→ duu una camisa (he's wearing a shirt)\nUse: same as portar, more common in spoken Barcelona Catalan\n\n─────────────────────────────────────\n\n💡 TENIR = to have / to hold\n→ tinc el llibre a la mà (I'm holding the book)\n→ té molt de talent (he has a lot of talent)\nUse: possession, holding something\n\n─────────────────────────────────────\n\n📽️ AGUANTAR = to hold / to bear / to stand\n→ aguanta la porta! (hold the door! = keep it open)\n→ no aguanto més (I can't stand it anymore)\nUse: resistance, tolerating, keeping in place\n\n─────────────────────────────────────\n\n🎬 AGAFAR = to take / to catch / to grab\n→ agafa el metro (take the metro)\n→ agafa la pilota! (catch the ball!)\nUse: grabbing, catching, taking transport"
+    "fr": "**portar / dur** = porter (un vêtement), apporter, emmener — *dur* est le synonyme plus oral, surtout à Barcelone. **tenir** = avoir, posséder, tenir en main. **aguantar** = tenir bon, maintenir, supporter (tolérer). **agafar** = prendre, attraper, saisir.\n\nTape seulement le **verbe conjugué** qui manque (le reste de la phrase est là pour le contexte).",
+    "en": "**portar / dur** = to wear, carry, bring. **tenir** = to have, hold. **aguantar** = to hold up, endure. **agafar** = to grab. Type only the missing conjugated verb."
   },
   "country": "catalonia",
   "drills": [
@@ -165,7 +165,7 @@
       "hint": "1re pers. pluriel de aguantar"
     },
     {
-      "prompt": "Quel verbe pour « supporter/tolérer »? Écris l'infinitif. →",
+      "prompt": "Quel verbe pour « supporter/tolérer »? Écris l'infinitif. → ",
       "answer": "aguantar",
       "hint": "infinitif"
     }
