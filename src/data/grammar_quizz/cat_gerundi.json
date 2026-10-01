@@ -121,7 +121,7 @@
     },
     {
       "prompt": "Corrige : ✗ Va caure, trencant-se la cama → Va caure ___ ___ ___ ___ la cama. [i + es va trencar]",
-      "answer": "i es va trencar"
+      "answer": "trencar"
     }
   ]
 }
