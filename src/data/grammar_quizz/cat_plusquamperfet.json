@@ -59,9 +59,8 @@
       "answer": "Vas"
     },
     {
-      "prompt": "vaig ___ menjar = futur proche (je vais manger)",
-      "answer": "a",
-      "hint": "futur = vaig A + infinitif / passé = vaig + infinitif (sans 'a')"
+      "prompt": "Comment distingue-t-on 'vaig a menjar' (futur) de 'vaig menjar' (passé) ?",
+      "answer": "futur = vaig A + infinitif"
     },
     {
       "prompt": "Traduis : J'avais étudié mais j'ai échoué → ___ estudiat però vaig suspendre.",
