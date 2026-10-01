@@ -11,154 +11,124 @@
   },
   "drills": [
     {
-      "prompt": "Je le vois. (ell) → Jo ___ veig.",
-      "answer": "el",
-      "hint": "COD masc. sing. → el"
+      "prompt": "Je le vois. (ell) → català (COD)",
+      "answer": "El veig."
     },
     {
-      "prompt": "Je la vois. (ella) → Jo ___ veig.",
-      "answer": "la",
-      "hint": "COD fém. sing. → la"
+      "prompt": "Je la vois. (ella) → català (COD)",
+      "answer": "La veig."
     },
     {
-      "prompt": "Je les vois. (ells) → Jo ___ veig.",
-      "answer": "els",
-      "hint": "COD masc. pl. → els"
+      "prompt": "Je les vois. (ells) → català (COD)",
+      "answer": "Els veig."
     },
     {
-      "prompt": "Je les vois. (elles) → Jo ___ veig.",
-      "answer": "les",
-      "hint": "COD fém. pl. → les"
+      "prompt": "Je les vois. (elles) → català (COD)",
+      "answer": "Les veig."
     },
     {
-      "prompt": "Il me voit. → Ell ___ veu.",
-      "answer": "em",
-      "hint": "COD 1e sing. → em (m' devant voyelle)"
+      "prompt": "Il me voit. → català (COD)",
+      "answer": "Em veu."
     },
     {
-      "prompt": "Il te voit. → Ell ___ veu.",
-      "answer": "et",
-      "hint": "COD 2e sing. → et (t' devant voyelle)"
+      "prompt": "Il te voit. → català (COD)",
+      "answer": "Et veu."
     },
     {
-      "prompt": "Il nous voit. → Ell ___ veu.",
-      "answer": "ens",
-      "hint": "COD 1e pl. → ens"
+      "prompt": "Je le sais. (chose neutre) → català (ho)",
+      "answer": "Ho sé."
     },
     {
-      "prompt": "Il vous voit. → Ell ___ veu.",
-      "answer": "us",
-      "hint": "COD 2e pl. → us"
+      "prompt": "Je lui dis la vérité. (à ell) → català (COI)",
+      "answer": "Li dic la veritat."
     },
     {
-      "prompt": "Je le sais. (chose abstraite) → Jo ___ sé.",
-      "answer": "ho",
-      "hint": "chose neutre/abstraite → ho (pas el ni la)"
+      "prompt": "Il me parle. → català (COI)",
+      "answer": "Em parla."
     },
     {
-      "prompt": "Je le fais. (cette action) → Jo ___ faig.",
-      "answer": "ho",
-      "hint": "ho remplace une idée ou action → ho faig"
+      "prompt": "Il te parle. → català (COI)",
+      "answer": "Et parla."
     },
     {
-      "prompt": "Je lui dis la vérité. (à ell) → Jo ___ dic la veritat.",
-      "answer": "li",
-      "hint": "COI sing. (ell/ella) → li"
+      "prompt": "Je leur donne un cadeau. (ells) → català (COI)",
+      "answer": "Els dono un regal."
     },
     {
-      "prompt": "Il me parle. → Ell ___ parla.",
-      "answer": "em",
-      "hint": "COI 1e sing. → em"
+      "prompt": "J'y vais. → català (hi)",
+      "answer": "Hi vaig."
     },
     {
-      "prompt": "Il te parle. → Ell ___ parla.",
-      "answer": "et",
-      "hint": "COI 2e sing. → et"
+      "prompt": "J'en veux deux. → català (en)",
+      "answer": "En vull dos."
     },
     {
-      "prompt": "Je leur donne un cadeau. (ells) → Jo ___ dono un regal.",
-      "answer": "els",
-      "hint": "COI pl. (ells/elles) → els"
+      "prompt": "Il me le donne. (me + el) → català",
+      "answer": "Me'l dona."
     },
     {
-      "prompt": "Il nous parle. → Ell ___ parla.",
-      "answer": "ens",
-      "hint": "COI 1e pl. → ens"
+      "prompt": "Je te l'apporte. (te + la) → català",
+      "answer": "Te la porto."
     },
     {
-      "prompt": "J'y vais. (au marché) → Jo ___ vaig.",
-      "answer": "hi",
-      "hint": "hi = y (lieu)"
+      "prompt": "Je l'appelle. (ella) → català (COD)",
+      "answer": "La crido."
     },
     {
-      "prompt": "Il y est. (à la maison) → Ell ___ és.",
-      "answer": "hi",
-      "hint": "hi = y (lieu ou COI impersonnel)"
+      "prompt": "Je les connais. (ells) → català (COD)",
+      "answer": "Els conec."
     },
     {
-      "prompt": "J'en veux deux. → Jo ___ vull dos.",
-      "answer": "en",
-      "hint": "en = en (partitif — quantité)"
+      "prompt": "pronom COD de 'ell' → ?",
+      "answer": "el"
     },
     {
-      "prompt": "Il en a beaucoup. → Ell ___ té molts.",
-      "answer": "en",
-      "hint": "en = en (partitif)"
+      "prompt": "pronom COD de 'ella' → ?",
+      "answer": "la"
     },
     {
-      "prompt": "Je la vois. (ella) → Jo ___ veig. (COD — vision directe)",
-      "answer": "la",
-      "hint": "veure = COD → la (pas li)"
+      "prompt": "pronom COI de 'ell/ella' → ?",
+      "answer": "li"
     },
     {
-      "prompt": "Je lui parle. (ella) → Jo ___ parlo. (COI — parler À)",
-      "answer": "li",
-      "hint": "parlar A = COI → li (pas la)"
+      "prompt": "pronom COI de 'ells/elles' → ?",
+      "answer": "els"
     },
     {
-      "prompt": "Je l'appelle. (ella, téléphone) → Jo ___ truco.",
-      "answer": "la",
-      "hint": "trucar = COD → la"
+      "prompt": "chose neutre (COD) → ?",
+      "answer": "ho"
     },
     {
-      "prompt": "Je lui envoie un message. (ella) → Jo ___ envio un missatge.",
-      "answer": "li",
-      "hint": "enviar A quelqu'un = COI → li"
+      "prompt": "lieu / y → ?",
+      "answer": "hi"
     },
     {
-      "prompt": "Il me le donne. (me + el) → Ell ___ dona.",
-      "answer": "me'l",
-      "hint": "em + el = me'l (COI avant COD)"
+      "prompt": "partitif / en → ?",
+      "answer": "en"
     },
     {
-      "prompt": "Je te l'apporte. (te + la) → Jo ___ porto.",
-      "answer": "te la",
-      "hint": "et + la = te la"
+      "prompt": "Il te la donne. (te + la) → català",
+      "answer": "Te la dona."
     },
     {
-      "prompt": "Il me le dit. (me + el) → Ell ___ diu.",
-      "answer": "me'l",
-      "hint": "em + el = me'l"
+      "prompt": "Il me le dit. (me + el) → català",
+      "answer": "Me'l diu."
     },
     {
-      "prompt": "Il y en a. → ___ ha.",
-      "answer": "N'hi",
-      "hint": "en + hi = n'hi → N'hi ha"
+      "prompt": "Tu nous appelles. → català (COD)",
+      "answer": "Ens truques."
     },
     {
-      "prompt": "Tu nous appelles. → Tu ___ truques.",
-      "answer": "ens",
-      "hint": "ens = nous (COD ou COI)"
+      "prompt": "Il nous parle. → català (COI)",
+      "answer": "Ens parla."
     },
     {
-      "prompt": "Je l'achète. (el producte, masc.) → Jo ___ compro.",
-      "answer": "el",
-      "hint": "COD masc. sing. → el"
+      "prompt": "Différence COD / COI → exemple avec 'veure' vs 'parlar a'",
+      "answer": "COD: El veig"
     },
     {
-      "prompt": "Elle me comprend. → Ella ___ entén.",
-      "answer": "em",
-      "hint": "em = me (COD ou COI)"
+      "prompt": "Je l'achète. (el producte, masc.) → català",
+      "answer": "El compro."
     }
   ]
 }
