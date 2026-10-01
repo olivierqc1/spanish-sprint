@@ -36,13 +36,11 @@
     },
     {
       "prompt": "EN ou A ? Rue qu'on connaît, avec son nom →",
-      "answer": "A",
-      "hint": "A + el = al / A + la = a la"
+      "answer": "A (al"
     },
     {
       "prompt": "EN ou A ? Rue vague qu'on ne connaît pas →",
-      "answer": "EN",
-      "hint": "EN + un = en un / EN + una = en una"
+      "answer": "EN (en un"
     },
     {
       "prompt": "Contraction : a + el = ___",
