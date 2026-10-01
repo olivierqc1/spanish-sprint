@@ -6,40 +6,168 @@
   },
   "level": "A2",
   "note": {
-    "fr": "**portar / dur** = porter (un vêtement), apporter, emmener — *dur* est le synonyme plus oral, surtout à Barcelone. **tenir** = avoir, posséder, tenir en main. **aguantar** = tenir bon, maintenir, supporter (tolérer). **agafar** = prendre, attraper, saisir.\n\nTape seulement le **verbe conjugué** qui manque (le reste de la phrase est là pour le contexte).",
-    "en": "**portar / dur** = to wear, carry, bring. **tenir** = to have, hold. **aguantar** = to hold up, endure. **agafar** = to grab. Type only the missing conjugated verb."
+    "fr": "4 verbes à ne pas confondre\n\n─────────────────────────────────────\n\n⚡ PORTAR = porter / apporter / emmener\n→ porto un abric (je porte un manteau)\n→ porta el pa! (apporte le pain!)\n→ el bus porta molta gent (le bus emmène beaucoup de monde)\nUsage : vêtements, objets qu'on apporte\n\n─────────────────────────────────────\n\n🖼️ DUR = porter / apporter (synonyme oral de portar)\n→ duo la motxilla (je porte le sac à dos)\n→ duu una camisa vermella (il porte une chemise rouge)\nUsage : même sens que portar, plus courant à Barcelone à l'oral\n\n─────────────────────────────────────\n\n💡 TENIR = avoir / tenir / posséder\n→ tinc el llibre a la mà (j'ai le livre en main)\n→ té molt de talent (il a beaucoup de talent)\nUsage : possession, tenir quelque chose\n\n─────────────────────────────────────\n\n📽️ AGUANTAR = tenir bon / supporter / maintenir\n→ aguanta la porta! (tiens la porte! = maintiens-la ouverte)\n→ aguanto el dolor (je supporte la douleur)\n→ no aguanto més (je n'en peux plus)\nUsage : résistance, tolérance, maintenir en place\n\n─────────────────────────────────────\n\n🎬 AGAFAR = prendre / attraper / saisir\n→ agafa el metro (prends le métro)\n→ agafa la pilota! (attrape le ballon!)\n→ agafa el telèfon (réponds au téléphone)\nUsage : saisir, attraper, prendre un transport",
+    "en": "4 verbs not to confuse\n\n─────────────────────────────────────\n\n⚡ PORTAR = to carry / to bring / to wear\n→ porto un abric (I'm wearing a coat)\n→ porta el pa! (bring the bread!)\nUse: clothing, bringing objects\n\n─────────────────────────────────────\n\n🖼️ DUR = to carry / to wear (oral synonym of portar)\n→ duo la motxilla (I'm carrying the backpack)\n→ duu una camisa (he's wearing a shirt)\nUse: same as portar, more common in spoken Barcelona Catalan\n\n─────────────────────────────────────\n\n💡 TENIR = to have / to hold\n→ tinc el llibre a la mà (I'm holding the book)\n→ té molt de talent (he has a lot of talent)\nUse: possession, holding something\n\n─────────────────────────────────────\n\n📽️ AGUANTAR = to hold / to bear / to stand\n→ aguanta la porta! (hold the door! = keep it open)\n→ no aguanto més (I can't stand it anymore)\nUse: resistance, tolerating, keeping in place\n\n─────────────────────────────────────\n\n🎬 AGAFAR = to take / to catch / to grab\n→ agafa el metro (take the metro)\n→ agafa la pilota! (catch the ball!)\nUse: grabbing, catching, taking transport"
   },
   "country": "catalonia",
   "drills": [
-    { "prompt": "Je porte un manteau. → <b>___ un abric.</b> (portar)", "answer": "Porto", "hint": "1re personne du présent de portar" },
-    { "prompt": "Il porte une chemise rouge. → <b>___ una camisa vermella.</b> (dur)", "answer": "Du", "hint": "3e pers. présent de dur : du (aussi écrit duu)" },
-    { "prompt": "Apporte le pain! → <b>___ el pa!</b> (portar, impératif)", "answer": "Porta", "hint": "impératif 2e personne" },
-    { "prompt": "Je tiens le livre dans la main. → <b>___ el llibre a la mà.</b> (tenir)", "answer": "Tinc", "hint": "présent irrégulier de tenir, 1re pers." },
-    { "prompt": "Tiens la porte! (maintiens-la) → <b>___ la porta!</b> (aguantar, impératif)", "answer": "Aguanta", "hint": "impératif de aguantar" },
-    { "prompt": "Prends le parapluie. → <b>___ el paraigua.</b> (agafar, impératif)", "answer": "Agafa", "hint": "impératif de agafar" },
-    { "prompt": "Elle porte les cheveux longs. → <b>___ els cabells llargs.</b> (dur)", "answer": "Duu", "hint": "3e pers. de dur : duu (ou du)", "options": ["Duu", "Du"] },
-    { "prompt": "Emmène les enfants à l'école. → <b>___ els nens a l'escola.</b> (portar)", "answer": "Porta", "hint": "impératif de portar" },
-    { "prompt": "Je ne supporte pas le froid. → No <b>___</b> el fred. (aguantar)", "answer": "aguanto", "hint": "1re pers. présent de aguantar" },
-    { "prompt": "Tiens-moi la main. → <b>___</b> la mà. (agafar, impératif + pronom)", "answer": "Agafa'm", "hint": "agafa + em → agafa'm" },
-    { "prompt": "Il portait des lunettes. → <b>___ ulleres.</b> (portar, imparfait)", "answer": "Portava", "hint": "imparfait de portar, 3e pers." },
-    { "prompt": "Tu as du temps? → <b>___ temps?</b> (tenir)", "answer": "Tens", "hint": "présent de tenir, 2e pers." },
-    { "prompt": "Attends un moment! (tiens bon) → <b>___ un moment!</b> (aguantar)", "answer": "Aguanta", "hint": "impératif de aguantar" },
-    { "prompt": "Je porte un sac. → <b>___ una bossa.</b> (dur)", "answer": "Duc", "hint": "1re pers. présent de dur : duc" },
-    { "prompt": "Il a deux enfants. → <b>___ dos fills.</b> (tenir)", "answer": "Té", "hint": "3e pers. de tenir : té" },
-    { "prompt": "Prends ton manteau! → <b>___ l'abric!</b> (agafar, impératif)", "answer": "Agafa", "hint": "impératif de agafar" },
-    { "prompt": "Nous apportons le vin. → <b>___ el vi.</b> (portar)", "answer": "Portem", "hint": "1re pers. pluriel de portar" },
-    { "prompt": "Elle porte une jupe. → <b>___ una faldilla.</b> (portar)", "answer": "Porta", "hint": "3e pers. présent de portar" },
-    { "prompt": "Il ne supporte pas le bruit. → No <b>___</b> el soroll. (aguantar)", "answer": "aguanta", "hint": "3e pers. présent de aguantar" },
-    { "prompt": "Je tiens la bouteille fermement. → <b>___ l'ampolla.</b> (aguantar)", "answer": "Aguanto", "hint": "1re pers. présent" },
-    { "prompt": "J'ai 30 ans. → <b>___ trenta anys.</b> (tenir)", "answer": "Tinc", "hint": "en catalan l'âge se dit avec tenir, pas portar" },
-    { "prompt": "Tu portes toujours le même sac. → Sempre <b>___</b> la mateixa bossa. (portar)", "answer": "portes", "hint": "2e pers. présent de portar" },
-    { "prompt": "Nous avons une belle maison. → <b>___ una casa maca.</b> (tenir)", "answer": "Tenim", "hint": "1re pers. pluriel de tenir" },
-    { "prompt": "Ils apportent les desserts. → <b>___ les postres.</b> (portar)", "answer": "Porten", "hint": "3e pers. pluriel de portar" },
-    { "prompt": "Elle prend le métro tous les jours. → <b>___ el metro cada dia.</b> (agafar)", "answer": "Agafa", "hint": "3e pers. présent de agafar" },
-    { "prompt": "Vous (pl.) portez l'uniforme. → <b>___ l'uniforme.</b> (dur)", "answer": "Duis", "hint": "2e pers. pluriel de dur : duis", "options": ["Duis", "Dueu"] },
-    { "prompt": "Je n'ai pas faim. → No <b>___</b> gana. (tenir)", "answer": "tinc", "hint": "expression tenir gana = avoir faim" },
-    { "prompt": "Attrape la balle! → <b>___ la pilota!</b> (agafar, impératif)", "answer": "Agafa", "hint": "impératif de agafar" },
-    { "prompt": "Nous ne supportons pas la chaleur. → No <b>___</b> la calor. (aguantar)", "answer": "aguantem", "hint": "1re pers. pluriel de aguantar" },
-    { "prompt": "Quel verbe pour « supporter/tolérer »? Écris l'infinitif. → ", "answer": "aguantar", "hint": "infinitif" }
+    {
+      "prompt": "Je porte un manteau. → ___ un abric. (portar)",
+      "answer": "Porto",
+      "hint": "1re personne du présent de portar"
+    },
+    {
+      "prompt": "Il porte une chemise rouge. → ___ una camisa vermella. (dur)",
+      "answer": "Du",
+      "hint": "3e pers. présent de dur : du (aussi écrit duu)"
+    },
+    {
+      "prompt": "Apporte le pain! → ___ el pa! (portar, impératif)",
+      "answer": "Porta",
+      "hint": "impératif 2e personne"
+    },
+    {
+      "prompt": "Je tiens le livre dans la main. → ___ el llibre a la mà. (tenir)",
+      "answer": "Tinc",
+      "hint": "présent irrégulier de tenir, 1re pers."
+    },
+    {
+      "prompt": "Tiens la porte! (maintiens-la) → ___ la porta! (aguantar, impératif)",
+      "answer": "Aguanta",
+      "hint": "impératif de aguantar"
+    },
+    {
+      "prompt": "Prends le parapluie. → ___ el paraigua. (agafar, impératif)",
+      "answer": "Agafa",
+      "hint": "impératif de agafar"
+    },
+    {
+      "prompt": "Elle porte les cheveux longs. → ___ els cabells llargs. (dur)",
+      "answer": "Duu",
+      "hint": "3e pers. de dur : duu (ou du)",
+      "options": [
+        "Duu",
+        "Du"
+      ]
+    },
+    {
+      "prompt": "Emmène les enfants à l'école. → ___ els nens a l'escola. (portar)",
+      "answer": "Porta",
+      "hint": "impératif de portar"
+    },
+    {
+      "prompt": "Je ne supporte pas le froid. → No ___ el fred. (aguantar)",
+      "answer": "aguanto",
+      "hint": "1re pers. présent de aguantar"
+    },
+    {
+      "prompt": "Tiens-moi la main. → ___ la mà. (agafar, impératif + pronom)",
+      "answer": "Agafa'm",
+      "hint": "agafa + em → agafa'm"
+    },
+    {
+      "prompt": "Il portait des lunettes. → ___ ulleres. (portar, imparfait)",
+      "answer": "Portava",
+      "hint": "imparfait de portar, 3e pers."
+    },
+    {
+      "prompt": "Tu as du temps? → ___ temps? (tenir)",
+      "answer": "Tens",
+      "hint": "présent de tenir, 2e pers."
+    },
+    {
+      "prompt": "Attends un moment! (tiens bon) → ___ un moment! (aguantar)",
+      "answer": "Aguanta",
+      "hint": "impératif de aguantar"
+    },
+    {
+      "prompt": "Je porte un sac. → ___ una bossa. (dur)",
+      "answer": "Duc",
+      "hint": "1re pers. présent de dur : duc"
+    },
+    {
+      "prompt": "Il a deux enfants. → ___ dos fills. (tenir)",
+      "answer": "Té",
+      "hint": "3e pers. de tenir : té"
+    },
+    {
+      "prompt": "Prends ton manteau! → ___ l'abric! (agafar, impératif)",
+      "answer": "Agafa",
+      "hint": "impératif de agafar"
+    },
+    {
+      "prompt": "Nous apportons le vin. → ___ el vi. (portar)",
+      "answer": "Portem",
+      "hint": "1re pers. pluriel de portar"
+    },
+    {
+      "prompt": "Elle porte une jupe. → ___ una faldilla. (portar)",
+      "answer": "Porta",
+      "hint": "3e pers. présent de portar"
+    },
+    {
+      "prompt": "Il ne supporte pas le bruit. → No ___ el soroll. (aguantar)",
+      "answer": "aguanta",
+      "hint": "3e pers. présent de aguantar"
+    },
+    {
+      "prompt": "Je tiens la bouteille fermement. → ___ l'ampolla. (aguantar)",
+      "answer": "Aguanto",
+      "hint": "1re pers. présent"
+    },
+    {
+      "prompt": "J'ai 30 ans. → ___ trenta anys. (tenir)",
+      "answer": "Tinc",
+      "hint": "en catalan l'âge se dit avec tenir, pas portar"
+    },
+    {
+      "prompt": "Tu portes toujours le même sac. → Sempre ___ la mateixa bossa. (portar)",
+      "answer": "portes",
+      "hint": "2e pers. présent de portar"
+    },
+    {
+      "prompt": "Nous avons une belle maison. → ___ una casa maca. (tenir)",
+      "answer": "Tenim",
+      "hint": "1re pers. pluriel de tenir"
+    },
+    {
+      "prompt": "Ils apportent les desserts. → ___ les postres. (portar)",
+      "answer": "Porten",
+      "hint": "3e pers. pluriel de portar"
+    },
+    {
+      "prompt": "Elle prend le métro tous les jours. → ___ el metro cada dia. (agafar)",
+      "answer": "Agafa",
+      "hint": "3e pers. présent de agafar"
+    },
+    {
+      "prompt": "Vous (pl.) portez l'uniforme. → ___ l'uniforme. (dur)",
+      "answer": "Duis",
+      "hint": "2e pers. pluriel de dur : duis",
+      "options": [
+        "Duis",
+        "Dueu"
+      ]
+    },
+    {
+      "prompt": "Je n'ai pas faim. → No ___ gana. (tenir)",
+      "answer": "tinc",
+      "hint": "expression tenir gana = avoir faim"
+    },
+    {
+      "prompt": "Attrape la balle! → ___ la pilota! (agafar, impératif)",
+      "answer": "Agafa",
+      "hint": "impératif de agafar"
+    },
+    {
+      "prompt": "Nous ne supportons pas la chaleur. → No ___ la calor. (aguantar)",
+      "answer": "aguantem",
+      "hint": "1re pers. pluriel de aguantar"
+    },
+    {
+      "prompt": "Quel verbe pour « supporter/tolérer »? Écris l'infinitif. →",
+      "answer": "aguantar",
+      "hint": "infinitif"
+    }
   ]
 }
