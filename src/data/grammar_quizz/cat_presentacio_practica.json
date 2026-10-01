@@ -96,7 +96,7 @@
     },
     {
       "prompt": "des de fa → signifie...",
-      "answer": "depuis (+ durée)"
+      "answer": "depuis"
     },
     {
       "prompt": "Em dic → signifie...",
@@ -116,8 +116,7 @@
     },
     {
       "prompt": "Treballo en → signifie...",
-      "answer": "Je travaille en",
-      "hint": "treballo en = je travaille en / dans"
+      "answer": "Je travaille en"
     },
     {
       "prompt": "Comment dit-on 'depuis deux ans' en catalan ?",
