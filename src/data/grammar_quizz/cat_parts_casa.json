@@ -15,14 +15,12 @@
       "answer": "la cuina"
     },
     {
-      "prompt": "« la chambre » → en catalan (mot le plus courant)",
-      "answer": "el dormitori",
-      "hint": "el dormitori (aussi: l'habitació)"
+      "prompt": "« la chambre » → en catalan (2 mots possibles)",
+      "answer": "el dormitori"
     },
     {
-      "prompt": "« la salle de bain » → en catalan (le terme général)",
-      "answer": "el bany",
-      "hint": "el bany = la salle de bain (aussi: el lavabo = les toilettes)"
+      "prompt": "« la salle de bain » → en catalan",
+      "answer": "el bany"
     },
     {
       "prompt": "« le salon » → en catalan",
