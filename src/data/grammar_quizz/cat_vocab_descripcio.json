@@ -19,7 +19,7 @@
       "answer": "petit(e)"
     },
     {
-      "prompt": "gras (masculin) → français",
+      "prompt": "gras/grassa → français",
       "answer": "gros"
     },
     {
@@ -95,7 +95,7 @@
       "answer": "aimable"
     },
     {
-      "prompt": "seriós (masculin) → français",
+      "prompt": "seriós/osa → français",
       "answer": "sérieux"
     },
     {
@@ -107,23 +107,23 @@
       "answer": "timide"
     },
     {
-      "prompt": "nerviós (masculin) → français",
+      "prompt": "nerviós/osa → français",
       "answer": "nerveux"
     },
     {
-      "prompt": "llest (intelligent) → français",
-      "answer": "intelligent"
+      "prompt": "llest/a → français",
+      "answer": "intelligent(e)"
     },
     {
-      "prompt": "presumit (masculin) → français",
+      "prompt": "presumit/da → français",
       "answer": "vaniteux"
     },
     {
-      "prompt": "mince → catalan (masculin)",
+      "prompt": "mince → catalan",
       "answer": "prim"
     },
     {
-      "prompt": "sympathique → catalan (masculin)",
+      "prompt": "sympathique → catalan",
       "answer": "simpàtic"
     },
     {
