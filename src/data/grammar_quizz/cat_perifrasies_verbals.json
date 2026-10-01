@@ -52,27 +52,27 @@
     },
     {
       "prompt": "___ (ell, estar) llegint quan vaig trucar.",
-      "answer": "Estava"
+      "answer": "estava"
     },
     {
       "prompt": "___ (jo, anar a) trucar-li ara.",
-      "answer": "Vaig a"
+      "answer": "Vaig a trucar-li"
     },
     {
       "prompt": "___ (ella, acabar de) menjar.",
-      "answer": "Acaba de"
+      "answer": "acaba de"
     },
     {
       "prompt": "___ (ell, deixar de) beure alcohol.",
-      "answer": "Ha deixat de"
+      "answer": "ha deixat de"
     },
     {
       "prompt": "___ (ella, tornar a) equivocar-se.",
-      "answer": "Torna a"
+      "answer": "Torna a equivocar-se"
     },
     {
       "prompt": "___ (nosaltres, seguir) buscant solucions.",
-      "answer": "Seguim"
+      "answer": "seguim"
     },
     {
       "prompt": "Porto una hora ___ (esperar). (depuis une heure)",
@@ -120,7 +120,7 @@
     },
     {
       "prompt": "___ (tu, continuar) estudiant?",
-      "answer": "Continues estudiant"
+      "answer": "continues"
     },
     {
       "prompt": "Porto mesos ___ (aprendre) català.",
