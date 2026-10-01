@@ -87,9 +87,8 @@
       "answer": "la metgessa"
     },
     {
-      "prompt": "estudiant → même forme au masculin et au féminin? (oui/no)",
-      "answer": "sí",
-      "hint": "estudiant est invariable: el/la estudiant (même forme)"
+      "prompt": "el/la estudiant → genre? (masculin)",
+      "answer": "el"
     },
     {
       "prompt": "dia → genre? (masculin, finit en -a)",
