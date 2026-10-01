@@ -19,14 +19,12 @@
       "answer": "darrere"
     },
     {
-      "prompt": "« à droite » → en catalan (forme la plus courante)",
-      "answer": "a la dreta",
-      "hint": "a la dreta (le plus courant) — aussi: a mà dreta, al costat dret"
+      "prompt": "« à droite » → en catalan (3 façons)",
+      "answer": "a la dreta"
     },
     {
-      "prompt": "« à gauche » → en catalan (forme la plus courante)",
-      "answer": "a l'esquerra",
-      "hint": "a l'esquerra (le plus courant) — aussi: a mà esquerra, al costat esquerre"
+      "prompt": "« à gauche » → en catalan (3 façons)",
+      "answer": "a l'esquerra"
     },
     {
       "prompt": "« en entrant » → en catalan",
