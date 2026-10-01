@@ -15,14 +15,8 @@
       "answer": "Qui és l'últim?"
     },
     {
-      "prompt": "C'est moi le dernier. (masculin)",
-      "answer": "Sóc l'últim",
-      "hint": "últim = masculin"
-    },
-    {
-      "prompt": "C'est moi la dernière. (féminin)",
-      "answer": "Sóc l'última",
-      "hint": "última = féminin"
+      "prompt": "C'est moi le dernier. →",
+      "answer": "Sóc l'últim"
     },
     {
       "prompt": "C'est à qui le tour ? →",
@@ -50,8 +44,7 @@
     },
     {
       "prompt": "Vous en voulez combien ? →",
-      "answer": "Quant val?",
-      "hint": "Quant val? ou Quant costa? — on choisit Quant val? ici"
+      "answer": "Quant en vol?"
     },
     {
       "prompt": "un kilo de tomates →",
