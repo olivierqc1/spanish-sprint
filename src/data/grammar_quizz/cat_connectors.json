@@ -1,0 +1,158 @@
+{
+  "note": {
+    "fr": "Les connecteurs catalans essentiels\n\n─────────────────────────────────────\n\n⚡ ADDITION et CONTRASTE\n\n→ i → et\n→ però → mais\n→ sinó → mais plutôt (après négation)\n→ tot i que → bien que (+ subjonctif)\n→ malgrat → malgré\n→ tanmateix → cependant\n→ en canvi → par contre\n\n─────────────────────────────────────\n\n🖼️ CAUSE et CONSEQUENCE\n\n→ perquè → parce que\n→ ja que / com que → puisque / étant donné que\n→ per tant → donc\n→ per això → c'est pourquoi\n→ així → ainsi / donc\n\n─────────────────────────────────────\n\n🎬 TEMPORELS\n\n→ primer → d'abord\n→ després → ensuite / après\n→ finalment → finalement\n→ mentre → pendant que\n→ de sobte → tout à coup\n→ quan → quand\n→ fins que → jusqu'à ce que\n\n─────────────────────────────────────\n\n💡 EXEMPLE et REFORMULATION\n\n→ per exemple → par exemple\n→ és a dir → c'est-à-dire\n→ en resum → en résumé\n→ en definitiva → en définitive\n→ de fet → en fait",
+    "en": "Essential Catalan connectors\n\n─────────────────────────────────────\n\n⚡ ADDITION and CONTRAST\n\n→ i → and\n→ però → but\n→ sinó → but rather (after negation)\n→ tot i que → although (+ subjunctive)\n→ malgrat → despite\n→ tanmateix → however\n→ en canvi → on the other hand\n\n─────────────────────────────────────\n\n🖼️ CAUSE and CONSEQUENCE\n\n→ perquè → because\n→ ja que / com que → since / given that\n→ per tant → therefore\n→ per això → that is why\n→ així → thus / so\n\n─────────────────────────────────────\n\n🎬 TEMPORAL\n\n→ primer → first / first of all\n→ després → then / afterwards\n→ finalment → finally\n→ mentre → while\n→ de sobte → suddenly\n→ quan → when\n→ fins que → until\n\n─────────────────────────────────────\n\n💡 EXAMPLE and REFORMULATION\n\n→ per exemple → for example\n→ és a dir → that is to say\n→ en resum → in summary\n→ en definitiva → in short\n→ de fet → in fact"
+  },
+  "drills": [
+    {
+      "prompt": "M'agrada el cafè, ___ prefereixo el te. (mais / par contre)",
+      "answer": "però",
+      "hint": "però = mais (contraste simple)"
+    },
+    {
+      "prompt": "No vull cafè, ___ te. (mais plutôt)",
+      "answer": "sinó",
+      "hint": "sinó = mais plutôt (après une négation)"
+    },
+    {
+      "prompt": "Estic cansat ___ no puc dormir. (mais)",
+      "answer": "però",
+      "hint": "però = mais"
+    },
+    {
+      "prompt": "___ parla català, ___ el seu company parla castellà. (l'un... l'autre / par contre)",
+      "answer": "Ell parla català, en canvi",
+      "hint": "en canvi = par contre"
+    },
+    {
+      "prompt": "No va venir a la festa, ___ estava malalt. (parce que)",
+      "answer": "perquè",
+      "hint": "perquè = parce que (cause)"
+    },
+    {
+      "prompt": "___ fa molt fred avui, quedarem a casa. (puisque)",
+      "answer": "Com que",
+      "hint": "com que = puisque / étant donné que"
+    },
+    {
+      "prompt": "Plou molt, ___ no sortirem. (donc)",
+      "answer": "per tant",
+      "hint": "per tant = donc / par conséquent"
+    },
+    {
+      "prompt": "Ha estudiat molt, ___ ha aprovat. (c'est pourquoi)",
+      "answer": "per això",
+      "hint": "per això = c'est pourquoi"
+    },
+    {
+      "prompt": "___, agafa el paraigua. (d'abord)",
+      "answer": "Primer",
+      "hint": "primer = d'abord / premièrement"
+    },
+    {
+      "prompt": "Primer renta les mans i ___ menja. (ensuite)",
+      "answer": "després",
+      "hint": "després = ensuite / après"
+    },
+    {
+      "prompt": "___, va arribar a casa, es va dutxar i es va anar a dormir. (finalement)",
+      "answer": "Finalment",
+      "hint": "finalment = finalement"
+    },
+    {
+      "prompt": "___ jo cuinava, ell posava la taula. (pendant que)",
+      "answer": "Mentre",
+      "hint": "mentre = pendant que"
+    },
+    {
+      "prompt": "Tot anava bé i ___ va trucar la porta. (tout à coup)",
+      "answer": "de sobte",
+      "hint": "de sobte = tout à coup / soudainement"
+    },
+    {
+      "prompt": "Truca'm ___ arribes. (quand)",
+      "answer": "quan",
+      "hint": "quan = quand"
+    },
+    {
+      "prompt": "Esperaré aquí ___ acabis. (jusqu'à ce que)",
+      "answer": "fins que",
+      "hint": "fins que = jusqu'à ce que"
+    },
+    {
+      "prompt": "M'agraden molts esports, ___ el futbol i el tennis. (par exemple)",
+      "answer": "per exemple",
+      "hint": "per exemple = par exemple"
+    },
+    {
+      "prompt": "Estic cansat, ___, necessito dormir. (c'est-à-dire / autrement dit)",
+      "answer": "és a dir",
+      "hint": "és a dir = c'est-à-dire"
+    },
+    {
+      "prompt": "___, el projecte ha anat bé. (en résumé)",
+      "answer": "En resum",
+      "hint": "en resum = en résumé"
+    },
+    {
+      "prompt": "___, no crec que sigui la millor opció. (en définitive)",
+      "answer": "En definitiva",
+      "hint": "en definitiva = en définitive / tout compte fait"
+    },
+    {
+      "prompt": "Sembla difícil, ___ és possible. (en fait)",
+      "answer": "de fet",
+      "hint": "de fet = en fait"
+    },
+    {
+      "prompt": "___ fa fred, hem de sortir igualment. (bien que / malgré cela)",
+      "answer": "Tot i que",
+      "hint": "tot i que = bien que (+ subjonctif) / malgré que"
+    },
+    {
+      "prompt": "Ha treballat molt, ___ els resultats no van ser bons. (cependant)",
+      "answer": "tanmateix",
+      "hint": "tanmateix = cependant / néanmoins"
+    },
+    {
+      "prompt": "Jo treballo de matí, ___ ella treballa de nit. (par contre / en revanche)",
+      "answer": "en canvi",
+      "hint": "en canvi = par contre / en revanche"
+    },
+    {
+      "prompt": "No vull pasta, ___ arròs. (mais plutôt — après négation)",
+      "answer": "sinó",
+      "hint": "sinó s'utilise après une négation: no... sinó..."
+    },
+    {
+      "prompt": "___ que arribi, truca'm. (dès que / aussitôt que)",
+      "answer": "Tan aviat",
+      "hint": "tan aviat que = dès que / aussitôt que"
+    },
+    {
+      "prompt": "Va caure ___ mentre caminava. (tout à coup)",
+      "answer": "de sobte",
+      "hint": "de sobte = tout à coup"
+    },
+    {
+      "prompt": "___ tot, és una bona persona. (malgré)",
+      "answer": "Malgrat",
+      "hint": "malgrat = malgré"
+    },
+    {
+      "prompt": "No em sento bé, ___ aniré al metge. (donc / par conséquent)",
+      "answer": "per tant",
+      "hint": "per tant = donc"
+    },
+    {
+      "prompt": "El vol ha sortit tard, ___ hem perdut la connexió. (ainsi / de ce fait)",
+      "answer": "així",
+      "hint": "així = ainsi / de ce fait"
+    },
+    {
+      "prompt": "No ha estudiat gens, ___ suspèn. (c'est pourquoi)",
+      "answer": "per això",
+      "hint": "per això = c'est pourquoi"
+    }
+  ]
+}
