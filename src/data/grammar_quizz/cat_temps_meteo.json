@@ -1,0 +1,178 @@
+{
+  "note": {
+    "fr": "⚡ LA RÈGLE DE BASE\nEn catalan, pour le temps qu'il fait on utilise surtout FER (faire) : « Fa + nom ».\nFa calor = il fait chaud · Fa fred = il fait froid · Fa vent = il y a du vent · Fa sol = il y a du soleil · Fa boira = il y a du brouillard.\n─────\n🌧️ LES VERBES DIRECTS (sans « fa »)\nPlou = il pleut · Neva = il neige · Gela = il gèle · Trona = il tonne · Llampega = il y a des éclairs · Plovisqueja = il bruine.\n─────\n☁️ AVEC « HI HA » ou « ESTÀ »\nHi ha tempesta = il y a un orage · Hi ha núvols = il y a des nuages · Està ennuvolat = le ciel est couvert.\n─────\n📏 « BEAUCOUP »\nFa molta calor · Fa molt fred · Fa molt de vent · Plou molt · Neva molt.\n─────\n⏳ EN CE MOMENT / PASSÉ / FUTUR\nEstà plovent = il est en train de pleuvoir · Ahir va ploure = hier il a plu · Demà plourà = demain il pleuvra.\n─────\n💡 PIÈGE : le temps vs la personne\nFa calor = il fait chaud (dehors). Tinc calor = j'ai chaud (moi). Ne dis jamais « Estic calor ».",
+    "en": "⚡ BASIC RULE\nFor weather Catalan mostly uses FER (to do/make): \"Fa + noun\".\nFa calor = it's hot · Fa fred = it's cold · Fa vent = it's windy · Fa sol = it's sunny · Fa boira = it's foggy.\n─────\n🌧️ DIRECT VERBS (no \"fa\")\nPlou = it rains · Neva = it snows · Gela = it freezes · Trona = it thunders · Llampega = there is lightning · Plovisqueja = it drizzles.\n─────\n☁️ WITH \"HI HA\" or \"ESTÀ\"\nHi ha tempesta = there is a storm · Hi ha núvols = there are clouds · Està ennuvolat = it is cloudy.\n─────\n📏 \"A LOT\"\nFa molta calor · Fa molt fred · Fa molt de vent · Plou molt · Neva molt.\n─────\n⏳ NOW / PAST / FUTURE\nEstà plovent = it is raining right now · Ahir va ploure = it rained yesterday · Demà plourà = it will rain tomorrow.\n─────\n💡 TRAP: weather vs person\nFa calor = it's hot (outside). Tinc calor = I'm hot (me). Never say \"Estic calor\"."
+  },
+  "drills": [
+    {
+      "prompt": "Il pleut. → ___.",
+      "answer": "Plou",
+      "hint": "Verbe direct : pas besoin de « fa »."
+    },
+    {
+      "prompt": "Il neige. → ___.",
+      "answer": "Neva",
+      "hint": "Verbe direct : nevar → neva."
+    },
+    {
+      "prompt": "Il fait chaud. → Fa ___.",
+      "answer": "calor",
+      "hint": "Fa + calor. « Calor » est féminin."
+    },
+    {
+      "prompt": "Il fait froid. → Fa ___.",
+      "answer": "fred",
+      "hint": "Fa + fred."
+    },
+    {
+      "prompt": "Il y a du vent. → Fa ___.",
+      "answer": "vent",
+      "hint": "Fa + vent."
+    },
+    {
+      "prompt": "Il y a du soleil. → Fa ___.",
+      "answer": "sol",
+      "hint": "Fa + sol."
+    },
+    {
+      "prompt": "Il y a du brouillard. → Fa ___.",
+      "answer": "boira",
+      "hint": "Fa + boira (la brume)."
+    },
+    {
+      "prompt": "Il fait beau. → Fa bon ___.",
+      "answer": "temps",
+      "hint": "Fa bon temps = il fait beau."
+    },
+    {
+      "prompt": "Il fait mauvais. → Fa mal ___.",
+      "answer": "temps",
+      "hint": "Fa mal temps = il fait mauvais."
+    },
+    {
+      "prompt": "Il fait très chaud. → Fa ___ calor.",
+      "answer": "molta",
+      "hint": "Calor est féminin → molta."
+    },
+    {
+      "prompt": "Il fait très froid. → Fa molt ___.",
+      "answer": "fred",
+      "hint": "Fa molt fred."
+    },
+    {
+      "prompt": "Il y a beaucoup de vent. → Fa ___ de vent.",
+      "answer": "molt",
+      "hint": "Fa molt de vent."
+    },
+    {
+      "prompt": "Il pleut beaucoup. → Plou ___.",
+      "answer": "molt",
+      "hint": "Avec un verbe : molt (invariable)."
+    },
+    {
+      "prompt": "Il neige beaucoup. → Neva ___.",
+      "answer": "molt",
+      "hint": "Avec un verbe : molt (invariable)."
+    },
+    {
+      "prompt": "Il pleut en ce moment. → Està ___.",
+      "answer": "plovent",
+      "hint": "Està + gérondif de ploure."
+    },
+    {
+      "prompt": "Il neige en ce moment. → Està ___.",
+      "answer": "nevant",
+      "hint": "Està + gérondif de nevar."
+    },
+    {
+      "prompt": "Le ciel est couvert. → Està ___.",
+      "answer": "ennuvolat",
+      "hint": "Ennuvolat = nuageux, couvert."
+    },
+    {
+      "prompt": "Il y a un orage. → Hi ha ___.",
+      "answer": "tempesta",
+      "hint": "Hi ha tempesta."
+    },
+    {
+      "prompt": "Il y a des nuages. → Hi ha ___.",
+      "answer": "núvols",
+      "hint": "Núvol → núvols."
+    },
+    {
+      "prompt": "Il y a des éclairs. → ___.",
+      "answer": "Llampega",
+      "hint": "Verbe : llampegar → llampega."
+    },
+    {
+      "prompt": "Il tonne. → ___.",
+      "answer": "Trona",
+      "hint": "Verbe : tronar → trona."
+    },
+    {
+      "prompt": "Il bruine. → ___.",
+      "answer": "Plovisqueja",
+      "hint": "Verbe : plovisquejar."
+    },
+    {
+      "prompt": "Il gèle. → ___.",
+      "answer": "Gela",
+      "hint": "Verbe : gelar → gela."
+    },
+    {
+      "prompt": "Il grêle. → Cau ___.",
+      "answer": "calamarsa",
+      "hint": "Cau calamarsa (cau = tombe)."
+    },
+    {
+      "prompt": "Il fait frais. → Fa ___.",
+      "answer": "fresca",
+      "hint": "Fa fresca (féminin)."
+    },
+    {
+      "prompt": "Il fait 30 degrés. → Fa 30 ___.",
+      "answer": "graus",
+      "hint": "Grau → graus."
+    },
+    {
+      "prompt": "Il y a de l'humidité. → Fa ___.",
+      "answer": "humitat",
+      "hint": "Fa humitat."
+    },
+    {
+      "prompt": "Quel temps fait-il ? → Quin ___ fa?",
+      "answer": "temps",
+      "hint": "Quin temps fa?"
+    },
+    {
+      "prompt": "Hier il a plu. → Ahir va ___.",
+      "answer": "ploure",
+      "hint": "Passat perifràstic : va + infinitif."
+    },
+    {
+      "prompt": "Demain il neigera. → Demà ___.",
+      "answer": "nevarà",
+      "hint": "Futur de nevar."
+    },
+    {
+      "prompt": "Demain il fera chaud. → Demà ___ calor.",
+      "answer": "farà",
+      "hint": "Futur de fer : farà."
+    },
+    {
+      "prompt": "J'ai chaud (moi). → Tinc ___.",
+      "answer": "calor",
+      "hint": "Pour une personne : TENIR calor, pas fer."
+    },
+    {
+      "prompt": "J'ai froid (moi). → Tinc ___.",
+      "answer": "fred",
+      "hint": "Pour une personne : TENIR fred."
+    },
+    {
+      "prompt": "Il pleut à verse. → Plou a bots i ___.",
+      "answer": "barrals",
+      "hint": "Expression : a bots i barrals."
+    }
+  ]
+}
