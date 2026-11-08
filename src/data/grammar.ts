@@ -10,6 +10,22 @@ export type GrammarPoint = {
 };
 
 export const grammarPoints: GrammarPoint[] = [
+  {
+    id: "cat_temps_meteo",
+    title: { fr: "Catalan — Le temps qu'il fait", en: "Catalan — Weather" },
+    level: "A1",
+    note: { fr: "Plou, neva, fa calor, fa fred, fa vent, fa sol : dire le temps qu'il fait en catalan.", en: "Plou, neva, fa calor, fa fred, fa vent, fa sol: talking about the weather in Catalan." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_temps_meteo.json"
+  },
+  {
+    id: "cat_hora_digital",
+    title: { fr: "Catalan — Dire l'heure (heure numérique)", en: "Catalan — Telling the time (digital)" },
+    level: "A1",
+    note: { fr: "Passer de 3:30 à « Són dos quarts de quatre » : les quarts, i / menys, matí / tarda / nit.", en: "From 3:30 to \"Són dos quarts de quatre\": quarters, past / to, morning / afternoon / night." },
+    country: "all",
+    jsonPath: "/data/grammar_quizz/cat_hora_digital.json"
+  },
 {
   id: "cat_apostrofacio",
   title: { fr: "Catalan — L'apostrophe (l', d') et ses exceptions", en: "Catalan — Apostrophation (l', d') and its exceptions" },
