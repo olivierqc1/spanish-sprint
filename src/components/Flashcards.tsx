@@ -9,6 +9,25 @@ import { wordsB1 } from "../data/words/B1";
 import catalanWordsA1 from "../data/words/catalan/A1";
 import { catalanWordsA2 } from "../data/words/catalan/A2";
 import { catalanWordsB1 } from "../data/words/catalan/B1";
+import { catalanNotebookCards } from "../data/words/catalan/A2_notebook";
+import { catalanNotebook3Cards } from "../data/words/catalan/A2_notebook_3";
+
+// Fusionne des listes de cartes sans doublons (même id ou même mot catalan)
+function mergeCards(...lists: Card[][]): Card[] {
+  const ids = new Set<string>();
+  const fronts = new Set<string>();
+  const out: Card[] = [];
+  for (const list of lists) {
+    for (const c of list) {
+      const key = c.front.trim().toLowerCase();
+      if (ids.has(c.id) || fronts.has(key)) continue;
+      ids.add(c.id);
+      fronts.add(key);
+      out.push(c);
+    }
+  }
+  return out;
+}
 
 export interface Card {
   id: string;
@@ -29,6 +48,7 @@ interface FlashcardsProps {
 type ViewMode = 'cards' | 'list' | 'review';
 
 const STORAGE_KEY = 'iberian-sprint-difficult-words';
+const REVERSE_KEY = 'iberian-sprint-flashcard-reverse';
 
 function getDifficultIds(): Set<string> {
   if (typeof window === 'undefined') return new Set();
@@ -55,6 +75,7 @@ export default function Flashcards({
   const [targetLanguage, setTargetLanguage] = useState<'spanish' | 'catalan'>('spanish');
   const [viewMode, setViewMode] = useState<ViewMode>('cards');
   const [difficultIds, setDifficultIds] = useState<Set<string>>(new Set());
+  const [reverse, setReverse] = useState(true); // true = français d'abord, je dois retrouver le mot
 
   useEffect(() => {
     if (propLanguage) {
@@ -67,17 +88,31 @@ export default function Flashcards({
     if (savedTarget === 'catalan') setTargetLanguage('catalan');
     else setTargetLanguage('spanish');
     setDifficultIds(getDifficultIds());
+    try {
+      const r = localStorage.getItem(REVERSE_KEY);
+      if (r === '0') setReverse(false);
+      else setReverse(true);
+    } catch {}
   }, [propLanguage]);
+
+  const toggleReverse = () => {
+    const next = !reverse;
+    setReverse(next);
+    setIsFlipped(false);
+    try { localStorage.setItem(REVERSE_KEY, next ? '1' : '0'); } catch {}
+  };
 
   let allCards: Card[] = [];
   if (targetLanguage === 'catalan') {
     switch (level) {
       case 'A1':  allCards = catalanWordsA1 as Card[]; break;
-      case 'A2':  allCards = catalanWordsA2 as Card[]; break;
+      case 'A2':  allCards = mergeCards(catalanWordsA2 as Card[], catalanNotebookCards as Card[], catalanNotebook3Cards as Card[]); break;
       case 'B1':  allCards = catalanWordsB1 as Card[]; break;
-      case 'ALL': allCards = [
-        ...catalanWordsA1, ...catalanWordsA2, ...catalanWordsB1,
-      ] as Card[]; break;
+      case 'ALL': allCards = mergeCards(
+        catalanWordsA1 as Card[], catalanWordsA2 as Card[],
+        catalanNotebookCards as Card[], catalanNotebook3Cards as Card[],
+        catalanWordsB1 as Card[],
+      ); break;
       default:    allCards = catalanWordsA1 as Card[];
     }
   } else {
@@ -132,7 +167,8 @@ export default function Flashcards({
     title: isCat ? 'Flashcards Català' : 'Flashcards',
     lang: isCat ? 'Català' : 'Espagnol',
     cards: 'Cartes', list: 'Liste', review: 'Révision',
-    flip: 'Cliquez sur la carte pour voir la traduction',
+    flip: 'Cliquez sur la carte pour voir la réponse',
+    dirFr: '🇫🇷 → Català (je retrouve le mot)', dirCa: 'Català → 🇫🇷 (je traduis)',
     prev: '← Précédent', next: 'Suivant →', cardOf: 'Carte',
     hard: 'Difficile', unhard: 'Retiré',
     hardCount: (n: number) => `${n} mot${n > 1 ? 's' : ''} difficile${n > 1 ? 's' : ''}`,
@@ -143,7 +179,8 @@ export default function Flashcards({
     title: isCat ? 'Catalan Flashcards' : 'Flashcards',
     lang: isCat ? 'Català' : 'Spanish',
     cards: 'Cards', list: 'List', review: 'Review',
-    flip: 'Click on the card to see the translation',
+    flip: 'Click on the card to see the answer',
+    dirFr: '🇫🇷 → Català (I recall the word)', dirCa: 'Català → 🇫🇷 (I translate)',
     prev: '← Previous', next: 'Next →', cardOf: 'Card',
     hard: 'Hard', unhard: 'Removed',
     hardCount: (n: number) => `${n} difficult word${n > 1 ? 's' : ''}`,
@@ -211,6 +248,18 @@ export default function Flashcards({
           )}
         </button>
       </div>
+
+      {/* Direction */}
+      <button
+        onClick={toggleReverse}
+        style={{
+          padding: '8px 12px', borderRadius: '8px', border: '1px solid #334155',
+          background: '#0f172a', color: '#e2e8f0', fontSize: '13px',
+          fontWeight: 600, cursor: 'pointer', textAlign: 'center',
+        }}
+      >
+        🔁 {reverse ? t.dirFr : t.dirCa}
+      </button>
 
       {/* ── LIST MODE ─────────────────────────────────────────── */}
       {viewMode === 'list' && (
@@ -314,9 +363,9 @@ export default function Flashcards({
             }}
           >
             <span style={{ lineHeight: 1.3 }}>
-              {isFlipped
-                ? (language === 'en' && currentCard.backEn ? currentCard.backEn : currentCard.back)
-                : currentCard.front}
+              {(isFlipped === reverse)
+                ? currentCard.front
+                : (language === 'en' && currentCard.backEn ? currentCard.backEn : currentCard.back)}
             </span>
             {!isFlipped && currentCard.category && (
               <span style={{
