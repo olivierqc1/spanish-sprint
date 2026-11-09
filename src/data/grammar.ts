@@ -18,6 +18,8 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_temps_meteo.json"
   },
+  { id: "cat_temps_meteo_2", title: { fr: "Catalan — Météo II : enneigé, gelé, degrés", en: "Catalan — Weather II: snowy, frozen, degrees" }, level: "A2",
+    note: { fr: "Està nevat, està gelat, el cel està serè, hi ha gebre, estem a 5 graus, a Berlín estan a 17 graus.", en: "Està nevat, està gelat, el cel està serè, hi ha gebre, estem a 5 graus, a Berlín estan a 17 graus." }, country: "all", jsonPath: "/data/grammar_quizz/cat_temps_meteo_2.json" },
   {
     id: "cat_hora_digital",
     title: { fr: "Catalan — Dire l'heure (heure numérique)", en: "Catalan — Telling the time (digital)" },
