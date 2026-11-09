@@ -212,6 +212,8 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_quantificadors.json"
   },
+  { id: "cat_massa_molt_gaire_gens", title: { fr: "Catalan — Massa, molt, bastant, gaire, gens, tant", en: "Catalan — Massa, molt, bastant, gaire, gens, tant" }, level: "A2",
+    note: { fr: "Choisir le bon mot de quantité grâce à la conséquence : ha nevat massa, no ha nevat gaire, ha nevat tant que…", en: "Pick the right quantity word from the consequence: ha nevat massa, no ha nevat gaire, ha nevat tant que…" }, country: "all", jsonPath: "/data/grammar_quizz/cat_massa_molt_gaire_gens.json" },
   {
     id: "cat_paisos_nacionalitats",
     title: { fr: "Catalan — Pays, nationalités et langues", en: "Catalan — Countries and nationalities" },

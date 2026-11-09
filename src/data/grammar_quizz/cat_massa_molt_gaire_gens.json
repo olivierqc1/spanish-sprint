@@ -1,0 +1,40 @@
+{
+  "note": {
+    "fr": "📏 L'ÉCHELLE (du moins au plus)\ngens = pas du tout · gaire = pas beaucoup · bastant = assez · molt = beaucoup · massa = trop\n─────\n🚫 GENS et GAIRE : seulement avec « no » (ou dans une question)\nNo ha nevat gens = il n'a pas neigé du tout (zéro).\nNo ha nevat gaire = il a neigé, mais peu.\nHas dormit gaire? = tu as beaucoup dormi ?\nOn ne dit jamais « ha nevat gaire » sans « no ».\n─────\n✅ BASTANT, MOLT, MASSA\nBastant = assez, une quantité correcte (ha nevat bastant, però l'any passat més).\nMolt = beaucoup, c'est neutre ou positif (ha nevat molt i ha vingut molta gent a esquiar).\nMassa = trop, il y a un problème (ha nevat massa i els pobles han quedat incomunicats).\n─────\n➡️ TANT … QUE = tellement … que\nOn le reconnaît au « que » qui suit : ha nevat tant que les carreteres estan tallades.\nDevant un nom : tant de (fa tant de fred que…). Devant un adjectif, il devient « tan » (és tan car que…).\n─────\n💡 Lis la fin de la phrase : la conséquence te dit quel mot mettre.",
+    "en": "Scale: gens (not at all) · gaire (not much) · bastant (quite) · molt (a lot) · massa (too much). Gens and gaire need « no » or a question. Tant … que = so much … that."
+  },
+  "drills": [
+    { "prompt": "No ha nevat ___ i no han pogut obrir les pistes. (pas du tout)", "answer": "gens", "hint": "Zéro neige : gens, avec no." },
+    { "prompt": "No ha nevat ___, només una mica al gener i al febrer. (pas beaucoup)", "answer": "gaire", "hint": "Un peu de neige : gaire, avec no." },
+    { "prompt": "Ha nevat ___ que moltes carreteres estan tallades. (tellement)", "answer": "tant", "hint": "Le « que » qui suit annonce tant." },
+    { "prompt": "Ha nevat ___ i alguns pobles han quedat incomunicats. (trop)", "answer": "massa", "hint": "Il y a un problème : massa." },
+    { "prompt": "Ha nevat ___ i ha vingut molta gent a esquiar. (beaucoup)", "answer": "molt", "hint": "Beaucoup, et c'est positif : molt." },
+    { "prompt": "Ha nevat ___, però l'any passat va nevar més. (assez)", "answer": "bastant", "hint": "Une quantité correcte, sans plus : bastant." },
+    { "prompt": "Ha plogut ___ i el riu s'ha desbordat. (trop)", "answer": "massa", "hint": "Conséquence négative : massa." },
+    { "prompt": "Ha plogut ___ que el carrer sembla un riu. (tellement)", "answer": "tant", "hint": "Tant … que." },
+    { "prompt": "Aquest estiu no ha plogut ___: la terra està molt seca. (pas du tout)", "answer": "gens", "hint": "Zéro pluie : gens." },
+    { "prompt": "No fa ___ fred, no cal l'abric. (pas très)", "answer": "gaire", "hint": "Un peu froid seulement : gaire." },
+    { "prompt": "No fa ___ de vent, el mar està tranquil. (pas du tout)", "answer": "gens", "hint": "Gens de + nom." },
+    { "prompt": "Avui fa ___ calor: ja podem anar a la platja. (assez)", "answer": "bastant", "hint": "Assez chaud pour la plage : bastant." },
+    { "prompt": "Fa ___ calor per caminar al migdia. (trop)", "answer": "massa", "hint": "Trop chaud pour marcher : massa." },
+    { "prompt": "Fa ___ de fred que s'ha gelat el llac. (tellement)", "answer": "tant", "hint": "Tant de + nom … que." },
+    { "prompt": "M'agrada ___ la neu. (beaucoup)", "answer": "molt", "hint": "Positif : molt." },
+    { "prompt": "No m'agrada ___ el fred. (pas du tout)", "answer": "gens", "hint": "No m'agrada gens = je n'aime pas du tout." },
+    { "prompt": "No m'agrada ___ la pluja, però la suporto. (pas beaucoup)", "answer": "gaire", "hint": "Pas beaucoup, mais un peu : gaire." },
+    { "prompt": "Aquest abric és ___ car, no el puc comprar. (trop)", "answer": "massa", "hint": "Problème : je ne peux pas l'acheter." },
+    { "prompt": "Aquest abric és ___ bonic i no és car. (assez)", "answer": "bastant", "hint": "Bastant + adjectif = assez." },
+    { "prompt": "La platja no és ___ lluny, hi podem anar a peu. (pas très)", "answer": "gaire", "hint": "No és gaire lluny = ce n'est pas très loin." },
+    { "prompt": "Has dormit ___? (beaucoup, question)", "answer": "gaire", "hint": "Dans une question, gaire = beaucoup." },
+    { "prompt": "Fa ___ fred a fora? (beaucoup, question)", "answer": "gaire", "hint": "Question : gaire." },
+    { "prompt": "He menjat ___ i ara em fa mal la panxa. (trop)", "answer": "massa", "hint": "Conséquence négative : massa." },
+    { "prompt": "He menjat ___ que no puc més. (tellement)", "answer": "tant", "hint": "Tant … que." },
+    { "prompt": "No he menjat ___, encara tinc gana. (pas beaucoup)", "answer": "gaire", "hint": "Un peu seulement : gaire." },
+    { "prompt": "No he dormit ___ aquesta nit, estic esgotat. (pas du tout)", "answer": "gens", "hint": "Zéro sommeil : gens." },
+    { "prompt": "Ha estudiat ___ i ha aprovat l'examen. (beaucoup)", "answer": "molt", "hint": "Positif : molt." },
+    { "prompt": "He estudiat ___, però podria estudiar més. (assez)", "answer": "bastant", "hint": "Correct, sans plus : bastant." },
+    { "prompt": "Parla ___ ràpid i no l'entenc. (trop)", "answer": "massa", "hint": "Problème : je ne le comprends pas." },
+    { "prompt": "Parla ___ bé el català, gairebé com un nadiu. (très)", "answer": "molt", "hint": "Molt + adverbe = très." },
+    { "prompt": "Corre ___ que ningú no l'atrapa. (tellement)", "answer": "tant", "hint": "Tant … que." },
+    { "prompt": "No entenc ___ el que diu. (pas du tout)", "answer": "gens", "hint": "Zéro compréhension : gens." }
+  ]
+}
