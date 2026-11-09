@@ -1,0 +1,43 @@
+{
+  "note": {
+    "fr": "❄️ ESTÀ + ADJECTIF (l'état du ciel ou d'un lieu)\nL'adjectif s'accorde avec ce qu'on décrit : el cim està nevat, la muntanya està nevada.\nEstà ennuvolat = c'est nuageux · El cel està serè = le ciel est dégagé · El cel està tapat = le ciel est couvert · Està nevat = c'est enneigé · Està gelat = c'est gelé · Està mullat = c'est mouillé · Està humit = c'est humide · Està emboirat = c'est dans le brouillard · Està fosc = il fait sombre · El temps està inestable = le temps est instable.\n─────\n☀️ FA + NOM\nFa sol, fa calor, fa fred, fa vent, fa boira, fa fresca, fa xafogor (il fait lourd), fa bon temps, fa mal temps, fa un dia gris, fa un dia magnífic.\n─────\n🌨️ HI HA + NOM\nHi ha núvols, hi ha tempesta, hi ha boira, hi ha neu, hi ha gebre (du givre), hi ha una onada de calor.\n─────\n🌧️ VERBES DIRECTS\nPlou, neva, gela, trona, llampega, plovisqueja, calamarseja (il grêle).\n─────\n🌡️ LA TEMPÉRATURE\nEstem a 5 graus = il fait 5 degrés (chez nous) · A Berlín estan a 17 graus = il fait 17 degrés à Berlin · A Moscou estan a 1 grau (singulier !) · Estem a dos graus sota zero = il fait moins deux.\n─────\n💡 Avec un lieu déjà nommé, on ajoute « hi » : A Berlín està ennuvolat, però no hi fa fred.\n💬 Expression : fa un fred que pela = il fait un froid de canard.",
+    "en": "ESTÀ + adjective (agrees with the noun): està ennuvolat, la muntanya està nevada, el llac està gelat. FA + noun: fa sol, fa xafogor, fa un dia gris. HI HA + noun: hi ha neu, hi ha gebre. Direct verbs: plou, neva, calamarseja. Temperature: estem a 5 graus, a Berlín estan a 17 graus, a dos graus sota zero."
+  },
+  "drills": [
+    { "prompt": "La montagne est enneigée. → La muntanya està ___.", "answer": "nevada", "hint": "« Muntanya » est féminin : nevat devient nevada." },
+    { "prompt": "Le sommet est tout enneigé. → El cim està tot ___.", "answer": "nevat", "hint": "« Cim » est masculin : nevat." },
+    { "prompt": "Le lac est gelé. → El llac està ___.", "answer": "gelat", "hint": "Està + adjectif, accordé au masculin." },
+    { "prompt": "La route est gelée. → La carretera està ___.", "answer": "gelada", "hint": "« Carretera » est féminin : gelada." },
+    { "prompt": "Le sol est mouillé. → El terra està ___.", "answer": "mullat", "hint": "Mullat = mouillé (après la pluie)." },
+    { "prompt": "L'air est humide. → L'aire està ___.", "answer": "humit", "hint": "Humit = humide." },
+    { "prompt": "Le ciel est dégagé. → El cel està ___.", "answer": "serè", "hint": "Serè = dégagé, sans nuages." },
+    { "prompt": "Le ciel est couvert. → El cel està ___.", "answer": "tapat", "hint": "Tapat = couvert (on dit aussi ennuvolat)." },
+    { "prompt": "La ville est dans le brouillard. → La ciutat està ___.", "answer": "emboirada", "hint": "De « boira » (brouillard) ; féminin car « ciutat »." },
+    { "prompt": "Il fait sombre. → Està ___.", "answer": "fosc", "hint": "Fosc = sombre." },
+    { "prompt": "Le temps est instable. → El temps està ___.", "answer": "inestable", "hint": "En catalan : in-estable, avec un e." },
+    { "prompt": "Il fait lourd (chaleur humide). → Fa ___.", "answer": "xafogor", "hint": "Fa xafogor = il fait lourd, étouffant." },
+    { "prompt": "C'est une journée grise. → Fa un dia ___.", "answer": "gris", "hint": "Fa un dia + adjectif." },
+    { "prompt": "C'est une journée magnifique. → Fa un dia ___.", "answer": "magnífic", "hint": "Accent sur le premier i." },
+    { "prompt": "Il y a du givre. → Hi ha ___.", "answer": "gebre", "hint": "Gebre = givre." },
+    { "prompt": "Il y a de la neige dans les rues. → Hi ha ___ als carrers.", "answer": "neu", "hint": "La neu = la neige (le nom)." },
+    { "prompt": "Il y a une vague de chaleur. → Hi ha una onada de ___.", "answer": "calor", "hint": "Onada de calor = canicule." },
+    { "prompt": "Il grêle. → ___.", "answer": "Calamarseja", "hint": "Verbe direct, comme plou ou neva." },
+    { "prompt": "Il commence à pleuvoir. → Comença a ___.", "answer": "ploure", "hint": "Infinitif de plou : ploure." },
+    { "prompt": "Il a arrêté de pleuvoir. → Ha ___ de ploure.", "answer": "parat", "hint": "Parar de = arrêter de." },
+    { "prompt": "Il fait jour. → Ja és de ___.", "answer": "dia", "hint": "Ser de dia = il fait jour." },
+    { "prompt": "Il fait nuit. → Ja és de ___.", "answer": "nit", "hint": "Ser de nit = il fait nuit." },
+    { "prompt": "Il fait 17 degrés à Berlin. → A Berlín ___ a 17 graus.", "answer": "estan", "hint": "Pour une ville : estan a + degrés." },
+    { "prompt": "Il fait 1 degré à Moscou. → A Moscou estan a 1 ___.", "answer": "grau", "hint": "Un seul degré : singulier." },
+    { "prompt": "Il fait 5 degrés (ici). → ___ a 5 graus.", "answer": "Estem", "hint": "Chez nous : estem a + degrés." },
+    { "prompt": "Il fait moins deux. → Estem a dos graus sota ___.", "answer": "zero", "hint": "Sota zero = sous zéro." },
+    { "prompt": "À Lisbonne il fait 22 degrés et il pleut. → A Lisboa estan a 22 graus i ___.", "answer": "plou", "hint": "Verbe direct, sans « fa »." },
+    { "prompt": "À Londres il y a du brouillard. → A Londres hi ha ___.", "answer": "boira", "hint": "Boira = brouillard." },
+    { "prompt": "À Paris il fait soleil. → A París fa ___.", "answer": "sol", "hint": "Fa sol = il y a du soleil." },
+    { "prompt": "À Amsterdam il y a un orage. → A Amsterdam hi ha ___.", "answer": "tempesta", "hint": "Hi ha tempesta = il y a un orage." },
+    { "prompt": "À Bruxelles il y a des éclairs. → A Brussel·les ___.", "answer": "llampega", "hint": "Verbe direct : llampegar." },
+    { "prompt": "À Moscou il neige. → A Moscou ___.", "answer": "neva", "hint": "Verbe direct : nevar." },
+    { "prompt": "À Dublin il fait frais. → A Dublín fa ___.", "answer": "fresca", "hint": "Fa fresca = il fait frais." },
+    { "prompt": "C'est nuageux, mais il n'y fait pas froid. → Està ennuvolat, però no ___ fa fred.", "answer": "hi", "hint": "Hi remplace le lieu déjà nommé." },
+    { "prompt": "Il fait un froid de canard. → Fa un fred que ___.", "answer": "pela", "hint": "Expression : fa un fred que pela." }
+  ]
+}
