@@ -15,6 +15,7 @@
       catalanBadge: 'Nouveau',
       modules: {
         flashcards: { title: 'Flashcards', desc: 'Vocabulaire par pays et niveau' },
+        frequence: { title: 'Mots fréquents', desc: 'Les 500 mots les plus utilisés' },
         audio: { title: 'Audio', desc: 'Écoute et répète' },
         grammar: { title: 'Grammaire', desc: 'Exercices de grammaire' },
         conjugation: { title: 'Conjugaison', desc: 'Entraîne-toi aux verbes' },
@@ -25,6 +26,7 @@
       },
       catalanModules: {
         flashcards: { title: 'Flashcards', desc: 'Vocabulaire catalan A1-B1' },
+        frequence: { title: 'Mots fréquents', desc: 'Les 500 mots les plus utilisés' },
         conjugation: { title: 'Conjugaison', desc: 'Verbes catalans essentiels' },
         grammar: { title: 'Grammaire', desc: 'Articles, ser/estar, négation...' },
         phrases: { title: 'Phrases du quotidien', desc: 'Survie à Barcelone' },
@@ -49,6 +51,7 @@
       catalanBadge: 'New',
       modules: {
         flashcards: { title: 'Flashcards', desc: 'Vocabulary by country & level' },
+        frequence: { title: 'Frequent words', desc: 'The 500 most used words' },
         audio: { title: 'Audio', desc: 'Listen and repeat' },
         grammar: { title: 'Grammar', desc: 'Grammar exercises' },
         conjugation: { title: 'Conjugation', desc: 'Practice verbs' },
@@ -59,6 +62,7 @@
       },
       catalanModules: {
         flashcards: { title: 'Flashcards', desc: 'Catalan vocabulary A1-B1' },
+        frequence: { title: 'Frequent words', desc: 'The 500 most used words' },
         conjugation: { title: 'Conjugation', desc: 'Essential Catalan verbs' },
         grammar: { title: 'Grammar', desc: 'Articles, ser/estar, negation...' },
         phrases: { title: 'Daily Phrases', desc: 'Survive in Barcelona' },
