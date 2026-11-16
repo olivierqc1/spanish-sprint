@@ -61,6 +61,7 @@ export default function Home() {
     { key: 'grammaire', icon: '📚', route: 'grammaire', available: true, ...t.modules.grammar },
     { key: 'conjugaison', icon: '⚡', route: 'conjugaison', available: true, ...t.modules.conjugation },
     { key: 'frequence', icon: '🔢', route: 'frequence', available: true, ...t.modules.frequence },
+    { key: 'repas', icon: '🔁', route: 'grammar-repas', available: true, ...t.catalanModules.repas },
   ];
 
   const catalanModules = [

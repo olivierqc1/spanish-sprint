@@ -10,6 +10,8 @@ type Drill = {
   // Identifiant stable pour le SRS (mode Repàs espaiat).
   // Si absent, il est déduit de quizId + index de la question.
   srsId?: string;
+  // Petite étiquette affichée au-dessus de la phrase (ex. le nom de la leçon en mode Repàs espaiat).
+  label?: string;
 };
 
 type Visual = {
@@ -311,6 +313,11 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
 
         {/* Sentence */}
         <div style={{ background: '#1e293b', borderRadius: '16px', padding: '24px 20px', textAlign: 'center' }}>
+          {currentDrill.label && (
+            <span style={{ display: 'block', fontSize: '11px', fontWeight: 700, letterSpacing: '.03em', textTransform: 'uppercase', color: '#a78bfa', marginBottom: '8px' }}>
+              {currentDrill.label}
+            </span>
+          )}
           <p style={{ color: '#f1f5f9', fontSize: '21px', fontWeight: '600', lineHeight: '1.6', margin: 0 }}>
             {buildSentence()}
           </p>

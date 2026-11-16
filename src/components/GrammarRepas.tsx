@@ -5,12 +5,14 @@ import GrammarDrill from "./GrammarDrill";
 import { grammarPoints } from "@/data/grammar";
 import { getAllProgress } from "@/utils/srs-storage";
 import { isDueForReview } from "@/utils/srs-algorithm";
+import { frequencyLists } from "@/data/frequency";
 
 type Drill = {
   prompt: string;
   answer: string;
   hint?: string | { fr: string; en: string };
   srsId?: string;
+  label?: string;
 };
 
 const MAX_SESSION = 30;
@@ -65,7 +67,8 @@ export default function GrammarRepas() {
             const original = data?.drills?.[index];
             if (!original) return;
             results.push({
-              prompt: `<span style="display:block;font-size:11px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:#a78bfa;margin-bottom:8px;">${label}</span>${original.prompt}`,
+              prompt: original.prompt,
+              label,
               answer: original.answer,
               hint: original.hint,
               srsId: `grammar:${quizId}:${index}`,
@@ -75,6 +78,27 @@ export default function GrammarRepas() {
           // Fichier de leçon introuvable/renommé : on saute, sans planter la révision.
         }
       }
+
+      // Mots fréquents ratés au test (cartes "freq:<langue>:<rang>")
+      Object.values(allProgress).forEach((progress) => {
+        if (!progress.cardId.startsWith('freq:')) return;
+        if (!isDueForReview(progress)) return;
+        const [, lang, rankStr] = progress.cardId.split(':');
+        if (lang !== 'catalan' && lang !== 'spanish') return;
+        const entry = frequencyLists[lang][parseInt(rankStr, 10) - 1];
+        if (!entry) return;
+        const [word, fr] = entry;
+        const answer = word.split(',')[0].trim();
+        const meaning = fr.split(' ;')[0];
+        const label = lang === 'catalan' ? 'Mot fréquent · Català' : 'Mot fréquent · Español';
+        results.push({
+          prompt: `« ${meaning} » → ___`,
+          label,
+          answer,
+          hint: `Mot n°${rankStr} de la liste de fréquence.`,
+          srsId: progress.cardId,
+        });
+      });
 
       // Mélange + plafond de session
       const shuffled = results.sort(() => Math.random() - 0.5).slice(0, MAX_SESSION);
@@ -88,7 +112,7 @@ export default function GrammarRepas() {
     fr: {
       title: '🔁 Repàs espaiat',
       subtitle: (n: number) => `${n} question${n > 1 ? 's' : ''} à réviser aujourd'hui`,
-      empty: "🎉 Rien à réviser pour l'instant ! Fais quelques leçons de grammaire, reviens ici dans un jour ou deux.",
+      empty: "🎉 Rien à réviser pour l'instant ! Fais quelques leçons de grammaire ou un test de mots fréquents, puis reviens dans un jour ou deux.",
       back: '← Retour',
       loading: 'Chargement…',
       again: 'Encore une session',
@@ -96,7 +120,7 @@ export default function GrammarRepas() {
     en: {
       title: '🔁 Spaced review',
       subtitle: (n: number) => `${n} question${n > 1 ? 's' : ''} due today`,
-      empty: "🎉 Nothing due right now! Do a few grammar lessons, then come back in a day or two.",
+      empty: "🎉 Nothing due right now! Do a few grammar lessons or a frequent-words test, then come back in a day or two.",
       back: '← Back',
       loading: 'Loading…',
       again: 'Another session',
