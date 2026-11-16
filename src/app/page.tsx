@@ -55,6 +55,7 @@ export default function Home() {
   const spanishModules = [
     { key: 'flashcards', icon: '🎴', route: 'flashcards', available: true, ...t.modules.flashcards },
     { key: 'dictee', icon: '✍️', route: 'dictee', available: true, ...t.modules.dictee },
+    { key: 'input', icon: '🎧', route: 'input', available: true, ...t.modules.input },
     { key: 'reading', icon: '📖', route: 'reading', available: true, ...t.modules.reading },
     { key: 'audio', icon: '🎧', route: 'audio', available: true, ...t.modules.audio },
     { key: 'grammaire', icon: '📚', route: 'grammaire', available: true, ...t.modules.grammar },
@@ -67,6 +68,7 @@ export default function Home() {
     { key: 'conjugaison', icon: '⚡', route: 'conjugaison', available: true, ...t.catalanModules.conjugation },
     { key: 'pronunciacio', icon: '🎤', route: 'pronunciacio', available: true, ...t.catalanModules.pronunciation },
     { key: 'grammaire', icon: '📚', route: 'grammaire', available: true, ...t.catalanModules.grammar },
+    { key: 'input', icon: '🎧', route: 'input', available: true, ...t.catalanModules.input },
     { key: 'lectura', icon: '📖', route: 'lectura', available: true, ...t.catalanModules.lectura },
     { key: 'repas', icon: '🔁', route: 'grammar-repas', available: true, ...t.catalanModules.repas },
     { key: 'dictee', icon: '✍️', route: 'dictee', available: true, ...t.catalanModules.dictee },
