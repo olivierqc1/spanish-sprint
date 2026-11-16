@@ -60,6 +60,7 @@ export default function Home() {
     { key: 'audio', icon: '🎧', route: 'audio', available: true, ...t.modules.audio },
     { key: 'grammaire', icon: '📚', route: 'grammaire', available: true, ...t.modules.grammar },
     { key: 'conjugaison', icon: '⚡', route: 'conjugaison', available: true, ...t.modules.conjugation },
+    { key: 'frequence', icon: '🔢', route: 'frequence', available: true, ...t.modules.frequence },
   ];
 
   const catalanModules = [
@@ -71,6 +72,7 @@ export default function Home() {
     { key: 'lectura', icon: '📖', route: 'lectura', available: true, ...t.catalanModules.lectura },
     { key: 'repas', icon: '🔁', route: 'grammar-repas', available: true, ...t.catalanModules.repas },
     { key: 'dictee', icon: '✍️', route: 'dictee', available: true, ...t.catalanModules.dictee },
+    { key: 'frequence', icon: '🔢', route: 'frequence', available: true, ...t.catalanModules.frequence },
     { key: 'phrases', icon: '💬', route: 'conversations', available: false, ...t.catalanModules.phrases },
   ];
 
