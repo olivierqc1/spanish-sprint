@@ -5,11 +5,21 @@
 import { type ReactNode, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { inputSeries, type InputEpisode, type InputLang } from '@/data/input';
 import { recordActivity } from '@/data/activityLog';
+import { freqLinks } from '@/data/input/freqLinks';
+import { frequencyLists } from '@/data/frequency';
+import { loadKnown, saveKnown } from '@/data/frequency/known';
 
 const PROGRESS_KEY = 'ss_input_progress_v1'; // { [episodeId]: score sur 3 }
 const TIME_KEY = 'ss_input_seconds_v1'; // { catalan: secondes, spanish: secondes }
 const LANG_KEY = 'iberian-sprint-target-language';
 const SPEEDS = [0.7, 0.85, 1];
+const FREQ_MIN_RANK = 101; // les 100 premiers mots sont trop basiques pour être surlignés
+const HIGHLIGHT_KEY = 'ss_input_highlight_freq_v1';
+
+// clé utilisée dans freqLinks : minuscules, accents gardés, sans ponctuation autour
+function linkKey(tok: string): string {
+  return tok.toLowerCase().replace(/^[^0-9a-zà-ÿ·]+|[^0-9a-zà-ÿ·]+$/g, '');
+}
 
 function readJson<T>(key: string, fallback: T): T {
   if (typeof window === 'undefined') return fallback;
@@ -62,7 +72,9 @@ export default function ComprehensibleInput() {
   const [allFr, setAllFr] = useState(false);
   const [hideText, setHideText] = useState(false);
   const [showWords, setShowWords] = useState(false);
-  const [picked, setPicked] = useState<{ word: string; gloss: string } | null>(null);
+  const [picked, setPicked] = useState<{ word: string; gloss: string; rank?: number } | null>(null);
+  const [known, setKnown] = useState<Record<InputLang, string[]>>({ catalan: [], spanish: [] });
+  const [highlightFreq, setHighlightFreq] = useState(true);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [qFr, setQFr] = useState<Set<number>>(new Set());
   const [speed, setSpeed] = useState(0.85);
@@ -75,12 +87,39 @@ export default function ComprehensibleInput() {
     if (saved === 'spanish' || saved === 'catalan') setLang(saved);
     setProgress(readJson(PROGRESS_KEY, {}));
     setSeconds({ catalan: 0, spanish: 0, ...readJson(TIME_KEY, {}) });
+    setKnown(loadKnown());
+    setHighlightFreq(readJson(HIGHLIGHT_KEY, true));
   }, []);
 
   const series = inputSeries[lang];
   const voiceLang = lang === 'catalan' ? 'ca-ES' : 'es-ES';
   const episodeIndex = series.episodes.findIndex((e) => e.id === episodeId);
   const episode: InputEpisode | null = episodeIndex >= 0 ? series.episodes[episodeIndex] : null;
+
+  const knownSet = useMemo(() => new Set(known[lang]), [known, lang]);
+  const freqList = frequencyLists[lang];
+
+  // rang du mot dans la liste de fréquence, s'il y est
+  const freqRank = (tok: string): number | null => freqLinks[lang][linkKey(tok)] ?? null;
+  const isFreqToLearn = (rank: number | null): rank is number =>
+    rank !== null && rank >= FREQ_MIN_RANK && !knownSet.has(freqList[rank - 1]?.[0] ?? '');
+
+  const markFreqKnown = (rank: number) => {
+    const w = freqList[rank - 1]?.[0];
+    if (!w) return;
+    setKnown((prev) => {
+      const next = { ...prev, [lang]: Array.from(new Set([...prev[lang], w])) };
+      saveKnown(next);
+      return next;
+    });
+  };
+
+  const toggleHighlight = () => {
+    setHighlightFreq((v) => {
+      writeJson(HIGHLIGHT_KEY, !v);
+      return !v;
+    });
+  };
 
   const gloss = useMemo(() => {
     const out: Record<string, string> = {};
@@ -211,21 +250,42 @@ export default function ComprehensibleInput() {
 
   const renderSentence = (text: string): ReactNode[] =>
     text.split(/(\s+)/).map((tok, i) => {
-      const g = /^\s+$/.test(tok) ? null : lookup(tok, gloss);
-      if (!g) return <span key={i}>{tok}</span>;
-      return (
-        <span
-          key={i}
-          role="button"
-          onClick={(e) => {
-            e.stopPropagation();
-            setPicked({ word: tok.replace(/^[^0-9A-Za-zÀ-ÿ]+|[^0-9A-Za-zÀ-ÿ]+$/g, ''), gloss: g });
-          }}
-          className="underline decoration-dotted decoration-amber-400 underline-offset-4 text-amber-100"
-        >
-          {tok}
-        </span>
-      );
+      if (/^\s+$/.test(tok) || tok === '') return <span key={i}>{tok}</span>;
+      const word = tok.replace(/^[^0-9A-Za-zÀ-ÿ]+|[^0-9A-Za-zÀ-ÿ]+$/g, '');
+      const rank = freqRank(tok);
+      const g = lookup(tok, gloss);
+      if (g) {
+        return (
+          <span
+            key={i}
+            role="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              setPicked({ word, gloss: g, rank: rank ?? undefined });
+            }}
+            className="underline decoration-dotted decoration-amber-400 underline-offset-4 text-amber-100"
+          >
+            {tok}
+          </span>
+        );
+      }
+      if (highlightFreq && isFreqToLearn(rank)) {
+        const [lemma, fr] = freqList[rank - 1];
+        return (
+          <span
+            key={i}
+            role="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              setPicked({ word, gloss: word.toLowerCase() === lemma.toLowerCase() ? fr : `${lemma} = ${fr}`, rank });
+            }}
+            className="underline decoration-dashed decoration-emerald-500 underline-offset-4"
+          >
+            {tok}
+          </span>
+        );
+      }
+      return <span key={i}>{tok}</span>;
     });
 
   const langSwitch = (
@@ -336,6 +396,9 @@ export default function ComprehensibleInput() {
           <button onClick={() => setAllFr((v) => !v)} className="px-3 py-2 rounded-xl text-sm bg-slate-800 hover:bg-slate-700">
             {allFr ? 'Masquer le français' : 'Tout traduire'}
           </button>
+          <button onClick={toggleHighlight} className="px-3 py-2 rounded-xl text-sm bg-slate-800 hover:bg-slate-700">
+            {highlightFreq ? '🔢 Mots fréquents : oui' : '🔢 Mots fréquents : non'}
+          </button>
         </div>
 
         {/* Mots clés */}
@@ -382,20 +445,40 @@ export default function ComprehensibleInput() {
                 {(allFr || shown.has(i)) && <p className="text-sm text-slate-400 italic mt-1">{fr}</p>}
               </div>
             ))}
-            <p className="text-xs text-slate-500">Tape une phrase pour la traduction, un mot souligné pour son sens.</p>
+            <p className="text-xs text-slate-500">
+              Tape une phrase pour la traduction, un mot souligné pour son sens. Souligné en vert : un mot de ta liste des
+              2 000 mots fréquents que tu n&apos;as pas encore coché.
+            </p>
           </div>
         )}
 
         {picked && (
-          <div className="mt-4 flex items-center justify-between bg-amber-950/40 border border-amber-800 rounded-xl p-3">
-            <div>
-              <span className="font-bold text-amber-200">{picked.word}</span>
-              <span className="text-slate-400 mx-2">→</span>
-              <span className="text-slate-100">{picked.gloss}</span>
+          <div className="mt-4 bg-amber-950/40 border border-amber-800 rounded-xl p-3 space-y-2">
+            <div className="flex items-start justify-between gap-2">
+              <div>
+                <span className="font-bold text-amber-200">{picked.word}</span>
+                <span className="text-slate-400 mx-2">→</span>
+                <span className="text-slate-100">{picked.gloss}</span>
+              </div>
+              <button onClick={() => setPicked(null)} className="text-slate-500 hover:text-white text-sm">
+                ✕
+              </button>
             </div>
-            <button onClick={() => setPicked(null)} className="text-slate-500 hover:text-white text-sm">
-              ✕
-            </button>
+            {picked.rank !== undefined && (
+              <div className="flex items-center justify-between gap-2 text-xs">
+                <span className="text-emerald-300">Mot fréquent n°{picked.rank}</span>
+                {knownSet.has(freqList[picked.rank - 1]?.[0] ?? '') ? (
+                  <span className="text-slate-400">✓ déjà dans tes mots connus</span>
+                ) : (
+                  <button
+                    onClick={() => markFreqKnown(picked.rank as number)}
+                    className="px-2 py-1 rounded-lg bg-emerald-700 hover:bg-emerald-600 font-semibold"
+                  >
+                    ✓ Je le connais
+                  </button>
+                )}
+              </div>
+            )}
           </div>
         )}
       </article>

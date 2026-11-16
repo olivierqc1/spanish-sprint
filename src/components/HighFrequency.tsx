@@ -1,29 +1,28 @@
 'use client';
 
-// Les 500 mots les plus fréquents (catalan ou espagnol), par paquets de 50.
+// Les 2 000 mots les plus fréquents (catalan ou espagnol), par paquets de 100.
 // Mode Liste pour lire et cocher, mode Test pour vérifier ce que tu connais vraiment.
+// Un mot raté au test part dans le repàs espaiat (carte « freq:<langue>:<rang> »).
 import { useEffect, useMemo, useState } from 'react';
 import { frequencyLists, type FreqWord } from '@/data/frequency';
 import { recordActivity } from '@/data/activityLog';
+import { loadKnown, saveKnown, type FreqLang } from '@/data/frequency/known';
+import { getAllProgress, getCardProgress, saveCardProgress } from '@/utils/srs-storage';
+import { calculateNextReview } from '@/utils/srs-algorithm';
 
-type Lang = 'catalan' | 'spanish';
-const KNOWN_KEY = 'ss_freq_known_v1'; // { catalan: string[], spanish: string[] }
+type Lang = FreqLang;
 const LANG_KEY = 'iberian-sprint-target-language';
-const BAND = 50;
+const BAND = 100;
 
-function loadKnown(): Record<Lang, string[]> {
+// Met à jour la carte de révision espacée d'un mot fréquent.
+// Raté → à revoir demain. Su → l'intervalle s'allonge, seulement si la carte existe déjà.
+function updateSrs(lang: Lang, rank: number, ok: boolean): void {
   try {
-    const raw = JSON.parse(localStorage.getItem(KNOWN_KEY) || '{}');
-    return { catalan: raw.catalan || [], spanish: raw.spanish || [] };
+    const id = `freq:${lang}:${rank}`;
+    if (ok && !getAllProgress()[id]) return;
+    saveCardProgress(calculateNextReview(getCardProgress(id), ok ? 'good' : 'again'));
   } catch {
-    return { catalan: [], spanish: [] };
-  }
-}
-function saveKnown(k: Record<Lang, string[]>): void {
-  try {
-    localStorage.setItem(KNOWN_KEY, JSON.stringify(k));
-  } catch {
-    /* ignore */
+    /* stockage indisponible : on ignore */
   }
 }
 
@@ -105,6 +104,7 @@ export default function HighFrequency() {
     const i = queue[0];
     if (i === undefined) return;
     setWordKnown(slice[i][0], ok);
+    updateSrs(lang, start + i + 1, ok);
     setTestStats((s) => ({ ok: s.ok + (ok ? 1 : 0), ko: s.ko + (ok ? 0 : 1) }));
     setQueue((q) => q.slice(1));
     setFlipped(false);
@@ -149,7 +149,7 @@ export default function HighFrequency() {
       {/* Progression globale */}
       <div className="bg-slate-900 rounded-2xl p-5 border border-slate-800">
         <div className="flex items-end justify-between">
-          <h2 className="text-xl font-black">Les 500 mots les plus fréquents</h2>
+          <h2 className="text-xl font-black">Les 2 000 mots les plus fréquents</h2>
           <span className="text-sm font-bold text-emerald-400">
             {totalKnown}/{list.length}
           </span>
@@ -158,8 +158,10 @@ export default function HighFrequency() {
           <div className="h-full bg-emerald-500" style={{ width: `${pct}%` }} />
         </div>
         <p className="text-xs text-slate-400 mt-3">
-          Une poignée de mots revient tout le temps : les 100 premiers représentent à peu près la moitié de ce qu&apos;on
-          entend au quotidien, et les 500 environ les trois quarts. Coche ceux que tu connais, puis vérifie-toi en mode Test.
+          Quelques mots reviennent tout le temps : environ 1 000 mots couvrent déjà 80 % de ce qu&apos;on entend au
+          quotidien, et 2 000 près de 90 %. Coche ceux que tu connais, puis vérifie-toi en mode Test : les mots ratés
+          partent dans ton repàs espaiat, et ceux que tu n&apos;as pas cochés sont soulignés en vert dans les épisodes
+          d&apos;input compréhensible.
         </p>
       </div>
 
@@ -222,7 +224,7 @@ export default function HighFrequency() {
             const showFr = !hideFr || revealed.has(i);
             return (
               <div key={w} className="flex items-center gap-3 px-4 py-2">
-                <span className="w-8 text-xs text-slate-500 text-right shrink-0">{start + i + 1}</span>
+                <span className="w-10 text-xs text-slate-500 text-right shrink-0">{start + i + 1}</span>
                 <button onClick={() => speak(w, lang)} className="text-left flex-1 min-w-0">
                   <span className="font-semibold text-slate-100">{w}</span>
                   <span className="text-xs text-slate-500"> 🔊</span>
