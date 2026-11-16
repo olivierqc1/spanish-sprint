@@ -21,6 +21,7 @@
         conversations: { title: 'Conversations', desc: 'Pratique avec l\'IA' },
         audioPro: { title: 'Audio Pro', desc: 'Génère des audios TTS' },
         reading: { title: 'Lecture', desc: 'Textes authentiques' },
+        input: { title: 'Input compréhensible', desc: 'Une histoire en épisodes, à écouter et lire' },
         dictee: { title: 'Dictée', desc: 'Écris ce que tu entends' },
       },
       catalanModules: {
@@ -31,6 +32,7 @@
         dictee: { title: 'Dictée', desc: 'Orthographe catalane' },
         pronunciation: { title: 'Prononciation', desc: 'Écoute, répète, obtiens un score' },
         lectura: { title: 'Lecture', desc: 'Textes courts en català, avec glossaire' },
+        input: { title: 'Input compréhensible', desc: 'Une histoire en épisodes, à écouter et lire' },
         repas: { title: 'Repàs espaiat', desc: 'Révise ce que tu as raté, au bon moment' },
       },
       comingSoon: 'Bientôt disponible',
@@ -55,6 +57,7 @@
         conversations: { title: 'Conversations', desc: 'Practice with AI' },
         audioPro: { title: 'Audio Pro', desc: 'Generate TTS audio' },
         reading: { title: 'Reading', desc: 'Authentic texts' },
+        input: { title: 'Comprehensible input', desc: 'A story in episodes, to listen to and read' },
         dictee: { title: 'Dictation', desc: 'Write what you hear' },
       },
       catalanModules: {
@@ -65,6 +68,7 @@
         dictee: { title: 'Dictation', desc: 'Catalan spelling' },
         pronunciation: { title: 'Pronunciation', desc: 'Listen, repeat, get scored' },
         lectura: { title: 'Reading', desc: 'Short Catalan texts, with glossary' },
+        input: { title: 'Comprehensible input', desc: 'A story in episodes, to listen to and read' },
         repas: { title: 'Spaced review', desc: "Review what you missed, at the right time" },
       },
       comingSoon: 'Coming soon',
