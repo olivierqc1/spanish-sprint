@@ -1,0 +1,178 @@
+{
+  "note": {
+    "fr": "📷 DÉCRIRE UNE SITUATION (photo)\n\n**1. Dire ce qu'on voit**\nA la foto hi ha... = Sur la photo, il y a...\nEs veu un home / Es veuen dues persones = On voit...\nSembla que... = On dirait que... · Potser... = Peut-être...\n\n**2. Situer dans l'image**\nen primer pla (au premier plan) · al fons (au fond) · al mig (au milieu)\na la dreta (à droite) · a l'esquerra (à gauche)\ndavant de (devant) · darrere de (derrière) · al costat de (à côté de)\n\n**3. Dire ce que les gens font : ESTAR + gérondif**\nEstà comprant (il est en train d'acheter) · Està parlant · Estan menjant\nGérondif : -ar → -ant (comprant) · -er/-re → -ent (bevent) · -ir → -int (sortint)\nOu simplement le présent : Compra pa. Paga. Espera l'autobús.\n\n**4. Le lieu et ce qu'on y fait**\nel mercat (el venedor, la parada, pesar, triar la fruita)\nel supermercat (el carro, la cistella, la caixa, fer cua)\nel bar / la terrassa (el cambrer, demanar un cafè, el compte)\nel carrer (travessar, el semàfor, la parada de l'autobús, esperar)\npagar amb targeta / en efectiu (par carte / en liquide)\n\n**5. Imaginer un peu**\nSembla que té pressa (il a l'air pressé) · Potser torna de la feina · Deu ser dissabte\n\n**Modèle pour l'examen**\nA la foto hi ha un home en un mercat. És al matí i hi ha molta gent. En primer pla, l'home està triant fruita en una parada. Al seu costat, la venedora pesa uns tomàquets. L'home porta una bossa i paga amb targeta. Sembla que té pressa; potser va a la feina.",
+    "en": "Describing a scene from a photo: hi ha, es veu, position words, estar + gerund, shops."
+  },
+  "drills": [
+    {
+      "prompt": "Sur la photo, il y a un homme → A la foto ___ un home.",
+      "answer": "hi ha",
+      "hint": "hi ha = il y a"
+    },
+    {
+      "prompt": "On voit un marché → Es ___ un mercat.",
+      "answer": "veu",
+      "hint": "Es veu (un) / Es veuen (plusieurs)"
+    },
+    {
+      "prompt": "On voit deux femmes → Es ___ dues dones.",
+      "answer": "veuen",
+      "hint": "Pluriel : es veuen."
+    },
+    {
+      "prompt": "Au premier plan → En primer ___.",
+      "answer": "pla",
+      "hint": "en primer pla"
+    },
+    {
+      "prompt": "Au fond, il y a une église → Al ___ hi ha una església.",
+      "answer": "fons",
+      "hint": "al fons = au fond"
+    },
+    {
+      "prompt": "À droite → A la ___.",
+      "answer": "dreta",
+      "hint": "a la dreta"
+    },
+    {
+      "prompt": "À gauche → A l'___.",
+      "answer": "esquerra",
+      "hint": "a l'esquerra"
+    },
+    {
+      "prompt": "Au milieu → Al ___.",
+      "answer": "mig",
+      "hint": "al mig = au milieu"
+    },
+    {
+      "prompt": "Devant la boulangerie → ___ de la fleca.",
+      "answer": "Davant",
+      "hint": "davant de = devant"
+    },
+    {
+      "prompt": "Derrière l'homme → ___ de l'home.",
+      "answer": "Darrere",
+      "hint": "darrere de = derrière"
+    },
+    {
+      "prompt": "À côté de la caisse → Al ___ de la caixa.",
+      "answer": "costat",
+      "hint": "al costat de = à côté de"
+    },
+    {
+      "prompt": "Il est en train d'acheter du pain → ___ comprant pa.",
+      "answer": "Està",
+      "hint": "ESTAR + gérondif"
+    },
+    {
+      "prompt": "Elle est en train de parler au téléphone → Està ___ per telèfon.",
+      "answer": "parlant",
+      "hint": "parlar → parlant"
+    },
+    {
+      "prompt": "Ils sont en train de manger → Estan ___.",
+      "answer": "menjant",
+      "hint": "menjar → menjant"
+    },
+    {
+      "prompt": "Il est en train de boire un café → Està ___ un cafè.",
+      "answer": "bevent",
+      "hint": "beure → bevent"
+    },
+    {
+      "prompt": "Il va au supermarché → ___ al supermercat.",
+      "answer": "Va",
+      "hint": "anar → va"
+    },
+    {
+      "prompt": "Il fait la queue → Fa ___.",
+      "answer": "cua",
+      "hint": "fer cua = faire la queue"
+    },
+    {
+      "prompt": "Il pousse un chariot → Empeny un ___.",
+      "answer": "carro",
+      "hint": "el carro = le chariot"
+    },
+    {
+      "prompt": "Elle porte un sac → Porta una ___.",
+      "answer": "bossa",
+      "hint": "la bossa = le sac"
+    },
+    {
+      "prompt": "Elle choisit des fruits → ___ fruita.",
+      "answer": "Tria",
+      "hint": "triar = choisir"
+    },
+    {
+      "prompt": "La vendeuse pèse les tomates → La venedora ___ els tomàquets.",
+      "answer": "pesa",
+      "hint": "pesar = peser"
+    },
+    {
+      "prompt": "Il paie par carte → Paga amb ___.",
+      "answer": "targeta",
+      "hint": "la targeta = la carte"
+    },
+    {
+      "prompt": "Il paie en liquide → Paga en ___.",
+      "answer": "efectiu",
+      "hint": "en efectiu = en liquide"
+    },
+    {
+      "prompt": "Elle commande un café → ___ un cafè.",
+      "answer": "Demana",
+      "hint": "demanar = commander, demander"
+    },
+    {
+      "prompt": "Le serveur apporte les cafés → El cambrer ___ els cafès.",
+      "answer": "porta",
+      "hint": "portar = apporter"
+    },
+    {
+      "prompt": "Ils sont assis à une terrasse → Estan ___ en una terrassa.",
+      "answer": "asseguts",
+      "hint": "assegut / asseguts = assis"
+    },
+    {
+      "prompt": "Il attend le bus → ___ l'autobús.",
+      "answer": "Espera",
+      "hint": "esperar = attendre"
+    },
+    {
+      "prompt": "Il traverse la rue → ___ el carrer.",
+      "answer": "Travessa",
+      "hint": "travessar = traverser"
+    },
+    {
+      "prompt": "Il promène son chien → ___ el gos.",
+      "answer": "Passeja",
+      "hint": "passejar = promener"
+    },
+    {
+      "prompt": "Il pleut et elle a un parapluie → Plou i porta un ___.",
+      "answer": "paraigua",
+      "hint": "el paraigua = le parapluie"
+    },
+    {
+      "prompt": "Il y a beaucoup de monde → Hi ha molta ___.",
+      "answer": "gent",
+      "hint": "la gent = les gens (singulier en catalan)"
+    },
+    {
+      "prompt": "Il a l'air pressé → Sembla que té ___.",
+      "answer": "pressa",
+      "hint": "tenir pressa = être pressé"
+    },
+    {
+      "prompt": "Peut-être qu'il revient du travail → ___ torna de la feina.",
+      "answer": "Potser",
+      "hint": "potser = peut-être"
+    },
+    {
+      "prompt": "On dirait que c'est samedi → ___ ser dissabte.",
+      "answer": "Deu",
+      "hint": "Deu + infinitif = probablement"
+    }
+  ]
+}
