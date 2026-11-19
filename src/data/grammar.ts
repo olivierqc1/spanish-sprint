@@ -1806,6 +1806,12 @@ export const grammarPoints: GrammarPoint[] = [
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_hora.json"
   },
+  { id: "cat_examen_hora", title: { fr: "Catalan — Examen : dire l'heure (les deux systèmes)", en: "Catalan — Exam: telling the time (both systems)" }, level: "A2",
+    note: { fr: "Són les nou i quart / És un quart de deu, dos quarts, tres quarts, del matí, de la tarda, del vespre, cap a, en punt.", en: "Both time systems (i/menys and quarts), times of day, useful expressions." }, country: "all", jsonPath: "/data/grammar_quizz/cat_examen_hora.json" },
+  { id: "cat_examen_persona", title: { fr: "Catalan — Examen : décrire une personne (photo)", en: "Catalan — Exam: describing a person (photo)" }, level: "A2",
+    note: { fr: "És alt, té els cabells curts, porta ulleres, deu tenir uns trenta anys, sembla content. Âge, cheveux, vêtements, couleurs.", en: "És / té / porta: age, hair, clothes, colours, impressions." }, country: "all", jsonPath: "/data/grammar_quizz/cat_examen_persona.json" },
+  { id: "cat_examen_situacio", title: { fr: "Catalan — Examen : décrire une situation (photo)", en: "Catalan — Exam: describing a scene (photo)" }, level: "A2",
+    note: { fr: "A la foto hi ha, es veu, en primer pla, al fons, a la dreta, està comprant, fa cua, paga amb targeta, sembla que, potser.", en: "Hi ha, es veu, position words, estar + gerund, shopping and street actions." }, country: "all", jsonPath: "/data/grammar_quizz/cat_examen_situacio.json" },
 
   // Catalan A1-A2
   {
@@ -1837,14 +1843,6 @@ export const grammarPoints: GrammarPoint[] = [
     jsonPath: "/data/grammar_quizz/cat_plusquamperfet.json"
   },
 
-{
-  id: "cat_hora",
-  title: { fr: "Catalan — L'heure (Quina hora és?)", en: "Catalan — Telling time (Quina hora és?)" },
-  level: "A1",
-  note: { fr: "Demander et dire l'heure en catalan.", en: "Asking and telling the time in Catalan." },
-  country: "all",
-  jsonPath: "/data/grammar_quizz/cat_hora.json"
-},
 {
     id: "haber_vs_tener",
     title: { fr: "HABER vs TENER – Auxiliaire et possession", en: "HABER vs TENER – Auxiliary and possession" },

@@ -1,0 +1,178 @@
+{
+  "note": {
+    "fr": "👤 DÉCRIRE UNE PERSONNE (photo)\n\n**La structure : 3 verbes**\nSER → comment elle est : És alt, és rossa, és jove, és simpàtica.\nTENIR → ce qu'elle a : Té els cabells llargs, té els ulls blaus, té barba, té uns trenta anys.\nPORTAR (ou DUR) → ce qu'elle porte : Porta ulleres, porta una camisa blanca.\n\n**L'âge**\njove (jeune) · de mitjana edat (d'âge moyen) · gran (âgé)\nTé uns quaranta anys = elle a environ 40 ans\nDeu tenir uns seixanta anys = il doit avoir 60 ans\n\n**La silhouette**\nalt / baix (grand / petit) · prim (mince) · gras (gros) · d'alçada mitjana (taille moyenne)\n\n**Les cheveux**\nros / rossa (blond) · morè / morena (brun) · pèl-roig / pèl-roja (roux) · calb (chauve)\nllargs / curts (longs / courts) · arrissats (frisés) · llisos (raides) · recollits (attachés)\nuna cua (queue de cheval) · barba (barbe) · bigoti (moustache)\n\n**Le visage**\nels ulls blaus / verds / marrons · el nas · la boca · ulleres (lunettes)\n\n**Les vêtements**\nuna camisa · una samarreta (t-shirt) · un jersei (pull) · una jaqueta (veste) · un abric (manteau)\nuns pantalons · uns texans (jean) · una faldilla (jupe) · un vestit (robe / costume) · una corbata\nunes sabates (chaussures) · unes bambes (baskets) · una gorra (casquette) · un barret (chapeau)\nde ratlles (à rayures) · de quadres (à carreaux) · de colors (coloré)\n\n**Les couleurs s'accordent**\nun jersei vermell / una faldilla vermella · blau / blava · negre / negra · blanc / blanca · groc / groga\nInvariables : rosa, taronja, lila, marró\n\n**L'impression**\nSembla content (il a l'air content) · Fa cara de cansada (elle a l'air fatiguée)\nTé cara de bona persona (il a l'air gentil) · Somriu (il sourit)\n\n**Modèle pour l'examen**\nA la foto hi ha un home de mitjana edat. Deu tenir uns cinquanta anys. És alt i una mica gras. És calb i té barba. Porta ulleres, una camisa de quadres i uns texans. Sembla content i té cara de bona persona.",
+    "en": "Describing a person from a photo: ser / tenir / portar, hair, age, clothes, colours."
+  },
+  "drills": [
+    {
+      "prompt": "Il est grand → ___ alt.",
+      "answer": "És",
+      "hint": "Comment il est : SER."
+    },
+    {
+      "prompt": "Elle a les cheveux courts → ___ els cabells curts.",
+      "answer": "Té",
+      "hint": "Ce qu'elle a : TENIR."
+    },
+    {
+      "prompt": "Elle porte des lunettes → ___ ulleres.",
+      "answer": "Porta",
+      "hint": "Ce qu'elle porte : PORTAR."
+    },
+    {
+      "prompt": "Il a une barbe → Té ___.",
+      "answer": "barba",
+      "hint": "barba = barbe"
+    },
+    {
+      "prompt": "Il a une moustache → Té ___.",
+      "answer": "bigoti",
+      "hint": "bigoti = moustache"
+    },
+    {
+      "prompt": "Il est chauve → És ___.",
+      "answer": "calb",
+      "hint": "calb = chauve"
+    },
+    {
+      "prompt": "Elle est rousse → És ___.",
+      "answer": "pèl-roja",
+      "hint": "pèl-roig (masc.) / pèl-roja (fém.)"
+    },
+    {
+      "prompt": "Il est brun → És ___.",
+      "answer": "morè",
+      "hint": "morè / morena = brun(e)"
+    },
+    {
+      "prompt": "Elle est blonde → És ___.",
+      "answer": "rossa",
+      "hint": "ros / rossa = blond(e)"
+    },
+    {
+      "prompt": "Il a les cheveux frisés → Té els cabells ___.",
+      "answer": "arrissats",
+      "hint": "arrissats = frisés"
+    },
+    {
+      "prompt": "Elle a les cheveux raides → Té els cabells ___.",
+      "answer": "llisos",
+      "hint": "llisos = raides, lisses"
+    },
+    {
+      "prompt": "Elle a les cheveux attachés → Porta els cabells ___.",
+      "answer": "recollits",
+      "hint": "recollits = attachés"
+    },
+    {
+      "prompt": "Elle a une queue de cheval → Porta una ___.",
+      "answer": "cua",
+      "hint": "una cua = une queue de cheval"
+    },
+    {
+      "prompt": "Il a les yeux marron → Té els ulls ___.",
+      "answer": "marrons",
+      "hint": "marró → marrons au pluriel"
+    },
+    {
+      "prompt": "Elle a les yeux verts → Té els ulls ___.",
+      "answer": "verds",
+      "hint": "verd → verds"
+    },
+    {
+      "prompt": "Elle a environ 40 ans → Té ___ quaranta anys.",
+      "answer": "uns",
+      "hint": "uns = environ"
+    },
+    {
+      "prompt": "Il doit avoir 60 ans → ___ tenir uns seixanta anys.",
+      "answer": "Deu",
+      "hint": "Deu + infinitif = il doit (probablement)."
+    },
+    {
+      "prompt": "Il est d'âge moyen → És de mitjana ___.",
+      "answer": "edat",
+      "hint": "de mitjana edat = d'âge moyen"
+    },
+    {
+      "prompt": "Elle est de taille moyenne → És d'___ mitjana.",
+      "answer": "alçada",
+      "hint": "alçada = taille (hauteur)"
+    },
+    {
+      "prompt": "Il est un peu gros → És una mica ___.",
+      "answer": "gras",
+      "hint": "gras / grassa = gros(se)"
+    },
+    {
+      "prompt": "Elle est mince → És ___.",
+      "answer": "prima",
+      "hint": "prim / prima = mince"
+    },
+    {
+      "prompt": "Il porte une chemise à carreaux → Porta una camisa de ___.",
+      "answer": "quadres",
+      "hint": "de quadres = à carreaux"
+    },
+    {
+      "prompt": "Elle porte un t-shirt à rayures → Porta una samarreta de ___.",
+      "answer": "ratlles",
+      "hint": "de ratlles = à rayures"
+    },
+    {
+      "prompt": "Il porte un pull rouge → Porta un jersei ___.",
+      "answer": "vermell",
+      "hint": "jersei est masculin : vermell."
+    },
+    {
+      "prompt": "Elle porte une jupe bleue → Porta una faldilla ___.",
+      "answer": "blava",
+      "hint": "blau → blava au féminin"
+    },
+    {
+      "prompt": "Il porte des baskets blanches → Porta unes ___ blanques.",
+      "answer": "bambes",
+      "hint": "les bambes = les baskets"
+    },
+    {
+      "prompt": "Il porte un jean → Porta uns ___.",
+      "answer": "texans",
+      "hint": "uns texans = un jean"
+    },
+    {
+      "prompt": "Il porte un costume et une cravate → Porta un vestit i una ___.",
+      "answer": "corbata",
+      "hint": "corbata = cravate"
+    },
+    {
+      "prompt": "Elle porte une casquette → Porta una ___.",
+      "answer": "gorra",
+      "hint": "gorra = casquette"
+    },
+    {
+      "prompt": "Il a l'air content → ___ content.",
+      "answer": "Sembla",
+      "hint": "Sembla = il a l'air"
+    },
+    {
+      "prompt": "Elle a l'air fatiguée → Fa cara de ___.",
+      "answer": "cansada",
+      "hint": "Fer cara de = avoir l'air"
+    },
+    {
+      "prompt": "Il a l'air gentil → Té cara de bona ___.",
+      "answer": "persona",
+      "hint": "Té cara de bona persona = il a l'air gentil"
+    },
+    {
+      "prompt": "Elle sourit → ___.",
+      "answer": "Somriu",
+      "hint": "somriure → somriu"
+    },
+    {
+      "prompt": "Elle semble timide → Sembla ___.",
+      "answer": "tímida",
+      "hint": "tímid / tímida"
+    }
+  ]
+}

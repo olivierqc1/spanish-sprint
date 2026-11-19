@@ -1,0 +1,168 @@
+{
+  "note": {
+    "fr": "🕐 L'HEURE, POUR L'EXAMEN\n\n**Demander**\nQuina hora és? = Quelle heure est-il ?\nA quina hora...? = À quelle heure... ?\n\n**És ou Són ?**\n1 h → És la una (singulier, seul cas)\nToutes les autres → Són les dues, les tres, les quatre...\n\n**Système 1 : comme en français (i / menys)**\nles nou i cinc (9:05) · les nou i quart (9:15) · les nou i mitja (9:30)\nles deu menys quart (9:45) · les deu menys cinc (9:55)\n\n**Système 2 : les quarts (très catalan, souvent à l'examen)**\nOn compte vers l'heure SUIVANTE.\n9:15 → És un quart de deu (un quart = singulier → És)\n9:30 → Són dos quarts de deu\n9:45 → Són tres quarts de deu\n9:20 → És un quart i cinc de deu · 9:50 → Són tres quarts i cinc de deu\nDevant une voyelle : de + una → d'una, de + onze → d'onze (12:15 = un quart d'una)\n\n**Le moment de la journée**\nde la matinada (1 h–6 h) · del matí (matin) · del migdia (12 h–15 h)\nde la tarda (après-midi) · del vespre (soir) · de la nit (nuit)\n\n**Expressions utiles**\nen punt = pile · tocades = passées (les sis tocades) · i escaig = et quelques\ngairebé = presque · cap a les sis = vers six heures · de les nou a les dues = de 9 h à 14 h\nd'hora = tôt · tard = tard / en retard\n\n**Modèle pour l'examen**\nSón dos quarts de nou del matí. La Marta es lleva a les set en punt i arriba a la feina cap a les nou.",
+    "en": "Telling the time: both systems (i/menys and quarts), times of day."
+  },
+  "drills": [
+    {
+      "prompt": "10:00 → ___ les deu.",
+      "answer": "Són",
+      "hint": "Tout sauf 1 h : Són."
+    },
+    {
+      "prompt": "1:00 → ___ la una.",
+      "answer": "És",
+      "hint": "La una est singulier : És."
+    },
+    {
+      "prompt": "9:15 (système français) → Són les nou i ___.",
+      "answer": "quart",
+      "hint": "i quart = et quart"
+    },
+    {
+      "prompt": "9:15 (système des quarts) → És ___ de deu.",
+      "answer": "un quart",
+      "hint": "On compte vers l'heure suivante : un quart de deu."
+    },
+    {
+      "prompt": "9:30 (système des quarts) → Són ___ de deu.",
+      "answer": "dos quarts",
+      "hint": "Dos quarts = la demie, vers l'heure suivante."
+    },
+    {
+      "prompt": "9:45 (système des quarts) → Són ___ de deu.",
+      "answer": "tres quarts",
+      "hint": "Tres quarts = moins le quart de l'heure suivante."
+    },
+    {
+      "prompt": "12:15 (système des quarts) → És un quart ___.",
+      "answer": "d'una",
+      "hint": "de + una → d'una"
+    },
+    {
+      "prompt": "10:30 (système des quarts) → Són dos quarts ___.",
+      "answer": "d'onze",
+      "hint": "de + onze → d'onze"
+    },
+    {
+      "prompt": "4:20 (système des quarts) → És un quart ___ de cinc.",
+      "answer": "i cinc",
+      "hint": "Un quart (4:15) + cinc minuts."
+    },
+    {
+      "prompt": "4:50 (système des quarts) → Són tres quarts ___ de cinc.",
+      "answer": "i cinc",
+      "hint": "Tres quarts (4:45) + cinc minuts."
+    },
+    {
+      "prompt": "18:45 (système des quarts) → Són tres quarts de ___ de la tarda.",
+      "answer": "set",
+      "hint": "On compte vers 19 h : set."
+    },
+    {
+      "prompt": "7:55 (système français) → Són les vuit ___.",
+      "answer": "menys cinc",
+      "hint": "menys = moins"
+    },
+    {
+      "prompt": "11:40 (système français) → Són les dotze ___.",
+      "answer": "menys vint",
+      "hint": "12 h moins 20."
+    },
+    {
+      "prompt": "10:10 (système français) → Són les deu ___.",
+      "answer": "i deu",
+      "hint": "i deu = et dix"
+    },
+    {
+      "prompt": "2:30 (système français) → Són les dues ___.",
+      "answer": "i mitja",
+      "hint": "i mitja = et demie"
+    },
+    {
+      "prompt": "8:00 du matin → Són les vuit ___.",
+      "answer": "del matí",
+      "hint": "del matí = du matin"
+    },
+    {
+      "prompt": "16:00 → Són les quatre ___.",
+      "answer": "de la tarda",
+      "hint": "de la tarda = de l'après-midi"
+    },
+    {
+      "prompt": "21:00 → Són les nou ___.",
+      "answer": "del vespre",
+      "hint": "del vespre = du soir"
+    },
+    {
+      "prompt": "23:30 → Són les onze i mitja ___.",
+      "answer": "de la nit",
+      "hint": "de la nit = de la nuit"
+    },
+    {
+      "prompt": "3:00 du matin → Són les tres ___.",
+      "answer": "de la matinada",
+      "hint": "Entre 1 h et 6 h : de la matinada."
+    },
+    {
+      "prompt": "13:00 → És la una ___.",
+      "answer": "del migdia",
+      "hint": "Vers midi-15 h : del migdia."
+    },
+    {
+      "prompt": "20:00 → Són les ___ del vespre.",
+      "answer": "vuit",
+      "hint": "20 h = les vuit del vespre."
+    },
+    {
+      "prompt": "Il est 6 h passées → Són les sis ___.",
+      "answer": "tocades",
+      "hint": "tocades = juste passées"
+    },
+    {
+      "prompt": "Il est presque 7 h → Són ___ les set.",
+      "answer": "gairebé",
+      "hint": "gairebé = presque"
+    },
+    {
+      "prompt": "Il est 5 h et quelques → Són les cinc ___.",
+      "answer": "i escaig",
+      "hint": "i escaig = et quelques"
+    },
+    {
+      "prompt": "À quelle heure tu manges ? → ___ dines?",
+      "answer": "A quina hora",
+      "hint": "A quina hora = à quelle heure"
+    },
+    {
+      "prompt": "Je mange à 14 h → Dino ___ les dues.",
+      "answer": "a",
+      "hint": "À une heure précise : a les..."
+    },
+    {
+      "prompt": "Le magasin ouvre de 9 h à 14 h → La botiga obre ___ les nou fins a les dues.",
+      "answer": "de",
+      "hint": "de... fins a... = de... jusqu'à..."
+    },
+    {
+      "prompt": "Il arrive vers 18 h → Arriba ___ les sis.",
+      "answer": "cap a",
+      "hint": "cap a = vers"
+    },
+    {
+      "prompt": "Le cours dure une heure et demie → La classe dura una hora i ___.",
+      "answer": "mitja",
+      "hint": "una hora i mitja"
+    },
+    {
+      "prompt": "Je me lève tôt → Em llevo ___.",
+      "answer": "d'hora",
+      "hint": "d'hora = tôt"
+    },
+    {
+      "prompt": "Je sors du travail à 17 h → Surto de la feina a les ___.",
+      "answer": "cinc",
+      "hint": "17 h = les cinc de la tarda."
+    }
+  ]
+}
