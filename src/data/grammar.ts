@@ -1818,7 +1818,7 @@ export const grammarPoints: GrammarPoint[] = [
     id: "cat_direccions_lloc",
     title: { fr: "Catalan — Prépositions de lieu et directions (a l'esquerra, a la dreta...)", en: "Catalan — Prepositions of place and directions" },
     level: "A1-A2",
-    note: { fr: "Prépositions spatiales et vocabulaire pour donner des directions en catalan.", en: "Spatial prepositions and directions in Catalan." },
+    note: { fr: "Prépositions de lieu avec dessins emoji : sobre, sota, a dalt, a baix, per sobre, per sota, a la dreta, a l'esquerra...", en: "Place prepositions with emoji pictures: sobre, sota, a dalt, a baix, per sobre, per sota..." },
     country: "all",
     jsonPath: "/data/grammar_quizz/cat_direccions_lloc.json"
   },

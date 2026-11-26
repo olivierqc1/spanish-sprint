@@ -318,7 +318,7 @@ export default function GrammarDrill({ title, note, visual, drills, onClose, lan
               {currentDrill.label}
             </span>
           )}
-          <p style={{ color: '#f1f5f9', fontSize: '21px', fontWeight: '600', lineHeight: '1.6', margin: 0 }}>
+          <p style={{ color: '#f1f5f9', fontSize: '21px', fontWeight: '600', lineHeight: '1.6', margin: 0, whiteSpace: 'pre-line' }}>
             {buildSentence()}
           </p>
         </div>
