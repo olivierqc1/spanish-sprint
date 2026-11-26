@@ -6,65 +6,273 @@
   },
   "level": "A1-A2",
   "note": {
-    "fr": "📍 POSITION (On és? = Où est-ce?)\n- davant (devant) / darrere (derrière)\n- a la dreta = a mà dreta = al costat dret (à droite)\n- a l'esquerra = a mà esquerra = al costat esquerre (à gauche)\n- entrant (en entrant) / sortint (en sortant)\n- al final de (au bout de) / al costat de (à côté de)\n\n🗣️ POUR DÉCRIRE (Què hi ha? = Qu'y a-t-il?)\n- Entrant hi ha el menjador (En entrant, il y a la salle à manger)\n- Al costat de la sala d'estar hi ha la cuina (À côté du salon, il y a la cuisine)\n- L'habitació és a mà esquerra, davant de la cuina (La chambre est à gauche, devant la cuisine)\n- El bany és al final del passadís (La salle de bain est au bout du couloir)\n\n💡 hi ha = il y a (pour la présence). és = est (pour la position précise).",
-    "en": "📍 POSITION (On és? = Where is it?)\n- davant (in front) / darrere (behind)\n- a la dreta = a mà dreta = al costat dret (on the right)\n- a l'esquerra = a mà esquerra = al costat esquerre (on the left)\n- entrant (entering) / sortint (exiting)\n- al final de (at the end of) / al costat de (next to)\n\n🗣️ TO DESCRIBE (Què hi ha? = What is there?)\n- Entrant hi ha el menjador\n- Al costat de la sala d'estar hi ha la cuina\n- El bany és al final del passadís\n\n💡 hi ha = there is/are. és = is (precise location)."
+    "fr": "📍 POSITION (On és? = Où est-ce?)\n- davant (devant) / darrere (derrière)\n- a la dreta = a mà dreta (à droite) / a l'esquerra = a mà esquerra (à gauche)\n- sobre = damunt (sur, par-dessus) / sota (sous, en dessous)\n- a dalt (en haut) / a baix (en bas)\n- entre (entre) / al costat de (à côté de)\n- entrant (en entrant) / sortint (en sortant) / al final de (au bout de)\n\n⬆️⬇️ PAR-DESSUS / PAR EN DESSOUS (un mouvement)\n- per sobre de = par-dessus : L'avió passa per sobre de la ciutat.\n- per sota de = par en dessous : El metro passa per sota del carrer.\n\n🖼️ Dans les exercices avec des emojis, regarde le dessin : ce qui est EN HAUT est sur la première ligne. À gauche / à droite = comme tu le vois sur l'écran.\n\n🗣️ POUR DÉCRIRE (Què hi ha?)\n- Entrant hi ha el menjador (En entrant, il y a la salle à manger)\n- L'habitació és a mà esquerra, davant de la cuina\n- El bany és al final del passadís\n\n💡 hi ha = il y a (présence). és = est (position précise).\n💡 de + el = DEL : al costat DEL sofà.\n💡 SOBRE et SOTA peuvent se passer de DE : sota el llit. DAMUNT prend souvent DE : damunt de la taula.",
+    "en": "📍 POSITION (On és? = Where is it?)\n- davant (in front) / darrere (behind)\n- a la dreta (on the right) / a l'esquerra (on the left)\n- sobre = damunt (on, over) / sota (under)\n- a dalt (upstairs, up) / a baix (downstairs, down)\n- entre (between) / al costat de (next to)\n- entrant / sortint / al final de (at the end of)\n\n⬆️⬇️ OVER / UNDER (movement)\n- per sobre de = over : L'avió passa per sobre de la ciutat.\n- per sota de = underneath : El metro passa per sota del carrer.\n\n🖼️ In the emoji exercises, look at the picture: what is ON TOP is on the first line. Left / right = as you see it on screen.\n\n💡 hi ha = there is. és = is (precise location). de + el = DEL."
   },
   "drills": [
     {
-      "prompt": "« devant » → en catalan",
-      "answer": "davant"
+      "prompt": "🐱\n🛏️\nEl gat és ___ el llit. (sobre ou sota ?)",
+      "answer": "sobre",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     },
     {
-      "prompt": "« derrière » → en catalan",
-      "answer": "darrere"
+      "prompt": "🛏️\n🐱\nEl gat és ___ el llit. (sobre ou sota ?)",
+      "answer": "sota",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     },
     {
-      "prompt": "« à droite » → en catalan (3 façons)",
-      "answer": "a la dreta"
+      "prompt": "🪑 🛋️\nLa cadira és ___ del sofà.",
+      "answer": "a l'esquerra",
+      "hint": {
+        "fr": "2 mots",
+        "en": "2 words"
+      }
     },
     {
-      "prompt": "« à gauche » → en catalan (3 façons)",
-      "answer": "a l'esquerra"
+      "prompt": "🛋️ 🪑\nLa cadira és ___ del sofà.",
+      "answer": "a la dreta",
+      "hint": {
+        "fr": "3 mots",
+        "en": "3 words"
+      }
     },
     {
-      "prompt": "« en entrant » → en catalan",
-      "answer": "entrant"
+      "prompt": "📚\n🪑\nEls llibres són ___ la cadira.",
+      "answer": "sobre",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     },
     {
-      "prompt": "« en sortant » → en catalan",
-      "answer": "sortint"
+      "prompt": "🪑\n👟\nLes sabates són ___ la cadira.",
+      "answer": "sota",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     },
     {
-      "prompt": "« au bout de » → en catalan",
-      "answer": "al final de"
+      "prompt": "🪴 📺 🪴\nLa tele és ___ les dues plantes.",
+      "answer": "entre",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     },
     {
-      "prompt": "« à côté de » → en catalan",
-      "answer": "al costat de"
+      "prompt": "🐶 🏠\nEl gos és al ___ de la casa. (à côté)",
+      "answer": "costat",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     },
     {
-      "prompt": "« En entrant, il y a la salle à manger » → ___ hi ha el menjador",
-      "answer": "Entrant"
+      "prompt": "📦\n📦\nUna caixa és ___ de l'altra. (par-dessus)",
+      "answer": "damunt",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     },
     {
-      "prompt": "« À côté du salon, il y a la cuisine » → Al costat de la sala d'estar ___ la cuina",
-      "answer": "hi ha"
+      "prompt": "« Un avion passe par-dessus la ville » → L'avió passa per ___ de la ciutat.",
+      "answer": "sobre",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     },
     {
-      "prompt": "« La salle de bain est au bout du couloir » → El bany ___ al final del passadís (verbe)",
-      "answer": "és"
+      "prompt": "« Le métro passe par en dessous de la rue » → El metro passa per ___ del carrer.",
+      "answer": "sota",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     },
     {
-      "prompt": "« La chambre est à gauche » → L'habitació és ___ (à gauche)",
-      "answer": "a mà esquerra"
+      "prompt": "« Saute par-dessus la flaque ! » → Salta per ___ del bassal!",
+      "answer": "sobre",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     },
     {
-      "prompt": "hi ha ou és ? Pour dire qu'une pièce EXISTE quelque part →",
-      "answer": "hi ha"
+      "prompt": "« Le chat passe par en dessous de la table » → El gat passa per ___ de la taula.",
+      "answer": "sota",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     },
     {
-      "prompt": "hi ha ou és ? Pour la position précise d'une pièce →",
-      "answer": "és"
+      "prompt": "« Au-dessus de la télé, il y a une photo » → ___ de la tele hi ha una foto.",
+      "answer": "damunt",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "« Sous la pluie » → ___ la pluja",
+      "answer": "sota",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "« Le chat est derrière la porte » → El gat és ___ de la porta.",
+      "answer": "darrere",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "« Je t'attends devant le cinéma » → T'espero ___ del cinema.",
+      "answer": "davant",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "Le contraire de « sobre » →",
+      "answer": "sota",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "Le contraire de « davant » →",
+      "answer": "darrere",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "Le contraire de « a la dreta » →",
+      "answer": "a l'esquerra",
+      "hint": {
+        "fr": "2 mots",
+        "en": "2 words"
+      }
+    },
+    {
+      "prompt": "Le contraire de « a dalt » (en haut) →",
+      "answer": "a baix",
+      "hint": {
+        "fr": "2 mots",
+        "en": "2 words"
+      }
+    },
+    {
+      "prompt": "Le contraire de « entrant » →",
+      "answer": "sortint",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "Autre mot pour « sobre » (sur, dessus) →",
+      "answer": "damunt",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "« Les chambres sont en haut » → Les habitacions són ___.",
+      "answer": "a dalt",
+      "hint": {
+        "fr": "2 mots",
+        "en": "2 words"
+      }
+    },
+    {
+      "prompt": "« Le garage est en bas » → El garatge és ___.",
+      "answer": "a baix",
+      "hint": {
+        "fr": "2 mots",
+        "en": "2 words"
+      }
+    },
+    {
+      "prompt": "« En entrant, il y a la salle à manger » → ___ hi ha el menjador.",
+      "answer": "Entrant",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "« La salle de bain est au bout du couloir » → El bany és al ___ del passadís.",
+      "answer": "final",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "« La chambre est à gauche » → L'habitació és a ___ esquerra.",
+      "answer": "mà",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "« La chambre est devant la cuisine » → L'habitació és ___ de la cuina.",
+      "answer": "davant",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "« La lampe est à côté du sofa » → El llum és al costat ___ sofà.",
+      "answer": "del",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "« Le chat est sur la table » → El gat és damunt ___ la taula.",
+      "answer": "de",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
+    },
+    {
+      "prompt": "« À côté du salon, il y a la cuisine » → Al costat de la sala d'estar ___ la cuina.",
+      "answer": "hi ha",
+      "hint": {
+        "fr": "2 mots",
+        "en": "2 words"
+      }
+    },
+    {
+      "prompt": "« La salle de bain est au bout du couloir » → El bany ___ al final del passadís. (verbe)",
+      "answer": "és",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 word"
+      }
     }
   ]
 }
