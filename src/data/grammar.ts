@@ -1812,6 +1812,10 @@ export const grammarPoints: GrammarPoint[] = [
     note: { fr: "És alt, té els cabells curts, porta ulleres, deu tenir uns trenta anys, sembla content. Âge, cheveux, vêtements, couleurs.", en: "És / té / porta: age, hair, clothes, colours, impressions." }, country: "all", jsonPath: "/data/grammar_quizz/cat_examen_persona.json" },
   { id: "cat_examen_situacio", title: { fr: "Catalan — Examen : décrire une situation (photo)", en: "Catalan — Exam: describing a scene (photo)" }, level: "A2",
     note: { fr: "A la foto hi ha, es veu, en primer pla, al fons, a la dreta, està comprant, fa cua, paga amb targeta, sembla que, potser.", en: "Hi ha, es veu, position words, estar + gerund, shopping and street actions." }, country: "all", jsonPath: "/data/grammar_quizz/cat_examen_situacio.json" },
+  { id: "cat_examen_retrat", title: { fr: "Catalan — Examen : décrire quelqu'un (emoji + portrait complet)", en: "Catalan — Exam: describing someone (emoji + full portrait)" }, level: "A2",
+    note: { fr: "Portrait en 4 étapes : physique, émotions (estar, tenir son), caractère, comparaisons. Avec dessins emoji.", en: "4-step portrait: looks, feelings, personality, comparisons. With emoji pictures." }, country: "all", jsonPath: "/data/grammar_quizz/cat_examen_retrat.json" },
+  { id: "cat_examen_escenes", title: { fr: "Catalan — Examen : décrire une scène (emoji)", en: "Catalan — Exam: describing a scene (emoji)" }, level: "A2",
+    note: { fr: "Lieu, météo, gens en train de faire (estar + gérondif), émotions, hypothèses. Avec dessins emoji.", en: "Place, weather, people doing things (estar + gerund), feelings, guesses. With emoji pictures." }, country: "all", jsonPath: "/data/grammar_quizz/cat_examen_escenes.json" },
 
   // Catalan A1-A2
   {
