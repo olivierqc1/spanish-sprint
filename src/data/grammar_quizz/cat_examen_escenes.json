@@ -1,0 +1,265 @@
+{
+  "id": "cat_examen_escenes",
+  "note": {
+    "fr": "📷 EXAMEN A2 — DÉCRIRE UNE SITUATION (avec des dessins emoji)\n\n🧩 LE PLAN EN 5 ÉTAPES\n1. Le lieu : Som en un parc. / És una platja.\n2. Le temps et le moment : Fa sol. És la tardor. És de nit.\n3. Les gens et ce qu'ils font : Una noia està llegint. Uns nens s'estan banyant.\n4. Comment ils se sentent : Estan contents. El noi està preocupat.\n5. Une hypothèse : Sembla que... · Segurament... · Deuen ser turistes.\n\n☀️ LA MÉTÉO\nFa sol · Fa vent · Fa fred · Fa calor · Plou · Neva · Està ennuvolat\n\n🏃 EN TRAIN DE… = ESTAR + gérondif\n-ar → -ant (cuinant) · -er/-re → -ent (corrent, prenent) · -ir → -int (llegint)\n⚠ Irréguliers : escriure → escrivint · fer → fent\nAvec un verbe en -se : s'estan banyant (ils se baignent)\n\n🍽️ LES REPAS\nesmorzar (petit-déjeuner) · dinar (dîner, midi) · sopar (souper, soir)\n\n🧍 POSITIONS\nestar dret (debout) · estar assegut / asseguda (assis / assise)\n\n🤔 HYPOTHÈSES\nSembla que = on dirait que · Segurament = sûrement · Deu / Deuen + infinitif = il doit / ils doivent\n\n🏁 CONCLURE\nEn resum, és un dia tranquil.\n\n📝 TEXTE MODÈLE\nA la foto es veu un parc. Fa sol i sembla que és la primavera. En primer pla, una noia està asseguda en un banc i està llegint. Al fons, uns nens estan jugant a pilota. Tothom està content. Deu ser diumenge. En resum, és un dia tranquil.",
+    "en": "📷 A2 EXAM — DESCRIBING A SCENE\n1. Place 2. Weather/time 3. People + ESTAR + gerund 4. Feelings 5. Guess (Sembla que, Segurament, Deuen ser).\nGerund: -ant / -ent / -int · escriure → escrivint · fer → fent."
+  },
+  "drills": [
+    {
+      "prompt": "🏊 🌊\nEls nens s'estan ___ al mar. (banyar-se)",
+      "answer": "banyant",
+      "hint": {
+        "fr": "gérondif",
+        "en": "gérondif"
+      }
+    },
+    {
+      "prompt": "☀️\nAvui ___ sol.",
+      "answer": "fa",
+      "hint": {
+        "fr": "verbe",
+        "en": "verbe"
+      }
+    },
+    {
+      "prompt": "🌧️\n___.",
+      "answer": "Plou",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "❄️\n___.",
+      "answer": "Neva",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "🌬️\nFa ___.",
+      "answer": "vent",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "🥶\nFa molt ___.",
+      "answer": "fred",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "☁️\nEstà ___.",
+      "answer": "ennuvolat",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "👨‍🍳 🍳\nL'home està ___. (cuinar)",
+      "answer": "cuinant",
+      "hint": {
+        "fr": "gérondif",
+        "en": "gérondif"
+      }
+    },
+    {
+      "prompt": "👧 📖\nLa nena està ___ un llibre. (llegir)",
+      "answer": "llegint",
+      "hint": {
+        "fr": "gérondif",
+        "en": "gérondif"
+      }
+    },
+    {
+      "prompt": "🏃‍♂️ 🌳\nUn noi està ___ pel parc. (córrer)",
+      "answer": "corrent",
+      "hint": {
+        "fr": "gérondif",
+        "en": "gérondif"
+      }
+    },
+    {
+      "prompt": "✍️\nEstà ___ una carta. (escriure)",
+      "answer": "escrivint",
+      "hint": {
+        "fr": "gérondif irrégulier",
+        "en": "gérondif irrégulier"
+      }
+    },
+    {
+      "prompt": "🛒 🧍‍♀️\nUna dona està ___ la compra. (fer)",
+      "answer": "fent",
+      "hint": {
+        "fr": "gérondif irrégulier",
+        "en": "gérondif irrégulier"
+      }
+    },
+    {
+      "prompt": "☕ 👫\nEstan ___ un cafè. (prendre)",
+      "answer": "prenent",
+      "hint": {
+        "fr": "gérondif",
+        "en": "gérondif"
+      }
+    },
+    {
+      "prompt": "🥐 ☕ 🕗\nEstan ___.",
+      "answer": "esmorzant",
+      "hint": {
+        "fr": "repas du matin",
+        "en": "repas du matin"
+      }
+    },
+    {
+      "prompt": "🍽️ 🕑\nEstan ___.",
+      "answer": "dinant",
+      "hint": {
+        "fr": "repas du midi",
+        "en": "repas du midi"
+      }
+    },
+    {
+      "prompt": "🍽️ 🕘\nÉs l'hora de ___.",
+      "answer": "sopar",
+      "hint": {
+        "fr": "repas du soir",
+        "en": "repas du soir"
+      }
+    },
+    {
+      "prompt": "🎂 🎉\nEstan celebrant un ___.",
+      "answer": "aniversari",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "🏥\nSom en un ___.",
+      "answer": "hospital",
+      "hint": {
+        "fr": "lieu",
+        "en": "lieu"
+      }
+    },
+    {
+      "prompt": "🛍️ 👗\nSón en una ___ de roba.",
+      "answer": "botiga",
+      "hint": {
+        "fr": "lieu",
+        "en": "lieu"
+      }
+    },
+    {
+      "prompt": "🚆\nSón a l'___ de tren.",
+      "answer": "estació",
+      "hint": {
+        "fr": "lieu",
+        "en": "lieu"
+      }
+    },
+    {
+      "prompt": "🏫 👩‍🏫\nLa mestra fa ___ als alumnes.",
+      "answer": "classe",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "🪑 👩\nUna noia està ___ en un banc.",
+      "answer": "asseguda",
+      "hint": {
+        "fr": "position, féminin",
+        "en": "position, féminin"
+      }
+    },
+    {
+      "prompt": "🧍‍♂️ 🌳\nUn home està ___ al costat de l'arbre.",
+      "answer": "dret",
+      "hint": {
+        "fr": "position",
+        "en": "position"
+      }
+    },
+    {
+      "prompt": "🥳\nTothom està molt ___.",
+      "answer": "content",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "😟 ⏰\nEl noi està ___ perquè fa tard.",
+      "answer": "preocupat",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "🧳 ✈️\n___ que se'n van de vacances. (on dirait)",
+      "answer": "Sembla",
+      "hint": {
+        "fr": "verbe",
+        "en": "verbe"
+      }
+    },
+    {
+      "prompt": "🧳 ✈️\n___ van de viatge. (sûrement)",
+      "answer": "Segurament",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "📸 🗺️\n___ ser turistes. (ils doivent)",
+      "answer": "Deuen",
+      "hint": {
+        "fr": "deure",
+        "en": "deure"
+      }
+    },
+    {
+      "prompt": "🍂\nÉs la ___.",
+      "answer": "tardor",
+      "hint": {
+        "fr": "saison",
+        "en": "saison"
+      }
+    },
+    {
+      "prompt": "🌸\nÉs la ___.",
+      "answer": "primavera",
+      "hint": {
+        "fr": "saison",
+        "en": "saison"
+      }
+    },
+    {
+      "prompt": "🌙 ⭐\nÉs de ___.",
+      "answer": "nit",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "Pour conclure : « En ___, és un dia tranquil. »",
+      "answer": "resum",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    }
+  ]
+}

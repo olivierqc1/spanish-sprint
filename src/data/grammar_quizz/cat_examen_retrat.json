@@ -1,0 +1,265 @@
+{
+  "id": "cat_examen_retrat",
+  "note": {
+    "fr": "👤 EXAMEN A2 — DÉCRIRE QUELQU'UN (photo ou personne que tu connais)\n\n🧩 LE PLAN EN 4 ÉTAPES\n1. Qui c'est : A la foto hi ha una dona. / El meu millor amic es diu Marc.\n2. Le physique : És alta i prima. Té els cabells curts. Porta ulleres.\n3. Comment elle se sent : Està contenta. Té son. Sembla cansada.\n4. Le caractère : És una persona molt treballadora i una mica tossuda.\n\n🔑 LES VERBES\n- SER = ce qu'il est (permanent) : és alt, és metge, és simpàtic\n- TENIR = ce qu'il a : té barba, té els ulls verds, té fred, té son\n- ESTAR = comment il se sent maintenant : està trist, està enfadat\n- PORTAR = ce qu'il porte : porta ulleres, porta un abric\n\n⚖️ COMPARER\n- més ... que = plus ... que : És més alt que jo.\n- tan ... com = aussi ... que : És tan alta com la seva mare.\n- el més ... de = le plus ... de : És el més alt de la classe.\n- s'assembla a = il ressemble à : S'assembla al seu pare.\n\n✍️ ACCORDS\n- simpàtic → simpàtica · alt → alts · blau → blava → blaves\n\n🧠 CARACTÈRE (utile à l'examen)\ntreballador/a (travailleur) · mandrós/osa (paresseux) · xerraire (bavard) · tossut/uda (têtu) · generós/osa (généreux) · tranquil/tranquil·la (calme)\n\n🤝 LA RELATION\nEns portem molt bé = on s'entend très bien · Em fa riure = il me fait rire\n\n🖼️ Dans les exercices avec emoji, décris ce que tu vois.\n\n📝 TEXTE MODÈLE\nLa meva germana es diu Laia. Té vint-i-cinc anys. És alta i prima, té els cabells llargs i arrissats i porta ulleres. Sempre va ben vestida. De caràcter, és molt treballadora i generosa, però una mica tossuda. S'assembla a la meva mare. Ens portem molt bé.",
+    "en": "👤 A2 EXAM — DESCRIBING SOMEONE\n1. Who: A la foto hi ha una dona. 2. Looks: És alta, té els cabells curts, porta ulleres. 3. Feelings: Està contenta, té son. 4. Personality: És molt treballadora.\nSER (is) · TENIR (has) · ESTAR (feels now) · PORTAR (wears).\nCompare: més ... que · tan ... com · el més ... de · s'assembla a."
+  },
+  "drills": [
+    {
+      "prompt": "👴\nÉs un home ___.",
+      "answer": "gran",
+      "hint": {
+        "fr": "âge (poli)",
+        "en": "âge (poli)"
+      }
+    },
+    {
+      "prompt": "👶\nÉs un ___.",
+      "answer": "nadó",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "👨‍🦲\nNo té cabells: és ___.",
+      "answer": "calb",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "🧔\n___ barba.",
+      "answer": "Té",
+      "hint": {
+        "fr": "verbe",
+        "en": "verbe"
+      }
+    },
+    {
+      "prompt": "👩‍🦰\nÉs ___.",
+      "answer": "pèl-roja",
+      "hint": {
+        "fr": "féminin",
+        "en": "féminin"
+      }
+    },
+    {
+      "prompt": "👱‍♀️\nÉs ___.",
+      "answer": "rossa",
+      "hint": {
+        "fr": "féminin",
+        "en": "féminin"
+      }
+    },
+    {
+      "prompt": "👩‍🦱\nTé els cabells ___.",
+      "answer": "arrissats",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "👨‍🦳\nTé els cabells ___.",
+      "answer": "blancs",
+      "hint": {
+        "fr": "couleur",
+        "en": "couleur"
+      }
+    },
+    {
+      "prompt": "🤓\n___ ulleres.",
+      "answer": "Porta",
+      "hint": {
+        "fr": "verbe",
+        "en": "verbe"
+      }
+    },
+    {
+      "prompt": "😢\nEstà ___.",
+      "answer": "trist",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "😠\nEstà ___.",
+      "answer": "enfadat",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "😴\nTé ___.",
+      "answer": "son",
+      "hint": {
+        "fr": "tenir + ?",
+        "en": "tenir + ?"
+      }
+    },
+    {
+      "prompt": "🥵\nTé ___.",
+      "answer": "calor",
+      "hint": {
+        "fr": "tenir + ?",
+        "en": "tenir + ?"
+      }
+    },
+    {
+      "prompt": "👨‍⚕️\nÉs ___.",
+      "answer": "metge",
+      "hint": {
+        "fr": "métier",
+        "en": "métier"
+      }
+    },
+    {
+      "prompt": "👩‍🍳\nÉs ___.",
+      "answer": "cuinera",
+      "hint": {
+        "fr": "métier, féminin",
+        "en": "métier, féminin"
+      }
+    },
+    {
+      "prompt": "Pour commencer : « ___ foto hi ha una dona. »",
+      "answer": "A la",
+      "hint": {
+        "fr": "2 mots",
+        "en": "2 mots"
+      }
+    },
+    {
+      "prompt": "Il est plus grand que moi → És més alt ___ jo.",
+      "answer": "que",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "Elle est aussi grande que sa mère → És ___ alta com la seva mare.",
+      "answer": "tan",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "Il est le plus grand de la classe → És el més alt ___ la classe.",
+      "answer": "de",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "Il ressemble à son père → S'assembla ___ seu pare.",
+      "answer": "al",
+      "hint": {
+        "fr": "a + el",
+        "en": "a + el"
+      }
+    },
+    {
+      "prompt": "Ma sœur est très sympathique → La meva germana és molt ___.",
+      "answer": "simpàtica",
+      "hint": {
+        "fr": "féminin",
+        "en": "féminin"
+      }
+    },
+    {
+      "prompt": "Mes parents sont grands → Els meus pares són ___.",
+      "answer": "alts",
+      "hint": {
+        "fr": "pluriel",
+        "en": "pluriel"
+      }
+    },
+    {
+      "prompt": "Les filles portent des jupes bleues → Les noies porten faldilles ___.",
+      "answer": "blaves",
+      "hint": {
+        "fr": "féminin pluriel",
+        "en": "féminin pluriel"
+      }
+    },
+    {
+      "prompt": "Ma sœur est très travailleuse → La meva germana és molt ___.",
+      "answer": "treballadora",
+      "hint": {
+        "fr": "féminin",
+        "en": "féminin"
+      }
+    },
+    {
+      "prompt": "Il est un peu têtu → És una mica ___.",
+      "answer": "tossut",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "Elle est très bavarde → És molt ___.",
+      "answer": "xerraire",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "Il est paresseux → És ___.",
+      "answer": "mandrós",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "Ce que j'aime d'elle, c'est qu'elle est généreuse → El que m'agrada d'ella és que és ___.",
+      "answer": "generosa",
+      "hint": {
+        "fr": "féminin",
+        "en": "féminin"
+      }
+    },
+    {
+      "prompt": "Il s'habille toujours bien → Sempre va ben ___.",
+      "answer": "vestit",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "De caractère, il est calme → De ___, és tranquil.",
+      "answer": "caràcter",
+      "hint": {
+        "fr": "1 mot",
+        "en": "1 mot"
+      }
+    },
+    {
+      "prompt": "Il me fait toujours rire → Sempre em ___ riure.",
+      "answer": "fa",
+      "hint": {
+        "fr": "verbe fer",
+        "en": "verbe fer"
+      }
+    },
+    {
+      "prompt": "On s'entend très bien → Ens ___ molt bé.",
+      "answer": "portem",
+      "hint": {
+        "fr": "portar-se bé",
+        "en": "portar-se bé"
+      }
+    }
+  ]
+}
